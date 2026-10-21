@@ -47,7 +47,7 @@ def research(repo, output, remote='zhipijun1996/gunman-rush', refresh=False):
     commits = [dict(zip(['sha', 'date', 'parents', 'subject'], x.split('\t', 3))) for x in log]
     write(output / 'commits.json', commits)
     write(output / 'refs.json', [dict(zip(['ref', 'sha'], x.split('|', 1))) for x in refs])
-    pulls = pages(f'repos/{remote}/pulls?state=all')
+    pulls = json.loads((output / 'pulls.json').read_text()) if (output / 'pulls.json').exists() and not refresh else pages(f'repos/{remote}/pulls?state=all')
     write(output / 'pulls.json', pulls)
     errors = []
     for p in pulls:

@@ -1,0 +1,31 @@
+{
+  "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39580103766",
+  "commit": "219768075e038ec882f0ff0621001ad18d97e697",
+  "status": "success",
+  "artifact_id": 12336770405,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39580103766/artifacts/12336770405",
+  "retention_days": 14,
+  "downloaded_via_github_connector": true,
+  "downloaded_and_decoded_locally": true,
+  "file_sha_matches_runner_report": true,
+  "final_sha256": "f04eff502c845fb95240249864d27e5eb4594bb3c2e1092725e0b6658f4dd436",
+  "duration": "287.266667",
+  "size": "83345713",
+  "technical": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_3_to_5_minutes": true,
+    "subtitles_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true
+  },
+  "content_review": "human_review_required",
+  "download_failure": "gh run download received Azure-blob HTTP403; connector file reference succeeded",
+  "notes": "Initial implementation commit generated this movie. Follow-up code adds supplemental research, ASR sampling and fuller attribution metadata; movie edit unchanged."
+}

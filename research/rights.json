@@ -1,8 +1,68 @@
 {
-  "project_media": {"source": "user-owned zhipijun1996/gunman-rush", "authorization": "user explicitly requested use for this video", "scope": "development documentary and project footage", "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim", "third_party_game_or_bilibili_media": false},
-  "tiles": {"asset": "Underworld Tileset", "author": "Asouris", "url": "https://asouris.itch.io/underworld-tileset", "license": "custom permissive publisher statement, not CC0", "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D", "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"},
-  "font": {"name": "Noto Sans CJK", "license": "SIL Open Font License 1.1", "evidence": "/usr/share/doc/fonts-noto-cjk/copyright", "url": "https://github.com/notofonts/noto-cjk"},
-  "narration": {"provider": "Microsoft Edge TTS (Xiaoxiao)", "synthetic": true, "impersonation": false, "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred", "replacement": "Piper with separately reviewed model license"},
-  "music": {"used": false, "reason": "No third-party background music needed for ep001"},
-  "game_sound": {"used_in_final": false, "reason": "Final soundtrack uses narration only; raw source recordings retain original mix"}
+  "project_media": {
+    "source": "user-owned zhipijun1996/gunman-rush",
+    "authorization": "user explicitly requested use for this video",
+    "scope": "development documentary and project footage",
+    "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim",
+    "third_party_game_or_bilibili_media": false
+  },
+  "tiles": {
+    "asset": "Underworld Tileset",
+    "author": "Asouris",
+    "url": "https://asouris.itch.io/underworld-tileset",
+    "license": "custom permissive publisher statement, not CC0",
+    "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D",
+    "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"
+  },
+  "font": {
+    "name": "Noto Sans CJK",
+    "license": "SIL Open Font License 1.1",
+    "evidence": "/usr/share/doc/fonts-noto-cjk/copyright",
+    "url": "https://github.com/notofonts/noto-cjk"
+  },
+  "narration": {
+    "provider": "Microsoft Edge TTS (Xiaoxiao)",
+    "synthetic": true,
+    "impersonation": false,
+    "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred",
+    "replacement": "Piper with separately reviewed model license"
+  },
+  "music": {
+    "used": false,
+    "reason": "No third-party background music needed for ep001"
+  },
+  "game_sound": {
+    "used_in_final": false,
+    "reason": "Final soundtrack uses narration only; raw source recordings retain original mix"
+  },
+  "comparison_tiles": [
+    {
+      "asset": "Retro Lines",
+      "author": "VEXED",
+      "license": "CC0-1.0",
+      "url": "https://v3x3d.itch.io/retro-lines",
+      "evidence": "assets/style_exploration/retro/source/licenses/LICENSE.txt"
+    },
+    {
+      "asset": "Basic Platformer",
+      "author": "Ariel Pinana",
+      "license": "CC0-1.0 (publisher page; original license file is empty)",
+      "url": "https://ariel-pinana.itch.io/platformer-tileset-character-and-monsters",
+      "evidence": "assets/style_exploration/basic/source/licenses/NOTICE.md and publisher_page.txt"
+    },
+    {
+      "asset": "Scribble Platformer",
+      "author": "Kenney",
+      "license": "CC0-1.0",
+      "url": "https://kenney.nl/assets/scribble-platformer",
+      "evidence": "assets/style_exploration/scribble/source/licenses/License.txt"
+    },
+    {
+      "asset": "Cavern Tile Set",
+      "author": "Luis Zuno / ansimuz",
+      "license": "CC0-1.0",
+      "url": "https://opengameart.org/content/cavern-tile-set",
+      "evidence": "assets/style_exploration/cavern/source/licenses/license.txt"
+    }
+  ]
 }

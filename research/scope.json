@@ -9,12 +9,29 @@
   "pr_count": 91,
   "pr_detail_count": 91,
   "github_file_list_capped_prs": [
-    71,
+    67,
     69,
-    67
+    71,
+    92
   ],
   "errors": [],
   "earliest_commit": "2026-10-09T08:11:33Z",
   "latest_commit": "2026-10-21T08:01:53Z",
-  "coverage": "All fetched refs metadata and media/doc paths; all PR bodies/API files/discussions; API file caps disclosed, full local changed paths recovered; curated stories require separate evidence reading."
+  "coverage": "All fetched refs metadata and media/doc paths; all PR bodies/API files/discussions; API file caps disclosed, full local changed paths recovered; curated stories require separate evidence reading.",
+  "snapshot_policy": "Primary Git/episode sources frozen at initial clone; PR detail cache frozen. Later PR list changes are not silently rebound to old details.",
+  "supplemental_scan": {
+    "repository_copy": "build/research/extra-history (not the source worktree)",
+    "additional_heads": {
+      "pr52": "e785d16f7d07e8394679c3ae1b261ed58f3244a6",
+      "pr101_later": "bbf5b24dc6a27374119f67f11fc2eed92a57ba00"
+    },
+    "additional_commits": 3,
+    "union_reachable_commits": 546,
+    "read_documents": [
+      "pr52:docs/development_quality.md",
+      "pr101:docs/current_state.md"
+    ],
+    "episode_forest_source_remains": "6dba342dcf557c89957e31b7faec489574d46abd",
+    "later_status": "Forest/Plains art still unfinished; latest CI/font/consumer fixes do not certify full quality"
+  }
 }

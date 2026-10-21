@@ -107,7 +107,7 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
                  'comparison':'Different stages, not a controlled same-seed before/after benchmark'}
         write(output/'sources.json',sources)
         return [output/'storyboard.json',output/'subtitles.ass',output/'sources.json']
-    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'music':sha(music) if music else None,'music_license':music_license},compose)
+    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
     timeline=read(output/'storyboard.json');sources=read(output/'sources.json')
     def rendering():
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)
@@ -140,10 +140,10 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     stages('Quality Validation',{'final':sha(output/'final.mp4'),'sources':sha(output/'sources.json'),'validator':sha(ROOT/'video_rush/quality.py')},validation)
     def delivery():
         titles=[spec['title'],'概念图很美，实机像贴皮？我用AI做游戏的美术返工记录','独自用AI做Godot游戏：素材越画越多，为什么画面还是不对？']
-        body='# B站上传建议\n\n'+''.join(f'- {x}\n' for x in titles)+'\n分区建议：游戏 → 单机游戏（开发记录）；或知识 → 野生技能协会，以投稿页实际可选分区为准。\n\n标签：AI开发、独立游戏、Godot、游戏开发、Codex、美术、失序之钟\n\n简介：\n\n独自用 AI 制作《失序之钟》，这次复盘概念图到实机的反复返工。包含历史实机、失败候选和有限进展，不代表游戏美术问题已解决。中文AI配音；母版、预览、实验与正式入口分别标注。不同阶段画面对比不是同Seed受控实验。\n\n素材来源：本人项目 gunman-rush 的 Git/PR/历史录像。Underworld Tileset by Asouris，采用作者许可声明；中文字体 Noto Sans CJK，SIL OFL。其余许可状态见 sources.json。\n\n'+''.join(f'- https://github.com/{spec["repository"]}/pull/{p}\n' for p in sorted({n for s in spec['shots'] for n in s['prs']}))+'\n上传前完整观看 phone-review.md 清单；未自动发布到B站。\n'
+        body='# B站上传建议\n\n'+''.join(f'- {x}\n' for x in titles)+'\n分区建议：游戏 → 单机游戏（开发记录）；或知识 → 野生技能协会，以投稿页实际可选分区为准。\n\n标签：AI开发、独立游戏、Godot、游戏开发、Codex、美术、失序之钟\n\n简介：\n\n独自用 AI 制作《失序之钟》，这次复盘概念图到实机的反复返工。包含历史实机、失败候选和有限进展，不代表游戏美术问题已解决。中文AI配音；母版、预览、实验与正式入口分别标注。不同阶段画面对比不是同Seed受控实验。\n\n素材来源：本人项目 gunman-rush 的 Git/PR/历史录像。Underworld Tileset by Asouris，采用作者许可声明；中文字体 Noto Sans CJK，SIL OFL。五风格比较另含 Retro Lines / VEXED、Basic Platformer / Ariel Pinana、Scribble Platformer / Kenney、Cavern Tile Set / ansimuz（CC0；Basic许可来自作者页面，原许可文件为空）。其余许可状态见 sources.json。\n\n'+''.join(f'- https://github.com/{spec["repository"]}/pull/{p}\n' for p in sorted({n for s in spec['shots'] for n in s['prs']}))+'\n上传前完整观看 phone-review.md 清单；未自动发布到B站。\n'
         (output/'bilibili.md').write_text(body)
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':1},delivery)
+    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':2},delivery)
     return output

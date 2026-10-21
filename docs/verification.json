@@ -1,0 +1,145 @@
+{
+  "local_final": {
+    "path": "/workspace/video_rush/build/episodes/ep001/final.mp4",
+    "sha256": "77b3eab6d2a8eea06086a8fa1f21164337e7377ab2f567a3de874dd1e5858232",
+    "bytes": 82609707
+  },
+  "duration": "287.266341",
+  "technical_checks": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_3_to_5_minutes": true,
+    "subtitles_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true
+  },
+  "tests": "4 passed",
+  "resume": "After updated Research, 9 unchanged expensive/downstream stages cached; see build/episodes/ep001/cache-check.log",
+  "scope": {
+    "recorded_at": "2026-10-21T09:45:14.216817+00:00",
+    "repository": "zhipijun1996/gunman-rush",
+    "head": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "main": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "shallow": false,
+    "commit_count": 543,
+    "ref_count": 108,
+    "pr_count": 91,
+    "pr_detail_count": 91,
+    "github_file_list_capped_prs": [
+      67,
+      69,
+      71,
+      92
+    ],
+    "errors": [],
+    "earliest_commit": "2026-10-09T08:11:33Z",
+    "latest_commit": "2026-10-21T08:01:53Z",
+    "coverage": "All fetched refs metadata and media/doc paths; all PR bodies/API files/discussions; API file caps disclosed, full local changed paths recovered; curated stories require separate evidence reading.",
+    "snapshot_policy": "Primary Git/episode sources frozen at initial clone; PR detail cache frozen. Later PR list changes are not silently rebound to old details.",
+    "supplemental_scan": {
+      "repository_copy": "build/research/extra-history (not the source worktree)",
+      "additional_heads": {
+        "pr52": "e785d16f7d07e8394679c3ae1b261ed58f3244a6",
+        "pr101_later": "bbf5b24dc6a27374119f67f11fc2eed92a57ba00"
+      },
+      "additional_commits": 3,
+      "union_reachable_commits": 546,
+      "read_documents": [
+        "pr52:docs/development_quality.md",
+        "pr101:docs/current_state.md"
+      ],
+      "episode_forest_source_remains": "6dba342dcf557c89957e31b7faec489574d46abd",
+      "later_status": "Forest/Plains art still unfinished; latest CI/font/consumer fixes do not certify full quality"
+    }
+  },
+  "pr_heads_unavailable": [],
+  "game_worktree_clean": true,
+  "recording_receipt": {
+    "source_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "kind": "historical_reconstruction",
+    "driver_args": [
+      "--audio-driver",
+      "Dummy",
+      "--write-movie",
+      "/workspace/video_rush/build/recordings/main-7be8-motion/raw.avi",
+      "--fixed-fps",
+      "60",
+      "--script",
+      "tools/capture_underworld_formal.gd",
+      "--",
+      "--motion",
+      "--map=1",
+      "--seed=level-design-v2-baseline/08",
+      "--output=/workspace/video_rush/build/recordings/main-7be8-motion/captures"
+    ],
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "rendering": "Mesa software / virtual display",
+    "warning": "New recording of old source; not contemporaneous original footage",
+    "status": "driver_completed_requires_media_validation"
+  },
+  "phone_review": "pending",
+  "asr_first60": {
+    "scope": "first60s only; no human listening",
+    "model": "Systran/faster-whisper-base",
+    "workaround": "FFmpeg PCM -> numpy bypasses incompatible av.open metadata_errors",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 5.38,
+        "text": "這張AI母版很好看,可為什麼進了GoDirt 時機卻總差一節。"
+      },
+      {
+        "start": 5.38,
+        "end": 9.98,
+        "text": "但進了真實關卡,畫面卻像一排鋪了草皮的平台。"
+      },
+      {
+        "start": 9.98,
+        "end": 14.86,
+        "text": "問題到底是素材不夠,還是我一開始,就做錯了製作順序。"
+      },
+      {
+        "start": 14.86,
+        "end": 25.3,
+        "text": "我獨自用AI開發這款GoDirt遊戲,這期想復盤的不是一次換皮成功,而是概念圖到時機之間,反覆反攻的那段路。"
+      },
+      {
+        "start": 25.7,
+        "end": 33.84,
+        "text": "先交代一個容易混小的地方,概念圖、游覽器和平、開發樣板和正式地圖是四種不同的東西。"
+      },
+      {
+        "start": 33.84,
+        "end": 37.34,
+        "text": "看起來像遊戲,不代表已經接近遊戲。"
+      },
+      {
+        "start": 37.34,
+        "end": 43.34,
+        "text": "早期的美術包就同時保留了AI會畫母版和簡化的實量運行素材。"
+      },
+      {
+        "start": 43.34,
+        "end": 48.66,
+        "text": "方向有了,但運行畫面丟掉了圓圖裡的體積層次和細節。"
+      },
+      {
+        "start": 49.220000000000006,
+        "end": 56.28,
+        "text": "於是我讓AI繼續畫,角色、背景、草顏、木橋都換成更精細的圖片。"
+      },
+      {
+        "start": 56.28,
+        "end": 60.42,
+        "text": "樣板確實更完整,和報告裡也直接寫著,填充。"
+      }
+    ]
+  },
+  "auxiliary_source_read_scope": "52 and newer101 fetched into build/research/extra-history; primary source remains untouched"
+}

@@ -4,6 +4,8 @@
 
 ## 手机使用
 
+首期：[直接下载成片Artifact](https://github.com/zhipijun1996/video_rush/actions/runs/39580103766/artifacts/12336770405) · [成功运行记录](https://github.com/zhipijun1996/video_rush/actions/runs/39580103766)（初始实现提交；完整补充许可见当前仓库rights.json）。
+
 1. 在 Codex 中说：**“用 Video Rush 制作一期关于……的视频”**，或指定 PR / 日期 / 故事 ID。Codex 按四个 Skills 研究和编写分镜，再运行生产命令。无需用户剪辑或改 JSON。
 2. 首期及已经提交的分镜可直接在 GitHub → **Actions → Produce Video Rush episode → Run workflow** 启动。完成后打开该次运行 → **Artifacts → video-rush-ep001**，下载 ZIP，解压 `final.mp4`、`cover.png`。移动浏览器看不到入口时切换桌面版网页；登录同一 GitHub 账号。
 3. 看完 `phone-review.md` 的清单后，通过 B站手机端手动上传。系统不自动发布。Artifact 保留14天，过期可重跑；不是永久视频托管。
@@ -56,7 +58,7 @@ python -m video_rush validate build/episodes/ep001
 | `video_rush/render.py` | 视频窗口、静图运镜、分屏、比较图重排、ASS、封面 |
 | `video_rush/pipeline.py` | 十阶段状态、输入/输出SHA缓存、重试、配乐压低 |
 | `video_rush/quality.py` | 全片解码、格式/音量/字幕/黑屏/静帧/来源验收 |
-| `research/` | 27个候选故事、扫描范围、权利记录；非媒体 |
+| `research/` | 27个候选故事、543提交主扫描与3提交补充、扫描范围、权利记录；非媒体 |
 | `episodes/` | 可复用的脚本与AssetSpec，完整SHA，不提交素材 |
 | `tests/` | 失败恢复、篡改缓存、只读素材、字幕和缺镜头负例 |
 
