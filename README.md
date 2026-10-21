@@ -4,13 +4,13 @@
 
 ## 手机使用
 
-首期：[直接下载成片Artifact](https://github.com/zhipijun1996/video_rush/actions/runs/39580103766/artifacts/12336770405) · [成功运行记录](https://github.com/zhipijun1996/video_rush/actions/runs/39580103766)（初始实现提交；完整补充许可见当前仓库rights.json）。
+以后成片直接交付 **GitHub预发布**，不再把Actions/Artifact作为常规入口。打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`、`cover.png`，或资料ZIP。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
 
-1. 在 Codex 中说：**“用 Video Rush 制作一期关于……的视频”**，或指定 PR / 日期 / 故事 ID。Codex 按四个 Skills 研究和编写分镜，再运行生产命令。无需用户剪辑或改 JSON。
-2. 首期及已经提交的分镜可直接在 GitHub → **Actions → Produce Video Rush episode → Run workflow** 启动。完成后打开该次运行 → **Artifacts → video-rush-ep001**，下载 ZIP，解压 `final.mp4`、`cover.png`。移动浏览器看不到入口时切换桌面版网页；登录同一 GitHub 账号。
-3. 看完 `phone-review.md` 的清单后，通过 B站手机端手动上传。系统不自动发布。Artifact 保留14天，过期可重跑；不是永久视频托管。
+在Codex中说“用Video Rush制作一期关于……的视频”即可。当前宿主按四个Skills研究、创作、在本地渲染验收，提交代码后上传预发布。手机用户无需剪辑、写JSON或操作Actions。已有分镜可以一条CLI完成；未知主题会先形成director-brief，Codex应继续编写与执行，不能把brief交给用户当成片。
 
-**边界：** 无已编写分镜的新主题会生成 `director-brief.json`，退出码3，等待当前 Codex 宿主继续创作。Python/Actions 没有隐藏的模型凭据，不能凭空创作所有新主题。不要把这个创作交接状态当成完成。手机用户把主题交给 Codex 即可，Codex 应继续处理，而不是让用户手工编写 JSON。
+默认风格已改为轻快、紧凑、有个人感：适度反转和自嘲、原创梗图、少量音效与轻BGM（用户指定音轨优先，人声期间自动压低，首尾淡入淡出）。简单介绍约2分钟，其余默认3–5分钟；不凑时长。详见[编辑风格](docs/editorial-style.md)。
+
+旧首期Actions成片仍有[历史运行记录](https://github.com/zhipijun1996/video_rush/actions/runs/39580103766)，只是上一轮的执行证据。后续不依赖该入口。
 
 ## 本地启动
 
@@ -20,19 +20,25 @@
 python -m pip install -e '.[test]'
 python -m video_rush doctor
 python -m video_rush produce --source /workspace/gunman-rush \
-  --topic 'AI生成的概念图为什么无法直接变成好看的游戏'
+  --topic '介绍一下我为什么想用AI圆做游戏的梦'
 pytest -q
 ```
 
-默认使用已编写的首期方案。`--source` 指向游戏本地检出；若不存在，CLI会克隆到该位置。不会在游戏工作区导入或运行Godot。不要把 `--source` 指向 Video Rush 本身。
+默认会在生产后上传GitHub预发布，需要`gh`已授权且分镜/代码已提交推送、工作树干净。调试先加`--local-only`；本地验收后用`python -m video_rush deliver build/episodes/ep002`交付。已编写首期美术复盘和本期初心介绍两套方案。`--source` 指向游戏本地检出；若不存在，CLI会克隆到该位置。不会在游戏工作区导入或运行Godot。不要把 `--source` 指向 Video Rush 本身。
 
 ```bash
 # 全历史扫描；不refresh时冻结已有Git引用和PR详情缓存
 python -m video_rush research --source /workspace/gunman-rush
 # 明确更新远端历史（只fetch，不改游戏源码/当前检出）
 python -m video_rush research --source /workspace/gunman-rush --refresh
-# 已编写新一期：完整生产与失败恢复使用同一条命令
+# 已编写一期：完整生产与失败恢复使用同一条命令，完成后直接预发布
 python -m video_rush produce --spec episodes/ep002.json --source /workspace/gunman-rush
+# 只调试/验收，不先上传
+python -m video_rush produce --spec episodes/ep002.json --local-only
+# 提交推送后，将验收文件交付到GitHub预发布
+python -m video_rush deliver build/episodes/ep002
+# 修订成片使用新tag，避免覆盖已有版本
+python -m video_rush deliver build/episodes/ep002 --tag ep002-v2
 # 提交给当前Codex宿主的创作选择器
 python -m video_rush produce --pr 90
 python -m video_rush produce --story S090
@@ -57,6 +63,8 @@ python -m video_rush validate build/episodes/ep001
 | `video_rush/narration.py` | Edge/Piper、代理、真实波形校验、边界时间 |
 | `video_rush/render.py` | 视频窗口、静图运镜、分屏、比较图重排、ASS、封面 |
 | `video_rush/pipeline.py` | 十阶段状态、输入/输出SHA缓存、重试、配乐压低 |
+| `video_rush/publish.py` | 验收/hash守门、预发布上传与服务端digest复核 |
+| `video_rush/graphics.py` | 原创表情梗图、简短合成底乐与音效 |
 | `video_rush/quality.py` | 全片解码、格式/音量/字幕/黑屏/静帧/来源验收 |
 | `research/` | 27个候选故事、543提交主扫描与3提交补充、扫描范围、权利记录；非媒体 |
 | `episodes/` | 可复用的脚本与AssetSpec，完整SHA，不提交素材 |
@@ -83,6 +91,8 @@ python -m video_rush produce --spec episodes/ep001.json \
   --music /path/to/music.wav --music-license 'CC0; author; source URL'
 ```
 
+本期上传曲目由 `music_asset` 固定文件路径和SHA；媒体不提交Git。换环境重现时需恢复同一用户音轨，否则明确失败，不静默换曲。
+
 Piper代码路径已实现，未在本轮下载模型或冒称其声音已经验证。模型许可需随具体模型审查。Edge属于免费可访问服务，不是离线开源引擎或可保证可用的服务。首期不用第三方BGM，不保留游戏音轨，避免不必要的音乐许可混用。
 
 素材授权依据为用户本人项目制作请求。Underworld是Asouris的自定义宽松声明，**不是CC0**；Noto CJK为SIL OFL。AI素材的原始供应商商业条款未独立披露，不臆造“全部可商用”。见 `research/rights.json` 和成品 `sources.json`。
@@ -93,8 +103,12 @@ Piper代码路径已实现，未在本轮下载模型或冒称其声音已经验
 
 技术通过只证明：文件可解码、1080p/30fps/H.264/AAC、时长范围、有真实TTS音频、字幕不越界、无明显削波/长黑屏/意外长静帧，来源文件hash匹配。波形非零不等于独立语音识别通过。内容只做结构检查；完整事实独审、手机试听、审美与最终用户认可都不能自动代签。`phone-review.md` 保持待审核。
 
-## Actions与资源
+## 预发布交付与资源
 
-手动workflow按AssetSpec的完整SHA执行浅层、延迟blob拉取，不下载8GB全历史。历史研究在Codex/本地完成；Actions复现固定分镜和素材。50分钟上限，14天Artifact保留，失败也上传现有报告/日志。需要Actions允许运行且仓库公开可读取素材；私有来源另需配置授权，默认只读GITHUB_TOKEN不能假定跨私库可用。
+默认 `produce` 在成功生产后直接创建GitHub Prerelease；`--local-only`允许先检查和修改。`deliver`会核对技术验收、内容结构检查、MP4及全部交付文件的hash，要求生产代码/分镜已提交推送。人类审核待完成可以交付预发布，不冒称审美通过。
 
-实际云端执行状态与精确链接见 [实施记录](docs/implementation.md)。未运行的workflow不作为成功证据。工具/缓存/TTS服务可能失败，失败会阻止交付并留下可恢复状态。
+每期附MP4、PNG封面和含脚本/字幕/来源/报告的ZIP，并核对GitHub返回的大小和SHA256。已有正式Release绝不覆盖；已有预发布若内容不同，使用新修订tag。调用或上传失败保留 `prerelease.failure.json`，不会声称已上传。
+
+活动Actions工作流已移到 `docs/archive/produce-actions.yml`，保留旧证据；不再作为后续常规执行/下载入口。既有工作流的成功记录见 [上一轮实施记录](docs/implementation.md)。
+
+真实配音、素材、渲染和预发布上传都可能失败；状态和日志用于恢复。新主题创作仍由当前Codex宿主完成，没有暗藏的模型服务或凭据。

@@ -2,7 +2,9 @@ from __future__ import annotations
 import os
 from pathlib import Path
 import subprocess
-from .common import sha, write, probe, run
+import urllib.request
+from urllib.parse import urlparse
+from .common import ROOT, sha, write, probe, run, digest
 from .history import git
 
 
@@ -12,6 +14,33 @@ def collect(repo, spec, output):
     output.mkdir(parents=True, exist_ok=True)
     collected = []
     for asset in spec['assets']:
+        origin=asset.get('origin','git')
+        if origin in ('editorial','external'):
+            dest=output/(asset['id']+'.png')
+            if origin=='editorial':
+                from .graphics import graphic
+                graphic(dest,asset['graphic'])
+                obj=dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),
+                         source_url='original-editorial-graphic:'+asset['id'],generator_sha256=sha(ROOT/'video_rush/graphics.py'))
+            else:
+                url=asset['url']
+                if urlparse(url).scheme!='https' or not asset.get('sha256'):
+                    raise ValueError('External media requires HTTPS and a pinned SHA256')
+                if not dest.exists() or sha(dest)!=asset['sha256']:
+                    tmp=dest.with_suffix('.download')
+                    with urllib.request.urlopen(url,timeout=60) as response,tmp.open('wb') as f:
+                        total=0
+                        while block:=response.read(1024*1024):
+                            total+=len(block)
+                            if total>50*1024*1024:raise ValueError('External still exceeds 50MiB')
+                            f.write(block)
+                    if sha(tmp)!=asset['sha256']:
+                        tmp.unlink();raise ValueError('External asset SHA256 mismatch')
+                    tmp.replace(dest)
+                obj=dict(asset,local_path=str(dest.resolve()),source_url=asset['page_url'])
+            collected.append(obj)
+            continue
+        if origin!='git':raise ValueError('Unsupported asset origin')
         sha_full = git(repo, 'rev-parse', f'{asset["commit"]}^{{commit}}').strip()
         path = Path(asset['path'])
         if path.is_absolute() or '..' in path.parts:

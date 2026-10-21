@@ -59,3 +59,27 @@ def test_clip_is_not_looped_to_hide_missing_footage(tmp_path):
     subprocess.run(['ffmpeg','-y','-v','error','-f','lavfi','-i','color=blue:s=64x64:r=30:d=0.5','-c:v','libx264',str(p)],check=True)
     with pytest.raises(ValueError,match='insufficient footage'):
         encode_shot({'start':0,'end':4,'assets':['x'],'offsets':[0]}, {'x':{'local_path':str(p)}},tmp_path/'out.mp4',tmp_path/'log')
+
+
+def test_failed_or_tampered_movie_cannot_be_prereleased(tmp_path):
+    from video_rush.publish import verified_files
+    from video_rush.common import sha
+    movie=tmp_path/'final.mp4';movie.write_bytes(b'validated fixture')
+    write(tmp_path/'report.json',{'technical':{'passed':False},'content':{'structural_pass':True},'final':{'sha256':sha(movie)}})
+    write(tmp_path/'delivery.json',{'files':{'final.mp4':sha(movie)}})
+    with pytest.raises(ValueError,match='requires technical'):verified_files(tmp_path)
+    r=read(tmp_path/'report.json');r['technical']['passed']=True;write(tmp_path/'report.json',r)
+    assert verified_files(tmp_path)=={'final.mp4':sha(movie)}
+    movie.write_bytes(b'changed after review')
+    with pytest.raises(ValueError,match='changed after validation'):verified_files(tmp_path)
+
+
+def test_external_media_requires_pinned_hash_and_checks_bytes(tmp_path, monkeypatch):
+    import io,hashlib
+    from video_rush import footage
+    raw=b'original fixture';expected=hashlib.sha256(raw).hexdigest()
+    monkeypatch.setattr(footage.urllib.request,'urlopen',lambda *a,**k:io.BytesIO(raw))
+    asset={'id':'reference','origin':'external','url':'https://example.invalid/image.png','page_url':'https://example.invalid','sha256':expected,'kind':'official_reference_screenshot'}
+    assert collect(tmp_path,{'assets':[asset]},tmp_path/'out')[0]['sha256']==expected
+    asset['sha256']='0'*64
+    with pytest.raises(ValueError,match='SHA256 mismatch'):collect(tmp_path,{'assets':[asset]},tmp_path/'other')

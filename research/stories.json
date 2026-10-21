@@ -1048,5 +1048,40 @@
       "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
       "priority": "high"
     }
+  },
+  {
+    "id": "U001",
+    "event": "小时候想做游戏，成年后借AI尝试圆梦",
+    "date": "2026-10-21",
+    "background": "从小喜欢游戏，梦想做自己的游戏。",
+    "conflict": "成年后需要生活，专业不是程序员。",
+    "attempts": [
+      "用AI协助开发Godot游戏《失序之钟》。"
+    ],
+    "result": "项目开发中；决定不定期分享过程并邀请建议。",
+    "truth_status": "user_testimony_and_project_in_progress",
+    "evidence_status": "本轮用户直接提供自述；未新增年龄、职业、收入或游戏时数。",
+    "commit": null,
+    "pr": null,
+    "sources": [
+      {
+        "kind": "user_testimony",
+        "path": "research/ep002-testimony.json"
+      }
+    ],
+    "media": [
+      "dream",
+      "life",
+      "ai_team",
+      "new_movie"
+    ],
+    "recordability": {
+      "saved_media_available": true,
+      "memoir_graphics": "original illustrative graphics, not childhood photographs"
+    },
+    "video_potential": {
+      "reason": "个人动机与现实落差明确，有真实项目作为进展。",
+      "priority": "high"
+    }
   }
 ]

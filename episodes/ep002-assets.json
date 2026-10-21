@@ -1,0 +1,265 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "hollow_knight",
+      "origin": "external",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_bd76bd88bc5334ee56ae3d5f0d8dec4455e8e3b8.1920x1080.jpg?t=1776125684",
+      "page_url": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+      "sha256": "36630f6d4c495bb69ffd6febdff211704f4c7d2604123c335a50a32e6a1d335e",
+      "kind": "official_reference_screenshot",
+      "license": "copyright retained; brief attributed editorial reference to personal inspiration; no game audio",
+      "display_label": "《空洞骑士》官方截图 · Team Cherry · 非本作"
+    },
+    {
+      "id": "ori",
+      "origin": "external",
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/ss_f8ac174b7949e89fe1939a7bd2c471785dee55f0.1920x1080.jpg?t=1759530749",
+      "page_url": "https://www.orithegame.com/media/",
+      "sha256": "d710942643daa993c1f1e65eaf0916171f6cc70e5718b6b5dfb18e4aad45f147",
+      "kind": "official_reference_screenshot",
+      "license": "copyright retained; brief attributed editorial reference to personal inspiration; no game audio",
+      "display_label": "《奥日与萤火意志》官方截图 · Moon Studios / Xbox · 非本作"
+    },
+    {
+      "id": "new_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/formal/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "《失序之钟》开发实机 · 非最终版本"
+    },
+    {
+      "id": "home_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/home/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "《失序之钟》开发实机 · 非最终版本"
+    },
+    {
+      "id": "new",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map1_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a1110",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "《失序之钟》开发实机 · 非最终版本"
+    },
+    {
+      "id": "new2",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map2_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a1110",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "《失序之钟》开发实机 · 非最终版本"
+    },
+    {
+      "id": "forest_route",
+      "path": "docs/evidence/forest_fruit_routes04/final-W2/gameplay.mp4",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 96,
+      "runtime_commit": "50c9ed89e5cf632d8e2a58db03f83df8fb573589",
+      "kind": "original_game_recording",
+      "display_label": "森林历史开发演示 · 非最终美术",
+      "license": "user-authorized project footage; original mix omitted"
+    },
+    {
+      "id": "actions",
+      "path": "docs/evidence/action_budget/upward.mp4",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 65,
+      "runtime_commit": "862a05b82018244c69151e8a2f5f65153931c13e",
+      "kind": "original_game_recording",
+      "display_label": "反冲动作开发演示",
+      "license": "user-authorized project footage; original mix omitted"
+    },
+    {
+      "id": "plains_boss",
+      "path": "docs/evidence/underworld_plains/independent_review/formal_c_1cbf/final_motion_map1_boss.mp4",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 94,
+      "runtime_commit": null,
+      "kind": "original_game_recording",
+      "display_label": "风铃平原历史实机 · 开发中",
+      "license": "user-authorized project footage; original mix omitted"
+    },
+    {
+      "id": "plains_merchant",
+      "path": "docs/evidence/underworld_plains/independent_review/formal_c_1cbf/final_motion_map1_merchant.mp4",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 94,
+      "runtime_commit": null,
+      "kind": "original_game_recording",
+      "display_label": "风铃平原历史实机 · 开发中",
+      "license": "user-authorized project footage; original mix omitted"
+    },
+    {
+      "id": "reward",
+      "path": "docs/evidence/underworld_plains/revision2/ui_g/reward.png",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 94,
+      "kind": "positioned_game_screenshot",
+      "display_label": "现有奖励界面开发样板 · 非完整成长验收",
+      "license": "user project screenshot"
+    },
+    {
+      "id": "shop",
+      "path": "docs/evidence/underworld_plains/revision2/ui_g/shop.png",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "pr": 94,
+      "kind": "positioned_game_screenshot",
+      "display_label": "现有奖励界面开发样板 · 非完整成长验收",
+      "license": "user project screenshot"
+    },
+    {
+      "id": "dream",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "小时候的我",
+        "lines": [
+          "长大以后",
+          "我要做游戏！"
+        ],
+        "face": "happy",
+        "footer": "自述改编 · 原创小剧场"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "life",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "长大以后的我",
+        "lines": [
+          "做游戏的梦想",
+          "先让生活插个队"
+        ],
+        "face": "thinking",
+        "footer": "生活这关，没有跳过按钮"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "ai_team",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "现在：队伍组好了",
+        "lines": [
+          "我：负责想做什么",
+          "AI：帮忙写代码",
+          "Bug：负责制造惊喜"
+        ],
+        "face": "panic",
+        "font_size": 65,
+        "footer": "原创梗图 · 不是实际开发统计"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "pain",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "我玩高难度平台跳跃时",
+        "lines": [
+          "嘴上：这也太难了",
+          "手上：再来一次"
+        ],
+        "face": "panic",
+        "font_size": 72,
+        "footer": "喜好与体验的自述 · 不是苦痛之路实机"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "reverse",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "原来枪还能这样用？",
+        "lines": [
+          "别人开枪：打怪",
+          "我开枪：把自己送走"
+        ],
+        "face": "happy",
+        "font_size": 72,
+        "footer": "夸张梗文案，实际位移看随后实机"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "lock",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "能力锁：设计目标",
+        "lines": [
+          "以前：过不去",
+          "学会新动作",
+          "现在：这也能走？！"
+        ],
+        "face": "happy",
+        "font_size": 72,
+        "footer": "解释性示意 · 不是完整解锁链实机"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "scope",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "开发进度：诚实版",
+        "lines": [
+          "野心：已经出发",
+          "完成度：还在赶路"
+        ],
+        "face": "thinking",
+        "font_size": 78,
+        "footer": "完整能力授予链 / 多区域仍在制作"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    },
+    {
+      "id": "ask",
+      "origin": "editorial",
+      "graphic": {
+        "kicker": "观众老爷，轮到你们了",
+        "lines": [
+          "反冲爽不爽？",
+          "哪里看着不对劲？",
+          "评论区，救救这个坑"
+        ],
+        "face": "happy",
+        "font_size": 68,
+        "footer": "《失序之钟》 · 开发中 · 不定期更新"
+      },
+      "kind": "editorial_graphic",
+      "display_label": "原创小剧场 / 示意，非游戏画面",
+      "license": "original Video Rush graphic, authored for user"
+    }
+  ]
+}

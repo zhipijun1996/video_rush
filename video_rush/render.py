@@ -63,6 +63,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Default,Noto Sans CJK SC,52,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,1,0,1,3,1,2,100,100,64,1
 Style: Title,Noto Sans CJK SC,44,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,7,62,60,30,1
 Style: Source,Noto Sans CJK SC,27,&H00BCDDCD,&H000000FF,&H00101824,&H80000000,0,0,0,0,100,100,0,0,1,1,0,9,60,60,38,1
+Style: Punch,Noto Sans CJK SC,64,&H0087E5FF,&H000000FF,&H0012243A,&H0012243A,-1,0,0,0,100,100,0,0,3,12,1,9,90,100,130,1
 Style: Emphasis,Noto Sans CJK SC,57,&H008EEBD2,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,3,1,8,80,80,120,1
 
 [Events]
@@ -74,10 +75,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     def put(st, en, style, text):
         lines.append(f'Dialogue: 0,{ass_time(st)},{ass_time(en)},{style},,0,0,0,,{safe(text)}\n')
     for s in timeline['shots']:
-        put(s['start'], s['end'], 'Title', f'{s["chapter"]}  {s["title"]}')
+        if timeline.get('display_chapters',True):
+            put(s['start'], s['end'], 'Title', f'{s["chapter"]}  {s["title"]}')
         put(s['start'], s['end'], 'Source', s['provenance_label'])
         if s.get('emphasis'):
             put(s['start']+.4, min(s['start']+4, s['end']), 'Emphasis', s['emphasis'])
+        if s.get('punchline'):
+            put(s['start']+.15,min(s['start']+2.4,s['end']),'Punch',s['punchline'])
         for cue in s['cues']:
             put(cue['start'], cue['end'], 'Default', cue['text'])
     Path(path).write_text(''.join(lines))
@@ -136,7 +140,24 @@ def encode_shot(shot, assets, out, log, *, threads=4):
     run(args, log=log, timeout=600)
 
 
-def cover(path, left, right):
+def cover(path, left, right, design=None):
+    if design and design.get('layout')=='intro':
+        im=ImageOps.fit(Image.open(right).convert('RGB'),(1920,1080))
+        shade=Image.new('RGBA',im.size,(0,0,0,0));d=ImageDraw.Draw(shade)
+        d.rectangle((0,0,1920,1080),fill=(8,18,32,75))
+        d.rounded_rectangle((45,45,1175,1035),40,fill=(12,27,45,245),outline=(135,235,212,255),width=3)
+        d.text((100,85),design['series'],font=ImageFont.truetype(font(True),40),fill='#9ce7d4')
+        # Original controller doodle, rather than cropping text from a narrative card.
+        d.rounded_rectangle((130,215,710,510),90,fill='#ffe085',outline='#13263a',width=10)
+        d.rectangle((230,285,265,410),fill='#16304b');d.rectangle((185,330,310,365),fill='#16304b')
+        for x,y,color in [(535,325,'#e7798c'),(595,385,'#65b9d2')]:d.ellipse((x-28,y-28,x+28,y+28),fill=color)
+        d.text((130,550),'童年梦想 × AI 新队友',font=ImageFont.truetype(font(True),52),fill='white')
+        d.text((100,665),design['line1'],font=ImageFont.truetype(font(True),107),fill='white')
+        d.text((100,825),design['line2'],font=ImageFont.truetype(font(True),76),fill='#99ecd7')
+        d.rounded_rectangle((1290,90,1810,180),18,fill=(8,18,32,230))
+        d.text((1330,108),'右侧：本作开发实机',font=ImageFont.truetype(font(True),36),fill='white')
+        Image.alpha_composite(im.convert('RGBA'),shade).convert('RGB').save(path)
+        return
     im = Image.new('RGB', (1920, 1080), BG)
     for p, x in [(left, 0),(right, 960)]:
         a = Image.open(p).convert('RGB')
@@ -146,10 +167,10 @@ def cover(path, left, right):
     d.rectangle((0,0,1920,1080),fill=(4,12,22,75))
     d.rectangle((0,690,1920,1080),fill=(5,14,26,235))
     d.rectangle((950,0,970,690),fill=(125,238,210,255))
-    d.text((70,55),'AI 独立游戏开发记录  /  01',font=ImageFont.truetype(font(True),43),fill='white')
-    for x,t in [(70,'概念图'),(1040,'真实运行画面')]:
+    d.text((70,55),(design or {}).get('series','AI 独立游戏开发记录  /  01'),font=ImageFont.truetype(font(True),43),fill='white')
+    for x,t in [(70,(design or {}).get('left_label','概念图')),(1040,(design or {}).get('right_label','真实运行画面'))]:
         d.rounded_rectangle((x,565,x+470,657),14,fill=(7,18,28,230))
         d.text((x+25,579),t,font=ImageFont.truetype(font(True),48),fill='white')
-    d.text((65,732),'概念图很好看',font=ImageFont.truetype(font(True),102),fill='white')
-    d.text((65,870),'为什么实机总差一截？',font=ImageFont.truetype(font(True),98),fill='#8ee8cf')
+    d.text((65,732),(design or {}).get('line1','概念图很好看'),font=ImageFont.truetype(font(True),102),fill='white')
+    d.text((65,870),(design or {}).get('line2','为什么实机总差一截？'),font=ImageFont.truetype(font(True),98),fill='#8ee8cf')
     Image.alpha_composite(im.convert('RGBA'),mask).convert('RGB').save(path)

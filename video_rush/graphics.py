@@ -1,0 +1,65 @@
+"""Original editorial graphics/audio; never rendered as counterfeit game footage."""
+from pathlib import Path
+import math
+import wave
+import array
+from PIL import Image, ImageDraw, ImageFont
+from .common import font
+
+
+def graphic(path, spec):
+    im=Image.new('RGB',(1920,1080),spec.get('background','#122137'));d=ImageDraw.Draw(im)
+    for x in range(40,1920,70):
+        for y in range(40,1080,70):d.ellipse((x,y,x+3,y+3),fill='#29415c')
+    yellow='#ffe085';cyan='#8cebd2';white='#f4f7ff'
+    d.rounded_rectangle((90,120,1830,900),40,fill='#1a304b',outline=cyan,width=4)
+    d.text((135,155),spec.get('kicker','原创小剧场'),font=ImageFont.truetype(font(True),34),fill=cyan)
+    face=spec.get('face','happy');cx,cy=1510,520
+    d.ellipse((cx-170,cy-170,cx+170,cy+170),fill=yellow,outline='#101c2e',width=8)
+    if face=='panic':
+        for xx in [cx-65,cx+65]:d.line((xx-24,cy-55,xx+24,cy-7),fill='#162436',width=12);d.line((xx+24,cy-55,xx-24,cy-7),fill='#162436',width=12)
+        d.ellipse((cx-36,cy+25,cx+36,cy+100),fill='#162436')
+        d.polygon([(cx+130,cy-155),(cx+95,cy-95),(cx+160,cy-100)],fill='#78dcff')
+    elif face=='thinking':
+        d.line((cx-100,cy-50,cx-40,cy-50),fill='#162436',width=12);d.line((cx+35,cy-50,cx+95,cy-50),fill='#162436',width=12)
+        d.line((cx-50,cy+70,cx+50,cy+70),fill='#162436',width=12)
+    else:
+        for xx in [cx-65,cx+65]:d.ellipse((xx-14,cy-48,xx+14,cy-6),fill='#162436')
+        d.arc((cx-70,cy-5,cx+70,cy+100),0,180,fill='#162436',width=14)
+    lines=spec.get('lines',[]);y=310
+    for i,line in enumerate(lines):
+        size=spec.get('font_size',80 if len(line)<14 else 64)
+        d.text((145,y),line,font=ImageFont.truetype(font(True),size),fill=yellow if i==spec.get('highlight',len(lines)-1) else white)
+        y+=132
+    if spec.get('footer'):d.text((145,825),spec['footer'],font=ImageFont.truetype(font(),32),fill='#b9c9dc')
+    im.save(path)
+
+
+def score(path, seconds=210, sample_rate=24000):
+    # Original simple pentatonic note sequence, not sampled from games/music.
+    notes=[60,67,69,64,62,67,64,69,60,64,67,72,69,67,62,64]
+    data=array.array('h');beat=.4
+    for i in range(int(seconds*sample_rate)):
+        t=i/sample_rate;step=int(t/beat);phase=t%beat
+        midi=notes[step%len(notes)];hz=440*2**((midi-69)/12)
+        env=(1-math.exp(-phase*80))*math.exp(-phase*9)
+        melody=(math.sin(2*math.pi*hz*t)+.18*math.sin(4*math.pi*hz*t))*env
+        bass_hz=440*2**(([48,53,45,55][int(t/(beat*4))%4]-69)/12)
+        bass=math.sin(2*math.pi*bass_hz*t)*math.exp(-(t%(beat*2))*6)
+        v=(melody*.40+bass*.22)*min(1,t/1.5,max(0,(seconds-t)/2))
+        data.append(int(v*15000))
+    with wave.open(str(path),'wb') as w:w.setnchannels(1);w.setsampwidth(2);w.setframerate(sample_rate);w.writeframes(data.tobytes())
+
+
+def effects(path, timeline, sample_rate=24000):
+    data=array.array('h',[0])*int((timeline['duration']+1)*sample_rate)
+    for shot in timeline['shots']:
+        kind=shot.get('sfx')
+        if not kind:continue
+        start=int((shot['start']+.08)*sample_rate);length=.25 if kind=='pop' else .45
+        for j in range(int(length*sample_rate)):
+            t=j/sample_rate;env=(1-t/length)**2
+            freq=(650+2000*t) if kind=='pop' else (600-900*t)
+            v=int(math.sin(2*math.pi*freq*t)*env*3600)
+            data[start+j]=max(-30000,min(30000,data[start+j]+v))
+    with wave.open(str(path),'wb') as w:w.setnchannels(1);w.setsampwidth(2);w.setframerate(sample_rate);w.writeframes(data.tobytes())

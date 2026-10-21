@@ -1,0 +1,760 @@
+{
+  "schema_version": 2,
+  "episode": "ep002",
+  "title": "小时候想做游戏，长大后我找来了 AI",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep002-assets.json",
+  "story_ids": [
+    "U001",
+    "S094"
+  ],
+  "evidence": [
+    {
+      "id": "user-origin-20261021",
+      "kind": "user_testimony",
+      "source": "用户本轮明确自述",
+      "facts": [
+        "从小喜欢游戏，小时候梦想做游戏",
+        "长大需要生活，专业不是程序员",
+        "现在想尝试用AI圆做游戏的梦",
+        "喜欢空洞骑士、奥日，尤其苦痛之路连续精准操作的快感",
+        "希望不定期分享开发，邀请观众建议"
+      ],
+      "verification": "provided directly by user; no invented age, profession, employment, income or playtime"
+    },
+    {
+      "id": "design-abilities",
+      "kind": "design_document",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/design/player_actions/regions_v0.3.md",
+      "status": "confirmed direction, not complete implementation"
+    },
+    {
+      "id": "current-generation",
+      "kind": "implementation_scope_document",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/generation_current.md",
+      "status": "formal scope differs from development ability demos"
+    },
+    {
+      "id": "official-reference",
+      "kind": "official_publicity_stills",
+      "urls": [
+        "https://www.hollowknight.com/",
+        "https://www.teamcherry.com.au/faq",
+        "https://www.orithegame.com/media/"
+      ],
+      "scope": "brief named editorial reference to personal inspirations; not the users game; not path-of-pain footage"
+    }
+  ],
+  "target_duration": [
+    90,
+    180
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+3%",
+  "playback_speed": 1.06,
+  "display_chapters": false,
+  "original_music": false,
+  "shots": [
+    {
+      "id": "s01",
+      "assets": [
+        "dream"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "小时候，我有个梦想：长大以后，要做自己的游戏。",
+      "chapter": "",
+      "title": "小时候",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null,
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s02",
+      "assets": [
+        "life"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "长大以后发现，生活这关，还真没有跳过按钮。",
+      "chapter": "",
+      "title": "反转",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "梦想：暂存一下",
+      "sfx": "fail",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s03",
+      "assets": [
+        "home_movie"
+      ],
+      "offsets": [
+        5
+      ],
+      "narration": "我的专业也不是编程。这个梦想，就这样一直放着。",
+      "chapter": "",
+      "title": "现实",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s04",
+      "assets": [
+        "ai_team"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "但现在，AI 来了。我就想：能不能让它帮忙，把小时候那个坑填上？",
+      "chapter": "",
+      "title": "新队友",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "新队友已加入",
+      "sfx": "pop",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s05",
+      "assets": [
+        "new_movie"
+      ],
+      "offsets": [
+        0.3
+      ],
+      "narration": "于是，《失序之钟》开坑了。",
+      "chapter": "",
+      "title": "开坑",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s06",
+      "assets": [
+        "hollow_knight"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "我很喜欢《空洞骑士》，也喜欢《奥日》。",
+      "chapter": "",
+      "title": "喜欢的游戏",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021",
+        "official-reference"
+      ],
+      "claim_type": "editorial_reflection",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s07",
+      "assets": [
+        "ori"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "漂亮的世界固然吸引我，但最让我上头的，是操作本身。",
+      "chapter": "",
+      "title": "喜欢的游戏",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021",
+        "official-reference"
+      ],
+      "claim_type": "editorial_reflection",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s08",
+      "assets": [
+        "pain"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "尤其是苦痛之路。嘴上说着太难了，手上已经按下了再来一次。",
+      "chapter": "",
+      "title": "上头现场",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "再来亿次",
+      "sfx": "fail",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s09",
+      "assets": [
+        "forest_route"
+      ],
+      "offsets": [
+        2
+      ],
+      "narration": "连续跳跃、空中调整、精准落地。一整串动作接起来，那一下，真的爽。",
+      "chapter": "",
+      "title": "我想做出的快感",
+      "emphasis": "",
+      "prs": [
+        96
+      ],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "就想要这股连贯劲儿",
+      "sfx": null
+    },
+    {
+      "id": "s10",
+      "assets": [
+        "reverse"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "所以，我想做的平台跳跃，核心有一点不一样：枪，是拿来赶路的。",
+      "chapter": "",
+      "title": "反冲跳跃",
+      "emphasis": "",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "枪：我还有这功能？",
+      "sfx": "pop",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s11",
+      "assets": [
+        "actions"
+      ],
+      "offsets": [
+        2
+      ],
+      "narration": "朝下开枪，把自己顶起来；朝反方向射击，用反冲去够下一个落点。",
+      "chapter": "",
+      "title": "动作演示",
+      "emphasis": "",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s12",
+      "assets": [
+        "plains_boss"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "当然，它也能打怪。只是我更关心，这一枪能把人送到哪里。",
+      "chapter": "",
+      "title": "动作优先",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s13",
+      "assets": [
+        "plains_merchant"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "再加上肉鸽的随机地图、探索和成长，让每一局的路和选择有变化。",
+      "chapter": "",
+      "title": "肉鸽方向",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "current-generation"
+      ],
+      "claim_type": "editorial_reflection",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s14",
+      "assets": [
+        "reward"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "我想要的不是原地叠伤害，而是让成长，也改变你怎么穿过地图。",
+      "chapter": "",
+      "title": "成长想做什么",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null,
+      "display_source": "现有奖励界面样板 · 成长玩法仍在迭代"
+    },
+    {
+      "id": "s15",
+      "assets": [
+        "lock"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "还有能力锁：以前够不着的地方，学会新动作之后，突然就看懂了。",
+      "chapter": "",
+      "title": "能力锁",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "设计目标，正在制作",
+      "sfx": "pop",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s16",
+      "assets": [
+        "forest_route"
+      ],
+      "offsets": [
+        12
+      ],
+      "narration": "比如钩索，把远处的锚点变成落脚的机会。这段是已有的开发演示。",
+      "chapter": "",
+      "title": "已有钩索演示",
+      "emphasis": "",
+      "prs": [
+        96
+      ],
+      "evidence": [
+        "current-generation"
+      ],
+      "claim_type": "editorial_reflection",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s17",
+      "assets": [
+        "new2"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "但完整的能力授予链和多区域流程，还在做。我先不把饼说成成品。",
+      "chapter": "",
+      "title": "进度边界",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "design-abilities",
+        "current-generation"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "先别催，饼还在烤",
+      "sfx": "fail",
+      "display_source": "《失序之钟》开发截图 · 非最终版本"
+    },
+    {
+      "id": "s18",
+      "assets": [
+        "new_movie"
+      ],
+      "offsets": [
+        3.8
+      ],
+      "narration": "区域不只换色。平原练反冲，森林练钩索。",
+      "chapter": "",
+      "title": "区域特色",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s19",
+      "assets": [
+        "forest_route"
+      ],
+      "offsets": [
+        24
+      ],
+      "narration": "后面还想让不同区域，逼你把同一套动作，玩出不一样的花样。",
+      "chapter": "",
+      "title": "区域设计目标",
+      "emphasis": "",
+      "prs": [
+        96
+      ],
+      "evidence": [
+        "design-abilities"
+      ],
+      "claim_type": "planned_or_scoped_feature",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s20",
+      "assets": [
+        "scope"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "目前，野心已经出发，完成度还在后面追。挺好，这下有得更新了。",
+      "chapter": "",
+      "title": "适度自嘲",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021",
+        "current-generation"
+      ],
+      "claim_type": "editorial_reflection",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "完成度：等等我",
+      "sfx": "fail",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s21",
+      "assets": [
+        "home_movie"
+      ],
+      "offsets": [
+        19
+      ],
+      "narration": "以后我会不定期分享开发：做成了什么，又被 AI 和 Bug 教了什么。",
+      "chapter": "",
+      "title": "后续更新",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "s22",
+      "assets": [
+        "ask"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "观众老爷们多给点建议：反冲看着爽不爽？哪里不合理？评论区帮我看看。",
+      "chapter": "",
+      "title": "邀请建议",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "original_graphic",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": null,
+      "sfx": "pop",
+      "display_source": "原创小剧场 · 非实机"
+    },
+    {
+      "id": "s23",
+      "assets": [
+        "new"
+      ],
+      "offsets": [
+        0
+      ],
+      "narration": "至于能不能圆梦？先做下去。总不能一直把梦想，放在待办列表里。",
+      "chapter": "",
+      "title": "结尾",
+      "emphasis": "",
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "user-origin-20261021"
+      ],
+      "claim_type": "personal_testimony",
+      "fact_check": "user-provided memoir / linked design and scoped footage; no manufactured implementation claims",
+      "shot_type": "source_media",
+      "transition": "tight_cut",
+      "sound": "original_bed_and_selective_synth_pop",
+      "punchline": "先开坑，再往前走",
+      "sfx": null,
+      "display_source": "《失序之钟》开发截图 · 非最终版本"
+    }
+  ],
+  "editorial_status": "authored_from_user_testimony_and_evidence; human_phone_review_pending",
+  "cover_assets": [
+    "dream",
+    "new"
+  ],
+  "cover": {
+    "series": "《失序之钟》 / 开坑篇",
+    "left_label": "小时候的梦想",
+    "right_label": "现在的实机",
+    "line1": "不是程序员",
+    "line2": "也想用 AI 做游戏",
+    "layout": "intro"
+  },
+  "rights": {
+    "project_media": {
+      "source": "user-owned zhipijun1996/gunman-rush",
+      "authorization": "user explicitly requested use for this video",
+      "scope": "development documentary and project footage",
+      "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim",
+      "third_party_game_or_bilibili_media": false
+    },
+    "tiles": {
+      "asset": "Underworld Tileset",
+      "author": "Asouris",
+      "url": "https://asouris.itch.io/underworld-tileset",
+      "license": "custom permissive publisher statement, not CC0",
+      "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D",
+      "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"
+    },
+    "font": {
+      "name": "Noto Sans CJK",
+      "license": "SIL Open Font License 1.1",
+      "evidence": "/usr/share/doc/fonts-noto-cjk/copyright",
+      "url": "https://github.com/notofonts/noto-cjk"
+    },
+    "narration": {
+      "provider": "Microsoft Edge TTS (Xiaoxiao)",
+      "synthetic": true,
+      "impersonation": false,
+      "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred",
+      "replacement": "Piper with separately reviewed model license"
+    },
+    "music": {
+      "used": true,
+      "path": "build/music/the_kindred_hearth.mp3",
+      "sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+      "source": "user upload in this conversation",
+      "original_filename": "the_kindred_hearth.mp3",
+      "usage": "user explicitly requested this BGM",
+      "license_status": "user supplied and requested use; original creator/license not independently specified",
+      "gain": 0.18,
+      "ducking": "voice-triggered sidechain compression",
+      "fade_in_seconds": 1,
+      "fade_out_seconds": 3
+    },
+    "game_sound": {
+      "used_in_final": false,
+      "reason": "Final soundtrack uses narration only; raw source recordings retain original mix"
+    },
+    "comparison_tiles": [],
+    "external_references": [
+      {
+        "id": "hollow_knight",
+        "origin": "external",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_bd76bd88bc5334ee56ae3d5f0d8dec4455e8e3b8.1920x1080.jpg?t=1776125684",
+        "page_url": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+        "sha256": "36630f6d4c495bb69ffd6febdff211704f4c7d2604123c335a50a32e6a1d335e",
+        "kind": "official_reference_screenshot",
+        "license": "copyright retained; brief attributed editorial reference to personal inspiration; no game audio",
+        "display_label": "《空洞骑士》官方截图 · Team Cherry · 非本作",
+        "usage": "short attributed reference to user favorite games; copyright retained; original audio excluded"
+      },
+      {
+        "id": "ori",
+        "origin": "external",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/ss_f8ac174b7949e89fe1939a7bd2c471785dee55f0.1920x1080.jpg?t=1759530749",
+        "page_url": "https://www.orithegame.com/media/",
+        "sha256": "d710942643daa993c1f1e65eaf0916171f6cc70e5718b6b5dfb18e4aad45f147",
+        "kind": "official_reference_screenshot",
+        "license": "copyright retained; brief attributed editorial reference to personal inspiration; no game audio",
+        "display_label": "《奥日与萤火意志》官方截图 · Moon Studios / Xbox · 非本作",
+        "usage": "short attributed reference to user favorite games; copyright retained; original audio excluded"
+      }
+    ],
+    "editorial_graphics": {
+      "source": "video_rush/graphics.py graphic()",
+      "license": "original authored graphics, no scraped meme faces"
+    }
+  },
+  "title_candidates": [
+    "小时候想做游戏，长大后我找来了 AI",
+    "不是程序员，也想做游戏：我决定用 AI 圆一次梦",
+    "枪是拿来赶路的？我的 AI 独立游戏开坑了"
+  ],
+  "bilibili_body": "分区建议：游戏 → 单机游戏；标签：独立游戏、游戏开发、AI开发、Godot、失序之钟、平台跳跃。\n\n小时候想做自己的游戏，长大后先顾生活。现在有了AI，我决定试试看。\n《失序之钟》想做反冲跳跃＋肉鸽探索＋能力锁：已有实机和开发演示，完整能力授予链、多区域流程仍在制作。后续会不定期分享开发，欢迎各位观众老爷多提建议。\n\n灵感喜好参考：《空洞骑士》Team Cherry；《奥日与萤火意志》Moon Studios / Xbox。视频仅短引用官方宣传截图，不是本作画面，不使用原作音乐。官方来源：https://www.hollowknight.com/ ；https://www.orithegame.com/media/ 。\n\n本人游戏素材：https://github.com/zhipijun1996/gunman-rush 。原创梗图与少量合成音效由本项目制作。BGM：本轮用户提供的 the_kindred_hearth.mp3，原曲权利归原作者；不将其标为原创或CC0。Underworld Tileset by Asouris（自定义作者许可）；字体 Noto Sans CJK（SIL OFL）。\n\n《Ori and the Will of the Wisps》© Microsoft Corporation. 本视频为开发者喜好说明与评论，不受Microsoft背书或与其关联。规则参考：https://www.xbox.com/en-US/developers/rules 。",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth.mp3",
+    "sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "source": "user upload in this conversation",
+    "original_filename": "the_kindred_hearth.mp3",
+    "usage": "user explicitly requested this BGM",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.18
+}

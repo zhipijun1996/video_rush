@@ -1,0 +1,144 @@
+{
+  "episode": "ep002",
+  "title": "小时候想做游戏，长大后我找来了 AI",
+  "production": "local render; no Actions job invoked",
+  "duration": "139.899675",
+  "final_sha256": "c695fa80cc1bca0afb361b7624a7324ba01d47ebb109b1523a9fe9dd70ca1ca6",
+  "bytes": 29209571,
+  "technical": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_matches_brief": true,
+    "subtitles_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "requested_music_source_valid": true,
+    "sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true
+  },
+  "content_structural": {
+    "explicit_topic": true,
+    "first_15_seconds_hook_authored": true,
+    "every_shot_references_media": true,
+    "every_segment_has_evidence": true,
+    "evidence_references_resolve": true,
+    "interpretations_labeled": true,
+    "no_fabricated_human_acceptance": true
+  },
+  "human_review": "pending",
+  "voice": "zh-CN-YunxiNeural",
+  "background_music": {
+    "filename": "the_kindred_hearth.mp3",
+    "sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "source": "user upload; used at .18 gain with voice ducking, 1s fade in and3s fade out; no blanket license asserted"
+  },
+  "asr_sample": {
+    "scope": "40 seconds of final mix with uploaded BGM; automated sample, not human listening",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 2.16,
+        "text": "小时候我有个梦想"
+      },
+      {
+        "start": 2.16,
+        "end": 4.64,
+        "text": "长大以后要做自己的游戏"
+      },
+      {
+        "start": 5.4,
+        "end": 6.76,
+        "text": "长大以后发现"
+      },
+      {
+        "start": 6.76,
+        "end": 9.4,
+        "text": "生活这关还真没有跳过暗流"
+      },
+      {
+        "start": 10.4,
+        "end": 12.44,
+        "text": "我的专业也不是变成"
+      },
+      {
+        "start": 12.44,
+        "end": 15.040000000000001,
+        "text": "这个梦想就这样一直放着"
+      },
+      {
+        "start": 15.76,
+        "end": 17.92,
+        "text": "但现在AI来了"
+      },
+      {
+        "start": 17.92,
+        "end": 20.28,
+        "text": "我就想能不能让他帮忙"
+      },
+      {
+        "start": 20.28,
+        "end": 21.96,
+        "text": "把小时候那个坑填上"
+      },
+      {
+        "start": 22.8,
+        "end": 25.400000000000002,
+        "text": "于是 失去之中开坑了"
+      },
+      {
+        "start": 26.240000000000002,
+        "end": 27.92,
+        "text": "我很喜欢空洞骑士"
+      },
+      {
+        "start": 27.92,
+        "end": 29.32,
+        "text": "也喜欢暴日"
+      },
+      {
+        "start": 30.28,
+        "end": 32.12,
+        "text": "漂亮的世界固然吸引我"
+      },
+      {
+        "start": 32.12,
+        "end": 34.28,
+        "text": "但最让我上头的是操作本身"
+      },
+      {
+        "start": 35.32,
+        "end": 37.08,
+        "text": "尤其是苦痛之路"
+      },
+      {
+        "start": 37.08,
+        "end": 38.72,
+        "text": "嘴上说着太难了"
+      },
+      {
+        "start": 38.72,
+        "end": 40.0,
+        "text": "手上已经按下了"
+      },
+      {
+        "start": 40.0,
+        "end": 40.519999999999996,
+        "text": "再"
+      }
+    ]
+  },
+  "tests": "6 passed",
+  "source_repository_clean": true,
+  "notable_failures": [
+    "Initial clip duration check stopped shot18 instead of looping. Narration was shortened and later clip window used.",
+    "Render was interrupted to incorporate the user-uploaded BGM; narration and valid visual cuts reused."
+  ],
+  "external_references": [
+    "Two short official publicity stills from Hollow Knight and Ori; attribution in frame and source manifest, original game sound not used."
+  ],
+  "editorial_style": "Original meme graphics, restrained self-deprecation, tight cuts; abilities and regional progression goals explicitly distinguished from existing demos."
+}

@@ -44,6 +44,9 @@ def main(argv=None):
     hist.add_argument('--source',default='/workspace/gunman-rush');hist.add_argument('--output',default=str(ROOT/'build/research'));hist.add_argument('--repository',default='zhipijun1996/gunman-rush');hist.add_argument('--refresh',action='store_true')
     pr=sub.add_parser('produce',help='从已编写分镜生产；新主题生成可恢复的Codex创作任务')
     pr.add_argument('--source',default='/workspace/gunman-rush');pr.add_argument('--spec');pr.add_argument('--topic');pr.add_argument('--story');pr.add_argument('--pr',type=int);pr.add_argument('--commits',help='Git range，例如 SHA1..SHA2');pr.add_argument('--since');pr.add_argument('--until');pr.add_argument('--episode',default='ep002');pr.add_argument('--output');pr.add_argument('--tts',choices=['edge','piper'],default='edge');pr.add_argument('--piper-model');pr.add_argument('--music');pr.add_argument('--music-license')
+    pub=sub.add_parser('deliver',help='把已验收成片直接上传GitHub预发布，不经过Actions')
+    pub.add_argument('output');pub.add_argument('--tag');pub.add_argument('--repository',default='zhipijun1996/video_rush')
+    pr.add_argument('--local-only',action='store_true',help='只生成本地文件；默认完成后直接交付GitHub预发布')
     val=sub.add_parser('validate',help='重新验证成片与来源；不代签人类审美')
     val.add_argument('output')
     args=p.parse_args(argv)
@@ -56,6 +59,9 @@ def main(argv=None):
             print(json.dumps(checks,ensure_ascii=False,indent=2));return 0
         if args.command=='research':
             print(json.dumps(research(source_path(args.source),args.output,args.repository,args.refresh),ensure_ascii=False,indent=2));return 0
+        if args.command=='deliver':
+            from .publish import publish
+            print(publish(args.output,args.repository,args.tag)['url']);return 0
         if args.command=='validate':
             from .quality import validate
             out=Path(args.output);r=validate(out,read(out/'script.json'),read(out/'storyboard.json'),read(out/'sources.json'))
@@ -64,10 +70,16 @@ def main(argv=None):
         repo=source_path(args.source)
         spec=args.spec
         # The authored preset matches only its actual theme. Other selectors create a director handoff.
+        if not spec and args.topic and any(w in args.topic for w in ['初心','介绍视频','圆梦','开坑','自我介绍']):
+            spec=ROOT/'episodes/ep002.json'
         if not spec and not any([args.pr,args.story,args.commits,args.since,args.until]) and (not args.topic or any(w in args.topic for w in ['概念图','美术落差','首期'])):
             spec=ROOT/'episodes/ep001.json'
         if not spec:return director_brief(args,repo)
-        print(produce(spec,repo,output=args.output,backend=args.tts,piper_model=args.piper_model,music=args.music,music_license=args.music_license))
+        output=produce(spec,repo,output=args.output,backend=args.tts,piper_model=args.piper_model,music=args.music,music_license=args.music_license)
+        print(output)
+        if not args.local_only:
+            from .publish import publish
+            print(publish(output)['url'])
         return 0
     except Exception as e:
         print(f'Video Rush failed: {e}',file=sys.stderr);return 1
