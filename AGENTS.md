@@ -16,3 +16,5 @@ Keep media, API dumps and logs in ignored `build/`; commit authored specs, curat
 Run `pytest` and real end-to-end production for pipeline changes. `python -m video_rush validate <episode dir>` is technical verification; phone review remains pending. Avoid claiming an unexecuted workflow works remotely. Do not spawn other agents unless the user explicitly requests delegation.
 
 Every prerelease must include final.mp4, cover.png, standalone bilibili.md with title and description, and a complete delivery ZIP; show submission copy in release notes. Missing mandatory files blocks publication.
+
+User exception (2026-10-21): GitHub Release uploads remained unauthorized; the user now explicitly requested Actions download for the current episode. Use deliver-existing.yml and tools/deliver_actions.py to preserve the existing video/BGM bytes as an Artifact. This exception authorizes Actions delivery; do not ask for Release credentials before proceeding.

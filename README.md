@@ -2,6 +2,17 @@
 
 可追溯的 AI 游戏开发视频生产系统。独立于游戏仓库，游戏源码只读。首期已经在 Codex Cloud **实际生产**；技术数据和云端运行状态见 [实施记录](docs/implementation.md)。默认 1920×1080 / 30fps / H.264 + AAC，中文AI配音，手机兼容 MP4。
 
+## 当前下载方式（用户最新指示）
+
+当前ep002改用GitHub Actions Artifact下载，保留成片内指定BGM，并附封面与标题简介。无需重新渲染或把媒体提交Git。`deliver-existing.yml`在GitHub托管Runner接收本地已验收的ZIP，Artifact保留14天。执行入口：
+
+```bash
+python -m pip install -e '.[actions]'
+python tools/deliver_actions.py build/episodes/ep002
+```
+
+上传地址仅以一次性公钥加密后出现在运行检查中；私钥留在ignored build目录，成功上传后删除。Runner的GitHub运行凭据不会传出。上传后还须确认运行成功并下载核对文件hash，不能把派发成功当成交付成功。当前不需要用户修复Release上传凭据。
+
 ## 手机使用
 
 以后成片直接交付 **GitHub预发布**，不再把Actions/Artifact作为常规入口。打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
