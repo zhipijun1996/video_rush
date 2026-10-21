@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "S024",
+    "event": "漂亮母版与简化SVG的第一次落差",
+    "date": "2026-10-10T02:29:40Z",
+    "background": "最初想做原创手绘机械平原，已有AI绘画母版。",
+    "conflict": "实际运行候选以简化矢量为主；母版不等于可玩地图。",
+    "attempts": [
+      "登记锚点、连接规则、装饰排除区，交付91件候选。"
+    ],
+    "result": "美术预览完成，可达性和手机观感未验。",
+    "truth_status": "technical_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "949d884063b3d3a0c1c12907dff5148e3c288ac8",
+    "base_commit": "64ec8bbb07a2c4d44e6709e1182dbf0e2dddf226",
+    "pr": 24,
+    "branch": "feature/demo-plains-art",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/24",
+        "pr": 24
+      },
+      {
+        "kind": "document",
+        "path": "assets/manifest.json",
+        "commit": "949d884063b3d3a0c1c12907dff5148e3c288ac8",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/949d884063b3d3a0c1c12907dff5148e3c288ac8/assets/manifest.json"
+      }
+    ],
+    "media": [
+      "concept"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S027",
+    "event": "把美术放进随机平台之后",
+    "date": "2026-10-10T04:32:14Z",
+    "background": "固定十关和随机平台原先都是灰盒。",
+    "conflict": "平台几何、连续背景和角色独立瞄准需要真实消费者。",
+    "attempts": [
+      "用TerrainSkin裁剪拼接、横向视差和VisualAdapter接入。"
+    ],
+    "result": "真实接入可运行；SVG仍比手绘母版简化，手机待验。",
+    "truth_status": "implemented",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "d1a63cc4de8fd6b11e4a2cb70fe1cb5db412f85c",
+    "base_commit": "317619c1055ad142acc2681f096c5f0851b05af8",
+    "pr": 27,
+    "branch": "feature/plains-art-integration",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/27",
+        "pr": 27
+      },
+      {
+        "kind": "document",
+        "path": "docs/plains_module_design.md",
+        "commit": "d1a63cc4de8fd6b11e4a2cb70fe1cb5db412f85c",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/d1a63cc4de8fd6b11e4a2cb70fe1cb5db412f85c/docs/plains_module_design.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S030",
+    "event": "十三张新图为什么还不是完整手绘游戏",
+    "date": "2026-10-10T05:18:25Z",
+    "background": "旧矢量不够精美，尝试重新生成真实绘画贴图。",
+    "conflict": "平台无缝填充失败；角色烘焙手臂与独立瞄准冲突。",
+    "attempts": [
+      "13张PNG和20帧六动作，Canvas/Godot纹理区域选帧。"
+    ],
+    "result": "可交互样板存在，未替换默认玩家；完整地图覆盖未验。",
+    "truth_status": "preview_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "3bacc326c419741f1ded43fd32e8877cf706dbc5",
+    "base_commit": "4ad6d505f201edd73eb962687e8754ed641f1271",
+    "pr": 30,
+    "branch": "feature/painterly-plains-v2",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/30",
+        "pr": 30
+      },
+      {
+        "kind": "document",
+        "path": "docs/painterly_v2_report.md",
+        "commit": "3bacc326c419741f1ded43fd32e8877cf706dbc5",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/3bacc326c419741f1ded43fd32e8877cf706dbc5/docs/painterly_v2_report.md"
+      }
+    ],
+    "media": [
+      "v2_preview"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S038",
+    "event": "画风认可和玩法接入是两次验收",
+    "date": "2026-10-10T14:14:47Z",
+    "background": "用户认可十六场景画风后精修第一大关。",
+    "conflict": "新图集、预览类别丰富，但默认运行皮肤没有替换。",
+    "attempts": [
+      "补充20原始PNG与78区域并展示合屏。"
+    ],
+    "result": "资源交付已完成，动画、手部、接缝及正式集成仍有缺口。",
+    "truth_status": "preview_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "17edc86dc9e0ad1d8ca61230452c840ae9b9d3ff",
+    "base_commit": "faecae2e838a262542f6b125418677ff49b90d5e",
+    "pr": 38,
+    "branch": "feature/plains-art-v3",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/38",
+        "pr": 38
+      },
+      {
+        "kind": "document",
+        "path": "docs/plains_art_v3.md",
+        "commit": "17edc86dc9e0ad1d8ca61230452c840ae9b9d3ff",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/17edc86dc9e0ad1d8ca61230452c840ae9b9d3ff/docs/plains_art_v3.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S043",
+    "event": "随机房间多了，探索就一定丰富吗",
+    "date": "2026-10-11T09:10:10Z",
+    "background": "平原八房间希望摆脱重复。",
+    "conflict": "模板数量不能单独证明体验差异。",
+    "attempts": [
+      "十轮连接模板、局部变体与去重。"
+    ],
+    "result": "存在房间生成实现，后续改成单张连通探索地图，旧八房间链最终退休。",
+    "truth_status": "historical_replaced",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "733b21aac83811de6f7d6bf3e285a81aeca69b8e",
+    "base_commit": "ab51fca6904c6cba78a164066cccbf1b0567cf26",
+    "pr": 43,
+    "branch": "feature/plains-room-grammar",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/43",
+        "pr": 43
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S044",
+    "event": "从八小关走向一张探索地图",
+    "date": "2026-10-11T11:15:53Z",
+    "background": "原结构是八个分立小关。",
+    "conflict": "独立房间与连续探索目标不同。",
+    "attempts": [
+      "改造随机连通探索地图。"
+    ],
+    "result": "历史实现存在，后续又扩为正式两图；不是现状仍为八关。",
+    "truth_status": "historical_replaced",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "8621681cb042c4ef3010d3f9978d4d7c755c7a00",
+    "base_commit": "ab51fca6904c6cba78a164066cccbf1b0567cf26",
+    "pr": 44,
+    "branch": "feature/plains-connected-region",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/44",
+        "pr": 44
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S055",
+    "event": "AI需要知道测试何时真的失败",
+    "date": "2026-10-12T16:21:48Z",
+    "background": "开发入口和旧文档分散。",
+    "conflict": "超时、缺完成标记与退出错误可能被误判。",
+    "attempts": [
+      "统一Harness入口、故障回归与历史归档。"
+    ],
+    "result": "有执行证据；测试通过仍不能替代手机趣味与画面验收。",
+    "truth_status": "implemented",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "da76b0aa65f257f5208cde23e98aa8d9b3098ad1",
+    "base_commit": "6568e9a41e6268001ae7d132017f409ea83ac475",
+    "pr": 55,
+    "branch": "chore/project-harness-skills",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/55",
+        "pr": 55
+      },
+      {
+        "kind": "document",
+        "path": "docs/project_integration.md",
+        "commit": "da76b0aa65f257f5208cde23e98aa8d9b3098ad1",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/da76b0aa65f257f5208cde23e98aa8d9b3098ad1/docs/project_integration.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S057",
+    "event": "给done加证据门槛",
+    "date": "2026-10-12T17:23:46Z",
+    "background": "可运行经常被当成高品质完成。",
+    "conflict": "流程演练不能冒充真正独立审查。",
+    "attempts": [
+      "建立G0–G5、十一维状态和防伪检查。"
+    ],
+    "result": "流程完成而content_complete=false；真实宿主调用当时未验。",
+    "truth_status": "process_verified_content_pending",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "5fd9c272d74616ae477809fa4285f609e6b697c6",
+    "base_commit": "da76b0aa65f257f5208cde23e98aa8d9b3098ad1",
+    "pr": 57,
+    "branch": "chore/game-quality-system",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/57",
+        "pr": 57
+      },
+      {
+        "kind": "document",
+        "path": "docs/quality/implementation_report.md",
+        "commit": "5fd9c272d74616ae477809fa4285f609e6b697c6",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/5fd9c272d74616ae477809fa4285f609e6b697c6/docs/quality/implementation_report.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S059",
+    "event": "47邻接通过，为何宏观轮廓仍不成立",
+    "date": "2026-10-13T02:08:46Z",
+    "background": "旧拼贴和褐土材质被拒后尝试水粉石灰岩。",
+    "conflict": "几何严密和GPU分块等值不能保证完整画面好看。",
+    "attempts": [
+      "47邻接、矩形并集、候选与基线实际区域比较。"
+    ],
+    "result": "局部改善；宏观轮廓、黄金合屏与手机未验，旧WebGL漏判撤回。",
+    "truth_status": "technical_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+    "base_commit": "6568e9a41e6268001ae7d132017f409ea83ac475",
+    "pr": 59,
+    "branch": "feature/quality-review-and-production-loop",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/59",
+        "pr": 59
+      },
+      {
+        "kind": "document",
+        "path": "docs/quality/iteration_report.md",
+        "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ed05821421a156a3e79520422bf4e381248590ee/docs/quality/iteration_report.md"
+      }
+    ],
+    "media": [
+      "old",
+      "painted",
+      "tiles47",
+      "painted_movie"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S060",
+    "event": "开发样板走进正式地图",
+    "date": "2026-10-13T04:30:42Z",
+    "background": "手绘候选已经认可，但普通入口仍显示旧地形。",
+    "conflict": "开发入口成功不等于正式消费者已切换。",
+    "attempts": [
+      "两图默认地形、移动平台局部纹理、正式入口GUI检查。"
+    ],
+    "result": "手绘地形正式启用；此认可不扩大为所有内容完成。",
+    "truth_status": "implemented",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "6ccdf93574b929242b90a9c47d511aa2277f097b",
+    "base_commit": "a9a9cd2738fdb45c967f05c5a5495d072d922945",
+    "pr": 60,
+    "branch": "feature/painted-terrain-production",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/60",
+        "pr": 60
+      },
+      {
+        "kind": "document",
+        "path": "docs/quality/terrain_production.md",
+        "commit": "6ccdf93574b929242b90a9c47d511aa2277f097b",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/6ccdf93574b929242b90a9c47d511aa2277f097b/docs/quality/terrain_production.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S067",
+    "event": "路线更活跃，画面仍被拒绝",
+    "date": "2026-10-15T13:00:38Z",
+    "background": "平原探索路线空白、回程价值不足。",
+    "conflict": "重排后有收益也有退化；完整高品质声明仍被拒绝。",
+    "attempts": [
+      "旧新固定种子匹配影片、真实Motor路线和独立视觉设计审查。"
+    ],
+    "result": "仍有悬空背景与重复轮廓，整体验收REJECT。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+    "base_commit": "30f6a825712fbb30e607791c996de142c6757a79",
+    "pr": 67,
+    "branch": "feature/plains-designed-exploration",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/67",
+        "pr": 67
+      },
+      {
+        "kind": "document",
+        "path": "docs/plains_redesign_delivery.md",
+        "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/2c2904172045017037e4110323c1097f9d24c5ad/docs/plains_redesign_delivery.md"
+      }
+    ],
+    "media": [
+      "redesign_before",
+      "redesign_after"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S068",
+    "event": "Visual Director不能替人宣布黄金达标",
+    "date": "2026-10-15T16:13:14Z",
+    "background": "建立完整画面的生产与录制工具。",
+    "conflict": "水工井庭实景返工仍未达到黄金品质。",
+    "attempts": [
+      "加入Visual Director并保留实景与评审记录。"
+    ],
+    "result": "WIP、黄金未通过；工具存在不等于创作结果成功。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "ed0623000c61287282f89e6b0463937b0afe0aca",
+    "base_commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+    "pr": 68,
+    "branch": "feature/visual-director-golden",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/68",
+        "pr": 68
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S072",
+    "event": "主题驱动系统的边界",
+    "date": "2026-10-16T12:31:56Z",
+    "background": "试图从组件堆叠转向主题创作。",
+    "conflict": "系统重构和瘦身本身不能证明地区美术完成。",
+    "attempts": [
+      "真实样板、执行链整理与可逆清理。"
+    ],
+    "result": "存在样板及修复证据；未通过边界保留。",
+    "truth_status": "technical_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "1597db583a6ade25a469cb9ecb99b5762d6f76db",
+    "base_commit": "e8ee34446aa82b4e64f5cdc414a22f5b6e2a6ca7",
+    "pr": 72,
+    "branch": "feature/theme-driven-production",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/72",
+        "pr": 72
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S073",
+    "event": "执行链修好了，草海还是REWORK",
+    "date": "2026-10-16T14:57:40Z",
+    "background": "空间创作依赖真实执行能力。",
+    "conflict": "工程修复后，艺术质量仍可能失败。",
+    "attempts": [
+      "修复空间创作链并制作草海可玩实验。"
+    ],
+    "result": "可玩实验保留，艺术状态REWORK。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "5c1e6549987e1e68c846302e9595a106ca1d79e7",
+    "base_commit": "1597db583a6ade25a469cb9ecb99b5762d6f76db",
+    "pr": 73,
+    "branch": "feature/spatial-golden-production",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/73",
+        "pr": 73
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S077",
+    "event": "薄岸与连续绘画体积",
+    "date": "2026-10-17T03:37:32Z",
+    "background": "分块地形容易形成贴皮感。",
+    "conflict": "薄体复用与真实地貌体积需要共同设计。",
+    "attempts": [
+      "连续绘画地形、原生对照候选与薄岸复用实验。"
+    ],
+    "result": "是候选研究，不能宣称整区问题解决。",
+    "truth_status": "experimental",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "da05c27a3a5b5d06ea14f24b299b598713c8ab1d",
+    "base_commit": "0905516bb8c996a5f79ee4ac242ea0a0ab2205de",
+    "pr": 77,
+    "branch": "feature/painted-terrain-grammar",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/77",
+        "pr": 77
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S078",
+    "event": "重新选择方向，也要重选对象语言",
+    "date": "2026-10-17T11:46:47Z",
+    "background": "旧方向多次局部修补后仍有落差。",
+    "conflict": "概念方向选择不等于真实游戏验证。",
+    "attempts": [
+      "四组完整游戏视角与对象语言概念。"
+    ],
+    "result": "概念阶段，后续P1实机另验。",
+    "truth_status": "concept_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "d549ad9daa17b0397b893f923760d379b75167de",
+    "base_commit": "da05c27a3a5b5d06ea14f24b299b598713c8ab1d",
+    "pr": 78,
+    "branch": "feature/art-direction-reexploration",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/78",
+        "pr": 78
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S081",
+    "event": "停止给失败区域继续贴组件",
+    "date": "2026-10-17T14:34:34Z",
+    "background": "保留随机平原与可选少女实验。",
+    "conflict": "局部组件增加没有使整区艺术成立。",
+    "attempts": [
+      "实际探索后停止组件补贴。"
+    ],
+    "result": "整区艺术REWORK，停止扩产。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "e545b05e5de5c33656cc489cc5f3d3ebaf69432d",
+    "base_commit": "ed647d5dee2a72d5c7ef95f43fa5fdffe6d88ac1",
+    "pr": 81,
+    "branch": "feature/p1-random-plains-avatars",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/81",
+        "pr": 81
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S082",
+    "event": "三轮实机返工留下了什么",
+    "date": "2026-10-17T17:55:56Z",
+    "background": "想用整体环境实验改善平原。",
+    "conflict": "连续三轮实机仍被要求返工。",
+    "attempts": [
+      "保留实际画面、版本与可恢复交付。"
+    ],
+    "result": "艺术仍REWORK；失败候选可恢复而非已准入。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "4a4b3fd7d3ce8ae1ca0808ecb725935d0dd50e45",
+    "base_commit": "e545b05e5de5c33656cc489cc5f3d3ebaf69432d",
+    "pr": 82,
+    "branch": "feature/plains-environment-grammar",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/82",
+        "pr": 82
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S084",
+    "event": "完整地形体块能否代替平台贴皮",
+    "date": "2026-10-18T03:41:26Z",
+    "background": "希望随机组合也像完整场所。",
+    "conflict": "组合合同通过不代表任意整区都美观。",
+    "attempts": [
+      "完整地形体块与场所合同。"
+    ],
+    "result": "有限组合验证，边界需继续由完整区域实机检验。",
+    "truth_status": "experimental",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "f8dead080f2195c5c3b332966ec76fe4ba2181e3",
+    "base_commit": "4a4b3fd7d3ce8ae1ca0808ecb725935d0dd50e45",
+    "pr": 84,
+    "branch": "feature/plains-place-grammar",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/84",
+        "pr": 84
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S086",
+    "event": "随机区域能走通，为什么还是一堵矩形墙",
+    "date": "2026-10-18T11:45:59Z",
+    "background": "局部场所链不能证明完整区域。",
+    "conflict": "行列布局后填土导致规则岩柱、井和重复绘画。",
+    "attempts": [
+      "浅裙边合并与深岩体差集，两种方法实机审查。"
+    ],
+    "result": "完整第一图规定节点访问成立，美术仍REJECT；停止补纹理扩产。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+    "base_commit": "148d9251da2a457944213ba73b082525edf5e729",
+    "pr": 86,
+    "branch": "feature/plains-regional-synthesis",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/86",
+        "pr": 86
+      },
+      {
+        "kind": "document",
+        "path": "docs/quality/plains_regional.md",
+        "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b5fc02706348d93da3cbd2df91eb0db6871e246e/docs/quality/plains_regional.md"
+      }
+    ],
+    "media": [
+      "region_fail",
+      "region_overview"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S088",
+    "event": "先做关卡再补山体的失败",
+    "date": "2026-10-18T18:53:21Z",
+    "background": "模块先定动作几何，再补岸体和背景。",
+    "conflict": "矩形填满再减孔留下直边天空槽和平铺墙。",
+    "attempts": [
+      "地貌先行合同与三轮真实画面，保留完整实机。"
+    ],
+    "result": "工程可运行，最终独审RETHINK表示法，不扩产。",
+    "truth_status": "failed_quality",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "07ffe3f3cf6972910e0d4eedd12addf1b00cd9ae",
+    "base_commit": "16e98690ea207bfda4424a1dd7d0b90c70d55658",
+    "pr": 88,
+    "branch": "feature/plains-landform-first",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/88",
+        "pr": 88
+      },
+      {
+        "kind": "document",
+        "path": "docs/evidence/plains_landform/findings.md",
+        "commit": "07ffe3f3cf6972910e0d4eedd12addf1b00cd9ae",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/07ffe3f3cf6972910e0d4eedd12addf1b00cd9ae/docs/evidence/plains_landform/findings.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S089",
+    "event": "美术预算提前了，为什么图还是不美",
+    "date": "2026-10-19T01:08:10Z",
+    "background": "区域坐标冻结后铺材质的方式有局限。",
+    "conflict": "参数提前不等于消费者会画出体积。",
+    "attempts": [
+      "有限家族、尺寸、肩部、恢复留白影响真实区域嵌入。"
+    ],
+    "result": "机制有变化；旧材质与新构造家族未完成，艺术未准入。",
+    "truth_status": "technical_only",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "28236ef9e5546c7c3d588f67e8e99813b5ac6e9f",
+    "base_commit": "07ffe3f3cf6972910e0d4eedd12addf1b00cd9ae",
+    "pr": 89,
+    "branch": "feature/plains-art-language",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/89",
+        "pr": 89
+      },
+      {
+        "kind": "document",
+        "path": "docs/evidence/plains_art_language/independent-review.md",
+        "commit": "28236ef9e5546c7c3d588f67e8e99813b5ac6e9f",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/28236ef9e5546c7c3d588f67e8e99813b5ac6e9f/docs/evidence/plains_art_language/independent-review.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S090",
+    "event": "从源画构造生成碰撞与路线",
+    "date": "2026-10-19T02:45:02Z",
+    "background": "把完整画源硬适配到任意几何会破坏形体。",
+    "conflict": "归一UV拉长根须，逆边界UV仍有竖缝和拖色。",
+    "attempts": [
+      "从完整源画和可信站面共同派生实体、路线与前景，复用四源做第二布局。"
+    ],
+    "result": "两个有限布局获内部限定接受；Seed不改结构，未证明完整随机平原。",
+    "truth_status": "scoped_success",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+    "base_commit": "28236ef9e5546c7c3d588f67e8e99813b5ac6e9f",
+    "pr": 90,
+    "branch": "feature/plains-world-rebuild",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/90",
+        "pr": 90
+      },
+      {
+        "kind": "document",
+        "path": "docs/evidence/plains_world_rebuild/findings.md",
+        "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/913d77afa4019a0a2e6c84f270f3fe30ac2f00ba/docs/evidence/plains_world_rebuild/findings.md"
+      }
+    ],
+    "media": [
+      "world_first",
+      "world_second",
+      "world_fail"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S091",
+    "event": "完全重置之后的像素地基",
+    "date": "2026-10-19T04:49:40Z",
+    "background": "用户明确重置旧画风方向。",
+    "conflict": "非整格平台精确边界适配不能冒称dual-grid。",
+    "attempts": [
+      "正式两图像素重制、三张独立景层与真实消费者。"
+    ],
+    "result": "真实可玩；完整范围仍有阻塞，用户终审和设备未验。",
+    "truth_status": "implemented_quality_pending",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "2f25083da11da11604a3535a2feae20d119ac001",
+    "base_commit": "e8ee34446aa82b4e64f5cdc414a22f5b6e2a6ca7",
+    "pr": 91,
+    "branch": "feature/blob47-art-foundation",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/91",
+        "pr": 91
+      },
+      {
+        "kind": "document",
+        "path": "docs/art_foundation_v1.md",
+        "commit": "2f25083da11da11604a3535a2feae20d119ac001",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/2f25083da11da11604a3535a2feae20d119ac001/docs/art_foundation_v1.md"
+      }
+    ],
+    "media": [],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": false,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "medium"
+    }
+  },
+  {
+    "id": "S093",
+    "event": "同一碰撞布局里比较五套TileSet",
+    "date": "2026-10-19T09:41:27Z",
+    "background": "需要比较运行中的整体风格。",
+    "conflict": "调色样本不等于三个正式地区建成。",
+    "attempts": [
+      "五套实机TileSet与Underworld/Cavern六组地区比较。"
+    ],
+    "result": "实验入口可玩，许可核实；最终审美和完整材料家族待验。",
+    "truth_status": "experimental",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+    "base_commit": "2f25083da11da11604a3535a2feae20d119ac001",
+    "pr": 93,
+    "branch": "feature/windchime-five-style-lab",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/93",
+        "pr": 93
+      },
+      {
+        "kind": "document",
+        "path": "docs/style_exploration_report.md",
+        "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a/docs/style_exploration_report.md"
+      }
+    ],
+    "media": [
+      "styles",
+      "six_regions",
+      "style_movie"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S094",
+    "event": "Underworld统一的不只是地面",
+    "date": "2026-10-19T14:13:34Z",
+    "background": "用户选择Underworld并反馈人物、机关、家园和UI。",
+    "conflict": "单改地形会留下人物比例和系统画风不统一。",
+    "attempts": [
+      "20身体关键帧、同族机关、44wu尺度、三层家园和UI。"
+    ],
+    "result": "正式试玩存在，退出泄漏与部分完整CI失败如实保留；不代表最终品质。",
+    "truth_status": "implemented_quality_pending",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+    "base_commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+    "pr": 94,
+    "branch": "feature/underworld-plains-production",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/94",
+        "pr": 94
+      },
+      {
+        "kind": "document",
+        "path": "docs/evidence/underworld_plains/revision2/README.md",
+        "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad/docs/evidence/underworld_plains/revision2/README.md"
+      }
+    ],
+    "media": [
+      "new_movie",
+      "home_movie",
+      "new",
+      "new2"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  },
+  {
+    "id": "S101",
+    "event": "用区域圣经约束风格漂移",
+    "date": "2026-10-21T07:37:08Z",
+    "background": "森林要沿用正式平原的共享像素家族。",
+    "conflict": "数学藤线、肩贴片和矩形削体已被否决。",
+    "attempts": [
+      "绑定区域圣经，平台覆生荆棘、来源卡及回放归档。"
+    ],
+    "result": "森林v15仍是未合并草稿，整区有机大形仍需重构；平原新生产未开始。",
+    "truth_status": "draft_quality_pending",
+    "evidence_status": "PR body and local exact-base/head diff checked; runtime acceptance is only as scoped in source",
+    "commit": "6dba342dcf557c89957e31b7faec489574d46abd",
+    "base_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "pr": 101,
+    "branch": "feature/region-bible-v2-forest",
+    "sources": [
+      {
+        "kind": "pull_request",
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/101",
+        "pr": 101
+      },
+      {
+        "kind": "document",
+        "path": "docs/current_state.md",
+        "commit": "6dba342dcf557c89957e31b7faec489574d46abd",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/6dba342dcf557c89957e31b7faec489574d46abd/docs/current_state.md"
+      }
+    ],
+    "media": [
+      "forest"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "not_run_for_this_head; pinned Godot available; review dependency/version before attempting"
+    },
+    "video_potential": {
+      "reason": "有明确目标、冲突、尝试与结果；以真实画面或记录说明方法边界。",
+      "priority": "high"
+    }
+  }
+]

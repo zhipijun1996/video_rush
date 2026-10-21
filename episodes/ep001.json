@@ -1,0 +1,633 @@
+{
+  "schema_version": 1,
+  "episode": "ep001",
+  "title": "我用 AI 做独立游戏，为什么概念图很好看，实机却总是差很多？",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep001-assets.json",
+  "story_ids": [
+    "S024",
+    "S030",
+    "S059",
+    "S067",
+    "S086",
+    "S088",
+    "S089",
+    "S090",
+    "S091",
+    "S093",
+    "S094",
+    "S101"
+  ],
+  "target_duration": [
+    180,
+    300
+  ],
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "rate": "-5%",
+  "shots": [
+    {
+      "id": "s01",
+      "assets": [
+        "concept"
+      ],
+      "narration": "这张 AI 母版很好看，可为什么进了 Godot，实机却总差一截？",
+      "chapter": "01",
+      "title": "期待",
+      "emphasis": "AI 美术母版 ≠ 实机",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        24
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s02",
+      "assets": [
+        "redesign_before"
+      ],
+      "narration": "但进了真实关卡，画面却像一排铺了草皮的平台。问题到底是素材不够，还是我一开始就做错了制作顺序？",
+      "chapter": "01",
+      "title": "落差",
+      "emphasis": "为什么拼不出同一个世界？",
+      "offsets": [
+        15
+      ],
+      "prs": [
+        67
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s03",
+      "assets": [
+        "v2_preview"
+      ],
+      "narration": "我独自用 AI 开发这款 Godot 游戏。这期想复盘的，不是一次换皮成功，而是概念图到实机之间，反复返工的那段路。",
+      "chapter": "01",
+      "title": "这次复盘",
+      "emphasis": "合屏预览，不是实机录像",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        30,
+        94
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s04",
+      "assets": [
+        "old"
+      ],
+      "narration": "先交代一个容易混淆的地方：概念图、浏览器合屏、开发样板和正式地图，是四种不同的东西。看起来像游戏，不代表已经接进游戏。",
+      "chapter": "02",
+      "title": "四种画面",
+      "emphasis": "看起来能玩，不等于真的能玩",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        24,
+        30,
+        38,
+        59
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s05",
+      "assets": [
+        "concept",
+        "old"
+      ],
+      "narration": "早期的美术包就同时保留了 AI 绘画母版和简化的矢量运行素材。方向有了，但运行画面丢掉了原图里的体积、层次和细节。",
+      "chapter": "02",
+      "title": "母版与消费者",
+      "emphasis": "左：母版　右：历史实机",
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        24,
+        27,
+        59
+      ],
+      "shot_type": "split_comparison",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s06",
+      "assets": [
+        "v2_preview"
+      ],
+      "narration": "于是我让 AI 继续画。角色、背景、草岩、木桥，都换成更精细的图片。样板确实更完整，可报告里也直接写着：填充接缝尝试失败。",
+      "chapter": "02",
+      "title": "再画精细一点？",
+      "emphasis": "细节变多，接缝仍然失败",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        30
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s07",
+      "assets": [
+        "tiles47"
+      ],
+      "narration": "后来又做了四十七种邻接形态，让地形能适配拐角、薄平台和孔洞。这一步很有用，解决了怎么拼，却没有回答，拼出来像不像一个地方。",
+      "chapter": "03",
+      "title": "拼接能证明什么",
+      "emphasis": "拼接规则 ≠ 完整场景设计",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        59
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s08",
+      "assets": [
+        "redesign_after"
+      ],
+      "narration": "这段是当时保留下来的真实录像。草边和岩壁都比早期细致了。可是当镜头沿着关卡走，重复的轮廓、悬空的背景，还是会不断出现。",
+      "chapter": "03",
+      "title": "走起来才暴露的问题",
+      "emphasis": "历史原片 · 正常速度",
+      "offsets": [
+        12
+      ],
+      "prs": [
+        67
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s09",
+      "assets": [
+        "painted"
+      ],
+      "narration": "我当时很容易把问题理解成：这里再补一块岩石，那里再加一点草。可如果大轮廓本来就不成立，越补细节，越像是在给同一个问题贴创可贴。",
+      "chapter": "03",
+      "title": "局部修补的局限",
+      "emphasis": "作者复盘判断",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        59,
+        67,
+        86
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s10",
+      "assets": [
+        "redesign_after"
+      ],
+      "narration": "开发记录也没有把这些返工写成成功。路线可以更活跃，机关可以正常工作，但同一轮的视觉审查，依然拒绝了完整高品质的结论。",
+      "chapter": "03",
+      "title": "玩法改进与美术失败并存",
+      "emphasis": "技术通过与体验验收分开",
+      "offsets": [
+        32
+      ],
+      "prs": [
+        67
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s11",
+      "assets": [
+        "region_overview"
+      ],
+      "narration": "再往后，尝试扩成完整随机区域。生成器先确定平台和通道，再用土石把它们包起来。总览里看着连通，到了正常镜头里，问题变得很直白。",
+      "chapter": "04",
+      "title": "随机地图的放大效应",
+      "emphasis": "真实世界总览 · 不是审美证明",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        86
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s12",
+      "assets": [
+        "region_fail"
+      ],
+      "narration": "岩柱很规整，井口很方，材质重复铺开。角色确实可以访问规定节点，可它更像一张被填厚的操作图，而不是自然长出来的平原。",
+      "chapter": "04",
+      "title": "能走通的失败候选",
+      "emphasis": "原记录：艺术 REJECT",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        86
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s13",
+      "assets": [
+        "world_fail"
+      ],
+      "narration": "这也不是多画几张纹理就能解决的。后来的实验把整张源画映射到地形上：一种方法拉长了根须，另一种仍留下竖缝和拖色。",
+      "chapter": "04",
+      "title": "把好图硬套进几何",
+      "emphasis": "失败版本画面",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        90
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s14",
+      "assets": [
+        "world_first"
+      ],
+      "narration": "真正值得保留的一次变化，是反过来做：先画完整的岸体和根部，再从画里的可信站面，派生碰撞、路线和敌人的依附位置。",
+      "chapter": "05",
+      "title": "换一种制作对象",
+      "emphasis": "让画源与玩法共同定义空间",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        90
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s15",
+      "assets": [
+        "world_second"
+      ],
+      "narration": "这里是第二个布局的历史原片。它复用同样四张主要画源，改变溪宽和岸高，再让角色真实往返。画源不再只是最后贴上去的一层皮。",
+      "chapter": "05",
+      "title": "有限复用的进展",
+      "emphasis": "第二布局 · 历史原片",
+      "offsets": [
+        2
+      ],
+      "prs": [
+        90
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s16",
+      "assets": [
+        "world_second_end"
+      ],
+      "narration": "但这次也有很清楚的边界：只有两个登记布局，随机种子还不会改变结构。所以它证明了一个局部方法，不能被说成完整随机平原已经解决。",
+      "chapter": "05",
+      "title": "保留突破，也保留边界",
+      "emphasis": "两个布局 ≠ 任意随机地形",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        90
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s17",
+      "assets": [
+        "styles"
+      ],
+      "narration": "之后，方向又发生了变化。用户要求重置旧美术，再通过五套真实 TileSet 比较风格。现在看到的是实验画面，不是五个已经完成的游戏区域。",
+      "chapter": "06",
+      "title": "重新选一套共同语言",
+      "emphasis": "五风格实机比较实验",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        91,
+        93
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false,
+      "presentation": "five_style_board"
+    },
+    {
+      "id": "s18",
+      "assets": [
+        "style_movie"
+      ],
+      "narration": "最终选中了 Underworld 方向。这是当时保留的实机风格比较原片。",
+      "chapter": "06",
+      "title": "从概念比较转向实机比较",
+      "emphasis": "实验原片 · 不是正式关卡",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        93,
+        94
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s19",
+      "assets": [
+        "new_movie"
+      ],
+      "narration": "接下来，人物动作、机关、商人比例和界面，也要说同一种视觉语言。",
+      "chapter": "06",
+      "title": "同一套视觉语言",
+      "emphasis": "正式关卡原片 · H 录像源",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        94
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s20",
+      "assets": [
+        "home_movie"
+      ],
+      "narration": "家园也改成了可行走的同族场景，并使用三层景深。这些东西看上去是美术，其实一直在要求地图、角色、镜头和交互一起配合。",
+      "chapter": "06",
+      "title": "家园也要属于这个世界",
+      "emphasis": "历史实机原片",
+      "offsets": [
+        9
+      ],
+      "prs": [
+        94
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s21",
+      "assets": [
+        "new",
+        "forest"
+      ],
+      "narration": "最新的森林开发又把区域圣经放到了生产前面，要求沿用共享像素家族。不过森林仍是开发草稿，有机大形和整区美术还需要重构。",
+      "chapter": "07",
+      "title": "区域设计先行",
+      "emphasis": "左：正式平原　右：森林草稿定位图",
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        94,
+        101
+      ],
+      "shot_type": "split_comparison",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "documented_event",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s22",
+      "assets": [
+        "redesign_before"
+      ],
+      "narration": "回头看，我学到的第一件事是：不要只验一张漂亮截图。让角色走起来，让镜头跨过去，再看前后几屏，问题才会真正暴露。",
+      "chapter": "07",
+      "title": "我会怎样改变验收",
+      "emphasis": "经验判断，不代替用户审美",
+      "offsets": [
+        65
+      ],
+      "prs": [
+        59,
+        67
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s23",
+      "assets": [
+        "redesign_after"
+      ],
+      "narration": "第二件事是，美术语言要进入模块和区域设计。平台多宽、岸体怎么转折、哪里留空，应该和素材能表达的形体一起决定。",
+      "chapter": "07",
+      "title": "把美术约束放到前面",
+      "emphasis": "先设计空间，再决定生产规模",
+      "offsets": [
+        47
+      ],
+      "prs": [
+        88,
+        89,
+        90
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s24",
+      "assets": [
+        "new2"
+      ],
+      "narration": "第三件事，是把能运行和好不好看分开记录。测试可以证明接缝、碰撞或资源引用，但不能替我证明这张图有美感，更不能代替手机上的真实体验。",
+      "chapter": "07",
+      "title": "两张独立的成绩单",
+      "emphasis": "技术验收 / 内容审核",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        57,
+        59,
+        94
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s25",
+      "assets": [
+        "home_movie"
+      ],
+      "narration": "所以我现在不会说美术问题已经解决。只是开始把任务从多画几个素材，改成先做一个完整场所，再验证它能不能连接到下一个场所。",
+      "chapter": "08",
+      "title": "仍在探索",
+      "emphasis": "不是成功教程，是一次真实复盘",
+      "offsets": [
+        19
+      ],
+      "prs": [
+        90,
+        94,
+        101
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "s26",
+      "assets": [
+        "new"
+      ],
+      "narration": "下一步最想验证的，是统一风格之后，整张随机地图能不能也像同一个世界。漂亮概念图只是起点，真正难的，还是把它变成能走进去的地方。",
+      "chapter": "08",
+      "title": "下一步",
+      "emphasis": "《失序之钟》开发中",
+      "offsets": [
+        0
+      ],
+      "prs": [
+        86,
+        90,
+        94,
+        101
+      ],
+      "shot_type": "source_media",
+      "transition": "editorial_cut",
+      "sound": "narration_only",
+      "fact_check": "source_supported_with_interpretation_marked",
+      "claim_type": "author_reflection",
+      "same_seed_comparison": false
+    }
+  ],
+  "editorial_status": "authored_from_evidence; human_phone_review_pending",
+  "cover_assets": [
+    "concept",
+    "region_fail"
+  ],
+  "playback_speed": 1.18
+}

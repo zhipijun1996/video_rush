@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-21T09:45:14.216817+00:00",
+  "repository": "zhipijun1996/gunman-rush",
+  "head": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "main": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "shallow": false,
+  "commit_count": 543,
+  "ref_count": 108,
+  "pr_count": 91,
+  "pr_detail_count": 91,
+  "github_file_list_capped_prs": [
+    71,
+    69,
+    67
+  ],
+  "errors": [],
+  "earliest_commit": "2026-10-09T08:11:33Z",
+  "latest_commit": "2026-10-21T08:01:53Z",
+  "coverage": "All fetched refs metadata and media/doc paths; all PR bodies/API files/discussions; API file caps disclosed, full local changed paths recovered; curated stories require separate evidence reading."
+}

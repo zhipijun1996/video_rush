@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "concept",
+      "pr": 24,
+      "commit": "949d884063b3d3a0c1c12907dff5148e3c288ac8",
+      "path": "assets/backgrounds/plains/source/plains_painted_master.png",
+      "kind": "concept_art",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "v2_preview",
+      "pr": 30,
+      "commit": "3bacc326c419741f1ded43fd32e8877cf706dbc5",
+      "path": "preview/painterly_v2_composite.png",
+      "kind": "composite_preview_not_gameplay",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "old",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/region-baseline.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "aa40f90",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "painted",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/region-candidate.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "aa40f90",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "tiles47",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/all-47.png",
+      "kind": "technical_fixture",
+      "runtime_commit": "aa40f90",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "painted_movie",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/normal_speed.webm",
+      "kind": "original_game_recording",
+      "runtime_commit": "aa40f90",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "redesign_before",
+      "pr": 67,
+      "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+      "path": "docs/evidence/plains_redesign/final_current/raw/build/plains_redesign/matched_movies/before/creek_growth/gameplay.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "redesign_after",
+      "pr": 67,
+      "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+      "path": "docs/evidence/plains_redesign/final_current/raw/build/plains_redesign/matched_movies/after/creek_growth/gameplay.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "region_fail",
+      "pr": 86,
+      "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+      "path": "docs/evidence/plains_regional/frames/film02_video_frame_003000.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "46c3c099",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "region_overview",
+      "pr": 86,
+      "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+      "path": "docs/evidence/plains_regional/frames/guarded_seed02_actual_world_overview.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "46c3c099",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "world_first",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/movies/layout0_review.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "97703a8f",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "world_second",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/movies/layout1_review.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "ba787df7",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "world_fail",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/frames/negative_v2.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "5871a02b",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "styles",
+      "pr": 93,
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/comparison_five_styles.png",
+      "kind": "original_game_comparison",
+      "runtime_commit": "32200d04",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "six_regions",
+      "pr": 93,
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/comparison_six_regions.png",
+      "kind": "experimental_style_comparison_not_formal_regions",
+      "runtime_commit": "32200d04",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "style_movie",
+      "pr": 93,
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/motion/underworld_plains.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "32200d04",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "new_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/formal/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "home_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/home/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "new",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map1_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a1110",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "new2",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map2_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a1110",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "forest",
+      "pr": 101,
+      "commit": "6dba342dcf557c89957e31b7faec489574d46abd",
+      "path": "docs/evidence/region_bible_v2/style_continuity_20261021/golden-v5/map1_near_tree.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    },
+    {
+      "id": "world_second_end",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/frames/second_end.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "ba787df7",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence"
+    }
+  ]
+}

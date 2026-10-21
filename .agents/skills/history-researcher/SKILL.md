@@ -1,0 +1,12 @@
+---
+name: history-researcher
+description: Research game Git and PR history into an evidence-backed story index, including main, significant branches, failed attempts and media availability. Use before selecting or updating a video story.
+---
+
+Read AGENTS.md. Announce this skill on first use. Treat the game repository as read-only. Use `python -m video_rush research --source PATH` to snapshot all fetched remote refs, all reachable commit metadata and paginated PR files/discussions. This command does not itself judge storytelling value. Use `--refresh` explicitly for new history, preserve the previous scope SHA. Public API fallback is allowed on CLI authentication errors; record missing discussion access or API file caps.
+
+Read main current_state/handoff, branch catalogs, selected PR bodies, actual base/head diffs and the reports they cite. PR descriptions are claims to cross-check, not runtime proof. Investigate reverted implementations with `git log --all`, `git show SHA:path`, ancestry and subsequent corrections. Read important unmerged art/design branches as well as main. Document completeness: list API files cap is 3000; use local git diff for the full changed-path set, never call the truncated list complete.
+
+Build/update `research/stories.json`: id, event, date, background, conflict, attempts, result, truth_status, evidence_status, commit, base_commit, PR, branch, linked sources, associated media, recordability and video potential. Pick for meaningful conflicts/discoveries, not commit/LOC/test counts. Initial target >=20 evidence-backed candidates; fewer is correct when evidence is insufficient. Statuses must distinguish implemented, historical_replaced/reverted, preview_only, planned, failed_quality, technical_only, scoped_success and draft_quality_pending.
+
+For every candidate inspect its concrete conflict and outcome. Attach full immutable URLs and record exactly what was personally inspected versus reported by the source. Preserve negative outcomes and open questions. Discover contemporaneous recordings/screenshots, source art, provenance receipts and reconstruction recipes. Assess engine/dependency/graphical feasibility without claiming it ran. Save research scope and API/recording failures in the episode research report. Pass selected stories and verified assets to video-director; do not fill history gaps with invented events.

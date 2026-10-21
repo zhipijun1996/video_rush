@@ -1,0 +1,73 @@
+name: Produce Video Rush episode
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 已有分镜主题；新主题先由Codex按Skills编写分镜
+        default: AI生成的概念图为什么无法直接变成好看的游戏
+        required: true
+      spec:
+        description: 可选：仓库中的episode JSON路径
+        default: episodes/ep001.json
+      episode:
+        description: 产物目录名（只用字母、数字、横线、下划线）
+        default: ep001
+        required: true
+permissions:
+  contents: read
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      VR_TOPIC: ${{ inputs.topic }}
+      VR_SPEC: ${{ inputs.spec }}
+      VR_EPISODE: ${{ inputs.episode }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install free tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+          python -m pip install -e '.[test]'
+          pytest -q
+      - name: Fetch only exact game commits and media blobs
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, re, subprocess
+          if not re.fullmatch(r'[A-Za-z0-9_-]+', os.environ['VR_EPISODE']):
+              raise ValueError('Unsafe episode name')
+          spec = pathlib.Path(os.environ['VR_SPEC']).resolve()
+          if not spec.is_relative_to(pathlib.Path.cwd()) or spec.suffix != '.json':
+              raise ValueError('Spec must be repository JSON')
+          episode = json.loads(spec.read_text())
+          assets = json.loads(pathlib.Path(episode['asset_spec']).read_text())
+          source = pathlib.Path('build/source'); source.mkdir(parents=True)
+          subprocess.run(['git', 'init', str(source)], check=True)
+          subprocess.run(['git', '-C', str(source), 'remote', 'add', 'origin', 'https://github.com/' + assets['repository'] + '.git'], check=True)
+          for sha in sorted({a['commit'] for a in assets['assets']}):
+              if not re.fullmatch(r'[a-f0-9]{40}', sha): raise ValueError('Full immutable SHA required')
+              subprocess.run(['git', '-C', str(source), 'fetch', '--no-tags', '--filter=blob:none', '--depth=1', 'origin', sha], check=True)
+          PY
+      - name: Produce and validate
+        run: python -m video_rush produce --source build/source --spec "$VR_SPEC" --topic "$VR_TOPIC" --output "build/episodes/$VR_EPISODE"
+      - name: Keep movie and review evidence (also on failure)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-${{ inputs.episode }}
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            build/episodes/${{ inputs.episode }}/final.mp4
+            build/episodes/${{ inputs.episode }}/cover.png
+            build/episodes/${{ inputs.episode }}/*.md
+            build/episodes/${{ inputs.episode }}/*.json
+            build/episodes/${{ inputs.episode }}/*.ass
+            build/episodes/${{ inputs.episode }}/logs/
+            build/episodes/${{ inputs.episode }}/narration/*.json
+            build/episodes/${{ inputs.episode }}/narration/*.jsonl

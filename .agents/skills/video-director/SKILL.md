@@ -1,0 +1,14 @@
+---
+name: video-director
+description: Turn verified game-development history into a concise Chinese Bilibili story and evidence-linked JSON script/shot plan. Use for selecting, writing or revising video content, not rendering media.
+---
+
+Read AGENTS.md, selected story records, episode schema demonstrated by `episodes/ep001.json` and matching assets spec. Announce this skill on first use. The host Codex authors the story; no model credentials are embedded in Python. A CLI director-brief is a resumable creative handoff, not output to abandon to the user. Continue authoring it autonomously.
+
+Prefer one concrete question with a visible conflict/result in the first 5–15 seconds; brief context; actual attempts, failures and cause; evidence and comparisons; useful bounded lesson; a real unresolved next step. Vary structure when the story benefits. Aim for 3–5 minutes and natural conversational Mandarin, with no invented quotes, reactions, hours spent or marketing claims. First-person narration is an editorial reconstruction, not a recording of the user's exact words. Label inference/reflection separately from documented events.
+
+Write an episode JSON: episode id, title, repository, asset_spec, story_ids, voice/rate, target_duration, cover_assets, editorial_status, shots. Each shot needs id, narration, assets, offsets, chapter/title, emphasis/subtitle text, shot_type, transition, sound, PR evidence, fact_check, claim_type and whether comparison is same seed. Use exact source IDs. Distinguish previews, positioned stills, tests, original footage and reconstructed clips. Compare different stages honestly; do not claim equal physics/seed/layout without proof. Never equate test counts with aesthetic quality or final user approval.
+
+Plan around actual usable clip durations: no repeated loop to fake new gameplay. Still motion is acceptable but must be labeled. Prefer matching on-screen failure/advance while it is narrated, not unrelated footage. Review the generated storyboard after TTS; shorten or split text if a clip is too short. Edge sentence boundaries give actual synthesis timing; phrase timing within a sentence is estimated. Human subtitle/listening checks remain pending.
+
+Validate every factual assertion with immutable PR/doc evidence. Revise unsupported text. Authored emphasis and explanatory cards must be labeled editorial; never present reconstructed text as a screenshot of a real report. Save script.md/storyboard.json and Bilibili title/description suggestions. Run production, inspect contact sheet and report, fix mismatches before delivery. Do not ask the phone-only user to edit scripts/JSON.

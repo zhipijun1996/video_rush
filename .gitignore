@@ -1,0 +1,15 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+.cache/
+research/*-detail.json
+research/pr-search-snapshot.json
+*.mp4
+*.webm
+*.avi
+*.wav
+*.mp3
+*.onnx
+*.zip
