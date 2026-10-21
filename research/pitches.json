@@ -47,7 +47,7 @@
         200,
         270
       ],
-      "production_status": "ep003_local_verified_actions_running",
+      "production_status": "ep003_produced_uploaded_downloaded_and_verified",
       "one_question": "为什么在这款游戏里，换武器也会改变移动方式？",
       "opening_10_seconds": "直接展示反冲上跳与侧向位移：这把枪，先别管敌人。先把我自己送上去。",
       "hook_status": "authored editorial wording; not an original quote",
@@ -79,7 +79,10 @@
       ],
       "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled.",
       "user_scope_update": "User requested all six Lv2 branches, with differences/features, on 2026-10-21",
-      "episode_spec": "episodes/ep003.json"
+      "episode_spec": "episodes/ep003.json",
+      "actual_duration_seconds": 221.166667,
+      "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417",
+      "artifact_expires_at": "2026-11-04T16:34:46Z"
     },
     {
       "id": "V002",

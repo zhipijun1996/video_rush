@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-21T16:19:10.294951+00:00",
-  "status": "local_pass_actions_pending",
-  "production_commit": "04d7671",
+  "checked_at": "2026-10-21T16:38:45.149312+00:00",
+  "status": "local_and_actions_complete_downloaded_and_verified",
+  "production_commit": "04d767154510ba98541c34394850685b584734ca",
   "source_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
   "source_unchanged": true,
   "local": {
@@ -78,7 +78,102 @@
   "actions": {
     "run_id": 39633722578,
     "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578",
-    "status": "in_progress_not_yet_delivered"
+    "status": "downloaded_hash_verified_and_fully_decoded",
+    "artifact_id": 12361257417,
+    "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417",
+    "expires_at": "2026-11-04T16:34:46Z",
+    "artifact_bytes": 38878115,
+    "zip_sha256": "102d470bdcee9269990ed65a8270f06f155db9928056078a10af70282070a727",
+    "duration_seconds": 221.166667,
+    "final_sha256": "f41604c33110850c798932c27c424259d7916934676961e2c6958c357ffd8cc9",
+    "final_bytes": 38622224,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "real_tts_receipts_verified": 35,
+    "recording_traces_verified": [
+      "mine_ground",
+      "laser_up",
+      "laser_stop",
+      "gun_empty",
+      "gun_up",
+      "gun_side",
+      "mine_air",
+      "jump_control",
+      "boomerang_return",
+      "shuriken_side",
+      "triple_up",
+      "fan_turn",
+      "singularity_launch"
+    ],
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对只跳/加枪与激光松手对照的源SHA、Seed、出生点和实际输入；指定装备不能当成自然解锁。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "audio_metrics": {
+      "decoded_samples": 3555669,
+      "peak": 0.745758056640625,
+      "rms": 0.09589375722704944,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    },
+    "whole_file_decoded_after_download": true,
+    "bgm_original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "temporary_bgm_chunk_cleanup": "8 artifacts deleted; all HTTP204 in actual job logs",
+    "footage_collection_wall_seconds": 624.23,
+    "native_movie_maker_seconds": 363,
+    "batch_prefetch_in_this_hosted_run": false,
+    "batch_prefetch_note": "Added separately in 613fdc8, validated through a real 984-blob GitHub protocol probe and local cached end-to-end run; not claimed as used by this hosted render."
   },
-  "cache_resume": "Exact topic CLI rerun reused all ten stages; after batch-prefetch code update, source verification/manifest recomputed, media/narration/render/quality remained valid cached outputs"
+  "cache_resume": "Exact topic CLI rerun reused all ten stages; after batch-prefetch code update, source verification/manifest recomputed, media/narration/render/quality remained valid cached outputs",
+  "next_improvements": [
+    "Use longer real obstacle/combat routes to show six weapons in practical choices and reduce idle footage.",
+    "Anchor narration windows to recorded action events and review full voice/phone pacing; structural checks do not certify watchability.",
+    "Restore durable Prerelease asset uploads if credentials become available; current requested Actions ZIP expires after14days."
+  ]
 }

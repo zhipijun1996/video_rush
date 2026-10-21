@@ -4,7 +4,9 @@
 
 ## 当前下载方式（用户最新指示）
 
-当前ep002已实际通过GitHub Actions生产并上传，随后下载核对hash与整片解码：[下载成片、封面与标题简介ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39594660575/artifacts/12343311814)，约30MB，2026-11-04过期。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
+最新 ep003《枪是用来赶路的？我的游戏靠反冲跳跃》已实际通过 Actions 录制、配音、制作、验收并上传，随后下载复核哈希与整片解码：[下载六武器视频、封面及标题简介 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417)，约39MB，3分41秒，2026-11-04过期。执行证据见 [ep003 验证记录](docs/ep003-verification.json)。六条分支都有专门实机，采用用户指定 BGM 压缩副本；手机完整试听和审美待审核。
+
+前一期 ep002 初心介绍也已实际通过GitHub Actions生产并上传，随后下载核对hash与整片解码：[下载成片、封面与标题简介ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39594660575/artifacts/12343311814)，约30MB，2026-11-04过期。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
 
 指定BGM由原上传曲目转为前145秒、单声道Opus 20kbps压缩副本，通过有界workflow_dispatch输入分块传输，Runner验SHA后用于轻背景配乐。临时音频块生产成功后删除，否则1天过期；媒体不提交Git，不使用第三方文件托管。原曲/压缩副本SHA都记在sources.json。后续同类入口：
 
@@ -16,7 +18,9 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg
 
 ## 手机使用
 
-以后成片直接交付 **GitHub预发布**，不再把Actions/Artifact作为常规入口。打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
+当前按用户最新要求从上方 Actions Artifact 链接下载：登录 GitHub 后下载 ZIP，手机解压即可取得 final.mp4、cover.png 和 bilibili.md（标题、简介）。无需本地安装剪辑软件，不自动上传 B 站。
+
+系统也保留 **GitHub预发布** 交付能力，须先恢复附件上传授权。恢复后可打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
 
 在Codex中说“用Video Rush制作一期关于……的视频”即可。当前宿主按四个Skills研究、创作、在本地渲染验收，提交代码后上传预发布。手机用户无需剪辑、写JSON或操作Actions。已有分镜可以一条CLI完成；未知主题会先形成director-brief，Codex应继续编写与执行，不能把brief交给用户当成片。
 
