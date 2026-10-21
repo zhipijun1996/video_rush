@@ -5,6 +5,23 @@ import re
 import zipfile
 from .common import ROOT, read, write, sha, run
 
+REQUIRED_FILES = {'final.mp4', 'cover.png', 'bilibili.md', 'script.md',
+                  'storyboard.json', 'subtitles.ass', 'sources.json',
+                  'report.json', 'phone-review.md'}
+
+
+def posting_copy(spec, description):
+    """Phone-copyable submission materials, also shown in the release body."""
+    title=spec['title'].strip()
+    if not title or not description.strip():
+        raise ValueError('Submission materials require a title and description')
+    alternatives=[t for t in spec.get('title_candidates',[]) if t!=title]
+    return ('# B站投稿资料\n\n## 推荐标题\n\n'+title+
+            '\n\n## 备选标题\n\n'+(''.join('- '+t+'\n' for t in alternatives) or '无\n')+
+            '\n## 简介（可复制）\n\n'+description.strip()+
+            '\n\nAI配音；正式/开发演示/设计示意分别标注。完整来源与授权见sources.json。\n'
+            '\n投稿前请按phone-review.md完整试听；本系统未自动上传B站。\n')
+
 
 def verified_files(output):
     output=Path(output)
@@ -13,6 +30,9 @@ def verified_files(output):
         raise ValueError('Prerelease requires technical and content-structure checks; human review may remain pending')
     if sha(output/'final.mp4')!=report['final']['sha256']:
         raise ValueError('Final movie changed after validation')
+    missing=REQUIRED_FILES-set(delivery['files'])
+    if missing:
+        raise ValueError('Missing required delivery files: '+', '.join(sorted(missing)))
     for name,expected in delivery['files'].items():
         p=(output/name).resolve()
         if not p.is_relative_to(output.resolve()) or sha(p)!=expected:
@@ -34,7 +54,7 @@ def publish(output, repository='zhipijun1996/video_rush', tag=None):
     with zipfile.ZipFile(bundle,'w',zipfile.ZIP_DEFLATED,compresslevel=1) as z:
         for name in [*files,'delivery.json','state.json','script.json']:
             if (output/name).exists():z.write(output/name,name)
-    uploads=[output/'final.mp4',output/'cover.png',bundle]
+    uploads=[output/'final.mp4',output/'cover.png',output/'bilibili.md',bundle]
     receipt=output/'prerelease.json';input_hashes={p.name:sha(p) for p in uploads}
     # Existing stable releases must never be converted or overwritten.
     try:
@@ -56,7 +76,7 @@ def publish(output, repository='zhipijun1996/video_rush', tag=None):
             result={'url':current['html_url'],'tag':tag,'commit':current['target_commitish'],'prerelease':True,'files':input_hashes,'status':'already_uploaded_and_verified'}
             write(receipt,result);return result
     notes=output/'release-notes.md'
-    notes.write_text('# '+spec['title']+'\n\n直接下载 final.mp4 即可手机观看；cover.png 为B站封面；ZIP包含脚本、字幕、投稿文案、来源和验收报告。\n\n技术验收通过；这是预发布，完整试听与最终审美仍待用户审核。未向B站上传。\n\n'+spec.get('bilibili_body','素材来源和许可见ZIP中sources.json。')+'\n\n生产代码提交：'+commit+'\n')
+    notes.write_text('# '+spec['title']+'\n\n附件：\n\n- `final.mp4`：完整成片，手机观看/投稿使用。\n- `cover.png`：B站封面。\n- `bilibili.md`：推荐标题、备选标题和可复制简介。\n- `'+bundle.name+'`：上述文件及脚本、字幕、来源和验收报告。\n\n技术验收通过；这是预发布，完整试听与最终审美仍待用户审核。未向B站上传。\n\n'+(output/'bilibili.md').read_text()+'\n\n生产代码提交：'+commit+'\n')
     try:
         if not current:
             # Keep partial/failed uploads out of the public prerelease list.
@@ -64,6 +84,9 @@ def publish(output, repository='zhipijun1996/video_rush', tag=None):
                  '--title',spec['title'],'--notes-file',notes],log=output/'logs/prerelease-create.log',timeout=120)
             listed=json.loads(run(['gh','api',f'repos/{repository}/releases?per_page=100']))
             current=next(r for r in listed if r.get('tag_name')==tag)
+        elif current.get('draft'):
+            run(['gh','release','edit',tag,'--repo',repository,'--title',spec['title'],
+                 '--notes-file',notes],log=output/'logs/prerelease-notes.log',timeout=120)
         existing={a['name']:a for a in current.get('assets',[])}
         for p in uploads:
             if p.name not in existing:

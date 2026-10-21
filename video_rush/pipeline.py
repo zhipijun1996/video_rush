@@ -11,6 +11,7 @@ from .footage import collect
 from .narration import narrate
 from .render import subtitle_cues, ass_file, encode_shot, cover
 from .quality import validate
+from .publish import posting_copy
 
 STAGES=['Research','Story','Script','Shot Planning','Footage Collection','Narration','Timeline Composition','Rendering','Quality Validation','Delivery']
 
@@ -163,9 +164,11 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         body='# B站上传建议\n\n'+''.join(f'- {x}\n' for x in titles)+'\n分区建议：游戏 → 单机游戏（开发记录）；或知识 → 野生技能协会，以投稿页实际可选分区为准。\n\n标签：AI开发、独立游戏、Godot、游戏开发、Codex、美术、失序之钟\n\n简介：\n\n独自用 AI 制作《失序之钟》，这次复盘概念图到实机的反复返工。包含历史实机、失败候选和有限进展，不代表游戏美术问题已解决。中文AI配音；母版、预览、实验与正式入口分别标注。不同阶段画面对比不是同Seed受控实验。\n\n素材来源：本人项目 gunman-rush 的 Git/PR/历史录像。Underworld Tileset by Asouris，采用作者许可声明；中文字体 Noto Sans CJK，SIL OFL。五风格比较另含 Retro Lines / VEXED、Basic Platformer / Ariel Pinana、Scribble Platformer / Kenney、Cavern Tile Set / ansimuz（CC0；Basic许可来自作者页面，原许可文件为空）。其余许可状态见 sources.json。\n\n'+''.join(f'- https://github.com/{spec["repository"]}/pull/{p}\n' for p in sorted({n for s in spec['shots'] for n in s['prs']}))+'\n上传前完整观看 phone-review.md 清单；未自动发布到B站。\n'
         if spec.get('bilibili_body'):
             body='# B站上传建议\n\n'+''.join('- '+t+'\n' for t in titles)+'\n'+spec['bilibili_body']+'\n\nAI配音；正式/开发演示/设计示意分别标注。完整来源与授权见sources.json。未上传B站。\n'
-        (output/'bilibili.md').write_text(body)
+        # Use the authored description when present; keep the original source-rich fallback.
+        description=spec.get('bilibili_body') or body.split('简介：\n\n',1)[-1]
+        (output/'bilibili.md').write_text(posting_copy(spec,description))
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':3,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
+    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':4,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
     return output

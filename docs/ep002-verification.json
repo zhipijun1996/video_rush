@@ -131,7 +131,7 @@
       }
     ]
   },
-  "tests": "6 passed",
+  "tests": "9 passed",
   "source_repository_clean": true,
   "notable_failures": [
     "Initial clip duration check stopped shot18 instead of looping. Narration was shortened and later clip window used.",
@@ -150,6 +150,12 @@
     "observed_error": "HTTP401 Bad credentials",
     "movie_remains_complete_locally": true,
     "actions_used": false,
-    "media_committed_to_git": false
+    "media_committed_to_git": false,
+    "required_standalone_assets": [
+      "final.mp4",
+      "cover.png",
+      "bilibili.md",
+      "ep002-delivery.zip"
+    ]
   }
 }

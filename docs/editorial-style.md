@@ -16,6 +16,6 @@
 
 先本地完整生产与技术验收，查看关键帧；提交/推送代码及分镜，最后`python -m video_rush deliver build/episodes/epNNN`。已提交干净工作树可直接`produce`，默认在生产后交付预发布。`--local-only`仅用于调试/本地核验。
 
-每期预发布直接附`final.mp4`、`cover.png`和资料ZIP；手机点击MP4即可下载。说明区标注技术验收状态、人类审核仍待确认、素材版权。禁止把技术PASS说成审美PASS。更新使用新修订tag，不能覆盖已有正式Release。
+每期预发布必须直接附`final.mp4`、`cover.png`、独立`bilibili.md`（推荐标题、备选标题和可复制简介）及完整资料ZIP；说明区同步展示投稿资料。缺少任一必要文件阻止发布。手机点击MP4即可下载。说明区标注技术验收状态、人类审核仍待确认、素材版权。禁止把技术PASS说成审美PASS。更新使用新修订tag，不能覆盖已有正式Release。
 
 旧Actions工作流保存在docs/archive/produce-actions.yml，仅供历史复现；已移出活动工作流目录。

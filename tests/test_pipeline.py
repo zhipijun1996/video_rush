@@ -69,7 +69,15 @@ def test_failed_or_tampered_movie_cannot_be_prereleased(tmp_path):
     write(tmp_path/'delivery.json',{'files':{'final.mp4':sha(movie)}})
     with pytest.raises(ValueError,match='requires technical'):verified_files(tmp_path)
     r=read(tmp_path/'report.json');r['technical']['passed']=True;write(tmp_path/'report.json',r)
-    assert verified_files(tmp_path)=={'final.mp4':sha(movie)}
+    with pytest.raises(ValueError,match='Missing required delivery files'):verified_files(tmp_path)
+    from video_rush.publish import REQUIRED_FILES
+    for name in REQUIRED_FILES-{'final.mp4','report.json'}:
+        (tmp_path/name).write_text('fixture')
+    manifest={name:sha(tmp_path/name) for name in REQUIRED_FILES}
+    write(tmp_path/'delivery.json',{'files':manifest})
+    assert verified_files(tmp_path)==manifest
+    (tmp_path/'cover.png').write_text('changed cover')
+    with pytest.raises(ValueError,match='manifest mismatch'):verified_files(tmp_path)
     movie.write_bytes(b'changed after review')
     with pytest.raises(ValueError,match='changed after validation'):verified_files(tmp_path)
 
@@ -83,3 +91,46 @@ def test_external_media_requires_pinned_hash_and_checks_bytes(tmp_path, monkeypa
     assert collect(tmp_path,{'assets':[asset]},tmp_path/'out')[0]['sha256']==expected
     asset['sha256']='0'*64
     with pytest.raises(ValueError,match='SHA256 mismatch'):collect(tmp_path,{'assets':[asset]},tmp_path/'other')
+
+
+def test_posting_materials_have_copyable_title_and_description():
+    from video_rush.publish import posting_copy
+    copy=posting_copy({'title':'主标题','title_candidates':['主标题','备选标题']},'真实的开发简介')
+    assert '## 推荐标题\n\n主标题' in copy
+    assert '- 备选标题' in copy
+    assert '## 简介（可复制）\n\n真实的开发简介' in copy
+    with pytest.raises(ValueError,match='title and description'):
+        posting_copy({'title':'主标题'},'  ')
+
+
+@pytest.mark.parametrize('upload_fails',[False,True])
+def test_prerelease_includes_submission_asset_and_only_finalizes_complete_upload(tmp_path, monkeypatch, upload_fails):
+    from video_rush import publish as publisher
+    from video_rush.common import sha
+    names=['final.mp4','cover.png','bilibili.md']
+    for name in names:(tmp_path/name).write_text('fixture '+name)
+    write(tmp_path/'script.json',{'episode':'ep-test','title':'标题'})
+    write(tmp_path/'delivery.json',{'files':{}})
+    monkeypatch.setattr(publisher,'verified_files',lambda out:{n:sha(tmp_path/n) for n in names})
+    assets=[];commands=[]
+    current={'id':42,'tag_name':'ep-test','target_commitish':'abc','draft':True,'prerelease':True,'html_url':'https://example.invalid/release','assets':assets}
+    def fake_run(args,**kwargs):
+        args=[str(a) for a in args];commands.append(args)
+        if args[0]=='git':
+            return '' if 'status' in args else ('abc refs/heads/main' if 'ls-remote' in args else 'abc')
+        if args[1]=='api':return json.dumps(current)
+        if args[1:3]==['release','upload']:
+            if upload_fails:raise RuntimeError('HTTP401 upload fixture')
+            p=Path(args[4]);assets.append({'name':p.name,'size':p.stat().st_size,'digest':'sha256:'+sha(p),'browser_download_url':'https://example.invalid/'+p.name})
+        return ''
+    monkeypatch.setattr(publisher,'run',fake_run)
+    if upload_fails:
+        with pytest.raises(RuntimeError,match='HTTP401'):publisher.publish(tmp_path)
+        assert (tmp_path/'prerelease.failure.json').exists()
+    else:
+        publisher.publish(tmp_path)
+        assert {a['name'] for a in assets}=={'final.mp4','cover.png','bilibili.md','ep-test-delivery.zip'}
+    assert any('--notes-file' in c for c in commands)
+    assert any('--draft=false' in c for c in commands)==(not upload_fails)
+    assert (tmp_path/'bilibili.md').read_text()=='fixture bilibili.md'
+    assert 'bilibili.md' in (tmp_path/'release-notes.md').read_text()

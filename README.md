@@ -4,7 +4,7 @@
 
 ## 手机使用
 
-以后成片直接交付 **GitHub预发布**，不再把Actions/Artifact作为常规入口。打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`、`cover.png`，或资料ZIP。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
+以后成片直接交付 **GitHub预发布**，不再把Actions/Artifact作为常规入口。打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
 
 在Codex中说“用Video Rush制作一期关于……的视频”即可。当前宿主按四个Skills研究、创作、在本地渲染验收，提交代码后上传预发布。手机用户无需剪辑、写JSON或操作Actions。已有分镜可以一条CLI完成；未知主题会先形成director-brief，Codex应继续编写与执行，不能把brief交给用户当成片。
 
@@ -107,7 +107,7 @@ Piper代码路径已实现，未在本轮下载模型或冒称其声音已经验
 
 默认 `produce` 在成功生产后直接创建GitHub Prerelease；`--local-only`允许先检查和修改。`deliver`会核对技术验收、内容结构检查、MP4及全部交付文件的hash，要求生产代码/分镜已提交推送。人类审核待完成可以交付预发布，不冒称审美通过。
 
-每期先创建草稿，附MP4、PNG封面和含脚本/字幕/来源/报告的ZIP，并核对GitHub返回的大小和SHA256；全部成功后才转成公开Prerelease。已有正式Release绝不覆盖；已有预发布若内容不同，使用新修订tag。调用或上传失败保留 `prerelease.failure.json`，不会声称已上传。
+每期先创建草稿，附MP4、PNG封面、独立投稿资料bilibili.md（推荐/备选标题及可复制简介）和含脚本/字幕/来源/报告的ZIP，并核对GitHub返回的大小和SHA256；全部成功后才转成公开Prerelease。已有正式Release绝不覆盖；已有预发布若内容不同，使用新修订tag。调用或上传失败保留 `prerelease.failure.json`，不会声称已上传。
 
 活动Actions工作流已移到 `docs/archive/produce-actions.yml`，保留旧证据；不再作为后续常规执行/下载入口。既有工作流的成功记录见 [上一轮实施记录](docs/implementation.md)。
 
