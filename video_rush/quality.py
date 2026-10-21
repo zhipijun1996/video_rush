@@ -20,8 +20,8 @@ def content_check(spec, timeline, sources):
     # These are structural checks, never an automatic aesthetic or fact verdict.
     pending = ['前15秒是否值得继续观看；主题是否明确', '逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签',
                '检查AI配音是否错读、语气自然，字幕是否跟得上', '核对引用SHA/PR与具体结论，是否存在过度归因',
-               '横向旧新对比是不同阶段，未声称同Seed同布局受控实验', '重复、单调或停留太久的镜头是否应缩短',
-               '技术通过是否被误读成品质通过；森林草稿是否清楚', '完整观看后决定标题封面是否准确，手机字是否可读']
+               spec.get('comparison_review','横向旧新对比是不同阶段，未声称同Seed同布局受控实验'), '重复、单调或停留太久的镜头是否应缩短',
+               '技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚', '完整观看后决定标题封面是否准确，手机字是否可读']
     return {'structural_checks': structural, 'structural_pass': all(structural.values()),
             'editorial_review': 'human_review_required', 'aesthetic_acceptance': 'unverified',
             'independent_fact_review': 'unverified', 'phone_checklist': pending}

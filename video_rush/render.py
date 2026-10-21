@@ -4,7 +4,7 @@ import re
 import textwrap
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from .common import font, run, sha, digest, read, write, duration
+from .common import font, run, sha, digest, read, write, duration, probe
 
 W, H, FPS = 1920, 1080, 30
 BG = '#0d1724'
@@ -63,7 +63,7 @@ Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour,
 Style: Default,Noto Sans CJK SC,52,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,1,0,1,3,1,2,100,100,64,1
 Style: Title,Noto Sans CJK SC,44,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,7,62,60,30,1
 Style: Source,Noto Sans CJK SC,27,&H00BCDDCD,&H000000FF,&H00101824,&H80000000,0,0,0,0,100,100,0,0,1,1,0,9,60,60,38,1
-Style: Punch,Noto Sans CJK SC,64,&H0087E5FF,&H000000FF,&H0012243A,&H0012243A,-1,0,0,0,100,100,0,0,3,12,1,9,90,100,130,1
+Style: Punch,Noto Sans CJK SC,64,&H0087E5FF,&H000000FF,&H0012243A,&H0012243A,-1,0,0,0,100,100,0,0,3,12,1,9,90,100,225,1
 Style: Emphasis,Noto Sans CJK SC,57,&H008EEBD2,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,3,1,8,80,80,120,1
 
 [Events]
@@ -124,20 +124,32 @@ def encode_shot(shot, assets, out, log, *, threads=4):
                 '-loop','1','-framerate','30','-i',str(derived)]
     if len(paths) == 2:
         # Split comparison preserves original aspect ratios; no claim of matching seed.
-        filt = ('[0:v]scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[a];'
-                '[1:v]scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[b];'
+        crops=shot.get('crop_rects',[None,None])
+        filt = (f'[0:v]{crop_filter(crops[0],paths[0])}scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[a];'
+                f'[1:v]{crop_filter(crops[1],paths[1])}scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[b];'
                 '[a][b]hstack=inputs=2,pad=1920:1080:6:100:color=0x0d1724')
     elif paths[0].suffix.lower() in video_ext:
-        filt = '[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1'
+        filt = '[0:v]'+crop_filter(shot.get('crop_rect'),paths[0])+'scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1'
     else:
         # Zoom <= 3%, smooth at output resolution. Original asset stays unchanged.
         filt = (f'[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,'
                 f"zoompan=z='1+0.025*on/{frames}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1920x1080:fps=30,setsar=1")
-    filt += ',fps=30,drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill,format=yuv420p[v]'
+    filt += ',fps=30,drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill,scale=in_range=auto:out_range=tv,format=yuv420p[v]'
     args += ['-filter_complex', filt, '-map', '[v]', '-frames:v', str(frames), '-an',
              '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-threads', str(threads),
-             '-pix_fmt', 'yuv420p', '-r', '30', '-movflags', '+faststart', str(out)]
+             '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-r', '30', '-movflags', '+faststart', str(out)]
     run(args, log=log, timeout=600)
+
+def crop_filter(rect,path):
+    if rect is None:return ''
+    if len(rect)!=4 or any(type(v) is not int for v in rect):raise ValueError('Crop rectangle needs four integers')
+    x,y,w,h=rect
+    if Path(path).suffix.lower() in {'.mp4','.avi','.webm'}:
+        video=next(s for s in probe(path)['streams'] if s['codec_type']=='video');width,height=video['width'],video['height']
+    else:
+        with Image.open(path) as im:width,height=im.size
+    if min(x,y)<0 or min(w,h)<=0 or x+w>width or y+h>height:raise ValueError('Crop rectangle exceeds original footage')
+    return f'crop={w}:{h}:{x}:{y},'
 
 
 def cover(path, left, right, design=None):

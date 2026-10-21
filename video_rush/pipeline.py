@@ -78,8 +78,9 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     stages('Shot Planning',spec['shots'],planning)
     def footage():
         media=collect(repo,a_spec,output/'media')
-        return [output/'media/manifest.json',*[a['local_path'] for a in media]]
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py')},footage)
+        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*'))]
+    recording_code=[sha(ROOT/'video_rush/recording.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
@@ -120,21 +121,30 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         write(output/'storyboard.json',timeline);ass_file(output/'subtitles.ass',timeline)
         sources={'repository':spec['repository'],'assets':media,'story_ids':spec['story_ids'],'claims':[{k:s[k] for k in ['id','narration','prs','fact_check','claim_type']} | {'evidence':s.get('evidence',[])} for s in spec['shots']],
                  'evidence':spec.get('evidence',[]),
-                 'rights':spec.get('rights',read(ROOT/'research/rights.json')),'audio':{'backend':backend,'voice':spec['voice'],'synthesized':True,'playback_speed':speed,'music':music,'music_license':music_license,'music_sha256':sha(music) if music else None,'music_provenance':spec.get('music_asset')},
-                 'comparison':'Different stages, not a controlled same-seed before/after benchmark'}
+                 'rights':spec.get('rights',read(ROOT/'research/rights.json')),'audio':{'backend':backend,'voice':spec['voice'],'synthesized':True,'playback_speed':speed,'music':music,'music_license':music_license,'music_sha256':sha(music) if music else None,'music_provenance':spec.get('music_asset'),'game_audio_gain':spec.get('game_audio_gain',0),'game_audio_policy':'Original matching clip window; comparison uses selected side only; narration foreground'},
+                 'comparison':spec.get('comparison','Different stages, not a controlled same-seed before/after benchmark')}
         write(output/'sources.json',sources)
         return [output/'storyboard.json',output/'subtitles.ass',output/'sources.json']
-    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
+    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'subtitle_generator':inspect.getsource(ass_file),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
     timeline=read(output/'storyboard.json');sources=read(output/'sources.json')
     def rendering():
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)
         muxed=[]
         for s in timeline['shots']:
-            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':[assets[x]['sha256'] for x in s['assets']],'render':digest({'encode_shot':inspect.getsource(encode_shot),'resolution':[1920,1080,30]})})
+            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':[assets[x]['sha256'] for x in s['assets']],'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'render':digest({'encode_shot':inspect.getsource(encode_shot),'resolution':[1920,1080,30]})})
             cache=p.with_suffix('.json')
             if not (p.exists() and cache.exists() and read(cache).get('key')==k and read(cache).get('sha256')==sha(p)):
                 raw=cuts/(s['id']+'.silent.mp4');encode_shot(s,assets,raw,logs/(s['id']+'-visual.log'))
-                run(['ffmpeg','-y','-v','warning','-i',raw,'-i',s['audio'],'-map','0:v','-map','1:a','-c:v','copy','-af',f'atempo={s["playback_speed"]},apad','-t',str(s['end']-s['start']),'-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',p],log=logs/(s['id']+'-audio.log'))
+                mux=['ffmpeg','-y','-v','warning','-i',raw,'-i',s['audio']]
+                audio_index=s.get('game_audio_index',0);game=assets[s['assets'][audio_index]]
+                if spec.get('game_audio_gain',0)>0 and Path(game['local_path']).suffix in ('.mp4','.webm','.avi'):
+                    mux+=['-ss',str(s.get('offsets',[0]*len(s['assets']))[audio_index]),'-i',game['local_path'],
+                          '-filter_complex',f'[1:a]atempo={s["playback_speed"]},apad[voice];[2:a]volume={spec["game_audio_gain"]},apad[game];[voice][game]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[audio]',
+                          '-map','0:v','-map','[audio]']
+                else:
+                    mux+=['-map','0:v','-map','1:a','-af',f'atempo={s["playback_speed"]},apad']
+                mux+=['-c:v','copy','-t',str(s['end']-s['start']),'-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',p]
+                run(mux,log=logs/(s['id']+'-audio.log'))
                 raw.unlink();write(cache,{'key':k,'sha256':sha(p)})
             muxed.append(p)
             print(f'  rendered {s["id"]}',flush=True)
@@ -149,11 +159,11 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
             cmd+=['-stream_loop','-1','-i',music,'-i',output/'original-effects.wav','-filter_complex',
                   f'[0:a]asplit=2[voice][side];[1:a]volume={spec.get("music_gain",.16)},afade=t=in:st=0:d=1,afade=t=out:st={max(0,timeline["duration"]-3)}:d=3[bg];[bg][side]sidechaincompress=threshold=0.025:ratio=8:attack=20:release=250[duck];[voice][duck][2:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.9[mix]',
                   '-map','0:v','-map','[mix]']
-        cmd+=['-vf',f'ass={output}/subtitles.ass','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-threads','4','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',output/'final.mp4']
+        cmd+=['-vf',f'scale=in_range=auto:out_range=tv,format=yuv420p,ass={output}/subtitles.ass','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-color_range','tv','-threads','4','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',output/'final.mp4']
         run(cmd,log=logs/'final-render.log',timeout=1200)
         cover(output/'cover.png',assets[spec['cover_assets'][0]]['local_path'],assets[spec['cover_assets'][1]]['local_path'],spec.get('cover'))
         return [output/'final.mp4',output/'cover.png']
-    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'music':sha(music) if music else None},rendering)
+    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2},rendering)
     def validation():
         report=validate(output,spec,timeline,sources)
         if not report['technical']['passed']:raise RuntimeError('Technical quality failed; inspect report.json and logs')

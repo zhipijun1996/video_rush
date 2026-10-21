@@ -57,7 +57,7 @@ def main():
         time.sleep(10)
     if ids is None:raise TimeoutError('Soundtrack transfer did not complete within 8 minutes')
     payload=folder/'produce.json'
-    data={'ref':'main','inputs':{'topic':'初心介绍视频','spec':a.spec,'episode':a.episode,
+    data={'ref':'main','inputs':{'topic':json.loads(Path(a.spec).read_text())['title'],'spec':a.spec,'episode':a.episode,
           'music_artifacts':json.dumps(ids),'music_sha256':hashlib.sha256(raw).hexdigest()}}
     payload.write_text(json.dumps(data))
     gh('api',f'repos/{a.repository}/actions/workflows/produce.yml/dispatches','--method','POST','--input',payload)

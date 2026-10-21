@@ -1,0 +1,1355 @@
+{
+  "schema_version": 2,
+  "episode": "ep003",
+  "title": "枪是用来赶路的？我的游戏靠反冲跳跃",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep003-assets.json",
+  "story_ids": [
+    "S065"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+3%",
+  "playback_speed": 1.02,
+  "target_duration": [
+    200,
+    270
+  ],
+  "display_chapters": false,
+  "editorial_status": "evidence_checked_reconstruction_human_phone_review_pending",
+  "cover_assets": [
+    "cover_jump",
+    "cover_recoil"
+  ],
+  "cover": {
+    "series": "《失序之钟》 / 核心玩法",
+    "left_label": "普通跳",
+    "right_label": "反冲跳",
+    "line1": "枪是用来赶路的？",
+    "line2": "六把武器，六种走法"
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "chapter": "01",
+      "title": "开枪，先把自己送上去",
+      "narration": "这把枪，先别管敌人。先把我自己送上去。",
+      "assets": [
+        "gun_up"
+      ],
+      "offsets": [
+        0.6
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "开枪，先把自己送上去",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s02",
+      "chapter": "02",
+      "title": "子弹向左，人往右",
+      "narration": "别人开枪，子弹往前飞。我开枪，自己往后飞。",
+      "assets": [
+        "gun_side"
+      ],
+      "offsets": [
+        0.6
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "子弹向左，人往右",
+      "punchline": "主要交通工具：枪",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s03",
+      "chapter": "03",
+      "title": "《失序之钟》· 反冲跳跃",
+      "narration": "这是我用AI做的《失序之钟》。核心玩法，就是反冲跳跃。",
+      "assets": [
+        "triple_up"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "《失序之钟》· 反冲跳跃",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s04",
+      "chapter": "04",
+      "title": "下射 ↑      左射 →",
+      "narration": "向下开枪，身体往上弹；朝左开枪，人就往右退。",
+      "assets": [
+        "gun_up",
+        "gun_side"
+      ],
+      "offsets": [
+        0.5,
+        0.5
+      ],
+      "shot_type": "split_comparison",
+      "emphasis": "下射 ↑      左射 →",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "s06",
+      "chapter": "06",
+      "title": "先看普通跳",
+      "narration": "先看普通跳。这个高度，就是不借武器时的结果。",
+      "assets": [
+        "jump_control"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "先看普通跳",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s07",
+      "chapter": "07",
+      "title": "左：只跳     右：跳跃＋下射",
+      "narration": "同一张图，同一个出生点，加一枪，能走的路线就不一样了。",
+      "assets": [
+        "jump_control",
+        "gun_up"
+      ],
+      "offsets": [
+        0.4,
+        0.4
+      ],
+      "shot_type": "split_comparison",
+      "emphasis": "左：只跳     右：跳跃＋下射",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules",
+        "controlled_compare"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": true,
+      "game_audio_index": 1,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "s09",
+      "chapter": "09",
+      "title": "开发者的小算盘",
+      "narration": "不过，能飞不等于随便飞。我没打算送你一张永久机票。",
+      "assets": [
+        "ticket"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "永久机票？想得美",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "editorial_direction"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s10",
+      "chapter": "10",
+      "title": "两次基础空中射击",
+      "narration": "默认这套规则里，一次腾空，只有两次基础出手机会。",
+      "assets": [
+        "gun_empty"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "两次基础空中射击",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s11",
+      "chapter": "11",
+      "title": "次数用完 → 先找落点",
+      "narration": "两枪用完，继续按也不会凭空多一枪。得先处理落点。",
+      "assets": [
+        "gun_empty"
+      ],
+      "offsets": [
+        0.8
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "次数用完 → 先找落点",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s12",
+      "chapter": "12",
+      "title": "落地，准备下一次起跳",
+      "narration": "真正落地后，按原来的恢复规则，再开始下一段动作。",
+      "assets": [
+        "gun_up"
+      ],
+      "offsets": [
+        1
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "落地，准备下一次起跳",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s13",
+      "chapter": "13",
+      "title": "命中回能与续航",
+      "narration": "而真实命中敌人，还能补回资源。瞄准，也就成了赶路的一部分。",
+      "assets": [
+        "enemy_hit"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "命中回能与续航",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        48,
+        96
+      ],
+      "evidence": [
+        "hit_refill"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s32",
+      "chapter": "01",
+      "title": "01 / 三连机关枪 · 三发分段反冲",
+      "narration": "先看三连机关枪：一次出手，连发三枪，反冲也分成三段。",
+      "assets": [
+        "triple_up"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "01 / 三连机关枪 · 三发分段反冲",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s33",
+      "chapter": "01",
+      "title": "三发一组，方向要先想好",
+      "narration": "它不是三次独立按键。你选好方向，就得接住这一串动作。",
+      "assets": [
+        "triple_up"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "三发一组，方向要先想好",
+      "punchline": "连发很爽，落点自理",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s17",
+      "chapter": "17",
+      "title": "02 / 散华手里剑 · 两段可变向",
+      "narration": "第二把，散华手里剑。一次出手，两段闪步，还能中途变向。",
+      "assets": [
+        "fan_turn"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "02 / 散华手里剑 · 两段可变向",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s18",
+      "chapter": "18",
+      "title": "换武器，也换走法",
+      "narration": "所以换武器，变的不只是伤害，还有你在空中调整的节奏。",
+      "assets": [
+        "fan_turn"
+      ],
+      "offsets": [
+        0.7
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "换武器，也换走法",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s19",
+      "chapter": "19",
+      "title": "03 / 恒流激光 · 有限时推进",
+      "narration": "接着是激光。看起来在攻击，实际上，也在推动我往上走。",
+      "assets": [
+        "laser_up"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "03 / 恒流激光 · 有限时推进",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s20",
+      "chapter": "20",
+      "title": "启动 → 加速 → 收束",
+      "narration": "它有启动和推进的过程，不是按下去就瞬间到终点。",
+      "assets": [
+        "laser_up"
+      ],
+      "offsets": [
+        0.6
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "启动 → 加速 → 收束",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s21",
+      "chapter": "21",
+      "title": "左：完整推进    右：提前松开",
+      "narration": "提前松开，推进也会提前结束。松手时机，同样影响落点。",
+      "assets": [
+        "laser_up",
+        "laser_stop"
+      ],
+      "offsets": [
+        0.4,
+        0.4
+      ],
+      "shot_type": "split_comparison",
+      "emphasis": "左：完整推进    右：提前松开",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules",
+        "controlled_compare"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": true,
+      "game_audio_index": 0,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "s22",
+      "chapter": "22",
+      "title": "持续时间和资源都有上限",
+      "narration": "当然，它有持续时间和资源限制。不能当场转职直升机。",
+      "assets": [
+        "laser_stop"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "持续时间和资源都有上限",
+      "punchline": "转职直升机失败",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s34",
+      "chapter": "01",
+      "title": "04 / 遥控回旋刃 · 扔出 → 召回",
+      "narration": "第四把，遥控回旋刃。扔出去时先闪一步，接下来还能主动召回。",
+      "assets": [
+        "boomerang_return"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "04 / 遥控回旋刃 · 扔出 → 召回",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s35",
+      "chapter": "01",
+      "title": "接到召回刃，才有追加位移",
+      "narration": "召回走的是锁定直线。真接到刃，才有追加位移，可不是自动追着你保姆接送。",
+      "assets": [
+        "boomerang_return"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "接到召回刃，才有追加位移",
+      "punchline": "接不到，就没有下一段",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s36",
+      "chapter": "01",
+      "title": "05 / 磁吸遥爆雷 · 黏附 → 遥爆",
+      "narration": "第五把，磁吸遥爆雷。地面投出去，先黏住，再自己选时机引爆。",
+      "assets": [
+        "mine_ground"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "05 / 磁吸遥爆雷 · 黏附 → 遥爆",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s37",
+      "chapter": "01",
+      "title": "近距离、无遮挡，才能借力",
+      "narration": "想借爆炸赶路，还得站得够近，中间也不能挡着墙。远处放烟花，救不了脚下。",
+      "assets": [
+        "mine_ground"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "近距离、无遮挡，才能借力",
+      "punchline": "不是全地图传送按钮",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s38",
+      "chapter": "01",
+      "title": "地面先布置；空中直接爆开",
+      "narration": "在空中出手，它会直接爆开提供反冲。地面布置，空中救场。",
+      "assets": [
+        "mine_air"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "地面先布置；空中直接爆开",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s39",
+      "chapter": "01",
+      "title": "06 / 坍缩奇点 · 停住 → 定向冲出",
+      "narration": "最后是坍缩奇点。它就在自己身边展开，先停一拍，再朝选定方向把人送出去。",
+      "assets": [
+        "singularity_launch"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "06 / 坍缩奇点 · 停住 → 定向冲出",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s40",
+      "chapter": "01",
+      "title": "沿选定方向冲出",
+      "narration": "注意，这次是朝瞄准方向冲。前面还在倒着走，这把又得把脑子转回来。",
+      "assets": [
+        "singularity_launch"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "沿选定方向冲出",
+      "punchline": "刚学会反着想，又要正着想",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s23",
+      "chapter": "23",
+      "title": "开发者的小算盘",
+      "narration": "六条武器分支，我想做的区别，是出手、停顿、变向和接招的节奏。",
+      "assets": [
+        "three"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s24",
+      "chapter": "24",
+      "title": "武器，也是移动方式",
+      "narration": "不只是换个伤害数字，而是换一把武器，也换一种赶路的办法。",
+      "assets": [
+        "triple_up"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "武器，也是移动方式",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s25",
+      "chapter": "25",
+      "title": "动作还得有地方用",
+      "narration": "关卡也得接得上。不然武器花样再多，最后还是站地上点怪。",
+      "assets": [
+        "gun_side"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "动作还得有地方用",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "s26",
+      "chapter": "26",
+      "title": "机关，让射击参与探索",
+      "narration": "开枪，还能触发平原里的机关。",
+      "assets": [
+        "gear"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "机关，让射击参与探索",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        96
+      ],
+      "evidence": [
+        "formal_feedback"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s27",
+      "chapter": "27",
+      "title": "开发者的小算盘",
+      "narration": "不过，这些是开局指定装备的开发演示。正式成长，还没全接完。",
+      "assets": [
+        "next"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "scope_limits"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s28",
+      "chapter": "28",
+      "title": "下一步的目标",
+      "narration": "接下来，是让肉鸽成长和能力锁，真正改变每次探索的选择。",
+      "assets": [
+        "triple_up"
+      ],
+      "offsets": [
+        0.4
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "下一步的目标",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "scope_limits"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s29",
+      "chapter": "29",
+      "title": "换武器，真的换玩法了吗？",
+      "narration": "现在先把最关键的问题交出来：换一把武器，操作真的变了吗？",
+      "assets": [
+        "fan_turn",
+        "laser_up"
+      ],
+      "offsets": [
+        0.5,
+        0.5
+      ],
+      "shot_type": "split_comparison",
+      "emphasis": "换武器，真的换玩法了吗？",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "s30",
+      "chapter": "30",
+      "title": "开发者的小算盘",
+      "narration": "六把里，你最想试哪把？或者哪一把看着最容易把自己送走？",
+      "assets": [
+        "ask"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "editorial_direction"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "s31",
+      "chapter": "31",
+      "title": "《失序之钟》开发中",
+      "narration": "欢迎挑毛病。反冲跳跃已经有了，好不好玩，还得继续磨。",
+      "assets": [
+        "gun_up"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "《失序之钟》开发中",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "recorded_equipment",
+        "weapon_rules"
+      ],
+      "fact_check": "Immutable source/recipe checked; original accepted-input reconstruction or clearly labeled editorial reflection; not human taste approval",
+      "claim_type": "editorial_reflection_or_question",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    }
+  ],
+  "evidence": [
+    {
+      "id": "recorded_equipment",
+      "kind": "real_recording_recipe",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "driver_path": "video_rush/drivers/weapon_showcase.gd",
+      "driver_sha256": "a020cc062ab29fd4619d76b8194ee439ba57d8740ade1cc856e17b2deba41f31",
+      "facts": "Formal App, default spawn, designated weapon through existing equip API, original Router/Motor; optional slow aim off; no midflight position/HP/resource injection. Fresh traces and runtime fingerprints are retained.",
+      "detail": " Includes special_weapons.gd advanced-weapon fixture; original runtime unchanged.",
+      "advanced_driver_path": "video_rush/drivers/special_weapons.gd",
+      "advanced_driver_sha256": "2a3cb6e5b93396fb150e406d06b827564d00cb004225ab43ae4bde77119ca0f5"
+    },
+    {
+      "id": "weapon_rules",
+      "kind": "source_document",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/quality/action_budget_spec.md",
+      "facts": "Gun recoil, shuriken blink and limited accelerating laser; no infinite flight. Figures in historical documents are not asserted as current global tuning."
+    },
+    {
+      "id": "hit_refill",
+      "kind": "runtime_source",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/scripts/player/player_controller.gd",
+      "facts": "on_weapon_damage and on_projectile_hit restore bounded resources from accepted actual damage; no claim every attack/wall contact refills."
+    },
+    {
+      "id": "formal_feedback",
+      "kind": "source_document",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/underworld_feedback_r3.md",
+      "facts": "Actual shot-actuated mechanisms; legacy and current paths distinguished."
+    },
+    {
+      "id": "scope_limits",
+      "kind": "source_document",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/quality/all_weapons_spec.md",
+      "facts": "Practice equipment and genuine attacks are implemented; formal growth/award chain and full regional progression are separately scoped, not all complete."
+    },
+    {
+      "id": "controlled_compare",
+      "kind": "same_runtime_recording_comparison",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "facts": "Jump control vs gun_up: identical source/seed/default spawn/pulse gun and input jump schedule, differing only attack; laser full vs early release differs hold duration. Validate receipt manifest and initial point before claiming this in final."
+    },
+    {
+      "id": "editorial_direction",
+      "kind": "user_brief_and_editorial",
+      "facts": "User chose this topic; plans/questions/jokes are authored editorial narration and not original user quotes, implementation proof or observed player reactions."
+    }
+  ],
+  "rights": {
+    "project_media": {
+      "source": "user-owned zhipijun1996/gunman-rush",
+      "authorization": "user explicitly requested use for this video",
+      "scope": "development documentary and project footage",
+      "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim",
+      "third_party_game_or_bilibili_media": false
+    },
+    "tiles": {
+      "asset": "Underworld Tileset",
+      "author": "Asouris",
+      "url": "https://asouris.itch.io/underworld-tileset",
+      "license": "custom permissive publisher statement, not CC0",
+      "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D",
+      "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"
+    },
+    "font": {
+      "name": "Noto Sans CJK",
+      "license": "SIL Open Font License 1.1",
+      "evidence": "/usr/share/doc/fonts-noto-cjk/copyright",
+      "url": "https://github.com/notofonts/noto-cjk"
+    },
+    "narration": {
+      "provider": "Microsoft Edge TTS (Xiaoxiao)",
+      "synthetic": true,
+      "impersonation": false,
+      "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred",
+      "replacement": "Piper with separately reviewed model license"
+    },
+    "music": {
+      "used": false,
+      "reason": "No third-party background music needed for ep001"
+    },
+    "game_sound": {
+      "used_in_final": false,
+      "reason": "Final soundtrack uses narration only; raw source recordings retain original mix"
+    },
+    "comparison_tiles": [
+      {
+        "asset": "Retro Lines",
+        "author": "VEXED",
+        "license": "CC0-1.0",
+        "url": "https://v3x3d.itch.io/retro-lines",
+        "evidence": "assets/style_exploration/retro/source/licenses/LICENSE.txt"
+      },
+      {
+        "asset": "Basic Platformer",
+        "author": "Ariel Pinana",
+        "license": "CC0-1.0 (publisher page; original license file is empty)",
+        "url": "https://ariel-pinana.itch.io/platformer-tileset-character-and-monsters",
+        "evidence": "assets/style_exploration/basic/source/licenses/NOTICE.md and publisher_page.txt"
+      },
+      {
+        "asset": "Scribble Platformer",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "url": "https://kenney.nl/assets/scribble-platformer",
+        "evidence": "assets/style_exploration/scribble/source/licenses/License.txt"
+      },
+      {
+        "asset": "Cavern Tile Set",
+        "author": "Luis Zuno / ansimuz",
+        "license": "CC0-1.0",
+        "url": "https://opengameart.org/content/cavern-tile-set",
+        "evidence": "assets/style_exploration/cavern/source/licenses/license.txt"
+      }
+    ],
+    "audio": {
+      "narration": "Actual Edge TTS, YunxiNeural",
+      "music": "User-provided the_kindred_hearth.mp3 derivative, mono Opus20kbps first145s, looped quietly if needed; no author/license invented",
+      "game_audio": "Actual matching Godot clip audio; original project audio/Kenney CC0 from game source provenance; no third-party video/game music",
+      "editorial_effects": "Original Video Rush synthesized short effects"
+    }
+  },
+  "comparison": "New recordings use one frozen main/seed and original default spawn. Jump-only vs jump+shot is a controlled same-weapon comparison; laser full vs release differs hold duration. Other equipment demos are not natural unlocks or one uninterrupted run.",
+  "comparison_review": "核对只跳/加枪与激光松手对照的源SHA、Seed、出生点和实际输入；指定装备不能当成自然解锁。",
+  "title_candidates": [
+    "枪是用来赶路的？我的游戏靠反冲跳跃",
+    "我用AI做的游戏：换把武器，换种走法",
+    "先别打怪，拿枪把自己送上天"
+  ],
+  "bilibili_body": "分区建议：游戏 → 单机游戏；标签：独立游戏、游戏开发、Godot、AI开发、失序之钟、反冲跳跃。\n\n这次讲《失序之钟》最核心的一件事：开枪，不只是打怪，也是在决定自己会落到哪里。\n先用普通枪解释反冲，再展示六条武器分支：三连机关枪、散华手里剑、恒流激光、遥控回旋刃、磁吸遥爆雷、坍缩奇点。讲清每把的出手方式、位移节奏和限制。\n画面包含锁定版本的真实开发演示：开局指定装备，通过原输入系统驱动，不代表正式肉鸽成长和装备授予已经全部完成。\n欢迎提建议：六把里你最想试哪把？哪些动作看着还不够清楚？\n\n游戏源码与历史：https://github.com/zhipijun1996/gunman-rush 。本期录制源7be8c340，完整来源与录制回执见sources.json。\nBGM：用户提供的the_kindred_hearth.mp3压缩副本，原曲权利归原作者；Underworld Tileset by Asouris（作者自定义许可）；原游戏音效沿项目/Kenney CC0来源；Noto Sans CJK字体SIL OFL。中文AI配音，未自动上传B站。",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.16,
+  "game_audio_gain": 0.24
+}

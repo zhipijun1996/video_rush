@@ -130,3 +130,16 @@ Piper代码路径已实现，未在本轮下载模型或冒称其声音已经验
 真实配音、素材、渲染和预发布上传都可能失败；状态和日志用于恢复。新主题创作仍由当前Codex宿主完成，没有暗藏的模型服务或凭据。
 
 当前ep002的本地成片与指定BGM均已验收；本轮执行环境的Release附件上传返回401，尚未完成远端媒体交付，草稿不算可下载成片。修复上传授权后可用同一deliver命令续传，无需重新生产。详见docs/ep002.md。
+
+## ep003：反冲跳跃与六条武器分支
+
+用户已改为 Actions 下载交付。当前使用 `.github/workflows/produce.yml`，不是上文归档的旧流程。先在本地完成制作、验收并推送代码，再运行：
+
+```bash
+python -m video_rush produce --spec episodes/ep003.json --source /workspace/gunman-rush --local-only
+python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --spec episodes/ep003.json --episode ep003
+```
+
+本集会在只读源提交 `7be8c340372d1e20db6685cbd6a559191821eb0e` 的隔离副本中，调用正式 App、原输入 Router 和 Motor 录制普通枪及六条 Lv2 分支。Godot 必须匹配源仓库的工具链版本和下载 SHA；云端自动安装，无图形环境使用 Xvfb/Mesa。录制脚本只指定开局装备和操作，不修改原物理、美术、生命或空中资源。原片、运行轨迹及回执保存在被 Git 忽略的 `build/recordings/`；成片目录的 `recording-evidence/` 和 Actions ZIP 带轨迹/回执/日志。
+
+“只跳/加枪”“激光持续/提前松手”来自同一源版本、Seed 与出生点。其余武器是分开录制的指定装备演示，不代表自然解锁或全流程完成。声音包含实际中文 TTS、对应片段原游戏音效和用户提供 BGM 的低音量压缩副本；与口播自动混音。视频编码、轨迹验证及完整解码通过，也仍需手机完整试听和观感审核。

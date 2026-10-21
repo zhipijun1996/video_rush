@@ -15,6 +15,22 @@ def collect(repo, spec, output):
     collected = []
     for asset in spec['assets']:
         origin=asset.get('origin','git')
+        if origin=='recording':
+            from .recording import capture
+            source,receipt=capture(repo,asset)
+            evidence_dir=output.parent/'recording-evidence';evidence_dir.mkdir(exist_ok=True)
+            for name in ['trace.json','receipt.json','capture.log']:
+                __import__('shutil').copyfile(source.parent/name,evidence_dir/(asset['case']+'-'+name))
+            dest=output/(asset['id']+('.png' if 'frame_seconds' in asset else '.mp4'))
+            if 'frame_seconds' in asset:
+                run(['ffmpeg','-v','error','-y','-ss',str(asset['frame_seconds']),'-i',source,'-frames:v','1',dest],timeout=60)
+            elif not dest.exists() or sha(dest)!=receipt['movie_sha256']:
+                __import__('shutil').copyfile(source,dest)
+            obj=dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),recording_receipt=receipt,
+                source_url=f'https://github.com/{spec["repository"]}/tree/{receipt["recipe"]["source_commit"]}')
+            if dest.suffix=='.mp4':obj['ffprobe']=probe(dest)
+            collected.append(obj)
+            continue
         if origin in ('editorial','external'):
             dest=output/(asset['id']+'.png')
             if origin=='editorial':

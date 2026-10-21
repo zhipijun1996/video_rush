@@ -17,3 +17,6 @@ video-rush = "video_rush.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["video_rush*"]
+
+[tool.setuptools.package-data]
+video_rush = ["drivers/*.gd"]

@@ -1,0 +1,293 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "jump_control",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "jump_control",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "gun_up",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "gun_up",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "gun_side",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "gun_side",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "gun_empty",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "gun_empty",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "shuriken_side",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "shuriken_side",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "fan_turn",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "fan_turn",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "laser_up",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "laser_up",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "laser_stop",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "laser_stop",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "triple_up",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "triple_up",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "cover_jump",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "jump_control",
+      "frames": 480,
+      "frame_seconds": 1.1,
+      "pr": 65,
+      "kind": "reconstructed_game_screenshot",
+      "display_label": "指定装备开发实机截图",
+      "license": "same actual project recording"
+    },
+    {
+      "id": "cover_recoil",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "gun_up",
+      "frames": 480,
+      "frame_seconds": 1.6,
+      "pr": 65,
+      "kind": "reconstructed_game_screenshot",
+      "display_label": "指定装备开发实机截图",
+      "license": "same actual project recording"
+    },
+    {
+      "id": "enemy_hit",
+      "origin": "git",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "path": "docs/evidence/underworld_feedback_03/native/Q_enemy/movie.mp4",
+      "pr": 96,
+      "kind": "original_game_recording",
+      "runtime_commit": "9402bf92fa9be16b10d401db5e02b5c63124ff3c",
+      "display_label": "正式场景历史交战原片 · 非自然整图通关",
+      "license": "User-authorized project recording; project/Kenney original game audio retained quietly"
+    },
+    {
+      "id": "gear",
+      "origin": "git",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "path": "docs/evidence/underworld_feedback_03/native/Q_gear/movie.mp4",
+      "pr": 96,
+      "kind": "original_game_recording",
+      "display_label": "正式机关历史演示 · 非自然整图通关",
+      "license": "User-authorized project recording; soundtrack provenance in sources"
+    },
+    {
+      "id": "traffic",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "开发者的小算盘",
+        "face": "thinking",
+        "lines": [
+          "枪口对着谁？",
+          "我会落在哪？"
+        ],
+        "footer": "编辑性说明 · 不是新增玩法画面"
+      },
+      "display_label": "原创示意 / 梗图 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "ticket",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "永久机票申请中",
+        "face": "panic",
+        "lines": [
+          "可以反冲起飞",
+          "不包无限续航"
+        ],
+        "footer": "原创小剧场 · 实际次数与资源仍由游戏判定"
+      },
+      "display_label": "原创示意 / 梗图 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "three",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "六把武器，六种走法",
+        "face": "happy",
+        "font_size": 53,
+        "lines": [
+          "连发 / 闪步 / 持续推进",
+          "召回 / 遥爆 / 奇点冲出",
+          "动作和落点，才是差别"
+        ],
+        "footer": "机制摘要 · 实际动作见相邻实机"
+      },
+      "display_label": "原创示意 / 梗图 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "next",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "开发进度实话实说",
+        "face": "thinking",
+        "font_size": 60,
+        "lines": [
+          "已有：真实武器动作",
+          "待接完：正式成长授予",
+          "目标：让关卡用好这些动作"
+        ],
+        "footer": "未把练习演示当成全流程完成"
+      },
+      "display_label": "原创示意 / 梗图 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "ask",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "如果是你，会怎么选？",
+        "face": "happy",
+        "font_size": 58,
+        "lines": [
+          "六把里，最想试哪把？",
+          "哪把最容易送走自己？",
+          "欢迎挑毛病"
+        ],
+        "footer": "《失序之钟》开发中 · 非最终品质"
+      },
+      "display_label": "原创示意 / 梗图 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "boomerang_return",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "boomerang_return",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "mine_ground",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "mine_ground",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "mine_air",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "mine_air",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "singularity_launch",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "singularity_launch",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    }
+  ]
+}

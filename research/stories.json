@@ -1083,5 +1083,41 @@
       "reason": "个人动机与现实落差明确，有真实项目作为进展。",
       "priority": "high"
     }
+  },
+  {
+    "id": "S065",
+    "event": "武器同时定义攻击与移动节奏",
+    "date": "2026-10-14",
+    "background": "反冲跳跃是核心，武器需要有不同操作节奏。",
+    "conflict": "换弹体外观和伤害还不足以区分移动体验。",
+    "attempts": [
+      "普通枪/三连的分段反冲、手里剑闪步、有限时激光推进，均走原Motor。"
+    ],
+    "result": "真实武器动作与练习入口存在，正式完整成长链和体验验收另外处理。",
+    "truth_status": "implemented_scoped_growth_pending",
+    "evidence_status": "PR65, source contracts, fresh same-main recorded-equipment traces; phone taste unverified",
+    "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "pr": 65,
+    "sources": [
+      {
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/65"
+      },
+      {
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/7be8c340372d1e20db6685cbd6a559191821eb0e/docs/quality/action_budget_spec.md"
+      }
+    ],
+    "media": [
+      "gun_up",
+      "shuriken_side",
+      "laser_up"
+    ],
+    "recordability": {
+      "source_available": true,
+      "fresh_reconstruction_recipe": "video_rush/drivers/weapon_showcase.gd"
+    },
+    "video_potential": {
+      "priority": "selected_for_ep003",
+      "reason": "同一套跳跃下可见的位移差异，适合真实画面对照"
+    }
   }
 ]

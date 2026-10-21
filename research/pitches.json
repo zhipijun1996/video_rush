@@ -44,10 +44,10 @@
       "title": "枪是用来赶路的？我的游戏靠反冲跳跃",
       "slot": "main_1_next_recommended",
       "duration_seconds": [
-        150,
-        210
+        210,
+        300
       ],
-      "production_status": "researched_pitch_not_produced",
+      "production_status": "ep003_in_production_six_weapon_scope",
       "one_question": "为什么在这款游戏里，换武器也会改变移动方式？",
       "opening_10_seconds": "先向下开枪把自己弹起，再用另一种武器闪到对岸。口播：这把枪，主要工作可能不是打怪。",
       "hook_status": "authored editorial wording; not an original quote",
@@ -77,7 +77,9 @@
         "不把15个装备节点说成15套独立武器体系。",
         "不说激光能无限悬空。"
       ],
-      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled.",
+      "user_scope_update": "User requested all six Lv2 branches, with differences/features, on 2026-10-21",
+      "episode_spec": "episodes/ep003.json"
     },
     {
       "id": "V002",

@@ -42,7 +42,7 @@ jobs:
       - name: Install free tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg fonts-noto-cjk
+          sudo apt-get install -y ffmpeg fonts-noto-cjk xvfb
           python -m pip install -e '.[test]'
           pytest -q
       - name: Fetch only exact game commits and media blobs
@@ -59,10 +59,12 @@ jobs:
           source = pathlib.Path('build/source'); source.mkdir(parents=True)
           subprocess.run(['git', 'init', str(source)], check=True)
           subprocess.run(['git', '-C', str(source), 'remote', 'add', 'origin', 'https://github.com/' + assets['repository'] + '.git'], check=True)
-          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git')=='git'}):
+          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git') in ('git','recording')}):
               if not re.fullmatch(r'[a-f0-9]{40}', sha): raise ValueError('Full immutable SHA required')
               subprocess.run(['git', '-C', str(source), 'fetch', '--no-tags', '--filter=blob:none', '--depth=1', 'origin', sha], check=True)
           PY
+      - name: Install pinned recording engine when needed
+        run: python tools/setup_recording.py
       - name: Restore requested soundtrack
         run: python tools/restore_actions_music.py
       - name: Produce and validate
@@ -82,6 +84,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/*.json
             build/episodes/${{ inputs.episode }}/*.ass
             build/episodes/${{ inputs.episode }}/logs/
+            build/episodes/${{ inputs.episode }}/recording-evidence/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 
