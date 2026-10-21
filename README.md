@@ -62,6 +62,10 @@ python -m video_rush validate build/episodes/ep001
 
 `--topic/--pr/--story/--commits/--since/--until` 选择研究任务；`--spec` 是最终编排入口，提供时以该分镜为准，不会静默改写分镜内容。下一期的自然语言入口由 Codex + Skills 实现，确定性CLI不伪装LLM。
 
+## 选题先看这里
+
+已将原27条开发事件收敛为[四条主线、两条踩坑备选](docs/video-shortlist.md)：核心机制与武器、动作反馈与手感、风铃平原、Harness/Skills，以及移动钩索故障和双钩路线被反冲替代。`research/pitches.json`包含每集的开头、冲突、真实来源和需补镜头。原stories.json保留作事件证据库，不逐PR排期。
+
 ## 四个 Skills 与代码
 
 | 部件 | 职责 |

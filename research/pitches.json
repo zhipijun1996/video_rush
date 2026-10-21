@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-21T14:31:34.473042+00:00",
+  "scope": {
+    "repository": "zhipijun1996/gunman-rush",
+    "frozen_main": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "remote_refresh_performed": false,
+    "original_index_role": "27 development-event candidates plus user testimony; not 27 scheduled episodes",
+    "inspected_pr_bodies": [
+      13,
+      14,
+      42,
+      44,
+      46,
+      48,
+      50,
+      55,
+      57,
+      65,
+      71,
+      94,
+      96,
+      97
+    ],
+    "targeted_diff_prs": [
+      55,
+      57,
+      65,
+      71,
+      96,
+      97
+    ],
+    "historical_review_threads": [
+      55,
+      57,
+      65
+    ],
+    "media_inspection": "ffprobe of saved MP4s plus seven sampled frames; not full viewing or new recording",
+    "story_selection": "four main episodes plus two reserves; strong premise and visible payoff, not commit/test/asset counts"
+  },
+  "pitches": [
+    {
+      "id": "V001",
+      "title": "枪是用来赶路的？我的游戏靠反冲跳跃",
+      "slot": "main_1_next_recommended",
+      "duration_seconds": [
+        150,
+        210
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "为什么在这款游戏里，换武器也会改变移动方式？",
+      "opening_10_seconds": "先向下开枪把自己弹起，再用另一种武器闪到对岸。口播：这把枪，主要工作可能不是打怪。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "先展示反冲跨越的连续动作，再用失败或未开枪对照解释规则。",
+        "只选三种有明显不同位移节奏的武器：枪的反冲、手里剑的闪步、限时激光推进。",
+        "展示资源/落地恢复怎样阻止无限飞行，命中回能按对应版本说明。",
+        "肉鸽成长与能力锁只交代已实现范围和目标，不一口气讲完技能树。"
+      ],
+      "visible_payoff": "观众即使不看数值，也能看出三种赶路方式和落点节奏不同。",
+      "sources": [
+        "weapon_contract",
+        "weapon_scope",
+        "weapon_movie",
+        "budget_movie"
+      ],
+      "existing_footage": [
+        "52.38秒历史全武器练习原片",
+        "38.37秒历史动作预算原片"
+      ],
+      "material_gaps": [
+        "历史练习场为旧手绘外观；若以当前像素外观介绍，需在独立录制副本补同版三武器连续演示。",
+        "补同入口、同障碍的对照，或明确标注分段练习，不能拼成一条自然通关。"
+      ],
+      "truth_boundaries": [
+        "武器靶场实现不等于正式肉鸽成长/装备授予链完成。",
+        "不把15个装备节点说成15套独立武器体系。",
+        "不说激光能无限悬空。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V002",
+      "title": "打中了，却像没打中：我给游戏补了哪些手感",
+      "slot": "main_2",
+      "duration_seconds": [
+        150,
+        210
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "一次命中怎样从扣血数字变成看得见、听得懂的动作反馈？",
+      "opening_10_seconds": "先呈现命中反馈，再亮出历史问题：给怪物加击退后，它被推出平台却留在了半空。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "从原始试玩反馈“主角/怪物没有受伤反馈”进入。",
+        "拆一次命中：出手/弹道、受击姿态、闪光与声音、角色实际位移；动画特效跟真实命中走。",
+        "用地面怪击退悬空或激光跟不上枪口作一次反转，不把两条故障线全部铺开。",
+        "展示修正后的交战；解释增强反馈还要保持落点、钩索和角色控制可读。"
+      ],
+      "visible_payoff": "同一个命中事件里，动作、声光和位移同步；观众能分辨打中、挡住和落空。",
+      "sources": [
+        "feedback_user",
+        "feedback_changes",
+        "feedback_movie",
+        "beam_before",
+        "beam_summary",
+        "budget_movie"
+      ],
+      "existing_footage": [
+        "9.27秒正式双方交战原片",
+        "3.85秒激光枪口偏移旧原片",
+        "38.37秒修正版动作原片"
+      ],
+      "material_gaps": [
+        "悬空故障有真实记录，尚未发现可直接使用的原故障录像，须重建旧源或用明确的记录/示意展示。",
+        "要做同参数开/关表现层对照，须先确认能安全独立关闭；否则只能称不同版本对照。"
+      ],
+      "truth_boundaries": [
+        "不声称已获得真人手感/听感认可。",
+        "不把普通击退、钩索与技能位移混成一套强制停顿。",
+        "不把旧版手绘激光片冒充当前像素版本。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V003",
+      "title": "风铃平原：这一枪该打怪、开门，还是赶路？",
+      "slot": "main_3",
+      "duration_seconds": [
+        150,
+        210
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "第一个区域怎样让同一种射击在探索中产生不同选择？",
+      "opening_10_seconds": "用一处真实场景提出选择：用这枪打怪、打开机关，还是借反冲去上层？随后展示一次实际选择。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "沿一小段正式路线介绍这片地方，避免先读地区设定。",
+        "选射击机关、移动齿轮/渡台、可选奖励或捷径三件事讲清操作和路线选择。",
+        "让机关和敌人共同改变站位与落点，短展示两类Boss，不讲完整Boss攻略。",
+        "以尚需调节的密度、可读性或节奏结尾，邀请观众针对具体一段提建议。"
+      ],
+      "visible_payoff": "看完能认出风铃平原的三种互动，并理解一次探索中的路线取舍。",
+      "sources": [
+        "plains_formal",
+        "plains_scope",
+        "feedback_changes",
+        "boss_movie"
+      ],
+      "existing_footage": [
+        "9.10秒平原正式入口原片",
+        "15.00秒Boss战原片",
+        "R3场景/机关历史影片可继续取用"
+      ],
+      "material_gaps": [
+        "现成原片偏定向演示，缺从正式入口连续走到分路/奖励的区域导览；需补一段约30–60秒连续路线。",
+        "具体铃门/捷径触发规则按选定版本实测，不照搬旧八关文档。"
+      ],
+      "truth_boundaries": [
+        "正式范围是已核对版本的两图，不是16区域全部建成。",
+        "不将旧护甲开放窗口混入后来连续战斗规则。",
+        "不把镜头切换拼成一镜自然通关或证明随机地图每局都好玩。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V004",
+      "title": "AI交作业，我为什么还得给它配个验收器？",
+      "slot": "main_4_developer_audience",
+      "duration_seconds": [
+        180,
+        240
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "Skills和Harness分别能拦住哪类问题，又为什么不能代替试玩？",
+      "opening_10_seconds": "展示同一份历史记录：导出进程退出0，日志里却有Parse Error。若只看“成功”，这次就漏过去了。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "先让观众看到一次具体的“看似成功”，不从工具名讲起。",
+        "Skills负责把实际场景、禁止回归和交付证据写进工作步骤；Harness真正执行检查并保留失败。",
+        "再反转：验收器自己的完成判定也曾被代码审查指出漏洞，工具本身同样需要反例与审查。",
+        "落回游戏：可运行、正式入口成立、视觉/玩法体验分别验；流程没有自动审美通行证。"
+      ],
+      "visible_payoff": "一个具体失败被挡住，同时展示工具能力的真实边界。",
+      "sources": [
+        "harness_contract",
+        "quality_scope",
+        "export_failure",
+        "export_receipt",
+        "gate_review"
+      ],
+      "existing_footage": [
+        "真实导出失败日志与Harness报告，可排成可读证据卡；正式游戏片段用作对应场景"
+      ],
+      "material_gaps": [
+        "这集不是实机新功能展示；需要制作简洁证据卡，避免长时间滚动终端。",
+        "代码审查问题应标注历史发现及范围；本轮未重跑该检查器，也未证明其已经修复。"
+      ],
+      "truth_boundaries": [
+        "故障注入和模板演练不冒充自然发生的新事故。",
+        "不说有了Skills/多代理就不会犯错。",
+        "不虚构AI欺骗意图、节省时长、token或费用。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V005",
+      "title": "钩索钩中了，为什么我还是追不上怪？",
+      "slot": "reserve_pitfall_1",
+      "duration_seconds": [
+        90,
+        150
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "一个命中成功的动作，为什么会一直追到超时？",
+      "opening_10_seconds": "钩中了。然后我和怪物开始赛跑。先展示真实旧版反例，再拆开“命中”和“抵达”这两件事。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "钩头命中不等于主角已经抵达。",
+        "历史实现隔到下一帧才检查抵达，逃离目标先离开停止圈，形成追赶。",
+        "修正为本次真实移动后结算抵达；左右、迎面、逃离与不同帧率分别检查。",
+        "用修正后的接触/弹离收尾；不把射程和小跳的同期调参写成唯一根因。"
+      ],
+      "visible_payoff": "同一移动目标的失败与成功形成直观反差。",
+      "sources": [
+        "grapple_bug",
+        "grapple_before"
+      ],
+      "existing_footage": [
+        "旧实现真实反例与修复报告；存在GUI截图/无声WebM，但未核查为移动目标旧错片"
+      ],
+      "material_gaps": [
+        "核心旧错/修复对比录像尚缺，拍摄前必须在独立副本重建或明确用轨迹示意。"
+      ],
+      "truth_boundaries": [
+        "不是AI故意作弊或角色作弊。",
+        "专项修复不代表该PR当时完整回归/真机已通过。",
+        "历史重录标注为现在重建旧版本。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V006",
+      "title": "我设计的双钩挑战，被一发反冲绕过去了",
+      "slot": "reserve_pitfall_2",
+      "duration_seconds": [
+        120,
+        180
+      ],
+      "production_status": "researched_pitch_not_produced",
+      "one_question": "验证一条连招能过，为什么还不够证明这段关卡有设计价值？",
+      "opening_10_seconds": "先展示原计划的两次钩索，再给出复查反例：同一段目标，一次跳跃接反冲、不用钩索也能到。",
+      "hook_status": "authored editorial wording; not an original quote",
+      "story_beats": [
+        "交代目标仅是森林v13早期一段双钩路线，不能扩大成整个森林。",
+        "原生实测noH_oneR和noH_twoR都target_reached，拆开“做得出来”和“值得用”的区别。",
+        "进一步比较更深处580px组合：仅三种已测无钩策略未到达，不是数学证明不存在其他解。",
+        "以仍然REVISE的区域设计结尾，讨论保留有趣捷径还是强化机制价值，不草率填满荆棘封路。"
+      ],
+      "visible_payoff": "一段复杂连招与廉价替代解的反差，能直接看懂设计中的漏洞。",
+      "sources": [
+        "forest_scope",
+        "shortcut_oneR",
+        "shortcut_twoR",
+        "forest_movie",
+        "forest_archive_scope"
+      ],
+      "existing_footage": [
+        "压包内28.85秒旧源连续森林原片已抽取取帧；单反冲/双反冲原始日志和轨迹已读"
+      ],
+      "material_gaps": [
+        "原连续片不自动包含无钩反例；需要按对应历史源与实际轨迹补录同段对照。"
+      ],
+      "truth_boundaries": [
+        "发现来自复查/自动反例，不能说已观察到真人玩家逃课。",
+        "不是整个关卡一枪通关；原反例包含普通跳跃。",
+        "深层三种策略失败不证明无钩普遍不可能。",
+        "不把测试推荐路线顺序说成世界拓扑随机。"
+      ],
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    }
+  ],
+  "sources": [
+    {
+      "id": "weapon_contract",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/quality/action_budget_spec.md",
+      "kind": "document",
+      "git_blob": "8b57cbfb005ed50bf7972f9ef154c0bf6a4030b0",
+      "sha256": "6e1b9fe47f6cf61d680ae2c842cdb7e4b6954383a3f5fc848f1353d253eaabab",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/quality/action_budget_spec.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "weapon_scope",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/quality/all_weapons_spec.md",
+      "kind": "document",
+      "git_blob": "b5c529351dfff2a3a068b6c24d8bd8fe687580b3",
+      "sha256": "bd1487595a25d1931fee9637bb5bd42c41dfd948ead14b576a0215366174ddfb",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/quality/all_weapons_spec.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "weapon_movie",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/evidence/all_weapons/actions.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "5e65fac19e86a7acae85c74f90603c8d74dedf88",
+      "sha256": "4c70c890d94d29ba0c10130312dd641cca069a50fc918eb4f85140e82de55bee",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/evidence/all_weapons/actions.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "budget_movie",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/evidence/action_budget/actions.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "ddea3cc78818508f600fe2923a2596de49df9d13",
+      "sha256": "e136b0b1d2309fbc42a2cab7a03fb763c6c780af1770b6b234e9750340d32f08",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/evidence/action_budget/actions.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "beam_before",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/evidence/action_budget/beam_anchor_before.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "e722d32867d2d2ff88c5d297b05cd3e98afe5584",
+      "sha256": "7ef79703cd92eefa0627ab84001c7e1f8c055f295d2066f07ce7d5cbd6d42b5d",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/evidence/action_budget/beam_anchor_before.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "beam_summary",
+      "pr": 65,
+      "commit": "915da8bef053bee524da31de5b96a30902ab0081",
+      "path": "docs/evidence/action_budget/summary.json",
+      "kind": "document",
+      "git_blob": "4470e0cfdfe697d9b04e744f804320ad13435ab2",
+      "sha256": "ee7fbaa0981f4bc7b5353cd1b8b9e54ebd191aa9359e86d6bd78b3304ba15be5",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/915da8bef053bee524da31de5b96a30902ab0081/docs/evidence/action_budget/summary.json",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "feedback_changes",
+      "pr": 96,
+      "commit": "57b3d468df26d378d0321fb2ff7b8b9be2533bcd",
+      "path": "docs/underworld_feedback_r3.md",
+      "kind": "document",
+      "git_blob": "d4904bc6ccb096424fdaa4c51da70bca108a1f4e",
+      "sha256": "22ec2c40c38d4181c2c441138277138c2f04d0a43c7dfcb2d58a72a34339eb9d",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/57b3d468df26d378d0321fb2ff7b8b9be2533bcd/docs/underworld_feedback_r3.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "feedback_user",
+      "pr": 96,
+      "commit": "57b3d468df26d378d0321fb2ff7b8b9be2533bcd",
+      "path": "docs/evidence/underworld_feedback_03/user_feedback.txt",
+      "kind": "document",
+      "git_blob": "28312a7c64c5ed78070409e5cb67f16472944f13",
+      "sha256": "9ec45d48f6cddecaab7f25fa8b0d50c8f9aac369b52f54585b7d4a828891f215",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/57b3d468df26d378d0321fb2ff7b8b9be2533bcd/docs/evidence/underworld_feedback_03/user_feedback.txt",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "feedback_movie",
+      "pr": 96,
+      "commit": "57b3d468df26d378d0321fb2ff7b8b9be2533bcd",
+      "path": "docs/evidence/underworld_feedback_03/native/Q_enemy/movie.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "83226e6fb111d36afb974636fd6e69d9073bcf2c",
+      "sha256": "89479e703521bdbe6cc4887e9b37e46e13a5b280c7099f50fc24b0d2c7f2645c",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/57b3d468df26d378d0321fb2ff7b8b9be2533bcd/docs/evidence/underworld_feedback_03/native/Q_enemy/movie.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "boss_movie",
+      "pr": 96,
+      "commit": "57b3d468df26d378d0321fb2ff7b8b9be2533bcd",
+      "path": "docs/evidence/underworld_feedback_03/native/Q_boss2/movie.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "fa8ec3a8eb2323372e47c4a3bfa8b21c6325b434",
+      "sha256": "eed52676069f3d8a88f9c4e9aa311de07b1517ed468ff52aa47c82e9d3465c33",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/57b3d468df26d378d0321fb2ff7b8b9be2533bcd/docs/evidence/underworld_feedback_03/native/Q_boss2/movie.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "plains_formal",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/formal/movie.mp4",
+      "kind": "historical_original_recording",
+      "git_blob": "aa41e2530dc5021c1e33420c3a88c26fbbad91c5",
+      "sha256": "19b0573487a5e0c3d3829de76a56c44a7c4a904ebee25d75468ab08bb9a683fb",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad/docs/evidence/underworld_plains/revision2/actual_input_h/formal/movie.mp4",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "plains_scope",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/README.md",
+      "kind": "document",
+      "git_blob": "3f30f8930e8bb8cb338443c62acea025870d0ee3",
+      "sha256": "35e1c6cd172175a5fa843fe85a1bef50a8ed894f71607ea5c9228d7da91b1671",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad/docs/evidence/underworld_plains/revision2/README.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "harness_contract",
+      "pr": 55,
+      "commit": "da76b0aa65f257f5208cde23e98aa8d9b3098ad1",
+      "path": "docs/project_integration.md",
+      "kind": "document",
+      "git_blob": "34bd38108e5c993096b38e0d1de77935075d979c",
+      "sha256": "394a7fa57e16e626e99841a19e8c831126af98ce0a137975fb3602716f59fda0",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/da76b0aa65f257f5208cde23e98aa8d9b3098ad1/docs/project_integration.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "quality_scope",
+      "pr": 57,
+      "commit": "5fd9c272d74616ae477809fa4285f609e6b697c6",
+      "path": "docs/quality/implementation_report.md",
+      "kind": "document",
+      "git_blob": "c920a338c193fa815ecc1ce2a8ddcbf69316350a",
+      "sha256": "3a87a4fc896030581aaf7edcec6033e0e3dadcbf6a808d13f227a1201fd42df7",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/5fd9c272d74616ae477809fa4285f609e6b697c6/docs/quality/implementation_report.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "export_failure",
+      "pr": 57,
+      "commit": "5fd9c272d74616ae477809fa4285f609e6b697c6",
+      "path": "docs/evidence/quality_system/baseline_web/web-build.log",
+      "kind": "historical_original_log",
+      "git_blob": "ab41caa606c43177cf8217824fae611378910be9",
+      "sha256": "4d8412aa0f44601683ed4a58ac0fd35ab3be1e255d25be78011150a2b45d84d0",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/5fd9c272d74616ae477809fa4285f609e6b697c6/docs/evidence/quality_system/baseline_web/web-build.log",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "export_receipt",
+      "pr": 57,
+      "commit": "5fd9c272d74616ae477809fa4285f609e6b697c6",
+      "path": "docs/evidence/quality_system/baseline_web/report.json",
+      "kind": "historical_original_log",
+      "git_blob": "44d6b396cae733776101ada37138e5ebe68bf9ca",
+      "sha256": "94dde423f5570e60c35d405040ee015d38bca46c12df2d25dfea12b03ca99421",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/5fd9c272d74616ae477809fa4285f609e6b697c6/docs/evidence/quality_system/baseline_web/report.json",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "grapple_bug",
+      "pr": 71,
+      "commit": "bd424d365eef902b7ccded8b761276d2c2e49f6f",
+      "path": "docs/quality/grapple_fix.md",
+      "kind": "document",
+      "git_blob": "07c7287cc8eaafb51d5052ad92d1ec82b2940523",
+      "sha256": "45385350fa1ffc8f24e0582ec783ca171835069c6241ecedde04fe1c0131522a",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/bd424d365eef902b7ccded8b761276d2c2e49f6f/docs/quality/grapple_fix.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "grapple_before",
+      "pr": 71,
+      "commit": "bd424d365eef902b7ccded8b761276d2c2e49f6f",
+      "path": "docs/evidence/grapple_fix/old_runtime_negative.log",
+      "kind": "historical_original_log",
+      "git_blob": "d3adad6d0c3917c14a08af055e2ad58e149c8ef8",
+      "sha256": "195494dc5f7f3f7823ed47257b7544cd62c271f6e4645e69c3b03304438357ed",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/bd424d365eef902b7ccded8b761276d2c2e49f6f/docs/evidence/grapple_fix/old_runtime_negative.log",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "forest_scope",
+      "pr": 97,
+      "commit": "71c29dfc03512ffcbac5578de1fe893de7f42794",
+      "path": "docs/design/forest_interwoven_v13.md",
+      "kind": "document",
+      "git_blob": "c2fa5e4868313672771befc05359ffc619e33cf6",
+      "sha256": "e760979a18566c7b7da53f61765e5105e29c86fe80331fdb4fb584d51cf8e8aa",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/71c29dfc03512ffcbac5578de1fe893de7f42794/docs/design/forest_interwoven_v13.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "shortcut_oneR",
+      "pr": 97,
+      "commit": "71c29dfc03512ffcbac5578de1fe893de7f42794",
+      "path": "docs/evidence/forest_focus_routes03/final_validation/supplemental13-shared4-docs25-review.zip",
+      "kind": "historical_original_log",
+      "git_blob": "abf6df5d66d7872270605fb25b45a856d537950c",
+      "sha256": "20838f56b2ed50177175c2d95af977616470038481eb9de70bd7c0a73cb7ceab",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/71c29dfc03512ffcbac5578de1fe893de7f42794/docs/evidence/forest_focus_routes03/final_validation/supplemental13-shared4-docs25-review.zip",
+      "inspection": "read original bytes and relevant content",
+      "archive_entry": "build/forest_revision03/alternative-noH_oneR-apex.log",
+      "entry_sha256": "b321474ebc2a80f703e7a414002619c72299879022c41d1c9993aba27e95c90f",
+      "entry_bytes": 1081
+    },
+    {
+      "id": "shortcut_twoR",
+      "pr": 97,
+      "commit": "71c29dfc03512ffcbac5578de1fe893de7f42794",
+      "path": "docs/evidence/forest_focus_routes03/final_validation/supplemental13-shared4-docs25-review.zip",
+      "kind": "historical_original_log",
+      "git_blob": "abf6df5d66d7872270605fb25b45a856d537950c",
+      "sha256": "20838f56b2ed50177175c2d95af977616470038481eb9de70bd7c0a73cb7ceab",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/71c29dfc03512ffcbac5578de1fe893de7f42794/docs/evidence/forest_focus_routes03/final_validation/supplemental13-shared4-docs25-review.zip",
+      "inspection": "read original bytes and relevant content",
+      "archive_entry": "build/forest_revision03/alternative-noH_twoR-apex.log",
+      "entry_sha256": "d5a053171d0a5bb5299c2b4d9df5fa96a2e302167563a9a674341498ade83708",
+      "entry_bytes": 1080
+    },
+    {
+      "id": "forest_movie",
+      "pr": 97,
+      "commit": "71c29dfc03512ffcbac5578de1fe893de7f42794",
+      "path": "docs/evidence/forest_focus_routes03/final_validation/camera03-actual-validation.zip",
+      "kind": "archived_historical_original_recording",
+      "git_blob": "0380e959c55857dc8991b8cb47c80ccce81d60ce",
+      "sha256": "430e49752502c6da214b282da058946a644c0557658b3622fae1ddc1e13a95c5",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/71c29dfc03512ffcbac5578de1fe893de7f42794/docs/evidence/forest_focus_routes03/final_validation/camera03-actual-validation.zip",
+      "inspection": "read original bytes; document/log checked, media ffprobe and sampled frames only",
+      "archive_entry": "build/forest_revision03/movie-derived-camera03/full-route-60fps.mp4",
+      "entry_sha256": "9684cdd1a8852c0998a4bed368deace9240d269797ce69b7e6f7f26b2cd0285a",
+      "entry_bytes": 8394544,
+      "runtime_identity": "Historical original recording; storage commit is not automatically its runtime commit. Read the accompanying original receipt before editing."
+    },
+    {
+      "id": "forest_archive_scope",
+      "pr": 97,
+      "commit": "71c29dfc03512ffcbac5578de1fe893de7f42794",
+      "path": "docs/evidence/forest_focus_routes03/final_validation/README.md",
+      "kind": "document",
+      "git_blob": "518ad7433090c4f9eb34024bc51b816efcde8aa3",
+      "sha256": "b2acf8139d0e6a7f094de9159599ea2ecf539ba6d4df939facdc6c09d2cac20f",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/71c29dfc03512ffcbac5578de1fe893de7f42794/docs/evidence/forest_focus_routes03/final_validation/README.md",
+      "inspection": "read original bytes and relevant content"
+    },
+    {
+      "id": "gate_review",
+      "pr": 57,
+      "kind": "historical_code_review",
+      "commit": "5ff68731553941a778ed23c0ccf2458e249ac63f",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/57#discussion_r4250691528",
+      "path": "tools/quality.py",
+      "text_sha256": "dc200a39b7b5810253b24e1eedf067b25cbeb45d0726f7a49f65ebe4dc5a316b",
+      "finding": "Completion predicate can certify unfinished workflow states. Historical review plus original code inspected; no claim it was fixed or newly reproduced."
+    }
+  ],
+  "merge_policy": {
+    "S024_S030_S038_S059_S060_S067_to_S093": "Most art iteration events are supporting evidence for ep001, not standalone video slots. Do not convert every PR into an episode.",
+    "S055_S057_S068_S072_S073": "Fold relevant process events into V004; do not produce separate abstract tool introductions.",
+    "S043_S044_S094": "Use only relevant exploration/region events in V003; separate old layout from selected formal version.",
+    "U001": "Already covered by the delivered intro ep002."
+  }
+}
