@@ -1,0 +1,101 @@
+name: Produce Video Rush episode
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 已有分镜主题；新主题先由Codex按Skills编写分镜
+        default: 初心介绍视频
+        required: true
+      spec:
+        description: 可选：仓库中的episode JSON路径
+        default: episodes/ep002.json
+      episode:
+        description: 产物目录名（只用字母、数字、横线、下划线）
+        default: ep002
+        required: true
+      music_artifacts:
+        description: JSON array of temporary BGM chunk Artifact IDs
+        required: true
+      music_sha256:
+        description: SHA256 of the transferred BGM derivative
+        required: true
+permissions:
+  contents: read
+  actions: write
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    env:
+      VR_TOPIC: ${{ inputs.topic }}
+      VR_SPEC: ${{ inputs.spec }}
+      VR_EPISODE: ${{ inputs.episode }}
+      VR_MUSIC_ARTIFACTS: ${{ inputs.music_artifacts }}
+      VR_MUSIC_SHA256: ${{ inputs.music_sha256 }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install free tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-noto-cjk
+          python -m pip install -e '.[test]'
+          pytest -q
+      - name: Fetch only exact game commits and media blobs
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, re, subprocess
+          if not re.fullmatch(r'[A-Za-z0-9_-]+', os.environ['VR_EPISODE']):
+              raise ValueError('Unsafe episode name')
+          spec = pathlib.Path(os.environ['VR_SPEC']).resolve()
+          if not spec.is_relative_to(pathlib.Path.cwd()) or spec.suffix != '.json':
+              raise ValueError('Spec must be repository JSON')
+          episode = json.loads(spec.read_text())
+          assets = json.loads(pathlib.Path(episode['asset_spec']).read_text())
+          source = pathlib.Path('build/source'); source.mkdir(parents=True)
+          subprocess.run(['git', 'init', str(source)], check=True)
+          subprocess.run(['git', '-C', str(source), 'remote', 'add', 'origin', 'https://github.com/' + assets['repository'] + '.git'], check=True)
+          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git')=='git'}):
+              if not re.fullmatch(r'[a-f0-9]{40}', sha): raise ValueError('Full immutable SHA required')
+              subprocess.run(['git', '-C', str(source), 'fetch', '--no-tags', '--filter=blob:none', '--depth=1', 'origin', sha], check=True)
+          PY
+      - name: Restore requested soundtrack
+        run: python tools/restore_actions_music.py
+      - name: Produce and validate
+        run: python -m video_rush produce --source build/source --spec build/actions-episode.json --topic "$VR_TOPIC" --output "build/episodes/$VR_EPISODE" --local-only
+      - name: Keep movie and review evidence (also on failure)
+        id: episode
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-${{ inputs.episode }}
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/${{ inputs.episode }}/final.mp4
+            build/episodes/${{ inputs.episode }}/cover.png
+            build/episodes/${{ inputs.episode }}/*.md
+            build/episodes/${{ inputs.episode }}/*.json
+            build/episodes/${{ inputs.episode }}/*.ass
+            build/episodes/${{ inputs.episode }}/logs/
+            build/episodes/${{ inputs.episode }}/narration/*.json
+            build/episodes/${{ inputs.episode }}/narration/*.jsonl
+
+      - name: Download link and temporary soundtrack cleanup
+        if: success()
+        env:
+          VR_DOWNLOAD: ${{ steps.episode.outputs.artifact-url }}
+        run: |
+          python - <<'PYCODE'
+          import os, json, requests
+          from pathlib import Path
+          summary='## 成片已生成\n\n[下载成片、封面和标题简介 ZIP]('+os.environ['VR_DOWNLOAD']+')\n\n含用户指定BGM压缩副本；技术验收通过，手机完整试听与审美待用户审核。保留14天。\n'
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(summary)
+          for aid in json.loads(os.environ['VR_MUSIC_ARTIFACTS']):
+              r=requests.delete('https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/artifacts/'+str(aid),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']},timeout=30)
+              print('Temporary soundtrack cleanup:',aid,r.status_code)
+          PYCODE

@@ -4,14 +4,15 @@
 
 ## 当前下载方式（用户最新指示）
 
-当前ep002改用GitHub Actions Artifact下载，保留成片内指定BGM，并附封面与标题简介。无需重新渲染或把媒体提交Git。`deliver-existing.yml`在GitHub托管Runner接收本地已验收的ZIP，Artifact保留14天。执行入口：
+当前ep002改用GitHub Actions Artifact下载，附成片、封面与标题简介，保留14天。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
+
+指定BGM由原上传曲目转为前145秒、单声道Opus 20kbps压缩副本，通过有界workflow_dispatch输入分块传输，Runner验SHA后用于轻背景配乐。临时音频块生产成功后删除，否则1天过期；媒体不提交Git，不使用第三方文件托管。原曲/压缩副本SHA都记在sources.json。后续同类入口：
 
 ```bash
-python -m pip install -e '.[actions]'
-python tools/deliver_actions.py build/episodes/ep002
+python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg
 ```
 
-上传地址仅以一次性公钥加密后出现在运行检查中；私钥留在ignored build目录，成功上传后删除。Runner的GitHub运行凭据不会传出。上传后还须确认运行成功并下载核对文件hash，不能把派发成功当成交付成功。当前不需要用户修复Release上传凭据。
+每块最多48KB，最多16块；超限明确失败，不无限派发。`receive-music.yml`只接收音轨块，`produce.yml`执行全部十阶段、技术验收并上传下载包。必须确认实际运行成功与成品hash；派发不等于交付。
 
 ## 手机使用
 
