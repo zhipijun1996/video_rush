@@ -19,3 +19,5 @@
 每期预发布必须直接附`final.mp4`、`cover.png`、独立`bilibili.md`（推荐标题、备选标题和可复制简介）及完整资料ZIP；说明区同步展示投稿资料。缺少任一必要文件阻止发布。手机点击MP4即可下载。说明区标注技术验收状态、人类审核仍待确认、素材版权。禁止把技术PASS说成审美PASS。更新使用新修订tag，不能覆盖已有正式Release。
 
 旧Actions工作流保存在docs/archive/produce-actions.yml，仅供历史复现；已移出活动工作流目录。
+
+当前临时交付修订：用户在Release附件连续401后明确改为Actions下载。本期恢复GitHub托管Runner生产并上传Artifact（14天），指定曲目使用前145秒、单声道Opus 20kbps副本；主素材/配音/验收流程保持真实。手机无需提供新的Token。完成后给出实际Artifact链接；这是重新生产版本，不冒称复用原MP4字节。

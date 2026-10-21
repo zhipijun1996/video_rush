@@ -4,7 +4,7 @@
 
 ## 当前下载方式（用户最新指示）
 
-当前ep002改用GitHub Actions Artifact下载，附成片、封面与标题简介，保留14天。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
+当前ep002已实际通过GitHub Actions生产并上传，随后下载核对hash与整片解码：[下载成片、封面与标题简介ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39594660575/artifacts/12343311814)，约30MB，2026-11-04过期。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
 
 指定BGM由原上传曲目转为前145秒、单声道Opus 20kbps压缩副本，通过有界workflow_dispatch输入分块传输，Runner验SHA后用于轻背景配乐。临时音频块生产成功后删除，否则1天过期；媒体不提交Git，不使用第三方文件托管。原曲/压缩副本SHA都记在sources.json。后续同类入口：
 

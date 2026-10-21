@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-21T11:53:19.300112+00:00",
+  "status": "successfully_produced_uploaded_downloaded_and_hash_verified",
+  "run_id": 39594660575,
+  "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39594660575",
+  "artifact_id": 12343311814,
+  "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39594660575/artifacts/12343311814",
+  "artifact_expires_at": "2026-11-04T11:51:01Z",
+  "production_commit": "0ae443b16a3fcfe8753222224e2416c801869e14",
+  "artifact_zip_sha256": "3cf7d8e500115387b24925ed76071d0b36378fad26ba7d38c93ee93227e04802",
+  "artifact_bytes": 29858747,
+  "final_sha256": "e9e5d1ffb6bc594c8e9f7b39e20b40744adfd13306e550d574bfea91858828c6",
+  "final_bytes": 29543272,
+  "duration_seconds": 139.9,
+  "technical_checks": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_matches_brief": true,
+    "subtitles_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "requested_music_source_valid": true,
+    "sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true
+  },
+  "content_structural": {
+    "structural_checks": {
+      "explicit_topic": true,
+      "first_15_seconds_hook_authored": true,
+      "every_shot_references_media": true,
+      "every_segment_has_evidence": true,
+      "evidence_references_resolve": true,
+      "interpretations_labeled": true,
+      "no_fabricated_human_acceptance": true
+    },
+    "structural_pass": true,
+    "editorial_review": "human_review_required",
+    "aesthetic_acceptance": "unverified",
+    "independent_fact_review": "unverified",
+    "phone_checklist": [
+      "前15秒是否值得继续观看；主题是否明确",
+      "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+      "检查AI配音是否错读、语气自然，字幕是否跟得上",
+      "核对引用SHA/PR与具体结论，是否存在过度归因",
+      "横向旧新对比是不同阶段，未声称同Seed同布局受控实验",
+      "重复、单调或停留太久的镜头是否应缩短",
+      "技术通过是否被误读成品质通过；森林草稿是否清楚",
+      "完整观看后决定标题封面是否准确，手机字是否可读"
+    ]
+  },
+  "delivery_manifest_files_verified": [
+    "final.mp4",
+    "cover.png",
+    "script.md",
+    "storyboard.json",
+    "subtitles.ass",
+    "bilibili.md",
+    "sources.json",
+    "report.json",
+    "phone-review.md"
+  ],
+  "independent_download_decode": "ffmpeg -v error -xerror entire-file decode completed",
+  "music_provenance": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "source": "User-uploaded original, compressed for Actions transfer; first 145 seconds, mono Opus 20kbps",
+    "original_filename": "the_kindred_hearth.mp3",
+    "usage": "user explicitly requested this BGM",
+    "license_status": "user supplied and requested use; original creator/license not independently specified",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_source": "user upload in this conversation",
+    "transport": "temporary Actions chunk artifacts; not committed to Git"
+  },
+  "human_phone_review": "pending",
+  "tests": "11 passed locally and on hosted runner",
+  "temporary_music_chunk_cleanup": "8 artifacts deleted; each API returned204",
+  "read_only_game_source_clean": true,
+  "notable_failures": [
+    "Release asset upload HTTP401, not used for this delivery.",
+    "Self-hosted runner management HTTP403; no runner registered.",
+    "Direct Artifact bridge failed: cloud proxy denied Azure upload destination; receiver HEAD also incompatible with write-only SAS. Experiment removed from active code.",
+    "First hosted production canceled before rendering to include a tested soundtrack restoration correction; final successful run uses commit0ae443b."
+  ]
+}
