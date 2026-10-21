@@ -21,7 +21,7 @@ for artifact_id in ids:
     with zipfile.ZipFile(io.BytesIO(r.content)) as z:
         assert len(z.namelist())==1
         name=z.namelist()[0]
-        assert re.fullmatch('[0-9]{3}\\.bin',name) and name not in chunks
+        assert re.fullmatch(r'[0-9]{3}\.bin',name) and name not in chunks
         assert z.getinfo(name).file_size<=48000
         chunks[name]=z.read(name)
 assert sorted(chunks)==[f'{i:03}.bin' for i in range(len(chunks))]
