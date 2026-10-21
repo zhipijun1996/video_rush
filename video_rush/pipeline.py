@@ -79,7 +79,7 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     def footage():
         media=collect(repo,a_spec,output/'media')
         return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*'))]
-    recording_code=[sha(ROOT/'video_rush/recording.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
+    recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
     stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():

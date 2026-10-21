@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-10-21T16:19:10.294951+00:00",
+  "status": "local_pass_actions_pending",
+  "production_commit": "04d7671",
+  "source_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "source_unchanged": true,
+  "local": {
+    "duration_seconds": "221.166341",
+    "sha256": "7eed20f84d5e3d2beb52bed96863977dae1f97964eb27df298ba1d44b9bf0fe1",
+    "bytes": 38766424,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_structural": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对只跳/加枪与激光松手对照的源SHA、Seed、出生点和实际输入；指定装备不能当成自然解锁。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "delivery_manifest_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "game_audio_gain": 0.24,
+    "bgm_derivative_sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "first_render_failure_report_sha256": "2257e7b9f9335c55fb89fe341534a48d719100ef76afdaeee3f1d287cfca07c9"
+  },
+  "tests": "14 passed",
+  "automated_recording_cases": 13,
+  "scope": "Six Lv2 weapon branches plus ordinary-gun/control demos; designated initial equipment, not natural progression",
+  "human_review": "pending; key frames inspected, no complete human listening/independent taste approval",
+  "bilibili_publication": false,
+  "prefetch_probe": {
+    "fetched_blobs": 984,
+    "cached_fetch": 0,
+    "seconds": 1.0824665190011729,
+    "working_tree_unchanged": true,
+    "scope": "Real GitHub partial clone batch-prefetch of scripts/resources/config; assets excluded from this protocol probe"
+  },
+  "actions": {
+    "run_id": 39633722578,
+    "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578",
+    "status": "in_progress_not_yet_delivered"
+  },
+  "cache_resume": "Exact topic CLI rerun reused all ten stages; after batch-prefetch code update, source verification/manifest recomputed, media/narration/render/quality remained valid cached outputs"
+}
