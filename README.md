@@ -107,8 +107,10 @@ Piper代码路径已实现，未在本轮下载模型或冒称其声音已经验
 
 默认 `produce` 在成功生产后直接创建GitHub Prerelease；`--local-only`允许先检查和修改。`deliver`会核对技术验收、内容结构检查、MP4及全部交付文件的hash，要求生产代码/分镜已提交推送。人类审核待完成可以交付预发布，不冒称审美通过。
 
-每期附MP4、PNG封面和含脚本/字幕/来源/报告的ZIP，并核对GitHub返回的大小和SHA256。已有正式Release绝不覆盖；已有预发布若内容不同，使用新修订tag。调用或上传失败保留 `prerelease.failure.json`，不会声称已上传。
+每期先创建草稿，附MP4、PNG封面和含脚本/字幕/来源/报告的ZIP，并核对GitHub返回的大小和SHA256；全部成功后才转成公开Prerelease。已有正式Release绝不覆盖；已有预发布若内容不同，使用新修订tag。调用或上传失败保留 `prerelease.failure.json`，不会声称已上传。
 
 活动Actions工作流已移到 `docs/archive/produce-actions.yml`，保留旧证据；不再作为后续常规执行/下载入口。既有工作流的成功记录见 [上一轮实施记录](docs/implementation.md)。
 
 真实配音、素材、渲染和预发布上传都可能失败；状态和日志用于恢复。新主题创作仍由当前Codex宿主完成，没有暗藏的模型服务或凭据。
+
+当前ep002的本地成片与指定BGM均已验收；本轮执行环境的Release附件上传返回401，尚未完成远端媒体交付，草稿不算可下载成片。修复上传授权后可用同一deliver命令续传，无需重新生产。详见docs/ep002.md。

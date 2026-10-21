@@ -140,5 +140,16 @@
   "external_references": [
     "Two short official publicity stills from Hollow Knight and Ori; attribution in frame and source manifest, original game sound not used."
   ],
-  "editorial_style": "Original meme graphics, restrained self-deprecation, tight cuts; abilities and regional progression goals explicitly distinguished from existing demos."
+  "editorial_style": "Original meme graphics, restrained self-deprecation, tight cuts; abilities and regional progression goals explicitly distinguished from existing demos.",
+  "prerelease_delivery": {
+    "status": "blocked_on_release_asset_authorization",
+    "tag": "ep002",
+    "draft_retained": true,
+    "api_metadata_access": "working",
+    "asset_upload_host": "uploads.github.com",
+    "observed_error": "HTTP401 Bad credentials",
+    "movie_remains_complete_locally": true,
+    "actions_used": false,
+    "media_committed_to_git": false
+  }
 }
