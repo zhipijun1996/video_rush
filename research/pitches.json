@@ -45,19 +45,19 @@
       "slot": "main_1_next_recommended",
       "duration_seconds": [
         200,
-        270
+        300
       ],
-      "production_status": "ep003_produced_uploaded_downloaded_and_verified",
+      "production_status": "ep003_r2_nine_weapons_verified_delivered",
       "one_question": "为什么在这款游戏里，换武器也会改变移动方式？",
       "opening_10_seconds": "直接展示反冲上跳与侧向位移：这把枪，先别管敌人。先把我自己送上去。",
       "hook_status": "authored editorial wording; not an original quote",
       "story_beats": [
-        "普通跳/加枪对照，简述腾空出手额度、落地恢复与命中补资源。",
-        "六条Lv2分支各讲实际动作节奏和限制，回旋刃、遥爆雷、奇点不只充当背景画面。",
-        "原创机票小剧场与自嘲穿插，六武器摘要后说明正式成长仍待接完。",
-        "以观众最想试哪把、哪把容易送走自己收尾，不替玩家宣布好玩。"
+        "以磁雷连飞和回旋接刃变向直接开场，原创自嘲穿插。",
+        "三把基础武器与六条二级分支，共九种；三级保留普攻加主动技。",
+        "真实关卡高台/遇敌窗口，散华和回旋二段改向、磁雷跳爆接两发空中炸弹、奇点停住后改向。",
+        "明确开局定位/指定装备；正式成长尚待接通，旧技能练习原片单独标记。"
       ],
-      "visible_payoff": "可见连发、两段变向、激光提前松手、召回接刃、黏附遥爆与奇点顺瞄准方向冲出。",
+      "visible_payoff": "在真实关卡里看见路线和连招差异，九种类型和升级关系清楚；幽默与手机听感待用户评判。",
       "sources": [
         "weapon_contract",
         "weapon_scope",
@@ -65,12 +65,12 @@
         "budget_movie"
       ],
       "existing_footage": [
-        "新增同源像素版实机，原输入Router/Motor，13种固定脚本及轨迹验证",
-        "历史正式交战与机关原片，单独标注历史开发演示"
+        "12组新正式关卡原生实录与14组总轨迹（含旧激光对照）",
+        "有原始回执的历史三级技能练习短片"
       ],
       "material_gaps": [
-        "六武器关键动作镜头已补齐；仍不是同一障碍上的自然完整路线或解锁流程。",
-        "未来用更长连续关卡路线展示战斗与移动如何结合；本期不伪造该证据。"
+        "当前为定位后的关卡窗口，不冒充从出生点自然取得装备、整图通关或完整正式成长。",
+        "下一轮可录更多连续路线、同障碍选择和敌群连招，减少说明图和重复片段。"
       ],
       "truth_boundaries": [
         "武器靶场实现不等于正式肉鸽成长/装备授予链完成。",
@@ -79,10 +79,18 @@
       ],
       "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled.",
       "user_scope_update": "User requested all six Lv2 branches, with differences/features, on 2026-10-21",
-      "episode_spec": "episodes/ep003.json",
-      "actual_duration_seconds": 221.166667,
-      "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417",
-      "artifact_expires_at": "2026-11-04T16:34:46Z"
+      "episode_spec": "episodes/ep003-r2.json",
+      "actual_duration_seconds": 231.5,
+      "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39646964047/artifacts/12369075853",
+      "artifact_expires_at": "2026-11-04T18:03:59Z",
+      "previous_revisions": [
+        {
+          "episode": "ep003",
+          "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417",
+          "duration_seconds": 221.166667,
+          "scope": "six Lv2 branches; superseded by user nine-weapon/route/humor correction"
+        }
+      ]
     },
     {
       "id": "V002",

@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-10-21T17:33:12.774900+00:00",
-  "status": "local_pass_actions_pending",
-  "production_commit": "04985240e66beaa32ade9d26b056c92fbe71ff52",
+  "checked_at": "2026-10-21T18:09:19.762289+00:00",
+  "status": "local_and_hosted_success_uploaded_downloaded_hash_verified_and_fully_decoded",
+  "production_commit": "133e29683a5ca110edfcedece0ea0ff3d7711559",
   "source_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
   "source_worktree_unchanged": true,
   "tests": "17 passed",
@@ -128,5 +128,121 @@
       "method": "exact git ls-tree + cat-file --batch; no checkout or archive attribute walk",
       "seconds": 0.11235736499656923
     }
-  }
+  },
+  "actions": {
+    "run_id": 39646964047,
+    "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39646964047",
+    "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39646964047/artifacts/12369075853",
+    "artifact_id": 12369075853,
+    "artifact_bytes": 48844166,
+    "artifact_expires_at": "2026-11-04T18:03:59Z",
+    "artifact_digest": "sha256:5c2191b4c586b46e38d98b27066b8e8e2e9c9b53129f8fb146c7d128ee0c23e2",
+    "status": "downloaded_zip_and_delivery_hashes_verified_entire_movie_decoded",
+    "zip_sha256": "5c2191b4c586b46e38d98b27066b8e8e2e9c9b53129f8fb146c7d128ee0c23e2",
+    "duration_seconds": 231.5,
+    "final_sha256": "2e5fbcb249dba434aee16df80345cdbcde845ba9daa47ef9cebbe560b95a0140",
+    "final_bytes": 48410071,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "actual_tts_receipts_verified": 35,
+    "native_trace_cases_verified": [
+      "combat_laser",
+      "combat_pulse",
+      "laser_stop",
+      "laser_up",
+      "route_bomb",
+      "route_boomerang",
+      "route_fan",
+      "route_laser",
+      "route_mine_combo",
+      "route_pulse",
+      "route_shadow",
+      "route_singularity",
+      "route_triple",
+      "singularity_left"
+    ],
+    "nine_primary_weapons_verified": [
+      "collapse_singularity",
+      "fan_shuriken",
+      "magnetic_mine",
+      "pulse_gun",
+      "recoil_bomb",
+      "remote_boomerang",
+      "shadow_shuriken",
+      "sustained_laser",
+      "triple_machine_gun"
+    ],
+    "runtime_fingerprint_variants": 1,
+    "whole_file_decoded_after_download": true,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "检查高台落地、散华两段方向、回旋控刃和真实接回、磁雷地面遥爆与两次空中炸弹；奇点左右画面起点不同，不当成同障碍受控对照。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "audio_metrics": {
+      "decoded_samples": 3719851,
+      "peak": 0.750946044921875,
+      "rms": 0.09851083730473054,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    },
+    "bgm_source_sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "bgm_original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "bilibili_published": false,
+    "human_phone_review": "pending",
+    "temporary_music_chunks_deleted": 8,
+    "native_movie_maker_seconds": 473,
+    "batch_prefetched_source_blobs": 3229
+  },
+  "next_improvements": [
+    "Use more continuous obstacle/combat routes and align spoken explanations more closely to the fastest action events.",
+    "Dynamically place emphasis titles around high-jump character positions; full phone listening and comedy/pacing review remain pending.",
+    "Use durable Prerelease attachments when upload authorization is restored; current requested Actions package expires after14days."
+  ]
 }

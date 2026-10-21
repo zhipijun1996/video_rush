@@ -4,7 +4,9 @@
 
 ## 当前下载方式（用户最新指示）
 
-最新 ep003《枪是用来赶路的？我的游戏靠反冲跳跃》已实际通过 Actions 录制、配音、制作、验收并上传，随后下载复核哈希与整片解码：[下载六武器视频、封面及标题简介 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417)，约39MB，3分41秒，2026-11-04过期。执行证据见 [ep003 验证记录](docs/ep003-verification.json)。六条分支都有专门实机，采用用户指定 BGM 压缩副本；手机完整试听和审美待审核。
+最新九武器重制版 **ep003-r2**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39646964047/artifacts/12369075853)，约48.8MB，约3分52秒，保留至2026-11-04。三把基础武器＋六条二级分支、三级技能关系、真实关卡高台与遇敌、二段改向/遥爆接炸弹/奇点选向均有说明和实机；加入原创自嘲和梗图，仍带指定BGM。已实际下载校验Artifact/文件哈希与整片解码，手机完整试听与观感待审核。证据：[修订说明](docs/ep003-r2.md)、[执行验证](docs/ep003-r2-verification.json)。
+
+上一版 ep003《枪是用来赶路的？我的游戏靠反冲跳跃》已实际通过 Actions 录制、配音、制作、验收并上传，随后下载复核哈希与整片解码：[下载六武器视频、封面及标题简介 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417)，约39MB，3分41秒，2026-11-04过期。执行证据见 [ep003 验证记录](docs/ep003-verification.json)。六条分支都有专门实机，采用用户指定 BGM 压缩副本；手机完整试听和审美待审核。
 
 前一期 ep002 初心介绍也已实际通过GitHub Actions生产并上传，随后下载核对hash与整片解码：[下载成片、封面与标题简介ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39594660575/artifacts/12343311814)，约30MB，2026-11-04过期。Release上传401，自托管Runner管理403，现成文件直传Actions存储也被云端代理拒绝；因此使用GitHub托管Runner重新生产，不冒称复用了同一MP4。
 
@@ -147,3 +149,5 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --sp
 本集会在只读源提交 `7be8c340372d1e20db6685cbd6a559191821eb0e` 的隔离副本中，调用正式 App、原输入 Router 和 Motor 录制普通枪及六条 Lv2 分支。Godot 必须匹配源仓库的工具链版本和下载 SHA；云端自动安装，无图形环境使用 Xvfb/Mesa。录制脚本只指定开局装备和操作，不修改原物理、美术、生命或空中资源。原片、运行轨迹及回执保存在被 Git 忽略的 `build/recordings/`；成片目录的 `recording-evidence/` 和 Actions ZIP 带轨迹/回执/日志。
 
 “只跳/加枪”“激光持续/提前松手”来自同一源版本、Seed 与出生点。其余武器是分开录制的指定装备演示，不代表自然解锁或全流程完成。声音包含实际中文 TTS、对应片段原游戏音效和用户提供 BGM 的低音量压缩副本；与口播自动混音。视频编码、轨迹验证及完整解码通过，也仍需手机完整试听和观感审核。
+
+九武器重制版复现：`python -m video_rush produce --spec episodes/ep003-r2.json --source /workspace/gunman-rush --local-only`。Actions交付入口加 `--spec episodes/ep003-r2.json --episode ep003-r2`。部分克隆素材以精确Git对象批量快照；仅导入时使用single-threaded-scene/render-thread safe，正常游戏录制不改运行时线程/玩法参数。
