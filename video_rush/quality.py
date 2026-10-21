@@ -34,6 +34,19 @@ def detect_intervals(log, prefix):
     return [{'start':float(a),'end':float(b),'duration':float(b)-float(a)} for a,b in zip(starts,ends)]
 
 
+
+def narration_receipts_valid(output,spec):
+    shots=spec.get('shots',[])
+    if not shots:return False
+    for shot in shots:
+        audio=Path(output)/'narration'/(shot['id']+'.wav')
+        receipt=audio.with_suffix('.json')
+        if not audio.exists() or not receipt.exists():return False
+        r=read(receipt)
+        if r.get('backend') not in {'edge','piper'} or r.get('text')!=shot['narration'] or r.get('sha256')!=sha(audio) or not r.get('metrics',{}).get('audible_signal'):return False
+    return True
+
+
 def validate(output, spec, timeline, sources):
     output=Path(output);final=output/'final.mp4';logs=output/'logs';logs.mkdir(exist_ok=True)
     meta=probe(final);v=next(s for s in meta['streams'] if s['codec_type']=='video');a=next(s for s in meta['streams'] if s['codec_type']=='audio')
@@ -63,7 +76,8 @@ def validate(output, spec, timeline, sources):
       'h264_yuv420p':v['codec_name']=='h264' and v['pix_fmt']=='yuv420p','aac_48k':a['codec_name']=='aac' and int(a['sample_rate'])==48000,
       'duration_matches_brief':minimum <= dur <= maximum,
       'subtitles_in_bounds':all(0 <= c['start'] < c['end'] <= dur+.02 for s in timeline['shots'] for c in s['cues']),
-      'audible_tts_signal':metrics['audible_signal'] and all(read(p)['metrics']['audible_signal'] for p in (output/'narration').glob('s*.json') if not p.name.endswith('.failure.json')),
+      'action_labels_in_bounds':all(0<=x['start']<x['end']<=s['end']-s['start']+.02 for s in timeline['shots'] for x in s.get('action_labels',[])),
+      'audible_tts_signal':metrics['audible_signal'] and narration_receipts_valid(output,spec),
       'no_obvious_clipping':metrics['clipped_fraction']<.0001,
       'requested_music_source_valid':not music or (bgm['metrics']['audible_signal'] and (not spec.get('music_asset') or bgm['sha256']==spec['music_asset']['sha256'])),
       'sources_present_and_hash_match':all(Path(s['local_path']).exists() and sha(s['local_path'])==s['sha256'] for s in sources['assets']),

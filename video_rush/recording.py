@@ -8,7 +8,8 @@ from .common import ROOT, read, write, run, sha, digest, probe
 
 CASES={'jump_control','gun_up','gun_side','gun_empty','shuriken_side','fan_turn','laser_up','laser_stop','triple_up'}
 SPECIAL={'boomerang_return','mine_ground','mine_air','singularity_launch'}
-CASES |= SPECIAL
+ROUTE={'route_pulse','route_shadow','route_bomb','route_triple','route_laser','route_fan','route_boomerang','route_mine_combo','route_singularity','singularity_left','combat_pulse','combat_laser'}
+CASES |= SPECIAL | ROUTE
 DRIVER=ROOT/'video_rush/drivers/weapon_showcase.gd'
 
 def runtime_fingerprint(work):
@@ -42,11 +43,31 @@ def validate_trace(trace, case, frames):
     if case=='singularity_launch' and not any(r.get('phase')=='singularity' for r in rows):
         raise ValueError('Singularity hold was not observed')
 
+    events=trace.get('events',[])
+    if case=='route_fan':
+        steps=[e['delta'] for e in events if e['kind']=='blink']
+        if len(steps)<2 or steps[0][0]*steps[1][0]>=-1:
+            raise ValueError('Fan second-direction change was not observed')
+    if case=='route_boomerang':
+        first=next((e['delta'] for e in events if e['kind']=='blink'),None)
+        catch=next((e.get('direction') for e in events if e['kind']=='caught'),None)
+        if not {'returning','caught'}<=kinds or not first or not catch or first[0]*catch[0]>=-1:
+            raise ValueError('Steered recall and changed catch direction were not observed')
+    if case=='route_mine_combo':
+        packets=[e for e in events if e['kind']=='accepted_packet']
+        if not {'attached','blast'}<=kinds or sum(e['kind']=='blast' for e in events)<3 or not packets[0]['grounded'] or sum(not p['grounded'] for p in packets)<2:
+            raise ValueError('Ground mine -> remote blast -> two real airborne bombs chain was not observed')
+    if case in {'route_pulse','route_bomb','route_triple','route_laser','route_singularity'}:
+        if not any(r.get('grounded') and 1040<=r['position'][0]<=1280 and abs(r['position'][1]+140)<5 for r in rows[120:]):
+            raise ValueError('Actual raised level platform landing was not observed')
+    if case.startswith('combat_') and not any(e['kind']=='committed_damage' and e.get('target','').startswith('plains/enemy/') for e in events):
+        raise ValueError('Actual damage to an existing formal enemy was not observed')
+
 
 def capture(repo, asset):
     repo=Path(repo);commit=run(['git','-C',repo,'rev-parse',asset['commit']+'^{commit}']).strip()
     case=asset['case'];frames=asset.get('frames',480)
-    driver=ROOT/'video_rush/drivers/special_weapons.gd' if case in SPECIAL else DRIVER
+    driver=ROOT/'video_rush/drivers/route_weapons.gd' if case in ROUTE else ROOT/'video_rush/drivers/special_weapons.gd' if case in SPECIAL else DRIVER
     if case not in CASES or type(frames) is not int or not 120<=frames<=600:
         raise ValueError('Unsupported/beyond-budget recording recipe')
     game_toolchain=__import__('json').loads(run(['git','-C',repo,'show',commit+':config/toolchain.json']))['godot']

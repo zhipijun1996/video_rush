@@ -1118,6 +1118,19 @@
     "video_potential": {
       "priority": "selected_for_ep003",
       "reason": "同一套跳跃下可见的位移差异，适合真实画面对照"
-    }
+    },
+    "weapon_count_scope": "3 Lv1 primary types +6 Lv2 branches =9 weapons; six corresponding Lv3 skill loadouts preserve their primaries, 15 equipment nodes total.",
+    "episode_revisions": {
+      "ep003": "Original six-branch introduction",
+      "ep003-r2": "User correction: nine types, upgrade tree, real formal-level tests, second-stage turns and mine/bomb chaining"
+    },
+    "current_recorded_mechanisms": [
+      "Real raised-platform landings with original Motor",
+      "Fan first right/second left blink",
+      "Boomerang steer below player, recall/catch redirects first up-right to second up-left",
+      "Ground manual remote mine blast then two airborne base bomb explosions",
+      "Singularity initial UP aim retargeted before launch to diagonal route",
+      "Actual committed damage and recovered resources in formal enemy window"
+    ]
   }
 ]

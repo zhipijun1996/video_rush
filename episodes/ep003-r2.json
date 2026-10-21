@@ -1,0 +1,1540 @@
+{
+  "schema_version": 2,
+  "episode": "ep003-r2",
+  "title": "枪是用来赶路的？我的游戏靠反冲跳跃",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep003-r2-assets.json",
+  "story_ids": [
+    "S065"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+8%",
+  "playback_speed": 1.02,
+  "target_duration": [
+    200,
+    300
+  ],
+  "display_chapters": false,
+  "editorial_status": "evidence_checked_reconstruction_human_phone_review_pending",
+  "cover_assets": [
+    "cover_bomb",
+    "cover_blade"
+  ],
+  "cover": {
+    "series": "《失序之钟》 / 核心玩法",
+    "left_label": "炸弹起飞",
+    "right_label": "空中改签",
+    "line1": "枪是用来赶路的？",
+    "line2": "九种武器，三条升级线"
+  },
+  "shots": [
+    {
+      "id": "r01",
+      "chapter": "1",
+      "title": "武器？先当交通工具",
+      "narration": "别问枪有多痛。先问这一套，能把我送多远。",
+      "assets": [
+        "route_mine_combo"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "武器？先当交通工具",
+      "punchline": "本人已加入弹道",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0,
+          "end": 0.95,
+          "text": "①地面布雷"
+        },
+        {
+          "start": 0.95,
+          "end": 1.37,
+          "text": "②跳到雷附近"
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "text": "③遥爆升空"
+        },
+        {
+          "start": 1.83,
+          "end": 2.32,
+          "text": "④空中接炸弹"
+        },
+        {
+          "start": 2.34,
+          "end": 4.1,
+          "text": "⑤再接一发"
+        }
+      ]
+    },
+    {
+      "id": "r02",
+      "chapter": "2",
+      "title": "先赶路，再聊输出",
+      "narration": "别人研究压枪，我研究怎么把自己打过去。",
+      "assets": [
+        "route_boomerang"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "先赶路，再聊输出",
+      "punchline": "主要载荷：我自己",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0.65,
+          "end": 1.15,
+          "text": "第一段：↗反向闪步"
+        },
+        {
+          "start": 1.17,
+          "end": 3.5,
+          "text": "第二段：↖召回接刃，方向变了"
+        }
+      ]
+    },
+    {
+      "id": "r03",
+      "chapter": "3",
+      "title": "《失序之钟》· 反冲跳跃",
+      "narration": "这是我用AI做的《失序之钟》。武器除了打怪，还得负责我的交通问题。",
+      "assets": [
+        "route_pulse"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "《失序之钟》· 反冲跳跃",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r04",
+      "chapter": "4",
+      "title": "3把基础武器 ＋ 6条分支 ＝ 9种",
+      "narration": "先把账算明白：三把基础武器，加六条升级分支，一共九种。",
+      "assets": [
+        "tree"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r05",
+      "chapter": "5",
+      "title": "基础① 普通枪 · 单次反冲",
+      "narration": "普通枪，朝哪开，人就往反方向弹。向下开枪，就能补一段上升。",
+      "assets": [
+        "route_pulse"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "基础① 普通枪 · 单次反冲",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r06",
+      "chapter": "6",
+      "title": "命中：打伤害，也补资源",
+      "narration": "枪法准，敌人掉血，我补资源；枪法歪，就当我特意换了个位置。",
+      "assets": [
+        "combat_pulse"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "命中：打伤害，也补资源",
+      "punchline": "战术转移，懂？",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r07",
+      "chapter": "7",
+      "title": "基础② 影步手里剑 · 出手反向闪",
+      "narration": "影步手里剑，出手后反向闪步。顺路打怪，主要业务还是赶路。",
+      "assets": [
+        "route_shadow"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "基础② 影步手里剑 · 出手反向闪",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r08",
+      "chapter": "8",
+      "title": "基础③ 反冲炸弹 · 近身爆炸借力",
+      "narration": "反冲炸弹，把爆炸留在自己身边，再把自己弹出去。快递和收件人，都是我。",
+      "assets": [
+        "route_bomb"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "基础③ 反冲炸弹 · 近身爆炸借力",
+      "punchline": "包邮到自己",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r09",
+      "chapter": "9",
+      "title": "枪系：三连 / 激光",
+      "narration": "枪的升级分两边：三连机关枪，或者恒流激光。一个分段推，一个持续推。",
+      "assets": [
+        "tree_gun"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r10",
+      "chapter": "10",
+      "title": "三连机关枪 · 一包三发，分段反冲",
+      "narration": "三连是一包三发，反冲也分三段。不是多点三下，也别当成无限连发。",
+      "assets": [
+        "route_triple"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "三连机关枪 · 一包三发，分段反冲",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r11",
+      "chapter": "11",
+      "title": "用武器，真的登上台阶",
+      "narration": "台阶够不着？那就给脚也配把枪。",
+      "assets": [
+        "route_triple"
+      ],
+      "offsets": [
+        2.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "用武器，真的登上台阶",
+      "punchline": "给脚办一张通行证",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r12",
+      "chapter": "12",
+      "title": "恒流激光 · 停住 → 限时推进",
+      "narration": "激光开头先停一下，再逐渐推进。看着像开炮，其实兼职电梯。",
+      "assets": [
+        "route_laser"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "恒流激光 · 停住 → 限时推进",
+      "punchline": "电梯不包无限续航",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r13",
+      "chapter": "13",
+      "title": "左：持续推进　右：提前松手",
+      "narration": "提前松手，推进就停；时间和资源也有限。直升机资格证，暂时不发。",
+      "assets": [
+        "laser_up",
+        "laser_stop"
+      ],
+      "offsets": [
+        0.4,
+        0.4
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "左：持续推进　右：提前松手",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": true,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r14",
+      "chapter": "14",
+      "title": "刀系：散华 / 回旋刃",
+      "narration": "手里剑也分两条：散华主打两段变向，回旋刃多了控刃和召回。",
+      "assets": [
+        "tree_blade"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r15",
+      "chapter": "15",
+      "title": "散华手里剑 · 两段分别选方向",
+      "narration": "看，先向右闪，再把方向拧回来。第二段不是被第一段绑死的。",
+      "assets": [
+        "route_fan"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "散华手里剑 · 两段分别选方向",
+      "punchline": "空中改签，不收手续费",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0.65,
+          "end": 0.94,
+          "text": "第一段：→"
+        },
+        {
+          "start": 0.95,
+          "end": 3.3,
+          "text": "第二段：←重新采样方向"
+        }
+      ]
+    },
+    {
+      "id": "r16",
+      "chapter": "16",
+      "title": "换的，是空中路线",
+      "narration": "所以它不只是把子弹换成飞镖贴图。换武器，连空中走法也跟着换。",
+      "assets": [
+        "route_shadow"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "换的，是空中路线",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r17",
+      "chapter": "17",
+      "title": "回旋刃 · 先控刀，再接第二段",
+      "narration": "回旋刃扔出去，我先反向闪。再把刀引到下方，召回来，接第二段。",
+      "assets": [
+        "route_boomerang"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "回旋刃 · 先控刀，再接第二段",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0.65,
+          "end": 1.15,
+          "text": "第一段：↗反向闪步"
+        },
+        {
+          "start": 1.17,
+          "end": 3.5,
+          "text": "第二段：↖召回接刃，方向变了"
+        }
+      ]
+    },
+    {
+      "id": "r18",
+      "chapter": "18",
+      "title": "第二段也能变向：由控刃与接刃共同决定",
+      "narration": "重点是第二段也能换方向。先控刀的位置，再接回来的入射方向。",
+      "assets": [
+        "turn_card"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r19",
+      "chapter": "19",
+      "title": "炸弹系：磁吸雷 / 奇点",
+      "narration": "炸弹系往下走，一边是磁吸遥爆雷，一边是坍缩奇点。都能飞，思路不一样。",
+      "assets": [
+        "tree_bomb"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r20",
+      "chapter": "20",
+      "title": "磁吸遥爆雷 · 地面先布置",
+      "narration": "磁吸雷，地面先投放黏住，什么时候起爆，由我掐点。",
+      "assets": [
+        "mine_placed"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "磁吸遥爆雷 · 地面先布置",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r21",
+      "chapter": "21",
+      "title": "布雷 → 跳近 → 遥爆 → 空中接炸弹",
+      "narration": "先布雷，跳过去，遥爆升空，再接空中炸弹。别人跳房子，我给自己放礼花。",
+      "assets": [
+        "route_mine_combo"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "布雷 → 跳近 → 遥爆 → 空中接炸弹",
+      "punchline": "喜报：本人已升空",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0,
+          "end": 0.95,
+          "text": "①地面布雷"
+        },
+        {
+          "start": 0.95,
+          "end": 1.37,
+          "text": "②跳到雷附近"
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "text": "③遥爆升空"
+        },
+        {
+          "start": 1.83,
+          "end": 2.32,
+          "text": "④空中接炸弹"
+        },
+        {
+          "start": 2.34,
+          "end": 4.1,
+          "text": "⑤再接一发"
+        }
+      ]
+    },
+    {
+      "id": "r22",
+      "chapter": "22",
+      "title": "地面遥爆 / 空中即时爆炸",
+      "narration": "地面是手动遥爆，空中出手则直接爆。想借力，还得看距离和遮挡。",
+      "assets": [
+        "mine_rules"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r23",
+      "chapter": "23",
+      "title": "距离、遮挡、出手时机，都得算",
+      "narration": "它能这样一段一段往上接，但距离和时机还得自己算对。升空，不包落地。",
+      "assets": [
+        "route_mine_combo"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "距离、遮挡、出手时机，都得算",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0,
+          "end": 0.95,
+          "text": "①地面布雷"
+        },
+        {
+          "start": 0.95,
+          "end": 1.37,
+          "text": "②跳到雷附近"
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "text": "③遥爆升空"
+        },
+        {
+          "start": 1.83,
+          "end": 2.32,
+          "text": "④空中接炸弹"
+        },
+        {
+          "start": 2.34,
+          "end": 4.1,
+          "text": "⑤再接一发"
+        }
+      ]
+    },
+    {
+      "id": "r24",
+      "chapter": "24",
+      "title": "坍缩奇点 · 刹住，再重新选出路",
+      "narration": "对我来说，奇点最灵活：先在身边展开，停一拍，再决定往哪儿弹。",
+      "assets": [
+        "route_singularity"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "坍缩奇点 · 刹住，再重新选出路",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0.58,
+          "end": 1.0,
+          "text": "停住时，重新选方向"
+        },
+        {
+          "start": 1.02,
+          "end": 3.3,
+          "text": "↗沿新瞄准方向冲出"
+        }
+      ]
+    },
+    {
+      "id": "r25",
+      "chapter": "25",
+      "title": "不同位置的方向演示：右上 / 左上",
+      "narration": "重点不是只能朝上。看准缺口，停住时再改方向，往哪条路接，由你选。",
+      "assets": [
+        "route_singularity",
+        "singularity_left"
+      ],
+      "offsets": [
+        1.2,
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "不同位置的方向演示：右上 / 左上",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "r26",
+      "chapter": "26",
+      "title": "这套操作，脑子申请加班",
+      "narration": "手说会了，脑子说等一下。脚说，你们先聊，我先飞了。",
+      "assets": [
+        "brain"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": "pop",
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r27",
+      "chapter": "27",
+      "title": "同版同起点：普通枪 / 三连",
+      "narration": "所以我把它们放回真实关卡：同一个台阶，换武器，就换一种起手和落点。",
+      "assets": [
+        "route_pulse",
+        "route_triple"
+      ],
+      "offsets": [
+        1.2,
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "同版同起点：普通枪 / 三连",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": true,
+      "game_audio_index": 0,
+      "crop_rects": [
+        [
+          160,
+          0,
+          1120,
+          720
+        ],
+        [
+          160,
+          0,
+          1120,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "r28",
+      "chapter": "28",
+      "title": "真实关卡遇敌 · 真实命中补资源",
+      "narration": "再看真的遇敌。命中既打伤害，也补资源，瞄准就和赶路绑在一起了。",
+      "assets": [
+        "combat_laser"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "真实关卡遇敌 · 真实命中补资源",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r29",
+      "chapter": "29",
+      "title": "三级进阶：普攻保留，新增主动技能",
+      "narration": "二级之后，六条分支还能继续进阶：普攻保留，再多一个主动技能。",
+      "assets": [
+        "skills"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r30",
+      "chapter": "30",
+      "title": "历史练习：弹幕风暴等技能",
+      "narration": "比如弹幕风暴、日晷贯穿炮。这里是历史练习原片，展示技能，不当成长流程。",
+      "assets": [
+        "skills_archive"
+      ],
+      "offsets": [
+        20.7
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "历史练习：弹幕风暴等技能",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial",
+        "r2_archive_skills"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r31",
+      "chapter": "31",
+      "title": "历史练习：真实命中积攒共鸣",
+      "narration": "共鸣得靠真命中积攒。大招是挣来的，不是打开背包免费领。",
+      "assets": [
+        "skills_archive"
+      ],
+      "offsets": [
+        23.1
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "历史练习：真实命中积攒共鸣",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial",
+        "r2_archive_skills"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r32",
+      "chapter": "32",
+      "title": "开发实话：动作已实现，成长仍待接通",
+      "narration": "武器动作已经在跑，但正式肉鸽授予和完整成长，还没全接完。现在是指定装备测试。",
+      "assets": [
+        "route_singularity"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "开发实话：动作已实现，成长仍待接通",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0.58,
+          "end": 1.0,
+          "text": "停住时，重新选方向"
+        },
+        {
+          "start": 1.02,
+          "end": 3.3,
+          "text": "↗沿新瞄准方向冲出"
+        }
+      ]
+    },
+    {
+      "id": "r33",
+      "chapter": "33",
+      "title": "目标：让路线真正用上武器差异",
+      "narration": "接下来还得让每把武器在关卡里，有自己更顺手的场合。不是九把一起挤数值表。",
+      "assets": [
+        "combat_pulse"
+      ],
+      "offsets": [
+        2.5
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "目标：让路线真正用上武器差异",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ]
+    },
+    {
+      "id": "r34",
+      "chapter": "34",
+      "title": "评论区征集：你会怎么接？",
+      "narration": "九种里，你最想带哪把进图？有没有更离谱的连招，欢迎来教我做人。",
+      "assets": [
+        "ask9"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "original_editorial_graphic",
+      "emphasis": "",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "authored_explanation_or_humor_not_gameplay",
+      "same_seed_comparison": false,
+      "game_audio_index": 0
+    },
+    {
+      "id": "r35",
+      "chapter": "35",
+      "title": "关注后续开发 · 欢迎挑毛病",
+      "narration": "我负责把自己发射出去，各位负责在评论区帮我找落点。下次接着折腾。",
+      "assets": [
+        "route_mine_combo"
+      ],
+      "offsets": [
+        1.2
+      ],
+      "shot_type": "real_gameplay",
+      "emphasis": "关注后续开发 · 欢迎挑毛病",
+      "punchline": "",
+      "sfx": null,
+      "transition": "cut",
+      "sound": "Matching original game audio at low gain; narration and user BGM foreground; no gameplay sound on original cards",
+      "prs": [
+        65
+      ],
+      "evidence": [
+        "r2_actual_routes",
+        "r2_weapon_tree",
+        "r2_editorial"
+      ],
+      "fact_check": "Current immutable code plus actual rendered traces checked for mechanism shots; source-tagged historical practice for skills; authored humor is not real user quotes. Taste/listening pending.",
+      "claim_type": "source_supported_mechanism_demo",
+      "same_seed_comparison": false,
+      "game_audio_index": 0,
+      "crop_rect": [
+        160,
+        0,
+        1120,
+        720
+      ],
+      "action_labels": [
+        {
+          "start": 0,
+          "end": 0.95,
+          "text": "①地面布雷"
+        },
+        {
+          "start": 0.95,
+          "end": 1.37,
+          "text": "②跳到雷附近"
+        },
+        {
+          "start": 1.38,
+          "end": 1.82,
+          "text": "③遥爆升空"
+        },
+        {
+          "start": 1.83,
+          "end": 2.32,
+          "text": "④空中接炸弹"
+        },
+        {
+          "start": 2.34,
+          "end": 4.1,
+          "text": "⑤再接一发"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "r2_actual_routes",
+      "kind": "immutable_formal_level_recordings",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "driver_path": "video_rush/drivers/route_weapons.gd",
+      "driver_sha256": "58a797ca9dc345c3a0c3cb848a4ef18286b6c6d961cd6701ab14fb5cb194c0aa",
+      "facts": "Original App formal-map checkpoints + original Router/Motor/AI. Validate actual raised-platform landing, two-direction fan, steered recall/catch, ground mine and two airborne bombs, actual committed enemy damage. One initial checkpoint/equip; no later resource/position/HP injection."
+    },
+    {
+      "id": "r2_weapon_tree",
+      "kind": "source_contracts",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "paths": [
+        "scripts/combat/weapon_catalog.gd",
+        "scripts/combat/weapon_definition.gd",
+        "scripts/combat/weapon_action_runtime.gd",
+        "scripts/combat/weapon_entity.gd",
+        "docs/quality/all_weapons_spec.md",
+        "docs/quality/action_budget_spec.md"
+      ],
+      "facts": "3 Lv1 +6 Lv2 primary types =9;6 Lv3 keep corresponding primary and add active skill; ground mine is manual remote blast, not auto timer; airborne base attack explodes immediately; real hit resources; formal progression incomplete."
+    },
+    {
+      "id": "r2_editorial",
+      "kind": "authored_editorial_humor_and_user_direction",
+      "facts": "User requested nine weapons, upgrade mechanics, stronger humor, real-level testing, flexible second stages and chained mine/bombs. First-person jokes and preferences authored for the video; not original user quotes or observed feedback."
+    },
+    {
+      "id": "r2_archive_skills",
+      "kind": "original_practice_receipt",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "runtime_commit": "1198fe9767568e742edc20f6e67d2a737b86d90a",
+      "paths": [
+        "docs/evidence/all_weapons/summary.json",
+        "docs/evidence/all_weapons/runtime_trace.json",
+        "docs/evidence/all_weapons/actions.mp4"
+      ],
+      "facts": "52.38sec actual skill recording; stationary practice targets and explicit restarts; actual hit-earned combat before skills. Not present formal acquisition."
+    }
+  ],
+  "rights": {
+    "project_media": {
+      "source": "user-owned zhipijun1996/gunman-rush",
+      "authorization": "user explicitly requested use for this video",
+      "scope": "development documentary and project footage",
+      "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim",
+      "third_party_game_or_bilibili_media": false
+    },
+    "tiles": {
+      "asset": "Underworld Tileset",
+      "author": "Asouris",
+      "url": "https://asouris.itch.io/underworld-tileset",
+      "license": "custom permissive publisher statement, not CC0",
+      "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D",
+      "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"
+    },
+    "font": {
+      "name": "Noto Sans CJK",
+      "license": "SIL Open Font License 1.1",
+      "evidence": "/usr/share/doc/fonts-noto-cjk/copyright",
+      "url": "https://github.com/notofonts/noto-cjk"
+    },
+    "narration": {
+      "provider": "Microsoft Edge TTS (Xiaoxiao)",
+      "synthetic": true,
+      "impersonation": false,
+      "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred",
+      "replacement": "Piper with separately reviewed model license"
+    },
+    "music": {
+      "used": false,
+      "reason": "No third-party background music needed for ep001"
+    },
+    "game_sound": {
+      "used_in_final": false,
+      "reason": "Final soundtrack uses narration only; raw source recordings retain original mix"
+    },
+    "comparison_tiles": [
+      {
+        "asset": "Retro Lines",
+        "author": "VEXED",
+        "license": "CC0-1.0",
+        "url": "https://v3x3d.itch.io/retro-lines",
+        "evidence": "assets/style_exploration/retro/source/licenses/LICENSE.txt"
+      },
+      {
+        "asset": "Basic Platformer",
+        "author": "Ariel Pinana",
+        "license": "CC0-1.0 (publisher page; original license file is empty)",
+        "url": "https://ariel-pinana.itch.io/platformer-tileset-character-and-monsters",
+        "evidence": "assets/style_exploration/basic/source/licenses/NOTICE.md and publisher_page.txt"
+      },
+      {
+        "asset": "Scribble Platformer",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "url": "https://kenney.nl/assets/scribble-platformer",
+        "evidence": "assets/style_exploration/scribble/source/licenses/License.txt"
+      },
+      {
+        "asset": "Cavern Tile Set",
+        "author": "Luis Zuno / ansimuz",
+        "license": "CC0-1.0",
+        "url": "https://opengameart.org/content/cavern-tile-set",
+        "evidence": "assets/style_exploration/cavern/source/licenses/license.txt"
+      }
+    ],
+    "audio": {
+      "narration": "Actual Edge TTS, YunxiNeural",
+      "music": "User-provided the_kindred_hearth.mp3 derivative, mono Opus20kbps first145s, looped quietly if needed; no author/license invented",
+      "game_audio": "Actual matching Godot clip audio; original project audio/Kenney CC0 from game source provenance; no third-party video/game music",
+      "editorial_effects": "Original Video Rush synthesized short effects"
+    }
+  },
+  "comparison": "Pulse/triple platform demonstration shares frozen SHA/seed/checkpoint/input recipe; laser full/release is prior controlled comparison. Singularity left/right uses different initial positions and is a direction demonstration, not a controlled same-obstacle benchmark. All windows are positioned developer tests, not an uninterrupted natural run.",
+  "comparison_review": "检查高台落地、散华两段方向、回旋控刃和真实接回、磁雷地面遥爆与两次空中炸弹；奇点左右画面起点不同，不当成同障碍受控对照。",
+  "title_candidates": [
+    "枪是用来赶路的？我的游戏靠反冲跳跃",
+    "九种武器，全是交通工具？我用AI做的反冲跳跃游戏",
+    "别人练压枪，我练怎么把自己打过去"
+  ],
+  "bilibili_body": "《失序之钟》核心玩法重制版：三把基础武器，六条二级分支，共九种。\n\n普通枪、影步手里剑、反冲炸弹，分别通向三连/激光、散华/回旋刃、磁吸遥爆雷/坍缩奇点。\n这次补上升级关系，并在真实风铃平原的关卡高台、移动机关和遇敌窗口中测试；散华第二段改向、回旋控刃后接刃换向、地面布雷跳爆再接空中炸弹，以及奇点停住后选方向冲出。\n地面磁吸雷当前是手动遥爆，不是自动定时引爆。三级保留对应普攻并新增技能；正式肉鸽授予/完整成长仍待接通。新镜头开局定位并指定装备，不代表自然解锁、整局通关或最终手感验收。技能短片是明确标注的历史练习原片。\n\n九种里你最想带哪把进图？有没有更离谱的连招，欢迎提建议。\n\n分区建议：游戏→单机游戏；标签：独立游戏、Godot、游戏开发、AI开发、反冲跳跃、失序之钟。\n源码与来源：https://github.com/zhipijun1996/gunman-rush ，本期源7be8c340；完整SHA、录制回执与事实来源见sources.json。\n中文AI配音。BGM使用用户提供the_kindred_hearth.mp3的低音量压缩副本；Underworld by Asouris按作者许可，游戏音效沿项目/Kenney CC0来源，Noto CJK字体SIL OFL；未自动上传B站。",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.16,
+  "game_audio_gain": 0.24
+}

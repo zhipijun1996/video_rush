@@ -71,7 +71,7 @@ def main(argv=None):
         spec=args.spec
         # The authored preset matches only its actual theme. Other selectors create a director handoff.
         if not spec and args.topic in ['枪是用来赶路的？我的游戏靠反冲跳跃','反冲跳跃与六把武器']:
-            spec=ROOT/'episodes/ep003.json'
+            spec=ROOT/'episodes/ep003-r2.json'
         if not spec and args.topic and any(w in args.topic for w in ['初心','介绍视频','圆梦','开坑','自我介绍']):
             spec=ROOT/'episodes/ep002.json'
         if not spec and not any([args.pr,args.story,args.commits,args.since,args.until]) and (not args.topic or any(w in args.topic for w in ['概念图','美术落差','首期'])):

@@ -79,8 +79,8 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     def footage():
         media=collect(repo,a_spec,output/'media')
         return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*'))]
-    recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code},footage)
+    recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
@@ -163,7 +163,7 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         run(cmd,log=logs/'final-render.log',timeout=1200)
         cover(output/'cover.png',assets[spec['cover_assets'][0]]['local_path'],assets[spec['cover_assets'][1]]['local_path'],spec.get('cover'))
         return [output/'final.mp4',output/'cover.png']
-    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2},rendering)
+    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
     def validation():
         report=validate(output,spec,timeline,sources)
         if not report['technical']['passed']:raise RuntimeError('Technical quality failed; inspect report.json and logs')

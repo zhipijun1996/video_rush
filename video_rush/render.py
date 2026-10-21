@@ -64,6 +64,7 @@ Style: Default,Noto Sans CJK SC,52,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-
 Style: Title,Noto Sans CJK SC,44,&H00FFFFFF,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,7,62,60,30,1
 Style: Source,Noto Sans CJK SC,27,&H00BCDDCD,&H000000FF,&H00101824,&H80000000,0,0,0,0,100,100,0,0,1,1,0,9,60,60,38,1
 Style: Punch,Noto Sans CJK SC,64,&H0087E5FF,&H000000FF,&H0012243A,&H0012243A,-1,0,0,0,100,100,0,0,3,12,1,9,90,100,225,1
+Style: Action,Noto Sans CJK SC,46,&H0087E5FF,&H000000FF,&H0012243A,&H0012243A,-1,0,0,0,100,100,0,0,3,8,1,1,80,80,190,1
 Style: Emphasis,Noto Sans CJK SC,57,&H008EEBD2,&H000000FF,&H00101824,&H80000000,-1,0,0,0,100,100,0,0,1,3,1,8,80,80,120,1
 
 [Events]
@@ -82,6 +83,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             put(s['start']+.4, min(s['start']+4, s['end']), 'Emphasis', s['emphasis'])
         if s.get('punchline'):
             put(s['start']+.15,min(s['start']+2.4,s['end']),'Punch',s['punchline'])
+        for label in s.get('action_labels',[]):
+            put(s['start']+label['start'],s['start']+label['end'],'Action',label['text'])
         for cue in s['cues']:
             put(cue['start'], cue['end'], 'Default', cue['text'])
     Path(path).write_text(''.join(lines))

@@ -8,6 +8,8 @@ from .common import font
 
 
 def graphic(path, spec):
+    if spec.get('layout') in {'weapon_tree','weapon_skills'}:
+        return weapon_diagram(path,spec)
     im=Image.new('RGB',(1920,1080),spec.get('background','#122137'));d=ImageDraw.Draw(im)
     for x in range(40,1920,70):
         for y in range(40,1080,70):d.ellipse((x,y,x+3,y+3),fill='#29415c')
@@ -63,3 +65,33 @@ def effects(path, timeline, sample_rate=24000):
             v=int(math.sin(2*math.pi*freq*t)*env*3600)
             data[start+j]=max(-30000,min(30000,data[start+j]+v))
     with wave.open(str(path),'wb') as w:w.setnchannels(1);w.setsampwidth(2);w.setframerate(sample_rate);w.writeframes(data.tobytes())
+
+
+def weapon_diagram(path,spec):
+    """Authored explanatory chart; never disguised as an in-game upgrade UI."""
+    im=Image.new('RGB',(1920,1080),'#0d1724');d=ImageDraw.Draw(im)
+    cyan='#8cebd2';gold='#ffe085';white='#f4f7ff'
+    d.text((95,120),spec.get('kicker','九种武器，三条起点'),font=ImageFont.truetype(font(True),66),fill=gold)
+    if spec['layout']=='weapon_tree':
+        rows=[('普通枪','三连机关枪','恒流激光'),('影步手里剑','散华手里剑','遥控回旋刃'),('反冲炸弹','磁吸遥爆雷','坍缩奇点')]
+        for i,(base,a,b) in enumerate(rows):
+            y=245+i*215
+            color=gold if spec.get('highlight_family')==i else cyan
+            d.rounded_rectangle((95,y,600,y+150),25,fill='#1a304b',outline=color,width=3)
+            d.text((135,y+45),base,font=ImageFont.truetype(font(True),52),fill=white)
+            d.text((645,y+43),'→',font=ImageFont.truetype(font(True),60),fill=color)
+            for x,label in [(780,a),(1320,b)]:
+                d.rounded_rectangle((x,y,x+500,y+150),25,fill='#1a304b',outline=color,width=3)
+                d.text((x+28,y+48),label,font=ImageFont.truetype(font(True),46),fill=white)
+            d.text((1284,y+54),'或',font=ImageFont.truetype(font(True),32),fill=color)
+        d.text((100,900),'基础武器：3把      二级分支：6条      三级：保留普攻＋主动技能',font=ImageFont.truetype(font(),36),fill=cyan)
+    else:
+        rows=[('三连机关枪','弹幕风暴'),('恒流激光','日晷贯穿炮'),('散华手里剑','千刃绽放'),('遥控回旋刃','噬月回刃'),('磁吸遥爆雷','磁暴猎杀雷'),('坍缩奇点','吞星坍缩')]
+        for i,(a,b) in enumerate(rows):
+            x=95+(i%2)*900;y=260+(i//2)*210
+            d.rounded_rectangle((x,y,x+840,y+165),22,fill='#1a304b',outline=cyan,width=3)
+            d.text((x+25,y+22),a,font=ImageFont.truetype(font(True),43),fill=white)
+            d.text((x+25,y+88),'＋ '+b,font=ImageFont.truetype(font(True),44),fill=gold)
+        d.text((100,930),'主动技需要真实命中积攒共鸣；本表不是正式成长授予完成证明',font=ImageFont.truetype(font(),34),fill=cyan)
+    d.text((100,1010),'编辑性机制示意 · 据现有武器定义整理 · 非游戏升级界面',font=ImageFont.truetype(font(),28),fill='#b9c9dc')
+    im.save(path)
