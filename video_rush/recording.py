@@ -98,14 +98,10 @@ def capture(repo, asset):
         work.mkdir(exist_ok=True)
         names=run(['git','-C',repo,'ls-tree','--name-only',commit]).splitlines()
         names=[n for n in names if n not in {'.agents','.github','.gitignore','docs','preview','build'}]
-        from .git_media import prefetch
-        fetched=prefetch(repo,commit,names)
-        if fetched:print(f'  batch-fetched {fetched} source blobs without checkout',flush=True)
-        arch=subprocess.Popen(['git','-C',str(repo),'archive',commit,'--',*names],stdout=subprocess.PIPE)
-        subprocess.run(['tar','-x','-C',str(work)],stdin=arch.stdout,check=True,timeout=120);arch.stdout.close()
-        if arch.wait():raise RuntimeError('Source archive failed')
-        run([engine,'--headless','--path',work,'--editor','--import'],log=folder/'import.log',timeout=240)
-        write(folder/'archive.json',{'commit':commit,'excluded':['docs','preview','build'],'source_repo_readonly':True})
+        from .snapshot import snapshot
+        snapshot_receipt=snapshot(repo,commit,names,work)
+        run([engine,'--headless','--path',work,'--single-threaded-scene','--render-thread','safe','--editor','--import'],log=folder/'import.log',timeout=240)
+        write(folder/'archive.json',{'commit':commit,'excluded':['docs','preview','build'],'source_repo_readonly':True,'snapshot':snapshot_receipt})
     shutil.copyfile(driver,work/'tools/video_rush_weapon.gd')
     before=runtime_fingerprint(work)
     repo_before=run(['git','-C',repo,'status','--porcelain'])

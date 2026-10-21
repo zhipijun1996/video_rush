@@ -53,3 +53,18 @@ def test_mine_clip_cannot_claim_combo_from_one_blast():
        'frames':[{'hp':5,'epoch':3,'actor_epoch':3,'position':[0,i]} for i in range(120)],
        'events':[{'kind':'accepted_packet','grounded':True},{'kind':'attached'},{'kind':'blast'}]}
     with pytest.raises(ValueError,match='two real airborne bombs'):validate_trace(t,'route_mine_combo',120)
+
+
+def test_snapshot_preserves_binary_executable_symlink_and_source_worktree(tmp_path):
+    from video_rush.snapshot import snapshot
+    from video_rush.common import run
+    src=tmp_path/'src';src.mkdir()
+    def git(*a):return run(['git','-C',src,*a]).strip()
+    git('init','-q');git('config','user.name','fixture');git('config','user.email','fixture@example.invalid')
+    (src/'文件.bin').write_bytes(b'\x00\xff\nblob\x80');script=src/'run.sh';script.write_text('#!/bin/sh\nexit 0\n');script.chmod(0o755)
+    (src/'link').symlink_to('文件.bin');git('add','.');git('commit','-qm','source');head=git('rev-parse','HEAD');before=git('status','--porcelain')
+    out=tmp_path/'snapshot';r=snapshot(src,head,['文件.bin','run.sh','link'],out)
+    assert r['files']==3 and (out/'文件.bin').read_bytes()==b'\x00\xff\nblob\x80'
+    assert (out/'run.sh').stat().st_mode & 0o111
+    assert (out/'link').is_symlink() and (out/'link').read_bytes()==(src/'文件.bin').read_bytes()
+    assert git('status','--porcelain')==before and git('rev-parse','HEAD')==head

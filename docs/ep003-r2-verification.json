@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-10-21T17:33:12.774900+00:00",
+  "status": "local_pass_actions_pending",
+  "production_commit": "04985240e66beaa32ade9d26b056c92fbe71ff52",
+  "source_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "source_worktree_unchanged": true,
+  "tests": "17 passed",
+  "local": {
+    "duration_seconds": 231.499675,
+    "final_sha256": "2e7e42d02169694c6f3e80c2cbb31fc3d0ba9f98e564350692e6c42f7f565abe",
+    "final_bytes": 48823432,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_structural": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "检查高台落地、散华两段方向、回旋控刃和真实接回、磁雷地面遥爆与两次空中炸弹；奇点左右画面起点不同，不当成同障碍受控对照。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "unique_primary_weapons_recorded": [
+      "collapse_singularity",
+      "fan_shuriken",
+      "magnetic_mine",
+      "pulse_gun",
+      "recoil_bomb",
+      "remote_boomerang",
+      "shadow_shuriken",
+      "sustained_laser",
+      "triple_machine_gun"
+    ],
+    "rendered_trace_cases": [
+      "combat_laser",
+      "combat_pulse",
+      "laser_stop",
+      "laser_up",
+      "route_bomb",
+      "route_boomerang",
+      "route_fan",
+      "route_laser",
+      "route_mine_combo",
+      "route_pulse",
+      "route_shadow",
+      "route_singularity",
+      "route_triple",
+      "singularity_left"
+    ],
+    "cache_resume_after_snapshot_fix": "source validation/manifest recomputed; unchanged narration/render/final quality/delivery correctly cached"
+  },
+  "truth_boundaries": [
+    "One initial checkpoint/equipment per formal map window; no natural unlock/full campaign claim.",
+    "Ground magnetic mine manually triggered; not an implemented auto-timer.",
+    "Boomerang direction is changed through blade steering and incoming catch direction.",
+    "Lv3 retained primaries plus active skills; historical skill footage separately tagged."
+  ],
+  "human_review": "Full phone listening and aesthetic acceptance pending; selected rendered frames visually inspected.",
+  "failed_cloud_attempts": [
+    {
+      "run_id": 39644864048,
+      "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39644864048",
+      "production_commit": "04985240e66beaa32ade9d26b056c92fbe71ff52",
+      "status": "failure_before_movie",
+      "error": "Partial-clone git archive/tar extraction exceeded120s after3229 blobs had been batch-fetched. Incomplete21320-byte Artifact is not a finished movie."
+    }
+  ],
+  "snapshot_fix_verification": {
+    "files": 3271,
+    "bytes": 483145735,
+    "prefetched_blobs": 0,
+    "method": "exact git ls-tree + cat-file --batch; no checkout or archive attribute walk",
+    "snapshot_seconds": 2.959380815998884,
+    "all_committed_blob_hashes_verified": true,
+    "source_worktree_unchanged": true,
+    "fresh_snapshot_native_boomerang": "passed: 180 actual rendered trace frames; real direction-changing catch, no respawn; MovieMaker AVI fully decoded",
+    "import": "first plain parallel import crashed during fonts; explicit single-thread scene/safe render import succeeded, original log retained",
+    "clean_import_safe_flags": {
+      "passed": true,
+      "seconds": 53.72875021499931,
+      "existing_import_cache_removed_before_run": true
+    },
+    "small_partial_clone_probe": {
+      "files": 987,
+      "bytes": 7672189,
+      "prefetched_blobs": 0,
+      "method": "exact git ls-tree + cat-file --batch; no checkout or archive attribute walk",
+      "seconds": 0.11235736499656923
+    }
+  }
+}
