@@ -1,0 +1,243 @@
+{
+  "checked_at": "2026-10-22T01:50:29.402176+00:00",
+  "status": "local_and_hosted_success_uploaded_downloaded_hash_verified_and_fully_decoded",
+  "production_commit": "a2030c2155add83b38a960ab70fc372c4589db4b",
+  "source_worktree_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "source_worktree_unchanged": true,
+  "tests": "21 passed; two actual FFmpeg montage tests plus planned-still/real-movie freeze regressions",
+  "research_scope": "Reused original ep001 full-history index; selectively re-read PR24/30/90/93 documents, AI source provenance and historical style/failed-region evidence. No new all-branch scan or historical rebuild claimed.",
+  "local": {
+    "duration_seconds": 197.708,
+    "final_sha256": "65e9ad116e7d2f2f0ea3b440c114d4ab82e4b4b8fe8354a75281d9c2665e7461",
+    "final_bytes": 47452440,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对概念／预览／早期实机的标签是否随快切变化；4399只指早期画面自嘲。TileSet许可逐套区分，《动物井》仅为用户风格目标，不把AI适配性说成已验证成功。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "actual_edge_receipts": 29,
+    "montage_source_segments": 40,
+    "additional_existing_ai_sources": 5,
+    "total_distinct_beautiful_concept_and_source_images": 6,
+    "selected_frames_inspected": [
+      "a01+1s",
+      "a02+0.2s",
+      "a02+1.8s",
+      "a05+3.2s",
+      "a17+2s final phone layout",
+      "a20+2s",
+      "a23+2s",
+      "cover.png"
+    ],
+    "planned_still_intervals": [
+      {
+        "start": 47.199674,
+        "end": 54.066341,
+        "duration": 6.866667
+      },
+      {
+        "start": 130.533008,
+        "end": 136.399674,
+        "duration": 5.866666000000009
+      }
+    ]
+  },
+  "truth_boundaries": [
+    "4399 is a user-requested self-comparison about early footage, not source media.",
+    "All six beautiful images already existed in project Git; AI concepts/paintovers are not actual game output.",
+    "Archive SHA/PR is not asserted as image creation time.",
+    "Animal Well is named as user aspiration only; no footage borrowed or achieved-quality claim.",
+    "AI suitability/repeatability is a hypothesis; original contact sheet retains hood-color drift.",
+    "CC0 and Underworld custom permission are distinguished; not all described as open source."
+  ],
+  "iteration_evidence": {
+    "initial_quality_failure": "Two declared still/montage intervals were misclassified due voice-shot-level media grouping and a one-frame FFmpeg boundary. Initial report preserved at build/ep001-r2-initial-quality.json; fixed per actual cut without excusing frozen movies.",
+    "cancelled_cloud_runs": [
+      {
+        "run_id": 39706330211,
+        "reason": "Superseded by montage-aware freeze classification fix."
+      },
+      {
+        "run_id": 39706714618,
+        "reason": "Superseded after visual review found five-style portrait board unreadable on phones; use existing3+2 layout."
+      }
+    ],
+    "current_run_id": 39707064232
+  },
+  "human_review": "Selected rendered frames inspected. Full phone listening, humor/pacing/naturalness and aesthetic acceptance pending; not auto-approved.",
+  "bilibili_published": false,
+  "actions": {
+    "checked_at": "2026-10-22T01:48:52.645172+00:00",
+    "duration_seconds": 197.7,
+    "final_sha256": "f94f92433a12919fbabf2619262eea37d6eb898e42f6d96fa820ade8914f67c1",
+    "final_bytes": 47439386,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md"
+    ],
+    "whole_file_decoded_after_download": true,
+    "authored_shots_and_cover_match": true,
+    "actual_edge_receipts_verified": 29,
+    "project_source_metadata_matches_local_hash_verified_assets": [
+      "concept",
+      "v2_preview",
+      "old",
+      "tiles47",
+      "redesign_before",
+      "redesign_after",
+      "region_fail",
+      "region_overview",
+      "world_first",
+      "world_second",
+      "world_fail",
+      "styles",
+      "style_movie",
+      "new_movie",
+      "home_movie",
+      "new",
+      "new2",
+      "art_paintover",
+      "art_board",
+      "art_environment",
+      "art_windmill",
+      "art_bank",
+      "repeatability"
+    ],
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对概念／预览／早期实机的标签是否随快切变化；4399只指早期画面自嘲。TileSet许可逐套区分，《动物井》仅为用户风格目标，不把AI适配性说成已验证成功。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "audio_metrics": {
+      "decoded_samples": 3177813,
+      "peak": 0.68817138671875,
+      "rms": 0.09420917394658684,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    },
+    "bgm_derivative_sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "bgm_original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "planned_still_intervals": [
+      {
+        "start": 47.2,
+        "end": 54.0667,
+        "duration": 6.8666999999999945
+      },
+      {
+        "start": 130.533,
+        "end": 136.4,
+        "duration": 5.867000000000019
+      }
+    ],
+    "raw_media_scope": "Source movie/image bytes checked in production; Artifact contains source manifest and receipts, not raw media or narration WAVs. Downloaded receipt text/backend/voice/metrics/sentence boundaries checked.",
+    "human_phone_review": "pending",
+    "bilibili_published": false,
+    "run_id": 39707064232,
+    "job_id": 119589482442,
+    "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39707064232",
+    "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39707064232/artifacts/12395941422",
+    "artifact_id": 12395941422,
+    "artifact_bytes": 48357472,
+    "artifact_expires_at": "2026-11-05T01:47:24Z",
+    "artifact_digest": "sha256:20637472f0f9c78815ee6bf36a14e01af1853ecd1771458b55bee62d9af9f3b9",
+    "zip_sha256": "20637472f0f9c78815ee6bf36a14e01af1853ecd1771458b55bee62d9af9f3b9",
+    "tests": "21 passed in2.99s on hosted runner",
+    "temporary_music_chunks_deleted": 8,
+    "footage_collection_seconds": 14.33,
+    "rendering_seconds": 267.92,
+    "downloaded_final_phone_layout_frame_inspected": true
+  }
+}

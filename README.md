@@ -4,6 +4,8 @@
 
 ## 当前下载方式（用户最新指示）
 
+最新首期美术节奏修订版 **ep001-r2**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39707064232/artifacts/12395941422)，约48.4MB，3分18秒，保留至2026-11-05。“为啥这么4399”开场、六张已有AI漂亮概念／资产图、短表情快切，以及从补素材转向TileSet与有辨识度像素风的探索；《动物井》为个人参考方向，不冒称已实现。带指定轻BGM，21项测试通过，已下载核对文件哈希、29份配音回执、23份Git素材来源并解码整片。文稿：[连续口播](docs/ep001-r2-script.md)；[修订说明](docs/ep001-r2.md)、[验证记录](docs/ep001-r2-verification.json)。完整手机试听和观感待审核。
+
 最新九武器口播修订版 **ep003-r3**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39700871769/artifacts/12394130343)，约51.7MB，4分22秒，保留至2026-11-05。按用户反馈删除强行幽默，改用正常口语和少量贴合语境的网络表达；保留九种武器、升级分支、真实关卡测试和指定BGM。已下载校验ZIP与文件哈希、核对34份配音回执和14组实机轨迹，并解码整片；手机完整试听与观感待审核。文稿：[连续口播](docs/ep003-r3-script.md)，证据：[修订说明](docs/ep003-r3.md)、[执行验证](docs/ep003-r3-verification.json)。
 
 上一版 ep003《枪是用来赶路的？我的游戏靠反冲跳跃》已实际通过 Actions 录制、配音、制作、验收并上传，随后下载复核哈希与整片解码：[下载六武器视频、封面及标题简介 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417)，约39MB，3分41秒，2026-11-04过期。执行证据见 [ep003 验证记录](docs/ep003-verification.json)。六条分支都有专门实机，采用用户指定 BGM 压缩副本；手机完整试听和审美待审核。
@@ -151,3 +153,5 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --sp
 “只跳/加枪”“激光持续/提前松手”来自同一源版本、Seed 与出生点。其余武器是分开录制的指定装备演示，不代表自然解锁或全流程完成。声音包含实际中文 TTS、对应片段原游戏音效和用户提供 BGM 的低音量压缩副本；与口播自动混音。视频编码、轨迹验证及完整解码通过，也仍需手机完整试听和观感审核。
 
 九武器修订版复现：`python -m video_rush produce --spec episodes/ep003-r3.json --source /workspace/gunman-rush --local-only`。Actions交付入口加 `--spec episodes/ep003-r3.json --episode ep003-r3`。部分克隆素材以精确Git对象批量快照；仅导入时使用single-threaded-scene/render-thread safe，正常游戏录制不改运行时线程/玩法参数。
+
+首期新版复现：`python -m video_rush produce --spec episodes/ep001-r2.json --source /workspace/gunman-rush --local-only`。Actions入口：`python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --spec episodes/ep001-r2.json --episode ep001-r2`。
