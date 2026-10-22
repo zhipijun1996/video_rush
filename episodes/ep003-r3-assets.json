@@ -1,0 +1,337 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "route_pulse",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_pulse",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_shadow",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_shadow",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_bomb",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_bomb",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_triple",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_triple",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_laser",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_laser",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_fan",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_fan",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_boomerang",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_boomerang",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_mine_combo",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_mine_combo",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "route_singularity",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_singularity",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "singularity_left",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "singularity_left",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "combat_pulse",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "combat_pulse",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "combat_laser",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "combat_laser",
+      "frames": 600,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "正式关卡开发测试 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion"
+    },
+    {
+      "id": "cover_bomb",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_mine_combo",
+      "frames": 600,
+      "pr": 65,
+      "kind": "reconstructed_game_screenshot",
+      "display_label": "真实关卡测试截图 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion",
+      "frame_seconds": 3.6
+    },
+    {
+      "id": "cover_blade",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_boomerang",
+      "frames": 600,
+      "pr": 65,
+      "kind": "reconstructed_game_screenshot",
+      "display_label": "真实关卡测试截图 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion",
+      "frame_seconds": 2.0
+    },
+    {
+      "id": "mine_placed",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "route_mine_combo",
+      "frames": 600,
+      "pr": 65,
+      "kind": "reconstructed_game_screenshot",
+      "display_label": "真实关卡测试截图 · 开局定位并指定装备",
+      "license": "User-authorized own game; Underworld by Asouris custom license; project/Kenney original game audio",
+      "truth": "Actual frozen formal App map, one initial checkpoint/equip; original AI, collision and resources thereafter; not natural acquisition or whole campaign completion",
+      "frame_seconds": 1.8
+    },
+    {
+      "id": "tree",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "layout": "weapon_tree",
+        "kicker": "三把基础武器 → 六条升级分支"
+      },
+      "display_label": "机制关系示意 · 非游戏升级界面",
+      "license": "Video Rush original authored chart"
+    },
+    {
+      "id": "tree_gun",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "layout": "weapon_tree",
+        "kicker": "三把基础武器 → 六条升级分支",
+        "highlight_family": 0
+      },
+      "display_label": "机制关系示意 · 非游戏升级界面",
+      "license": "Video Rush original authored chart"
+    },
+    {
+      "id": "tree_blade",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "layout": "weapon_tree",
+        "kicker": "三把基础武器 → 六条升级分支",
+        "highlight_family": 1
+      },
+      "display_label": "机制关系示意 · 非游戏升级界面",
+      "license": "Video Rush original authored chart"
+    },
+    {
+      "id": "tree_bomb",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "layout": "weapon_tree",
+        "kicker": "三把基础武器 → 六条升级分支",
+        "highlight_family": 2
+      },
+      "display_label": "机制关系示意 · 非游戏升级界面",
+      "license": "Video Rush original authored chart"
+    },
+    {
+      "id": "skills",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "layout": "weapon_skills",
+        "kicker": "三级进阶：保留普攻，再加主动技能"
+      },
+      "display_label": "机制关系示意 · 非游戏升级界面",
+      "license": "Video Rush original authored chart"
+    },
+    {
+      "id": "turn_card",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "回旋刃：先控刀，再接回来",
+        "face": "thinking",
+        "font_size": 59,
+        "lines": [
+          "第一段：反向闪步",
+          "飞刃位置 → 召回入射方向",
+          "第二段：可以接向另一边"
+        ],
+        "footer": "编辑性机制说明 · 实际变向见相邻关卡实机"
+      },
+      "display_label": "编辑性机制说明 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "mine_rules",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "磁吸雷：地面与空中用法不同",
+        "face": "thinking",
+        "font_size": 56,
+        "lines": [
+          "地面：投放 → 手动引爆",
+          "空中：出手 → 直接爆开",
+          "借力范围受距离与遮挡影响"
+        ],
+        "footer": "编辑性机制说明 · 实际连招见相邻关卡录像"
+      },
+      "display_label": "编辑性机制说明 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "ask9",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "graphic": {
+        "kicker": "你最想试哪一把？",
+        "face": "thinking",
+        "font_size": 58,
+        "lines": [
+          "三把基础武器，六条升级分支",
+          "哪种走法最吸引你？",
+          "也欢迎分享连招想法"
+        ],
+        "footer": "《失序之钟》开发中 · 欢迎建议"
+      },
+      "display_label": "编辑性机制说明 · 非实机",
+      "license": "Video Rush original authored graphic"
+    },
+    {
+      "id": "laser_up",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "laser_up",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "laser_stop",
+      "origin": "recording",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "case": "laser_stop",
+      "frames": 480,
+      "pr": 65,
+      "kind": "historical_reconstruction",
+      "display_label": "《失序之钟》开发实机 · 开局指定装备",
+      "license": "User-authorized own game recording; Underworld by Asouris custom license; project original/generated assets and Kenney CC0 game SFX; see rights",
+      "truth": "Fresh reconstruction of frozen main with unchanged runtime; formal App + original Router/Motor; no natural acquisition claim"
+    },
+    {
+      "id": "skills_archive",
+      "origin": "git",
+      "commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+      "path": "docs/evidence/all_weapons/actions.mp4",
+      "runtime_commit": "1198fe9767568e742edc20f6e67d2a737b86d90a",
+      "pr": 65,
+      "kind": "original_game_recording",
+      "display_label": "历史武器练习原片 · 分段重启 · 非正式成长流程",
+      "license": "User-authorized project recording; existing project/Kenney audio; see rights",
+      "truth": "Original 52.38s practice recording with actual hit-earned combat energy; original stationary training fixture, not a current formal campaign run"
+    }
+  ]
+}
