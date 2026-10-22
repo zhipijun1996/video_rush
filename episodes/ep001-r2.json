@@ -518,12 +518,14 @@
       "title": "有限进展，仍未完成整区",
       "narration": "局部确实更像一个地方。但当时只有两套布局，整张随机地图还没解决。",
       "assets": [
-        "world_second"
+        "world_second",
+        "meme_reset"
       ],
       "offsets": [
-        2
+        2,
+        0
       ],
-      "shot_type": "source_media",
+      "shot_type": "source_montage",
       "emphasis": "",
       "punchline": "",
       "transition": "cut",
@@ -539,7 +541,12 @@
       ],
       "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
       "claim_type": "source_supported_history_and_authored_reflection",
-      "same_seed_comparison": false
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.92,
+        0.08
+      ]
     },
     {
       "id": "a17",
@@ -547,14 +554,12 @@
       "title": "转向有规则的素材家族",
       "narration": "所以我决定换个思路，先参考现成、许可明确的TileSet，不再只靠散图往上堆。",
       "assets": [
-        "meme_reset",
         "styles"
       ],
       "offsets": [
-        0,
         0
       ],
-      "shot_type": "source_montage",
+      "shot_type": "rearranged_real_screenshot_comparison",
       "emphasis": "",
       "punchline": "",
       "transition": "cut",
@@ -571,11 +576,8 @@
       "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
       "claim_type": "source_supported_history_and_authored_reflection",
       "same_seed_comparison": false,
-      "presentation": "montage",
-      "montage_weights": [
-        0.08,
-        0.92
-      ]
+      "presentation": "five_style_board",
+      "display_source": "真实风格实验截图重排 · 非五个正式地区"
     },
     {
       "id": "a18",
