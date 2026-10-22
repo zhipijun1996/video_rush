@@ -45,10 +45,7 @@
       "punchline": "",
       "transition": "cut",
       "sfx": null,
-      "prs": [
-        24,
-        90
-      ],
+      "prs": [],
       "evidence": [
         "history_ep001",
         "concept_provenance",
@@ -117,7 +114,7 @@
       "transition": "cut",
       "sfx": null,
       "prs": [
-        30,
+        24,
         59
       ],
       "evidence": [
@@ -153,7 +150,6 @@
       "transition": "cut",
       "sfx": null,
       "prs": [
-        24,
         90
       ],
       "evidence": [
@@ -299,7 +295,9 @@
       "punchline": "",
       "transition": "cut",
       "sfx": null,
-      "prs": [],
+      "prs": [
+        90
+      ],
       "evidence": [
         "history_ep001",
         "user_20261022_uploads",
@@ -751,7 +749,9 @@
       "punchline": "",
       "transition": "cut",
       "sfx": null,
-      "prs": [],
+      "prs": [
+        59
+      ],
       "evidence": [
         "history_ep001",
         "user_20261022_uploads",
@@ -961,7 +961,9 @@
       "punchline": "",
       "transition": "cut",
       "sfx": null,
-      "prs": [],
+      "prs": [
+        94
+      ],
       "evidence": [
         "frozen_three_layer_background",
         "user_20261022_uploads"
@@ -1220,7 +1222,6 @@
       "transition": "cut",
       "sfx": null,
       "prs": [
-        90,
         94
       ],
       "evidence": [

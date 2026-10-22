@@ -57,6 +57,7 @@ def main():
     p.add_argument('--spec',default='episodes/ep002.json')
     p.add_argument('--episode',default='ep002')
     p.add_argument('--repository',default='zhipijun1996/video_rush')
+    p.add_argument('--prepare-only',action='store_true',help='Transfer media and save produce.json; defer production dispatch until local validation finishes')
     a=p.parse_args()
     spec=json.loads(Path(a.spec).read_text());assets=json.loads(Path(spec['asset_spec']).read_text())
     # Prepare and validate all user inputs before creating any remote artifacts.
@@ -82,10 +83,11 @@ def main():
             'music_artifacts':json.dumps(ids),'music_sha256':hashlib.sha256(raw).hexdigest()}
     if images:inputs.update(images_artifacts=json.dumps(image_ids),images_sha256=hashlib.sha256(images).hexdigest())
     payload=folder/'produce.json';payload.write_text(json.dumps({'ref':'main','inputs':inputs}))
-    gh('api',f'repos/{a.repository}/actions/workflows/produce.yml/dispatches','--method','POST','--input',payload)
+    if not a.prepare_only:
+        gh('api',f'repos/{a.repository}/actions/workflows/produce.yml/dispatches','--method','POST','--input',payload)
     (folder/'receipt.json').write_text(json.dumps({'chunk_artifacts':ids,'image_chunk_artifacts':image_ids,
         'music_sha256':hashlib.sha256(raw).hexdigest(),'images_sha256':hashlib.sha256(images).hexdigest() if images else None,
-        'status':'production_dispatched'},indent=2))
-    print('Requested media transferred. Hosted production dispatched.',flush=True)
+        'status':'media_prepared' if a.prepare_only else 'production_dispatched'},indent=2))
+    print('Requested media transferred. '+('Ready payload: '+str(payload) if a.prepare_only else 'Hosted production dispatched.'),flush=True)
 
 if __name__=='__main__':main()
