@@ -47,17 +47,17 @@
         200,
         300
       ],
-      "production_status": "ep003_r2_nine_weapons_verified_delivered",
+      "production_status": "ep003_r3_natural_narration_verified_delivered",
       "one_question": "为什么在这款游戏里，换武器也会改变移动方式？",
-      "opening_10_seconds": "直接展示反冲上跳与侧向位移：这把枪，先别管敌人。先把我自己送上去。",
+      "opening_10_seconds": "朝地上扔颗雷，跳过去引爆，再接两发炸弹。这样就能一路往上走。",
       "hook_status": "authored editorial wording; not an original quote",
       "story_beats": [
-        "以磁雷连飞和回旋接刃变向直接开场，原创自嘲穿插。",
+        "以真实磁雷连飞和回旋接刃变向开场；正常口语讲动作，删除强行拟人和段子，只保留少量贴合语境的网络表达。",
         "三把基础武器与六条二级分支，共九种；三级保留普攻加主动技。",
         "真实关卡高台/遇敌窗口，散华和回旋二段改向、磁雷跳爆接两发空中炸弹、奇点停住后改向。",
         "明确开局定位/指定装备；正式成长尚待接通，旧技能练习原片单独标记。"
       ],
-      "visible_payoff": "在真实关卡里看见路线和连招差异，九种类型和升级关系清楚；幽默与手机听感待用户评判。",
+      "visible_payoff": "在真实关卡里看见路线和连招差异，九种类型和升级关系清楚；新版完整手机试听和自然度仍待用户评判。",
       "sources": [
         "weapon_contract",
         "weapon_scope",
@@ -79,18 +79,25 @@
       ],
       "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled.",
       "user_scope_update": "User requested all six Lv2 branches, with differences/features, on 2026-10-21",
-      "episode_spec": "episodes/ep003-r2.json",
-      "actual_duration_seconds": 231.5,
-      "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39646964047/artifacts/12369075853",
-      "artifact_expires_at": "2026-11-04T18:03:59Z",
+      "episode_spec": "episodes/ep003-r3.json",
+      "actual_duration_seconds": 262.133333,
+      "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39700871769/artifacts/12394130343",
+      "artifact_expires_at": "2026-11-05T00:52:18Z",
       "previous_revisions": [
         {
           "episode": "ep003",
           "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39633722578/artifacts/12361257417",
           "duration_seconds": 221.166667,
           "scope": "six Lv2 branches; superseded by user nine-weapon/route/humor correction"
+        },
+        {
+          "episode": "ep003-r2",
+          "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39646964047/artifacts/12369075853",
+          "duration_seconds": 231.5,
+          "scope": "Nine weapons and formal-level mechanics verified; user rejected forced humor and AI-like wording, superseded by r3 editorial revision."
         }
-      ]
+      ],
+      "user_style_update": "2026-10-22: user rejected forced humor/AI-like wording; ordinary conversational Chinese and sparse context-fitting Chinese internet expressions."
     },
     {
       "id": "V002",
