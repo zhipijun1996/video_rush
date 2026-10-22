@@ -1,0 +1,283 @@
+{
+  "checked_at": "2026-10-22T04:06:41.731993+00:00",
+  "status": "local_and_hosted_success_uploaded_downloaded_hash_verified_and_fully_decoded",
+  "production_commit": "a6c8985a96d505e771a8f259eee0fba8fbbc6390",
+  "source_worktree_commit": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "source_worktree_unchanged": true,
+  "tests": "24 passed; actual encoded parallax displacement, original-upload byte preservation, ZIP/path/SHA rejection and existing regression checks",
+  "local": {
+    "duration_seconds": 245.108,
+    "final_sha256": "fbb93ce23ac98f48bf8dcafca6eeeb0128d4cec0eefa89456031ecb649b09660",
+    "final_bytes": 52154162,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对概念／预览／早期实机的标签是否随快切变化；4399只指早期画面自嘲。TileSet许可逐套区分，《动物井》仅为用户风格目标，不把AI适配性说成已验证成功。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "actual_edge_receipts": 35,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md",
+      "original_uploads/1000057417.jpg",
+      "original_uploads/1000057563.jpg",
+      "original_uploads/1000057564.jpg",
+      "original_uploads/1000057690.jpg",
+      "original_uploads/1000057721.jpg"
+    ],
+    "original_images": [
+      {
+        "filename": "1000057563.jpg",
+        "sha256": "a902487af23ab63af6dd54f1577a7334dae39943ce31205429e871b1bec52dd1",
+        "origin": "user_upload",
+        "backup": "original_uploads/1000057563.jpg"
+      },
+      {
+        "filename": "1000057564.jpg",
+        "sha256": "742fe224da77829fd1281a447686c067d07612c084f43ba52b982ee6cb288fb3",
+        "origin": "user_upload",
+        "backup": "original_uploads/1000057564.jpg"
+      },
+      {
+        "filename": "1000057721.jpg",
+        "sha256": "87afc39797133337b1cf23b775f6f8fae81a7a42da021420ece2f2d048e4e9e8",
+        "origin": "git",
+        "backup": "original_uploads/1000057721.jpg"
+      },
+      {
+        "filename": "1000057690.jpg",
+        "sha256": "40c28e6e88ed2212eb9393a5b4fbafa761836d5487318df4a6567ad7b032aaa0",
+        "origin": "user_upload",
+        "backup": "original_uploads/1000057690.jpg"
+      },
+      {
+        "filename": "1000057417.jpg",
+        "sha256": "72f5d61ffa9e27cf28e2b3a82818018702e3aea6fbe6c47c801fbccfd7736857",
+        "origin": "git",
+        "backup": "original_uploads/1000057417.jpg"
+      }
+    ],
+    "frames_inspected": [
+      "a01 three uploaded concepts",
+      "a04 biome-board crop",
+      "r03 style-board crop",
+      "r05 diagram at0.6s and5s",
+      "r06 actual clean home walk at+3s",
+      "cover.png"
+    ],
+    "resumption": "Final metadata/provenance refresh reused valid media, audio, render and technical checks; original-upload delivery files freshly added to hash manifest."
+  },
+  "truth_boundaries": [
+    "All five uploaded originals preserved; only two have byte-identical Git blobs. Three transported as exact JPEGs, not re-generated/recompressed.",
+    "Concept HUD, platform samples, regions and implementable labels are proposals, not actual game acceptance.",
+    "TileSet suitability scoped to this variable-map goal; no claim all roguelikes require tiles or fixed paintings cannot be modular.",
+    "Parallax diagram explicitly editorial, not newly implemented gameplay or measured source performance.",
+    "Actual home clip9s onward avoids service menus; source code has camera-factor x values.035/.12/.28.",
+    "Animal Well remains a personal art aspiration; quality/listening not automatically approved."
+  ],
+  "transport": {
+    "image_zip_bytes": 674880,
+    "image_zip_sha256": "48c1af2ab0ecbd2684de1067dd6aaa4a341dfba35dbbd01c88da2c12e6441bb5",
+    "bgm_chunks": 8,
+    "image_chunks": 15,
+    "media_in_git": false,
+    "temporary_expiry": "one day unless cleaned after success"
+  },
+  "human_review": "Selected frames and clean home motion window inspected; full phone listening and taste remain pending.",
+  "bilibili_published": false,
+  "actions": {
+    "checked_at": "2026-10-22T04:04:24.160951+00:00",
+    "duration_seconds": 245.1,
+    "final_sha256": "7cb1c18950c7442de0848b1afdafd483228673f1bd452cb6bb5f069022cf9a2d",
+    "final_bytes": 52154842,
+    "delivery_files_verified": [
+      "final.mp4",
+      "cover.png",
+      "script.md",
+      "storyboard.json",
+      "subtitles.ass",
+      "bilibili.md",
+      "sources.json",
+      "report.json",
+      "phone-review.md",
+      "original_uploads/1000057417.jpg",
+      "original_uploads/1000057563.jpg",
+      "original_uploads/1000057564.jpg",
+      "original_uploads/1000057690.jpg",
+      "original_uploads/1000057721.jpg"
+    ],
+    "whole_file_decoded_after_download": true,
+    "authored_shots_and_cover_match": true,
+    "actual_edge_receipts_verified": 35,
+    "project_source_metadata_matches_local_hash_verified_assets": [
+      "concept",
+      "v2_preview",
+      "old",
+      "tiles47",
+      "redesign_before",
+      "redesign_after",
+      "region_fail",
+      "region_overview",
+      "world_first",
+      "world_second",
+      "world_fail",
+      "styles",
+      "style_movie",
+      "new_movie",
+      "home_movie",
+      "new",
+      "new2",
+      "art_paintover",
+      "art_board",
+      "art_environment",
+      "art_windmill",
+      "art_bank",
+      "repeatability",
+      "upload_float",
+      "upload_biomes"
+    ],
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true
+    },
+    "content_review": {
+      "structural_checks": {
+        "explicit_topic": true,
+        "first_15_seconds_hook_authored": true,
+        "every_shot_references_media": true,
+        "every_segment_has_evidence": true,
+        "evidence_references_resolve": true,
+        "interpretations_labeled": true,
+        "no_fabricated_human_acceptance": true
+      },
+      "structural_pass": true,
+      "editorial_review": "human_review_required",
+      "aesthetic_acceptance": "unverified",
+      "independent_fact_review": "unverified",
+      "phone_checklist": [
+        "前15秒是否值得继续观看；主题是否明确",
+        "逐句口播是否与屏幕展示对应，尤其是概念/预览/正式实机标签",
+        "检查AI配音是否错读、语气自然，字幕是否跟得上",
+        "核对引用SHA/PR与具体结论，是否存在过度归因",
+        "核对概念／预览／早期实机的标签是否随快切变化；4399只指早期画面自嘲。TileSet许可逐套区分，《动物井》仅为用户风格目标，不把AI适配性说成已验证成功。",
+        "重复、单调或停留太久的镜头是否应缩短",
+        "技术通过是否被误读成品质通过；当前开发演示与未完成范围是否清楚",
+        "完整观看后决定标题封面是否准确，手机字是否可读"
+      ]
+    },
+    "audio_metrics": {
+      "decoded_samples": 3939669,
+      "peak": 0.702484130859375,
+      "rms": 0.09383095583329926,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    },
+    "bgm_derivative_sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "bgm_original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_user_images_verified": [
+      {
+        "filename": "1000057563.jpg",
+        "sha256": "a902487af23ab63af6dd54f1577a7334dae39943ce31205429e871b1bec52dd1"
+      },
+      {
+        "filename": "1000057564.jpg",
+        "sha256": "742fe224da77829fd1281a447686c067d07612c084f43ba52b982ee6cb288fb3"
+      },
+      {
+        "filename": "1000057721.jpg",
+        "sha256": "87afc39797133337b1cf23b775f6f8fae81a7a42da021420ece2f2d048e4e9e8"
+      },
+      {
+        "filename": "1000057690.jpg",
+        "sha256": "40c28e6e88ed2212eb9393a5b4fbafa761836d5487318df4a6567ad7b032aaa0"
+      },
+      {
+        "filename": "1000057417.jpg",
+        "sha256": "72f5d61ffa9e27cf28e2b3a82818018702e3aea6fbe6c47c801fbccfd7736857"
+      }
+    ],
+    "planned_still_intervals": [
+      {
+        "start": 62.5667,
+        "end": 69.4333,
+        "duration": 6.866600000000005
+      }
+    ],
+    "raw_media_scope": "Source movie/image bytes checked in production; Artifact contains source manifest and receipts, not raw gameplay or narration WAVs; all five user original JPEGs are included. Downloaded receipt text/backend/voice/metrics/sentence boundaries checked.",
+    "human_phone_review": "pending",
+    "bilibili_published": false,
+    "run_id": 39719651258,
+    "job_id": 119629919831,
+    "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39719651258",
+    "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39719651258/artifacts/12400433573",
+    "artifact_id": 12400433573,
+    "artifact_bytes": 54103220,
+    "artifact_expires_at": "2026-11-05T04:02:55Z",
+    "artifact_digest": "sha256:251e00d8f79eebc2934d05bb5db54456ba3878ef891c93dc2224933ffb083c36",
+    "zip_sha256": "251e00d8f79eebc2934d05bb5db54456ba3878ef891c93dc2224933ffb083c36",
+    "tests": "24 passed in2.86s on hosted runner",
+    "temporary_media_chunks_deleted": 23,
+    "user_images_restored_via_transport": 3,
+    "user_images_from_identical_git_blobs": 2,
+    "downloaded_parallax_and_home_frames_inspected": true,
+    "footage_collection_seconds": 5.85,
+    "rendering_seconds": 232.21
+  }
+}

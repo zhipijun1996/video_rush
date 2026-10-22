@@ -4,7 +4,7 @@
 
 ## 当前下载方式（用户最新指示）
 
-最新首期美术节奏修订版 **ep001-r2**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39707064232/artifacts/12395941422)，约48.4MB，3分18秒，保留至2026-11-05。“为啥这么4399”开场、六张已有AI漂亮概念／资产图、短表情快切，以及从补素材转向TileSet与有辨识度像素风的探索；《动物井》为个人参考方向，不冒称已实现。带指定轻BGM，21项测试通过，已下载核对文件哈希、29份配音回执、23份Git素材来源并解码整片。文稿：[连续口播](docs/ep001-r2-script.md)；[修订说明](docs/ep001-r2.md)、[验证记录](docs/ep001-r2-verification.json)。完整手机试听和观感待审核。
+最新首期补充版 **ep001-r3**：[手机下载成片、封面、投稿资料与五张原图 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39719651258/artifacts/12400433573)，约54.1MB，4分05秒，保留至2026-11-05。加入五张上传概念图、随机地图与固定构图的冲突、TileSet的适配与难点，以及三层视差原理动画＋真实家园录像。保留4399开场、短表情转场和指定轻BGM；概念HUD不当作已实现玩法。24项测试通过，已下载核对ZIP、14份交付文件、35份配音回执、五张原始JPEG和25份Git素材元数据，并解码整片。文稿：[连续口播](docs/ep001-r3-script.md)；[修订说明](docs/ep001-r3.md)、[验证记录](docs/ep001-r3-verification.json)。手机完整试听与观感待审核。
 
 最新九武器口播修订版 **ep003-r3**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39700871769/artifacts/12394130343)，约51.7MB，4分22秒，保留至2026-11-05。按用户反馈删除强行幽默，改用正常口语和少量贴合语境的网络表达；保留九种武器、升级分支、真实关卡测试和指定BGM。已下载校验ZIP与文件哈希、核对34份配音回执和14组实机轨迹，并解码整片；手机完整试听与观感待审核。文稿：[连续口播](docs/ep003-r3-script.md)，证据：[修订说明](docs/ep003-r3.md)、[执行验证](docs/ep003-r3-verification.json)。
 
@@ -154,4 +154,4 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --sp
 
 九武器修订版复现：`python -m video_rush produce --spec episodes/ep003-r3.json --source /workspace/gunman-rush --local-only`。Actions交付入口加 `--spec episodes/ep003-r3.json --episode ep003-r3`。部分克隆素材以精确Git对象批量快照；仅导入时使用single-threaded-scene/render-thread safe，正常游戏录制不改运行时线程/玩法参数。
 
-首期新版复现：`python -m video_rush produce --spec episodes/ep001-r2.json --source /workspace/gunman-rush --local-only`。Actions入口：`python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --spec episodes/ep001-r2.json --episode ep001-r2`。
+首期新版复现：`python -m video_rush produce --spec episodes/ep001-r3.json --source /workspace/gunman-rush --local-only`。Actions入口：`python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg --spec episodes/ep001-r3.json --episode ep001-r3`。重制需恢复原始三张非Git图至build/inputs（见AssetSpec和下载包original_uploads/）；两张Git命中图自动取源。可加`--prepare-only`先传素材、待本地验收后再提交保存的produce.json。
