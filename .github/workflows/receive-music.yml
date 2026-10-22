@@ -1,8 +1,11 @@
-name: Receive requested soundtrack chunk
-run-name: BGM ${{ inputs.transfer }}-${{ inputs.part }}
+name: Receive requested media chunk
+run-name: ${{ inputs.label || 'BGM' }} ${{ inputs.transfer }}-${{ inputs.part }}
 on:
   workflow_dispatch:
     inputs:
+      label:
+        default: BGM
+        required: false
       transfer:
         required: true
       part:
@@ -18,11 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Decode one bounded soundtrack chunk
+      - name: Decode one bounded media chunk
         shell: python
         run: |
           import os, json, base64, hashlib, pathlib, re
           d=json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_text())['inputs']
+          assert d.get('label','BGM') in ('BGM','IMAGES')
           assert re.fullmatch(r'[a-f0-9]{12}',d['transfer'])
           assert re.fullmatch(r'[0-9]{3}',d['part'])
           b=base64.b64decode(d['data_base64'],validate=True)
@@ -30,7 +34,7 @@ jobs:
           pathlib.Path(d['part']+'.bin').write_bytes(b)
       - uses: actions/upload-artifact@v4
         with:
-          name: bgm-${{ inputs.transfer }}-${{ inputs.part }}
+          name: media-${{ inputs.transfer }}-${{ inputs.part }}
           path: '*.bin'
           if-no-files-found: error
           retention-days: 1

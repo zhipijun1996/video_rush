@@ -75,7 +75,7 @@ def main(argv=None):
         if not spec and args.topic and any(w in args.topic for w in ['初心','介绍视频','圆梦','开坑','自我介绍']):
             spec=ROOT/'episodes/ep002.json'
         if not spec and not any([args.pr,args.story,args.commits,args.since,args.until]) and (not args.topic or any(w in args.topic for w in ['概念图','美术落差','首期'])):
-            spec=ROOT/'episodes/ep001-r2.json'
+            spec=ROOT/'episodes/ep001-r3.json'
         if not spec:return director_brief(args,repo)
         output=produce(spec,repo,output=args.output,backend=args.tts,piper_model=args.piper_model,music=args.music,music_license=args.music_license)
         print(output)

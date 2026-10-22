@@ -19,6 +19,13 @@ on:
       music_sha256:
         description: SHA256 of the transferred BGM derivative
         required: true
+      images_artifacts:
+        description: Optional JSON array of exact user-image ZIP chunk Artifact IDs
+        default: '[]'
+        required: false
+      images_sha256:
+        description: SHA256 of optional user-image ZIP
+        required: false
 permissions:
   contents: read
   actions: write
@@ -32,6 +39,8 @@ jobs:
       VR_EPISODE: ${{ inputs.episode }}
       VR_MUSIC_ARTIFACTS: ${{ inputs.music_artifacts }}
       VR_MUSIC_SHA256: ${{ inputs.music_sha256 }}
+      VR_IMAGES_ARTIFACTS: ${{ inputs.images_artifacts }}
+      VR_IMAGES_SHA256: ${{ inputs.images_sha256 }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
@@ -67,6 +76,8 @@ jobs:
         run: python tools/setup_recording.py
       - name: Restore requested soundtrack
         run: python tools/restore_actions_music.py
+      - name: Restore exact requested concept images
+        run: python tools/restore_actions_images.py
       - name: Produce and validate
         run: python -m video_rush produce --source build/source --spec build/actions-episode.json --topic "$VR_TOPIC" --output "build/episodes/$VR_EPISODE" --local-only
       - name: Keep movie and review evidence (also on failure)
@@ -85,6 +96,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/*.ass
             build/episodes/${{ inputs.episode }}/logs/
             build/episodes/${{ inputs.episode }}/recording-evidence/
+            build/episodes/${{ inputs.episode }}/original_uploads/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 
@@ -98,7 +110,7 @@ jobs:
           from pathlib import Path
           summary='## 成片已生成\n\n[下载成片、封面和标题简介 ZIP]('+os.environ['VR_DOWNLOAD']+')\n\n含用户指定BGM压缩副本；技术验收通过，手机完整试听与审美待用户审核。保留14天。\n'
           Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(summary)
-          for aid in json.loads(os.environ['VR_MUSIC_ARTIFACTS']):
+          for aid in json.loads(os.environ['VR_MUSIC_ARTIFACTS']) + json.loads(os.environ.get('VR_IMAGES_ARTIFACTS') or '[]'):
               r=requests.delete('https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/artifacts/'+str(aid),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']},timeout=30)
-              print('Temporary soundtrack cleanup:',aid,r.status_code)
+              print('Temporary requested media cleanup:',aid,r.status_code)
           PYCODE

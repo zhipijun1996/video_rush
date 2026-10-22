@@ -8,6 +8,19 @@ from .common import font
 
 
 def graphic(path, spec):
+    if spec.get('layout') == 'parallax_template':
+        im=Image.new('RGB',(3840,720),'#13263a');d=ImageDraw.Draw(im)
+        colors=[('#406281','#8298ac'),('#255b61','#73ac9d'),('#574b3e','#c5a969')]
+        for row,(background,shape) in enumerate(colors):
+            y=row*240
+            d.rectangle((0,y,3840,y+240),fill=background)
+            for x in range(-180,4000,360):
+                d.polygon([(x,y+220),(x+150,y+45+row*15),(x+300,y+220)],fill=shape)
+                d.rectangle((x+160,y+85,x+180,y+225),fill='#d6bd78')
+                d.ellipse((x+125,y+45,x+215,y+125),fill=shape)
+            d.line((0,y+238,3840,y+238),fill='#102131',width=4)
+        im.save(path)
+        return
     if spec.get('layout') in {'weapon_tree','weapon_skills'}:
         return weapon_diagram(path,spec)
     im=Image.new('RGB',(1920,1080),spec.get('background','#122137'));d=ImageDraw.Draw(im)

@@ -15,6 +15,21 @@ def collect(repo, spec, output):
     collected = []
     for asset in spec['assets']:
         origin=asset.get('origin','git')
+        if origin == 'user_upload':
+            from PIL import Image
+            import shutil
+            source = (ROOT / asset['path']).resolve()
+            if not source.is_relative_to(ROOT / 'build' / 'inputs') or source.suffix.lower() not in {'.jpg', '.jpeg', '.png'}:
+                raise ValueError('User-uploaded images must stay inside build/inputs')
+            if not source.exists() or sha(source) != asset['sha256']:
+                raise ValueError('User-uploaded image missing or SHA256 mismatch: ' + asset['id'])
+            with Image.open(source) as im:
+                im.verify()
+            dest = output / (asset['id'] + source.suffix.lower())
+            shutil.copyfile(source, dest)
+            collected.append(dict(asset, local_path=str(dest.resolve()), sha256=sha(dest),
+                                  source_url='user-upload:' + asset['original_filename']))
+            continue
         if origin=='recording':
             from .recording import capture
             source,receipt=capture(repo,asset)
@@ -75,6 +90,18 @@ def collect(repo, spec, output):
         if path.suffix.lower() in ('.mp4', '.webm', '.avi'):
             obj['ffprobe'] = probe(dest)
         collected.append(obj)
+    # Preserve the exact five user originals for future recovery from delivery.
+    for item in collected:
+        if item.get('user_attachment'):
+            if item['sha256'] != item.get('attachment_sha256', item['sha256']):
+                raise ValueError('Original user attachment bytes do not match declared SHA256')
+            original = Path(item['original_filename'])
+            if original.name != str(original) or original.suffix.lower() not in {'.jpg','.jpeg','.png'}:
+                raise ValueError('Upload original filename must be a basename')
+            backup = output.parent / 'original_uploads' / original.name
+            backup.parent.mkdir(exist_ok=True)
+            __import__('shutil').copyfile(item['local_path'], backup)
+            item['preserved_original'] = 'original_uploads/' + original.name
     write(output / 'manifest.json', collected)
     return collected
 

@@ -31,7 +31,7 @@ def test_actions_music_restores_exact_order_and_rejects_hash_mismatch(tmp_path,m
                 'VR_MUSIC_SHA256':('0'*64 if tampered else hashlib.sha256(b''.join(chunks)).hexdigest()),
                 'VR_SPEC':'episode.json'}.items():monkeypatch.setenv(k,v)
     if tampered:
-        with pytest.raises(AssertionError):runpy.run_path(str(script))
+        with pytest.raises(ValueError,match='SHA256 mismatch'):runpy.run_path(str(script))
         assert not (tmp_path/'build/actions-episode.json').exists()
     else:
         runpy.run_path(str(script))

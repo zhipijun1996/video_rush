@@ -98,6 +98,8 @@ def encode_shot(shot, assets, out, log, *, threads=4):
     """Video: normal speed, exact window. Still: slow camera pan, explicitly tagged."""
     if shot.get('presentation') == 'montage':
         return encode_montage(shot, assets, out, log, threads=threads)
+    if shot.get('presentation') == 'parallax_diagram':
+        return encode_parallax_diagram(shot, assets, out, log, threads=threads)
     ids = shot.get('assets', [])
     dur = shot['end'] - shot['start']
     frames = round(dur * FPS)
@@ -141,7 +143,7 @@ def encode_shot(shot, assets, out, log, *, threads=4):
         filt = '[0:v]'+crop_filter(shot.get('crop_rect'),paths[0])+'scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1'
     else:
         # Zoom <= 3%, smooth at output resolution. Original asset stays unchanged.
-        filt = (f'[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,'
+        filt = (f'[0:v]{crop_filter(shot.get("crop_rect"),paths[0])}scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,'
                 f"zoompan=z='1+0.025*on/{frames}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1920x1080:fps=30,setsar=1")
     filt += ',fps=30,drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill'
     if shot.get('transition') == 'flash':
@@ -190,7 +192,10 @@ def encode_montage(shot, assets, out, log, *, threads=4):
             args += ['-ss', str(offset), '-i', str(path)]
         else:
             args += ['-loop', '1', '-framerate', '30', '-i', str(path)]
-        filters.append(f'[{i}:v]scale=1920:1080:force_original_aspect_ratio=decrease,'
+        crops=shot.get('crop_rects',[None]*len(spans))
+        if len(crops)!=len(spans):
+            raise ValueError('Montage crop rectangles must match the cuts')
+        filters.append(f'[{i}:v]{crop_filter(crops[i],path)}scale=1920:1080:force_original_aspect_ratio=decrease,'
                        f'pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1,'
                        f'fps=30,trim=end_frame={span["frames"]},setpts=PTS-STARTPTS[seg{i}]')
     joined = ''.join(f'[seg{i}]' for i in range(len(spans)))
@@ -205,6 +210,29 @@ def encode_montage(shot, assets, out, log, *, threads=4):
              '-preset', 'veryfast', '-crf', '20', '-threads', str(threads),
              '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-r', '30', '-movflags', '+faststart', str(out)]
     run(args, log=log, timeout=600)
+
+
+def encode_parallax_diagram(shot, assets, out, log, *, threads=4):
+    """Move three original explanatory bands; never pretend this is game footage."""
+    source=Path(assets[shot['assets'][0]]['local_path'])
+    if Image.open(source).size != (3840,720):
+        raise ValueError('Parallax diagram template must be3840x720')
+    rates=shot.get('parallax_rates',[18,48,96])
+    seconds=shot['end']-shot['start']
+    if len(rates)!=3 or any(not isinstance(v,(int,float)) or not math.isfinite(v) or v<=0 or v*seconds>1920 for v in rates):
+        raise ValueError('Parallax diagram motion exceeds its declared source')
+    filters=['[0:v]split=3[a][b][c]']
+    for i,(name,rate) in enumerate(zip('abc',rates)):
+        filters.append(f'[{name}]crop=1920:240:x=\'t*{rate}\':y={i*240},setsar=1[s{i}]')
+    final='[s0][s1][s2]vstack=inputs=3,pad=1920:1080:0:140:color=0x0d1724'
+    for y,label in [(180,'远景 · 慢'),(420,'中景 · 稍快'),(660,'近景 · 快')]:
+        final+=f",drawtext=fontfile='{font(True)}':text='{label}':fontsize=46:fontcolor=white:box=1:boxcolor=0x0d1724@0.85:boxborderw=14:x=60:y={y}"
+    filters.append(final+',fps=30,scale=in_range=auto:out_range=tv,format=yuv420p[v]')
+    run(['ffmpeg','-y','-v','warning','-loop','1','-framerate','30','-i',source,
+         '-filter_complex_threads','1','-filter_complex',';'.join(filters),'-map','[v]',
+         '-frames:v',str(round(seconds*FPS)),'-an','-c:v','libx264','-preset','veryfast',
+         '-crf','20','-threads',str(threads),'-pix_fmt','yuv420p','-color_range','tv',
+         '-r','30','-movflags','+faststart',out],log=log,timeout=600)
 
 def crop_filter(rect,path):
     if rect is None:return ''
