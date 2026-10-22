@@ -503,7 +503,7 @@
       "id": "r13",
       "chapter": "13",
       "title": "左：持续推进　右：提前松手",
-      "narration": "左边一直按住，右边提前松手，升到的高度就不一样。它有时间和资源限制，不能一直往上飞。",
+      "narration": "左边一直按住，右边提前松手，高度就不一样。时间和资源都有限，不能一直往上飞。",
       "assets": [
         "laser_up",
         "laser_stop"
@@ -1283,7 +1283,7 @@
         "combat_pulse"
       ],
       "offsets": [
-        2.5
+        1.8
       ],
       "shot_type": "real_gameplay",
       "emphasis": "目标：让路线真正用上武器差异",
