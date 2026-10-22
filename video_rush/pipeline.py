@@ -185,7 +185,8 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         description=spec.get('bilibili_body') or body.split('简介：\n\n',1)[-1]
         (output/'bilibili.md').write_text(posting_copy(spec,description))
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
+        files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':4,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
+    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':5,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
     return output
