@@ -4,6 +4,7 @@ from pathlib import Path
 from fractions import Fraction
 from .common import probe, run, sha, read, write
 from .narration import audio_metrics
+from .render import montage_spans
 
 
 def content_check(spec, timeline, sources):
@@ -34,6 +35,30 @@ def detect_intervals(log, prefix):
     return [{'start':float(a),'end':float(b),'duration':float(b)-float(a)} for a,b in zip(starts,ends)]
 
 
+def classify_freezes(frozen, timeline, media):
+    """Review the actual visual cuts, including brief stings within one voice shot."""
+    segments=[]
+    for shot in timeline['shots']:
+        if shot.get('presentation')=='montage':
+            segments.extend({'start':shot['start']+cut['start'],
+                             'end':shot['start']+cut['end'],'assets':[cut['asset']]}
+                            for cut in montage_spans(shot))
+        else:
+            segments.append(shot)
+    unexpected=[];planned=[]
+    for freeze in frozen:
+        # FFmpeg reports the first changed frame as freeze_end. A single boundary
+        # frame is not evidence that a neighbouring movie stayed frozen.
+        overlaps=[s for s in segments if min(freeze['end'],s['end'])-
+                  max(freeze['start'],s['start']) > 1/30+.002]
+        static=overlaps and all(all(
+            media[x]['kind'] not in ('original_game_recording','historical_reconstruction')
+            and Path(media[x].get('local_path','')).suffix.lower() not in ('.mp4','.webm','.avi')
+            for x in s['assets']) for s in overlaps)
+        (planned if static else unexpected).append(freeze)
+    return unexpected,planned
+
+
 
 def narration_receipts_valid(output,spec):
     shots=spec.get('shots',[])
@@ -56,12 +81,8 @@ def validate(output, spec, timeline, sources):
     run(['ffmpeg','-hide_banner','-i',final,'-vf','blackdetect=d=1:pix_th=0.08:pic_th=0.98,freezedetect=n=-50dB:d=5','-an','-f','null','-'],log=logs/'visual-detection.log',timeout=600)
     detections=(logs/'visual-detection.log').read_text()
     black=detect_intervals(detections,'black'); frozen=detect_intervals(detections,'freeze')
-    unexpected=[];planned=[]
     media={x['id']:x for x in sources['assets']}
-    for f in frozen:
-        overlaps=[s for s in timeline['shots'] if min(f['end'],s['end']) > max(f['start'],s['start'])]
-        static=overlaps and all(all(media[x]['kind'] not in ('original_game_recording','historical_reconstruction') for x in s['assets']) for s in overlaps)
-        (planned if static else unexpected).append(f)
+    unexpected,planned=classify_freezes(frozen,timeline,media)
     metrics=audio_metrics(final)
     bgm=None
     music=sources.get('audio',{}).get('music')

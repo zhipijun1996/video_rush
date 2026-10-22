@@ -45,3 +45,23 @@ def test_montage_refuses_to_loop_short_game_source(tmp_path):
         encode_shot({'start': 0, 'end': 2, 'assets': ['concept', 'game'], 'presentation': 'montage'},
                     {'concept': {'local_path': str(image)}, 'game': {'local_path': str(video)}},
                     tmp_path/'out.mp4', tmp_path/'encode.log')
+
+
+def test_planned_montage_still_is_not_confused_with_later_movie():
+    from video_rush.quality import classify_freezes
+    timeline={'shots':[{'start':0,'end':10,'presentation':'montage',
+                        'assets':['still','game'],'montage_weights':[7,3]}]}
+    media={'still':{'kind':'concept_art'},'game':{'kind':'original_game_recording'}}
+    freeze={'start':0,'end':7+1/30,'duration':7+1/30}
+    unexpected,planned=classify_freezes([freeze],timeline,media)
+    assert not unexpected and planned==[freeze]
+
+
+def test_montage_does_not_excuse_frozen_gameplay_after_still():
+    from video_rush.quality import classify_freezes
+    timeline={'shots':[{'start':0,'end':14,'presentation':'montage',
+                        'assets':['still','game'],'montage_weights':[1,1]}]}
+    media={'still':{'kind':'concept_art'},'game':{'kind':'original_game_recording'}}
+    freeze={'start':0,'end':13,'duration':13}
+    unexpected,planned=classify_freezes([freeze],timeline,media)
+    assert unexpected==[freeze] and not planned

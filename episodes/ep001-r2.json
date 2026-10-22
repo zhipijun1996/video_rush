@@ -612,12 +612,14 @@
       "title": "先定视觉规则",
       "narration": "有了参考，先把配色、轮廓和像素密度定下来，再让AI沿着这个方向画。",
       "assets": [
-        "new_movie"
+        "new_movie",
+        "home_movie"
       ],
       "offsets": [
+        0,
         0
       ],
-      "shot_type": "source_media",
+      "shot_type": "source_montage",
       "emphasis": "先定视觉规则",
       "punchline": "",
       "transition": "cut",
@@ -633,7 +635,12 @@
       ],
       "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
       "claim_type": "source_supported_history_and_authored_reflection",
-      "same_seed_comparison": false
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.45,
+        0.55
+      ]
     },
     {
       "id": "a20",
@@ -767,12 +774,14 @@
       "title": "统一角色、地形与机关",
       "narration": "所以现在是先选母版，再让人物、地形、机关往同一个方向靠。做完还得放一起看。",
       "assets": [
-        "new_movie"
+        "new_movie",
+        "home_movie"
       ],
       "offsets": [
-        0
+        3.1,
+        4
       ],
-      "shot_type": "source_media",
+      "shot_type": "source_montage",
       "emphasis": "统一角色、地形与机关",
       "punchline": "",
       "transition": "cut",
@@ -788,7 +797,12 @@
       ],
       "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
       "claim_type": "source_supported_history_and_authored_reflection",
-      "same_seed_comparison": false
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.45,
+        0.55
+      ]
     },
     {
       "id": "a25",
@@ -886,12 +900,14 @@
       "title": "继续分享真实开发过程",
       "narration": "后面会继续分享开发进度。顺利的放，不顺利的也放，看看最后到底能做成什么样。",
       "assets": [
-        "new_movie"
+        "new_movie",
+        "home_movie"
       ],
       "offsets": [
-        0
+        6.7,
+        26
       ],
-      "shot_type": "source_media",
+      "shot_type": "source_montage",
       "emphasis": "",
       "punchline": "",
       "transition": "cut",
@@ -907,7 +923,12 @@
       ],
       "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
       "claim_type": "source_supported_history_and_authored_reflection",
-      "same_seed_comparison": false
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.3,
+        0.7
+      ]
     },
     {
       "id": "a29",
