@@ -78,7 +78,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for s in timeline['shots']:
         if timeline.get('display_chapters',True):
             put(s['start'], s['end'], 'Title', f'{s["chapter"]}  {s["title"]}')
-        put(s['start'], s['end'], 'Source', s['provenance_label'])
+        if s.get('source_cues'):
+            for cue in s['source_cues']:
+                put(cue['start'], cue['end'], 'Source', cue['text'])
+        else:
+            put(s['start'], s['end'], 'Source', s['provenance_label'])
         if s.get('emphasis'):
             put(s['start']+.4, min(s['start']+4, s['end']), 'Emphasis', s['emphasis'])
         if s.get('punchline'):
@@ -92,6 +96,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def encode_shot(shot, assets, out, log, *, threads=4):
     """Video: normal speed, exact window. Still: slow camera pan, explicitly tagged."""
+    if shot.get('presentation') == 'montage':
+        return encode_montage(shot, assets, out, log, threads=threads)
     ids = shot.get('assets', [])
     dur = shot['end'] - shot['start']
     frames = round(dur * FPS)
@@ -137,9 +143,66 @@ def encode_shot(shot, assets, out, log, *, threads=4):
         # Zoom <= 3%, smooth at output resolution. Original asset stays unchanged.
         filt = (f'[0:v]scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,'
                 f"zoompan=z='1+0.025*on/{frames}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1920x1080:fps=30,setsar=1")
-    filt += ',fps=30,drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill,scale=in_range=auto:out_range=tv,format=yuv420p[v]'
+    filt += ',fps=30,drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill'
+    if shot.get('transition') == 'flash':
+        filt += ',fade=t=in:st=0:d=0.10:color=white'
+    filt += ',scale=in_range=auto:out_range=tv,format=yuv420p[v]'
     args += ['-filter_complex', filt, '-map', '[v]', '-frames:v', str(frames), '-an',
              '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-threads', str(threads),
+             '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-r', '30', '-movflags', '+faststart', str(out)]
+    run(args, log=log, timeout=600)
+
+
+def montage_spans(shot):
+    """Partition one voice segment into exact, non-overlapping 30fps cuts."""
+    ids = shot['assets']
+    weights = shot.get('montage_weights', [1] * len(ids))
+    if len(ids) < 2 or len(weights) != len(ids) or any(
+            not isinstance(w, (int, float)) or not math.isfinite(w) or w <= 0 for w in weights):
+        raise ValueError('Montage needs at least two assets and positive finite weights')
+    total = round((shot['end'] - shot['start']) * FPS)
+    spans = []
+    cumulative = 0
+    previous = 0
+    for index, (asset, weight) in enumerate(zip(ids, weights)):
+        cumulative += weight
+        boundary = total if index == len(ids) - 1 else round(total * cumulative / sum(weights))
+        count = boundary - previous
+        if count < 1:
+            raise ValueError('Montage cut is shorter than one frame')
+        spans.append({'asset': asset, 'index': index, 'start': previous / FPS,
+                      'end': boundary / FPS, 'frames': count})
+        previous = boundary
+    return spans
+
+
+def encode_montage(shot, assets, out, log, *, threads=4):
+    spans = montage_spans(shot)
+    args = ['ffmpeg', '-y', '-v', 'warning', '-threads', str(threads), '-filter_complex_threads', '1']
+    filters = []
+    for span in spans:
+        i = span['index']
+        path = Path(assets[span['asset']]['local_path'])
+        if path.suffix.lower() in {'.mp4', '.webm', '.avi'}:
+            offset = shot.get('offsets', [0] * len(spans))[i]
+            if duration(path) < offset + span['frames'] / FPS - .02:
+                raise ValueError(f'{path.name} has insufficient footage; no silent looping allowed')
+            args += ['-ss', str(offset), '-i', str(path)]
+        else:
+            args += ['-loop', '1', '-framerate', '30', '-i', str(path)]
+        filters.append(f'[{i}:v]scale=1920:1080:force_original_aspect_ratio=decrease,'
+                       f'pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1,'
+                       f'fps=30,trim=end_frame={span["frames"]},setpts=PTS-STARTPTS[seg{i}]')
+    joined = ''.join(f'[seg{i}]' for i in range(len(spans)))
+    final = (joined + f'concat=n={len(spans)}:v=1:a=0,'
+             'drawbox=x=0:y=0:w=iw:h=100:color=0x0d1724@0.88:t=fill,'
+             'drawbox=x=0:y=912:w=iw:h=168:color=0x0d1724@0.82:t=fill')
+    if shot.get('transition') == 'flash':
+        final += ',fade=t=in:st=0:d=0.10:color=white'
+    filters.append(final + ',scale=in_range=auto:out_range=tv,format=yuv420p[v]')
+    args += ['-filter_complex', ';'.join(filters), '-map', '[v]', '-frames:v',
+             str(sum(s['frames'] for s in spans)), '-an', '-c:v', 'libx264',
+             '-preset', 'veryfast', '-crf', '20', '-threads', str(threads),
              '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-r', '30', '-movflags', '+faststart', str(out)]
     run(args, log=log, timeout=600)
 

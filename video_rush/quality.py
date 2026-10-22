@@ -77,6 +77,7 @@ def validate(output, spec, timeline, sources):
       'duration_matches_brief':minimum <= dur <= maximum,
       'subtitles_in_bounds':all(0 <= c['start'] < c['end'] <= dur+.02 for s in timeline['shots'] for c in s['cues']),
       'action_labels_in_bounds':all(0<=x['start']<x['end']<=s['end']-s['start']+.02 for s in timeline['shots'] for x in s.get('action_labels',[])),
+      'source_labels_in_bounds':all(s['start']<=c['start']<c['end']<=s['end']+.02 for s in timeline['shots'] for c in s.get('source_cues',[])),
       'audible_tts_signal':metrics['audible_signal'] and narration_receipts_valid(output,spec),
       'no_obvious_clipping':metrics['clipped_fraction']<.0001,
       'requested_music_source_valid':not music or (bgm['metrics']['audible_signal'] and (not spec.get('music_asset') or bgm['sha256']==spec['music_asset']['sha256'])),

@@ -1,0 +1,1111 @@
+{
+  "schema_version": 2,
+  "episode": "ep001-r2",
+  "title": "概念图这么美，我的游戏为啥这么4399？",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep001-r2-assets.json",
+  "story_ids": [
+    "S024",
+    "S030",
+    "S059",
+    "S067",
+    "S086",
+    "S088",
+    "S089",
+    "S090",
+    "S091",
+    "S093",
+    "S094",
+    "S101"
+  ],
+  "target_duration": [
+    180,
+    300
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "shots": [
+    {
+      "id": "a01",
+      "chapter": "1",
+      "title": "期待：漂亮概念图",
+      "narration": "我让AI帮我画游戏。你看这些图，是不是还挺像那么回事？",
+      "assets": [
+        "art_paintover",
+        "concept"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "AI概念图 · 非实机",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        24,
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a02",
+      "chapter": "2",
+      "title": "现实：早期游戏画面",
+      "narration": "结果放进游戏……为啥我的游戏这么四三九九？",
+      "assets": [
+        "meme_ah",
+        "redesign_before"
+      ],
+      "offsets": [
+        0,
+        15
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "为啥我的游戏这么4399？",
+      "transition": "cut",
+      "sfx": "down",
+      "prs": [
+        67
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.09,
+        0.91
+      ]
+    },
+    {
+      "id": "a03",
+      "chapter": "3",
+      "title": "单图与实机的落差",
+      "narration": "这是我用AI做的《失序之钟》。这期就聊聊，为什么图很好看，做出来却不是那么回事。",
+      "assets": [
+        "v2_preview",
+        "old"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        30,
+        59
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a04",
+      "chapter": "4",
+      "title": "最初想要的氛围",
+      "narration": "最初想要这种手绘平原：草坡、远山、机械遗迹。光看一张，很容易心动。",
+      "assets": [
+        "concept",
+        "art_environment"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        24,
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a05",
+      "chapter": "5",
+      "title": "单张资产很好看",
+      "narration": "角色、风车、岩壁，也都能画得挺细。但这些漂亮图片，还不是能直接玩的关卡。",
+      "assets": [
+        "art_board",
+        "art_windmill",
+        "art_bank"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a06",
+      "chapter": "6",
+      "title": "画面要经得起走动",
+      "narration": "角色得动，平台得能拼，镜头还会往前走。单张图的构图，管不了后面十几屏。",
+      "assets": [
+        "v2_preview",
+        "redesign_after"
+      ],
+      "offsets": [
+        0,
+        12
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        30,
+        67
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a07",
+      "chapter": "7",
+      "title": "早期简化素材的落差",
+      "narration": "最早用简化素材接进游戏，原图里的体积和层次，一下就丢了不少。",
+      "assets": [
+        "old"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "早期简化素材的落差",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        59
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a08",
+      "chapter": "8",
+      "title": "先补细节",
+      "narration": "那怎么办？我当时想得很直接：不好看，就再画细一点。",
+      "assets": [
+        "meme_grass",
+        "art_bank"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.09,
+        0.91
+      ]
+    },
+    {
+      "id": "a09",
+      "chapter": "9",
+      "title": "加素材的尝试",
+      "narration": "加草，加石头，换背景。单独拿出来看，都像是进步了。",
+      "assets": [
+        "art_bank",
+        "art_windmill",
+        "v2_preview"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        30,
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a10",
+      "chapter": "10",
+      "title": "细节多了，整体仍不对味",
+      "narration": "可一拼回关卡，还是这些重复的平台。细节多了，整体那股味儿没跟上。",
+      "assets": [
+        "redesign_after"
+      ],
+      "offsets": [
+        22
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        67
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a11",
+      "chapter": "11",
+      "title": "拼接成立与画面自然是两件事",
+      "narration": "后来还把各种拐角和接缝补齐。能拼起来了，不代表拼出来就自然。",
+      "assets": [
+        "tiles47",
+        "region_fail"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        59,
+        86
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a12",
+      "chapter": "12",
+      "title": "地形填厚仍然失败",
+      "narration": "再把地图填厚一点，又像一排墙。随机地图能生成，画面还是得一屏一屏看。",
+      "assets": [
+        "region_overview",
+        "region_fail"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        86
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a13",
+      "chapter": "13",
+      "title": "单图设计与连续世界",
+      "narration": "我才发现，AI设计单图很好看，但做成一整个游戏，真不是同一回事。",
+      "assets": [
+        "art_paintover",
+        "region_fail"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "flash",
+      "sfx": null,
+      "prs": [
+        86,
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a14",
+      "chapter": "14",
+      "title": "问题不只在素材数量",
+      "narration": "转角怎么接，人物怎么站，下一屏怎么延续，都得另外设计。多画几张，替代不了这些事。",
+      "assets": [
+        "world_fail"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "问题不只在素材数量",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a15",
+      "chapter": "15",
+      "title": "从岸体画源到真实路线",
+      "narration": "后来试过反过来做：先画完整岸体，再按画里的站面做碰撞和路线。",
+      "assets": [
+        "world_first"
+      ],
+      "offsets": [
+        1
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a16",
+      "chapter": "16",
+      "title": "有限进展，仍未完成整区",
+      "narration": "局部确实更像一个地方。但当时只有两套布局，整张随机地图还没解决。",
+      "assets": [
+        "world_second"
+      ],
+      "offsets": [
+        2
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a17",
+      "chapter": "17",
+      "title": "转向有规则的素材家族",
+      "narration": "所以我决定换个思路，先参考现成、许可明确的TileSet，不再只靠散图往上堆。",
+      "assets": [
+        "meme_reset",
+        "styles"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": "pop",
+      "prs": [
+        93
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage",
+      "montage_weights": [
+        0.08,
+        0.92
+      ]
+    },
+    {
+      "id": "a18",
+      "chapter": "18",
+      "title": "同一实验场景比较风格",
+      "narration": "这几套放进同一个实验场景比较。角色走起来，再看地形边缘、背景和落点。",
+      "assets": [
+        "style_movie"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "TileSet实机风格实验",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        93
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a19",
+      "chapter": "19",
+      "title": "先定视觉规则",
+      "narration": "有了参考，先把配色、轮廓和像素密度定下来，再让AI沿着这个方向画。",
+      "assets": [
+        "new_movie"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "先定视觉规则",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a20",
+      "chapter": "20",
+      "title": "个人风格方向：有辨识度的像素语言",
+      "narration": "现在我更想靠近《动物井》那种感觉：不靠堆满细节，也能一眼认出自己的样子。",
+      "assets": [
+        "new",
+        "new2"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "参考方向：《动物井》式辨识度",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "user_preference_and_future_direction_not_achieved_art",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a21",
+      "chapter": "21",
+      "title": "风格目标，而非已经达到",
+      "narration": "先收住颜色，让轮廓和光把气氛撑起来。这是我接下来更想试的方向。",
+      "assets": [
+        "new",
+        "home_movie"
+      ],
+      "offsets": [
+        0,
+        9
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "user_preference_and_future_direction_not_achieved_art",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a22",
+      "chapter": "22",
+      "title": "适合AI的方向，仍需实测",
+      "narration": "规则清楚一点，我希望AI也更容易跟住。但能不能稳定做出来，还得继续验。",
+      "assets": [
+        "art_board",
+        "repeatability"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90,
+        93
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a23",
+      "chapter": "23",
+      "title": "三次生成暴露的一致性问题",
+      "narration": "同样的提示词，角色兜帽都还会换颜色。光写一句像素风，显然还不够。",
+      "assets": [
+        "repeatability"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "同提示词，兜帽颜色仍会漂移",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        93
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a24",
+      "chapter": "24",
+      "title": "统一角色、地形与机关",
+      "narration": "所以现在是先选母版，再让人物、地形、机关往同一个方向靠。做完还得放一起看。",
+      "assets": [
+        "new_movie"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "统一角色、地形与机关",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a25",
+      "chapter": "25",
+      "title": "后来的真实游戏画面",
+      "narration": "这是后来接进游戏的画面。风格集中了一些，但我还不想说，美术问题已经解决。",
+      "assets": [
+        "home_movie"
+      ],
+      "offsets": [
+        18
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a26",
+      "chapter": "26",
+      "title": "仍需改善的画面问题",
+      "narration": "地形的大轮廓、重复素材的痕迹，跨屏以后像不像同一个地方，都还得继续改。",
+      "assets": [
+        "new2",
+        "new"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "source_montage",
+      "emphasis": "仍需改善的画面问题",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "montage"
+    },
+    {
+      "id": "a27",
+      "chapter": "27",
+      "title": "从单图转向可重复的方法",
+      "narration": "现在我更关心的，是这套画法能不能反复用。先做好一个小地方，换个布局，再跑一次。",
+      "assets": [
+        "world_second"
+      ],
+      "offsets": [
+        11
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a28",
+      "chapter": "28",
+      "title": "继续分享真实开发过程",
+      "narration": "后面会继续分享开发进度。顺利的放，不顺利的也放，看看最后到底能做成什么样。",
+      "assets": [
+        "new_movie"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "source_media",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "a29",
+      "chapter": "29",
+      "title": "征求美术方向建议",
+      "narration": "你觉得我该继续手绘，还是先沿着这种像素风做下去？评论区给我点建议。",
+      "assets": [
+        "art_paintover",
+        "new"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "split_comparison",
+      "emphasis": "",
+      "punchline": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        90,
+        94
+      ],
+      "evidence": [
+        "history_ep001",
+        "concept_provenance",
+        "user_20261022_ep01",
+        "authored_reflection"
+      ],
+      "fact_check": "Exact committed sources cross-checked; source labels switch with montage cuts. Intentions and personal comparisons from user instruction; not evidence of achieved style, stable AI production or human acceptance.",
+      "claim_type": "source_supported_history_and_authored_reflection",
+      "same_seed_comparison": false,
+      "presentation": "split",
+      "display_source": "左：AI概念迁移图／非实机　右：后来的本作定位截图"
+    }
+  ],
+  "editorial_status": "evidence_checked_reconstruction_human_phone_review_pending",
+  "cover_assets": [
+    "art_paintover",
+    "region_fail"
+  ],
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "cover": {
+    "series": "《失序之钟》 / 美术返工记录",
+    "left_label": "AI概念 · 非实机",
+    "right_label": "早期真实画面",
+    "line1": "概念图这么美",
+    "line2": "为啥实机这么4399？"
+  },
+  "evidence": [
+    {
+      "id": "history_ep001",
+      "kind": "immutable_history_documents",
+      "facts": "Historical ep001 evidence rechecked; readable docs at exact SHAs below. Distinguish previews, original footage, limited-layout success and quality rejection.",
+      "documents": [
+        {
+          "commit": "949d884063b3d3a0c1c12907dff5148e3c288ac8",
+          "path": "docs/background_art.md"
+        },
+        {
+          "commit": "3bacc326c419741f1ded43fd32e8877cf706dbc5",
+          "path": "docs/painterly_v2_report.md"
+        },
+        {
+          "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+          "path": "docs/evidence/plains_world_rebuild/findings.md"
+        },
+        {
+          "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+          "path": "docs/style_exploration_report.md"
+        },
+        {
+          "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+          "path": "docs/evidence/style_exploration/ai_repeatability/observations.md"
+        }
+      ]
+    },
+    {
+      "id": "concept_provenance",
+      "kind": "archived_original_ai_sources",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "paths": [
+        "assets/visual_development/README.md",
+        "assets/visual_development/provenance_index.json",
+        "assets/visual_development/master/paintover_record.json",
+        "docs/evidence/p1_environment/brief.md",
+        "assets/region_production_v3/spaces/windmill_highland_v1/production/tool_return.json"
+      ],
+      "facts": "All additional beautiful images existed in game Git; concept/paintover/asset source are not game output. No new AI gameplay images generated for video."
+    },
+    {
+      "id": "user_20261022_ep01",
+      "kind": "user_testimony_and_editorial_direction",
+      "date": "2026-10-22",
+      "facts": "User requests faster pacing, sparse Chinese memes including why so4399, more existing beautiful AI concepts; first-person reflection on single-image vs implemented game gap, reference licensed TileSets, and an Animal Well-like distinctive art direction hoped to suit AI better. These are preferences/intentions, not proof of final achievement or objective AI repeatability."
+    },
+    {
+      "id": "authored_reflection",
+      "kind": "authored_editorial_reconstruction",
+      "facts": "First-person wording, humor and causal reflection authored from user testimony and documented attempts; no fabricated original quotes, playtester response or elapsed labor.4399 is self-deprecating comparison, not footage/source from4399."
+    }
+  ],
+  "title_candidates": [
+    "概念图这么美，我的游戏为啥这么4399？",
+    "AI画图这么强，为什么我的游戏还是不对味？",
+    "从精美手绘到像素风：我用AI做游戏的美术返工"
+  ],
+  "bilibili_body": "我用AI做独立游戏《失序之钟》，一开始看概念图，感觉很有希望。等角色真正走进关卡，才发现单图设计和游戏美术不是同一回事。\n\n这一期把早期概念、历史实机、失败尝试和后来的像素风探索放在一起：加细节、补接缝、做完整岸体，再到参考有明确许可的TileSet，尝试统一配色、轮廓与像素密度。\n\n我现在更想试试接近《动物井》那种有辨识度、规则清晰的方向，希望更适合自己用AI持续制作；这是个人参考和下一步目标，不代表本作已经达到该风格，也不代表AI可以稳定无人量产。\n\n4399是对早期画面的自嘲，不是素材来源。概念图、合屏预览、历史实机和定位截图分别标注；不同年代不是同版本受控对比。美术问题仍未解决，欢迎给建议。\n\n分区建议：游戏→单机游戏。标签：独立游戏、AI开发、Godot、游戏开发、游戏美术、失序之钟。\n项目与来源：https://github.com/zhipijun1996/gunman-rush 。完整SHA、文件与事实证据见sources.json。Underworld by Asouris采用作者许可，另外四套比较素材按各自CC0许可；没有将免费/可用授权一概称为开源。\n中文AI配音；BGM为用户提供the_kindred_hearth.mp3的低音量压缩副本。Noto CJK字体SIL OFL；表情转场为原创编辑图示，未使用其他UP主视频或《动物井》游戏素材。",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.14,
+  "game_audio_gain": 0,
+  "rights": {
+    "project_media": {
+      "source": "user-owned zhipijun1996/gunman-rush",
+      "authorization": "user explicitly requested use for this video",
+      "scope": "development documentary and project footage",
+      "ai_generation_provider_terms": "not independently disclosed/verified; no blanket commercial-license claim",
+      "third_party_game_or_bilibili_media": false
+    },
+    "tiles": {
+      "asset": "Underworld Tileset",
+      "author": "Asouris",
+      "url": "https://asouris.itch.io/underworld-tileset",
+      "license": "custom permissive publisher statement, not CC0",
+      "statement": "Feel free to use it however you want, and let me know if you use it on your games and stuff :D",
+      "evidence": "assets/style_exploration/underworld/source/licenses/publisher_page.txt and associated license notes in game repo"
+    },
+    "font": {
+      "name": "Noto Sans CJK",
+      "license": "SIL Open Font License 1.1",
+      "evidence": "/usr/share/doc/fonts-noto-cjk/copyright",
+      "url": "https://github.com/notofonts/noto-cjk"
+    },
+    "narration": {
+      "provider": "Microsoft Edge TTS (YunxiNeural)",
+      "synthetic": true,
+      "impersonation": false,
+      "terms": "service terms apply; no paid SLA or commercial rights guarantee inferred",
+      "replacement": "Piper with separately reviewed model license"
+    },
+    "music": {
+      "used": true,
+      "provenance": "User supplied the_kindred_hearth.mp3; derivative and original hashes in music_asset; creator/license not independently specified"
+    },
+    "game_sound": {
+      "used_in_final": false,
+      "reason": "Historical clips muted; speech, user BGM and original effects only"
+    },
+    "comparison_tiles": [
+      {
+        "asset": "Retro Lines",
+        "author": "VEXED",
+        "license": "CC0-1.0",
+        "url": "https://v3x3d.itch.io/retro-lines",
+        "evidence": "assets/style_exploration/retro/source/licenses/LICENSE.txt"
+      },
+      {
+        "asset": "Basic Platformer",
+        "author": "Ariel Pinana",
+        "license": "CC0-1.0 (publisher page; original license file is empty)",
+        "url": "https://ariel-pinana.itch.io/platformer-tileset-character-and-monsters",
+        "evidence": "assets/style_exploration/basic/source/licenses/NOTICE.md and publisher_page.txt"
+      },
+      {
+        "asset": "Scribble Platformer",
+        "author": "Kenney",
+        "license": "CC0-1.0",
+        "url": "https://kenney.nl/assets/scribble-platformer",
+        "evidence": "assets/style_exploration/scribble/source/licenses/License.txt"
+      },
+      {
+        "asset": "Cavern Tile Set",
+        "author": "Luis Zuno / ansimuz",
+        "license": "CC0-1.0",
+        "url": "https://opengameart.org/content/cavern-tile-set",
+        "evidence": "assets/style_exploration/cavern/source/licenses/license.txt"
+      }
+    ],
+    "audio": {
+      "narration": "Actual Edge TTS, YunxiNeural",
+      "music": "User-provided the_kindred_hearth.mp3 derivative, mono Opus20kbps first145s, looped quietly if needed; no author/license invented",
+      "game_audio": "Not used in final ep001-r2",
+      "editorial_effects": "Original Video Rush synthesized short effects"
+    },
+    "external_reference": {
+      "Animal Well": "Name and user-stated inspiration only; no third-party game images/audio used",
+      "4399": "Colloquial self-comparison, no4399 media used"
+    }
+  },
+  "comparison": "Historical concepts, previews and original footage from separate development stages, not same-seed controlled before/after. Concept montages illustrate several past art targets/attempts; no claim that later source images were all generated at the project beginning. Animal Well is user-stated inspiration only, not achieved resemblance or a guaranteed easier AI workflow.",
+  "comparison_review": "核对概念／预览／早期实机的标签是否随快切变化；4399只指早期画面自嘲。TileSet许可逐套区分，《动物井》仅为用户风格目标，不把AI适配性说成已验证成功。"
+}

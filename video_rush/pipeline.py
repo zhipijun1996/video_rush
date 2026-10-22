@@ -9,7 +9,7 @@ from pathlib import Path
 from .common import ROOT, read, write, sha, digest, run, duration
 from .footage import collect
 from .narration import narrate
-from .render import subtitle_cues, ass_file, encode_shot, cover
+from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans
 from .quality import validate
 from .publish import posting_copy
 
@@ -74,6 +74,8 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         for s in spec['shots']:
             if not s.get('narration') or not s.get('assets') or not (s.get('prs') or s.get('evidence')):
                 raise ValueError('Every shot needs narration, media and PR/document/user evidence')
+            if s.get('presentation') == 'montage' and spec.get('game_audio_gain', 0) > 0:
+                raise ValueError('Montage currently supports narration/BGM only; set game_audio_gain=0 to avoid mismatched source audio')
         write(output/'shot-plan.json',spec['shots']);return [output/'shot-plan.json']
     stages('Shot Planning',spec['shots'],planning)
     def footage():
@@ -105,6 +107,11 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
                 else:
                     labels.append(f'{typ} PR{a.get("pr", "")} · {(a.get("runtime_commit") or a.get("commit", ""))[:8]}')
             x['provenance_label']=s.get('display_source',' | '.join(labels))
+            if s.get('presentation') == 'montage':
+                x['source_cues'] = [
+                    {'start': round(t + cut['start'], 6), 'end': round(t + cut['end'], 6),
+                     'text': labels[cut['index']]}
+                    for cut in montage_spans(x)]
             boundaries=audio.with_suffix('.raw.boundaries.jsonl')
             cues=[]
             if backend=='edge' and boundaries.exists():
@@ -131,7 +138,7 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)
         muxed=[]
         for s in timeline['shots']:
-            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':[assets[x]['sha256'] for x in s['assets']],'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'render':digest({'encode_shot':inspect.getsource(encode_shot),'resolution':[1920,1080,30]})})
+            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':[assets[x]['sha256'] for x in s['assets']],'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'render':digest({'encode_shot':inspect.getsource(encode_shot),'module':sha(ROOT/'video_rush/render.py'),'resolution':[1920,1080,30]})})
             cache=p.with_suffix('.json')
             if not (p.exists() and cache.exists() and read(cache).get('key')==k and read(cache).get('sha256')==sha(p)):
                 raw=cuts/(s['id']+'.silent.mp4');encode_shot(s,assets,raw,logs/(s['id']+'-visual.log'))

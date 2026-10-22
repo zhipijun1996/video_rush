@@ -1,0 +1,307 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "concept",
+      "pr": 24,
+      "commit": "949d884063b3d3a0c1c12907dff5148e3c288ac8",
+      "path": "assets/backgrounds/plains/source/plains_painted_master.png",
+      "kind": "concept_art",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "AI氛围母版 · 非实机"
+    },
+    {
+      "id": "v2_preview",
+      "pr": 30,
+      "commit": "3bacc326c419741f1ded43fd32e8877cf706dbc5",
+      "path": "preview/painterly_v2_composite.png",
+      "kind": "composite_preview_not_gameplay",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "浏览器合屏预览 · 非正式实机"
+    },
+    {
+      "id": "old",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/region-baseline.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "aa40f9071575325884ed523dc66f92145d41913e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机截图"
+    },
+    {
+      "id": "tiles47",
+      "pr": 59,
+      "commit": "ed05821421a156a3e79520422bf4e381248590ee",
+      "path": "docs/evidence/quality_review/painted_study/gallery/all-47.png",
+      "kind": "technical_fixture",
+      "runtime_commit": "aa40f9071575325884ed523dc66f92145d41913e",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "拼接测试样板 · 非游戏关卡"
+    },
+    {
+      "id": "redesign_before",
+      "pr": 67,
+      "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+      "path": "docs/evidence/plains_redesign/final_current/raw/build/plains_redesign/matched_movies/before/creek_growth/gameplay.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "redesign_after",
+      "pr": 67,
+      "commit": "2c2904172045017037e4110323c1097f9d24c5ad",
+      "path": "docs/evidence/plains_redesign/final_current/raw/build/plains_redesign/matched_movies/after/creek_growth/gameplay.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": null,
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "region_fail",
+      "pr": 86,
+      "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+      "path": "docs/evidence/plains_regional/frames/film02_video_frame_003000.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "46c3c0993b2ea69293f60161a1c2a95cc6677942",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机截图"
+    },
+    {
+      "id": "region_overview",
+      "pr": 86,
+      "commit": "b5fc02706348d93da3cbd2df91eb0db6871e246e",
+      "path": "docs/evidence/plains_regional/frames/guarded_seed02_actual_world_overview.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "46c3c0993b2ea69293f60161a1c2a95cc6677942",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机截图"
+    },
+    {
+      "id": "world_first",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/movies/layout0_review.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "97703a8ff4ca9a86c7fb92ff2d182d0595ffce96",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "world_second",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/movies/layout1_review.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "ba787df7261dba40f75409a3b99457dd9bbef985",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "world_fail",
+      "pr": 90,
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/plains_world_rebuild/frames/negative_v2.png",
+      "kind": "original_game_screenshot",
+      "runtime_commit": "5871a02bb2d54670dea0bcd643a307d575bce6e7",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机截图"
+    },
+    {
+      "id": "styles",
+      "pr": 93,
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/comparison_five_styles.png",
+      "kind": "original_game_comparison",
+      "runtime_commit": "32200d04fe233bda16cf50f678aabee51a9715e5",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "同场景风格实验 · 非五个正式区域"
+    },
+    {
+      "id": "style_movie",
+      "pr": 93,
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/motion/underworld_plains.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "32200d04fe233bda16cf50f678aabee51a9715e5",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "new_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/formal/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50ee902f7c0726764d41d0480f2df46ea18",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "home_movie",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/actual_input_h/home/movie.mp4",
+      "kind": "original_game_recording",
+      "runtime_commit": "8dfef50ee902f7c0726764d41d0480f2df46ea18",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "历史实机原片"
+    },
+    {
+      "id": "new",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map1_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a111015d032211bb8c54aaae9b322401349d4",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "开发定位截图 · 非路线录像"
+    },
+    {
+      "id": "new2",
+      "pr": 94,
+      "commit": "0fab13fcc446bf9abd3c6beaf21e0fc5b76bd9ad",
+      "path": "docs/evidence/underworld_plains/revision2/formal_g/map2_spawn.png",
+      "kind": "positioned_game_screenshot",
+      "runtime_commit": "c65a111015d032211bb8c54aaae9b322401349d4",
+      "license": "project_original_ai_asset_or_gameplay; see rights.json; no third-party video",
+      "truth": "committed_original_evidence",
+      "display_label": "开发定位截图 · 非路线录像"
+    },
+    {
+      "id": "art_paintover",
+      "origin": "git",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "assets/visual_development/master/paintover_target.png",
+      "pr": 90,
+      "kind": "concept_art",
+      "display_label": "AI概念迁移图 · 非实机",
+      "license": "User-authorized project AI source; AI provider commercial terms independently unverified",
+      "truth": "Existing committed AI source or proposal archived at this SHA; archive PR is not claimed to be creation date; not new images generated for video"
+    },
+    {
+      "id": "art_board",
+      "origin": "git",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "assets/visual_development/master/b1_master.png",
+      "pr": 90,
+      "kind": "concept_art",
+      "display_label": "AI视觉探索母版 · 非实机",
+      "license": "User-authorized project AI source; AI provider commercial terms independently unverified",
+      "truth": "Existing committed AI source or proposal archived at this SHA; archive PR is not claimed to be creation date; not new images generated for video"
+    },
+    {
+      "id": "art_environment",
+      "origin": "git",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "docs/evidence/p1_environment/environment_master_v1.png",
+      "pr": 90,
+      "kind": "concept_art",
+      "display_label": "后续AI环境方案 · 非实机",
+      "license": "User-authorized project AI source; AI provider commercial terms independently unverified",
+      "truth": "Existing committed AI source or proposal archived at this SHA; archive PR is not claimed to be creation date; not new images generated for video"
+    },
+    {
+      "id": "art_windmill",
+      "origin": "git",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "assets/region_production_v3/spaces/windmill_highland_v1/source.png",
+      "pr": 90,
+      "kind": "concept_art",
+      "display_label": "AI风车资产原图 · 非关卡",
+      "license": "User-authorized project AI source; AI provider commercial terms independently unverified",
+      "truth": "Existing committed AI source or proposal archived at this SHA; archive PR is not claimed to be creation date; not new images generated for video"
+    },
+    {
+      "id": "art_bank",
+      "origin": "git",
+      "commit": "913d77afa4019a0a2e6c84f270f3fe30ac2f00ba",
+      "path": "assets/region_production_v3/spaces/limestone_bank_section_v1/source.png",
+      "pr": 90,
+      "kind": "concept_art",
+      "display_label": "AI岸体资产原图 · 非关卡",
+      "license": "User-authorized project AI source; AI provider commercial terms independently unverified",
+      "truth": "Existing committed AI source or proposal archived at this SHA; archive PR is not claimed to be creation date; not new images generated for video"
+    },
+    {
+      "id": "repeatability",
+      "origin": "git",
+      "commit": "8382a41cb0ccf9a8e2e56075ade9edaceb4ff67a",
+      "path": "docs/evidence/style_exploration/ai_repeatability/underworld_replicates_contact.png",
+      "pr": 93,
+      "kind": "concept_art",
+      "display_label": "同提示词三次AI生成对照 · 非实机",
+      "license": "User-authorized project AI source; see style lab provenance",
+      "truth": "Original contact sheet documenting repeatability differences; not three frames of animation or accepted final art"
+    },
+    {
+      "id": "meme_ah",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "display_label": "原创转场表情 · 非实机／非真实引语",
+      "license": "Video Rush original authored reaction illustration",
+      "graphic": {
+        "face": "panic",
+        "kicker": "概念图 → 早期实机",
+        "lines": [
+          "啊？"
+        ],
+        "font_size": 110,
+        "footer": "开发记录 · 原创编辑性表情，不是用户反馈"
+      }
+    },
+    {
+      "id": "meme_grass",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "display_label": "原创转场表情 · 非实机／非真实引语",
+      "license": "Video Rush original authored reaction illustration",
+      "graphic": {
+        "face": "thinking",
+        "kicker": "继续加素材？",
+        "lines": [
+          "再加亿点点？"
+        ],
+        "font_size": 82,
+        "footer": "开发记录 · 原创编辑性表情，不是用户反馈"
+      }
+    },
+    {
+      "id": "meme_reset",
+      "origin": "editorial",
+      "kind": "original_editorial_graphic",
+      "display_label": "原创转场表情 · 非实机／非真实引语",
+      "license": "Video Rush original authored reaction illustration",
+      "graphic": {
+        "face": "thinking",
+        "kicker": "先停一下",
+        "lines": [
+          "换个思路"
+        ],
+        "font_size": 82,
+        "footer": "开发记录 · 原创编辑性表情，不是用户反馈"
+      }
+    }
+  ]
+}
