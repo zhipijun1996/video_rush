@@ -317,7 +317,7 @@
       "id": "V007",
       "title": "UI统一了，怎么还是不满意？我用AI做游戏又返工了",
       "slot": "user_selected_UI_episode",
-      "production_status": "ep005_in_local_production",
+      "production_status": "ep005_hosted_render_download_verified",
       "one_question": "统一界面样式之后，为什么还需要继续改？",
       "story_beats": [
         "旧信息框与当前无框HUD",
@@ -336,7 +336,13 @@
         "不代用户编造具体不满意原因",
         "不把技术检查通过说成审美通过"
       ],
-      "episode_spec": "episodes/ep005.json"
+      "episode_spec": "episodes/ep005.json",
+      "actual_duration_seconds": 221.0,
+      "delivery": {
+        "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39971985299/artifacts/12510101713",
+        "expires_at": "2026-11-06T14:48:39Z",
+        "verification": "docs/ep005-verification.json"
+      }
     }
   ],
   "sources": [

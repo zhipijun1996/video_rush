@@ -1,0 +1,265 @@
+{
+  "episode": "ep005",
+  "status": "hosted_render_download_verified",
+  "run_id": 39971985299,
+  "job_id": 120476779657,
+  "production_commit": "a4d7e8ec0e16c871fca85ada544df110b22c3e9c",
+  "artifact_id": 12510101713,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39971985299/artifacts/12510101713",
+  "artifact_bytes": 20319423,
+  "artifact_sha256": "61b4f3d278c7e24cb51fc8a596d3691a381710d33f13ce73466facb25dee69aa",
+  "artifact_expires_at": "2026-11-06T14:48:39Z",
+  "final_sha256": "eae6139d3aed821838d8c653080626dc9fec13b2e47a4b3e1953413f3e85ba99",
+  "final_bytes": 19580683,
+  "duration_seconds": 221.0,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "color_range": "tv"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "metrics": {
+      "decoded_samples": 3536213,
+      "peak": 0.705841064453125,
+      "rms": 0.09227503007987359,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    }
+  },
+  "delivery_manifest_files_verified": 22,
+  "source_asset_metadata_verified": 30,
+  "exact_git_asset_hash_metadata_matches": 23,
+  "external_movie_metadata_and_local_archive_hashes_verified": [
+    "baseline",
+    "r1",
+    "r2",
+    "r3"
+  ],
+  "preserved_movie_report_runtime_and_hash_links_verified": 4,
+  "preserved_source_documents_and_licenses_verified": 13,
+  "real_edge_receipts_verified": 30,
+  "tts_boundary_files_verified": 30,
+  "raw_tts_wavs_shipped": false,
+  "source_movies_shipped": false,
+  "tests_passed": 31,
+  "entire_downloaded_mp4_decode": true,
+  "source_game_worktree_changed": false,
+  "new_game_capture": false,
+  "technical_pass": true,
+  "content_structural_pass": true,
+  "aesthetic_acceptance": "unverified",
+  "human_phone_listening": "pending",
+  "temporary_bgm_chunks_deleted_204": 8,
+  "bilibili_published": false,
+  "subtitle_cues_do_not_overlap": true,
+  "decoded_audio_duration_matches_timeline": true,
+  "cancelled_previous_run": 39969336884,
+  "closing_matches_user_request": true,
+  "local_final": {
+    "episode": "ep005",
+    "final_sha256": "bff78f630720cf4ae737292f12e7ad25004f9265d29451a926ff114fbcead09c",
+    "final_bytes": 19562399,
+    "duration_seconds": 221.0,
+    "technical_pass": true,
+    "content_structural_pass": true,
+    "entire_file_decoded": true,
+    "delivery_file_hashes_verified": 22,
+    "tests_passed": 31,
+    "previewed_actual_final_shots": [
+      "u01",
+      "u02",
+      "u03",
+      "u06",
+      "u08",
+      "u10",
+      "u15",
+      "u17",
+      "u21",
+      "u22",
+      "u25",
+      "u30"
+    ],
+    "cover_inspected": true,
+    "human_phone_listening": "pending",
+    "aesthetic_acceptance": "unverified",
+    "original_game_worktree_unchanged": true,
+    "production_failure": {
+      "log": "build/research/ep005/local-first-failed.log",
+      "reason": "u29 narration exceeded remaining real r3 movie duration; no-loop guard rejected it",
+      "resolution": "Used immutable real map screenshot for that explanation, no fabricated/looped footage"
+    },
+    "decoded_audio_duration_seconds": 221.0133125,
+    "decoded_audio_duration_matches_timeline": true,
+    "voice_window_check": {
+      "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+      "passed": true,
+      "shots": [
+        {
+          "shot": "u01",
+          "correlation": 0.9643062353134155,
+          "lag_seconds": 0.01
+        },
+        {
+          "shot": "u02",
+          "correlation": 0.9908220171928406,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u03",
+          "correlation": 0.9925681352615356,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u04",
+          "correlation": 0.9838427305221558,
+          "lag_seconds": 0.01
+        },
+        {
+          "shot": "u05",
+          "correlation": 0.9807587265968323,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u06",
+          "correlation": 0.915930986404419,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "u07",
+          "correlation": 0.9430444240570068,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u08",
+          "correlation": 0.9383994340896606,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "u09",
+          "correlation": 0.9845879077911377,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u10",
+          "correlation": 0.9920140504837036,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u11",
+          "correlation": 0.945971667766571,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "u12",
+          "correlation": 0.9785823225975037,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u13",
+          "correlation": 0.9518998265266418,
+          "lag_seconds": 0.009875
+        },
+        {
+          "shot": "u14",
+          "correlation": 0.9816299676895142,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u15",
+          "correlation": 0.947260856628418,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "u16",
+          "correlation": 0.9779866337776184,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u17",
+          "correlation": 0.9488524794578552,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "u18",
+          "correlation": 0.9624279737472534,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "u19",
+          "correlation": 0.9674920439720154,
+          "lag_seconds": 0.01
+        },
+        {
+          "shot": "u20",
+          "correlation": 0.9871170520782471,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u21",
+          "correlation": 0.960059404373169,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u22",
+          "correlation": 0.9774598479270935,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u23",
+          "correlation": 0.9605527520179749,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u24",
+          "correlation": 0.9801802039146423,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u25",
+          "correlation": 0.9293674230575562,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u26",
+          "correlation": 0.9331871271133423,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u27",
+          "correlation": 0.9929905533790588,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u28",
+          "correlation": 0.9891833662986755,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "u29",
+          "correlation": 0.921515703201294,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "u30",
+          "correlation": 0.9845198392868042,
+          "lag_seconds": 0.004875
+        }
+      ]
+    }
+  },
+  "note": "Hosted rerender; not claimed byte-identical to local MP4. Original 4 archived native movies were downloaded locally and checked against immutable Git blob/size and source receipt SHA256. Hosted source metadata matches these hashes; raw source movies and TTS WAVs are not shipped for a second downloaded-byte check. Preserved source docs/licenses and final MP4 were directly rehashed after download. No new gameplay or human aesthetic approval.",
+  "downloaded_final_sampled_shots": [
+    "u01",
+    "u15",
+    "u25",
+    "u30"
+  ],
+  "downloaded_cover_inspected": true,
+  "downloaded_final_path": "build/actions/ep005-verified/delivery/final.mp4"
+}
