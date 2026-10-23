@@ -97,6 +97,7 @@ def validate(output, spec, timeline, sources):
       'h264_yuv420p':v['codec_name']=='h264' and v['pix_fmt']=='yuv420p','aac_48k':a['codec_name']=='aac' and int(a['sample_rate'])==48000,
       'duration_matches_brief':minimum <= dur <= maximum,
       'subtitles_in_bounds':all(0 <= c['start'] < c['end'] <= dur+.02 for s in timeline['shots'] for c in s['cues']),
+      'subtitle_cues_do_not_overlap':all(a['end'] <= b['start'] + .001 for a,b in zip([c for s in timeline['shots'] for c in s['cues']],[c for s in timeline['shots'] for c in s['cues']][1:])),
       'action_labels_in_bounds':all(0<=x['start']<x['end']<=s['end']-s['start']+.02 for s in timeline['shots'] for x in s.get('action_labels',[])),
       'source_labels_in_bounds':all(s['start']<=c['start']<c['end']<=s['end']+.02 for s in timeline['shots'] for c in s.get('source_cues',[])),
       'audible_tts_signal':metrics['audible_signal'] and narration_receipts_valid(output,spec),

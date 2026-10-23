@@ -13,6 +13,7 @@ from .narration import narrate
 from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans
 from .quality import validate
 from .publish import posting_copy
+from .subtitles import narration_cues
 
 STAGES=['Research','Story','Script','Shot Planning','Footage Collection','Narration','Timeline Composition','Rendering','Quality Validation','Delivery']
 
@@ -138,16 +139,8 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
                      'text': labels[cut['index']]}
                     for cut in montage_spans(x)]
             boundaries=audio.with_suffix('.raw.boundaries.jsonl')
-            cues=[]
-            if backend=='edge' and boundaries.exists():
-                for line in boundaries.read_text().splitlines():
-                    b=json.loads(line)
-                    if b['type']!='SentenceBoundary':continue
-                    st=b['offset']/1e7/speed;du=b['duration']/1e7/speed
-                    cues.extend(subtitle_cues(b['text'],t+st,min(du,spoken-st)))
-                x['subtitle_alignment']='Edge sentence boundaries; phrase subdivisions proportional within sentence'
-            else:
-                cues=list(subtitle_cues(s['narration'],t,spoken));x['subtitle_alignment']='duration-proportional estimate; phone timing review required'
+            metadata=[json.loads(line) for line in boundaries.read_text().splitlines()] if backend=='edge' and boundaries.exists() else []
+            cues,x['subtitle_alignment']=narration_cues(s['narration'],metadata,t,spoken,speed,s.get('subtitle_mode','sentence'))
             x['cues']=cues;shots.append(x);t+=d
         timeline={'fps':30,'width':1920,'height':1080,'duration':round(t,6),'shots':shots,'music':music,'music_license':music_license,'display_chapters':spec.get('display_chapters',True)}
         write(output/'storyboard.json',timeline);ass_file(output/'subtitles.ass',timeline)
@@ -157,7 +150,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
                  'comparison':spec.get('comparison','Different stages, not a controlled same-seed before/after benchmark')}
         write(output/'sources.json',sources)
         return [output/'storyboard.json',output/'subtitles.ass',output/'sources.json']
-    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'subtitle_generator':inspect.getsource(ass_file),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
+    stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'subtitle_timing':sha(ROOT/'video_rush/subtitles.py'),'subtitle_generator':inspect.getsource(ass_file),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
     timeline=read(output/'storyboard.json');sources=read(output/'sources.json')
     def rendering():
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)

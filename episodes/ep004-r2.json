@@ -1,0 +1,1299 @@
+{
+  "schema_version": 2,
+  "episode": "ep004-r2",
+  "title": "打中了，却像没打中？我用AI给游戏补点打击感",
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep004-r2-assets.json",
+  "story_ids": [
+    "S_PLAYER_FEEL_01",
+    "S104"
+  ],
+  "target_duration": [
+    180,
+    300
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "shots": [
+    {
+      "id": "f01a",
+      "chapter": "01",
+      "title": "之前的死亡",
+      "narration": "这只怪死了。",
+      "assets": [
+        "old_flip"
+      ],
+      "offsets": [
+        2.7
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "之前：翻个面，就算死了",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "punchline": "",
+      "crop_rect": [
+        560,
+        180,
+        720,
+        450
+      ],
+      "subtitle_mode": "utterance"
+    },
+    {
+      "id": "f01b",
+      "chapter": "01",
+      "title": "之前的死亡",
+      "narration": "不过这姿势……你就说死没死吧。",
+      "assets": [
+        "old_flip"
+      ],
+      "offsets": [
+        4.8
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "punchline": "你就说死没死吧",
+      "crop_rect": [
+        700,
+        200,
+        550,
+        400
+      ],
+      "subtitle_mode": "utterance"
+    },
+    {
+      "id": "f02",
+      "chapter": "02",
+      "title": "现在的死亡候选",
+      "narration": "后来我想，至少得让它真的趴下。飞着的，也得把翅膀收起来。",
+      "assets": [
+        "enemy"
+      ],
+      "offsets": [
+        13.2
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "现在：失力 → 折翼 → 落地",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        500,
+        100,
+        780,
+        540
+      ]
+    },
+    {
+      "id": "f03",
+      "chapter": "03",
+      "title": "这轮补什么",
+      "narration": "我在用AI做一款靠反冲跳跃赶路的游戏，叫失序之钟。这次先不加新武器，补补动作和打击感。",
+      "assets": [
+        "dust"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "动作与打击感 · 两个开发分支",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "player_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        340,
+        200,
+        800,
+        450
+      ]
+    },
+    {
+      "id": "f04",
+      "chapter": "04",
+      "title": "这期的问题",
+      "narration": "我想弄清楚：同样的操作和伤害，光改画面、声音，能差多少？",
+      "assets": [
+        "question"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "motion_contract",
+        "enemy_v8",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "f05",
+      "chapter": "05",
+      "title": "先看人物",
+      "narration": "先看人物。之前能跑能跳，但一些状态不太好读。这轮先补了待机和下落的动作。",
+      "assets": [
+        "body"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        340,
+        200,
+        800,
+        450
+      ]
+    },
+    {
+      "id": "f06",
+      "chapter": "06",
+      "title": "让状态有区别",
+      "narration": "下落时，围巾会往上飘。站着和往下掉，轮廓就不一样了。",
+      "assets": [
+        "idle_still",
+        "fall_still"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "待机 / 下落 · 原片抽帧",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "f07",
+      "chapter": "07",
+      "title": "看脚底",
+      "narration": "起跳和落地，各补了一点尘土。看脚底，别光盯着枪。",
+      "assets": [
+        "dust"
+      ],
+      "offsets": [
+        14
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "看脚底：离地 / 踩实",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        340,
+        200,
+        800,
+        450
+      ],
+      "display_source": "跳落反馈开启 · 原生实录"
+    },
+    {
+      "id": "f08",
+      "chapter": "08",
+      "title": "保留原来的跳跃",
+      "narration": "这里没把人跳得更高。是同一套动作，把离地和踩实的瞬间交代清楚。",
+      "assets": [
+        "dust",
+        "dust"
+      ],
+      "offsets": [
+        1,
+        11.25
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "左：关闭反馈　右：开启反馈",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rects": [
+        [
+          400,
+          240,
+          500,
+          300
+        ],
+        [
+          400,
+          240,
+          500,
+          300
+        ]
+      ],
+      "game_audio_index": 1,
+      "display_source": "同条件反馈开关对照 · 游戏规则未改"
+    },
+    {
+      "id": "f09",
+      "chapter": "09",
+      "title": "高处落下",
+      "narration": "从高处落下来，会有更重的落地声、短震动和一点下蹲。",
+      "assets": [
+        "landing"
+      ],
+      "offsets": [
+        17
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "高落差 + 落速 → 较重反馈",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "landing_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        290,
+        110,
+        800,
+        450
+      ],
+      "display_source": "家园落地反馈开启 · 原生实录"
+    },
+    {
+      "id": "f10",
+      "chapter": "10",
+      "title": "别让动作拖操作",
+      "narration": "下蹲只是视觉收尾，一走就能打断。别在那儿罚站。",
+      "assets": [
+        "landing"
+      ],
+      "offsets": [
+        20.4
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "视觉后摇能取消 · 没新增落地硬直",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "landing_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        290,
+        110,
+        800,
+        450
+      ],
+      "display_source": "家园落地反馈候选 · 原操作规则保留"
+    },
+    {
+      "id": "f11",
+      "chapter": "11",
+      "title": "也有翻车",
+      "narration": "当然，也有翻车。新跑步图做了两版，都没留下。单看还行，连起来的步态和握枪衔接还是不对。",
+      "assets": [
+        "run_reject"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "未采用的新跑步原画",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "player_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "punchline": "先别急着量产"
+    },
+    {
+      "id": "f12",
+      "chapter": "12",
+      "title": "先用回旧跑步",
+      "narration": "所以现在跑步还沿用旧图，只调整步伐跟实际位移的对应。没做好的，就先别硬上。",
+      "assets": [
+        "body"
+      ],
+      "offsets": [
+        3.5
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "motion_contract",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        340,
+        200,
+        800,
+        450
+      ]
+    },
+    {
+      "id": "f13",
+      "chapter": "13",
+      "title": "开枪和命中分开",
+      "narration": "开枪也一样。枪响，只能说明开火了。命中怪、打到墙、打空，得分清楚。",
+      "assets": [
+        "weapons"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "weapon_contract_v2",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        0,
+        210,
+        960,
+        450
+      ],
+      "display_source": "旧武器反馈 · 家园训练柱实录"
+    },
+    {
+      "id": "f14",
+      "chapter": "14",
+      "title": "声音与可见武器",
+      "narration": "这次把这些声音拆开，也给光束和回旋刃补了表现。声音很满，不代表这一枪真打中了。",
+      "assets": [
+        "weapons"
+      ],
+      "offsets": [
+        21.8
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "开火声 / 真正命中 / 墙面接触",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "weapon_contract_v2",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        0,
+        210,
+        960,
+        450
+      ],
+      "display_source": "新版武器反馈 · 家园训练柱实录"
+    },
+    {
+      "id": "f15",
+      "chapter": "15",
+      "title": "两个怪物样板",
+      "narration": "怪物这边，先只做两个样板：地上冲过来的，和空中俯冲的。没有一口气铺到所有怪。",
+      "assets": [
+        "charger_sheet",
+        "diver_sheet"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "地面冲锋 / 空中俯冲",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "enemy_frames"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rects": [
+        [
+          0,
+          0,
+          443,
+          443
+        ],
+        [
+          0,
+          0,
+          443,
+          443
+        ]
+      ]
+    },
+    {
+      "id": "f16",
+      "chapter": "16",
+      "title": "受击要有反应",
+      "narration": "先给受击一个短亮色，让身体缩一下。",
+      "assets": [
+        "enemy"
+      ],
+      "offsets": [
+        0.35
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "短亮色 + 受伤姿态",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        560,
+        180,
+        720,
+        450
+      ]
+    },
+    {
+      "id": "f17",
+      "chapter": "17",
+      "title": "命中落在哪",
+      "narration": "再加方向性的尖芒和细粒子，让命中的位置更清楚。",
+      "assets": [
+        "impact"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "命中点的反馈 · 定点截图",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        245,
+        280,
+        240,
+        180
+      ],
+      "display_source": "受击定点截图 · 局部放大 · 非连续录像"
+    },
+    {
+      "id": "f18",
+      "chapter": "18",
+      "title": "别演假命中",
+      "narration": "这里的特效只跟真实扣血走。子弹擦过去，或者伤害被拒绝，都不能先演一套挨打。",
+      "assets": [
+        "phase"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "weapon_contract_v2",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "f19",
+      "chapter": "19",
+      "title": "翻转活图不够",
+      "narration": "死亡就更明显了。早期直接把活图翻过去，就当死了。",
+      "assets": [
+        "old_flip"
+      ],
+      "offsets": [
+        14
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        500,
+        100,
+        780,
+        540
+      ]
+    },
+    {
+      "id": "f20",
+      "chapter": "20",
+      "title": "中途也换过方向",
+      "narration": "中间还试过爆裂消失。但最后，还是选了倒地留尸。",
+      "assets": [
+        "old_burst"
+      ],
+      "offsets": [
+        0.3
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "已弃用：爆裂消失",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        560,
+        180,
+        720,
+        450
+      ]
+    },
+    {
+      "id": "f21",
+      "chapter": "21",
+      "title": "真的画动作",
+      "narration": "这次补了真正的受伤和死亡姿态。地面的怪趴下，飞怪折翼，再落到地上。",
+      "assets": [
+        "charger_sheet"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "上：受伤姿态　下：死亡姿态",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_frames",
+        "enemy_v8"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "f22",
+      "chapter": "22",
+      "title": "同条件对照",
+      "narration": "左边爆完消失。右边倒下，尸体留下。",
+      "assets": [
+        "enemy_compare",
+        "enemy_compare"
+      ],
+      "offsets": [
+        0,
+        5
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "左：V7 消失　右：V8 留尸",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval. Existing V7/V8 trace seed, 1560-frame gameplay projection, Router input and HP event payload equality independently rechecked; actor-instance prefix of event IDs is intentionally not compared.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": true,
+      "crop_rects": [
+        [
+          560,
+          180,
+          720,
+          450
+        ],
+        [
+          560,
+          180,
+          720,
+          450
+        ]
+      ],
+      "game_audio_index": 1,
+      "display_source": "V7 / V8 · 同条件实弹样板"
+    },
+    {
+      "id": "f23",
+      "chapter": "23",
+      "title": "飞怪的收尾",
+      "narration": "飞怪也一样，折翼，掉落，留在地上。",
+      "assets": [
+        "enemy"
+      ],
+      "offsets": [
+        13.5
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "飞怪：折翼 → 落地",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        500,
+        100,
+        780,
+        540
+      ]
+    },
+    {
+      "id": "f24",
+      "chapter": "24",
+      "title": "帧多也会跳",
+      "narration": "但帧多也不一定顺。你看这只旧外观的飞怪，受伤恢复时，身体轮廓还会突然变一下。",
+      "assets": [
+        "neighbors"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "原片 876 → 877 帧 · 过渡仍待修",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_v8",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        300,
+        750,
+        340,
+        160
+      ]
+    },
+    {
+      "id": "f26",
+      "chapter": "26",
+      "title": "新声音也不一定更好",
+      "narration": "之前新加的死亡音被嫌怪，也撤回了。现在用回原来的声音，别拿新做了当成更好听。",
+      "assets": [
+        "enemy_compare"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "旧 V7 声音已撤回 · 当前回到原死亡声",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        560,
+        180,
+        720,
+        450
+      ],
+      "display_source": "V7 → V8 历史音画对照 · 原音轨"
+    },
+    {
+      "id": "f27",
+      "chapter": "27",
+      "title": "这轮的体会",
+      "narration": "这轮我学到的，是先让动作的开始、真正命中和结束，都有清楚的回应，再考虑加多少特效。",
+      "assets": [
+        "lesson"
+      ],
+      "offsets": [
+        0
+      ],
+      "shot_type": "evidence_still",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "motion_contract",
+        "enemy_frames",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "f28",
+      "chapter": "28",
+      "title": "先做一个完整小样",
+      "narration": "用AI做这些，我会先拿一只怪，把走动、挨打和倒地连着看，再去补下一只。",
+      "assets": [
+        "legacy"
+      ],
+      "offsets": [
+        13.2
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "enemy_session",
+        "authored_reflection"
+      ],
+      "fact_check": "Checked immutable handoff, native recording recipe and sampled actual frames. Presentation-only gains are editorial judgments; no claim of new physics, full action coverage, main integration, device performance or human approval.",
+      "claim_type": "source_supported_iteration_with_authored_reflection",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        500,
+        100,
+        780,
+        540
+      ]
+    },
+    {
+      "id": "f29",
+      "chapter": "29",
+      "title": "还在打磨",
+      "narration": "现在这套还在打磨。说实话，打击感还是没达到我自己想象中的感觉。",
+      "assets": [
+        "body",
+        "enemy"
+      ],
+      "offsets": [
+        8,
+        13
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "还在打磨 · 离自己的预期还有距离",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [
+        104
+      ],
+      "evidence": [
+        "user_ep004_revision"
+      ],
+      "fact_check": "用户明确提供自己的主观感受；不冒称独立测量、观众反馈或满意验收。",
+      "claim_type": "user_testimony",
+      "same_seed_comparison": false,
+      "crop_rects": [
+        [
+          340,
+          160,
+          800,
+          560
+        ],
+        [
+          500,
+          100,
+          780,
+          540
+        ]
+      ],
+      "display_source": "左：人物候选　右：怪物候选 · 尚未整合"
+    },
+    {
+      "id": "f30",
+      "chapter": "30",
+      "title": "欢迎挑毛病",
+      "narration": "我也是个萌新，大家觉得还能怎么优化？动作、特效还是声音，哪里最该先改？",
+      "assets": [
+        "weapons"
+      ],
+      "offsets": [
+        32
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "动作 / 特效 / 声音，先改哪个？",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_ep004_revision"
+      ],
+      "fact_check": "用户指定结尾求建议，非已收集到观众反馈。",
+      "claim_type": "user_testimony_and_request_for_advice",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        0,
+        210,
+        960,
+        450
+      ],
+      "display_source": "武器反馈开发候选 · 家园训练柱实录"
+    },
+    {
+      "id": "f31",
+      "chapter": "28",
+      "title": "萌新求建议",
+      "narration": "欢迎在评论区给我点建议。我接着改，后面再拿新版本来对比。",
+      "assets": [
+        "legacy"
+      ],
+      "offsets": [
+        13.2
+      ],
+      "shot_type": "real_video_detail",
+      "emphasis": "萌新求建议 · 欢迎评论区挑毛病",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_ep004_revision"
+      ],
+      "fact_check": "用户明确要求的互动结尾，非已有评论或用户体验验收。",
+      "claim_type": "user_requested_closing",
+      "same_seed_comparison": false,
+      "crop_rect": [
+        500,
+        100,
+        780,
+        540
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "player_session",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "truth": "Unmerged candidate; movie runtimes differ from documentation head."
+    },
+    {
+      "id": "motion_contract",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058"
+    },
+    {
+      "id": "landing_contract",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058"
+    },
+    {
+      "id": "weapon_contract_v2",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058"
+    },
+    {
+      "id": "enemy_session",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/enemy_feedback_01_session_summary.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "pr": 104
+    },
+    {
+      "id": "enemy_v8",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/README.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "pr": 104
+    },
+    {
+      "id": "enemy_frames",
+      "type": "immutable_document",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/enemy_feedback_01_frames.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "pr": 104
+    },
+    {
+      "id": "authored_reflection",
+      "type": "editorial_interpretation",
+      "text": "First person editorial reconstruction of the inspected iteration decisions. Not a verbatim user quote, measured experience improvement or independent human endorsement."
+    },
+    {
+      "id": "current_request",
+      "type": "user_instruction",
+      "text": "2026-10-23: make an episode from the latest player-action and enemy-hit/death branches explaining feel and impact. Preserve natural Mandarin, sparse familiar memes and light BGM from prior instructions."
+    },
+    {
+      "id": "user_ep004_revision",
+      "type": "user_testimony_and_editorial_instruction",
+      "text": "用户本轮要求：修复开头字幕/声音不齐；结尾说明仍在打磨、打击感未达自己想象中的感觉，萌新请观众建议；视频不体现读档问题。"
+    }
+  ],
+  "cover_assets": [
+    "cover_player",
+    "cover_enemy"
+  ],
+  "cover": {
+    "series": "失序之钟 · AI 独立游戏开发 / 04",
+    "left_label": "人物动作候选",
+    "right_label": "怪物受击候选",
+    "line1": "打中了，却像没打中？",
+    "line2": "这次给游戏补点打击感"
+  },
+  "game_audio_gain": 0.65,
+  "music_gain": 0.12,
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "rights": {
+    "game": "User-authorized own gunman-rush project development evidence. Underworld Tileset: Asouris custom author license; see original game assets license records.",
+    "music": "User-supplied the_kindred_hearth.mp3; no independent author/license claim. Hash-pinned mono Opus derivative, softly mixed and voice-ducked.",
+    "audio": "Original matched source audio retained; player feel sounds source CC0 records; weapon V2 uses Freedoom BSD-3-Clause derivatives with source credits. Enemy V7 experimental cue retained only in explicitly labeled historical comparison; rolled back in current game candidate.",
+    "ai_art": "Project-authorized supplied/generated assets; Underworld enemy exact model/provider license and verbatim original prompts not fully recorded in source. This unresolved provenance is disclosed, not labeled CC0.",
+    "font": "Noto Sans CJK, SIL OFL",
+    "memes": "Original editorial vector cards and a brief contextual caption, no third-party meme image/video/audio"
+  },
+  "comparison": "Two separate unmerged branches, no combined latest-main playthrough. Existing native normal-speed footage with crop/zoom only. Dust/landing/weapon ON/OFF pairing from source receipts. Enemy V7/V8 same seed, 1560 recorded gameplay frame projections, Router inputs and normalized HP event payloads independently rechecked equal. This is a recheck of existing trace data, not fresh gameplay execution.",
+  "comparison_review": "留意局部放大、原图/抽帧/实弹定位标签；人物与怪物是独立候选。V7→V8对照的同条件来自原录制收据，本次未重跑游戏；不称正式整合或用户手感通过。",
+  "title_candidates": [
+    "打中了，却像没打中？我用AI给游戏补点打击感",
+    "怪都死了，怎么还是没打击感？一个AI做游戏的返工记录",
+    "游戏能跑以后，动作和打击感还得慢慢补"
+  ],
+  "bilibili_body": "我在用 AI 做独立游戏《失序之钟》。这期先不加新武器，看看人物的起跳、下落、落地，以及怪物的受击、死亡，怎么一点点补出反馈。\n\n里面也有没留下的跑步图、翻转活图的早期死法，以及被撤回的死亡音。新做了不等于更好，先拿一个小样放进游戏连着看。\n\n视频来自两个尚未合入主线的开发分支：人物 motion-candidate 与怪物反馈 PR #104。使用既有 Godot 原生实录、实弹定位样板、原始动作图和少量解释图，分别标注；不是两个分支已经整合的正式关卡录像。跑步/握枪衔接和怪物恢复过渡还在继续打磨。说实话，打击感还是没达到我自己想象中的感觉。我也是个萌新，欢迎大家在评论区给点建议：动作、特效还是声音，哪里最该先改？\n\n分区建议：游戏 → 单机游戏（以投稿页可选分区为准）\n标签：独立游戏、游戏开发、Godot、AI开发、打击感、像素游戏、失序之钟\n\n源码/证据：https://github.com/zhipijun1996/gunman-rush/pull/104\n人物来源：https://github.com/zhipijun1996/gunman-rush/tree/b1069762731e0cdb39f003f2dd2474ba5d8de058\n素材署名：Underworld by Asouris；武器音效含 Freedoom BSD-3-Clause 衍生；字体 Noto Sans CJK / SIL OFL。BGM 为用户提供的 the_kindred_hearth 压缩副本，作者/许可未独立核实；怪物AI动作图精确模型/许可记录仍待补全。详见 sources.json。",
+  "research_scope": {
+    "schema_version": 1,
+    "episode": "ep004-r2",
+    "repository": "zhipijun1996/gunman-rush",
+    "scanned_at": "2026-10-23T03:24:41.923316+00:00",
+    "mode": "targeted_new_branch_refresh_after_existing_full_history_archive",
+    "original_game_repository": "/workspace/gunman-rush",
+    "game_repository_modified": false,
+    "source_mirror": "build/sources/ep004",
+    "main_at_scan": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+    "branches_api_count": 121,
+    "recent_pr_count": 40,
+    "pr_numbers_read": [
+      104
+    ],
+    "pr104_status": "open draft; overall REJECT, not merged",
+    "player_pr": "No PR assumed; branch and immutable documents used",
+    "branch_heads": {
+      "feature/player-presentation-01-motion-candidate": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "feature/player-presentation-01": "b34511a7ee27f03b6d87d070ca20e9309e1e8a2e",
+      "feature/enemy-feedback-01-accepted-sample": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "feature/enemy-feedback-01": "ce84d01e1f208538a6b6d610bfc55a28e11cb733"
+    },
+    "checked_full_base_head_path_counts": {
+      "player": 468,
+      "enemy": 1061
+    },
+    "checked_runtime_files": [
+      "scripts/dev/player_presentation_01/motion_visual.gd",
+      "scripts/dev/player_presentation_01/motion_feel.gd",
+      "scripts/dev/player_presentation_01/motion_audio.gd",
+      "scripts/dev/player_presentation_01/weapon_feel_v2.gd",
+      "scripts/enemies/enemy_feedback_01.gd",
+      "scripts/enemies/enemy_feedback_01_body.gd",
+      "scripts/enemies/enemy_feedback_01_remains.gd",
+      "tests/player_presentation_01/feel_trace.gd",
+      "tests/player_presentation_01/capture_feel.py"
+    ],
+    "movie_runtime_commits": [
+      "167ff993d446556936d503b76a271706830081ca",
+      "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "3254984dcc4f0fc2c3c69b463fe5515f81d69010",
+      "4ed0de042db44902c6d8544d9217b617f7dc3271",
+      "5ff0c7aea4fcfb51713363b0b8ec4d4b5f56a22a",
+      "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+      "bd8d130f3677ba80d569f16c05feee1977450c02"
+    ],
+    "recording": "Reused exact committed original Godot MovieMaker evidence; no new game recording or combined-branch build this episode",
+    "personally_checked": "Git/API heads, PR body, immutable handoffs, full changed path sets, selected runtime code, source metadata, ffprobe/decode and sampled actual frames; rendered output QA later in delivery verification; independently compared V7/V8 existing 1560-frame gameplay projections, Router inputs and HP event payloads (zero differences). No new game run.",
+    "not_claimed": [
+      "new complete all-history story scan",
+      "fresh execution of game Harness or integration",
+      "independent full human listening or gamefeel acceptance",
+      "same-seed natural-route gameplay",
+      "two branches integrated into main"
+    ],
+    "failures": [
+      {
+        "stage": "history mirror",
+        "error": "shared alternates caused fetch to repack local links and run out of disk twice",
+        "resolution": "discarded only incomplete temporary packs; disabled alternate objects; depth1 exact commits and bounded batch blob fetch succeeded"
+      },
+      {
+        "stage": "doctor invocation",
+        "error": "doctor does not accept --source",
+        "resolution": "reran python -m video_rush doctor successfully"
+      }
+    ],
+    "evidence_files": [
+      {
+        "id": "player_summary",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md"
+      },
+      {
+        "id": "motion_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md"
+      },
+      {
+        "id": "landing_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md"
+      },
+      {
+        "id": "weapon_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md"
+      },
+      {
+        "id": "feel_audio_provenance",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json"
+      },
+      {
+        "id": "weapon_audio_provenance",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json"
+      },
+      {
+        "id": "freedoom_license",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc"
+      },
+      {
+        "id": "freedoom_credits",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "assets/player_presentation_01/weapon_audio_v2/sources/CREDITS",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/CREDITS"
+      },
+      {
+        "id": "enemy_summary",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/enemy_feedback_01_session_summary.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/enemy_feedback_01_session_summary.md"
+      },
+      {
+        "id": "enemy_readme",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/README.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/README.md"
+      },
+      {
+        "id": "enemy_recipe",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movies/recipe.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/recipe.json"
+      },
+      {
+        "id": "enemy_events",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movie-observations.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movie-observations.json"
+      },
+      {
+        "id": "enemy_source_guard",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movies/after-report.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/after-report.json"
+      },
+      {
+        "id": "enemy_formal_failure",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/independent/formal.log",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/independent/formal.log"
+      },
+      {
+        "id": "enemy_review",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/review.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/review.md"
+      }
+    ],
+    "existing_trace_recheck": {
+      "type": "Independent recheck of existing source traces, not game re-execution",
+      "frames_per_version": 1560,
+      "projection_fields": [
+        "HP",
+        "case",
+        "enemy_position",
+        "enemy_velocity",
+        "frame",
+        "local_frame",
+        "paused",
+        "player_position",
+        "player_velocity",
+        "state"
+      ],
+      "difference_count": 0,
+      "same_seed": true,
+      "same_router_inputs": true,
+      "same_hp_event_payloads_excluding_instance_specific_id": true,
+      "source_traces": {
+        "7": "5adc13960a7af3a83f904bcb8d67bf19072150230a125c03092beeb73937a310",
+        "8": "409814e95f3a0461d69a328a23363be9e74e89085895cc44ea16ecff66d29ce7"
+      },
+      "scope": "Existing fixed positioned fixtures only; no full campaign, gamefeel or device-performance acceptance."
+    },
+    "revision": "Frozen ep004 sources reused. User requested opening subtitle/audio correction, no save/load narrative and an honest ongoing-polish/advice closing; no new game history scan or capture."
+  }
+}
