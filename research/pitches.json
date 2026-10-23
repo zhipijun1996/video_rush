@@ -107,7 +107,7 @@
         150,
         210
       ],
-      "production_status": "ep004_hosted_render_download_verified",
+      "production_status": "ep004_r2_opening_and_closing_revision_download_verified",
       "one_question": "一次命中怎样从扣血数字变成看得见、听得懂的动作反馈？",
       "opening_10_seconds": "先呈现命中反馈，再亮出历史问题：给怪物加击退后，它被推出平台却留在了半空。",
       "hook_status": "authored editorial wording; not an original quote",
@@ -148,12 +148,12 @@
         "feature/enemy-feedback-01": "ce84d01e1f208538a6b6d610bfc55a28e11cb733"
       },
       "scope_limit": "Two separate unmerged candidates; reused original fixture movies, not natural level play or combined main.",
-      "episode_spec": "episodes/ep004.json",
+      "episode_spec": "episodes/ep004-r2.json",
       "delivery": {
-        "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39896051688/artifacts/12476977053",
-        "expires_at": "2026-11-06T03:42:41Z",
-        "duration_seconds": 200.3,
-        "verification": "docs/ep004-verification.json"
+        "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/39901197199/artifacts/12478343783",
+        "expires_at": "2026-11-06T04:40:39Z",
+        "duration_seconds": 197.166667,
+        "verification": "docs/ep004-r2-verification.json"
       }
     },
     {
