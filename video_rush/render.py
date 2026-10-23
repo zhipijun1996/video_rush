@@ -139,6 +139,14 @@ def encode_shot(shot, assets, out, log, *, threads=4):
         filt = (f'[0:v]{crop_filter(crops[0],paths[0])}scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[a];'
                 f'[1:v]{crop_filter(crops[1],paths[1])}scale=954:870:force_original_aspect_ratio=decrease,pad=954:870:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1[b];'
                 '[a][b]hstack=inputs=2,pad=1920:1080:6:100:color=0x0d1724')
+    elif shot.get('safe_frame'):
+        # UI evidence needs all four edges: the ordinary caption bars obscure HUDs.
+        filt = (f'[0:v]{crop_filter(shot.get("crop_rect"),paths[0])}'
+                'scale=1840:780:force_original_aspect_ratio=decrease,'
+                'pad=1920:1080:(ow-iw)/2:110+(780-ih)/2:color=0x0d1724,setsar=1')
+        if paths[0].suffix.lower() not in video_ext:
+            filt += (f",zoompan=z='1+0.01*on/{frames}':x='iw/2-iw/zoom/2':"
+                     "y='ih/2-ih/zoom/2':d=1:s=1920x1080:fps=30,setsar=1")
     elif paths[0].suffix.lower() in video_ext:
         filt = '[0:v]'+crop_filter(shot.get('crop_rect'),paths[0])+'scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1'
     else:

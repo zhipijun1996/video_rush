@@ -47,7 +47,8 @@ def collect(repo, spec, output):
             collected.append(obj)
             continue
         if origin in ('editorial','external'):
-            dest=output/(asset['id']+'.png')
+            suffix=Path(urlparse(asset['url']).path).suffix.lower() if origin=='external' else '.png'
+            dest=output/(asset['id']+(suffix if suffix in ('.mp4','.webm') else '.png'))
             if origin=='editorial':
                 from .graphics import graphic
                 graphic(dest,asset['graphic'])
@@ -63,12 +64,16 @@ def collect(repo, spec, output):
                         total=0
                         while block:=response.read(1024*1024):
                             total+=len(block)
-                            if total>50*1024*1024:raise ValueError('External still exceeds 50MiB')
+                            if total>50*1024*1024:raise ValueError('External media exceeds 50MiB')
                             f.write(block)
                     if sha(tmp)!=asset['sha256']:
                         tmp.unlink();raise ValueError('External asset SHA256 mismatch')
                     tmp.replace(dest)
                 obj=dict(asset,local_path=str(dest.resolve()),source_url=asset['page_url'])
+                if dest.suffix in ('.mp4','.webm'):
+                    obj['ffprobe']=probe(dest)
+                    if not any(s['codec_type']=='video' for s in obj['ffprobe']['streams']):
+                        raise ValueError('External movie must contain a decodable video stream')
             collected.append(obj)
             continue
         if origin!='git':raise ValueError('Unsupported asset origin')

@@ -100,6 +100,22 @@ def test_clip_is_not_looped_to_hide_missing_footage(tmp_path):
         encode_shot({'start':0,'end':4,'assets':['x'],'offsets':[0]}, {'x':{'local_path':str(p)}},tmp_path/'out.mp4',tmp_path/'log')
 
 
+def test_safe_ui_frame_keeps_top_hud_and_bottom_controls_outside_caption_bars(tmp_path):
+    from PIL import Image,ImageDraw
+    source=tmp_path/'ui.png';im=Image.new('RGB',(160,90),'#202020');draw=ImageDraw.Draw(im)
+    draw.rectangle((0,0,159,89),outline='#ff0000',width=6);im.save(source)
+    movie=tmp_path/'out.mp4'
+    encode_shot({'start':0,'end':.3,'assets':['ui'],'offsets':[0],'safe_frame':True},
+                {'ui':{'local_path':str(source)}},movie,tmp_path/'encode.log')
+    frame=tmp_path/'frame.png'
+    subprocess.run(['ffmpeg','-v','error','-y','-i',str(movie),'-frames:v','1',str(frame)],check=True)
+    with Image.open(frame) as image:
+        # Sample all four corners of the complete evidence rectangle.
+        for xy in [(274,125),(1645,125),(274,875),(1645,875)]:
+            red,green,blue=image.getpixel(xy)
+            assert red>180 and green<80 and blue<80
+
+
 def test_failed_or_tampered_movie_cannot_be_prereleased(tmp_path):
     from video_rush.publish import verified_files
     from video_rush.common import sha
@@ -130,6 +146,23 @@ def test_external_media_requires_pinned_hash_and_checks_bytes(tmp_path, monkeypa
     assert collect(tmp_path,{'assets':[asset]},tmp_path/'out')[0]['sha256']==expected
     asset['sha256']='0'*64
     with pytest.raises(ValueError,match='SHA256 mismatch'):collect(tmp_path,{'assets':[asset]},tmp_path/'other')
+
+
+def test_external_archived_movie_keeps_mp4_type_and_probes_real_stream(tmp_path, monkeypatch):
+    import io, hashlib
+    from video_rush import footage
+    movie=tmp_path/'archive.mp4'
+    subprocess.run(['ffmpeg','-v','error','-y','-f','lavfi','-i',
+                    'testsrc2=s=160x90:r=30:d=0.5','-c:v','libx264',str(movie)],check=True)
+    raw=movie.read_bytes()
+    monkeypatch.setattr(footage.urllib.request,'urlopen',lambda *a,**k:io.BytesIO(raw))
+    asset={'id':'archive','origin':'external','url':'https://example.invalid/commit/movie.mp4',
+           'page_url':'https://example.invalid/commit','sha256':hashlib.sha256(raw).hexdigest()}
+    result=collect(tmp_path,{'assets':[asset]},tmp_path/'out')[0]
+    assert Path(result['local_path']).suffix=='.mp4'
+    stream=next(s for s in result['ffprobe']['streams'] if s['codec_type']=='video')
+    assert (stream['width'],stream['height'])==(160,90)
+    assert Path(result['local_path']).read_bytes()==raw
 
 
 def test_posting_materials_have_copyable_title_and_description():

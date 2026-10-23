@@ -1297,5 +1297,100 @@
       "priority": "selected_ep004",
       "reason": "直观反馈对照、实际返工与未解决问题，合成一条完整视频。"
     }
+  },
+  {
+    "id": "S105",
+    "event": "UI统一了，还是不满意：菜单换装与无框HUD",
+    "date": "2026-10-23",
+    "background": "用AI做游戏，菜单与HUD多轮迭代。",
+    "conflict": "技术和样式统一并不代表用户满意；用户明确表示仍不满意，后续可能再改。",
+    "attempts": [
+      "R1原生菜单候选被嫌不好看",
+      "R2生成背景/大钟，统一Fusion字体和铜色面板",
+      "R3无框头像/爱心/单发弹药，真实时间能量环"
+    ],
+    "result": "开发候选；技术记录有限通过，人类审美未通过，不包装成最终成功。",
+    "truth_status": "implemented_development_candidate_user_dissatisfied",
+    "evidence_status": "Immutable source/readable docs, UI code and original saved native/browser media checked; no fresh game run",
+    "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+    "base_commit": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+    "pr": 105,
+    "branch": "feature/demo-ui-01",
+    "sources": [
+      {
+        "id": "ui_delivery",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/worklines/demo_ui_01/delivery.md",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "ui_scope",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/worklines/demo_ui_01/r2_scope.md",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "r2_review",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/evidence/demo_ui_01/r2/title_review.md",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "r3_evidence",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/evidence/demo_ui_01/r3/README.md",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "r2_movie",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/evidence/demo_ui_01/r2/movie-report.json",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "r3_movie",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/evidence/demo_ui_01/r3/movie-report.json",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      },
+      {
+        "id": "r1_movie",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/ea2d6fd7c9d11c226ce52fe8885443137cdc077e/docs/evidence/demo_ui_01/recovered_movie_report.json",
+        "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+        "pr": 105
+      }
+    ],
+    "media": [
+      "title",
+      "pause",
+      "bag",
+      "settings",
+      "map",
+      "hud_old",
+      "hud",
+      "growth",
+      "ring",
+      "released",
+      "baseline",
+      "r1",
+      "r2",
+      "r3"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "Not run; original media sufficient"
+    },
+    "video_potential": {
+      "priority": "selected_ep005",
+      "reason": "直观菜单/HUD变化，以及统一后仍不满意的真实探索。"
+    }
   }
 ]

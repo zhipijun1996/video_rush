@@ -1,0 +1,368 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "baseline",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush-previews/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/before.mp4",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush-previews/blob/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/before.mp4",
+      "sha256": "5b289d777b30e39a6d12d8260a25a96d7edc97a238f9a88f97f779ffd670373f",
+      "blob_sha": "be7cc3ab021552a12c4f42ac14dd70377ca26619",
+      "origin": "external",
+      "kind": "historical_original_recording",
+      "archive_repository": "zhipijun1996/gunman-rush-previews",
+      "archive_commit": "981883aa5870a157199ff1909de49675b561a005",
+      "archive_path": "site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/before.mp4",
+      "runtime_commit": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+      "display_label": "改版前 · 原生实录",
+      "license": "User-authorized own project evidence; project art and third-party rights in attached notices",
+      "truth": "Saved original Godot MovieWriter footage, not a new capture. R3 damage/healing use explicit official-policy UI fixtures. Different rounds have different rules/inputs; no controlled gameplay improvement claim."
+    },
+    {
+      "id": "r1",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush-previews/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/after.mp4",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush-previews/blob/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/after.mp4",
+      "sha256": "fc037d10c264cd26db1664b1e33bc27b26b89af27da1a78600d931ef5627ae08",
+      "blob_sha": "f2ee08c9252b295ecc211d2ac24d71fd880a7183",
+      "origin": "external",
+      "kind": "historical_original_recording",
+      "archive_repository": "zhipijun1996/gunman-rush-previews",
+      "archive_commit": "981883aa5870a157199ff1909de49675b561a005",
+      "archive_path": "site/deliveries/DEMO-UI-01/df5207ccc920f5d48813412a27d9d72dc79510ab/93b03ef086fc/after.mp4",
+      "runtime_commit": "df5207ccc920f5d48813412a27d9d72dc79510ab",
+      "display_label": "第一轮候选 · 原生实录",
+      "license": "User-authorized own project evidence; project art and third-party rights in attached notices",
+      "truth": "Saved original Godot MovieWriter footage, not a new capture. R3 damage/healing use explicit official-policy UI fixtures. Different rounds have different rules/inputs; no controlled gameplay improvement claim."
+    },
+    {
+      "id": "r2",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush-previews/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/1d1d8368ffd03de38e59fbd1140d44c5ba95c403/4df0009a0175/after.mp4",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush-previews/blob/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/1d1d8368ffd03de38e59fbd1140d44c5ba95c403/4df0009a0175/after.mp4",
+      "sha256": "d69d4cf52b02554ac969e6d7a47b432a1fe35ae7baab37f2df5421f5985858dd",
+      "blob_sha": "925ebbe1153d3d398057c6d3f125c612af6c9f0a",
+      "origin": "external",
+      "kind": "historical_original_recording",
+      "archive_repository": "zhipijun1996/gunman-rush-previews",
+      "archive_commit": "981883aa5870a157199ff1909de49675b561a005",
+      "archive_path": "site/deliveries/DEMO-UI-01/1d1d8368ffd03de38e59fbd1140d44c5ba95c403/4df0009a0175/after.mp4",
+      "runtime_commit": "1d1d8368ffd03de38e59fbd1140d44c5ba95c403",
+      "display_label": "第二轮候选 · 原生实录",
+      "license": "User-authorized own project evidence; project art and third-party rights in attached notices",
+      "truth": "Saved original Godot MovieWriter footage, not a new capture. R3 damage/healing use explicit official-policy UI fixtures. Different rounds have different rules/inputs; no controlled gameplay improvement claim."
+    },
+    {
+      "id": "r3",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush-previews/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/8dc2f4e6a2c6f511c22004784cb71b5f3d0d7a96/39407371e603/after.mp4",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush-previews/blob/981883aa5870a157199ff1909de49675b561a005/site/deliveries/DEMO-UI-01/8dc2f4e6a2c6f511c22004784cb71b5f3d0d7a96/39407371e603/after.mp4",
+      "sha256": "ea8fa29a8b45dc256ec4d0a7701d6dc0256c7d24abe57dde130916fb4847ae6e",
+      "blob_sha": "f700d5310d4e5a3160ef3cea6c45c455619b9b6e",
+      "origin": "external",
+      "kind": "historical_original_recording",
+      "archive_repository": "zhipijun1996/gunman-rush-previews",
+      "archive_commit": "981883aa5870a157199ff1909de49675b561a005",
+      "archive_path": "site/deliveries/DEMO-UI-01/8dc2f4e6a2c6f511c22004784cb71b5f3d0d7a96/39407371e603/after.mp4",
+      "runtime_commit": "8dc2f4e6a2c6f511c22004784cb71b5f3d0d7a96",
+      "display_label": "第三轮候选 · 原生实录 / UI验证场景",
+      "license": "User-authorized own project evidence; project art and third-party rights in attached notices",
+      "truth": "Saved original Godot MovieWriter footage, not a new capture. R3 damage/healing use explicit official-policy UI fixtures. Different rounds have different rules/inputs; no controlled gameplay improvement claim."
+    },
+    {
+      "id": "title",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/browser-public/desktop-title.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "pause",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/native/r2/pause.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "bag",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/native/r2/pause-build.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "settings",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/native/r2/settings.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "map",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/browser-public/desktop-map.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "hud_old",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/native/native/formal-hud.png",
+      "display_label": "R2 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "hud",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/hud.png",
+      "display_label": "R3 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "growth",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/health-growth.png",
+      "display_label": "R3 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "ring",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/public-ring/held-0.png",
+      "display_label": "R3 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "released",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/public-ring/released.png",
+      "display_label": "R3 实机截图 · 局部可放大",
+      "license": "User-authorized own project evidence; generated title art and Fusion Pixel font notices attached",
+      "truth": "Exact saved native/browser game screenshot; gentle editorial pan/crop only. Browser viewport is not a physical phone test."
+    },
+    {
+      "id": "ui_delivery",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/worklines/demo_ui_01/delivery.md",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "ui_scope",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/worklines/demo_ui_01/r2_scope.md",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "r2_review",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/title_review.md",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "r3_evidence",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/README.md",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "r2_movie",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r2/movie-report.json",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "r3_movie",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/r3/movie-report.json",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "r1_movie",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/evidence/demo_ui_01/recovered_movie_report.json",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "art_rights",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "docs/worklines/demo_ui_01/asset_sources.json",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "font_source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "assets/ui/demo_ui_01/r2/fonts/source.json",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "font_license",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "assets/ui/demo_ui_01/r2/fonts/OFL.txt",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "ark_license",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "assets/ui/demo_ui_01/r2/fonts/LICENSES/ark-pixel/OFL.txt",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "cubic_license",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "assets/ui/demo_ui_01/r2/fonts/LICENSES/cubic-11/OFL.txt",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "galmuri_license",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ea2d6fd7c9d11c226ce52fe8885443137cdc077e",
+      "path": "assets/ui/demo_ui_01/r2/fonts/LICENSES/galmuri/LICENSE.txt",
+      "display_label": "随片原始证据 / 权利说明",
+      "license": "Original project documentation or required font notice",
+      "truth": "Original source record; not a fresh game test or human aesthetic approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "question",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic",
+      "truth": "Editorial explanation, not game UI or a fabricated user quotation",
+      "graphic": {
+        "kicker": "失序之钟 · UI返工记录",
+        "lines": [
+          "UI 统一了",
+          "就会好看了吗？"
+        ],
+        "face": "thinking",
+        "font_size": 72,
+        "footer": "开发候选 · 美术和使用体验仍待打磨"
+      }
+    },
+    {
+      "id": "rework",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic",
+      "truth": "Editorial explanation, not game UI or a fabricated user quotation",
+      "graphic": {
+        "kicker": "失序之钟 · UI返工记录",
+        "lines": [
+          "这版先留着",
+          "满意？还早。"
+        ],
+        "face": "panic",
+        "font_size": 72,
+        "footer": "开发候选 · 美术和使用体验仍待打磨"
+      }
+    },
+    {
+      "id": "next",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic",
+      "truth": "Editorial explanation, not game UI or a fabricated user quotation",
+      "graphic": {
+        "kicker": "失序之钟 · UI返工记录",
+        "lines": [
+          "下一轮想试",
+          "少一点装饰",
+          "多看整体搭不搭"
+        ],
+        "face": "thinking",
+        "font_size": 72,
+        "footer": "开发候选 · 美术和使用体验仍待打磨"
+      }
+    }
+  ]
+}

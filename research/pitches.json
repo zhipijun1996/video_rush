@@ -312,6 +312,31 @@
         "不把测试推荐路线顺序说成世界拓扑随机。"
       ],
       "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+    },
+    {
+      "id": "V007",
+      "title": "UI统一了，怎么还是不满意？我用AI做游戏又返工了",
+      "slot": "user_selected_UI_episode",
+      "production_status": "ep005_in_local_production",
+      "one_question": "统一界面样式之后，为什么还需要继续改？",
+      "story_beats": [
+        "旧信息框与当前无框HUD",
+        "统一标题、字体、面板、暂停分页",
+        "真实资源提示，规则变化单独说明",
+        "用户仍不满意；下一轮尝试减法"
+      ],
+      "sources": [
+        "ui_delivery",
+        "ui_scope",
+        "r2_review",
+        "r3_evidence"
+      ],
+      "truth_boundaries": [
+        "不同版本输入/规则不同，不作同条件手感比较",
+        "不代用户编造具体不满意原因",
+        "不把技术检查通过说成审美通过"
+      ],
+      "episode_spec": "episodes/ep005.json"
     }
   ],
   "sources": [
