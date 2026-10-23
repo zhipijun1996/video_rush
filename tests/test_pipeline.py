@@ -116,6 +116,34 @@ def test_safe_ui_frame_keeps_top_hud_and_bottom_controls_outside_caption_bars(tm
             assert red>180 and green<80 and blue<80
 
 
+def test_aac_cuts_keep_late_voice_pulses_on_timeline_across_channel_changes(tmp_path):
+    import array, math, wave
+    from video_rush.render import concatenate_cuts
+    from video_rush.common import probe
+    # Short AAC edits reproduce delay accumulation much sooner than long shots.
+    sources=[]
+    for channels in [1,2]:
+        p=tmp_path/f'cut-{channels}.mp4'
+        pulse=r'aevalsrc=if(between(t\,0.06\,0.10)\,0.7*sin(2*PI*1000*t)\,0):s=48000:d=0.2333333333'
+        subprocess.run(['ffmpeg','-v','error','-y','-f','lavfi','-i',
+            'color=blue:s=64x64:r=30:d=0.2333333333','-f','lavfi','-i',pulse,
+            '-c:v','libx264','-c:a','aac','-ac',str(channels),'-t','0.2333333333',str(p)],check=True)
+        sources.append(p)
+    shots=[{'start':i*7/30,'end':(i+1)*7/30} for i in range(20)]
+    video,audio=concatenate_cuts([sources[i%2] for i in range(20)],shots,tmp_path/'out',tmp_path/'logs')
+    with wave.open(str(audio)) as stream:
+        assert stream.getnframes()==20*11200
+        assert (stream.getnchannels(),stream.getframerate())==(2,48000)
+        samples=array.array('h',stream.readframes(stream.getnframes()))
+    def rms(start,end):
+        window=samples[round(start*96000):round(end*96000)]
+        return math.sqrt(sum(x*x for x in window)/len(window))
+    for shot in shots:
+        assert rms(shot['start']+.07,shot['start']+.09)>5000
+        assert rms(shot['start']+.15,shot['start']+.18)<100
+    assert abs(float(probe(video)['format']['duration'])-20*7/30)<.002
+
+
 def test_failed_or_tampered_movie_cannot_be_prereleased(tmp_path):
     from video_rush.publish import verified_files
     from video_rush.common import sha

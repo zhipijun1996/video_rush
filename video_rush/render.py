@@ -254,6 +254,33 @@ def crop_filter(rect,path):
     return f'crop={w}:{h}:{x}:{y},'
 
 
+def concatenate_cuts(paths, shots, output, logs):
+    """Decode each AAC edit separately to avoid accumulating encoder delay."""
+    output, logs = Path(output), Path(logs)
+    output.mkdir(parents=True, exist_ok=True); logs.mkdir(parents=True, exist_ok=True)
+    if not paths or len(paths) != len(shots):
+        raise ValueError('Each cut needs one timeline sample budget')
+    listing = output / 'cuts-concat.txt'
+    listing.write_text(''.join("file '" + str(Path(p).resolve()).replace("'", "'\\''") + "'\n"
+        + f'duration {s["end"]-s["start"]:.12f}\n' for p,s in zip(paths,shots)))
+    video, audio = output/'joined.mp4', output/'continuous-audio.wav'
+    run(['ffmpeg','-y','-v','warning','-f','concat','-safe','0','-i',listing,
+         '-map','0:v:0','-an','-c:v','copy',video],log=logs/'concat.log',timeout=180)
+    args=['ffmpeg','-y','-v','warning','-threads','4','-filter_complex_threads','1']
+    filters=[]
+    for i,(p,s) in enumerate(zip(paths,shots)):
+        args += ['-i',p]
+        samples=round(s['end']*48000)-round(s['start']*48000)
+        if samples <= 0: raise ValueError('Cut audio sample budget must be positive')
+        filters.append(f'[{i}:a]aresample=48000,aformat=channel_layouts=stereo,'
+                       f'apad,atrim=end_sample={samples},asetpts=PTS-STARTPTS[a{i}]')
+    filters.append(''.join(f'[a{i}]' for i in range(len(paths)))
+                   +f'concat=n={len(paths)}:v=0:a=1[continuous]')
+    run([*args,'-filter_complex',';'.join(filters),'-map','[continuous]',
+         '-c:a','pcm_s16le','-ar','48000',audio],log=logs/'continuous-audio.log',timeout=300)
+    return video,audio
+
+
 def cover(path, left, right, design=None):
     if design and design.get('layout')=='intro':
         im=ImageOps.fit(Image.open(right).convert('RGB'),(1920,1080))

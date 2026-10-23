@@ -10,7 +10,7 @@ from pathlib import Path
 from .common import ROOT, read, write, sha, digest, run, duration
 from .footage import collect
 from .narration import narrate
-from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans
+from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans, concatenate_cuts
 from .quality import validate
 from .publish import posting_copy
 from .subtitles import narration_cues
@@ -173,22 +173,22 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
                 raw.unlink();write(cache,{'key':k,'sha256':sha(p)})
             muxed.append(p)
             print(f'  rendered {s["id"]}',flush=True)
-        lst=cuts/'concat.txt';lst.write_text(''.join("file '"+str(p).replace("'","'\\''")+"'\n" for p in muxed))
-        joined=output/'joined.mp4'
-        run(['ffmpeg','-y','-v','warning','-f','concat','-safe','0','-i',lst,'-c','copy',joined],log=logs/'concat.log',timeout=180)
-        cmd=['ffmpeg','-y','-v','warning','-threads','4','-i',joined]
+        joined,continuous=concatenate_cuts(muxed,timeline['shots'],output,logs)
+        cmd=['ffmpeg','-y','-v','warning','-threads','4','-i',joined,'-i',continuous]
         if music:
             if not music_license:raise ValueError('--music requires --music-license')
             from .graphics import effects
             effects(output/'original-effects.wav',timeline)
             cmd+=['-stream_loop','-1','-i',music,'-i',output/'original-effects.wav','-filter_complex',
-                  f'[0:a]asplit=2[voice][side];[1:a]volume={spec.get("music_gain",.16)},afade=t=in:st=0:d=1,afade=t=out:st={max(0,timeline["duration"]-3)}:d=3[bg];[bg][side]sidechaincompress=threshold=0.025:ratio=8:attack=20:release=250[duck];[voice][duck][2:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.9[mix]',
+                  f'[1:a]asplit=2[voice][side];[2:a]volume={spec.get("music_gain",.16)},afade=t=in:st=0:d=1,afade=t=out:st={max(0,timeline["duration"]-3)}:d=3[bg];[bg][side]sidechaincompress=threshold=0.025:ratio=8:attack=20:release=250[duck];[voice][duck][3:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.9[mix]',
                   '-map','0:v','-map','[mix]']
+        else:
+            cmd+=['-map','0:v','-map','1:a']
         cmd+=['-vf',f'scale=in_range=auto:out_range=tv,format=yuv420p,ass={output}/subtitles.ass','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-color_range','tv','-threads','4','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',output/'final.mp4']
         run(cmd,log=logs/'final-render.log',timeout=1200)
         cover(output/'cover.png',assets[spec['cover_assets'][0]]['local_path'],assets[spec['cover_assets'][1]]['local_path'],spec.get('cover'))
         return [output/'final.mp4',output/'cover.png']
-    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
+    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'composition_code':sha(Path(__file__)),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':3,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
     def validation():
         report=validate(output,spec,timeline,sources)
         if not report['technical']['passed']:raise RuntimeError('Technical quality failed; inspect report.json and logs')

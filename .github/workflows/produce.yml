@@ -49,9 +49,15 @@ jobs:
           python-version: '3.12'
           cache: pip
       - name: Install free tools
+        timeout-minutes: 10
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg fonts-noto-cjk xvfb
+          # The hosted Azure archive mirror stalled during an actual episode run.
+          # Use the official HTTPS Ubuntu mirror and avoid optional GPU packages.
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb
           python -m pip install -e '.[test]'
           pytest -q
       - name: Fetch only exact game commits and media blobs

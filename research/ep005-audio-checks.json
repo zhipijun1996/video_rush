@@ -1,0 +1,176 @@
+{
+  "episode": "ep005",
+  "pre_fix": {
+    "final_sha256": "c27168d0301786209d9cf5c12f0db0560cc2874e3d2897918904253966fc469c",
+    "decoded_audio_seconds": 221.9733125,
+    "timeline_seconds": 221,
+    "first_six_window_lag_seconds": [
+      0.03125,
+      0.059625,
+      0.081,
+      0.111375,
+      0.141,
+      0.17425
+    ],
+    "raw_log": "build/research/ep005/pre-audio-fix-voice-windows.log"
+  },
+  "post_fix": {
+    "final_sha256": "bff78f630720cf4ae737292f12e7ad25004f9265d29451a926ff114fbcead09c",
+    "decoded_audio_seconds": 221.0133125,
+    "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+    "passed": true,
+    "shots": [
+      {
+        "shot": "u01",
+        "correlation": 0.9643062353134155,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "u02",
+        "correlation": 0.9908220171928406,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u03",
+        "correlation": 0.9925681352615356,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u04",
+        "correlation": 0.9838427305221558,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "u05",
+        "correlation": 0.9807587265968323,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u06",
+        "correlation": 0.915930986404419,
+        "lag_seconds": 0.004875
+      },
+      {
+        "shot": "u07",
+        "correlation": 0.9430444240570068,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u08",
+        "correlation": 0.9383994340896606,
+        "lag_seconds": 0.004875
+      },
+      {
+        "shot": "u09",
+        "correlation": 0.9845879077911377,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u10",
+        "correlation": 0.9920140504837036,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u11",
+        "correlation": 0.945971667766571,
+        "lag_seconds": 0.004875
+      },
+      {
+        "shot": "u12",
+        "correlation": 0.9785823225975037,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u13",
+        "correlation": 0.9518998265266418,
+        "lag_seconds": 0.009875
+      },
+      {
+        "shot": "u14",
+        "correlation": 0.9816299676895142,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u15",
+        "correlation": 0.947260856628418,
+        "lag_seconds": 0.004875
+      },
+      {
+        "shot": "u16",
+        "correlation": 0.9779866337776184,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u17",
+        "correlation": 0.9488524794578552,
+        "lag_seconds": 0.005125
+      },
+      {
+        "shot": "u18",
+        "correlation": 0.9624279737472534,
+        "lag_seconds": 0.005125
+      },
+      {
+        "shot": "u19",
+        "correlation": 0.9674920439720154,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "u20",
+        "correlation": 0.9871170520782471,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u21",
+        "correlation": 0.960059404373169,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u22",
+        "correlation": 0.9774598479270935,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u23",
+        "correlation": 0.9605527520179749,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u24",
+        "correlation": 0.9801802039146423,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u25",
+        "correlation": 0.9293674230575562,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u26",
+        "correlation": 0.9331871271133423,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u27",
+        "correlation": 0.9929905533790588,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u28",
+        "correlation": 0.9891833662986755,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "u29",
+        "correlation": 0.921515703201294,
+        "lag_seconds": 0.004875
+      },
+      {
+        "shot": "u30",
+        "correlation": 0.9845198392868042,
+        "lag_seconds": 0.004875
+      }
+    ]
+  },
+  "human_listening": "pending"
+}

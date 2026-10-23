@@ -102,6 +102,9 @@ def validate(output, spec, timeline, sources):
       'source_labels_in_bounds':all(s['start']<=c['start']<c['end']<=s['end']+.02 for s in timeline['shots'] for c in s.get('source_cues',[])),
       'audible_tts_signal':metrics['audible_signal'] and narration_receipts_valid(output,spec),
       'no_obvious_clipping':metrics['clipped_fraction']<.0001,
+      # audio_metrics decodes at16kHz. MP4 duration alone can conceal repeated
+      # AAC priming samples whose timestamps were reset by packet concatenation.
+      'decoded_audio_duration_matches_timeline':abs(metrics['decoded_samples']/16000-timeline['duration'])<.08,
       'requested_music_source_valid':not music or (bgm['metrics']['audible_signal'] and (not spec.get('music_asset') or bgm['sha256']==spec['music_asset']['sha256'])),
       'sources_present_and_hash_match':all(Path(s['local_path']).exists() and sha(s['local_path'])==s['sha256'] for s in sources['assets']),
       'no_long_black':not black,'no_unexpected_long_freeze':not unexpected}
