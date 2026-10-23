@@ -4,6 +4,8 @@
 
 ## 当前下载方式（用户最新指示）
 
+最新一期 **ep004《打中了，却像没打中？我用AI给游戏补点打击感》**：[手机下载成片、封面与标题简介 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39896051688/artifacts/12476977053)，约22.6MB，3分20秒，保留至2026-11-06。根据最新人物动作与怪物受击/死亡两个分支制作，含反馈开关和死亡方案对比、对应原游戏音效、指定轻BGM及少量短梗。两个分支尚未合主线，使用原生开发实录与实弹定位样板，不冒称已整合正式关卡。26项本地/CI测试通过；已下载核对ZIP、29份交付文件、30份配音回执、42项素材元数据和20份来源/许可证，重算1560帧旧新轨迹并解码整片。手机试听与观感待审核。[连续口播](docs/ep004-script.md) · [制作说明](docs/ep004.md) · [实际验证](docs/ep004-verification.json)。
+
 最新首期补充版 **ep001-r3**：[手机下载成片、封面、投稿资料与五张原图 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39719651258/artifacts/12400433573)，约54.1MB，4分05秒，保留至2026-11-05。加入五张上传概念图、随机地图与固定构图的冲突、TileSet的适配与难点，以及三层视差原理动画＋真实家园录像。保留4399开场、短表情转场和指定轻BGM；概念HUD不当作已实现玩法。24项测试通过，已下载核对ZIP、14份交付文件、35份配音回执、五张原始JPEG和25份Git素材元数据，并解码整片。文稿：[连续口播](docs/ep001-r3-script.md)；[修订说明](docs/ep001-r3.md)、[验证记录](docs/ep001-r3-verification.json)。手机完整试听与观感待审核。
 
 最新九武器口播修订版 **ep003-r3**：[手机下载成片、封面与投稿资料 ZIP](https://github.com/zhipijun1996/video_rush/actions/runs/39700871769/artifacts/12394130343)，约51.7MB，4分22秒，保留至2026-11-05。按用户反馈删除强行幽默，改用正常口语和少量贴合语境的网络表达；保留九种武器、升级分支、真实关卡测试和指定BGM。已下载校验ZIP与文件哈希、核对34份配音回执和14组实机轨迹，并解码整片；手机完整试听与观感待审核。文稿：[连续口播](docs/ep003-r3-script.md)，证据：[修订说明](docs/ep003-r3.md)、[执行验证](docs/ep003-r3-verification.json)。
@@ -18,7 +20,7 @@
 python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg
 ```
 
-每块最多48KB，最多16块；超限明确失败，不无限派发。`receive-music.yml`只接收音轨块，`produce.yml`执行全部十阶段、技术验收并上传下载包。必须确认实际运行成功与成品hash；派发不等于交付。
+每块最多48KB，最多16块；超限明确失败，不无限派发。`receive-music.yml`接收有界的请求媒体块（音轨及可选原图），`produce.yml`执行全部十阶段、技术验收并上传下载包。必须确认实际运行成功与成品hash；派发不等于交付。
 
 ## 手机使用
 
@@ -26,7 +28,7 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg
 
 系统也保留 **GitHub预发布** 交付能力，须先恢复附件上传授权。恢复后可打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
 
-在Codex中说“用Video Rush制作一期关于……的视频”即可。当前宿主按四个Skills研究、创作、在本地渲染验收，提交代码后上传预发布。手机用户无需剪辑、写JSON或操作Actions。已有分镜可以一条CLI完成；未知主题会先形成director-brief，Codex应继续编写与执行，不能把brief交给用户当成片。
+在Codex中说“用Video Rush制作一期关于……的视频”即可。当前宿主按四个Skills研究、创作、在本地渲染验收，提交代码后通过Actions重新生产并验证下载包。手机用户无需剪辑、写JSON或操作Actions。已有分镜可以一条CLI完成；未知主题会先形成director-brief，Codex应继续编写与执行，不能把brief交给用户当成片。
 
 默认风格已改为轻快、紧凑、有个人感：适度反转和自嘲、原创梗图、少量音效与轻BGM（用户指定音轨优先，人声期间自动压低，首尾淡入淡出）。简单介绍约2分钟，其余默认3–5分钟；不凑时长。详见[编辑风格](docs/editorial-style.md)。
 
