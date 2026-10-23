@@ -1132,5 +1132,170 @@
       "Singularity initial UP aim retargeted before launch to diagonal route",
       "Actual committed damage and recovered resources in formal enemy window"
     ]
+  },
+  {
+    "id": "S_PLAYER_FEEL_01",
+    "event": "人物动作与武器反馈：先做小样，保留跑步失败",
+    "date": "2026-10-23",
+    "background": "用户要求介绍最新两条表现优化分支，素材来自既有原生录像。",
+    "conflict": "动作能运行不代表状态清楚；两版新run图被拒，握持衔接仍未解决。",
+    "attempts": [
+      "idle/fall各六帧、位移驱动旧run、起跳/落地尘效",
+      "按真实高度和落速区分较重落地，视觉收尾可取消",
+      "开火/墙面接触/成功伤害音分离，局部武器V2表现"
+    ],
+    "result": "任务候选可观察；尚未合main，完整动作和用户/真机手感未验。",
+    "truth_status": "draft_quality_pending",
+    "evidence_status": "Immutable branch documents, selected runtime code, saved movies and source receipts personally inspected; no fresh game capture/integration or human acceptance",
+    "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+    "base_commit": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+    "pr": null,
+    "branch": "feature/player-presentation-01-motion-candidate",
+    "sources": [
+      {
+        "id": "player_summary",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md"
+      },
+      {
+        "id": "motion_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md"
+      },
+      {
+        "id": "landing_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md"
+      },
+      {
+        "id": "weapon_handoff",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md"
+      },
+      {
+        "id": "feel_audio_provenance",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json"
+      },
+      {
+        "id": "weapon_audio_provenance",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json"
+      },
+      {
+        "id": "freedoom_license",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc"
+      },
+      {
+        "id": "freedoom_credits",
+        "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "path": "assets/player_presentation_01/weapon_audio_v2/sources/CREDITS",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/CREDITS"
+      }
+    ],
+    "media": [
+      "body",
+      "dust",
+      "landing",
+      "weapons",
+      "run_reject"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "Not run; real saved source clips sufficient. Existing source drivers documented; never changed original game checkout."
+    },
+    "video_potential": {
+      "priority": "selected_ep004",
+      "reason": "直观反馈对照、实际返工与未解决问题，合成一条完整视频。"
+    }
+  },
+  {
+    "id": "S104",
+    "event": "怪物真挨打、真倒下：从翻活图到死亡姿态",
+    "date": "2026-10-23",
+    "background": "用户要求介绍最新两条表现优化分支，素材来自既有原生录像。",
+    "conflict": "受击/死相改善，但live↔hurt结构跳变及正式尸体读档仍失败。",
+    "attempts": [
+      "两个物种和两种继承链接原APPLIED/epoch门禁",
+      "翻活图、爆裂消失等旧方案保留，被新帧留尸替代",
+      "撤回被嫌怪的v7死亡声，保留当前伤/死帧及尸体"
+    ],
+    "result": "整体REJECT/draft，未合main；局部进展与剩余失败同时展示。",
+    "truth_status": "draft_quality_pending",
+    "evidence_status": "Immutable branch documents, selected runtime code, saved movies and source receipts personally inspected; no fresh game capture/integration or human acceptance",
+    "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+    "base_commit": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+    "pr": 104,
+    "branch": "feature/enemy-feedback-01-accepted-sample",
+    "sources": [
+      {
+        "id": "enemy_summary",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/enemy_feedback_01_session_summary.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/enemy_feedback_01_session_summary.md"
+      },
+      {
+        "id": "enemy_readme",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/README.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/README.md"
+      },
+      {
+        "id": "enemy_recipe",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movies/recipe.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/recipe.json"
+      },
+      {
+        "id": "enemy_events",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movie-observations.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movie-observations.json"
+      },
+      {
+        "id": "enemy_source_guard",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/movies/after-report.json",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/after-report.json"
+      },
+      {
+        "id": "enemy_formal_failure",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/independent/formal.log",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/independent/formal.log"
+      },
+      {
+        "id": "enemy_review",
+        "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "path": "docs/evidence/enemy_feedback_01/v8/review.md",
+        "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/review.md"
+      }
+    ],
+    "media": [
+      "old_flip",
+      "old_burst",
+      "enemy",
+      "legacy",
+      "enemy_compare",
+      "neighbors"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "Not run; real saved source clips sufficient. Existing source drivers documented; never changed original game checkout."
+    },
+    "video_potential": {
+      "priority": "selected_ep004",
+      "reason": "直观反馈对照、实际返工与未解决问题，合成一条完整视频。"
+    }
   }
 ]

@@ -1,0 +1,547 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "assets": [
+    {
+      "id": "body",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/body-candidate-v1.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+      "pr": null,
+      "kind": "original_game_recording",
+      "display_label": "人物动作候选 · 原生实录 · 未合主线",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "dust",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/foot-dust-comparison-v2.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "5ff0c7aea4fcfb51713363b0b8ec4d4b5f56a22a",
+      "pr": null,
+      "kind": "original_game_recording",
+      "display_label": "起跳／落地反馈开关对照 · 原生实录",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "landing",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/feel-v1/landing-feel-comparison.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "4ed0de042db44902c6d8544d9217b617f7dc3271",
+      "pr": null,
+      "kind": "original_game_recording",
+      "display_label": "家园落地反馈候选 · 原生实录 · 未合主线",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "weapons",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/weapon-v2/weapon-v2-comparison.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "3254984dcc4f0fc2c3c69b463fe5515f81d69010",
+      "pr": null,
+      "kind": "original_game_recording",
+      "display_label": "家园训练柱 · 武器反馈候选 · 原生实录",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "old_flip",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v3/final-movies/after.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "bd8d130f3677ba80d569f16c05feee1977450c02",
+      "pr": 104,
+      "kind": "original_game_recording",
+      "display_label": "已弃用早期候选 · 翻转活图留尸",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "old_burst",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v5/rejected-rectangle/after.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "167ff993d446556936d503b76a271706830081ca",
+      "pr": 104,
+      "kind": "original_game_recording",
+      "display_label": "已弃用死亡候选 · 爆裂消失",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "enemy",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/after-raw.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "original_game_recording",
+      "display_label": "怪物当前候选 · 定位实弹测试 · 未合主线",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "legacy",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/legacy-raw.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "original_game_recording",
+      "display_label": "另一套既有外观 · 定位实弹测试 · 未合主线",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "enemy_compare",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/comparison.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "original_game_comparison",
+      "display_label": "怪物 V7→V8 · 同条件实弹样板对照",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance.",
+      "before_runtime_commit": "0e37e04528b4f71af75e74c5370d656e1e122588"
+    },
+    {
+      "id": "run_reject",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/rejected-run-v2.png",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": null,
+      "pr": null,
+      "kind": "rejected_source_art",
+      "display_label": "未采用的跑步原画 · 非实机",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "charger_sheet",
+      "origin": "git",
+      "path": "assets/enemy_feedback_01/frames_v8/underworld_charger.png",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": null,
+      "pr": 104,
+      "kind": "source_animation_sheet",
+      "display_label": "受伤／死亡动作原图 · 非实机",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "diver_sheet",
+      "origin": "git",
+      "path": "assets/enemy_feedback_01/frames_v8/underworld_diver.png",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": null,
+      "pr": 104,
+      "kind": "source_animation_sheet",
+      "display_label": "飞怪动作原图 · 非实机",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "impact",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/independent/pixels/plains_charger-impact.png",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "positioned_game_screenshot",
+      "display_label": "命中定点取证截图 · 非连续路线",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "neighbors",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/independent/media/movie-legacy-diver-hurt-neighbors.png",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "original_frame_contact_sheet",
+      "display_label": "原片连续抽帧 · 恢复过渡仍待修",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance."
+    },
+    {
+      "id": "idle_still",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/body-candidate-v1.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+      "pr": null,
+      "kind": "original_game_screenshot",
+      "display_label": "动作原片抽帧 · 待机",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance.",
+      "frame_seconds": 1,
+      "frame_crop": [
+        420,
+        300,
+        300,
+        300
+      ]
+    },
+    {
+      "id": "fall_still",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/body-candidate-v1.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+      "pr": null,
+      "kind": "original_game_screenshot",
+      "display_label": "动作原片抽帧 · 下落",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance.",
+      "frame_seconds": 14.9,
+      "frame_crop": [
+        490,
+        390,
+        300,
+        300
+      ]
+    },
+    {
+      "id": "cover_player",
+      "origin": "git",
+      "path": "docs/evidence/PLAYER-PRESENTATION-01/motion-v1/body-candidate-v1.mp4",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "runtime_commit": "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+      "pr": null,
+      "kind": "original_game_screenshot",
+      "display_label": "人物候选原片抽帧",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance.",
+      "frame_seconds": 1,
+      "frame_crop": [
+        420,
+        300,
+        300,
+        300
+      ]
+    },
+    {
+      "id": "cover_enemy",
+      "origin": "git",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/legacy-raw.mp4",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "runtime_commit": "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+      "pr": 104,
+      "kind": "original_game_screenshot",
+      "display_label": "怪物候选原片抽帧",
+      "license": "User-authorized own project evidence; third-party attribution and unresolved AI asset provenance detailed in episode rights.",
+      "truth": "Existing committed game evidence; exact source bytes. Development consumers/positioned fixtures, not an integrated latest-main playthrough or human acceptance.",
+      "frame_seconds": 14,
+      "frame_crop": [
+        775,
+        160,
+        430,
+        430
+      ]
+    },
+    {
+      "id": "question",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic; no external meme image/audio",
+      "truth": "Authored explanation, not a game screenshot or verbatim development report",
+      "graphic": {
+        "kicker": "失序之钟 · 开发记录",
+        "lines": [
+          "操作、伤害都一样",
+          "只改动作和声音",
+          "感觉能差多少？"
+        ],
+        "face": "thinking",
+        "font_size": 65,
+        "footer": "本期对比：两个独立开发候选，尚未整合"
+      }
+    },
+    {
+      "id": "phase",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic; no external meme image/audio",
+      "truth": "Authored explanation, not a game screenshot or verbatim development report",
+      "graphic": {
+        "kicker": "失序之钟 · 开发记录",
+        "lines": [
+          "开枪 ≠ 命中",
+          "接触 ≠ 扣血",
+          "真正扣血 → 受击反馈"
+        ],
+        "face": "thinking",
+        "font_size": 65,
+        "footer": "编辑解释图 · 据两分支已接入的事件整理"
+      }
+    },
+    {
+      "id": "save_gap",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic; no external meme image/audio",
+      "truth": "Authored explanation, not a game screenshot or verbatim development report",
+      "graphic": {
+        "kicker": "失序之钟 · 开发记录",
+        "lines": [
+          "现场：倒地留尸",
+          "读档：仍有失败",
+          "这还没做完"
+        ],
+        "face": "panic",
+        "font_size": 65,
+        "footer": "原分支正式保存测试未通过 · 不代表视频制作失败"
+      }
+    },
+    {
+      "id": "lesson",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush vector graphic; no external meme image/audio",
+      "truth": "Authored explanation, not a game screenshot or verbatim development report",
+      "graphic": {
+        "kicker": "失序之钟 · 开发记录",
+        "lines": [
+          "动作开始：看得懂",
+          "真正命中：有回应",
+          "动作结束：收得住"
+        ],
+        "face": "happy",
+        "font_size": 65,
+        "footer": "个人开发体会 · 效果仍要实际体验"
+      }
+    },
+    {
+      "id": "player_summary",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "motion_handoff",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "landing_handoff",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "weapon_handoff",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "feel_audio_provenance",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "weapon_audio_provenance",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "freedoom_license",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "freedoom_credits",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "assets/player_presentation_01/weapon_audio_v2/sources/CREDITS",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_summary",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/enemy_feedback_01_session_summary.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_readme",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/README.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_recipe",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/recipe.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_events",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/movie-observations.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_source_guard",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/after-report.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_formal_failure",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/independent/formal.log",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "enemy_review",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/review.md",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "随片来源文件／权利声明",
+      "license": "Exact source documentation and required third-party license notice",
+      "truth": "Source assertion or license text; not fresh execution by Video Rush",
+      "preserve_evidence": true
+    },
+    {
+      "id": "extra_receipt_0",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/after.json.gz",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "原生源证据",
+      "license": "Source project record",
+      "truth": "Original trace/receipt, not new execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "extra_receipt_1",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v7/movies/after.json.gz",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "原生源证据",
+      "license": "Source project record",
+      "truth": "Original trace/receipt, not new execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "extra_receipt_2",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v7/movies/after-report.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "原生源证据",
+      "license": "Source project record",
+      "truth": "Original trace/receipt, not new execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "extra_receipt_3",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v3/final-movies/after-report.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "原生源证据",
+      "license": "Source project record",
+      "truth": "Original trace/receipt, not new execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "extra_receipt_4",
+      "origin": "git",
+      "kind": "source_document",
+      "path": "docs/evidence/enemy_feedback_01/v5/rejected-rectangle/report.json",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "display_label": "原生源证据",
+      "license": "Source project record",
+      "truth": "Original trace/receipt, not new execution",
+      "preserve_evidence": true
+    }
+  ]
+}

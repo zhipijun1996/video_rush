@@ -89,6 +89,31 @@ def collect(repo, spec, output):
                    source_url=f'https://github.com/{spec["repository"]}/blob/{sha_full}/{path.as_posix()}')
         if path.suffix.lower() in ('.mp4', '.webm', '.avi'):
             obj['ffprobe'] = probe(dest)
+        if 'frame_seconds' in asset:
+            # Cover/detail stills retain both the exact movie blob and the extraction recipe.
+            import math
+            from .render import crop_filter
+            seconds = asset['frame_seconds']
+            if (path.suffix.lower() not in ('.mp4', '.webm', '.avi') or
+                    not isinstance(seconds, (int, float)) or not math.isfinite(seconds) or
+                    not 0 <= seconds < float(obj['ffprobe']['format']['duration'])):
+                raise ValueError('Frame extraction requires a finite time inside a real source movie')
+            filt = crop_filter(asset.get('frame_crop'), dest).rstrip(',')
+            frame = output / (asset['id'] + '.png')
+            args = ['ffmpeg', '-v', 'error', '-y', '-ss', str(seconds), '-i', dest,
+                    '-frames:v', '1']
+            if filt: args += ['-vf', filt]
+            run([*args, frame], timeout=60)
+            obj.update(source_local_path=str(dest.resolve()), source_sha256=obj['sha256'],
+                       source_ffprobe=obj.pop('ffprobe'), local_path=str(frame.resolve()),
+                       sha256=sha(frame), extraction={'seconds': seconds,
+                       'crop': asset.get('frame_crop'), 'method': 'FFmpeg exact movie frame; optional crop only'})
+        if asset.get('preserve_evidence'):
+            import shutil
+            evidence = output.parent / 'source-evidence' / (asset['id'] + dest.suffix)
+            evidence.parent.mkdir(exist_ok=True)
+            shutil.copyfile(dest, evidence)
+            obj['preserved_evidence'] = str(evidence.relative_to(output.parent))
         collected.append(obj)
     # Preserve the exact five user originals for future recovery from delivery.
     for item in collected:

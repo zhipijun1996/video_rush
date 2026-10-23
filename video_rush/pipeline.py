@@ -5,6 +5,7 @@ import math
 import re
 import time
 import traceback
+from contextlib import contextmanager
 from pathlib import Path
 from .common import ROOT, read, write, sha, digest, run, duration
 from .footage import collect
@@ -38,7 +39,31 @@ class Stages:
         write(self.path,self.state)
 
 
+@contextmanager
+def production_lock(output):
+    """One writer per episode, including validation and delivery manifests."""
+    import fcntl
+    output=Path(output);output.mkdir(parents=True,exist_ok=True)
+    with (output/'.production.lock').open('a') as handle:
+        try:
+            fcntl.flock(handle,fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise RuntimeError('Episode production already running: '+str(output)) from exc
+        try:
+            yield
+        finally:
+            fcntl.flock(handle,fcntl.LOCK_UN)
+
+
 def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, music=None, music_license=None):
+    spec=read(Path(spec_path).resolve())
+    output=Path(output or ROOT/'build'/'episodes'/spec['episode']).resolve()
+    with production_lock(output):
+        return _produce(spec_path,repo,output=output,backend=backend,piper_model=piper_model,
+                        music=music,music_license=music_license)
+
+
+def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, music=None, music_license=None):
     spec_path=Path(spec_path).resolve();spec=read(spec_path)
     output=Path(output or ROOT/'build'/'episodes'/spec['episode']).resolve()
     if spec.get('music_asset') and not music:
@@ -57,10 +82,10 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     stages=runner.execute
     def research():
         scope=ROOT/'build/research/scope.json'
-        snapshot=read(scope) if scope.exists() else {'status':'using_frozen_authored_sources','repository':spec['repository'],'coverage':'episode assets and authored claims only; run research for a new complete scan'}
+        snapshot=spec.get('research_scope') or (read(scope) if scope.exists() else {'status':'using_frozen_authored_sources','repository':spec['repository'],'coverage':'episode assets and authored claims only; run research for a new complete scan'})
         snapshot['episode_evidence']=spec.get('evidence',[])
         write(output/'research.json',snapshot);return [output/'research.json']
-    stages('Research',{'asset_spec':a_spec,'story_ids':spec['story_ids'],'evidence':spec.get('evidence',[])},research)
+    stages('Research',{'asset_spec':a_spec,'story_ids':spec['story_ids'],'evidence':spec.get('evidence',[]),'scope':spec.get('research_scope')},research)
     def story():
         stories=read(ROOT/'research/stories.json')
         selected=[s for s in stories if s['id'] in spec['story_ids']]
@@ -80,7 +105,7 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
     stages('Shot Planning',spec['shots'],planning)
     def footage():
         media=collect(repo,a_spec,output/'media')
-        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*'))]
+        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*sorted((output/'source-evidence').glob('*'))]
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
     stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
@@ -186,7 +211,8 @@ def produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, m
         (output/'bilibili.md').write_text(posting_copy(spec,description))
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
         files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
+        files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').glob('*')) if p.is_file()]
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':5,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
+    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':6,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
     return output

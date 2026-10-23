@@ -8,6 +8,18 @@ from video_rush.render import encode_shot, subtitle_cues
 from video_rush.common import write, read
 
 
+def test_episode_writer_lock_rejects_overlap_and_releases_after_failure(tmp_path):
+    from video_rush.pipeline import production_lock
+    with pytest.raises(ValueError,match='production failed'):
+        with production_lock(tmp_path):
+            with pytest.raises(RuntimeError,match='already running'):
+                with production_lock(tmp_path):
+                    raise AssertionError('Concurrent writer entered')
+            raise ValueError('production failed')
+    with production_lock(tmp_path):
+        assert (tmp_path/'.production.lock').exists()
+
+
 def test_failed_stage_resumes_and_output_tamper_invalidates_cache(tmp_path):
     runner=Stages(tmp_path);out=tmp_path/'data.json';count=[]
     def fail():
@@ -33,13 +45,14 @@ def test_collect_is_readonly_and_repairs_corrupted_cached_blob(tmp_path):
     git('init','-q');git('config','user.email','test@example.invalid');git('config','user.name','test')
     (repo/'evidence.txt').write_text('original evidence')
     git('add','.');git('commit','-qm','source');head=git('rev-parse','HEAD')
-    spec={'repository':'example/game','assets':[{'id':'a','commit':head,'path':'evidence.txt'}]}
+    spec={'repository':'example/game','assets':[{'id':'a','commit':head,'path':'evidence.txt','preserve_evidence':True}]}
     output=tmp_path/'out'
     before=git('status','--porcelain')
     collect(repo,spec,output);(output/'a.txt').write_text('tampered')
     result=collect(repo,spec,output)
     assert (output/'a.txt').read_text()=='original evidence'
     assert result[0]['commit']==head
+    assert (output.parent/result[0]['preserved_evidence']).read_text()=='original evidence'
     assert git('status','--porcelain')==before
     with pytest.raises(ValueError):collect(repo,{'repository':'x/y','assets':[{'id':'b','commit':head,'path':'../evidence.txt'}]},output)
 
@@ -51,6 +64,32 @@ def test_subtitles_stay_inside_sentence_and_keep_text():
     assert cues[0]['start']==3.2
     assert cues[-1]['end']==7.8
     assert all(a['end']==b['start'] for a,b in zip(cues,cues[1:]))
+
+
+def test_git_movie_frame_keeps_original_provenance_and_checks_bounds(tmp_path):
+    from PIL import Image
+    from video_rush.common import sha
+    repo=tmp_path/'repo';repo.mkdir()
+    def git(*args):
+        return subprocess.check_output(['git','-C',str(repo),*args],text=True).strip()
+    git('init','-q');git('config','user.email','test@example.invalid');git('config','user.name','test')
+    movie=repo/'movie.mp4'
+    subprocess.run(['ffmpeg','-v','error','-y','-f','lavfi','-i',
+                    'testsrc2=s=160x90:r=30:d=1','-c:v','libx264',str(movie)],check=True)
+    git('add','.');git('commit','-qm','real video fixture')
+    asset={'id':'frame','path':'movie.mp4','commit':git('rev-parse','HEAD'),
+           'frame_seconds':.4,'frame_crop':[20,10,80,60]}
+    result=collect(repo,{'repository':'example/game','assets':[asset]},tmp_path/'out')[0]
+    assert Image.open(result['local_path']).size==(80,60)
+    assert result['source_sha256']==sha(movie)
+    assert result['blob_sha']==git('rev-parse','HEAD:movie.mp4')
+    assert result['sha256']==sha(result['local_path'])
+    assert not git('status','--porcelain')
+    for seconds in [-1,1,float('nan')]:
+        with pytest.raises(ValueError,match='finite time'):
+            collect(repo,{'repository':'example/game','assets':[dict(asset,frame_seconds=seconds)]},tmp_path/'out')
+    with pytest.raises(ValueError,match='exceeds original'):
+        collect(repo,{'repository':'example/game','assets':[dict(asset,frame_crop=[100,0,80,60])]},tmp_path/'out')
 
 
 def test_clip_is_not_looped_to_hide_missing_footage(tmp_path):

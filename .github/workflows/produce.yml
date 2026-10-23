@@ -97,6 +97,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/logs/
             build/episodes/${{ inputs.episode }}/recording-evidence/
             build/episodes/${{ inputs.episode }}/original_uploads/
+            build/episodes/${{ inputs.episode }}/source-evidence/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 

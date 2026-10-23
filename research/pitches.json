@@ -101,13 +101,13 @@
     },
     {
       "id": "V002",
-      "title": "打中了，却像没打中：我给游戏补了哪些手感",
+      "title": "打中了，却像没打中？我用AI给游戏补点打击感",
       "slot": "main_2",
       "duration_seconds": [
         150,
         210
       ],
-      "production_status": "researched_pitch_not_produced",
+      "production_status": "ep004_local_production_in_progress",
       "one_question": "一次命中怎样从扣血数字变成看得见、听得懂的动作反馈？",
       "opening_10_seconds": "先呈现命中反馈，再亮出历史问题：给怪物加击退后，它被推出平台却留在了半空。",
       "hook_status": "authored editorial wording; not an original quote",
@@ -140,7 +140,15 @@
         "不把普通击退、钩索与技能位移混成一套强制停顿。",
         "不把旧版手绘激光片冒充当前像素版本。"
       ],
-      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled."
+      "standalone_gate": "Do not script full episode before its central visible comparison is available or the report/diagram fallback is explicitly labeled.",
+      "selected_branch_heads": {
+        "feature/player-presentation-01-motion-candidate": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+        "feature/player-presentation-01": "b34511a7ee27f03b6d87d070ca20e9309e1e8a2e",
+        "feature/enemy-feedback-01-accepted-sample": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+        "feature/enemy-feedback-01": "ce84d01e1f208538a6b6d610bfc55a28e11cb733"
+      },
+      "scope_limit": "Two separate unmerged candidates; reused original fixture movies, not natural level play or combined main.",
+      "episode_spec": "episodes/ep004.json"
     },
     {
       "id": "V003",

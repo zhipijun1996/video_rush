@@ -1,0 +1,25 @@
+{
+  "type": "Independent recheck of existing source traces, not game re-execution",
+  "frames_per_version": 1560,
+  "projection_fields": [
+    "HP",
+    "case",
+    "enemy_position",
+    "enemy_velocity",
+    "frame",
+    "local_frame",
+    "paused",
+    "player_position",
+    "player_velocity",
+    "state"
+  ],
+  "difference_count": 0,
+  "same_seed": true,
+  "same_router_inputs": true,
+  "same_hp_event_payloads_excluding_instance_specific_id": true,
+  "source_traces": {
+    "7": "5adc13960a7af3a83f904bcb8d67bf19072150230a125c03092beeb73937a310",
+    "8": "409814e95f3a0461d69a328a23363be9e74e89085895cc44ea16ecff66d29ce7"
+  },
+  "scope": "Existing fixed positioned fixtures only; no full campaign, gamefeel or device-performance acceptance."
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "episode": "ep004",
+  "repository": "zhipijun1996/gunman-rush",
+  "scanned_at": "2026-10-23T03:24:41.923316+00:00",
+  "mode": "targeted_new_branch_refresh_after_existing_full_history_archive",
+  "original_game_repository": "/workspace/gunman-rush",
+  "game_repository_modified": false,
+  "source_mirror": "build/sources/ep004",
+  "main_at_scan": "e9ab0e0743466b8983e34cc7de17bab1abf9d53a",
+  "branches_api_count": 121,
+  "recent_pr_count": 40,
+  "pr_numbers_read": [
+    104
+  ],
+  "pr104_status": "open draft; overall REJECT, not merged",
+  "player_pr": "No PR assumed; branch and immutable documents used",
+  "branch_heads": {
+    "feature/player-presentation-01-motion-candidate": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+    "feature/player-presentation-01": "b34511a7ee27f03b6d87d070ca20e9309e1e8a2e",
+    "feature/enemy-feedback-01-accepted-sample": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+    "feature/enemy-feedback-01": "ce84d01e1f208538a6b6d610bfc55a28e11cb733"
+  },
+  "checked_full_base_head_path_counts": {
+    "player": 468,
+    "enemy": 1061
+  },
+  "checked_runtime_files": [
+    "scripts/dev/player_presentation_01/motion_visual.gd",
+    "scripts/dev/player_presentation_01/motion_feel.gd",
+    "scripts/dev/player_presentation_01/motion_audio.gd",
+    "scripts/dev/player_presentation_01/weapon_feel_v2.gd",
+    "scripts/enemies/enemy_feedback_01.gd",
+    "scripts/enemies/enemy_feedback_01_body.gd",
+    "scripts/enemies/enemy_feedback_01_remains.gd",
+    "tests/player_presentation_01/feel_trace.gd",
+    "tests/player_presentation_01/capture_feel.py"
+  ],
+  "movie_runtime_commits": [
+    "167ff993d446556936d503b76a271706830081ca",
+    "3003bd0f10ed9c7fe51e0cdc5952aa579a87f130",
+    "3254984dcc4f0fc2c3c69b463fe5515f81d69010",
+    "4ed0de042db44902c6d8544d9217b617f7dc3271",
+    "5ff0c7aea4fcfb51713363b0b8ec4d4b5f56a22a",
+    "9c693787b201a655d9e8589d3bb1e1350ae64e29",
+    "bd8d130f3677ba80d569f16c05feee1977450c02"
+  ],
+  "recording": "Reused exact committed original Godot MovieMaker evidence; no new game recording or combined-branch build this episode",
+  "personally_checked": "Git/API heads, PR body, immutable handoffs, full changed path sets, selected runtime code, source metadata, ffprobe/decode and sampled actual frames; rendered output QA later in delivery verification; independently compared V7/V8 existing 1560-frame gameplay projections, Router inputs and HP event payloads (zero differences). No new game run.",
+  "not_claimed": [
+    "new complete all-history story scan",
+    "fresh execution of game Harness or integration",
+    "independent full human listening or gamefeel acceptance",
+    "same-seed natural-route gameplay",
+    "two branches integrated into main"
+  ],
+  "failures": [
+    {
+      "stage": "history mirror",
+      "error": "shared alternates caused fetch to repack local links and run out of disk twice",
+      "resolution": "discarded only incomplete temporary packs; disabled alternate objects; depth1 exact commits and bounded batch blob fetch succeeded"
+    },
+    {
+      "stage": "doctor invocation",
+      "error": "doctor does not accept --source",
+      "resolution": "reran python -m video_rush doctor successfully"
+    }
+  ],
+  "evidence_files": [
+    {
+      "id": "player_summary",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/session-summary-09.md"
+    },
+    {
+      "id": "motion_handoff",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/motion-handoff-02.md"
+    },
+    {
+      "id": "landing_handoff",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-handoff-03.md"
+    },
+    {
+      "id": "weapon_handoff",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-handoff-07.md"
+    },
+    {
+      "id": "feel_audio_provenance",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/feel-audio-provenance.json"
+    },
+    {
+      "id": "weapon_audio_provenance",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/docs/worklines/PLAYER-PRESENTATION-01/weapon-audio-v2-provenance.json"
+    },
+    {
+      "id": "freedoom_license",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/COPYING.adoc"
+    },
+    {
+      "id": "freedoom_credits",
+      "commit": "b1069762731e0cdb39f003f2dd2474ba5d8de058",
+      "path": "assets/player_presentation_01/weapon_audio_v2/sources/CREDITS",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/b1069762731e0cdb39f003f2dd2474ba5d8de058/assets/player_presentation_01/weapon_audio_v2/sources/CREDITS"
+    },
+    {
+      "id": "enemy_summary",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/enemy_feedback_01_session_summary.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/enemy_feedback_01_session_summary.md"
+    },
+    {
+      "id": "enemy_readme",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/README.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/README.md"
+    },
+    {
+      "id": "enemy_recipe",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/recipe.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/recipe.json"
+    },
+    {
+      "id": "enemy_events",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/movie-observations.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movie-observations.json"
+    },
+    {
+      "id": "enemy_source_guard",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/movies/after-report.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/movies/after-report.json"
+    },
+    {
+      "id": "enemy_formal_failure",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/independent/formal.log",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/independent/formal.log"
+    },
+    {
+      "id": "enemy_review",
+      "commit": "080ac505f8fb6b6af6bd964348a952f73483ece1",
+      "path": "docs/evidence/enemy_feedback_01/v8/review.md",
+      "url": "https://github.com/zhipijun1996/gunman-rush/blob/080ac505f8fb6b6af6bd964348a952f73483ece1/docs/evidence/enemy_feedback_01/v8/review.md"
+    }
+  ],
+  "existing_trace_recheck": {
+    "type": "Independent recheck of existing source traces, not game re-execution",
+    "frames_per_version": 1560,
+    "projection_fields": [
+      "HP",
+      "case",
+      "enemy_position",
+      "enemy_velocity",
+      "frame",
+      "local_frame",
+      "paused",
+      "player_position",
+      "player_velocity",
+      "state"
+    ],
+    "difference_count": 0,
+    "same_seed": true,
+    "same_router_inputs": true,
+    "same_hp_event_payloads_excluding_instance_specific_id": true,
+    "source_traces": {
+      "7": "5adc13960a7af3a83f904bcb8d67bf19072150230a125c03092beeb73937a310",
+      "8": "409814e95f3a0461d69a328a23363be9e74e89085895cc44ea16ecff66d29ce7"
+    },
+    "scope": "Existing fixed positioned fixtures only; no full campaign, gamefeel or device-performance acceptance."
+  }
+}
