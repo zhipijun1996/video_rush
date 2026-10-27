@@ -348,7 +348,7 @@
       "id": "V008",
       "title": "我只想生成肉鸽地图，怎么开始数学建模了？",
       "slot": "user_selected_map_modeling",
-      "production_status": "ep006_in_local_production",
+      "production_status": "ep006_hosted_render_download_verified",
       "one_question": "为什么试了多轮地图生成，最后还是得自己提炼玩法规则？",
       "story_beats": [
         "编辑器帮助人工提出/审核模块",
@@ -362,7 +362,13 @@
         "真实浏览器编辑器重演与历史游戏录像分开",
         "无在线LLM生成或人类趣味通过声明"
       ],
-      "episode_spec": "episodes/ep006.json"
+      "episode_spec": "episodes/ep006.json",
+      "actual_duration_seconds": 253.566667,
+      "delivery": {
+        "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40462306616/artifacts/12714558999",
+        "expires_at": "2026-11-10T06:45:51Z",
+        "verification": "docs/ep006-verification.json"
+      }
     }
   ],
   "sources": [

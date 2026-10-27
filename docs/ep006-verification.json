@@ -1,0 +1,278 @@
+{
+  "episode": "ep006",
+  "status": "hosted_render_download_verified",
+  "run_id": 40462306616,
+  "job_id": 122049525775,
+  "production_commit": "fed20079c983ad2b055e668d81c62ddf1f7c2f6d",
+  "artifact_id": 12714558999,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40462306616/artifacts/12714558999",
+  "artifact_bytes": 27936464,
+  "artifact_sha256": "0a66896bf3b211a551a7f7757125eb1204590dc8eacef4eac39321d70b8d80dc",
+  "artifact_expires_at": "2026-11-10T06:45:51Z",
+  "final_sha256": "66f61f5bf521ff40ede7718b31ea839ef7f2d5202981fac783a677df94caf3fd",
+  "final_bytes": 27964998,
+  "duration_seconds": 253.566667,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "color_range": null
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "metrics": {
+      "decoded_samples": 4057088,
+      "peak": 0.684326171875,
+      "rms": 0.09287757323375746,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    }
+  },
+  "delivery_manifest_files_verified": 31,
+  "source_asset_metadata_verified": 39,
+  "exact_git_asset_hash_metadata_matches": 29,
+  "external_movie_metadata_and_local_archive_hashes_verified": [
+    "latest"
+  ],
+  "preserved_movie_report_runtime_and_hash_links_verified": 5,
+  "real_browser_receipts_verified": 2,
+  "latest_failed_seed_rows_verified": 3,
+  "preserved_source_documents_and_licenses_verified": 20,
+  "real_edge_receipts_verified": 33,
+  "tts_boundary_files_verified": 33,
+  "raw_tts_wavs_shipped": false,
+  "source_movies_shipped": false,
+  "tests_passed": 32,
+  "entire_downloaded_mp4_decode": true,
+  "source_game_worktree_changed": false,
+  "new_game_capture": false,
+  "technical_pass": true,
+  "content_structural_pass": true,
+  "aesthetic_acceptance": "unverified",
+  "human_phone_listening": "pending",
+  "temporary_bgm_chunks_deleted_204": 8,
+  "bilibili_published": false,
+  "subtitle_cues_do_not_overlap": true,
+  "decoded_audio_duration_matches_timeline": true,
+  "closing_matches_user_request": true,
+  "local_final": {
+    "episode": "ep006",
+    "final_sha256": "531468ec8c0b106d2805e7a3f8908f14e5b53ecd59019efeaf5060ba17fb8155",
+    "final_bytes": 27941002,
+    "duration_seconds": 253.566667,
+    "technical_pass": true,
+    "content_structural_pass": true,
+    "entire_file_decoded": true,
+    "delivery_file_hashes_verified": 31,
+    "source_asset_count": 39,
+    "tests_passed": 32,
+    "source_movie_receipt_hash_links_verified": 5,
+    "real_browser_capture_count": 2,
+    "source_game_worktree_changed": false,
+    "new_game_capture": false,
+    "original_map_remote_modified": false,
+    "cover_inspected": true,
+    "previewed_actual_final_shots": [
+      "m01",
+      "m03",
+      "m04",
+      "m08",
+      "m10",
+      "m11",
+      "m14",
+      "m18",
+      "m21",
+      "m28",
+      "m29",
+      "m33"
+    ],
+    "voice_window_check": {
+      "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+      "passed": true,
+      "shots": [
+        {
+          "shot": "m01",
+          "correlation": 0.9934821724891663,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m02",
+          "correlation": 0.9896279573440552,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m03",
+          "correlation": 0.9904254078865051,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m04",
+          "correlation": 0.9792017936706543,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m05",
+          "correlation": 0.9039475917816162,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m06",
+          "correlation": 0.9874033331871033,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m07",
+          "correlation": 0.9915446043014526,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m08",
+          "correlation": 0.9903829097747803,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m09",
+          "correlation": 0.9514719843864441,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m10",
+          "correlation": 0.9911595582962036,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m11",
+          "correlation": 0.9756230711936951,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m12",
+          "correlation": 0.9717244505882263,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m13",
+          "correlation": 0.9868159890174866,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m14",
+          "correlation": 0.9844844937324524,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m15",
+          "correlation": 0.9521298408508301,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "m16",
+          "correlation": 0.9807682037353516,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m17",
+          "correlation": 0.986311674118042,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m18",
+          "correlation": 0.9843637943267822,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m19",
+          "correlation": 0.9399731159210205,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m20",
+          "correlation": 0.996462881565094,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m21",
+          "correlation": 0.9901497960090637,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m22",
+          "correlation": 0.9270009398460388,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m23",
+          "correlation": 0.9431162476539612,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m24",
+          "correlation": 0.9613558650016785,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m25",
+          "correlation": 0.9666605591773987,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m26",
+          "correlation": 0.9446475505828857,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "m27",
+          "correlation": 0.9681689739227295,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m28",
+          "correlation": 0.9638459086418152,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "m29",
+          "correlation": 0.988572359085083,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m30",
+          "correlation": 0.9424909353256226,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "m31",
+          "correlation": 0.9898578524589539,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m32",
+          "correlation": 0.9923081994056702,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "m33",
+          "correlation": 0.9900421500205994,
+          "lag_seconds": 0.005
+        }
+      ]
+    },
+    "human_phone_listening": "pending",
+    "aesthetic_acceptance": "unverified"
+  },
+  "note": "Hosted rerender; not claimed byte-identical to local MP4. Four Git native movies and one external archived native movie were checked against exact source hashes and original manifests. Two editor captures ran through real browser controls on frozen source; original/source fingerprint matched across environments. Hosted source metadata matches these hashes; raw source movies and TTS WAVs are not shipped for a second downloaded-byte check. Preserved source docs/licenses and final MP4 were directly rehashed after download. No new gameplay or human aesthetic approval.",
+  "downloaded_final_sampled_shots": [
+    "m03",
+    "m04",
+    "m10",
+    "m21",
+    "m29",
+    "m33"
+  ],
+  "downloaded_cover_inspected": true,
+  "downloaded_final_path": "build/actions/ep006-verified/delivery/final.mp4"
+}
