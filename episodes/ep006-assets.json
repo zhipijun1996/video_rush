@@ -1,0 +1,586 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/map-edit",
+  "assets": [
+    {
+      "id": "editor_library",
+      "origin": "browser_capture",
+      "kind": "editor_screenshot_reconstruction",
+      "commit": "75d2b028dcfd7d51c8778008e6f2ef15cccc63d3",
+      "entry": "index.html",
+      "snapshot_paths": [
+        "index.html",
+        "app.js",
+        "capabilities.js",
+        "difficulty.js",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "repository-library-client.js",
+        "style.css",
+        "library"
+      ],
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "click",
+          "selector": "#show-repository-library"
+        },
+        {
+          "operation": "wait",
+          "selector": "[data-repository-module]",
+          "first": true
+        }
+      ],
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "display_label": "编辑器功能重演 · 本次真实截图 / 草图非物理证明",
+      "license": "User-authorized own map-edit web application; screenshot of real DOM, system Noto fonts / OFL",
+      "truth": "New screenshot of frozen main via real browser controls, not a preserved historical screenshot, not a new game run. Library draft is an editable copy of bundled candidate, not a newly approved gameplay module."
+    },
+    {
+      "id": "editor_canvas",
+      "origin": "browser_capture",
+      "kind": "editor_screenshot_reconstruction",
+      "commit": "75d2b028dcfd7d51c8778008e6f2ef15cccc63d3",
+      "entry": "index.html",
+      "snapshot_paths": [
+        "index.html",
+        "app.js",
+        "capabilities.js",
+        "difficulty.js",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "repository-library-client.js",
+        "style.css",
+        "library"
+      ],
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "click",
+          "selector": "#show-repository-library"
+        },
+        {
+          "operation": "wait",
+          "selector": "[data-repository-module]",
+          "first": true
+        },
+        {
+          "operation": "click",
+          "selector": "[data-repository-module]",
+          "first": true
+        },
+        {
+          "operation": "wait",
+          "selector": "#dialog",
+          "state": "hidden"
+        },
+        {
+          "operation": "click",
+          "selector": "#fit"
+        }
+      ],
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "display_label": "编辑器功能重演 · 本次真实截图 / 草图非物理证明",
+      "license": "User-authorized own map-edit web application; screenshot of real DOM, system Noto fonts / OFL",
+      "truth": "New screenshot of frozen main via real browser controls, not a preserved historical screenshot, not a new game run. Library draft is an editable copy of bundled candidate, not a newly approved gameplay module."
+    },
+    {
+      "id": "proto",
+      "origin": "git",
+      "kind": "original_development_diagram",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "experiments/l4-mapgen/results/whole-maps-20261024/prototype-plains-comparison.png",
+      "blob_sha": "1a46d17886846d443c360d01e408ba29b9230710",
+      "sha256": "ffbde15c1f3c3ff11f0d2418e8904abd829e87794d436538eb90269db01d1f24",
+      "display_label": "首轮 A/B/C · 抽象结构示意 / 非实机",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "network",
+      "origin": "git",
+      "kind": "original_development_diagram",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "experiments/l4-mapgen/results/region-network-v2/plains-comparison.png",
+      "blob_sha": "8c26d9592e9d73b661caeaa3e8d5e3951324814b",
+      "sha256": "61a3f4883c35afe30df4a56b6712496ecdffeee5a8e78710a7b77d422beb81c3",
+      "display_label": "区域网 R2 · 抽象结构示意 / 非实机",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "direct_map",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/direct-module-v1/whole-map.png",
+      "blob_sha": "f3748d330ea3532d9bf88fd0b477d0b2721e53aa",
+      "sha256": "95c41179c01ba2a8400cfde9b3695ee80828dcbbf89660ac8d8b89cbbe4acdfd",
+      "display_label": "直接拼接版本 · 历史整图实机截图",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "shape_map",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/shape-search-v1/map-0.png",
+      "blob_sha": "d7f09733b3c81ae5c76c3b84871a48ef069d5fd6",
+      "sha256": "7c56c57551cb6fcd72ea544eb0b347a324d40dd332d3bef522a24d7c1e8e2dac",
+      "display_label": "形状搜索版本 · 历史整图实机截图",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "latest_map",
+      "origin": "git",
+      "kind": "real_game_screenshot",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/graph-map-review-v2/whole-map.png",
+      "blob_sha": "adb33c9e0358cfe5a26bdcd406671b46cfa354e1",
+      "sha256": "9d7b19336e7a024267d321061c85817e2b448c2c58d63321cfa8c42d0020b85f",
+      "display_label": "同图物化小样 · 历史整图实机截图",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "r2_movie",
+      "origin": "git",
+      "kind": "historical_original_recording",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/r2-full-v2/bell-expedition-excerpt.mp4",
+      "blob_sha": "fec4fb1524934e47ac45d37db7d53a63288a013a",
+      "sha256": "e36a6a6b44ce657a59d67348cd8d9c44d7ff6aed6c13ef8baea55d0c9d4b249e",
+      "display_label": "历史开发验证录像 · 原速 / 程序输入",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved."
+    },
+    {
+      "id": "direct_movie",
+      "origin": "git",
+      "kind": "historical_original_recording",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/direct-module-v1/loop-excerpt-40s.mp4",
+      "blob_sha": "50ff31ea9dfbb4c76d88c3582335229f993130a6",
+      "sha256": "2e0e2ef1d5c070b0330b047c06f2aa4e81464f8316853438ede34479afbb620c",
+      "display_label": "历史开发验证录像 · 原速 / 程序输入",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved.",
+      "runtime_commit": "91796f3eb43db1f82c514f33d7fb9b9b5dfb89db"
+    },
+    {
+      "id": "factory_movie",
+      "origin": "git",
+      "kind": "historical_original_recording",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/videos/factory05/all-samples.mp4",
+      "blob_sha": "ac518798bce7b6305531b7994e5aa412e0be80b0",
+      "sha256": "732f6162138f717c726190db661ae7631fb209ca263129b49c3bc6dfb3ed8c96",
+      "display_label": "历史开发验证录像 · 原速 / 程序输入",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved.",
+      "runtime_identity": "Archived byte-bound source_files and engine SHA in generation/videos/factory05/manifest.json; runtime producer Commit not recorded there; storage Commit is not asserted as runtime",
+      "physics_baseline": "12f6cb006d7119598e3235f4ca4f7323e4c9d092"
+    },
+    {
+      "id": "plains_movie",
+      "origin": "git",
+      "kind": "historical_original_recording",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/videos/plains-round2/all-samples.mp4",
+      "blob_sha": "e767d35e1694d9c2bfe914c701c0044686000e31",
+      "sha256": "21af7e0de52d2698025a358d2563fa8c789b5501438ec051e94f2c32da932e6a",
+      "display_label": "历史开发验证录像 · 原速 / 程序输入",
+      "license": "User-authorized own project evidence; Underworld by Asouris custom author license, project assets and source notices; not a CC0 blanket claim",
+      "truth": "Original archived material. Diagram is not gameplay; recorded fixed-policy witness is not human play or proof of fun. Storage commit is distinct from producer/runtime commits; accompanying source reports preserved.",
+      "runtime_identity": "Archived byte-bound source_files and engine SHA in generation/videos/plains-round2/manifest.json; runtime producer Commit not recorded there; storage Commit is not asserted as runtime",
+      "physics_baseline": "12f6cb006d7119598e3235f4ca4f7323e4c9d092"
+    },
+    {
+      "id": "latest",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush-previews/8bd5bd3d7bdf7c099c5045ce79103278bba6d8b9/artifacts/MAPGEN-GRAPH-MAP-01/9174ee9c4819291250aa08aef12b20ee8a43e921/69123cedd3b9/main-a.mp4",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush-previews/blob/8bd5bd3d7bdf7c099c5045ce79103278bba6d8b9/artifacts/MAPGEN-GRAPH-MAP-01/9174ee9c4819291250aa08aef12b20ee8a43e921/69123cedd3b9/main-a.mp4",
+      "archive_commit": "8bd5bd3d7bdf7c099c5045ce79103278bba6d8b9",
+      "archive_path": "artifacts/MAPGEN-GRAPH-MAP-01/9174ee9c4819291250aa08aef12b20ee8a43e921/69123cedd3b9/main-a.mp4",
+      "blob_sha": "5a5358f41b2377dded3acafda5698d2bd5146edf",
+      "sha256": "62adf6924928e65c6e59e05b9b3bd3f216d86752d2faeee1f1f29db5fad0d361",
+      "runtime_commit": "9174ee9c4819291250aa08aef12b20ee8a43e921",
+      "bytes": 15729575,
+      "origin": "external",
+      "kind": "historical_original_recording",
+      "archive_repository": "zhipijun1996/gunman-rush-previews",
+      "display_label": "最新接口小样 · 历史原生实录 / 程序输入",
+      "license": "User-authorized own project development evidence, source rights attached",
+      "truth": "One successful small interface Map, not stable multi-seed full-region generation. Original MovieWriter witness; no new game capture."
+    },
+    {
+      "id": "cover_game",
+      "origin": "git",
+      "kind": "real_game_movie_frame",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/direct-module-v1/loop-excerpt-40s.mp4",
+      "frame_seconds": 18.0,
+      "frame_crop": [
+        0,
+        90,
+        1000,
+        570
+      ],
+      "display_label": "历史原生实录抽帧",
+      "license": "User-authorized project evidence; Underworld by Asouris",
+      "truth": "Exact source movie frame/crop only, no fabricated gameplay",
+      "runtime_commit": "91796f3eb43db1f82c514f33d7fb9b9b5dfb89db"
+    },
+    {
+      "id": "editor_doc",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/map-notes-editor.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "paper_actions",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "pcg/research/algorithms.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "paper_maps",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/references.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "prototype_review",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/prototype-review.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "network_revision",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/region-exploration-revision.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "shape_review",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/real-shape-search-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "requirements_reset",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/map-requirements-reset-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "latest_review",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/graph-map-materialization-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "latest_results",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/graph-map-review-v2/results.json",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "latest_publication",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/graph-map-review-v2/PUBLICATION.json",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "factory_report",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "pcg/FACTORY-REPORT.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "method_review",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "pcg/creative-production/plains-method-review-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "block_contract",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "docs/l4-mapgen/graph-block-module-contract-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "design_reject",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "ccbefc4e883c0abcc731fa5817c597eb3a868ca2",
+      "path": "docs/l4-mapgen/junction-design-regression-v1.md",
+      "display_label": "随片原始开发证据",
+      "license": "Original project research/review, attribution retained",
+      "truth": "Original source assertion, not fresh reproduction by Video Rush or a human aesthetics approval",
+      "preserve_evidence": true
+    },
+    {
+      "id": "provenance_0",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/r2-full-v2/manifest.json",
+      "display_label": "原始录制与权利出处",
+      "license": "Original source record; source licenses are distinct from algorithm names",
+      "truth": "Archived source provenance, not new game execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "provenance_1",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/direct-module-v1/manifest.json",
+      "display_label": "原始录制与权利出处",
+      "license": "Original source record; source licenses are distinct from algorithm names",
+      "truth": "Archived source provenance, not new game execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "provenance_2",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/maps/graph-map-review-v2/public-byte-verification.json",
+      "display_label": "原始录制与权利出处",
+      "license": "Original source record; source licenses are distinct from algorithm names",
+      "truth": "Archived source provenance, not new game execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "provenance_3",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "pcg/research/repositories.md",
+      "display_label": "原始录制与权利出处",
+      "license": "Original source record; source licenses are distinct from algorithm names",
+      "truth": "Archived source provenance, not new game execution",
+      "preserve_evidence": true
+    },
+    {
+      "id": "hook",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "我只想做个肉鸽地图",
+          "怎么开始数学建模了？"
+        ],
+        "face": "thinking",
+        "font_size": 62,
+        "footer": "研究与设计探索 · 尚未稳定成功"
+      }
+    },
+    {
+      "id": "algorithms",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "动作语法 / 约束求解",
+          "图生成 / 多样性搜索",
+          "先做原型，再验证"
+        ],
+        "face": "thinking",
+        "font_size": 62,
+        "footer": "研究与设计探索 · 尚未稳定成功"
+      }
+    },
+    {
+      "id": "fails",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "失败记录摘录 · 非实机",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "新种子 1：空间失败",
+          "新种子 2：空间失败",
+          "新种子 3：空间失败"
+        ],
+        "face": "panic",
+        "font_size": 62,
+        "footer": "本批 3 个新 Seed；全部未进入物理验证"
+      }
+    },
+    {
+      "id": "restart",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "改一版，再看一眼",
+          "还是不对。"
+        ],
+        "face": "thinking",
+        "font_size": 62,
+        "footer": "研究与设计探索 · 尚未稳定成功"
+      }
+    },
+    {
+      "id": "rules",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "想让玩家做什么？",
+          "入口 / 出口剩什么？",
+          "失败后，怎么回来？"
+        ],
+        "face": "thinking",
+        "font_size": 62,
+        "footer": "研究与设计探索 · 尚未稳定成功"
+      }
+    },
+    {
+      "id": "model",
+      "origin": "editorial",
+      "kind": "editorial_illustration",
+      "display_label": "原创解释图 · 非游戏界面",
+      "license": "Original Video Rush graphic, no third-party meme image or audio",
+      "truth": "Editorial diagram; fails card accurately summarizes the three fixed seed rows of latest_results, not all historical runs",
+      "graphic": {
+        "kicker": "失序之钟 · 地图生成返工记录",
+        "lines": [
+          "玩法目标 → 约束",
+          "模块状态 → 拼接",
+          "区域职责 → 地图"
+        ],
+        "face": "thinking",
+        "font_size": 62,
+        "footer": "研究与设计探索 · 尚未稳定成功"
+      }
+    },
+    {
+      "id": "native_receipt_0",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/videos/factory05/manifest.json",
+      "preserve_evidence": true,
+      "display_label": "原始录像字节/引擎/源码回执",
+      "license": "Original project provenance",
+      "truth": "Original receipt; unknown producer Commit remains unknown, no relabeling to archive head"
+    },
+    {
+      "id": "native_receipt_1",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+      "path": "generation/videos/plains-round2/manifest.json",
+      "preserve_evidence": true,
+      "display_label": "原始录像字节/引擎/源码回执",
+      "license": "Original project provenance",
+      "truth": "Original receipt; unknown producer Commit remains unknown, no relabeling to archive head"
+    }
+  ]
+}

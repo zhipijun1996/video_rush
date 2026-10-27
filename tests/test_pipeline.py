@@ -234,3 +234,27 @@ def test_prerelease_includes_submission_asset_and_only_finalizes_complete_upload
     assert any('--draft=false' in c for c in commands)==(not upload_fails)
     assert (tmp_path/'bilibili.md').read_text()=='fixture bilibili.md'
     assert 'bilibili.md' in (tmp_path/'release-notes.md').read_text()
+
+
+def test_committed_browser_capture_uses_real_controls_and_keeps_source_unchanged(tmp_path):
+    import shutil
+    pytest.importorskip('playwright.sync_api')
+    if not any(shutil.which(x) for x in ['chromium','google-chrome','google-chrome-stable','chromium-browser']):
+        pytest.skip('No local Chromium/Chrome executable')
+    repo=tmp_path/'source';repo.mkdir()
+    html=repo/'index.html';html.write_text('<button id="open" onclick="document.getElementById(\'result\').textContent=\'Opened\'">Open</button><p id="result">Closed</p>')
+    subprocess.run(['git','init',str(repo)],check=True,capture_output=True)
+    subprocess.run(['git','-C',str(repo),'add','.'],check=True)
+    subprocess.run(['git','-C',str(repo),'-c','user.name=Test','-c','user.email=test@example.invalid','commit','-m','Fixture'],check=True,capture_output=True)
+    commit=subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip();original=html.read_bytes()
+    asset={'id':'editor','origin':'browser_capture','kind':'editor_screenshot_reconstruction','commit':commit,
+           'entry':'index.html','snapshot_paths':['index.html'],'viewport':{'width':640,'height':360},
+           'steps':[{'operation':'click','selector':'#open'}]}
+    result=collect(repo,{'repository':'test/editor','assets':[asset]},tmp_path/'out'/'media')[0]
+    assert result['browser_receipt']['source_commit']==commit
+    assert 'Opened' in result['browser_receipt']['observed_page_text']
+    assert result['browser_receipt']['all_snapshot_git_blobs_verified']
+    assert result['browser_receipt']['page_errors']==[]
+    assert (tmp_path/'out'/result['capture_receipt']).exists()
+    assert html.read_bytes()==original
+    assert subprocess.check_output(['git','-C',str(repo),'status','--porcelain'],text=True)==''

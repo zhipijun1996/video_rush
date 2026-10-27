@@ -59,6 +59,9 @@ jobs:
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update -qq
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb
           python -m pip install -e '.[test]'
+          if python -c 'import json,os,sys; s=json.load(open(os.environ["VR_SPEC"])); a=json.load(open(s["asset_spec"])); sys.exit(not any(x.get("origin")=="browser_capture" for x in a["assets"]))'; then
+            python -m pip install -e '.[browser]'
+          fi
           pytest -q
       - name: Fetch only exact game commits and media blobs
         run: |
@@ -74,7 +77,7 @@ jobs:
           source = pathlib.Path('build/source'); source.mkdir(parents=True)
           subprocess.run(['git', 'init', str(source)], check=True)
           subprocess.run(['git', '-C', str(source), 'remote', 'add', 'origin', 'https://github.com/' + assets['repository'] + '.git'], check=True)
-          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git') in ('git','recording')}):
+          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git') in ('git','recording','browser_capture')}):
               if not re.fullmatch(r'[a-f0-9]{40}', sha): raise ValueError('Full immutable SHA required')
               subprocess.run(['git', '-C', str(source), 'fetch', '--no-tags', '--filter=blob:none', '--depth=1', 'origin', sha], check=True)
           PY
@@ -104,6 +107,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/recording-evidence/
             build/episodes/${{ inputs.episode }}/original_uploads/
             build/episodes/${{ inputs.episode }}/source-evidence/
+            build/episodes/${{ inputs.episode }}/browser-evidence/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 

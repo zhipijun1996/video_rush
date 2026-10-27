@@ -106,9 +106,9 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
     stages('Shot Planning',spec['shots'],planning)
     def footage():
         media=collect(repo,a_spec,output/'media')
-        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*sorted((output/'source-evidence').glob('*'))]
+        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*sorted((output/'source-evidence').glob('*')),*sorted((output/'browser-evidence').glob('*'))]
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None},footage)
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
@@ -205,6 +205,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
         files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
         files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').glob('*')) if p.is_file()]
+        files += [str(p.relative_to(output)) for p in sorted((output/'browser-evidence').glob('*')) if p.is_file()]
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
     stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':6,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)

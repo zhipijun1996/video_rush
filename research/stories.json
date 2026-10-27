@@ -1392,5 +1392,154 @@
       "priority": "selected_ep005",
       "reason": "直观菜单/HUD变化，以及统一后仍不满意的真实探索。"
     }
+  },
+  {
+    "id": "S_MAP_MODEL_01",
+    "event": "地图生成返工：从编辑器到人工规则建模",
+    "date": "2026-10-27",
+    "background": "用户用AI做肉鸽，希望人工审核模块并批量生成地图。",
+    "conflict": "算法和实机小样都存在，但固定主干、重复骨架、状态/空间约束和新种子失败仍未解决稳定的探索质量。",
+    "attempts": [
+      "制作真实关卡草图编辑器",
+      "动作语法、图/ASP/QD及空间约束研究和原型对照",
+      "抽象图→区域网→真实模块拼接→形状搜索→同图物化",
+      "退役固定分叉骨架；用户转向亲自提炼规则"
+    ],
+    "result": "当前一张可玩接口样图；三个新Seed空间失败/物理未运行；完整区域、多Seed与人工趣味未达标。用户正在人工建模，未宣称成功。",
+    "truth_status": "scoped_technical_samples_quality_and_stability_pending",
+    "evidence_status": "Git/API full commit metadata, selected immutable source reports, diagrams and movies inspected; no new game experiment",
+    "repository": "zhipijun1996/map-edit",
+    "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+    "base_commit": "75d2b028dcfd7d51c8778008e6f2ef15cccc63d3",
+    "pr": 1,
+    "branch": "research/l4-map-generator",
+    "sources": [
+      {
+        "id": "editor_doc",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/map-notes-editor.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "paper_actions",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/pcg/research/algorithms.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "paper_maps",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/references.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "prototype_review",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/prototype-review.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "network_revision",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/region-exploration-revision.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "shape_review",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/real-shape-search-v1.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "requirements_reset",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/map-requirements-reset-v1.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "latest_review",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/graph-map-materialization-v1.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "latest_results",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/generation/maps/graph-map-review-v2/results.json",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "latest_publication",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/generation/maps/graph-map-review-v2/PUBLICATION.json",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "factory_report",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/pcg/FACTORY-REPORT.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "method_review",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/pcg/creative-production/plains-method-review-v1.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "block_contract",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/862b736c491502ae9934265bc7415805b4c122b9/docs/l4-mapgen/graph-block-module-contract-v1.md",
+        "commit": "862b736c491502ae9934265bc7415805b4c122b9",
+        "pr": 1
+      },
+      {
+        "id": "design_reject",
+        "type": "immutable_document",
+        "url": "https://github.com/zhipijun1996/map-edit/blob/ccbefc4e883c0abcc731fa5817c597eb3a868ca2/docs/l4-mapgen/junction-design-regression-v1.md",
+        "commit": "ccbefc4e883c0abcc731fa5817c597eb3a868ca2",
+        "pr": 2
+      },
+      {
+        "id": "user_map_request",
+        "type": "user_testimony_and_editorial_instruction",
+        "text": "用户：为了人工审核/提出人工玩法模块制作关卡编辑器；查论文和对比实现，反复让AI生成地图/模块，大部分以失败告终，感觉绝望；正在亲自提炼建模模块和地图规则，而不是让AI自己找方法。尚未成功，下一期看是否改善。"
+      }
+    ],
+    "media": [
+      "proto",
+      "network",
+      "direct_map",
+      "shape_map",
+      "latest_map",
+      "r2_movie",
+      "direct_movie",
+      "factory_movie",
+      "plains_movie",
+      "editor_canvas",
+      "editor_library",
+      "latest"
+    ],
+    "recordability": {
+      "saved_media_available": true,
+      "source_available": true,
+      "historical_rebuild": "Only editor real-browser reconstruction, saved native game movies reused"
+    },
+    "video_potential": {
+      "priority": "selected_ep006",
+      "reason": "多个可视失败版本与用户从外包设计判断转向人工建模的转折。"
+    }
   }
 ]

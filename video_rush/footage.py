@@ -30,6 +30,14 @@ def collect(repo, spec, output):
             collected.append(dict(asset, local_path=str(dest.resolve()), sha256=sha(dest),
                                   source_url='user-upload:' + asset['original_filename']))
             continue
+        if origin=='browser_capture':
+            from .browser_capture import capture
+            dest=output/(asset['id']+'.png')
+            receipt=capture(repo,asset,dest)
+            evidence=output.parent/'browser-evidence'/(asset['id']+'.json');write(evidence,receipt)
+            collected.append(dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),browser_receipt=receipt,
+                capture_receipt=str(evidence.relative_to(output.parent)),source_url=f'https://github.com/{spec["repository"]}/tree/{receipt["source_commit"]}'))
+            continue
         if origin=='recording':
             from .recording import capture
             source,receipt=capture(repo,asset)

@@ -343,6 +343,26 @@
         "expires_at": "2026-11-06T14:48:39Z",
         "verification": "docs/ep005-verification.json"
       }
+    },
+    {
+      "id": "V008",
+      "title": "我只想生成肉鸽地图，怎么开始数学建模了？",
+      "slot": "user_selected_map_modeling",
+      "production_status": "ep006_in_local_production",
+      "one_question": "为什么试了多轮地图生成，最后还是得自己提炼玩法规则？",
+      "story_beats": [
+        "编辑器帮助人工提出/审核模块",
+        "查算法和实现，离线批量生成",
+        "固定主干、重复骨架、状态衔接和最新3 Seed空间失败",
+        "已有小样不等于稳定好玩；用户主动人工建模，下一期看结果"
+      ],
+      "truth_boundaries": [
+        "三次空间失败只属于固定新Seed批次",
+        "保留技术小样的实际进展",
+        "真实浏览器编辑器重演与历史游戏录像分开",
+        "无在线LLM生成或人类趣味通过声明"
+      ],
+      "episode_spec": "episodes/ep006.json"
     }
   ],
   "sources": [
