@@ -1,0 +1,517 @@
+{
+  "episode": "ep007",
+  "status": "hosted_render_download_verified",
+  "title": "为了让AI生成地图，我又开始做数学题了",
+  "run_id": 40654566920,
+  "job_id": 122702373007,
+  "production_commit": "f99d330ec094e4a1a95382f2a5d2fe2ec32d7718",
+  "artifact_id": 12801956180,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40654566920/artifacts/12801956180",
+  "artifact_bytes": 43692058,
+  "artifact_sha256": "21545d92f2fd1354f35c7789a843ab3b580372788176bf36ce86af10b095a505",
+  "artifact_expires_at": "2026-11-11T08:17:49Z",
+  "final_sha256": "74e3c5ba626a6df964b42778ea65de016fbeeef9d373f7ee7dbe08d42ed0572b",
+  "final_bytes": 44377157,
+  "duration_seconds": 440.4,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "color_range_metadata": null,
+    "range_evidence": "H264 video_signal_type_present_flag=0, inferred video_full_range_flag=0 / limited; pipeline explicitly scales to TV"
+  },
+  "shots": 38,
+  "explanatory_diagrams": 36,
+  "cover_diagrams": 2,
+  "original_engineering_images": 2,
+  "delivery_manifest_files_verified": 57,
+  "source_asset_metadata_verified": 50,
+  "editable_svg_files_verified": 38,
+  "preserved_original_source_documents_verified": 10,
+  "exact_git_asset_hash_metadata_matches": 12,
+  "real_edge_receipts_verified": 38,
+  "tts_boundary_files_verified": 38,
+  "source_repository": "zhipijun1996/map-gen",
+  "source_commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+  "local_full20_static_seed_replay_verified": true,
+  "ci_tests_passed": 32,
+  "ci_tests_skipped": 1,
+  "local_tests_passed": 33,
+  "entire_downloaded_mp4_decode": true,
+  "audio_metrics": {
+    "decoded_samples": 7046485,
+    "peak": 0.68359375,
+    "rms": 0.09777847487012266,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "decoded_audio_duration_matches_timeline": true,
+  "temporary_bgm_chunks_deleted_204": 8,
+  "new_game_capture": false,
+  "godot_physics_run": false,
+  "source_worktrees_changed": false,
+  "technical_pass": true,
+  "content_structural_pass": true,
+  "human_phone_listening": "pending",
+  "aesthetic_acceptance": "unverified",
+  "bilibili_published": false,
+  "local_final": {
+    "episode": "ep007",
+    "status": "local_render_verified",
+    "source_repository": "zhipijun1996/map-gen",
+    "source_commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "accessible_source_commits": 1,
+    "source_branches": [
+      "main"
+    ],
+    "source_prs": [],
+    "duration_seconds": 440.4,
+    "shots": 38,
+    "explanatory_diagrams": 36,
+    "cover_diagrams": 2,
+    "original_engineering_images": 2,
+    "source_documents": 10,
+    "editable_svgs_verified": 38,
+    "source_git_blobs_verified": 12,
+    "delivery_hashes_verified": 57,
+    "real_edge_receipts_verified": 38,
+    "voice_alignment": {
+      "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+      "passed": true,
+      "shots": [
+        {
+          "shot": "g01",
+          "correlation": 0.992735743522644,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g02",
+          "correlation": 0.9289961457252502,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "g03",
+          "correlation": 0.9873141646385193,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g04",
+          "correlation": 0.9632872343063354,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g05",
+          "correlation": 0.9901814460754395,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g06",
+          "correlation": 0.9924657940864563,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g07",
+          "correlation": 0.9917897582054138,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g08",
+          "correlation": 0.9844919443130493,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g09",
+          "correlation": 0.9867165088653564,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g10",
+          "correlation": 0.9890956282615662,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g11",
+          "correlation": 0.987632691860199,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g12",
+          "correlation": 0.9342307448387146,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "g13",
+          "correlation": 0.9839455485343933,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g14",
+          "correlation": 0.9911879301071167,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g15",
+          "correlation": 0.9829425811767578,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g16",
+          "correlation": 0.983058512210846,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g17",
+          "correlation": 0.9909668564796448,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g18",
+          "correlation": 0.9931977987289429,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g19",
+          "correlation": 0.9870124459266663,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g20",
+          "correlation": 0.9624976515769958,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g21",
+          "correlation": 0.9735381603240967,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "g22",
+          "correlation": 0.9751572012901306,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g23",
+          "correlation": 0.9918374419212341,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g24",
+          "correlation": 0.9806841611862183,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g25",
+          "correlation": 0.9940435886383057,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g26",
+          "correlation": 0.9919604063034058,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g27",
+          "correlation": 0.9916782379150391,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g28",
+          "correlation": 0.9814959168434143,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g29",
+          "correlation": 0.9480932354927063,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "g30",
+          "correlation": 0.9376386404037476,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g31",
+          "correlation": 0.9916123747825623,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g32",
+          "correlation": 0.9818856716156006,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "g33",
+          "correlation": 0.9921957850456238,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g34",
+          "correlation": 0.9410328269004822,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g35",
+          "correlation": 0.9889147281646729,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g36",
+          "correlation": 0.9847281575202942,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g37",
+          "correlation": 0.9848374128341675,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "g38",
+          "correlation": 0.9481455683708191,
+          "lag_seconds": 0.005125
+        }
+      ]
+    },
+    "source_full20_replay": "all accepted/rejected exact candidates match archived results",
+    "tests_passed": 33,
+    "final_sha256": "8c9ce7076074d844db461560359cd6cebbd0229916e6435867d79a4b3fd6e13f",
+    "final_bytes": 44366330,
+    "technical_pass": true,
+    "content_structural_pass": true,
+    "entire_file_decoded": true,
+    "new_game_capture": false,
+    "godot_physics_run": false,
+    "source_worktrees_changed": false,
+    "aesthetic_acceptance": "unverified",
+    "human_phone_listening": "pending",
+    "bilibili_published": false,
+    "sampled_actual_final_shots": [
+      "g01",
+      "g04",
+      "g09",
+      "g12",
+      "g15",
+      "g18",
+      "g25",
+      "g30",
+      "g31",
+      "g33",
+      "g38"
+    ],
+    "cover_inspected": true
+  },
+  "downloaded_final_sampled_shots": [
+    "g04",
+    "g12",
+    "g25",
+    "g30",
+    "g33",
+    "g38"
+  ],
+  "downloaded_cover_inspected": true,
+  "note": "Hosted rerender. Source metadata and preserved SVG/doc bytes verified after download; raw PNG sources and TTS WAVs are not shipped, so not claimed directly rehashed a second time. No gameplay, no physics certification, no stable generation or human fun approval claimed.",
+  "hosted_vs_local_coarse_voice_envelope": {
+    "method": "20ms RMS envelope, 200Hz, 2s per shot, ±200ms search against same-text local TTS; coarse cadence alignment across hosted re-synthesis/FFmpeg variants. Not identity, phoneme, listening or ASR proof.",
+    "shots": [
+      {
+        "shot": "g01",
+        "correlation": 0.9986058360869684,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g02",
+        "correlation": 0.9396079340427971,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "g03",
+        "correlation": 0.9922038375897425,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g04",
+        "correlation": 0.9769876826716988,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g05",
+        "correlation": 0.9851826141941162,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g06",
+        "correlation": 0.9973388032211504,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g07",
+        "correlation": 0.988519243860798,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g08",
+        "correlation": 0.9823664994602782,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g09",
+        "correlation": 0.9881931834036507,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g10",
+        "correlation": 0.9941340921575856,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g11",
+        "correlation": 0.9905939473322317,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g12",
+        "correlation": 0.9792185567071849,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g13",
+        "correlation": 0.9877515323614339,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g14",
+        "correlation": 0.998471248235795,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g15",
+        "correlation": 0.9849553332779158,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g16",
+        "correlation": 0.9922186709873283,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g17",
+        "correlation": 0.9943915825474133,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g18",
+        "correlation": 0.9948957784370773,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g19",
+        "correlation": 0.9903385081741394,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g20",
+        "correlation": 0.9850513966615219,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g21",
+        "correlation": 0.9780644142526457,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g22",
+        "correlation": 0.9744967501292486,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g23",
+        "correlation": 0.9939002569952807,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g24",
+        "correlation": 0.9876400828723317,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g25",
+        "correlation": 0.9947868616141461,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g26",
+        "correlation": 0.9950042769724987,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g27",
+        "correlation": 0.9909861471486591,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g28",
+        "correlation": 0.9896422107797415,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g29",
+        "correlation": 0.9829167496651345,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "g30",
+        "correlation": 0.9820528067510077,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g31",
+        "correlation": 0.9928274735249725,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g32",
+        "correlation": 0.9883167606210856,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g33",
+        "correlation": 0.9877642691832151,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g34",
+        "correlation": 0.9486012846374196,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g35",
+        "correlation": 0.9942286438076412,
+        "lag_seconds": 0.0
+      },
+      {
+        "shot": "g36",
+        "correlation": 0.971751487566634,
+        "lag_seconds": 0.005
+      },
+      {
+        "shot": "g37",
+        "correlation": 0.9733127685357807,
+        "lag_seconds": 0.01
+      },
+      {
+        "shot": "g38",
+        "correlation": 0.9931728861859764,
+        "lag_seconds": 0.005
+      }
+    ],
+    "minimum_correlation": 0.9396079340427971,
+    "maximum_lag_seconds": 0.01
+  },
+  "hosted_vs_local_fine_waveform_probe": {
+    "passed": false,
+    "minimum_correlation": 0.33300578594207764,
+    "reason": "References are separately synthesized and normalized local WAVs, not hosted original WAVs; all38 receipt SHA256 differ. Fine waveform byte-equivalence is not a valid cross-render assertion. Same declared durations and shot boundaries, full decode and coarse envelope checked separately; no listening/identity acceptance inferred."
+  }
+}

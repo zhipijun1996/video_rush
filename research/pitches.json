@@ -373,7 +373,7 @@
     {
       "id": "V009",
       "title": "为了让AI生成地图，我又开始做数学题了",
-      "production_status": "ep007_authored_pending_actual_production",
+      "production_status": "ep007_verified_delivered",
       "one_question": "为了让随机地图生成可复现、可诊断，我亲自明确了哪些对象和关系？",
       "opening_10_seconds": "我做独立游戏，做到开始列集合、算坐标、画有向图了。高考做数学题的感觉，居然以这种方式回来了。",
       "story_beats": [
@@ -402,7 +402,11 @@
       "scope_limits": [
         "原型16/20仅该固定样本",
         "用户制定规范来自明确自述，单提交历史不支持编造细分写作历程"
-      ]
+      ],
+      "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40654566920/artifacts/12801956180",
+      "artifact_expires_at": "2026-11-11T08:17:49Z",
+      "duration_seconds": 440.4,
+      "verification": "docs/ep007-verification.json"
     }
   ],
   "sources": [
