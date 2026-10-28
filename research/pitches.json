@@ -372,16 +372,17 @@
     },
     {
       "id": "V009",
-      "title": "为了让AI生成地图，我又开始做数学题了",
-      "production_status": "ep007_r2_rewrite_in_production",
+      "title": "AI地图总翻车，我决定先把“题目”写清楚",
+      "production_status": "ep007_r2_verified_delivered",
       "one_question": "为什么我亲自把地图问题抽象成模块、接口、路线，以及这套规则怎样被不同搜索使用？",
-      "opening_10_seconds": "我做独立游戏，做到开始列集合、算坐标、画有向图了。高考做数学题的感觉，居然以这种方式回来了。",
+      "opening_10_seconds": "起点能到Boss，拿完奖励却走不出去。这样的地图，算生成成功吗？为了不再反复踩这种坑，我先给生成器重写了题目。",
       "story_beats": [
-        "几何到接口到Route到实际有向图",
-        "原型搜索与完整20Seed诊断",
-        "规范/建议/实际实现分开，继续接真实模块"
+        "从奖励陷阱和平台动作不可逆，引出为什么要人工抽象约束。",
+        "模块、接口、路线分别回答占用、衔接和可达问题；部分接口和镜像复用需先认证。",
+        "收益是复用内容、换搜索、定位缺口；动画演示前沿、DFS、Beam，规划层另标未完成。",
+        "保留16/20静态结果和失败；真实49实例位置重演，真实模块/物理/趣味仍未验收。"
       ],
-      "episode": "ep007",
+      "episode": "ep007-r2",
       "story_id": "S_MAP_RULES_02",
       "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
       "source_links": [
@@ -403,10 +404,10 @@
         "原型16/20仅该固定样本",
         "用户制定规范来自明确自述，单提交历史不支持编造细分写作历程"
       ],
-      "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40654566920/artifacts/12801956180",
-      "artifact_expires_at": "2026-11-11T08:17:49Z",
-      "duration_seconds": 440.4,
-      "verification": "docs/ep007-verification.json",
+      "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40667476811/artifacts/12806524815",
+      "artifact_expires_at": "2026-11-11T10:03:25Z",
+      "duration_seconds": 372.333333,
+      "verification": "docs/ep007-r2-verification.json",
       "previous_delivery": {
         "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40654566920/artifacts/12801956180",
         "artifact_expires_at": "2026-11-11T08:17:49Z",

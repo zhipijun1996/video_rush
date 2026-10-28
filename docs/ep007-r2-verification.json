@@ -1,0 +1,334 @@
+{
+  "episode": "ep007-r2",
+  "status": "hosted_render_download_verified",
+  "title": "AI地图总翻车，我决定先把“题目”写清楚",
+  "run_id": 40667476811,
+  "job_id": 122745530715,
+  "production_commit": "7f04699799409a3180a90bd3dece69bbdd24989c",
+  "artifact_id": 12806524815,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40667476811/artifacts/12806524815",
+  "artifact_bytes": 17659847,
+  "artifact_sha256": "37d9a357b63d6f4210503ced258e139af44e939494d8cabf6b7642ac4d289bd0",
+  "artifact_expires_at": "2026-11-11T10:03:25Z",
+  "duration_seconds": 372.333333,
+  "final_sha256": "dea171c4a345d6efa5df33f85d517aa30948bbcc36f077884a5ab66af3cb4543",
+  "final_bytes": 16290882,
+  "shots": 31,
+  "animated_shots": 31,
+  "delivery_manifest_files_verified": 114,
+  "editable_svgs_verified": 33,
+  "source_documents_git_blobs_verified": 10,
+  "source_metadata_records_verified": 43,
+  "exact_archived_instance_positions_verified": 49,
+  "animation_receipts_verified": 31,
+  "animation_contact_sheets_verified": 31,
+  "final_diagram_body_motion_independently_verified_for_all_shots": true,
+  "final_motion_report": "build/actions/ep007-r2-verified/final-motion.json",
+  "real_edge_receipts_verified": 31,
+  "tts_boundary_files_verified": 31,
+  "ci_tests_passed": 34,
+  "ci_tests_skipped": 1,
+  "local_tests_passed": 35,
+  "entire_downloaded_mp4_decoded": true,
+  "audio_metrics": {
+    "decoded_samples": 5957632,
+    "peak": 0.683929443359375,
+    "rms": 0.09629090007516124,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "temporary_bgm_chunks_deleted_204": 8,
+  "technical_pass": true,
+  "content_structural_pass": true,
+  "human_phone_listening": "pending",
+  "aesthetic_acceptance": "unverified",
+  "new_game_footage": false,
+  "new_game_physics_run": false,
+  "dfs": "proposed_not_implemented_in_project",
+  "exploration_planner": "not_fully_implemented",
+  "source_worktrees_changed": false,
+  "bilibili_published": false,
+  "sampled_final_frames": [
+    [
+      "r01",
+      0.55
+    ],
+    [
+      "r10",
+      0.8
+    ],
+    [
+      "r18",
+      0.4
+    ],
+    [
+      "r18",
+      0.85
+    ],
+    [
+      "r20",
+      0.55
+    ],
+    [
+      "r20",
+      0.9
+    ],
+    [
+      "r26",
+      0.8
+    ],
+    [
+      "r28",
+      0.9
+    ],
+    [
+      "r31",
+      0.8
+    ]
+  ],
+  "downloaded_cover_inspected": true,
+  "local_final": {
+    "episode": "ep007-r2",
+    "status": "local_render_verified",
+    "title": "AI地图总翻车，我决定先把“题目”写清楚",
+    "duration_seconds": 372.333333,
+    "shots": 31,
+    "animated_shots": 31,
+    "all_final_diagram_body_changes_independently_verified": true,
+    "editable_svgs_verified": 33,
+    "preserved_source_documents_verified": 10,
+    "source_archive_instance_positions_verified": 49,
+    "animation_receipts_verified": 31,
+    "animation_contact_sheets_verified": 31,
+    "delivery_hashes_verified": 114,
+    "real_edge_receipts": 31,
+    "full_decode": true,
+    "technical_pass": true,
+    "content_structural_pass": true,
+    "local_tests_passed": 35,
+    "voice_alignment": {
+      "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+      "passed": true,
+      "shots": [
+        {
+          "shot": "r01",
+          "correlation": 0.9913265109062195,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r02",
+          "correlation": 0.9855994582176208,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r03",
+          "correlation": 0.9051119685173035,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "r04",
+          "correlation": 0.9390512108802795,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r05",
+          "correlation": 0.9912182092666626,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r06",
+          "correlation": 0.9433746933937073,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r07",
+          "correlation": 0.9720682501792908,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r08",
+          "correlation": 0.968660831451416,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "r09",
+          "correlation": 0.9708637595176697,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r10",
+          "correlation": 0.982871413230896,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r11",
+          "correlation": 0.9257225394248962,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "r12",
+          "correlation": 0.9927204251289368,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r13",
+          "correlation": 0.9552441835403442,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r14",
+          "correlation": 0.9880117177963257,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r15",
+          "correlation": 0.9815868139266968,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r16",
+          "correlation": 0.9355587959289551,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r17",
+          "correlation": 0.9828689098358154,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r18",
+          "correlation": 0.9922378063201904,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r19",
+          "correlation": 0.9791626930236816,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r20",
+          "correlation": 0.9378473162651062,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r21",
+          "correlation": 0.9362102746963501,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "r22",
+          "correlation": 0.9527917504310608,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r23",
+          "correlation": 0.9747894406318665,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r24",
+          "correlation": 0.98106849193573,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r25",
+          "correlation": 0.992245614528656,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r26",
+          "correlation": 0.9808252453804016,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r27",
+          "correlation": 0.9881627559661865,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r28",
+          "correlation": 0.9408305287361145,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r29",
+          "correlation": 0.9137921333312988,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "r30",
+          "correlation": 0.956811785697937,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "r31",
+          "correlation": 0.9659701585769653,
+          "lag_seconds": 0.004875
+        }
+      ]
+    },
+    "final_sha256": "9278fa1966c4f131b3d3508e982e6ec06d6e20006140d12713824e9689f300c2",
+    "final_bytes": 16271238,
+    "source_commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "new_gameplay": false,
+    "new_game_physics_validation": false,
+    "dfs_project_implementation": "proposed_only",
+    "exploration_planner": "not_fully_implemented",
+    "aesthetic_acceptance": "unverified",
+    "human_phone_listening": "pending",
+    "sampled_final_frames": [
+      [
+        "r01",
+        0.55
+      ],
+      [
+        "r06",
+        0.7
+      ],
+      [
+        "r10",
+        0.3
+      ],
+      [
+        "r10",
+        0.8
+      ],
+      [
+        "r14",
+        0.75
+      ],
+      [
+        "r18",
+        0.45
+      ],
+      [
+        "r18",
+        0.8
+      ],
+      [
+        "r20",
+        0.55
+      ],
+      [
+        "r20",
+        0.9
+      ],
+      [
+        "r23",
+        0.8
+      ],
+      [
+        "r26",
+        0.8
+      ],
+      [
+        "r28",
+        0.9
+      ]
+    ],
+    "cover_inspected": true,
+    "renderer_oom_fixed": true
+  },
+  "note": "Hosted rerender, not claimed byte-identical. Actual motion independently rechecked on downloaded final diagram body, excluding subtitle/source/title. Raw TTS WAVs and pre-caption cut MP4s are not shipped; source receipt hashes retained, not claimed rehashed a second time. Proposed solver animations are explanations, not project execution traces. Only map placement replay uses exact original archived positions; rendering time is editorial."
+}
