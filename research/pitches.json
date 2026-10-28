@@ -373,8 +373,8 @@
     {
       "id": "V009",
       "title": "AI地图总翻车，我决定先把“题目”写清楚",
-      "production_status": "ep007_r2_verified_delivered",
-      "one_question": "为什么我亲自把地图问题抽象成模块、接口、路线，以及这套规则怎样被不同搜索使用？",
+      "production_status": "ep007_r3_in_production",
+      "one_question": "怎样把局部内容、接口和路线组合成有随机变化、玩家取舍与探索欲的地图？",
       "opening_10_seconds": "起点能到Boss，拿完奖励却走不出去。这样的地图，算生成成功吗？为了不再反复踩这种坑，我先给生成器重写了题目。",
       "story_beats": [
         "从奖励陷阱和平台动作不可逆，引出为什么要人工抽象约束。",
@@ -414,8 +414,16 @@
         "duration_seconds": 440.4,
         "verification": "docs/ep007-verification.json"
       },
-      "revision": "ep007-r2",
-      "revision_reason": "用户认为首版动机与收益不足、未说清算法应用、静态枯燥；重制为动机和抽象主线＋真正动态图。"
+      "revision": "ep007-r3",
+      "revision_reason": "用户要求多层概念和动机/收益/算法同时保留并缩短，体验目标优先；保留整图生长。",
+      "previous_revision_delivery": {
+        "episode": "ep007-r2",
+        "title": "AI地图总翻车，我决定先把“题目”写清楚",
+        "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40667476811/artifacts/12806524815",
+        "artifact_expires_at": "2026-11-11T10:03:25Z",
+        "duration_seconds": 372.333333,
+        "verification": "docs/ep007-r2-verification.json"
+      }
     }
   ],
   "sources": [

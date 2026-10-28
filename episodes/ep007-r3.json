@@ -1,0 +1,768 @@
+{
+  "schema_version": 2,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "repository": "zhipijun1996/map-gen",
+  "story_ids": [
+    "S_MAP_RULES_02"
+  ],
+  "rights": {
+    "diagrams": "Original explanatory diagrams authored from user-owned map-gen definitions; editable SVG preserved. Not generated gameplay.",
+    "repository": "User-authorized own repository documents and engineering images; no claim of a third-party open-source license.",
+    "fonts": "Noto Sans CJK, SIL OFL",
+    "music": {
+      "path": "build/music/the_kindred_hearth-actions.ogg",
+      "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+      "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+      "original_filename": "the_kindred_hearth.mp3",
+      "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+      "usage": "User requested light BGM and provided this track",
+      "license_status": "user supplied and requested use; original creator/license not independently specified"
+    },
+    "tts": "Microsoft Edge neural synthesis; not cloned user voice; service terms apply."
+  },
+  "research_scope": {
+    "repository": "zhipijun1996/map-gen",
+    "main_at_scan": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "branch_heads": {
+      "main": "c2ac2c3625f659364b187592c836c5ff2bceb892"
+    },
+    "accessible_commits": 1,
+    "branches_scanned": [
+      "main"
+    ],
+    "pull_requests": [],
+    "coverage": "All accessible refs/commit metadata; complete main tree; README, both complete normative/recommended docs, progress, actual prototype code, source snapshot, 20 batch maps/rejections and verifier inspected. Independently executed single-map verifier and full20 replay; original worktree content unchanged.",
+    "user_normative_authorship": "Explicit user testimony; no fabricated per-line authorship history from one-commit import.",
+    "revision": "ep007-r3",
+    "remote_refs_rechecked": "Sole main still c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "personal_process": "Editorial reconstruction of abstraction order from explicit user testimony plus normative model. Not a fabricated chronological diary or verbatim quotation.",
+    "editorial_focus": "All concept layers plus motivation/benefits/solvers retained; meaningful choice/exploration/control of randomness is the design goal; connectivity is a necessary baseline only."
+  },
+  "episode": "ep007-r3",
+  "title": "我想让AI生成的地图，真的值得探索",
+  "asset_spec": "episodes/ep007-r3-assets.json",
+  "target_duration": [
+    210,
+    300
+  ],
+  "shots": [
+    {
+      "id": "c01",
+      "chapter": "01",
+      "title": "随机地图，要让我想选、想试、想探索",
+      "narration": "我想做的随机地图，是每次开局都有变化，到了岔路也真有得选：冒险抄近路，还是绕远找奖励？能通，只是起点。",
+      "assets": [
+        "c01"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user_r3",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false,
+      "punchline": "这次走哪边？"
+    },
+    {
+      "id": "c02",
+      "chapter": "02",
+      "title": "为什么最后由我来定义这一套？",
+      "narration": "以前我让AI反复试地图，后来发现，路线该有什么区别、挑战怎样衔接，这些设计判断得由我先说清楚。我开始自己抽象规则。",
+      "assets": [
+        "c02"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user_history",
+        "user_model",
+        "user_r3",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c03",
+      "chapter": "03",
+      "title": "从一小格，到一张值得探索的地图",
+      "narration": "我把问题从小到大拆开：用格子统一布局，把内容做成模块，规定接口和内部路线，再组合探索地图。每一层，都得为玩家体验服务。",
+      "assets": [
+        "c03"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide",
+        "user_r3"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c04",
+      "chapter": "04",
+      "title": "第一层：Block 定坐标，Cell 装内容",
+      "narration": "Block是统一布局格，默认一格一百二十八像素。Cell是里面的岩石、平台、怪物和机关。布局按格子算，具体形状不必长成格子。",
+      "assets": [
+        "c04"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c05",
+      "chapter": "05",
+      "title": "第二层：Module 是模板，Instance 是一次放置",
+      "narration": "把一段挑战装进矩形，就是Module模板。放到地图里一次，叫一个Instance。同一模板可以放多次，但不同实例的占用不能重叠。",
+      "assets": [
+        "c05"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c06",
+      "chapter": "06",
+      "title": "第三层：Port 把“怎么接”写明确",
+      "narration": "Port是边界接口。位置、朝向、地貌、允许进还是出，都要明确。岩体、可穿平台和空中接口按规则匹配，两个模块才能准确对接。",
+      "assets": [
+        "c06"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c07",
+      "chapter": "07",
+      "title": "第四层：Route 描述真正的动作通路",
+      "narration": "Route再说明，从这个口进来，怎样到另一个口：需要跳跃、反冲还是钩索。方向和能力都要声明，左到右能走，反过来不一定。",
+      "assets": [
+        "c07"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c08",
+      "chapter": "08",
+      "title": "封口与镜像，让同一模块承担不同用途",
+      "narration": "同一模块，接左右可以穿越，接上方可以攀升。不用的口要封住，允许镜像的方向也要单独验证。这样才能复用内容，又守住动作边界。",
+      "assets": [
+        "c08"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c09",
+      "chapter": "09",
+      "title": "第五层：Map 同时有布局和通行网络",
+      "narration": "这些实例组成Map：一份信息是摆在哪里，另一份是玩家真正能怎么走。所有实际通路都得算进去，不能默认同一模块里各个口全通。",
+      "assets": [
+        "c09"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c10",
+      "chapter": "10",
+      "title": "上面还有体验层：岔路要带来真实选择",
+      "narration": "然后才是我真正关心的：两条路，玩起来有什么不同？短路更险，长路更稳，奖励值不值得绕？多画几条线，不会自动产生探索欲。",
+      "assets": [
+        "c10"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c11",
+      "chapter": "11",
+      "title": "随机，和玩家选择，分别从哪里来？",
+      "narration": "我希望每局的路线和挑战组合都有变化。种子影响生成过程，玩家根据动作、风险和收益选路。随机性和探索选择，两样都要。",
+      "assets": [
+        "c11"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user_r3",
+        "guide",
+        "foundation"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c12",
+      "chapter": "12",
+      "title": "奖励支路，也是在设计探索节奏",
+      "narration": "奖励支路可以原路折返，也能单向绕回，或者汇入另一条路。它决定探索后怎么继续，也影响玩家愿不愿意为额外挑战停一下。",
+      "assets": [
+        "c12"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c13",
+      "chapter": "13",
+      "title": "所以我先规划探索关系，再解空间拼图",
+      "narration": "我希望先用图变换，定下分叉、汇合和奖励关系，再让模块去实现。这层管玩家为什么想走，下面的搜索负责具体怎样拼出来。",
+      "assets": [
+        "c13"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "guide",
+        "user_r3",
+        "progress"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c14",
+      "chapter": "14",
+      "title": "分层的好处：内容、搜索和体验可以分别改",
+      "narration": "这套设计里，AI辅助离线做内容，在线由程序搜索。内容可复用、算法可替换；缺转接就补模块，体验不好就回头改路线设计。",
+      "assets": [
+        "c14"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "guide",
+        "foundation",
+        "user_r3"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c15",
+      "chapter": "15",
+      "title": "前沿生长：从开放接口，筛出下一块",
+      "narration": "第一种，前沿生长。沿开放口找候选，用尺寸、接口和路线约束筛选，再兼顾重复和空间利用。从合法候选里随机选，继续向外长。",
+      "assets": [
+        "c15"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "implementation",
+        "progress"
+      ],
+      "fact_check": "Motivation reconstructed from explicit user testimony and frozen normative goals, not an invented private chronology. Frontier/Beam implemented; DFS/backtracking and exploration planner proposed. All solver animations are labeled illustrative; map replay alone uses exact archived positions. Static graph success is not certified Godot physics or fun.",
+      "claim_type": "documented_design_with_editorial_personal_synthesis",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c16",
+      "chapter": "16",
+      "title": "DFS 回溯：一条路走不成，就退回换候选",
+      "narration": "第二种，深度优先加回溯。先试一条，后面不满足约束，就退回来换。它共用这套模块规则，但要限制尝试预算；目前是指南备选。",
+      "assets": [
+        "c16"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "guide"
+      ],
+      "fact_check": "Motivation reconstructed from explicit user testimony and frozen normative goals, not an invented private chronology. Frontier/Beam implemented; DFS/backtracking and exploration planner proposed. All solver animations are labeled illustrative; map replay alone uses exact archived positions. Static graph success is not certified Godot physics or fun.",
+      "claim_type": "documented_design_with_editorial_personal_synthesis",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c17",
+      "chapter": "17",
+      "title": "Beam：每层留几条候选，继续找连接",
+      "narration": "原型闭环用的是Beam：每层保留几条有希望的候选，一起找。当前最多三层、每层十八个状态。它解决局部怎么接，不保证最好玩。",
+      "assets": [
+        "c17"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "implementation",
+        "progress"
+      ],
+      "fact_check": "Motivation reconstructed from explicit user testimony and frozen normative goals, not an invented private chronology. Frontier/Beam implemented; DFS/backtracking and exploration planner proposed. All solver animations are labeled illustrative; map replay alone uses exact archived positions. Static graph success is not certified Godot physics or fun.",
+      "claim_type": "documented_design_with_editorial_personal_synthesis",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c18",
+      "chapter": "18",
+      "title": "搜索给出候选，体验目标决定怎样比较",
+      "narration": "这些搜索，负责找到满足约束的组合。要往好玩靠，还得比较动作节奏、风险收益、路线差异和重复程度，最后拿真实试玩校准。",
+      "assets": [
+        "c18"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "guide",
+        "progress",
+        "user_r3"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c19",
+      "chapter": "19",
+      "title": "能复现的模型，才方便继续改进",
+      "narration": "目前二十个固定种子，十六个通过静态检查，四个被拒绝。记录这些，是为了定位问题、稳定迭代，还不能证明地图已经好玩。",
+      "assets": [
+        "c19"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "batch",
+        "progress",
+        "user_r3"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c20",
+      "chapter": "20",
+      "title": "把局部关系，一层层铺成整张地图",
+      "narration": "这段生长按现有存档的位置展开，模块正在往上下左右拼起来。它说明布局原型在推进，真实模块和物理认证还没有接上。",
+      "assets": [
+        "c20"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "sample",
+        "progress"
+      ],
+      "fact_check": "Motivation reconstructed from explicit user testimony and frozen normative goals, not an invented private chronology. Frontier/Beam implemented; DFS/backtracking and exploration planner proposed. All solver animations are labeled illustrative; map replay alone uses exact archived positions. Static graph success is not certified Godot physics or fun.",
+      "claim_type": "documented_design_with_editorial_personal_synthesis",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c21",
+      "chapter": "21",
+      "title": "这套抽象，是我给自己的方法",
+      "narration": "以前我总让AI再想个办法。现在，我先把想要的体验拆成能讨论、能验证的规则，再用算法去找。高考数学的感觉，是这么找回来的。",
+      "assets": [
+        "c21"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user_history",
+        "user_model",
+        "user_r3",
+        "guide"
+      ],
+      "fact_check": "All model layers retained. Fun, meaningful route choice, exploration and controlled randomness are goals, not certified results. User-authored abstraction is reconstructed from explicit testimony and normative documents, without invented private chronology. Frontier/Beam implemented; DFS and full exploration planner proposed. Static graphs do not certify physical play or fun.",
+      "claim_type": "source_supported_model_and_editorial_design_reflection",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "c22",
+      "chapter": "22",
+      "title": "让变化变成选择，让选择勾起探索欲",
+      "narration": "接下来，我想把它接到真实挑战里，让每次开局有变化、岔路有取舍，让人愿意多探索一步。这些都还在打磨，也欢迎大家给我建议。",
+      "assets": [
+        "c22"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "original_explanatory_animation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user_r3",
+        "guide",
+        "progress",
+        "sample"
+      ],
+      "fact_check": "Motivation reconstructed from explicit user testimony and frozen normative goals, not an invented private chronology. Frontier/Beam implemented; DFS/backtracking and exploration planner proposed. All solver animations are labeled illustrative; map replay alone uses exact archived positions. Static graph success is not certified Godot physics or fun.",
+      "claim_type": "documented_design_with_editorial_personal_synthesis",
+      "same_seed_comparison": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "foundation",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/MAP_FOUNDATION.md",
+      "blob_sha": "7ecb6673ff88b85c8897e535c54511bf5e96aa56",
+      "sha256": "278f90ba4d34c73610619bc155f60b27fa76a0fc9f4332b051860fafb032b04e",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_FOUNDATION.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "guide",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/MAP_GENERATION_GUIDE.md",
+      "blob_sha": "c22e910781be69bc852f8b1772de701d352077a5",
+      "sha256": "3978deeab6ed644ddeab40952eb68b112c4f7076f6ffdaeb0a852b4490585e16",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_GENERATION_GUIDE.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "progress",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/PROGRESS.md",
+      "blob_sha": "da2f5f5971a7fb2321bbc0156cdce936458312fa",
+      "sha256": "0633249672ea604d14777538bc043a773c1ffec5a33cfa7b57df833825b5f469",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/PROGRESS.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "batch",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/results.json",
+      "blob_sha": "51c37ebf71e08d87c078af6394f7a9240348f117",
+      "sha256": "aefc50d31f4a9455e205d993b91c3bd38a7bcd4c291ce532d927b3c5c2e615bc",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/results.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "diagnosis",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/failure-diagnosis.json",
+      "blob_sha": "9bc98c4bfe5d55b89867e6c5a9b6cbd570e9759b",
+      "sha256": "380ac881f8ce0bd58f8a618b5a9ec7ed8194655e81c2eab80eda9cb105014e69",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/failure-diagnosis.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "summary",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/summary.json",
+      "blob_sha": "310132f3d8507af216e8d911f91264504ddd6128",
+      "sha256": "90bc3a599447ea87e031e5620c58ef7e31c134b32542272938860178de04a05a",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/summary.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "sample",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/output/map.json",
+      "blob_sha": "10245f76b1ad9f0405b99389cf01ab09bc929d20",
+      "sha256": "6b35f584e6fb4089a679db3c9e01f6afaf035e6cdc3363a366eb1c8ae58ef1cb",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/output/map.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "implementation",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/generate.py",
+      "blob_sha": "adcc209ae4aab49fce891420d95d4c18d9362d3d",
+      "sha256": "30bda7df8ea78296b772930737744af9c19c0a889a5bffa90430c85fdd2c5aed",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/generate.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "model_code",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/model.py",
+      "blob_sha": "3338f5f1332b25b3a0d09de8df9ebfa53f75f65e",
+      "sha256": "20288e91a47ac2bc60c80805a7bd7cd5831cd7df1b01b18b0d1aa3094431b598",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/model.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "archive_verifier",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "tools/verify_progress.py",
+      "blob_sha": "850b2936bd6f452f5593d8351a9ee233b441c1a9",
+      "sha256": "94a2b80e3c743a53cf227b33c8390fe1507c5ba33b8062e6d29db0d80fd71c77",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/tools/verify_progress.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "user_model",
+      "type": "user_testimony",
+      "text": "用户：现在完全人工制定了一套数学建模和规则；逐层讲清概念，展示为稳定方法论做的努力；找回高考做数学题的感觉。当前第一人称口播经整理，并非逐句原话。"
+    },
+    {
+      "id": "user_history",
+      "type": "prior_user_testimony",
+      "text": "用户此前明确反复让AI尝试地图/模块，大部分失败；最后决定亲自提炼建模规则，而非让AI自己找设计方法。"
+    },
+    {
+      "id": "user_r3",
+      "type": "user_testimony_and_editorial_direction",
+      "text": "用户要求多层概念、个人抽象动机、收益和算法应用同时保留，又不能太长；肯定整图生长动画；重点是好玩、路线随机、玩家选择与探索欲，不是单纯连通。"
+    },
+    {
+      "id": "user_revision",
+      "type": "prior_editorial_instruction",
+      "text": "用户此前要求解释为什么引入机制、收益和几种算法如何利用机制，以真实动态图代替静态图；语言通俗而有技术深度。"
+    }
+  ],
+  "music_gain": 0.12,
+  "game_audio_gain": 0,
+  "comparison": "Design animations and two exact archived-layout replays. No actual gameplay; random layouts and player route choices are distinguished. No new solver run or certified fun.",
+  "comparison_review": "核对七个概念层级均保留，个人抽象/收益/算法应用不漏；体验、随机性和选择是主线；设计目标和真实占位数据分开，静态通过不等于好玩。",
+  "cover_assets": [
+    "cover_geometry",
+    "cover_graph"
+  ],
+  "cover": {
+    "series": "失序之钟开发记录  /  07 整合版",
+    "left_label": "多层模型",
+    "right_label": "路线与玩家选择",
+    "line1": "随机地图，怎样才好玩？",
+    "line2": "从小模块，长出探索欲"
+  },
+  "title_candidates": [
+    "我想让AI生成的地图，真的值得探索",
+    "随机地图能走通，还远远不够",
+    "为了让地图好玩，我亲自拆了一套生成规则"
+  ],
+  "bilibili_body": "分区建议：游戏 → 单机游戏（开发记录），以投稿页实际可选为准。\n\n标签：独立游戏、游戏开发、程序化生成、AI开发、数学建模、Godot、失序之钟\n\n简介：\n\n这次把多层模型、个人抽象思路、机制收益和算法应用放进同一条讲述里：Block、Cell、Module、Instance、Port、Route，最后组成Map。\n\n我更想要的是：每次开局有变化，岔路有动作、风险、时间和收益上的取舍，愿意为奖励多探索一步。能通只是底线，随机布局、数学路径数量都不能直接代替好玩。\n\n全片使用原创分层动画，保留两段按真实存档位置展开的整图生长。讲前沿生长、DFS回溯、Beam与上层探索规划如何使用规则。前沿与局部Beam已有原型；DFS是指南备选，探索规划尚未完整实现。两段整图动画连续展开同一份Seed271028数据：先28、再补21个实例，不是两个随机样本或原始运行录像。当前仍是占位库，真实模块接入、Godot物理和趣味均未验收；20个种子的16过4拒仅为原始静态批次结果。\n\n中文AI配音；保留用户提供的the_kindred_hearth轻BGM压缩副本，原作者/许可尚未独立核实。图示与原始资料、动画回执随片保留，不自动上传B站。\n\n项目：https://github.com/zhipijun1996/map-gen"
+}
