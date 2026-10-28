@@ -96,6 +96,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def encode_shot(shot, assets, out, log, *, threads=4):
     """Video: normal speed, exact window. Still: slow camera pan, explicitly tagged."""
+    if shot.get('presentation') == 'animated_diagram':
+        from .animation import encode_diagram
+        return encode_diagram(shot, assets, out, log, threads=threads)
     if shot.get('presentation') == 'montage':
         return encode_montage(shot, assets, out, log, threads=threads)
     if shot.get('presentation') == 'parallax_diagram':

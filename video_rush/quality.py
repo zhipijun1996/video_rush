@@ -82,6 +82,8 @@ def validate(output, spec, timeline, sources):
     detections=(logs/'visual-detection.log').read_text()
     black=detect_intervals(detections,'black'); frozen=detect_intervals(detections,'freeze')
     media={x['id']:x for x in sources['assets']}
+    from .animation import audit_motion
+    animations=[audit_motion(output,s,media[s['assets'][0]]['graphic']) for s in timeline['shots'] if s.get('presentation')=='animated_diagram']
     unexpected,planned=classify_freezes(frozen,timeline,media)
     metrics=audio_metrics(final)
     bgm=None
@@ -107,9 +109,11 @@ def validate(output, spec, timeline, sources):
       'decoded_audio_duration_matches_timeline':abs(metrics['decoded_samples']/16000-timeline['duration'])<.08,
       'requested_music_source_valid':not music or (bgm['metrics']['audible_signal'] and (not spec.get('music_asset') or bgm['sha256']==spec['music_asset']['sha256'])),
       'sources_present_and_hash_match':all(Path(s['local_path']).exists() and sha(s['local_path'])==s['sha256'] for s in sources['assets']),
-      'no_long_black':not black,'no_unexpected_long_freeze':not unexpected}
+      'no_long_black':not black,'no_unexpected_long_freeze':not unexpected,
+      'animated_diagrams_show_actual_motion':all(x['actual_motion_detected'] for x in animations)}
     report={'status':'technical_pass_human_review_pending' if all(checks.values()) else 'technical_fail',
       'background_music':bgm,
+      'animations':animations,
       'technical':{'passed':all(checks.values()),'checks':checks,'ffprobe':meta,'audio':metrics,'black_intervals':black,
                    'unexpected_freeze_intervals':unexpected,'planned_still_intervals':planned,'decoded_entire_file':True,'requested_duration_range':[minimum,maximum]},
       'content':content_check(spec,timeline,sources),'final':{'path':str(final.resolve()),'sha256':sha(final),'bytes':final.stat().st_size},

@@ -52,7 +52,7 @@ def graphic(path, spec):
     im.save(path)
 
 
-def diagram(path, spec):
+def diagram(path, spec, *, transparent=False):
     """Render authored diagram primitives to matching PNG and editable SVG.
 
     Coordinates describe an editorial explanation, never simulated gameplay.
@@ -61,9 +61,9 @@ def diagram(path, spec):
     from html import escape
     path = Path(path)
     bg = spec.get('background', '#101b2b')
-    im = Image.new('RGB', (1920, 1080), bg); d = ImageDraw.Draw(im)
+    im = Image.new('RGBA' if transparent else 'RGB', (1920, 1080), (0,0,0,0) if transparent else bg); d = ImageDraw.Draw(im)
     svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">',
-           '<rect width="1920" height="1080" fill="'+escape(bg, quote=True)+'"/>']
+           '<rect width="1920" height="1080" fill="'+('none' if transparent else escape(bg, quote=True))+'"/>']
     def text_at(x, y, value, size=42, color='#eef3fa', bold=False, width=1700):
         size = int(size)
         while size >= 28:

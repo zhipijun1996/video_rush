@@ -18,6 +18,14 @@ from .subtitles import narration_cues
 STAGES=['Research','Story','Script','Shot Planning','Footage Collection','Narration','Timeline Composition','Rendering','Quality Validation','Delivery']
 
 
+def cut_source_fingerprints(shot, assets):
+    # An animation's flat preview can be byte-identical after timing or group
+    # edits. Include its actual recipe, not just the PNG's file hash.
+    return [{'sha256':assets[x]['sha256'],
+             'animation':assets[x].get('graphic') if shot.get('presentation')=='animated_diagram' else None}
+            for x in shot['assets']]
+
+
 class Stages:
     def __init__(self, output):
         self.output=Path(output);self.output.mkdir(parents=True,exist_ok=True)
@@ -152,11 +160,12 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         return [output/'storyboard.json',output/'subtitles.ass',output/'sources.json']
     stages('Timeline Composition',{'spec':spec,'narration':[sha(output/'narration'/(s['id']+'.wav')) for s in spec['shots']],'media':sha(output/'media/manifest.json'),'code':sha(Path(__file__)),'subtitle_timing':sha(ROOT/'video_rush/subtitles.py'),'subtitle_generator':inspect.getsource(ass_file),'music':sha(music) if music else None,'music_license':music_license,'rights':sha(ROOT/'research/rights.json')},compose)
     timeline=read(output/'storyboard.json');sources=read(output/'sources.json')
+    animation_code=[sha(ROOT/'video_rush/animation.py'),sha(ROOT/'video_rush/graphics.py')] if any(s.get('presentation')=='animated_diagram' for s in spec['shots']) else None
     def rendering():
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)
         muxed=[]
         for s in timeline['shots']:
-            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':[assets[x]['sha256'] for x in s['assets']],'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'render':digest({'encode_shot':inspect.getsource(encode_shot),'module':sha(ROOT/'video_rush/render.py'),'resolution':[1920,1080,30]})})
+            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':cut_source_fingerprints(s,assets),'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'animation':animation_code,'render':digest({'encode_shot':inspect.getsource(encode_shot),'module':sha(ROOT/'video_rush/render.py'),'resolution':[1920,1080,30]})})
             cache=p.with_suffix('.json')
             if not (p.exists() and cache.exists() and read(cache).get('key')==k and read(cache).get('sha256')==sha(p)):
                 raw=cuts/(s['id']+'.silent.mp4');encode_shot(s,assets,raw,logs/(s['id']+'-visual.log'))
@@ -188,12 +197,12 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         run(cmd,log=logs/'final-render.log',timeout=1200)
         cover(output/'cover.png',assets[spec['cover_assets'][0]]['local_path'],assets[spec['cover_assets'][1]]['local_path'],spec.get('cover'))
         return [output/'final.mp4',output/'cover.png']
-    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'composition_code':sha(Path(__file__)),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':3,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
+    stages('Rendering',{'timeline':sha(output/'storyboard.json'),'media':sha(output/'media/manifest.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'animation':animation_code,'composition_code':sha(Path(__file__)),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':3,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
     def validation():
         report=validate(output,spec,timeline,sources)
         if not report['technical']['passed']:raise RuntimeError('Technical quality failed; inspect report.json and logs')
-        return [output/'report.json',output/'phone-review.md']
-    stages('Quality Validation',{'final':sha(output/'final.mp4'),'sources':sha(output/'sources.json'),'validator':sha(ROOT/'video_rush/quality.py')},validation)
+        return [output/'report.json',output/'phone-review.md',*sorted((output/'animation-evidence').glob('*'))]
+    stages('Quality Validation',{'final':sha(output/'final.mp4'),'sources':sha(output/'sources.json'),'validator':sha(ROOT/'video_rush/quality.py'),'animation':animation_code},validation)
     def delivery():
         titles=spec.get('title_candidates') or [spec['title'],'概念图很美，实机像贴皮？我用AI做游戏的美术返工记录','独自用AI做Godot游戏：素材越画越多，为什么画面还是不对？']
         body='# B站上传建议\n\n'+''.join(f'- {x}\n' for x in titles)+'\n分区建议：游戏 → 单机游戏（开发记录）；或知识 → 野生技能协会，以投稿页实际可选分区为准。\n\n标签：AI开发、独立游戏、Godot、游戏开发、Codex、美术、失序之钟\n\n简介：\n\n独自用 AI 制作《失序之钟》，这次复盘概念图到实机的反复返工。包含历史实机、失败候选和有限进展，不代表游戏美术问题已解决。中文AI配音；母版、预览、实验与正式入口分别标注。不同阶段画面对比不是同Seed受控实验。\n\n素材来源：本人项目 gunman-rush 的 Git/PR/历史录像。Underworld Tileset by Asouris，采用作者许可声明；中文字体 Noto Sans CJK，SIL OFL。五风格比较另含 Retro Lines / VEXED、Basic Platformer / Ariel Pinana、Scribble Platformer / Kenney、Cavern Tile Set / ansimuz（CC0；Basic许可来自作者页面，原许可文件为空）。其余许可状态见 sources.json。\n\n'+''.join(f'- https://github.com/{spec["repository"]}/pull/{p}\n' for p in sorted({n for s in spec['shots'] for n in s['prs']}))+'\n上传前完整观看 phone-review.md 清单；未自动发布到B站。\n'
@@ -206,7 +215,8 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
         files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').glob('*')) if p.is_file()]
         files += [str(p.relative_to(output)) for p in sorted((output/'browser-evidence').glob('*')) if p.is_file()]
+        files += [str(p.relative_to(output)) for p in sorted((output/'animation-evidence').glob('*')) if p.is_file()]
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':6,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
+    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':7,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
     return output

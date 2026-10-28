@@ -108,6 +108,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/original_uploads/
             build/episodes/${{ inputs.episode }}/source-evidence/
             build/episodes/${{ inputs.episode }}/browser-evidence/
+            build/episodes/${{ inputs.episode }}/animation-evidence/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 
