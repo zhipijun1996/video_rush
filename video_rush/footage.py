@@ -62,6 +62,12 @@ def collect(repo, spec, output):
                 graphic(dest,asset['graphic'])
                 obj=dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),
                          source_url='original-editorial-graphic:'+asset['id'],generator_sha256=sha(ROOT/'video_rush/graphics.py'))
+                if asset['graphic'].get('layout') == 'diagram':
+                    import shutil
+                    evidence=output.parent/'source-evidence'/(asset['id']+'.svg')
+                    evidence.parent.mkdir(exist_ok=True)
+                    shutil.copyfile(dest.with_suffix('.svg'),evidence)
+                    obj.update(editable_svg=str(evidence.relative_to(output.parent)),svg_sha256=sha(evidence))
             else:
                 url=asset['url']
                 if urlparse(url).scheme!='https' or not asset.get('sha256'):

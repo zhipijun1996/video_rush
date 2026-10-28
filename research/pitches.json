@@ -369,6 +369,40 @@
         "expires_at": "2026-11-10T06:45:51Z",
         "verification": "docs/ep006-verification.json"
       }
+    },
+    {
+      "id": "V009",
+      "title": "为了让AI生成地图，我又开始做数学题了",
+      "production_status": "ep007_authored_pending_actual_production",
+      "one_question": "为了让随机地图生成可复现、可诊断，我亲自明确了哪些对象和关系？",
+      "opening_10_seconds": "我做独立游戏，做到开始列集合、算坐标、画有向图了。高考做数学题的感觉，居然以这种方式回来了。",
+      "story_beats": [
+        "几何到接口到Route到实际有向图",
+        "原型搜索与完整20Seed诊断",
+        "规范/建议/实际实现分开，继续接真实模块"
+      ],
+      "episode": "ep007",
+      "story_id": "S_MAP_RULES_02",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "source_links": [
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_FOUNDATION.md",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_GENERATION_GUIDE.md",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/PROGRESS.md",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/results.json",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/failure-diagnosis.json",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/summary.json",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/output/map.json",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/generate.py",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/model.py",
+        "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/tools/verify_progress.py"
+      ],
+      "material_gaps": [
+        "没有真实模块或物理认证；本期无实机，使用明示解释图"
+      ],
+      "scope_limits": [
+        "原型16/20仅该固定样本",
+        "用户制定规范来自明确自述，单提交历史不支持编造细分写作历程"
+      ]
     }
   ],
   "sources": [

@@ -1541,5 +1541,145 @@
       "priority": "selected_ep006",
       "reason": "多个可视失败版本与用户从外包设计判断转向人工建模的转折。"
     }
+  },
+  {
+    "id": "S_MAP_RULES_02",
+    "event": "人工制定Map数学模型与约束，把生成失败变成可定位问题",
+    "date": "2026-10-28",
+    "repository": "zhipijun1996/map-gen",
+    "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "base_commit": null,
+    "PR": [],
+    "branch": "main",
+    "background": "上期反复尝试算法/地图后，用户亲自定义完整基础契约和实施指南。",
+    "conflict": "图上相邻、主路可通，不代表接口内部与奖励后续方向成立；追求稳定方法不能只求更多地图。",
+    "attempts": [
+      "Block/Cell/Module/Instance/Port/Route规范",
+      "部分启用、封口、镜像、初始方向、完整有向图",
+      "二维前沿生长与有界闭环搜索",
+      "完整20种子首批结果保留与独立重放"
+    ],
+    "result": "16/20静态通过，4个奖励拒绝；真实模块接入、物理认证、失败恢复和体验骨架仍未完成。",
+    "truth_status": "prototype_static_graph_only_real_modules_not_integrated",
+    "evidence_status": "full20_replay_verified_not_physics",
+    "sources": [
+      {
+        "id": "foundation",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "docs/MAP_FOUNDATION.md",
+        "blob_sha": "7ecb6673ff88b85c8897e535c54511bf5e96aa56",
+        "sha256": "278f90ba4d34c73610619bc155f60b27fa76a0fc9f4332b051860fafb032b04e",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_FOUNDATION.md",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "guide",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "docs/MAP_GENERATION_GUIDE.md",
+        "blob_sha": "c22e910781be69bc852f8b1772de701d352077a5",
+        "sha256": "3978deeab6ed644ddeab40952eb68b112c4f7076f6ffdaeb0a852b4490585e16",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_GENERATION_GUIDE.md",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "progress",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "docs/PROGRESS.md",
+        "blob_sha": "da2f5f5971a7fb2321bbc0156cdce936458312fa",
+        "sha256": "0633249672ea604d14777538bc043a773c1ffec5a33cfa7b57df833825b5f469",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/PROGRESS.md",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "batch",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "experiments/seed-study/output/results.json",
+        "blob_sha": "51c37ebf71e08d87c078af6394f7a9240348f117",
+        "sha256": "aefc50d31f4a9455e205d993b91c3bd38a7bcd4c291ce532d927b3c5c2e615bc",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/results.json",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "diagnosis",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "experiments/seed-study/output/failure-diagnosis.json",
+        "blob_sha": "9bc98c4bfe5d55b89867e6c5a9b6cbd570e9759b",
+        "sha256": "380ac881f8ce0bd58f8a618b5a9ec7ed8194655e81c2eab80eda9cb105014e69",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/failure-diagnosis.json",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "summary",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "experiments/seed-study/output/summary.json",
+        "blob_sha": "310132f3d8507af216e8d911f91264504ddd6128",
+        "sha256": "90bc3a599447ea87e031e5620c58ef7e31c134b32542272938860178de04a05a",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/summary.json",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "sample",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "prototype/output/map.json",
+        "blob_sha": "10245f76b1ad9f0405b99389cf01ab09bc929d20",
+        "sha256": "6b35f584e6fb4089a679db3c9e01f6afaf035e6cdc3363a366eb1c8ae58ef1cb",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/output/map.json",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "implementation",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "prototype/generate.py",
+        "blob_sha": "adcc209ae4aab49fce891420d95d4c18d9362d3d",
+        "sha256": "30bda7df8ea78296b772930737744af9c19c0a889a5bffa90430c85fdd2c5aed",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/generate.py",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "model_code",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "prototype/model.py",
+        "blob_sha": "3338f5f1332b25b3a0d09de8df9ebfa53f75f65e",
+        "sha256": "20288e91a47ac2bc60c80805a7bd7cd5831cd7df1b01b18b0d1aa3094431b598",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/model.py",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "archive_verifier",
+        "type": "immutable_source",
+        "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+        "path": "tools/verify_progress.py",
+        "blob_sha": "850b2936bd6f452f5593d8351a9ee233b441c1a9",
+        "sha256": "94a2b80e3c743a53cf227b33c8390fe1507c5ba33b8062e6d29db0d80fd71c77",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/tools/verify_progress.py",
+        "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+      },
+      {
+        "id": "user_model",
+        "type": "user_testimony",
+        "text": "用户：现在完全人工制定了一套数学建模和规则；逐层讲清概念，展示为稳定方法论做的努力；找回高考做数学题的感觉。当前第一人称口播经整理，并非逐句原话。"
+      }
+    ],
+    "media": [
+      "actual_map",
+      "seed_grid"
+    ],
+    "recordability": {
+      "needed": false,
+      "approach": "original explanatory diagrams plus exact archival engineering PNG"
+    },
+    "video_potential": {
+      "priority": "selected_ep007",
+      "reason": "逐层定义将随机地图转为明确的几何/接口/有向图问题；高考数学感来自用户自述。"
+    }
   }
 ]

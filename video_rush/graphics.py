@@ -8,6 +8,8 @@ from .common import font
 
 
 def graphic(path, spec):
+    if spec.get('layout') == 'diagram':
+        return diagram(path, spec)
     if spec.get('layout') == 'parallax_template':
         im=Image.new('RGB',(3840,720),'#13263a');d=ImageDraw.Draw(im)
         colors=[('#406281','#8298ac'),('#255b61','#73ac9d'),('#574b3e','#c5a969')]
@@ -47,6 +49,59 @@ def graphic(path, spec):
         d.text((145,y),line,font=ImageFont.truetype(font(True),size),fill=yellow if i==spec.get('highlight',len(lines)-1) else white)
         y+=132
     if spec.get('footer'):d.text((145,825),spec['footer'],font=ImageFont.truetype(font(),32),fill='#b9c9dc')
+    im.save(path)
+
+
+def diagram(path, spec):
+    """Render authored diagram primitives to matching PNG and editable SVG.
+
+    Coordinates describe an editorial explanation, never simulated gameplay.
+    Reject overflowing labels instead of silently cutting off Chinese text.
+    """
+    from html import escape
+    path = Path(path)
+    bg = spec.get('background', '#101b2b')
+    im = Image.new('RGB', (1920, 1080), bg); d = ImageDraw.Draw(im)
+    svg = ['<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">',
+           '<rect width="1920" height="1080" fill="'+escape(bg, quote=True)+'"/>']
+    def text_at(x, y, value, size=42, color='#eef3fa', bold=False, width=1700):
+        size = int(size)
+        while size >= 28:
+            f = ImageFont.truetype(font(bold), size)
+            if d.textlength(value, font=f) <= width: break
+            size -= 1
+        if size < 28: raise ValueError('Diagram label too long: '+value)
+        if not (0 <= x and 0 <= y and x+d.textlength(value,font=f) <= 1920 and y+size*1.5 <= 1080):
+            raise ValueError('Diagram text outside canvas: '+value)
+        # Top-left em anchoring is shared with SVG's text-before-edge baseline.
+        d.text((x,y), value, font=f, fill=color, anchor='lt')
+        svg.append(f'<text x="{x}" y="{y}" dominant-baseline="text-before-edge" font-family="Noto Sans CJK SC" font-size="{size}" font-weight="{700 if bold else 400}" fill="{escape(color,quote=True)}">{escape(value)}</text>')
+    for e in spec.get('elements', []):
+        kind = e['type']; color = e.get('color','#89e6cc')
+        if kind == 'text':
+            text_at(e['x'],e['y'],e['text'],e.get('size',42),color,e.get('bold',False),e.get('width',1700))
+        elif kind in {'rect','circle'}:
+            x,y,w,h=e['bounds']; fill=e.get('fill','#1c3048'); stroke=e.get('stroke',color); sw=e.get('stroke_width',3)
+            if not (0<=x<x+w<=1920 and 0<=y<y+h<=1080): raise ValueError('Diagram shape outside canvas')
+            if kind=='rect':
+                r=e.get('radius',16); d.rounded_rectangle((x,y,x+w,y+h),r,fill=fill,outline=stroke,width=sw)
+                svg.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{r}" fill="{escape(fill,quote=True)}" stroke="{escape(stroke,quote=True)}" stroke-width="{sw}"/>')
+            else:
+                d.ellipse((x,y,x+w,y+h),fill=fill,outline=stroke,width=sw)
+                svg.append(f'<ellipse cx="{x+w/2}" cy="{y+h/2}" rx="{w/2}" ry="{h/2}" fill="{escape(fill,quote=True)}" stroke="{escape(stroke,quote=True)}" stroke-width="{sw}"/>')
+        elif kind=='line':
+            pts=[tuple(p) for p in e['points']]; sw=e.get('width',5)
+            if len(pts)<2 or any(not (0<=x<=1920 and 0<=y<=1080) for x,y in pts): raise ValueError('Invalid diagram line')
+            d.line(pts,fill=color,width=sw)
+            svg.append('<polyline points="'+' '.join(f'{x},{y}' for x,y in pts)+f'" fill="none" stroke="{escape(color,quote=True)}" stroke-width="{sw}"/>')
+            for a,b in ([(pts[-2],pts[-1])] if e.get('arrow') else []) + ([(pts[1],pts[0])] if e.get('both') else []):
+                theta=math.atan2(b[1]-a[1],b[0]-a[0]); length=18
+                head=[b,(b[0]-length*math.cos(theta-.45),b[1]-length*math.sin(theta-.45)),(b[0]-length*math.cos(theta+.45),b[1]-length*math.sin(theta+.45))]
+                d.polygon(head,fill=color)
+                svg.append('<polygon points="'+' '.join(f'{x:.3f},{y:.3f}' for x,y in head)+f'" fill="{escape(color,quote=True)}"/>')
+        else: raise ValueError('Unknown diagram primitive: '+kind)
+    svg.append('</svg>')
+    path.with_suffix('.svg').write_text('\n'.join(svg),encoding='utf-8')
     im.save(path)
 
 

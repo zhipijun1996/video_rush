@@ -1,0 +1,1125 @@
+{
+  "schema_version": 2,
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "episode": "ep007",
+  "title": "为了让AI生成地图，我又开始做数学题了",
+  "target_duration": [
+    300,
+    480
+  ],
+  "repository": "zhipijun1996/map-gen",
+  "asset_spec": "episodes/ep007-assets.json",
+  "story_ids": [
+    "S_MAP_RULES_02"
+  ],
+  "shots": [
+    {
+      "id": "g01",
+      "chapter": "01",
+      "title": "做个随机地图，怎么又开始做数学题了？",
+      "narration": "我做独立游戏，做到开始列集合、算坐标、画有向图了。高考做数学题的感觉，居然以这种方式回来了。",
+      "assets": [
+        "g01"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_model",
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false,
+      "punchline": "梦回数学卷"
+    },
+    {
+      "id": "g02",
+      "chapter": "02",
+      "title": "这次，先由我把问题定义清楚",
+      "narration": "上期我还在反复让AI试地图。这次我自己制定了一套模型和规则。想要稳定的方法，得先把“好好生成”拆成能检查的问题。",
+      "assets": [
+        "g02"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_model",
+        "foundation",
+        "guide",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g03",
+      "chapter": "03",
+      "title": "先认清六个对象",
+      "narration": "先从最小的概念开始。布局格、内容、模块、放置实例、接口，还有模块里面的路线。名字有点多，但它们分别管不同的事。",
+      "assets": [
+        "g03"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g04",
+      "chapter": "04",
+      "title": "第一层：Block 统一布局坐标",
+      "narration": "第一层是布局格，默认一格一百二十八像素。模块放在哪里、占多大，都按整数格计算。这样拼地图时，大家用的是同一套坐标。",
+      "assets": [
+        "g04"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g05",
+      "chapter": "05",
+      "title": "Cell 是具体内容，不是又一层格子",
+      "narration": "格子里具体放什么，是另一回事。岩石、平台、怪物、宝箱，都叫内容实体。它们保留自己的形状和碰撞，不用长成一格一格。",
+      "assets": [
+        "g05"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g06",
+      "chapter": "06",
+      "title": "第二层：Module 是一个矩形内容模板",
+      "narration": "第二层是模块。一个矩形范围里，装着具体内容、接口、路线，还有玩法标签和认证资料。矩形是给生成器算占用的，游戏画面不用画个框。",
+      "assets": [
+        "g06"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g07",
+      "chapter": "07",
+      "title": "模板与实例，分开计算",
+      "narration": "同一个模板放三次，是三个实例，不是三个新模块。每个实例单独记录坐标、镜像方向，以及这次启用哪些接口。内容成本和放置数量得分开算。",
+      "assets": [
+        "g07"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g08",
+      "chapter": "08",
+      "title": "矩形可以相邻，但不能重叠",
+      "narration": "最基本的一条：实例不能重叠。可以一高一低、上下发展，也可以共用边界，但不能让两个模块占同一块空间。先把这道几何题做对。",
+      "assets": [
+        "g08"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g09",
+      "chapter": "09",
+      "title": "第三层：Port 放在边界小格的外侧边中心",
+      "narration": "第三层是接口。它落在边界某个小格的外侧边中心，不要求在整个模块的正中间。同一侧能放多个口，模块就可以自然地错层拼接。",
+      "assets": [
+        "g09"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g10",
+      "chapter": "10",
+      "title": "接口地貌分三类",
+      "narration": "接口还分地貌：岩体、可穿平台、空中。同类才能接同类。比如岩体口只在左右边；底部不能设空中入口，不能指望人从下面凭空掉进来。",
+      "assets": [
+        "g10"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g11",
+      "chapter": "11",
+      "title": "位置之外，还要写通行权限",
+      "narration": "然后是方向。输入口允许进来，输出口允许出去，双向口两边都行。图上两块贴住了，只说明位置挨着，还得看方向能不能接。",
+      "assets": [
+        "g11"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g12",
+      "chapter": "12",
+      "title": "两个接口，怎样才算接上？",
+      "narration": "一次连接要同时满足：接口世界坐标重合、朝向相反、地貌相同、权限兼容。正式内容还要验证真实接缝。少一条，都不能算接成功。",
+      "assets": [
+        "g12"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g13",
+      "chapter": "13",
+      "title": "第四层：Route 说明模块里面怎么走",
+      "narration": "第四层，模块内部到底怎么走？从左口到右口，可能是一段反冲跳；从左口到上口，可能要用钩索。左到右能走，不代表右到左也能走。",
+      "assets": [
+        "g13"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g14",
+      "chapter": "14",
+      "title": "路线是一份明确的动作合同",
+      "narration": "每条路线还要写清能力要求、动作、难度、预计时间和进出条件。不是AI画根箭头，说“这里能过”，这条路就真的存在了。",
+      "assets": [
+        "g14"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g15",
+      "chapter": "15",
+      "title": "能力过滤，用集合关系表达",
+      "narration": "比如这局只有跳跃和反冲，要求钩索的路线就过滤掉。需要的能力，必须包含在已有能力里。建图时先固定这份输入，不逐步模拟血量和能量。",
+      "assets": [
+        "g15"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g16",
+      "chapter": "16",
+      "title": "部分接口不用，就要真封住",
+      "narration": "一个模块不必把所有口都接出去。但不用的口必须封住，而且不能挡住这次要走的路。摆点荆棘、扣点血，人还能跳出去，这不算封好了。",
+      "assets": [
+        "g16"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g17",
+      "chapter": "17",
+      "title": "计划没用的路，不能假装不存在",
+      "narration": "还有个容易偷懒的地方：我没打算让玩家走这条路，不等于玩家走不了。所有实际能走的连接都得算进去，不能只验证自己画的理想路线。",
+      "assets": [
+        "g17"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g18",
+      "chapter": "18",
+      "title": "水平镜像：翻位置，不是倒放动作",
+      "narration": "镜像也不是把动作倒放。入口翻到右边，它仍然是入口。地形、碰撞、动作方向要一起翻，并且单独验证。镜像不凭空增加一个新模板。",
+      "assets": [
+        "g18"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g19",
+      "chapter": "19",
+      "title": "第五层：Map 是接口级的有向网络",
+      "narration": "最后才是整张地图。图里的节点，要细到某个实例的某个接口。跨模块走连接，模块内走真实路线。不能把一个模块缩成一个默认全通的大点。",
+      "assets": [
+        "g19"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g20",
+      "chapter": "20",
+      "title": "奖励支路，也要写清楚离开方式",
+      "narration": "奖励支路也得讲清去向。可以拿完原路返回，可以单向绕回来，也可以汇入另一条路线。不是把宝箱塞到边上，这道题就结束了。",
+      "assets": [
+        "g20"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g21",
+      "chapter": "21",
+      "title": "初始单向门，按初始方向算",
+      "narration": "机关门也只按初始方向算。以后开了可能双向，那是游戏运行时的事。不能为了让验证通过，先假设玩家已经把门打开。",
+      "assets": [
+        "g21"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g22",
+      "chapter": "22",
+      "title": "规则写清楚之后，才谈怎么生成",
+      "narration": "规则齐了，再谈生成。指南里希望先定探索意图：哪里分叉、哪里汇合、两条路的动作有什么不同。这部分是目标，当前原型还没完整做出来。",
+      "assets": [
+        "g22"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "guide",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g23",
+      "chapter": "23",
+      "title": "在线生成，使用一组固定输入",
+      "narration": "运行时给程序种子、区域、能力、配置和模块库版本。AI可以在离线阶段帮忙做内容；在线拼图用纯程序，不一边生成一边等大模型临场发挥。",
+      "assets": [
+        "g23"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g24",
+      "chapter": "24",
+      "title": "原型的第一步：先索引，再找候选",
+      "narration": "现在已经实现的原型，先把模板按接口朝向和地貌建索引。要接哪种口，就找兼容候选，避免每放一块都从头乱猜。",
+      "assets": [
+        "g24"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "implementation",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g25",
+      "chapter": "25",
+      "title": "对准接口，直接算模块原点",
+      "narration": "放置位置也不用逐像素试。已知旧接口的世界坐标，减去新接口的局部坐标，就能算出新模块的原点。再检查，它有没有和已有模块重叠。",
+      "assets": [
+        "g25"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "implementation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g26",
+      "chapter": "26",
+      "title": "向外生长：合法候选里再做选择",
+      "narration": "然后沿开放接口向外长。原型会考虑多接通几个口、少撑大占地、少重复模板，再保留一点随机性。不是先画三条横线，再往上填内容。",
+      "assets": [
+        "g26"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "implementation",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g27",
+      "chapter": "27",
+      "title": "闭环更难：两头都固定了",
+      "narration": "闭环就更难了，两头位置已经固定。现在用有界搜索，试一小串中间模块，每层只留一部分候选。预算用完还没接上，也不能画条线冒充成功。",
+      "assets": [
+        "g27"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "implementation",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g28",
+      "chapter": "28",
+      "title": "硬约束负责能不能收，软评分负责怎么选",
+      "narration": "最后分两层验收。硬规则不过，就拒绝；过了，再比较路线差异、动作节奏、重复程度。评分只是辅助，不能靠分数证明游戏好玩。",
+      "assets": [
+        "g28"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "foundation",
+        "guide",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g29",
+      "chapter": "29",
+      "title": "现在实际做到了哪一步？",
+      "narration": "目前存档里，这张样例有四十九个实例、六十一处连接和六处奖励。它验证的是布局和静态关系，里面还是占位模板。",
+      "assets": [
+        "g29"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "progress",
+        "sample"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g30",
+      "chapter": "29",
+      "title": "原始工程图：自由二维布局",
+      "narration": "可以看到，模块不再排成固定的几条横线。不同尺寸和接口偏移，让它往上下左右展开。不过，这些色块还不是可以直接玩的关卡。",
+      "assets": [
+        "actual_map"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": true,
+      "shot_type": "original_engineering_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "sample",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g31",
+      "chapter": "31",
+      "title": "连续测 20 个种子，失败也全部留下",
+      "narration": "连续二十个种子，第一次生成，十六个通过静态检查，四个拒绝，没有换掉失败种子。这四张都能从起点到Boss，但奖励出了问题。",
+      "assets": [
+        "g31"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "batch",
+        "diagnosis",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g32",
+      "chapter": "31",
+      "title": "全部固定种子结果",
+      "narration": "一个奖励根本到不了，另外三个拿完奖励，没有合法的后续去向。所以只检查起点到终点，是不够的。",
+      "assets": [
+        "seed_grid"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": true,
+      "shot_type": "original_engineering_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "batch",
+        "diagnosis",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false,
+      "punchline": "主路通了，奖励呢？"
+    },
+    {
+      "id": "g33",
+      "chapter": "33",
+      "title": "这次失败，把“接口”又讲细了一层",
+      "narration": "问题藏在模块内部：有上到左、左到下，不代表上能直接到下。到左口时已经是离开状态，得从外面合法绕回来，才能再从左口进入。",
+      "assets": [
+        "g33"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "diagnosis",
+        "implementation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g34",
+      "chapter": "34",
+      "title": "不能用“属于同一模块”跳过路线验证",
+      "narration": "偏偏外部连接又有单向限制，绕不回来。以前一句“这个模块能连”，把关键细节省掉了。接下来要把奖励可达和回程检查，提前到放置阶段。",
+      "assets": [
+        "g34"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "diagnosis",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g35",
+      "chapter": "35",
+      "title": "模板库要补的是连接能力，不只是数量",
+      "narration": "模块库也不能只追数量。缺哪种转向、哪种回程，就优先补哪种。现在测试用的是五十二个占位模板，真实编辑器内容还没正式接入。",
+      "assets": [
+        "g35"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "progress",
+        "guide"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g36",
+      "chapter": "36",
+      "title": "想得到稳定方法，还差这些验证",
+      "narration": "所以还不能说已经稳定。真实动作、接缝、封口、镜像都要进Godot验证，失败恢复和玩法骨架也还要补。静态图过了，这事还没完。",
+      "assets": [
+        "g36"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "progress",
+        "foundation"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g37",
+      "chapter": "37",
+      "title": "至少，这次能说清楚是哪条规则出错",
+      "narration": "但这次至少能说清楚，究竟是哪条约束出了问题。对我来说，这是在给后面的反复试验，搭一个能复现、能定位问题的基础。",
+      "assets": [
+        "g37"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_model",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "g38",
+      "chapter": "38",
+      "title": "这题还没做完，继续改",
+      "narration": "本来想做游戏，最后又在查条件、找反例。高考数学的感觉是真回来了。下一步接上真实模块，再看看这些规则管不管用。有做过这类生成的朋友，也欢迎给我挑挑问题。",
+      "assets": [
+        "g38"
+      ],
+      "offsets": [
+        0
+      ],
+      "safe_frame": false,
+      "shot_type": "explanatory_diagram",
+      "emphasis": "",
+      "transition": "cut",
+      "sfx": null,
+      "prs": [],
+      "evidence": [
+        "user_model",
+        "progress"
+      ],
+      "claim_type": "documented_model_with_editorial_explanation",
+      "fact_check": "Frozen map-gen definitions, actual implementation and archived batch checked. Normative contracts, recommended future methods and implemented prototype are distinguished. Geometric/graph validity is not Godot physics or fun certification.",
+      "same_seed_comparison": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "foundation",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/MAP_FOUNDATION.md",
+      "blob_sha": "7ecb6673ff88b85c8897e535c54511bf5e96aa56",
+      "sha256": "278f90ba4d34c73610619bc155f60b27fa76a0fc9f4332b051860fafb032b04e",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_FOUNDATION.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "guide",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/MAP_GENERATION_GUIDE.md",
+      "blob_sha": "c22e910781be69bc852f8b1772de701d352077a5",
+      "sha256": "3978deeab6ed644ddeab40952eb68b112c4f7076f6ffdaeb0a852b4490585e16",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/MAP_GENERATION_GUIDE.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "progress",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "docs/PROGRESS.md",
+      "blob_sha": "da2f5f5971a7fb2321bbc0156cdce936458312fa",
+      "sha256": "0633249672ea604d14777538bc043a773c1ffec5a33cfa7b57df833825b5f469",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/docs/PROGRESS.md",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "batch",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/results.json",
+      "blob_sha": "51c37ebf71e08d87c078af6394f7a9240348f117",
+      "sha256": "aefc50d31f4a9455e205d993b91c3bd38a7bcd4c291ce532d927b3c5c2e615bc",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/results.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "diagnosis",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/failure-diagnosis.json",
+      "blob_sha": "9bc98c4bfe5d55b89867e6c5a9b6cbd570e9759b",
+      "sha256": "380ac881f8ce0bd58f8a618b5a9ec7ed8194655e81c2eab80eda9cb105014e69",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/failure-diagnosis.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "summary",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "experiments/seed-study/output/summary.json",
+      "blob_sha": "310132f3d8507af216e8d911f91264504ddd6128",
+      "sha256": "90bc3a599447ea87e031e5620c58ef7e31c134b32542272938860178de04a05a",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/experiments/seed-study/output/summary.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "sample",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/output/map.json",
+      "blob_sha": "10245f76b1ad9f0405b99389cf01ab09bc929d20",
+      "sha256": "6b35f584e6fb4089a679db3c9e01f6afaf035e6cdc3363a366eb1c8ae58ef1cb",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/output/map.json",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "implementation",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/generate.py",
+      "blob_sha": "adcc209ae4aab49fce891420d95d4c18d9362d3d",
+      "sha256": "30bda7df8ea78296b772930737744af9c19c0a889a5bffa90430c85fdd2c5aed",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/generate.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "model_code",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "prototype/model.py",
+      "blob_sha": "3338f5f1332b25b3a0d09de8df9ebfa53f75f65e",
+      "sha256": "20288e91a47ac2bc60c80805a7bd7cd5831cd7df1b01b18b0d1aa3094431b598",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/prototype/model.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "archive_verifier",
+      "type": "immutable_source",
+      "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+      "path": "tools/verify_progress.py",
+      "blob_sha": "850b2936bd6f452f5593d8351a9ee233b441c1a9",
+      "sha256": "94a2b80e3c743a53cf227b33c8390fe1507c5ba33b8062e6d29db0d80fd71c77",
+      "url": "https://github.com/zhipijun1996/map-gen/blob/c2ac2c3625f659364b187592c836c5ff2bceb892/tools/verify_progress.py",
+      "inspection": "Read original definitions/actual code/archived evidence; independently replayed all20 frozen seeds in temporary directories. Not Godot or human gameplay validation."
+    },
+    {
+      "id": "user_model",
+      "type": "user_testimony",
+      "text": "用户：现在完全人工制定了一套数学建模和规则；逐层讲清概念，展示为稳定方法论做的努力；找回高考做数学题的感觉。当前第一人称口播经整理，并非逐句原话。"
+    }
+  ],
+  "game_audio_gain": 0,
+  "music_gain": 0.12,
+  "comparison": "All explanatory diagrams and exact archived engineering images. No game footage; no same-seed before/after claim. Replayed archived seeds only, no new gameplay.",
+  "comparison_review": "本片是规则讲解；逐步检查图示箭头、封口、镜像、奖励回程与旁白，区分规范、建议和占位原型。",
+  "rights": {
+    "diagrams": "Original explanatory diagrams authored from user-owned map-gen definitions; editable SVG preserved. Not generated gameplay.",
+    "repository": "User-authorized own repository documents and engineering images; no claim of a third-party open-source license.",
+    "fonts": "Noto Sans CJK, SIL OFL",
+    "music": {
+      "path": "build/music/the_kindred_hearth-actions.ogg",
+      "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+      "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+      "original_filename": "the_kindred_hearth.mp3",
+      "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+      "usage": "User requested light BGM and provided this track",
+      "license_status": "user supplied and requested use; original creator/license not independently specified"
+    },
+    "tts": "Microsoft Edge neural synthesis; not cloned user voice; service terms apply."
+  },
+  "cover_assets": [
+    "cover_geometry",
+    "cover_graph"
+  ],
+  "cover": {
+    "series": "失序之钟开发记录  /  07",
+    "left_label": "人工规则",
+    "right_label": "有向图与约束",
+    "line1": "做个地图，又做数学题了",
+    "line2": "我给AI补了一整套规则"
+  },
+  "title_candidates": [
+    "为了让AI生成地图，我又开始做数学题了",
+    "AI地图生成翻车后，我亲自写了一整套规则",
+    "独立游戏开发：从随机地图到数学建模"
+  ],
+  "bilibili_body": "分区建议：游戏 → 单机游戏（开发记录），以投稿页为准。\n\n标签：独立游戏、游戏开发、Godot、AI开发、程序化生成、数学建模、失序之钟\n\n简介：\n\n上期还在反复试地图，这期我自己把规则写了一遍。Block、Cell、Module、实例、Port、Route、镜像、封口，再到有向图、奖励回程和约束搜索，一层一层画清楚。为了让地图生成有一套能复现、能定位问题的方法，高考做数学题的感觉回来了。\n\n全片是原创解释图和仓库保存的工程图，没有实机。当前仍是占位模板上的布局与静态图原型；连续20个种子首次16个通过、4个拒绝，不是Godot物理或好玩程度验收，也不是通用成功率。真实map-edit模块尚未正式接入，方法仍在打磨。\n\n欢迎有经验的朋友挑挑接口、回程、搜索和验证上还有哪些问题。\n\n项目：https://github.com/zhipijun1996/map-gen\n中文AI配音；BGM为用户提供的 the_kindred_hearth 压缩副本，原作者/许可尚未独立核实。图示与工程图明确标注，完整冻结来源见 sources.json。",
+  "research_scope": {
+    "repository": "zhipijun1996/map-gen",
+    "main_at_scan": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "branch_heads": {
+      "main": "c2ac2c3625f659364b187592c836c5ff2bceb892"
+    },
+    "accessible_commits": 1,
+    "branches_scanned": [
+      "main"
+    ],
+    "pull_requests": [],
+    "coverage": "All accessible refs/commit metadata; complete main tree; README, both complete normative/recommended docs, progress, actual prototype code, source snapshot, 20 batch maps/rejections and verifier inspected. Independently executed single-map verifier and full20 replay; original worktree content unchanged.",
+    "user_normative_authorship": "Explicit user testimony; no fabricated per-line authorship history from one-commit import."
+  }
+}
