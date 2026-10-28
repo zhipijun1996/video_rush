@@ -1,0 +1,430 @@
+{
+  "episode": "ep007-r3",
+  "status": "hosted_render_download_verified",
+  "title": "我想让AI生成的地图，真的值得探索",
+  "run_id": 40675121045,
+  "job_id": 122771445585,
+  "production_commit": "aa92cdc887df4b4cec915a2769b4b48a48c1b27a",
+  "artifact_id": 12810531884,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40675121045/artifacts/12810531884",
+  "artifact_bytes": 11466733,
+  "artifact_sha256": "9125e7adc6d565637872658df46cc093f91dc076c5e4fa7677be8f499d149a17",
+  "artifact_expires_at": "2026-11-11T10:56:52Z",
+  "duration_seconds": 249.233333,
+  "final_sha256": "5048da2b70cb9e83682dca5448f1169232289e9b53007a42bc0bddaa9984ebd5",
+  "final_bytes": 10392736,
+  "shots": 22,
+  "animated_shots": 22,
+  "delivery_manifest_files_verified": 87,
+  "editable_svgs_verified": 24,
+  "source_documents_git_blobs_verified": 10,
+  "source_metadata_records_verified": 34,
+  "exact_archived_instance_positions_verified": 49,
+  "animation_receipts_verified": 22,
+  "animation_contact_sheets_verified": 22,
+  "final_diagram_body_motion_independently_verified_for_all_shots": true,
+  "final_motion_report": "build/actions/ep007-r3-verified/final-motion.json",
+  "real_edge_receipts_verified": 22,
+  "tts_boundary_files_verified": 22,
+  "ci_tests_passed": 34,
+  "ci_tests_skipped": 1,
+  "local_tests_passed": 35,
+  "entire_downloaded_mp4_decoded": true,
+  "audio_metrics": {
+    "decoded_samples": 3987797,
+    "peak": 0.68426513671875,
+    "rms": 0.09761231127889267,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "temporary_bgm_chunks_deleted_204": 8,
+  "technical_pass": true,
+  "content_structural_pass": true,
+  "human_phone_listening": "pending",
+  "aesthetic_acceptance": "unverified",
+  "concept_layers": [
+    "Block",
+    "Cell",
+    "Module",
+    "Instance",
+    "Port",
+    "Route",
+    "Map"
+  ],
+  "archive_replay": {
+    "first_clip": 28,
+    "closing_static": 28,
+    "closing_added": 21,
+    "total": 49,
+    "not_two_random_maps": true
+  },
+  "content_scope_coverage": {
+    "Block": [
+      "c04"
+    ],
+    "Cell": [
+      "c04"
+    ],
+    "Module": [
+      "c05"
+    ],
+    "Instance": [
+      "c05"
+    ],
+    "Port": [
+      "c06"
+    ],
+    "Route": [
+      "c07"
+    ],
+    "Map": [
+      "c09"
+    ],
+    "closure_and_mirror": [
+      "c08"
+    ],
+    "motivation_personal_abstraction": [
+      "c01",
+      "c02",
+      "c03",
+      "c21"
+    ],
+    "benefits": [
+      "c08",
+      "c14"
+    ],
+    "frontier_DFS_Beam": [
+      "c15",
+      "c16",
+      "c17"
+    ],
+    "exploration_planner": [
+      "c13"
+    ],
+    "fun_random_routes_player_choice_exploration": [
+      "c01",
+      "c10",
+      "c11",
+      "c12",
+      "c13",
+      "c18",
+      "c22"
+    ]
+  },
+  "fun_and_exploration": "design_goals_not_certified",
+  "new_game_footage": false,
+  "new_game_physics_run": false,
+  "dfs": "proposed_not_implemented_in_project",
+  "exploration_planner": "not_fully_implemented",
+  "source_worktrees_changed": false,
+  "bilibili_published": false,
+  "sampled_final_frames": [
+    [
+      "c01",
+      0.8
+    ],
+    [
+      "c04",
+      0.8
+    ],
+    [
+      "c05",
+      0.8
+    ],
+    [
+      "c06",
+      0.8
+    ],
+    [
+      "c07",
+      0.8
+    ],
+    [
+      "c11",
+      0.8
+    ],
+    [
+      "c17",
+      0.8
+    ],
+    [
+      "c20",
+      0.92
+    ],
+    [
+      "c22",
+      0.02
+    ],
+    [
+      "c22",
+      0.92
+    ]
+  ],
+  "downloaded_cover_inspected": true,
+  "local_final": {
+    "episode": "ep007-r3",
+    "status": "local_render_verified",
+    "duration_seconds": 249.233333,
+    "shots": 22,
+    "animated_shots": 22,
+    "editable_svgs_verified": 24,
+    "preserved_source_documents_verified": 10,
+    "source_metadata_records_verified": 34,
+    "delivery_manifest_files_verified": 87,
+    "animation_receipts_and_contact_sheets_verified": 22,
+    "all_final_diagram_body_motion_independently_verified": true,
+    "real_edge_receipts_verified": 22,
+    "source_commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
+    "archive_replay": {
+      "first_clip": {
+        "instances": 28,
+        "slice": [
+          0,
+          28
+        ]
+      },
+      "closing_clip": {
+        "static": 28,
+        "animated": 21,
+        "total": 49
+      },
+      "exact_original_positions_verified": true,
+      "not_two_seed_samples": true
+    },
+    "content_scope_coverage": {
+      "Block": [
+        "c04"
+      ],
+      "Cell": [
+        "c04"
+      ],
+      "Module": [
+        "c05"
+      ],
+      "Instance": [
+        "c05"
+      ],
+      "Port": [
+        "c06"
+      ],
+      "Route": [
+        "c07"
+      ],
+      "Map": [
+        "c09"
+      ],
+      "closure_and_mirror": [
+        "c08"
+      ],
+      "motivation_personal_abstraction": [
+        "c01",
+        "c02",
+        "c03",
+        "c21"
+      ],
+      "benefits": [
+        "c08",
+        "c14"
+      ],
+      "frontier_DFS_Beam": [
+        "c15",
+        "c16",
+        "c17"
+      ],
+      "exploration_planner": [
+        "c13"
+      ],
+      "fun_random_routes_player_choice_exploration": [
+        "c01",
+        "c10",
+        "c11",
+        "c12",
+        "c13",
+        "c18",
+        "c22"
+      ]
+    },
+    "scope_review_kind": "Authored content coverage, not automatic aesthetic/fun certification",
+    "local_tests_passed": 35,
+    "full_mp4_decode": true,
+    "technical_pass": true,
+    "content_structural_pass": true,
+    "voice_alignment": {
+      "method": "Compare real final MP4 voice-window waveform against time-scaled real TTS WAV (2s snippets; ±.2s AAC alignment search); not ASR/listening or meaning verification",
+      "passed": true,
+      "shots": [
+        {
+          "shot": "c01",
+          "correlation": 0.9937828779220581,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c02",
+          "correlation": 0.9651074409484863,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c03",
+          "correlation": 0.982854425907135,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c04",
+          "correlation": 0.9138782620429993,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "c05",
+          "correlation": 0.9212226867675781,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c06",
+          "correlation": 0.9782174825668335,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c07",
+          "correlation": 0.9630833268165588,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c08",
+          "correlation": 0.9679984450340271,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "c09",
+          "correlation": 0.9890093207359314,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c10",
+          "correlation": 0.9702804684638977,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c11",
+          "correlation": 0.982621431350708,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c12",
+          "correlation": 0.9428210854530334,
+          "lag_seconds": 0.004875
+        },
+        {
+          "shot": "c13",
+          "correlation": 0.9849086999893188,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c14",
+          "correlation": 0.992337167263031,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c15",
+          "correlation": 0.9589502811431885,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "c16",
+          "correlation": 0.9572848677635193,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c17",
+          "correlation": 0.9574823379516602,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "c18",
+          "correlation": 0.9682497382164001,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c19",
+          "correlation": 0.9679410457611084,
+          "lag_seconds": 0.005125
+        },
+        {
+          "shot": "c20",
+          "correlation": 0.9724618792533875,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c21",
+          "correlation": 0.9529456496238708,
+          "lag_seconds": 0.005
+        },
+        {
+          "shot": "c22",
+          "correlation": 0.933741569519043,
+          "lag_seconds": 0.004875
+        }
+      ]
+    },
+    "final_sha256": "1f8f140e1c8f417ca7bbd8f5b336ceb63d2cdfc0d74625c35fbd7c6bc6309514",
+    "final_bytes": 10375379,
+    "new_gameplay": false,
+    "new_game_physics": false,
+    "fun_and_choice_status": "design_goals_not_certified",
+    "human_phone_listening": "pending",
+    "aesthetic_acceptance": "unverified",
+    "source_worktrees_changed": false,
+    "sampled_actual_frames": [
+      [
+        "c01",
+        0.8
+      ],
+      [
+        "c04",
+        0.8
+      ],
+      [
+        "c05",
+        0.8
+      ],
+      [
+        "c06",
+        0.8
+      ],
+      [
+        "c07",
+        0.8
+      ],
+      [
+        "c09",
+        0.8
+      ],
+      [
+        "c11",
+        0.8
+      ],
+      [
+        "c16",
+        0.8
+      ],
+      [
+        "c17",
+        0.8
+      ],
+      [
+        "c20",
+        0.92
+      ],
+      [
+        "c22",
+        0.05
+      ],
+      [
+        "c22",
+        0.92
+      ]
+    ],
+    "cover_inspected": true
+  },
+  "note": "Hosted rerender, not claimed byte-identical. Actual motion independently rechecked on downloaded final diagram body, excluding subtitle/source/title. Raw TTS WAVs and pre-caption cut MP4s are not shipped; source receipt hashes retained, not claimed rehashed a second time. Proposed solver animations are explanations, not project execution traces. Only map placement replay uses exact original archived positions; rendering time is editorial."
+}

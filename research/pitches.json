@@ -372,17 +372,17 @@
     },
     {
       "id": "V009",
-      "title": "AI地图总翻车，我决定先把“题目”写清楚",
-      "production_status": "ep007_r3_in_production",
+      "title": "我想让AI生成的地图，真的值得探索",
+      "production_status": "ep007_r3_verified_delivered",
       "one_question": "怎样把局部内容、接口和路线组合成有随机变化、玩家取舍与探索欲的地图？",
-      "opening_10_seconds": "起点能到Boss，拿完奖励却走不出去。这样的地图，算生成成功吗？为了不再反复踩这种坑，我先给生成器重写了题目。",
+      "opening_10_seconds": "我想做的随机地图，是每次开局都有变化，到了岔路也真有得选：冒险抄近路，还是绕远找奖励？能通，只是起点。",
       "story_beats": [
-        "从奖励陷阱和平台动作不可逆，引出为什么要人工抽象约束。",
-        "模块、接口、路线分别回答占用、衔接和可达问题；部分接口和镜像复用需先认证。",
-        "收益是复用内容、换搜索、定位缺口；动画演示前沿、DFS、Beam，规划层另标未完成。",
-        "保留16/20静态结果和失败；真实49实例位置重演，真实模块/物理/趣味仍未验收。"
+        "先讲每局路线变化、玩家取舍和探索目标，再讲为什么亲自抽象规则。",
+        "七个概念全部保留：Block、Cell、Module、Instance、Port、Route、Map；封口与镜像也解释。",
+        "动机/收益/前沿DFSBeam与上层探索规划合讲，控制4分09秒；连通只是底线。",
+        "同一存档前28、后21连续展开49实例；体验和物理均待认证。"
       ],
-      "episode": "ep007-r2",
+      "episode": "ep007-r3",
       "story_id": "S_MAP_RULES_02",
       "commit": "c2ac2c3625f659364b187592c836c5ff2bceb892",
       "source_links": [
@@ -404,10 +404,10 @@
         "原型16/20仅该固定样本",
         "用户制定规范来自明确自述，单提交历史不支持编造细分写作历程"
       ],
-      "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40667476811/artifacts/12806524815",
-      "artifact_expires_at": "2026-11-11T10:03:25Z",
-      "duration_seconds": 372.333333,
-      "verification": "docs/ep007-r2-verification.json",
+      "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40675121045/artifacts/12810531884",
+      "artifact_expires_at": "2026-11-11T10:56:52Z",
+      "duration_seconds": 249.233333,
+      "verification": "docs/ep007-r3-verification.json",
       "previous_delivery": {
         "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/40654566920/artifacts/12801956180",
         "artifact_expires_at": "2026-11-11T08:17:49Z",
