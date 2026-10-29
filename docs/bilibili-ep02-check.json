@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-29T02:14:31.793590+00:00",
+  "login": "confirmed_by_biliup_list_and_authenticated_nav",
+  "account": {
+    "uid": 12437477,
+    "name": "纸皮菌-独游开发中"
+  },
+  "posts_seen": 7,
+  "original_bvid": "BV1urnC6oEY2",
+  "original_first_published_bj": "2026-10-22T09:10:16+08:00",
+  "original_topic_id": 0,
+  "original_mission_id": 0,
+  "official_topic_id": 1340873,
+  "official_topic_source": "Authenticated ep07 archive and S2 official article topic module",
+  "rules_url": "https://www.bilibili.com/opus/1262431200618741810",
+  "rules_official_uid": "1660681622",
+  "rules_json_sha256": "0dba5b8df204818ae946bb332d1f2d8a91936983d86e63bd20d8cab9e1686c9b",
+  "activity_start_bj": "2026-10-24T00:00:00+08:00",
+  "eligibility": "Original predates S2 start; exact repost conflicts with first-publication / no-repeat requirements. Platform eligibility not verified.",
+  "production_episode": "ep003-r3",
+  "video_sha256": "12dac912010bd169b65591cea466392962a6dd1355acfb2e68fbf1afee589bea",
+  "video_duration_seconds": 262.133333,
+  "original_cover_preserved": true,
+  "new_post_submitted": false,
+  "original_post_modified": false,
+  "blocking_decision": "User asked whether to add topic to original, repost despite eligibility warning, or create substantively new content; awaiting answer.",
+  "credentials_in_repository": false
+}
