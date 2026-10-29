@@ -38,7 +38,7 @@ python tools/dispatch_actions.py build/music/the_kindred_hearth-actions.ogg
 
 当前按用户最新要求从上方 Actions Artifact 链接下载：登录 GitHub 后下载 ZIP，手机解压即可取得 final.mp4、cover.png 和 bilibili.md（标题、简介）。无需本地安装剪辑软件，不自动上传 B 站。
 
-2026-10-29追加：B站扫码登录与本人7条稿件读取已实际成功。用户现在允许对其明确审核通过的指定版本代投；未批准的后续成片仍只交付。标题格式、真实活动话题、账号期数映射和参赛限制见[投稿约定](docs/bilibili-publishing.md)，本次ep02原片重发/补标签的选择尚待用户答复；尚未执行B站投稿，不将登录成功写为上传或参赛成功。[实际核验](docs/bilibili-ep02-check.json)。
+2026-10-29追加：B站扫码登录与本人7条稿件读取已实际成功。用户现在允许对其明确审核通过的指定版本代投；未批准的后续成片仍只交付。标题格式、真实活动话题、账号期数映射和参赛限制见[投稿约定](docs/bilibili-publishing.md)。用户将ep02任务改为24号后的稿件；实际查到ep05/06/07均已带活动后缀、标签及真实话题，无需重复上传。合集列表为空，同产品合集要求仍待补齐；未执行B站投稿/修改/删除，不冒称参赛成功。[原ep02核验](docs/bilibili-ep02-check.json) · [24号后稿件核验](docs/bilibili-post24-check.json)。
 
 系统也保留 **GitHub预发布** 交付能力，须先恢复附件上传授权。恢复后可打开[Releases](https://github.com/zhipijun1996/video_rush/releases)，选相应的Prerelease：直接下载 `final.mp4`（成片）、`cover.png`（封面）、`bilibili.md`（推荐标题、备选标题和可复制简介），或完整资料ZIP。说明页同步展示标题和简介。预发布资产没有Artifact的14天自动过期限制；未向B站上传。
 
