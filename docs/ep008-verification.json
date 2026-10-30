@@ -1,212 +1,249 @@
 {
-  "checked_at": "2026-10-30T17:53:45.549702+00:00",
-  "status": "local_produced_and_verified_hosted_delivery_pending",
-  "source_repository": "zhipijun1996/wave-game",
-  "source_commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
-  "local_final_sha256": "d3ec514ec0c18ce62bf0d5cbae494bfa00b505948cfcefa537ca43e95f615c00",
-  "local_final_bytes": 19987756,
+  "episode": "ep008",
+  "status": "hosted_render_download_verified",
+  "title": "小学对波被我做成了动漫大乱斗 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+  "run_id": 41103998167,
+  "job_id": 124228319671,
+  "production_commit": "0650e6f059dbbbfbaa2375e2d28a66fc118afccf",
+  "artifact_id": 13002115262,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41103998167/artifacts/13002115262",
+  "artifact_bytes": 23541733,
+  "artifact_sha256": "49432077a3d5e2ad38144a8d3b700cf23226dc6d1cb361a749c7d65170019e49",
+  "artifact_expires_at": "2026-11-13T18:20:38Z",
   "duration_seconds": 211.066667,
+  "final_sha256": "12b33b3f1f950774d5d8bcc414984984034fd1cf9d95567c00f3e9cbcd197809",
+  "final_bytes": 19738062,
   "shots": 30,
-  "delivery_hashes_verified": 80,
-  "technical": {
-    "exists_and_decodes": true,
-    "1920x1080": true,
-    "30fps": true,
-    "h264_yuv420p": true,
-    "aac_48k": true,
-    "duration_matches_brief": true,
-    "subtitles_in_bounds": true,
-    "subtitle_cues_do_not_overlap": true,
-    "action_labels_in_bounds": true,
-    "source_labels_in_bounds": true,
-    "audible_tts_signal": true,
-    "no_obvious_clipping": true,
-    "decoded_audio_duration_matches_timeline": true,
-    "requested_music_source_valid": true,
-    "sources_present_and_hash_match": true,
-    "no_long_black": true,
-    "no_unexpected_long_freeze": true,
-    "animated_diagrams_show_actual_motion": true
-  },
-  "tts": "30 actual Edge synthesis receipts and boundaries; not human/ASR approval",
-  "original_story_animation": "Schoolboy POV opening/end, labelled fictional; not game footage",
-  "actual_captures": 17,
-  "runtime_verification": {
-    "exact_git_source_files_verified": 75,
-    "source_code_edited": false,
-    "capture_cases": {
-      "hadoken": {
-        "movie_sha256": "0972a0553680fbd9c21f17dc2c5951ebc773619ef1f1e05c8b6df6639ecca276",
-        "trace_sha256": "e47c9dbad59ab93b3813f9611f5cdb7afdb83981d5ec9fd69c23f81acbefd765",
-        "clock_fit_ratio": 1.1481563258997556,
-        "damage": [
-          0,
-          2
-        ],
-        "native_rounds": 3
-      },
-      "beam": {
-        "movie_sha256": "1eb1aa8e5618b0de5c78e9f911515da629e79ffd223ae1497c4e5dd5b23e7e52",
-        "trace_sha256": "b801936fea89f559345a16f7c75d60a03bc3bfccf364bf9b828b70bb596d0acd",
-        "clock_fit_ratio": 1.1596499045544302,
-        "damage": [
-          0,
-          3
-        ],
-        "native_rounds": 3
-      },
-      "dual": {
-        "movie_sha256": "8d79ee563f240e8faa74ed11c51d603a7d3ec4b068f05b611fcb21fb6da0f77e",
-        "trace_sha256": "fe624f877ac41d584165948f03a2cacdb291a2e3d97a29b3ed991415e8a0e2b6",
-        "clock_fit_ratio": 1.1480753822344707,
-        "damage": [
-          0,
-          1
-        ],
-        "native_rounds": 3
-      },
-      "at": {
-        "movie_sha256": "a095f2d8a2b346d2b23fa8fa53cd4da3b71aafbda7b2ab27ec500aa812bb5d52",
-        "trace_sha256": "f3f877359cc86e8e250da1e38c25492ceece5b6c38dc064478810b78f0d92993",
-        "clock_fit_ratio": 1.1542339791036436,
-        "damage": [
-          0,
-          0
-        ],
-        "native_rounds": 3
-      },
-      "psycho": {
-        "movie_sha256": "e73e9b1a0b55de4d36bc2a8a63da0cb47a3fd6260190b8d9288d4c47ab6cb832",
-        "trace_sha256": "ac4b2a02e7f46ecf75e67a192dcebbf13929928a691fc21c37005e5efaba48b8",
-        "clock_fit_ratio": 1.1402646336707667,
-        "damage": [
-          0,
-          0
-        ],
-        "native_rounds": 3
-      },
-      "cylinder": {
-        "movie_sha256": "42bca1e745056e9b42c27879d844dc6ea30ba7acf5cdce5ef86e38f5d14f38d0",
-        "trace_sha256": "ca6d83902c6e88c3ec44e7932819a87f93b7e90091dbd7e5c1fbc00dd08d758d",
-        "clock_fit_ratio": 1.1515933684106086,
-        "damage": [
-          0,
-          1
-        ],
-        "native_rounds": 4
-      },
-      "fan": {
-        "movie_sha256": "35ff9d98421cb199df773d54e766298db09cf3ed52abb8fbbb7a20c9cf58ebb6",
-        "trace_sha256": "fd9e31aa92204ce128b98f0dce062eab4bd933008bba92f2cb62881d533a3fef",
-        "clock_fit_ratio": 1.1472895015448465,
-        "damage": [
-          0,
-          2
-        ],
-        "native_rounds": 3
-      },
-      "return": {
-        "movie_sha256": "885bcd37770a6e0442cac9bc7fa69b3a6f05781bdb3afc9870c1a9b6a0842c5e",
-        "trace_sha256": "f00d6922150d65d8e489737f7c620d7368c47e43aaef6e291664386a59d0ad79",
-        "clock_fit_ratio": 1.1663154883396019,
-        "damage": [
-          2,
-          0
-        ],
-        "native_rounds": 3
-      },
-      "pan-break": {
-        "movie_sha256": "1e0bde79aaa6ccee276a05ffecf6da25b1da5037a6f4162dca26bb6e68c95305",
-        "trace_sha256": "ce890c34c7ce9f01ec90b522d3904becddda98dd7cf755b3a4f65fe40a5490cc",
-        "clock_fit_ratio": 1.148825638800878,
-        "damage": [
-          3,
-          0
-        ],
-        "native_rounds": 3
-      },
-      "quick-hit": {
-        "movie_sha256": "5ef8cda4ff443b427f80fe5ae5baee971ceca429cac5a46ab828002f42d9b456",
-        "trace_sha256": "f97dae9eb9291b279364b6dd64e8b01a3ca72bac2c6efed71ac31beb3f45bad8",
-        "clock_fit_ratio": 1.1571822611939953,
-        "damage": [
-          1,
-          0
-        ],
-        "native_rounds": 4
-      },
-      "clash": {
-        "movie_sha256": "84c6f68329f201c6fef8304c48a8e3e3e47552a8ba106c3f2344efbcdfda3777",
-        "trace_sha256": "707138a9c61a62c22bebfa13571366f58363bd034e4f238a306c45690896686e",
-        "clock_fit_ratio": 1.1444324241209438,
-        "damage": [
-          2,
-          0
-        ],
-        "native_rounds": 3
-      },
-      "victory": {
-        "movie_sha256": "78fd2c8694bf081c21f0beee146128f7781d5c4b7bdb5fe1a66e02b0939c0cb6",
-        "trace_sha256": "9d1f7a2edc9701b92ba29e74edf1427709341e38827a361a59d595b748e3b16d",
-        "clock_fit_ratio": 1.1337182104863401,
-        "damage": [
-          0,
-          1
-        ],
-        "native_rounds": 2
-      },
-      "classic": {
-        "movie_sha256": "26567303f4607070a63ea2c5fd1c4bc712792173a8e24e9ceb30aa1c1b129b16",
-        "trace_sha256": "bab60fd124107772ecaad723fc825f891396c2dd16e9f14b308cb395e267a832",
-        "clock_fit_ratio": 1.1598059656144235,
-        "damage": null,
-        "native_rounds": 8
-      },
-      "normal": {
-        "movie_sha256": "88a62e53f445eb8edfa5d1dec5cdd08b5182daa6ae3e715781472b1776787620",
-        "trace_sha256": "2003d7234db9c1cb65d529f0ef5c7316ae4f86b0c064127b25cf60c0d2a895f8",
-        "clock_fit_ratio": 1.1511226712372324,
-        "damage": null,
-        "native_rounds": 12
-      },
-      "menus": {
-        "movie_sha256": "d29a59dde6185cc87abd260c8da0484db4795e36abdab755db2f4bc70d89e026",
-        "trace_sha256": "079c567c91d8ed74896cfe0ab1df1a016e235d43f6e494f8342805b0f5568ede",
-        "clock_fit_ratio": 1.0874410464969184,
-        "damage": null,
-        "native_rounds": 0
-      },
-      "story": {
-        "movie_sha256": "f601ae4824d8336b1bb9a5af6621ea63860aed4613ccf2b9ed1bedc6077d6ead",
-        "trace_sha256": "cf10fcd5aefb2a10036e770fa6194c2bc944c0ac518e4fba2f4d655dd90416c1",
-        "clock_fit_ratio": 1.1110335249710972,
-        "damage": null,
-        "native_rounds": 3
-      },
-      "streak": {
-        "movie_sha256": "150ea5232dc927519bdc70fd43a4666a2bb1e8587d7e4b8d627749926f20e1d5",
-        "trace_sha256": "31893aa3f0b3711ce408658225649b15f171b46f766a5f51bd0ed111296ce046",
-        "clock_fit_ratio": 1.14475549630759,
-        "damage": [
-          0,
-          1
-        ],
-        "native_rounds": 2
-      }
+  "delivery_manifest_hashes_verified": 80,
+  "source_metadata_records": 28,
+  "preserved_git_documents_verified": 5,
+  "recordings_verified": {
+    "hadoken": {
+      "damage": [
+        0,
+        2
+      ],
+      "native_ai_rounds": 4,
+      "movie_sha256": "870d068c39ca4c70f355a56f5c65eebfd6034a30381fd7306e00e0c848e7549a",
+      "clock_fit_ratio": 1.1628420708485383
     },
-    "checks": "Actual fixture damage, quick interruption/overheat, no page errors, native sealed-AI rounds; not human fun or phone performance."
+    "beam": {
+      "damage": [
+        0,
+        3
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "5dc638f98292578f5fe5115a0b8b070e3b3c9faa75132e20e39f1d16d4a06284",
+      "clock_fit_ratio": 1.1626379400945883
+    },
+    "dual": {
+      "damage": [
+        0,
+        1
+      ],
+      "native_ai_rounds": 2,
+      "movie_sha256": "6ba655f12b6090e3c4c22b627ab385fd1e54ee8a03d07e8e1fb9789fbccc4ff2",
+      "clock_fit_ratio": 1.1670393793372498
+    },
+    "at": {
+      "damage": [
+        0,
+        0
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "85311ef395f98264fa3dd7f7ce13119d7a3fe3cf9599cab24fc4e8ea5b15f176",
+      "clock_fit_ratio": 1.1710455764075067
+    },
+    "psycho": {
+      "damage": [
+        0,
+        0
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "484b474179792cccf8974955f0ba706476234bd3d4826ba6da7e8cba5401c6e1",
+      "clock_fit_ratio": 1.1720522394179091
+    },
+    "cylinder": {
+      "damage": [
+        0,
+        1
+      ],
+      "native_ai_rounds": 4,
+      "movie_sha256": "09eb24cbc1136478b37c96b1eca1fe8576737fc571b8705e3724d23c1afc184d",
+      "clock_fit_ratio": 1.1725247157890129
+    },
+    "fan": {
+      "damage": [
+        0,
+        2
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "6e48362c3fba7ae83a9653ad92c62b0a48c146ed1e37a1709c062d74291d2ca2",
+      "clock_fit_ratio": 1.1726019576304239
+    },
+    "return": {
+      "damage": [
+        2,
+        0
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "008c797ed48575e9624e789141cf6a06804dfb92f6fc0b6fc774f9dbebec0d75",
+      "clock_fit_ratio": 1.1636332408366536
+    },
+    "pan-break": {
+      "damage": [
+        3,
+        0
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "ff8277009d5172c703ff714282335e33800abeb5cdabdf91f60690cd91e45796",
+      "clock_fit_ratio": 1.17558369478526
+    },
+    "quick-hit": {
+      "damage": [
+        1,
+        0
+      ],
+      "native_ai_rounds": 4,
+      "movie_sha256": "8dc5626aab39536791e1be5ad6d40313b5100c8bbc10e7e5a4788f23b6148dec",
+      "clock_fit_ratio": 1.1550031839441366
+    },
+    "clash": {
+      "damage": [
+        2,
+        0
+      ],
+      "native_ai_rounds": 3,
+      "movie_sha256": "d6c648be1dbbb4ed4eacf0c0f2e218727ff6109ec23e2221a813de5f0fcdea71",
+      "clock_fit_ratio": 1.1600114027585935
+    },
+    "victory": {
+      "damage": [
+        0,
+        1
+      ],
+      "native_ai_rounds": 2,
+      "movie_sha256": "8792ecd0ce36309b7be0d3315c9495ac4eb38f01ab74a11bdbd9a549ae85e04f",
+      "clock_fit_ratio": 1.1201887562156152
+    },
+    "classic": {
+      "damage": null,
+      "native_ai_rounds": 8,
+      "movie_sha256": "e1be3354fa88b95ddc5c25b86feb93280a790361fd7eb9fd860df0dd8b3cc61d",
+      "clock_fit_ratio": 1.1802900979211393
+    },
+    "normal": {
+      "damage": null,
+      "native_ai_rounds": 12,
+      "movie_sha256": "f1d24e79afbc1ed232030e33016467a67d5c74952ac16a89aea81018b7901c14",
+      "clock_fit_ratio": 1.1777241304761852
+    },
+    "menus": {
+      "damage": null,
+      "native_ai_rounds": 0,
+      "movie_sha256": "ade63f289e8adda98995b7dead08aa49537c013886b1527ff17649c64b2f0d86",
+      "clock_fit_ratio": 1.0688189660386112
+    },
+    "story": {
+      "damage": null,
+      "native_ai_rounds": 3,
+      "movie_sha256": "15db02ccc6ea12bedee8d5afb28965210bb9dfa151b28955e05a165df5dd16ba",
+      "clock_fit_ratio": 1.1192713884313537
+    },
+    "streak": {
+      "damage": [
+        0,
+        1
+      ],
+      "native_ai_rounds": 2,
+      "movie_sha256": "fbd956d3bbbcfebf3445cdb9fbc67406160a15742df854ef9441de3193f8d440",
+      "clock_fit_ratio": 1.158139943741211
+    }
   },
-  "tests": "39 Video Rush tests;21 actual game tests. Earlier reduced-runtime test invocation found0, not counted.",
-  "human_phone_review": "pending",
+  "tts_receipts_verified": 30,
+  "tts_boundary_files_verified": 30,
+  "ci_tests_passed": 39,
+  "ci_tests_skipped": 0,
+  "local_tests_passed": 39,
+  "game_tests_passed_locally": 21,
+  "entire_downloaded_movie_decoded": true,
+  "final_motion_independently_verified_shots": 30,
+  "audio": {
+    "decoded_samples": 3377152,
+    "peak": 0.71185302734375,
+    "rms": 0.1009620003147711,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "background_score_sha256": "8c25cdf0591b2816dcd244abf4be9c4d405ea0322a0f4e13ad03ce29470f16aa",
+  "background_music": "Original synthesized score; no franchise audio in final",
+  "game_audio_gain": 0,
+  "temporary_bgm_chunks_deleted_204": 13,
+  "human_phone_listening": "pending",
+  "aesthetic_acceptance": "unverified",
   "bilibili_uploaded": false,
   "toy_publication_verified": false,
-  "activity_eligibility": "not certified; posting copy prepared with correct topic and separate product collection requirement",
-  "failures": [
-    "Initial recorder wallclock bound too strict compared with existing upstream receipt; re-recorded using bounded source-based calibration.",
-    "Editorial card schema mismatch fixed.",
-    "Draft interrupted to remove repetitive exposition; valid cached recordings/TTS retained.",
-    "Inherited art-comparison cover mislabelled actual gameplay as concept art; replaced with inspected actual two-person manga cover.",
-    "BGM transfer timed out after8minutes of runner queue; successful original chunks being recovered without redispatch.",
-    "Current activity-rule API returned412; prior authenticated official rule source retained."
-  ]
+  "downloaded_cover_inspected": true,
+  "sampled_final_frames": [
+    [
+      "w01",
+      0.5
+    ],
+    [
+      "w02",
+      0.7
+    ],
+    [
+      "w03",
+      0.6
+    ],
+    [
+      "w13",
+      0.4
+    ],
+    [
+      "w14",
+      0.5
+    ],
+    [
+      "w17",
+      0.6
+    ],
+    [
+      "w19",
+      0.35
+    ],
+    [
+      "w20",
+      0.5
+    ],
+    [
+      "w23",
+      0.4
+    ],
+    [
+      "w29",
+      0.2
+    ],
+    [
+      "w30",
+      0.6
+    ],
+    [
+      "w34",
+      0.6
+    ]
+  ],
+  "earlier_failure": "First hosted run41102933754 failed because ubuntu-latest migrated to Ubuntu26 unsupported by pinned Playwright; fixed to Ubuntu24.04. Its artifact12999424385 contains failure evidence only, no final movie.",
+  "local_final_sha256": "d3ec514ec0c18ce62bf0d5cbae494bfa00b505948cfcefa537ca43e95f615c00",
+  "note": "Hosted rerender with real new browser footage and new Edge synthesis. Not claimed byte-identical to local movie. Raw browser movies/TTS WAVs not shipped; actual result traces, hashes, source docs and receipts retained.",
+  "sampled_final_frame_states_inspected": 12,
+  "source_runtime_files_git_verified_locally": 75,
+  "source_repositories_modified": false,
+  "local_voice_alignment_check": {
+    "minimum_waveform_correlation": 0.7501624226570129,
+    "maximum_absolute_lag_seconds": 0.005125,
+    "scope": "Local final vs actual local TTS WAV; not ASR or a claim about hosted resynthesis waveform identity."
+  }
 }
