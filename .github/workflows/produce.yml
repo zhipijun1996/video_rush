@@ -31,7 +31,9 @@ permissions:
   actions: write
 jobs:
   produce:
-    runs-on: ubuntu-latest
+    # wave-game pins Playwright1.56; its recorder does not support Ubuntu26.
+    # Pin the image instead of allowing ubuntu-latest migrations to break capture.
+    runs-on: ubuntu-24.04
     timeout-minutes: 50
     env:
       VR_TOPIC: ${{ inputs.topic }}
