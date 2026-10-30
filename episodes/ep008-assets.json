@@ -1,0 +1,390 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/wave-game",
+  "assets": [
+    {
+      "id": "hadoken",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "hadoken",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "beam",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "beam",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "dual",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "dual",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "at",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "at",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "psycho",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "psycho",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "cylinder",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "cylinder",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "fan",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "fan",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "return",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "return",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "pan-break",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "pan-break",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "quick-hit",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "quick-hit",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "clash",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "clash",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "victory",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "victory",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "classic",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "classic",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 正常AI对局"
+    },
+    {
+      "id": "normal",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "normal",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 正常AI对局"
+    },
+    {
+      "id": "menus",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "menus",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 菜单实录"
+    },
+    {
+      "id": "story",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "story",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 菜单实录"
+    },
+    {
+      "id": "streak",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "streak",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战"
+    },
+    {
+      "id": "cover-wave",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "dual",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战",
+      "frame_seconds": 3.4,
+      "frame_crop": [
+        390,
+        220,
+        1140,
+        500
+      ]
+    },
+    {
+      "id": "cover-return",
+      "origin": "browser_movie",
+      "kind": "historical_reconstruction",
+      "case": "return",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "license": "Own original game code/vector geometry MIT, WenKai OFL; IP references attributed; game audio muted.",
+      "truth": "New real browser capture; preset action scenes except normal/classic native AI. Not human campaign completion.",
+      "display_label": "实机录屏 · 招式演示·预设对战",
+      "frame_seconds": 4.4,
+      "frame_crop": [
+        390,
+        220,
+        1140,
+        500
+      ]
+    },
+    {
+      "id": "school",
+      "origin": "editorial_movie",
+      "kind": "original_story_animation",
+      "scene": "recess",
+      "seconds": 18,
+      "license": "Original Video Rush stick-figure animation MIT; Noto CJK OFL",
+      "display_label": "原创剧情动画 · 非实机",
+      "truth": "Explicit fictional primary-school POV framing requested by user; not historical footage or a factual diary."
+    },
+    {
+      "id": "school-end",
+      "origin": "editorial_movie",
+      "kind": "original_story_animation",
+      "scene": "back-to-class",
+      "seconds": 12,
+      "license": "Original Video Rush stick-figure animation MIT; Noto CJK OFL",
+      "display_label": "原创剧情动画 · 非实机",
+      "truth": "Explicit fictional primary-school POV framing requested by user; not historical footage or a factual diary."
+    },
+    {
+      "id": "power-creep",
+      "origin": "editorial",
+      "kind": "original_meme_card",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#f7f1e4",
+        "elements": [
+          {
+            "type": "rect",
+            "bounds": [
+              250,
+              210,
+              1420,
+              620
+            ],
+            "fill": "#fffaf0",
+            "stroke": "#29282a",
+            "stroke_width": 6
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 330,
+            "text": "小学还没毕业",
+            "size": 85,
+            "color": "#29282a",
+            "bold": true,
+            "width": 1280
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 495,
+            "text": "战力先崩了",
+            "size": 88,
+            "color": "#bf4e3f",
+            "bold": true,
+            "width": 1280
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 740,
+            "text": "原创剪辑吐槽 · 非游戏画面",
+            "size": 28,
+            "color": "#817564",
+            "width": 1200
+          }
+        ]
+      },
+      "license": "Original graphic MIT; Noto CJK OFL",
+      "truth": "Authored meme, not counterfeit game footage",
+      "display_label": "原创吐槽卡 · 非实机"
+    },
+    {
+      "id": "refund",
+      "origin": "editorial",
+      "kind": "original_meme_card",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#f7f1e4",
+        "elements": [
+          {
+            "type": "rect",
+            "bounds": [
+              250,
+              210,
+              1420,
+              620
+            ],
+            "fill": "#fffaf0",
+            "stroke": "#29282a",
+            "stroke_width": 6
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 330,
+            "text": "大招读条半天",
+            "size": 85,
+            "color": "#29282a",
+            "bold": true,
+            "width": 1280
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 495,
+            "text": "伤害全算我头上",
+            "size": 88,
+            "color": "#bf4e3f",
+            "bold": true,
+            "width": 1280
+          },
+          {
+            "type": "text",
+            "x": 330,
+            "y": 740,
+            "text": "原创剪辑吐槽 · 非游戏画面",
+            "size": 28,
+            "color": "#817564",
+            "width": 1200
+          }
+        ]
+      },
+      "license": "Original graphic MIT; Noto CJK OFL",
+      "truth": "Authored meme, not counterfeit game footage",
+      "display_label": "原创吐槽卡 · 非实机"
+    },
+    {
+      "id": "rules-source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "path": "docs/GAME_SPEC.md",
+      "preserve_evidence": true,
+      "license": "User-authorized source docs; attribution status retained",
+      "truth": "Immutable primary evidence"
+    },
+    {
+      "id": "assets-source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "path": "docs/ASSETS.md",
+      "preserve_evidence": true,
+      "license": "User-authorized source docs; attribution status retained",
+      "truth": "Immutable primary evidence"
+    },
+    {
+      "id": "readme-source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "path": "README.md",
+      "preserve_evidence": true,
+      "license": "User-authorized source docs; attribution status retained",
+      "truth": "Immutable primary evidence"
+    },
+    {
+      "id": "capture-source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "path": "scripts/capture.ts",
+      "preserve_evidence": true,
+      "license": "User-authorized source docs; attribution status retained",
+      "truth": "Immutable primary evidence"
+    },
+    {
+      "id": "audio-source",
+      "origin": "git",
+      "kind": "source_document",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "path": "data/audio-manifest.json",
+      "preserve_evidence": true,
+      "license": "User-authorized source docs; attribution status retained",
+      "truth": "Immutable primary evidence"
+    }
+  ]
+}

@@ -126,11 +126,12 @@ def effects(path, timeline, sample_rate=24000):
     for shot in timeline['shots']:
         kind=shot.get('sfx')
         if not kind:continue
-        start=int((shot['start']+.08)*sample_rate);length=.25 if kind=='pop' else .45
+        start=int((shot['start']+.08)*sample_rate);length=.9 if kind=='bell' else .25 if kind=='pop' else .45
         for j in range(int(length*sample_rate)):
             t=j/sample_rate;env=(1-t/length)**2
             freq=(650+2000*t) if kind=='pop' else (600-900*t)
-            v=int(math.sin(2*math.pi*freq*t)*env*3600)
+            tone=(math.sin(2*math.pi*2200*t)+.45*math.sin(2*math.pi*3103*t))*(.25+.75*max(0,math.sin(2*math.pi*10*t))) if kind=='bell' else math.sin(2*math.pi*freq*t)
+            v=int(tone*env*3600)
             data[start+j]=max(-30000,min(30000,data[start+j]+v))
     with wave.open(str(path),'wb') as w:w.setnchannels(1);w.setsampwidth(2);w.setframerate(sample_rate);w.writeframes(data.tobytes())
 

@@ -285,6 +285,21 @@ def concatenate_cuts(paths, shots, output, logs):
 
 
 def cover(path, left, right, design=None):
+    if design and design.get('layout')=='manga':
+        # Both inputs are actual game frames. Preserve the entire two-person
+        # cut-in instead of center-cropping each wide frame into a narrow panel.
+        source=Image.open(left).convert('RGB')
+        im=Image.new('RGB',(1920,1080),'#f7f1e5')
+        picture=source.crop((0,round(source.height*.07),source.width,round(source.height*.9)))
+        picture=ImageOps.contain(picture,(1920,700))
+        im.paste(picture,((1920-picture.width)//2,105+(700-picture.height)//2))
+        d=ImageDraw.Draw(im);d.rectangle((0,0,1920,105),fill='#29282a')
+        d.text((65,20),design.get('series','拍拍波 · 课间最终决战'),font=ImageFont.truetype(font(True),46),fill='#ffe4a0')
+        d.text((1485,27),'真实游戏画面',font=ImageFont.truetype(font(True),35),fill='white')
+        d.rectangle((0,790,1920,1080),fill='#29282a')
+        d.text((65,795),design['line1'],font=ImageFont.truetype(font(True),108),fill='white')
+        d.text((65,935),design['line2'],font=ImageFont.truetype(font(True),89),fill='#ffce77')
+        im.save(path);return
     if design and design.get('layout')=='intro':
         im=ImageOps.fit(Image.open(right).convert('RGB'),(1920,1080))
         shade=Image.new('RGBA',im.size,(0,0,0,0));d=ImageDraw.Draw(shade)

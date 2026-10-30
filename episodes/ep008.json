@@ -1,0 +1,1106 @@
+{
+  "schema_version": 2,
+  "episode": "ep008",
+  "repository": "zhipijun1996/wave-game",
+  "asset_spec": "episodes/ep008-assets.json",
+  "story_ids": [
+    "W001"
+  ],
+  "title": "小学对波被我做成了动漫大乱斗 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+  "title_candidates": [
+    "小学对波被我做成了动漫大乱斗 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+    "放学别走！这回真能放波动拳了 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+8%",
+  "playback_speed": 1,
+  "display_chapters": false,
+  "target_duration": [
+    175,
+    285
+  ],
+  "shots": [
+    {
+      "id": "w01",
+      "title": "距离上课：还有一个课间",
+      "chapter": "",
+      "narration": "终于下课了！数学题，先放一边。今天的操场最强，必须是我。",
+      "assets": [
+        "school"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "original_story_animation",
+      "transition": "cut",
+      "emphasis": "",
+      "punchline": null,
+      "sfx": "bell"
+    },
+    {
+      "id": "w02",
+      "title": "小学课间 · 最终决战",
+      "chapter": "",
+      "narration": "小伙伴，别跑。拍两下手，咱俩决一死战！",
+      "assets": [
+        "school"
+      ],
+      "offsets": [
+        8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "original_story_animation",
+      "transition": "cut",
+      "emphasis": "",
+      "punchline": null,
+      "sfx": null
+    },
+    {
+      "id": "w03",
+      "title": "我放大招，我挨打",
+      "chapter": "",
+      "narration": "波动拳！然后，被对面原路退回。大招读条半天，伤害全算我头上。",
+      "assets": [
+        "return",
+        "refund"
+      ],
+      "offsets": [
+        0.8,
+        0
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "flash",
+      "emphasis": "我放大招，我挨打",
+      "punchline": null,
+      "sfx": "impact",
+      "presentation": "montage",
+      "montage_weights": [
+        8,
+        1.1
+      ],
+      "crop_rects": [
+        [
+          390,
+          220,
+          1140,
+          510
+        ],
+        null
+      ]
+    },
+    {
+      "id": "w04",
+      "title": "你们那儿管这个叫什么？",
+      "chapter": "",
+      "narration": "这是拍拍波。我在做失序之钟时，借着AI，把小学对波做成了一个小游戏。",
+      "assets": [
+        "menus"
+      ],
+      "offsets": [
+        0.5
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "《拍拍波》 · 童年支线，启动",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        160,
+        1140,
+        750
+      ]
+    },
+    {
+      "id": "w06",
+      "title": "就加了一点点特效",
+      "chapter": "",
+      "narration": "结果做着做着，小学操场的战斗力，开始失控。",
+      "assets": [
+        "dual",
+        "power-creep"
+      ],
+      "offsets": [
+        1.4,
+        0
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "flash",
+      "emphasis": "就加了一点点特效",
+      "punchline": null,
+      "sfx": "pop",
+      "presentation": "montage",
+      "montage_weights": [
+        5,
+        1.2
+      ],
+      "crop_rects": [
+        [
+          390,
+          220,
+          1140,
+          510
+        ],
+        null
+      ]
+    },
+    {
+      "id": "w08",
+      "title": "充气 → 放波 / 防御",
+      "chapter": "",
+      "narration": "规则从三招开始：充气攒能量，一气放小波，免费防御挡小波。",
+      "assets": [
+        "classic"
+      ],
+      "offsets": [
+        8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "充气 → 放波 / 防御",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w09",
+      "title": "拍、拍——亮框再点",
+      "chapter": "",
+      "narration": "先拍两下，亮框再选招，窗口结束一起揭晓。手别急，先跟上拍子。",
+      "assets": [
+        "classic"
+      ],
+      "offsets": [
+        17
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "拍、拍——亮框再点",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w10",
+      "title": "单机AI · 同时揭晓",
+      "chapter": "",
+      "narration": "现在是单机打电脑。它在你选择前就暗选好了，你得猜它这回合想干什么。",
+      "assets": [
+        "normal"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "单机AI · 同时揭晓",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w11",
+      "title": "脑子：开大！　气：不够。",
+      "chapter": "",
+      "narration": "攒气的时候怕挨揍，出手的时候怕被挡。想帅一下，还得先看看自己有没有气。",
+      "assets": [
+        "normal"
+      ],
+      "offsets": [
+        9
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "脑子：开大！　气：不够。",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w13",
+      "title": "中波 · 波动拳",
+      "chapter": "",
+      "narration": "然后，我加了一点点特效。三气中波，红头带一绑：波——动——拳！",
+      "assets": [
+        "hadoken"
+      ],
+      "offsets": [
+        0.6
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "flash",
+      "emphasis": "就加了一点点特效",
+      "punchline": "你管这叫“中”波？",
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w14",
+      "title": "大波 · 斯派修姆光线",
+      "chapter": "",
+      "narration": "五气，大波。十字手一架，斯派修姆光线。不是，这还是小学操场吗？",
+      "assets": [
+        "beam"
+      ],
+      "offsets": [
+        0.7
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "flash",
+      "emphasis": "大波 · 斯派修姆光线",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w15",
+      "title": "双方大招 · 分屏特写",
+      "chapter": "",
+      "narration": "两边同时开大？特写一人一半，排面谁也不能少。",
+      "assets": [
+        "dual"
+      ],
+      "offsets": [
+        1
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "双方大招 · 分屏特写",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w16",
+      "title": "免费防御 ≠ 什么都能挡",
+      "chapter": "",
+      "narration": "对面都变成光了，我的防御还是平底锅。锅：挡小波可以，这个真不行。",
+      "assets": [
+        "pan-break"
+      ],
+      "offsets": [
+        1.3
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "免费防御 ≠ 什么都能挡",
+      "punchline": "锅：这题超纲了",
+      "sfx": "impact",
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w17",
+      "title": "中防 · AT力场",
+      "chapter": "",
+      "narration": "一气，展开AT力场。中波挡得住，大波挡不住。别头铁。",
+      "assets": [
+        "at"
+      ],
+      "offsets": [
+        0.8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "中防 · AT力场",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w18",
+      "title": "大防 · 三盾精神场",
+      "chapter": "",
+      "narration": "两气，独角兽觉醒！对面五气大招，我两气挡完。排面，拉满。",
+      "assets": [
+        "psycho"
+      ],
+      "offsets": [
+        0.8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "大防 · 三盾精神场",
+      "punchline": "预算两格气，排面不能输",
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w19",
+      "title": "小反弹 · 魔法筒",
+      "chapter": "",
+      "narration": "防住哪有弹回去爽。一气，魔法筒。你的小波，归你了。",
+      "assets": [
+        "cylinder"
+      ],
+      "offsets": [
+        0.9
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "小反弹 · 魔法筒",
+      "punchline": null,
+      "sfx": "pop",
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w20",
+      "title": "中反弹 · 宇智波反弹",
+      "chapter": "",
+      "narration": "但魔法筒只能反弹小波。想把中波也送回去？两气，宇智波反弹。",
+      "assets": [
+        "fan"
+      ],
+      "offsets": [
+        0.8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "中反弹 · 宇智波反弹",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w21",
+      "title": "刚才那两点伤害，终于解释了",
+      "chapter": "",
+      "narration": "对了，对面也会。喊得最大声的我，挨得最完整。",
+      "assets": [
+        "return"
+      ],
+      "offsets": [
+        1.8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "刚才那两点伤害，终于解释了",
+      "punchline": "主角待遇：没有",
+      "sfx": "impact",
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w22",
+      "title": "对波：抵消的是伤害，不是等级",
+      "chapter": "",
+      "narration": "大波也不是随便乱放。两波相撞会削掉伤害，气少的时候，小波也能帮你少挨一点。",
+      "assets": [
+        "clash"
+      ],
+      "offsets": [
+        1.1
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "对波：抵消的是伤害，不是等级",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w23",
+      "title": "快充：收益高，代价也高",
+      "chapter": "",
+      "narration": "嫌攒气慢，还有快充。没被打中，一次加两气；被打中，这次一点不给。",
+      "assets": [
+        "quick-hit"
+      ],
+      "offsets": [
+        0.7
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "快充：收益高，代价也高",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w24",
+      "title": "电没充上，过热倒是到了",
+      "chapter": "",
+      "narration": "更要命的是，不管充没充上，下回合都过热。蓄了个寂寞，还得冷静一回合。",
+      "assets": [
+        "quick-hit"
+      ],
+      "offsets": [
+        5.4
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "电没充上，过热倒是到了",
+      "punchline": "快充 ≠ 白送两格气",
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ]
+    },
+    {
+      "id": "w25",
+      "title": "他有气，不代表他一定出手",
+      "chapter": "",
+      "narration": "所以最纠结的不是按哪个按钮。是他这五格气，到底会不会拿来打我？",
+      "assets": [
+        "normal"
+      ],
+      "offsets": [
+        21
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "他有气，不代表他一定出手",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w26",
+      "title": "帅之前，先想想会不会白给",
+      "chapter": "",
+      "narration": "我先开个反弹，他要是不放波，这两气就白交了。小小几根火柴，主打一个互相猜心思。",
+      "assets": [
+        "normal"
+      ],
+      "offsets": [
+        31
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "帅之前，先想想会不会白给",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w27",
+      "title": "故事模式 · 八个同学",
+      "chapter": "",
+      "narration": "不想一上来就十个按钮？故事模式有八个同学，一路赢，一路学新招。",
+      "assets": [
+        "story"
+      ],
+      "offsets": [
+        2
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "故事模式 · 八个同学",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        160,
+        1140,
+        750
+      ]
+    },
+    {
+      "id": "w28",
+      "title": "故事通关 → 十招进阶",
+      "chapter": "",
+      "narration": "通关八关，才解锁十招进阶对战。别急着成神，先把课间基础打好。",
+      "assets": [
+        "menus"
+      ],
+      "offsets": [
+        7.6
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "故事通关 → 十招进阶",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        160,
+        1140,
+        750
+      ]
+    },
+    {
+      "id": "w29",
+      "title": "连战 · 胜后满血，气归零",
+      "chapter": "",
+      "narration": "还有连战。赢一场，双方满血、气归零，再来。看看你能当几场操场最强。",
+      "assets": [
+        "streak"
+      ],
+      "offsets": [
+        7.6
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "连战 · 胜后满血，气归零",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w30",
+      "title": "赢，可以。排面，必须有。",
+      "chapter": "",
+      "narration": "赢了先别急着结算。JOJO风格胜利姿势——下课之前，我是最强！",
+      "assets": [
+        "victory"
+      ],
+      "offsets": [
+        2.2
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "赢，可以。排面，必须有。",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        220,
+        1140,
+        510
+      ],
+      "action_labels": [
+        {
+          "start": 3.5,
+          "end": 6.3,
+          "text": "称号有效期：一个课间"
+        }
+      ]
+    },
+    {
+      "id": "w32",
+      "title": "准备发布到 B站 Toy",
+      "chapter": "",
+      "narration": "现在公开试玩已经能玩，接下来准备发到B站Toy。正式入口，会放在投稿简介里。",
+      "assets": [
+        "menus"
+      ],
+      "offsets": [
+        0.8
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "准备发布到 B站 Toy",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        160,
+        1140,
+        750
+      ]
+    },
+    {
+      "id": "w33",
+      "title": "评论区征集：你们那儿有什么招？",
+      "chapter": "",
+      "narration": "你们小时候还有什么离谱招式？评论区报一下。下一个操场大招，没准就是它。",
+      "assets": [
+        "normal"
+      ],
+      "offsets": [
+        45
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "actual_gameplay_with_editorial_cuts",
+      "transition": "cut",
+      "emphasis": "评论区征集：你们那儿有什么招？",
+      "punchline": null,
+      "sfx": null,
+      "crop_rect": [
+        390,
+        90,
+        1140,
+        620
+      ]
+    },
+    {
+      "id": "w34",
+      "title": "本次最终决战，暂时中止",
+      "chapter": "",
+      "narration": "坏了，上课了。拯救世界，下个课间再说。",
+      "assets": [
+        "school-end"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [],
+      "evidence": [
+        "user-origin",
+        "game-rules",
+        "runtime-capture"
+      ],
+      "claim_type": "editorial_story_and_verified_gameplay",
+      "fact_check": "School POV is explicitly fictional editorial framing authorized by user. Mechanics checked in pinned source and per-case runtime trace; presets are not natural unlock or human performance.",
+      "shot_type": "original_story_animation",
+      "transition": "cut",
+      "emphasis": "",
+      "punchline": null,
+      "sfx": "bell"
+    }
+  ],
+  "cover_assets": [
+    "cover-wave",
+    "cover-return"
+  ],
+  "cover": {
+    "layout": "manga",
+    "series": "拍拍波 · 课间最终决战",
+    "line1": "小学对波",
+    "line2": "怎么变成诸天乱斗了？"
+  },
+  "editorial_status": "authored_chuunibyou_comedy_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/playground-battle-actions.ogg",
+    "sha256": "8c25cdf0591b2816dcd244abf4be9c4d405ea0322a0f4e13ad03ce29470f16aa",
+    "origin": "procedural_original",
+    "source": "Original Video Rush battle score, 168BPM, seed20261030; no samples, franchise recordings or lyrics; first192s mono Opus20kbps derivative.",
+    "original_sha256": "49703dd6121da06a7453f23851a79b55d7766daf0e53bf011ae4af743df3f4ec",
+    "usage": "User requested chuunibyou battle music; replaces previous calm BGM for this episode.",
+    "license_status": "Original Video Rush instrumental, MIT; generator tools/make_playground_score.py; no third-party samples"
+  },
+  "music_gain": 0.55,
+  "game_audio_gain": 0,
+  "original_music": false,
+  "research_scope": {
+    "repository": "zhipijun1996/wave-game",
+    "main_at_scan": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+    "accessible_commits": 24,
+    "branches_scanned": [
+      {
+        "name": "deliveries/v1.0.0-rc.1",
+        "commit": {
+          "sha": "15d6a57e686693a468f591604c659fead625ba6e",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/15d6a57e686693a468f591604c659fead625ba6e"
+        },
+        "protected": false
+      },
+      {
+        "name": "deliveries/v1.1.0-rc.1",
+        "commit": {
+          "sha": "ed8b10d829f6afa0d2c5adb0dc0a660d324d83e1",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/ed8b10d829f6afa0d2c5adb0dc0a660d324d83e1"
+        },
+        "protected": false
+      },
+      {
+        "name": "deliveries/v1.2.0-rc.1",
+        "commit": {
+          "sha": "27dbb0cc3d05923bd51bb2c8f6da23e07884a0ae",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/27dbb0cc3d05923bd51bb2c8f6da23e07884a0ae"
+        },
+        "protected": false
+      },
+      {
+        "name": "deliveries/v2.0.0-rc.1",
+        "commit": {
+          "sha": "5487f33ac8ffea09f79c203e13e628cd2038d09d",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/5487f33ac8ffea09f79c203e13e628cd2038d09d"
+        },
+        "protected": false
+      },
+      {
+        "name": "deliveries/v2.0.0-rc.2",
+        "commit": {
+          "sha": "f7c78e00c698aaf7a7aba3931ca662bde2b5eed9",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/f7c78e00c698aaf7a7aba3931ca662bde2b5eed9"
+        },
+        "protected": false
+      },
+      {
+        "name": "deliveries/v2.1.0",
+        "commit": {
+          "sha": "5e52d4617d32d4bfd40b6eab2df7ff271b60912d",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/5e52d4617d32d4bfd40b6eab2df7ff271b60912d"
+        },
+        "protected": false
+      },
+      {
+        "name": "gh-pages",
+        "commit": {
+          "sha": "c3288b6543157ec41d73c7dd5b98825042b7d5c6",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/c3288b6543157ec41d73c7dd5b98825042b7d5c6"
+        },
+        "protected": false
+      },
+      {
+        "name": "main",
+        "commit": {
+          "sha": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+          "url": "https://api.github.com/repos/zhipijun1996/wave-game/commits/f0bc228798600ed650bcd92bc8f415d7703484c4"
+        },
+        "protected": false
+      }
+    ],
+    "pull_requests": [],
+    "coverage": "All accessible refs/commit metadata, current README and selected spec/assets/delivery docs, actual rules/clock/renderer/AI/session/audio and source recording recipes. Large delivery archives not all downloaded; no source worktree checkout/edit.",
+    "native_recording_recipe": "Existing scripts/capture.ts + mux_capture.py; reuses documented localhost hooks, real DOM clicks and marker calibration."
+  },
+  "evidence": [
+    {
+      "id": "user-origin",
+      "kind": "user_testimony_and_authorized_fiction",
+      "source": "User 2026-10-30: side project beside Disordered Clock, own primary-school recess inspiration; wants named chuunibyou references, funny real capture, schoolboy POV animation, Toy/contest future release."
+    },
+    {
+      "id": "game-rules",
+      "kind": "immutable_source",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "url": "https://github.com/zhipijun1996/wave-game/blob/f0bc228798600ed650bcd92bc8f415d7703484c4/docs/GAME_SPEC.md",
+      "scope": "Actual rules.ts/skills.json cross-checked: costs, reflect/guard limits, quick charge, story8, advanced10, native solo AI."
+    },
+    {
+      "id": "runtime-capture",
+      "kind": "real_capture_recipe",
+      "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+      "url": "https://github.com/zhipijun1996/wave-game/blob/f0bc228798600ed650bcd92bc8f415d7703484c4/scripts/capture.ts",
+      "scope": "New recordings via original UI/renderer/rules. Local fixtures distinct from normal native AI; traces/hashes retained."
+    },
+    {
+      "id": "toy-scope",
+      "kind": "delivery_status",
+      "url": "https://github.com/zhipijun1996/wave-game/blob/f0bc228798600ed650bcd92bc8f415d7703484c4/docs/DELIVERY.md",
+      "scope": "Standalone playable v2.1; Toy adapter prepared, actual Toy publication not verified."
+    }
+  ],
+  "rights": {
+    "game": "Own authorized MIT geometry/code; franchise references retain original rights. No anime frame downloads.",
+    "fonts": "Noto CJK / WenKai, OFL",
+    "music": {
+      "path": "build/music/playground-battle-actions.ogg",
+      "sha256": "8c25cdf0591b2816dcd244abf4be9c4d405ea0322a0f4e13ad03ce29470f16aa",
+      "origin": "procedural_original",
+      "source": "Original Video Rush battle score, 168BPM, seed20261030; no samples, franchise recordings or lyrics; first192s mono Opus20kbps derivative.",
+      "original_sha256": "49703dd6121da06a7453f23851a79b55d7766daf0e53bf011ae4af743df3f4ec",
+      "usage": "User requested chuunibyou battle music; replaces previous calm BGM for this episode.",
+      "license_status": "Original Video Rush instrumental, MIT; generator tools/make_playground_score.py; no third-party samples"
+    },
+    "source_audio": "Muted in actual settings and game_audio_gain=0; unconfirmed franchise recording excerpts not in final soundtrack.",
+    "tts": "Edge Mandarin synthetic narration, not cloned user/actor voice.",
+    "memes": "Original text cards and stick-figure story animation, MIT"
+  },
+  "comparison": "Different preset action scenes plus independent native-AI matches; no same-seed before/after or human skill claim.",
+  "comparison_review": "剧情动画、预设演示与正常AI对局是否分清？Toy是否明确仍待发布？幽默和节奏是否自然？",
+  "bilibili_body": "《拍拍波》：把小学课间的拍手对波，做成了火柴人动漫大乱斗。开发《失序之钟》之外，借助AI做的一个小支线。\n\n拍两下手，亮框再选招，双方同时揭晓。现在是本地单机对AI；基础三招，故事八关，通关解锁十招进阶，支持连战。波动拳、斯派修姆光线、AT力场、独角兽精神场、魔法筒、宇智波反弹，还有JOJO风格胜利演出。\n\n公开试玩：https://paipai-wave-playground.zhipijun1996.chatgpt.site\n备用：https://zhipijun1996.github.io/wave-game/\nToy：准备发布，正式Toy入口待上线后补充；当前链接是独立网页试玩。\n\n你们小时候管这个叫什么？还有哪些离谱招式，欢迎评论区报菜名。\n\n#B站AI创造公开赛#\n分区建议：游戏→单机游戏（以投稿页实际可选分区为准）。标签：B站AI创造公开赛、拍拍波、独立游戏、游戏开发、AI、童年、火柴人、小游戏。\n\n开头/结尾为原创火柴人剧情演绎，不是本人逐字回忆或历史录像。中段为真实浏览器实机；招式演示使用合法预设资源/动作接口并已标注，不代表自然通关。普通对局使用独立暗选AI。中文AI配音；配乐与补充音效原创合成，不使用原作BGM或录音。游戏中动漫/游戏招式参考权利归各原权利方；游戏原带的未确认授权作品录音在本片已静音。源码与归属：https://github.com/zhipijun1996/wave-game 。源版本 f0bc228798600ed650bcd92bc8f415d7703484c4 。\n\n投稿时勾选真实活动话题（topic_id=1340873），同产品视频建立《拍拍波》独立合集；不混入《失序之钟》合集。活动资格以平台审核为准，审核前不自动投稿。"
+}

@@ -17,7 +17,8 @@ music=Path('build/music/the_kindred_hearth-actions.ogg');music.parent.mkdir(pare
 spec=json.loads(Path(os.environ['VR_SPEC']).read_text())
 original=spec['music_asset'].copy()
 spec['music_asset'].update(path=str(music),sha256=expected,
-    source='User-uploaded original, compressed for Actions transfer; first 145 seconds, mono Opus 20kbps',
+    source=(original['source']+'; exact transferred Opus derivative restored'
+            if original.get('origin')=='procedural_original' else 'User-uploaded original, compressed for Actions transfer; first 145 seconds, mono Opus 20kbps'),
     original_sha256=original.get('original_sha256',original['sha256']),original_source=original['source'],
     transport='temporary Actions chunk artifacts; not committed to Git')
 Path('build/actions-episode.json').write_text(json.dumps(spec,ensure_ascii=False,indent=2)+'\n')

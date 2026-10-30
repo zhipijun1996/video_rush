@@ -48,6 +48,9 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Install free tools
         timeout-minutes: 10
         run: |
@@ -59,7 +62,7 @@ jobs:
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update -qq
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb
           python -m pip install -e '.[test]'
-          if python -c 'import json,os,sys; s=json.load(open(os.environ["VR_SPEC"])); a=json.load(open(s["asset_spec"])); sys.exit(not any(x.get("origin")=="browser_capture" for x in a["assets"]))'; then
+          if python -c 'import json,os,sys; s=json.load(open(os.environ["VR_SPEC"])); a=json.load(open(s["asset_spec"])); sys.exit(not any(x.get("origin") in ("browser_capture","browser_movie") for x in a["assets"]))'; then
             python -m pip install -e '.[browser]'
           fi
           pytest -q
@@ -77,7 +80,7 @@ jobs:
           source = pathlib.Path('build/source'); source.mkdir(parents=True)
           subprocess.run(['git', 'init', str(source)], check=True)
           subprocess.run(['git', '-C', str(source), 'remote', 'add', 'origin', 'https://github.com/' + assets['repository'] + '.git'], check=True)
-          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git') in ('git','recording','browser_capture')}):
+          for sha in sorted({a['commit'] for a in assets['assets'] if a.get('origin','git') in ('git','recording','browser_capture','browser_movie')}):
               if not re.fullmatch(r'[a-f0-9]{40}', sha): raise ValueError('Full immutable SHA required')
               subprocess.run(['git', '-C', str(source), 'fetch', '--no-tags', '--filter=blob:none', '--depth=1', 'origin', sha], check=True)
           PY
@@ -120,7 +123,7 @@ jobs:
           python - <<'PYCODE'
           import os, json, requests
           from pathlib import Path
-          summary='## 成片已生成\n\n[下载成片、封面和标题简介 ZIP]('+os.environ['VR_DOWNLOAD']+')\n\n含用户指定BGM压缩副本；技术验收通过，手机完整试听与审美待用户审核。保留14天。\n'
+          summary='## 成片已生成\n\n[下载成片、封面和标题简介 ZIP]('+os.environ['VR_DOWNLOAD']+')\n\n含本期配乐与来源证据；技术验收通过，手机完整试听与审美待用户审核。保留14天。\n'
           Path(os.environ['GITHUB_STEP_SUMMARY']).write_text(summary)
           for aid in json.loads(os.environ['VR_MUSIC_ARTIFACTS']) + json.loads(os.environ.get('VR_IMAGES_ARTIFACTS') or '[]'):
               r=requests.delete('https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/artifacts/'+str(aid),headers={'Authorization':'Bearer '+os.environ['GH_TOKEN']},timeout=30)

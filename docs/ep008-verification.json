@@ -1,0 +1,212 @@
+{
+  "checked_at": "2026-10-30T17:53:45.549702+00:00",
+  "status": "local_produced_and_verified_hosted_delivery_pending",
+  "source_repository": "zhipijun1996/wave-game",
+  "source_commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+  "local_final_sha256": "d3ec514ec0c18ce62bf0d5cbae494bfa00b505948cfcefa537ca43e95f615c00",
+  "local_final_bytes": 19987756,
+  "duration_seconds": 211.066667,
+  "shots": 30,
+  "delivery_hashes_verified": 80,
+  "technical": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_matches_brief": true,
+    "subtitles_in_bounds": true,
+    "subtitle_cues_do_not_overlap": true,
+    "action_labels_in_bounds": true,
+    "source_labels_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "decoded_audio_duration_matches_timeline": true,
+    "requested_music_source_valid": true,
+    "sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true,
+    "animated_diagrams_show_actual_motion": true
+  },
+  "tts": "30 actual Edge synthesis receipts and boundaries; not human/ASR approval",
+  "original_story_animation": "Schoolboy POV opening/end, labelled fictional; not game footage",
+  "actual_captures": 17,
+  "runtime_verification": {
+    "exact_git_source_files_verified": 75,
+    "source_code_edited": false,
+    "capture_cases": {
+      "hadoken": {
+        "movie_sha256": "0972a0553680fbd9c21f17dc2c5951ebc773619ef1f1e05c8b6df6639ecca276",
+        "trace_sha256": "e47c9dbad59ab93b3813f9611f5cdb7afdb83981d5ec9fd69c23f81acbefd765",
+        "clock_fit_ratio": 1.1481563258997556,
+        "damage": [
+          0,
+          2
+        ],
+        "native_rounds": 3
+      },
+      "beam": {
+        "movie_sha256": "1eb1aa8e5618b0de5c78e9f911515da629e79ffd223ae1497c4e5dd5b23e7e52",
+        "trace_sha256": "b801936fea89f559345a16f7c75d60a03bc3bfccf364bf9b828b70bb596d0acd",
+        "clock_fit_ratio": 1.1596499045544302,
+        "damage": [
+          0,
+          3
+        ],
+        "native_rounds": 3
+      },
+      "dual": {
+        "movie_sha256": "8d79ee563f240e8faa74ed11c51d603a7d3ec4b068f05b611fcb21fb6da0f77e",
+        "trace_sha256": "fe624f877ac41d584165948f03a2cacdb291a2e3d97a29b3ed991415e8a0e2b6",
+        "clock_fit_ratio": 1.1480753822344707,
+        "damage": [
+          0,
+          1
+        ],
+        "native_rounds": 3
+      },
+      "at": {
+        "movie_sha256": "a095f2d8a2b346d2b23fa8fa53cd4da3b71aafbda7b2ab27ec500aa812bb5d52",
+        "trace_sha256": "f3f877359cc86e8e250da1e38c25492ceece5b6c38dc064478810b78f0d92993",
+        "clock_fit_ratio": 1.1542339791036436,
+        "damage": [
+          0,
+          0
+        ],
+        "native_rounds": 3
+      },
+      "psycho": {
+        "movie_sha256": "e73e9b1a0b55de4d36bc2a8a63da0cb47a3fd6260190b8d9288d4c47ab6cb832",
+        "trace_sha256": "ac4b2a02e7f46ecf75e67a192dcebbf13929928a691fc21c37005e5efaba48b8",
+        "clock_fit_ratio": 1.1402646336707667,
+        "damage": [
+          0,
+          0
+        ],
+        "native_rounds": 3
+      },
+      "cylinder": {
+        "movie_sha256": "42bca1e745056e9b42c27879d844dc6ea30ba7acf5cdce5ef86e38f5d14f38d0",
+        "trace_sha256": "ca6d83902c6e88c3ec44e7932819a87f93b7e90091dbd7e5c1fbc00dd08d758d",
+        "clock_fit_ratio": 1.1515933684106086,
+        "damage": [
+          0,
+          1
+        ],
+        "native_rounds": 4
+      },
+      "fan": {
+        "movie_sha256": "35ff9d98421cb199df773d54e766298db09cf3ed52abb8fbbb7a20c9cf58ebb6",
+        "trace_sha256": "fd9e31aa92204ce128b98f0dce062eab4bd933008bba92f2cb62881d533a3fef",
+        "clock_fit_ratio": 1.1472895015448465,
+        "damage": [
+          0,
+          2
+        ],
+        "native_rounds": 3
+      },
+      "return": {
+        "movie_sha256": "885bcd37770a6e0442cac9bc7fa69b3a6f05781bdb3afc9870c1a9b6a0842c5e",
+        "trace_sha256": "f00d6922150d65d8e489737f7c620d7368c47e43aaef6e291664386a59d0ad79",
+        "clock_fit_ratio": 1.1663154883396019,
+        "damage": [
+          2,
+          0
+        ],
+        "native_rounds": 3
+      },
+      "pan-break": {
+        "movie_sha256": "1e0bde79aaa6ccee276a05ffecf6da25b1da5037a6f4162dca26bb6e68c95305",
+        "trace_sha256": "ce890c34c7ce9f01ec90b522d3904becddda98dd7cf755b3a4f65fe40a5490cc",
+        "clock_fit_ratio": 1.148825638800878,
+        "damage": [
+          3,
+          0
+        ],
+        "native_rounds": 3
+      },
+      "quick-hit": {
+        "movie_sha256": "5ef8cda4ff443b427f80fe5ae5baee971ceca429cac5a46ab828002f42d9b456",
+        "trace_sha256": "f97dae9eb9291b279364b6dd64e8b01a3ca72bac2c6efed71ac31beb3f45bad8",
+        "clock_fit_ratio": 1.1571822611939953,
+        "damage": [
+          1,
+          0
+        ],
+        "native_rounds": 4
+      },
+      "clash": {
+        "movie_sha256": "84c6f68329f201c6fef8304c48a8e3e3e47552a8ba106c3f2344efbcdfda3777",
+        "trace_sha256": "707138a9c61a62c22bebfa13571366f58363bd034e4f238a306c45690896686e",
+        "clock_fit_ratio": 1.1444324241209438,
+        "damage": [
+          2,
+          0
+        ],
+        "native_rounds": 3
+      },
+      "victory": {
+        "movie_sha256": "78fd2c8694bf081c21f0beee146128f7781d5c4b7bdb5fe1a66e02b0939c0cb6",
+        "trace_sha256": "9d1f7a2edc9701b92ba29e74edf1427709341e38827a361a59d595b748e3b16d",
+        "clock_fit_ratio": 1.1337182104863401,
+        "damage": [
+          0,
+          1
+        ],
+        "native_rounds": 2
+      },
+      "classic": {
+        "movie_sha256": "26567303f4607070a63ea2c5fd1c4bc712792173a8e24e9ceb30aa1c1b129b16",
+        "trace_sha256": "bab60fd124107772ecaad723fc825f891396c2dd16e9f14b308cb395e267a832",
+        "clock_fit_ratio": 1.1598059656144235,
+        "damage": null,
+        "native_rounds": 8
+      },
+      "normal": {
+        "movie_sha256": "88a62e53f445eb8edfa5d1dec5cdd08b5182daa6ae3e715781472b1776787620",
+        "trace_sha256": "2003d7234db9c1cb65d529f0ef5c7316ae4f86b0c064127b25cf60c0d2a895f8",
+        "clock_fit_ratio": 1.1511226712372324,
+        "damage": null,
+        "native_rounds": 12
+      },
+      "menus": {
+        "movie_sha256": "d29a59dde6185cc87abd260c8da0484db4795e36abdab755db2f4bc70d89e026",
+        "trace_sha256": "079c567c91d8ed74896cfe0ab1df1a016e235d43f6e494f8342805b0f5568ede",
+        "clock_fit_ratio": 1.0874410464969184,
+        "damage": null,
+        "native_rounds": 0
+      },
+      "story": {
+        "movie_sha256": "f601ae4824d8336b1bb9a5af6621ea63860aed4613ccf2b9ed1bedc6077d6ead",
+        "trace_sha256": "cf10fcd5aefb2a10036e770fa6194c2bc944c0ac518e4fba2f4d655dd90416c1",
+        "clock_fit_ratio": 1.1110335249710972,
+        "damage": null,
+        "native_rounds": 3
+      },
+      "streak": {
+        "movie_sha256": "150ea5232dc927519bdc70fd43a4666a2bb1e8587d7e4b8d627749926f20e1d5",
+        "trace_sha256": "31893aa3f0b3711ce408658225649b15f171b46f766a5f51bd0ed111296ce046",
+        "clock_fit_ratio": 1.14475549630759,
+        "damage": [
+          0,
+          1
+        ],
+        "native_rounds": 2
+      }
+    },
+    "checks": "Actual fixture damage, quick interruption/overheat, no page errors, native sealed-AI rounds; not human fun or phone performance."
+  },
+  "tests": "39 Video Rush tests;21 actual game tests. Earlier reduced-runtime test invocation found0, not counted.",
+  "human_phone_review": "pending",
+  "bilibili_uploaded": false,
+  "toy_publication_verified": false,
+  "activity_eligibility": "not certified; posting copy prepared with correct topic and separate product collection requirement",
+  "failures": [
+    "Initial recorder wallclock bound too strict compared with existing upstream receipt; re-recorded using bounded source-based calibration.",
+    "Editorial card schema mismatch fixed.",
+    "Draft interrupted to remove repetitive exposition; valid cached recordings/TTS retained.",
+    "Inherited art-comparison cover mislabelled actual gameplay as concept art; replaced with inspected actual two-person manga cover.",
+    "BGM transfer timed out after8minutes of runner queue; successful original chunks being recovered without redispatch.",
+    "Current activity-rule API returned412; prior authenticated official rule source retained."
+  ]
+}

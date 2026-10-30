@@ -15,6 +15,37 @@ def collect(repo, spec, output):
     collected = []
     for asset in spec['assets']:
         origin=asset.get('origin','git')
+        if origin=='browser_movie':
+            from .browser_movie import capture
+            source,receipt=capture(repo,asset)
+            evidence_dir=output.parent/'browser-evidence';evidence_dir.mkdir(exist_ok=True)
+            for name in ['trace.json','receipt.json','action.png','end.png']:
+                p=source.parent/name
+                if p.exists():__import__('shutil').copyfile(p,evidence_dir/(asset['case']+'-'+name))
+            dest=output/(asset['id']+('.png' if 'frame_seconds' in asset else '.mp4'))
+            extra={}
+            if 'frame_seconds' in asset:
+                import math
+                from .render import crop_filter
+                seconds=asset['frame_seconds']
+                if not isinstance(seconds,(int,float)) or not math.isfinite(seconds) or not 0<=seconds<float(receipt['ffprobe']['format']['duration']):raise ValueError('Frame outside browser movie')
+                filt=crop_filter(asset.get('frame_crop'),source).rstrip(',')
+                args=['ffmpeg','-v','error','-y','-ss',str(seconds),'-i',source,'-frames:v','1']
+                if filt:args+=['-vf',filt]
+                run([*args,dest],timeout=60)
+                extra={'source_sha256':receipt['movie_sha256'],'extraction':{'seconds':seconds,'crop':asset.get('frame_crop')}}
+            else:
+                if not dest.exists() or sha(dest)!=receipt['movie_sha256']:__import__('shutil').copyfile(source,dest)
+                extra={'ffprobe':probe(dest)}
+            collected.append(dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),**extra,
+                browser_movie_receipt=receipt,source_url=f'https://github.com/{spec["repository"]}/tree/{receipt["recipe"]["commit"]}'))
+            continue
+        if origin=='editorial_movie':
+            from .school_animation import render
+            dest=output/(asset['id']+'.mp4');render(dest,asset)
+            collected.append(dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),ffprobe=probe(dest),
+                source_url='original-editorial-animation:'+asset['id'],generator_sha256=sha(ROOT/'video_rush/school_animation.py')))
+            continue
         if origin == 'user_upload':
             from PIL import Image
             import shutil

@@ -93,7 +93,7 @@ def validate(output, spec, timeline, sources):
     minimum,maximum=spec.get('target_duration',[180,300])
     if bgm:
         bgm['metrics'].pop('speech_identity',None)
-        bgm['metrics']['signal_type']='user-provided background music; waveform presence check, not speech identity'
+        bgm['metrics']['signal_type']='background music; waveform presence check, not speech identity'
     checks={
       'exists_and_decodes':True,'1920x1080':(v['width'],v['height'])==(1920,1080),'30fps':Fraction(v['avg_frame_rate'])==30,
       'h264_yuv420p':v['codec_name']=='h264' and v['pix_fmt']=='yuv420p','aac_48k':a['codec_name']=='aac' and int(a['sample_rate'])==48000,

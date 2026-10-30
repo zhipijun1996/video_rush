@@ -1681,5 +1681,55 @@
       "priority": "selected_ep007",
       "reason": "逐层定义将随机地图转为明确的几何/接口/有向图问题；高考数学感来自用户自述。"
     }
+  },
+  {
+    "id": "W001",
+    "event": "小学课间对波成为火柴人动漫乱斗《拍拍波》",
+    "date": "2026-10-30",
+    "background": "失序之钟之外的用户童年灵感支线",
+    "conflict": "三招猜心思与夸张动漫演出的反差",
+    "attempts": [
+      "三招基础",
+      "故事八关解锁十招",
+      "大招特写与两种反弹"
+    ],
+    "result": "可运行v2.1网页；Toy正式容器未验",
+    "truth_status": "scoped_success",
+    "evidence_status": "source_and_new_browser_capture",
+    "commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+    "base_commit": null,
+    "pr": null,
+    "branch": "main",
+    "repository": "zhipijun1996/wave-game",
+    "sources": [
+      "https://github.com/zhipijun1996/wave-game/blob/f0bc228798600ed650bcd92bc8f415d7703484c4/README.md"
+    ],
+    "associated_media": [
+      "hadoken",
+      "beam",
+      "dual",
+      "at",
+      "psycho",
+      "cylinder",
+      "fan",
+      "return",
+      "pan-break",
+      "quick-hit",
+      "clash",
+      "victory",
+      "classic",
+      "normal",
+      "menus",
+      "story",
+      "streak"
+    ],
+    "recordability": {
+      "needed": true,
+      "approach": "Original renderer/DOM/hooks; legal fixtures plus native AI"
+    },
+    "video_potential": {
+      "priority": "selected_ep008",
+      "reason": "童年、动漫梗、真实反弹失败与快充断电可构成可见反转"
+    }
   }
 ]
