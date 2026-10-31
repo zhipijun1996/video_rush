@@ -1,8 +1,8 @@
 {
-  "status": "local_dynamic_roughcut_verified_hosted_run_pending",
+  "status": "local_audio_clock_fix_verified_environment_lost_hosted_rebuild_pending",
   "local": {
     "path": "build/episodes/ep008-r2-roughcut/roughcut.mp4",
-    "sha256": "33086f9f332983863b40b806e7504463102470c08020036f46e304a55a1cb436",
+    "sha256": "c9c60de3b4121214dc436cdd1405f0e04aff405def0ed1a1b157600c34928f0a",
     "duration": 141.1,
     "shots": 48,
     "tts_utterances": 26,
@@ -12,14 +12,8 @@
     "full_decode": "passed",
     "final_body_frame_matches": 48,
     "fps": "30/1",
-    "audio_metrics": {
-      "decoded_samples": 2279083,
-      "peak": 0.811859130859375,
-      "rms": 0.08361640385313523,
-      "clipped_fraction": 0.0,
-      "audible_signal": true,
-      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
-    }
+    "decoded_audio_seconds": 141.0346875,
+    "note": "Last verified render before the final boss/friend visual differentiation. The subsequent local render lost its execution environment before completion could be confirmed."
   },
   "user_creative_review": "pending",
   "bilibili_or_toy_submission": "not performed",
@@ -27,5 +21,28 @@
     "Anime sources include low-resolution, subtitles and watermarks; redistribution permission unconfirmed.",
     "Adult work/family and childhood story are requested fictional framing.",
     "Actual gameplay uses legal initial-resource and fixed-opponent fixtures; no live multiplayer claim."
-  ]
+  ],
+  "observed_failures": [
+    {
+      "stage": "first_final_av_filter",
+      "detail": "Mixed color metadata caused short clips to disappear during graph reinitialization. Fixed with reinit_filter=0 and per-shot body pixel comparison."
+    },
+    {
+      "stage": "audio_clock_audit",
+      "container_seconds": 141.1,
+      "decoded_seconds": 142.4426875,
+      "detail": "AAC concatenation overlap corrected by timestamp-aware resampling. The next verified render decoded 141.0346875 seconds."
+    },
+    {
+      "stage": "hosted_run",
+      "run_id": 41181707832,
+      "conclusion": "cancelled",
+      "detail": "Cancelled during tool installation to avoid delivering the pre-audio-clock-fix version. No film Artifact was produced."
+    },
+    {
+      "stage": "local_execution",
+      "detail": "Execution environment became unavailable during the final visual revision. Files could not be accessed; rebuild is proceeding from GitHub source."
+    }
+  ],
+  "delivery_branch": "ep008-r2-delivery"
 }
