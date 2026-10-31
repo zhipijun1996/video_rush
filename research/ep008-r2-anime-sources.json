@@ -1,0 +1,65 @@
+{
+  "episode": "ep008-r2",
+  "status": "storyboard_iteration_and_asset_research_not_final_film",
+  "checked_at": "2026-10-31",
+  "user_requirement": "Actual anime footage showing a facedown trap being revealed and Magic Cylinder activated; retain actual game sound in the eventual film.",
+  "assets": [
+    {
+      "id": "magic-cylinder-anime-compilation",
+      "page": "https://www.bilibili.com/video/BV1oN411d77p/",
+      "title": "游戏王魔法筒合集",
+      "uploader": "郭三宝Official",
+      "cid": 287147168,
+      "uploader_reported_origin": "https://www.youtube.com/watch?v=XECP3or-fLY",
+      "uploader_reported_original_channel": "Yugioh Anime All Extra Deck Summon",
+      "local_path": "build/research/ep008-r2/magic-cylinder-source.mp4",
+      "sha256": "703cb97ba7db2a0c50fc48ab96bd13e8a8b9251b37617789a6b206055ea3a80c",
+      "bytes": 9607547,
+      "duration_seconds": 85.634966,
+      "width": 854,
+      "height": 480,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "retrieval": "Public anonymous player API returned its own media and backup URLs. Primary CDN failed HTTP 567; API-provided backup succeeded with verified byte-range assembly after truncated connections. No signed URL modified, no paywall or DRM access.",
+      "validation": {
+        "full_decode": "passed",
+        "visual_review": "Full compilation contact sheet plus half-second frames for 36–42, 50.8–56.8 and 72–78 seconds inspected.",
+        "audio_present": true,
+        "spoken_line_listening_review": "pending",
+        "limitations": "Compilation has existing French subtitles, letterboxing and KineMaster watermark; not a clean master. Original episode and compilation clocks differ."
+      },
+      "rights_status": "Third-party compilation of copyrighted anime. Attribution/origin researched; redistribution permission not established. Do not label MIT, CC0, official or authorized."
+    },
+    {
+      "id": "magic-cylinder-yugi-trap-candidate",
+      "source_asset": "magic-cylinder-anime-compilation",
+      "source_in_seconds": 37.8,
+      "source_out_seconds": 51.5,
+      "local_path": "build/research/ep008-r2/magic-cylinder-yugi-original-candidate.mp4",
+      "sha256": "8a823f431bc4cf2c50644a31b38ee73b601ee5a7aa656a0d16353764a057c27a",
+      "transform": "Contiguous excerpt, H.264/AAC reencode with original audio and existing subtitles/watermark preserved; no image generation or replacement dialogue.",
+      "content": "Yugi announces activation; facedown trap rises around compilation 39 seconds, Magic Cylinder card face visible at 39.5–40.5; Jaden reaction and cylinders absorb/redirect the attack in following frames.",
+      "episode_identification": {
+        "series": "Yu-Gi-Oh! GX",
+        "episode": 180,
+        "support": [
+          "https://yugioh.fandom.com/wiki/Yu-Gi-Oh%21_GX_-_Episode_180",
+          "https://yugioh.fandom.com/wiki/Card_Appearances%3AMagic_Cylinder"
+        ],
+        "status": "Visual characters and Magic Cylinder appearance cross-checked with episode/card records; no full episode retrieved."
+      },
+      "full_decode": "passed",
+      "edit_intent": "Use a short activation/flip excerpt after the rival's reaction, then cut into actual opponent-reflection gameplay. Do not suggest that this original anime scene ends in Jaden losing, or that the unrelated sore-wa-dou-kana source is the same uninterrupted scene.",
+      "remaining": "Cleaner source and spoken-line listening review; correct opponent-reflection gameplay capture; full story rough cut."
+    },
+    {
+      "id": "magic-cylinder-revolver-backup",
+      "source_asset": "magic-cylinder-anime-compilation",
+      "source_in_seconds": 74.5,
+      "source_out_seconds": 78,
+      "content": "Revolver from VRAINS displays a digital facedown trap which reveals Magic Cylinder.",
+      "visual_review": "Half-second frame contact sheet inspected; distinct character, not Yugi.",
+      "status": "Backup only, not selected as same-character Yugi footage."
+    }
+  ]
+}
