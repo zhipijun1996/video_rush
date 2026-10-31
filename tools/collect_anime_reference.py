@@ -12,7 +12,7 @@ import re
 import requests
 
 
-def collect(bvid,folder):
+def collect(bvid,folder,*,cid=None,metadata=None):
     if not re.fullmatch(r'BV[A-Za-z0-9]{10}',bvid):raise ValueError('Expected a Bilibili BV identifier')
     folder=Path(folder);folder.mkdir(parents=True,exist_ok=True)
     target=folder/(bvid+'.mp4');receipt=folder/(bvid+'.json')
@@ -22,11 +22,16 @@ def collect(bvid,folder):
     target.unlink(missing_ok=True)
     page='https://www.bilibili.com/video/'+bvid+'/'
     headers={'User-Agent':'Mozilla/5.0','Referer':page}
-    r=requests.get(page,headers=headers,timeout=25);r.raise_for_status()
-    (folder/(bvid+'.page.html')).write_text(r.text)
-    m=re.search(r'__INITIAL_STATE__\s*=\s*',r.text)
-    if not m:raise ValueError('Public page lacks video metadata')
-    data=json.JSONDecoder().raw_decode(r.text[m.end():])[0]['videoData']
+    if cid is not None:
+        if not isinstance(cid,int) or cid<=0:raise ValueError('Expected pinned positive CID')
+        info=metadata or {}
+        data={'cid':cid,'title':info.get('title',bvid),'owner':{'name':info.get('uploader','Pinned source metadata')},'desc':info.get('page',page)}
+    else:
+        r=requests.get(page,headers=headers,timeout=25);r.raise_for_status()
+        (folder/(bvid+'.page.html')).write_text(r.text)
+        m=re.search(r'__INITIAL_STATE__\s*=\s*',r.text)
+        if not m:raise ValueError('Public page lacks video metadata')
+        data=json.JSONDecoder().raw_decode(r.text[m.end():])[0]['videoData']
     r=requests.get('https://api.bilibili.com/x/player/playurl',
                    params={'bvid':bvid,'cid':data['cid'],'qn':32,'fnval':0},headers=headers,timeout=25)
     r.raise_for_status();play=r.json()
@@ -73,7 +78,7 @@ def collect(bvid,folder):
         (folder/(bvid+'.failure.json')).write_text(json.dumps(failures,indent=2));raise RuntimeError('Public CDN download incomplete')
     obj={'bvid':bvid,'page':page,'title':data['title'],'uploader':data['owner']['name'],
          'uploader_description':data.get('desc'),'cid':data['cid'],'bytes':target.stat().st_size,
-         'duration_reported':data['duration'],'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
+         'duration_reported':data.get('duration',play['data'].get('timelength',0)/1000),'sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
          'rights_status':'Copyrighted reference, permission not established; public availability is not a license.',
          'download_failures':failures}
     receipt.write_text(json.dumps(obj,ensure_ascii=False,indent=2))
