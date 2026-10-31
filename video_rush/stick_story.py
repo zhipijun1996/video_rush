@@ -21,7 +21,7 @@ def line(d,pts,fill=INK,width=5):
     for x,y in (pts[0],pts[-1]):d.ellipse((x-width/2,y-width/2,x+width/2,y+width/2),fill=fill)
 
 
-def actor(d,x,y,t,*,adult=True,friend=False,pose='stand',scale=1,expression='normal',color=INK,crown=False):
+def actor(d,x,y,t,*,adult=True,friend=False,boss=False,pose='stand',scale=1,expression='normal',color=INK,crown=False):
     """y is ground; poses articulate hands, elbows, knees and torso."""
     def pt(a,b):return (x+a*scale,y+b*scale)
     def limb(points,stroke=color,width=5):line(d,[pt(a,b) for a,b in points],stroke,max(2,round(width*scale)))
@@ -40,7 +40,7 @@ def actor(d,x,y,t,*,adult=True,friend=False,pose='stand',scale=1,expression='nor
     else:
         limb([hip,(-30,-39),(-48,0)]);limb([hip,(29,-38),(49,0)])
         if pose=='point':
-            direction=-1 if friend else 1;reach=7*math.sin(t*8)
+            direction=-1 if friend or boss else 1;reach=7*math.sin(t*8)
             limb([neck,(direction*45,-168),(direction*(107+reach),-188)]);limb([neck,(-direction*35,-120),(-direction*15,-95)])
         elif pose=='baby':
             limb([neck,(-47,-123),(0,-107)]);limb([neck,(53,-113),(8,-102)])
@@ -65,8 +65,10 @@ def actor(d,x,y,t,*,adult=True,friend=False,pose='stand',scale=1,expression='nor
     if friend:
         for dx in (-13,13):d.ellipse((hx+(dx-10)*scale,hy-10*scale,hx+(dx+10)*scale,hy+10*scale),outline=BLUE,width=max(2,round(3*scale)))
         line(d,[(hx-3*scale,hy),(hx+3*scale,hy)],BLUE,max(2,round(2*scale)))
-    else:
+    elif not boss:
         line(d,[(hx-r,hy-12*scale),(hx+r,hy-12*scale),(hx+r+27*scale,hy-4*scale)],RED,max(3,round(6*scale)))
+    if boss:
+        nx,ny=pt(*neck);d.polygon([(nx,ny+9*scale),(nx-8*scale,ny+42*scale),(nx,ny+52*scale),(nx+8*scale,ny+42*scale)],fill=BLUE)
     for dx in (-12,12):
         ex=hx+dx*scale
         if expression=='shock':d.ellipse((ex-4*scale,hy-5*scale,ex+4*scale,hy+4*scale),fill=color)
@@ -98,7 +100,7 @@ def frame(scene,t,seconds):
         for x in range(100,1200,200):d.rectangle((x,100,x+150,330),outline=LIGHT,width=2)
         d.rectangle((240,493,830,520),fill='#b6aa90');line(d,[(300,520),(300,635)]);line(d,[(780,520),(780,635)])
         d.rounded_rectangle((365,333,563,469),radius=7,fill='#d9dfda',outline=INK,width=4);line(d,[(464,469),(464,494)])
-        actor(d,650,590,t,pose='seated',expression='tired');actor(d,1000,610,t,friend=True,pose='point',expression='talk')
+        actor(d,650,590,t,pose='seated',expression='tired');actor(d,1000,610,t,boss=True,pose='point',expression='talk')
         d.rectangle((950,355,1006,415),fill='#fffdf4',outline=RED,width=3);words(d,(978,384),'改',30,RED,'mm')
     elif scene=='baby':
         d.rectangle((180,260,410,520),outline=LIGHT,width=3);d.arc((930,300,1120,490),180,360,fill=LIGHT,width=4)
