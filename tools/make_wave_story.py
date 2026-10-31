@@ -132,7 +132,7 @@ def build(spec_path,output,stage='all'):
     end_bar=next(s['start'] for s in timeline if s['id']=='s43');begin_battle=next(s['start'] for s in timeline if s['id']=='s09')
     music=f"volume='if(lt(t,{begin_battle}),0.025,if(gt(t,{end_bar}),0.055,0.16))':eval=frame,afade=t=in:d=0.7,afade=t=out:st={clock-2}:d=2"
     final=output/'roughcut.mp4'
-    filters=f'[0:v]ass={output/"subtitles.ass"},fps=30,format=yuv420p[v];[0:a]asplit=2[main][control];[1:a]{music}[music];[music][control]sidechaincompress=threshold=.025:ratio=5:attack=8:release=180[duck];[main][duck]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000[a]'
+    filters=f'[0:v]setpts=PTS-STARTPTS,ass={output/"subtitles.ass"},fps=30,format=yuv420p[v];[0:a]aresample=48000:async=1:first_pts=0,asplit=2[main][control];[1:a]{music}[music];[music][control]sidechaincompress=threshold=.025:ratio=5:attack=8:release=180[duck];[main][duck]amix=inputs=2:normalize=0,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000[a]'
     # All cuts have the same raster/pixel format. Their original color metadata
     # differs; reinitializing this combined AV graph discards buffered short cuts.
     run(['ffmpeg','-v','error','-y','-reinit_filter','0','-i',joined,'-i',score,'-filter_complex',filters,'-map','[v]','-map','[a]','-t',clock,
@@ -145,20 +145,22 @@ def build(spec_path,output,stage='all'):
     if not all(s['passed'] for s in shot_checks):raise ValueError('Final film differs from intended shots; see frame-checks.json')
     video=next(s for s in meta['streams'] if s['codec_type']=='video')
     if video['avg_frame_rate']!='30/1':raise ValueError('Final video must have constant 30 FPS')
+    decoded_audio_seconds=metrics['decoded_samples']/16000
+    if abs(decoded_audio_seconds-clock)>.1:raise ValueError('Decoded audio clock differs from timeline')
     for name in ('receipt.json','trace.json'):shutil.copyfile(capture/name,output/'recording-evidence'/name)
     sources={'game':receipt,'references':spec['references'],'original_animation_module_sha256':animation_hash,
              'music':{'path':str(score.relative_to(ROOT)),'sha256':sha(score),'origin':'Original procedural score, no original anime BGM sampled.'},
              'rights':'Anime excerpts and original franchise sounds remain copyrighted with redistribution permission unconfirmed; not project MIT. Existing source subtitles and watermarks retained.',
              'truth':'Fictional first-person narrative requested by user. Game scenes are real new recordings with legal starting-resource/action fixtures; not natural campaign completion or live multiplayer.'}
     write(output/'sources.json',sources)
-    (output/'script.md').write_text('# 第一人称动态粗剪\n\n'+ '\n\n'.join(s['id']+' '+('老友：' if s.get('speaker')=='friend' else '我：')+s['text'] for s in timeline if s['text']))
+    (output/'script.md').write_text('# 第一人称动态粗剪\n\n'+ '\n\n'.join(s['id']+' '+('老板：' if s.get('role')=='boss' else '老友：' if s.get('speaker')=='friend' else '我：')+s['text'] for s in timeline if s['text']))
     (output/'bilibili.md').write_text('# 标题候选\n\n'+spec['title']+'\n\n# 简介草案\n\n小时候一下课，就和同学充气、放波、防御。长大后，借助 AI 把这场课间决斗做成了小游戏《拍拍波》。\n\n手机试玩：https://zhipijun1996.github.io/wave-game/\n\n你们小时候管它叫什么？还发明过哪些离谱招式？\n\n#B站AI创造公开赛#\n\n当前交付是动态粗剪，尚未通过用户审核，不自动投稿。开头家庭/职场和酒桌为剧情演绎；游戏当前是单机对 AI。游戏王、街霸、EVA、火影、奥特曼与 JOJO 的短引用及游戏原带作品录音权利归各原权利方，来源见 sources.json，未确认再发布授权。Toy 尚未发布，不宣称已上架。\n')
     cover=frame('crown',1,4).resize((1920,1080));d=ImageDraw.Draw(cover);d.text((100,95),'人到中年',font=ImageFont.truetype(font(True),95),fill='#282b2a');d.text((100,220),'我又当上了',font=ImageFont.truetype(font(True),95),fill='#282b2a');d.text((100,350),'拍拍波大王',font=ImageFont.truetype(font(True),110),fill='#bf5146');cover.save(output/'cover.png')
     (output/'phone-review.md').write_text('这是动态粗剪，不是审美验收通过的成片。\n\n- 第一人称是否连贯；酒桌与童年转场是否自然。\n- 翻卡和反弹是否看懂；原片喊招是否切完整；字幕是否对齐。\n- 实际游戏音量和两位 TTS 对白是否自然，是否有压住喊招。\n- 动画表情、梗与整体节奏是否成立。\n- 部分动漫源仅 360/480p，带原水印和字幕；原片引用与权利状态仍需最终审核。\n- 未自动投稿。\n')
     report={'status':'rendered_dynamic_roughcut','technical':{'full_decode':'passed','ffprobe':meta,'audio_metrics':metrics,
              'tts_verified':sum(v is not None for v in voices),'intentional_dialogue_free_shots':sum(v is None for v in voices),
              'source_windows':'All visual/audio windows bounded against actual media; no gameplay loops.',
-             'final_shot_frame_checks':shot_checks,
+             'final_shot_frame_checks':shot_checks,'decoded_audio_seconds':decoded_audio_seconds,
              'subtitle_bounds':all(s['start']+(s['narration_receipt']['duration'] if s['narration_receipt'] else 0)<=s['end']+.01 for s in timeline)},
              'content_review':'User review pending; automated checks do not certify humor, listening or aesthetics.',
              'final_sha256':sha(final),'duration':duration(final),'files':{p.name:sha(p) for p in output.iterdir() if p.is_file() and p.name!='report.json'}}
