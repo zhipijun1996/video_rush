@@ -2,6 +2,11 @@ name: 拍拍波第一人称动态粗剪
 run-name: 拍拍波动态粗剪 ep008-r2
 on:
   workflow_dispatch:
+  push:
+    branches: [ep008-r2-delivery]
+    paths:
+      - episodes/ep008-r2-story.json
+      - .github/workflows/story-preview.yml
 permissions:
   contents: read
 jobs:
