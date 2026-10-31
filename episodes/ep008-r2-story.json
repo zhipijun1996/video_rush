@@ -55,10 +55,11 @@
       "id": "s01",
       "kind": "animation",
       "scene": "office",
-      "seconds": 3.0,
+      "seconds": 3,
       "speaker": "friend",
       "text": "这点事，怎么还没弄完？",
-      "note": "虚构老板，不是作者工作履历"
+      "note": "虚构老板，不是作者工作履历",
+      "role": "boss"
     },
     {
       "id": "s02",
@@ -72,7 +73,8 @@
       "kind": "animation",
       "scene": "collapse",
       "seconds": 3.1,
-      "text": "小时候盼着长大，草率了。"
+      "text": "小时候盼着长大，草率了。",
+      "intentional_hold": "疲惫停顿，约3.3秒，非录屏丢帧"
     },
     {
       "id": "s04",
@@ -101,14 +103,14 @@
       "id": "s07",
       "kind": "animation",
       "scene": "bar-me",
-      "seconds": 2.0,
+      "seconds": 2,
       "text": "这你还记得？"
     },
     {
       "id": "s08",
       "kind": "animation",
       "scene": "clink",
-      "seconds": 1.0,
+      "seconds": 1,
       "text": "",
       "sound": "clink"
     },
@@ -405,7 +407,7 @@
       "id": "s42",
       "kind": "animation",
       "scene": "clink",
-      "seconds": 1.0,
+      "seconds": 1,
       "text": "",
       "sound": "clink"
     },
@@ -452,7 +454,7 @@
       "id": "s48",
       "kind": "animation",
       "scene": "title",
-      "seconds": 3.0,
+      "seconds": 3,
       "text": ""
     }
   ]
