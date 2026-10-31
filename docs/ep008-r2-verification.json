@@ -1,0 +1,31 @@
+{
+  "status": "local_dynamic_roughcut_verified_hosted_run_pending",
+  "local": {
+    "path": "build/episodes/ep008-r2-roughcut/roughcut.mp4",
+    "sha256": "33086f9f332983863b40b806e7504463102470c08020036f46e304a55a1cb436",
+    "duration": 141.1,
+    "shots": 48,
+    "tts_utterances": 26,
+    "game_cases": 11,
+    "source_files_checked": 75,
+    "tests": "43 passed",
+    "full_decode": "passed",
+    "final_body_frame_matches": 48,
+    "fps": "30/1",
+    "audio_metrics": {
+      "decoded_samples": 2279083,
+      "peak": 0.811859130859375,
+      "rms": 0.08361640385313523,
+      "clipped_fraction": 0.0,
+      "audible_signal": true,
+      "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+    }
+  },
+  "user_creative_review": "pending",
+  "bilibili_or_toy_submission": "not performed",
+  "known_limits": [
+    "Anime sources include low-resolution, subtitles and watermarks; redistribution permission unconfirmed.",
+    "Adult work/family and childhood story are requested fictional framing.",
+    "Actual gameplay uses legal initial-resource and fixed-opponent fixtures; no live multiplayer claim."
+  ]
+}

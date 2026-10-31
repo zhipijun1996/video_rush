@@ -1,0 +1,69 @@
+name: 拍拍波第一人称动态粗剪
+run-name: 拍拍波动态粗剪 ep008-r2
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install media tools and run checks
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk
+          python -m pip install -e '.[test,browser]' numpy==2.3.5
+          pytest -q
+      - name: Fetch exact public anime references and game source
+        run: python -m tools.prepare_wave_story
+      - name: Install source-pinned recorder
+        working-directory: build/story-runtime
+        run: |
+          npx playwright install --with-deps chromium ffmpeg
+          node --input-type=module -e 'import {chromium} from "@playwright/test"; import fs from "node:fs"; fs.appendFileSync(process.env.GITHUB_ENV,"VR_CHROMIUM_PATH="+chromium.executablePath()+"\n")'
+      - name: Record actual game and actual WebAudio
+        run: python -m tools.capture_wave_story --project build/story-runtime --source build/source
+      - name: Render and decode the full story preview
+        run: python -m tools.make_wave_story
+      - name: Keep preview and review materials
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-ep008-r2-story-preview
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-r2-roughcut/roughcut.mp4
+            build/episodes/ep008-r2-roughcut/cover.png
+            build/episodes/ep008-r2-roughcut/*.md
+            build/episodes/ep008-r2-roughcut/*.json
+            build/episodes/ep008-r2-roughcut/*.ass
+            build/episodes/ep008-r2-roughcut/logs/
+            build/episodes/ep008-r2-roughcut/narration/*.json
+            build/episodes/ep008-r2-roughcut/recording-evidence/
+            build/story-capture/ep008-r2/capture.log
+            build/story-capture/ep008-r2/receipt.json
+            build/story-capture/ep008-r2/trace.json
+            build/research/ep008-r2/anime/*.failure.json
+      - name: Review link
+        if: success()
+        env:
+          PREVIEW_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('## 动态粗剪，待用户审核\n\n[下载视频、封面、投稿资料和来源]('+os.environ['PREVIEW_URL']+')\n\n这是新的第一人称故事粗剪，不是已审核的正式成片。未投稿 B 站。\n')
+          PY

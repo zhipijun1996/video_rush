@@ -1,0 +1,459 @@
+{
+  "episode": "ep008-r2-roughcut",
+  "title": "人到中年，我又当上了拍拍波大王 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+  "status": "dynamic_story_roughcut_user_review_pending",
+  "source_commit": "f0bc228798600ed650bcd92bc8f415d7703484c4",
+  "voice": "zh-CN-YunxiNeural",
+  "friend_voice": "zh-CN-YunjianNeural",
+  "rate": "+8%",
+  "references": {
+    "sore": {
+      "file": "build/research/ep008-r2/anime/BV1n34y1K7RH.mp4",
+      "page": "https://www.bilibili.com/video/BV1n34y1K7RH/",
+      "bvid": "BV1n34y1K7RH",
+      "sha256": "1eab221440b90ad4508ad0324e9aa9b28a8773d5cca8ccedb435139e530d6924"
+    },
+    "cylinder": {
+      "file": "build/research/ep008-r2/magic-cylinder-source.mp4",
+      "page": "https://www.bilibili.com/video/BV1oN411d77p/",
+      "bvid": "BV1oN411d77p",
+      "sha256": "703cb97ba7db2a0c50fc48ab96bd13e8a8b9251b37617789a6b206055ea3a80c"
+    },
+    "street": {
+      "file": "build/research/ep008-r2/anime/BV1oevCewERg.mp4",
+      "page": "https://www.bilibili.com/video/BV1oevCewERg/",
+      "bvid": "BV1oevCewERg",
+      "sha256": "e0f933e9a685a4b731354b9ebd73b22a8f9e166b77b39eec13de4e0a50aa7b99"
+    },
+    "eva": {
+      "file": "build/research/ep008-r2/anime/BV1Pi4y137T4.mp4",
+      "page": "https://www.bilibili.com/video/BV1Pi4y137T4/",
+      "bvid": "BV1Pi4y137T4",
+      "sha256": "bbbe4202eef0442be7d880995d527114cfec255d84e40ff10154b364da5de7a3"
+    },
+    "naruto": {
+      "file": "build/research/ep008-r2/anime/naruto-preview.mp4",
+      "page": "https://editpacks.org/i/1540",
+      "url": "https://editpacks.org/media/upload-60a185f2af5a-preview.mp4",
+      "sha256": "c44bf5207a6d19cd5450858e8479a54dd7c8e8af0e6dc4bd07dd5f3dd476ce68"
+    },
+    "ultra": {
+      "file": "build/research/ep008-r2/anime/BV1cZ4y1n7X2.mp4",
+      "page": "https://www.bilibili.com/video/BV1cZ4y1n7X2/",
+      "bvid": "BV1cZ4y1n7X2",
+      "sha256": "49d9bf266031aa13e5196dade92e6a3c243e973e0476ffb0880f73345fd51f0f"
+    },
+    "jotaro": {
+      "file": "build/research/ep008-r2/anime/jotaro-anime.mp4",
+      "page": "https://tenor.com/view/jotaro-jojo-anime-yare-yare-daze-good-grief-gif-9810668",
+      "sha256": "539f7820607dc2f8f07d3036b179e400aef31d3cf3709fdb6e961f28bba2beff",
+      "url": "https://media.tenor.com/biZhA8JxTKgAAAPo/jotaro-jojo.mp4"
+    }
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "kind": "animation",
+      "scene": "office",
+      "seconds": 3.0,
+      "speaker": "friend",
+      "text": "这点事，怎么还没弄完？",
+      "note": "虚构老板，不是作者工作履历"
+    },
+    {
+      "id": "s02",
+      "kind": "animation",
+      "scene": "baby",
+      "seconds": 3.3,
+      "text": "好好好，不哭，不哭。"
+    },
+    {
+      "id": "s03",
+      "kind": "animation",
+      "scene": "collapse",
+      "seconds": 3.1,
+      "text": "小时候盼着长大，草率了。"
+    },
+    {
+      "id": "s04",
+      "kind": "animation",
+      "scene": "message",
+      "seconds": 1.5,
+      "text": ""
+    },
+    {
+      "id": "s05",
+      "kind": "animation",
+      "scene": "bar-friend",
+      "seconds": 5.6,
+      "speaker": "friend",
+      "text": "行了，今天不聊那些。你还记不记得，"
+    },
+    {
+      "id": "s06",
+      "kind": "animation",
+      "scene": "bar-friend",
+      "seconds": 4.1,
+      "speaker": "friend",
+      "text": "你小时候，可是拍拍波大王。"
+    },
+    {
+      "id": "s07",
+      "kind": "animation",
+      "scene": "bar-me",
+      "seconds": 2.0,
+      "text": "这你还记得？"
+    },
+    {
+      "id": "s08",
+      "kind": "animation",
+      "scene": "clink",
+      "seconds": 1.0,
+      "text": "",
+      "sound": "clink"
+    },
+    {
+      "id": "s09",
+      "kind": "animation",
+      "scene": "recess",
+      "seconds": 4.3,
+      "text": "一下课，我们就冲出去决一死战。",
+      "sound": "bell",
+      "audio_from": {
+        "case": "charge",
+        "offset": 0,
+        "clip_seconds": 0.5
+      }
+    },
+    {
+      "id": "s10",
+      "kind": "animation",
+      "scene": "challenge",
+      "seconds": 4.4,
+      "text": "我们班管这叫拍拍波。谁赢，谁就是大王。"
+    },
+    {
+      "id": "s11",
+      "kind": "game",
+      "case": "charge",
+      "offset": 0.05,
+      "seconds": 2.6,
+      "text": "充气。",
+      "label": "充气"
+    },
+    {
+      "id": "s12",
+      "kind": "game",
+      "case": "small",
+      "offset": 0.05,
+      "seconds": 2.6,
+      "text": "放波。",
+      "label": "放波"
+    },
+    {
+      "id": "s13",
+      "kind": "game",
+      "case": "guard",
+      "offset": 0.05,
+      "seconds": 2.6,
+      "text": "防御。",
+      "label": "防御"
+    },
+    {
+      "id": "s14",
+      "kind": "animation",
+      "scene": "challenge",
+      "seconds": 3.4,
+      "text": "那天，就差最后一下，我就要赢了。"
+    },
+    {
+      "id": "s15",
+      "kind": "game",
+      "case": "trap-loss",
+      "offset": 0.1,
+      "seconds": 1.5,
+      "text": "",
+      "label": "就差一下"
+    },
+    {
+      "id": "s16",
+      "kind": "anime",
+      "reference": "sore",
+      "offset": 154.65,
+      "seconds": 2.7,
+      "text": "",
+      "caption": "那可不一定。",
+      "native_gain": 0.85
+    },
+    {
+      "id": "s17",
+      "kind": "anime",
+      "reference": "cylinder",
+      "offset": 37.95,
+      "seconds": 2.8,
+      "text": "",
+      "caption": "陷阱发动！魔法筒！",
+      "native_gain": 0.85
+    },
+    {
+      "id": "s18",
+      "kind": "game",
+      "case": "trap-loss",
+      "offset": 1.6,
+      "seconds": 1.3,
+      "text": "",
+      "label": "魔法筒 · 返射"
+    },
+    {
+      "id": "s19",
+      "kind": "anime",
+      "reference": "jotaro",
+      "offset": 0,
+      "seconds": 1.65,
+      "text": "",
+      "audio_from": {
+        "case": "trap-loss",
+        "offset": 2.9
+      },
+      "note": "动漫无声摘录，延续上一镜真实游戏胜利声，不冒充原片原声"
+    },
+    {
+      "id": "s20",
+      "kind": "animation",
+      "scene": "reaction",
+      "seconds": 3.6,
+      "text": "不是，你怎么还带卡啊？"
+    },
+    {
+      "id": "s21",
+      "kind": "animation",
+      "scene": "training",
+      "seconds": 4.3,
+      "text": "行，你看游戏王，我就看街霸。"
+    },
+    {
+      "id": "s22",
+      "kind": "animation",
+      "scene": "training",
+      "seconds": 3.6,
+      "text": "练了几天，终于攒出了三气。"
+    },
+    {
+      "id": "s23",
+      "kind": "anime",
+      "reference": "street",
+      "offset": 191.6,
+      "seconds": 2.6,
+      "text": "",
+      "native_gain": 0,
+      "label": "三气 · 波动拳"
+    },
+    {
+      "id": "s24",
+      "kind": "game",
+      "case": "medium-small",
+      "offset": 1.5,
+      "seconds": 3.3,
+      "text": "",
+      "label": "小波，压过去。"
+    },
+    {
+      "id": "s25",
+      "kind": "game",
+      "case": "medium-guard",
+      "offset": 2.9,
+      "seconds": 1.9,
+      "text": "",
+      "label": "小防，打穿。"
+    },
+    {
+      "id": "s26",
+      "kind": "game",
+      "case": "medium-reflect",
+      "offset": 2.9,
+      "seconds": 1.9,
+      "text": "",
+      "label": "小反，也不行。"
+    },
+    {
+      "id": "s27",
+      "kind": "animation",
+      "scene": "challenge",
+      "seconds": 3.4,
+      "text": "正得意呢。他也开始补番了。"
+    },
+    {
+      "id": "s28",
+      "kind": "anime",
+      "reference": "eva",
+      "offset": 6.35,
+      "seconds": 1.3,
+      "text": "",
+      "native_gain": 0,
+      "label": "AT 力场，展开！"
+    },
+    {
+      "id": "s29",
+      "kind": "game",
+      "case": "at-block",
+      "offset": 2.9,
+      "seconds": 1.9,
+      "text": "",
+      "label": "挡住了。"
+    },
+    {
+      "id": "s30",
+      "kind": "animation",
+      "scene": "reaction",
+      "seconds": 2.7,
+      "text": "这还没完。"
+    },
+    {
+      "id": "s31",
+      "kind": "anime",
+      "reference": "naruto",
+      "offset": 19.25,
+      "seconds": 2.6,
+      "text": "",
+      "native_gain": 0,
+      "label": "宇智波反弹"
+    },
+    {
+      "id": "s32",
+      "kind": "game",
+      "case": "uchiha-return",
+      "offset": 2.85,
+      "seconds": 1.95,
+      "text": "",
+      "label": "宇智波反弹 · 返射"
+    },
+    {
+      "id": "s33",
+      "kind": "animation",
+      "scene": "reaction",
+      "seconds": 3.4,
+      "text": "挡住就算了，还给我弹回来了。"
+    },
+    {
+      "id": "s34",
+      "kind": "animation",
+      "scene": "training",
+      "seconds": 3.3,
+      "text": "不行，我得憋一波大的。"
+    },
+    {
+      "id": "s35",
+      "kind": "game",
+      "case": "charge-five",
+      "offset": 7.1,
+      "seconds": 1.7,
+      "text": "",
+      "label": "三气"
+    },
+    {
+      "id": "s36",
+      "kind": "game",
+      "case": "charge-five",
+      "offset": 10.15,
+      "seconds": 1.7,
+      "text": "",
+      "label": "四气"
+    },
+    {
+      "id": "s37",
+      "kind": "game",
+      "case": "charge-five",
+      "offset": 13.2,
+      "seconds": 1.6,
+      "text": "",
+      "label": "五气！"
+    },
+    {
+      "id": "s38",
+      "kind": "animation",
+      "scene": "transform",
+      "seconds": 2.2,
+      "text": "这次，该我变身了。"
+    },
+    {
+      "id": "s39",
+      "kind": "anime",
+      "reference": "ultra",
+      "offset": 65.3,
+      "seconds": 2.4,
+      "text": "",
+      "native_gain": 0,
+      "label": "超人死光！"
+    },
+    {
+      "id": "s40",
+      "kind": "game",
+      "case": "beam-win",
+      "offset": 1.5,
+      "seconds": 5.8,
+      "text": "",
+      "label": "五气 · 大波破中反"
+    },
+    {
+      "id": "s41",
+      "kind": "animation",
+      "scene": "crown",
+      "seconds": 4.2,
+      "text": "那一天，我终于当上了拍拍波大王。"
+    },
+    {
+      "id": "s42",
+      "kind": "animation",
+      "scene": "clink",
+      "seconds": 1.0,
+      "text": "",
+      "sound": "clink"
+    },
+    {
+      "id": "s43",
+      "kind": "animation",
+      "scene": "bar-me",
+      "seconds": 5.2,
+      "text": "最近，我把咱们小时候的游戏做出来了。"
+    },
+    {
+      "id": "s44",
+      "kind": "animation",
+      "scene": "bar-friend",
+      "seconds": 2.3,
+      "speaker": "friend",
+      "text": "你还真做了？"
+    },
+    {
+      "id": "s45",
+      "kind": "animation",
+      "scene": "bar-me",
+      "seconds": 2.2,
+      "text": "来，试试。"
+    },
+    {
+      "id": "s46",
+      "kind": "phone",
+      "scene": "phone",
+      "case": "medium-small",
+      "offset": 0,
+      "seconds": 4.8,
+      "text": "小时候没打完的，接着打。",
+      "note": "两人轮流挑战同一单机游戏，不是联机"
+    },
+    {
+      "id": "s47",
+      "kind": "animation",
+      "scene": "ending",
+      "seconds": 5.3,
+      "text": "祝大家，不忘初心，永葆童心。"
+    },
+    {
+      "id": "s48",
+      "kind": "animation",
+      "scene": "title",
+      "seconds": 3.0,
+      "text": ""
+    }
+  ]
+}
