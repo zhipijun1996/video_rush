@@ -1,5 +1,5 @@
 {
-  "status": "local_audio_clock_fix_verified_environment_lost_hosted_rebuild_pending",
+  "status": "hosted_dynamic_roughcut_delivered_user_review_pending",
   "local": {
     "path": "build/episodes/ep008-r2-roughcut/roughcut.mp4",
     "sha256": "c9c60de3b4121214dc436cdd1405f0e04aff405def0ed1a1b157600c34928f0a",
@@ -42,7 +42,38 @@
     {
       "stage": "local_execution",
       "detail": "Execution environment became unavailable during the final visual revision. Files could not be accessed; rebuild is proceeding from GitHub source."
+    },
+    {
+      "stage": "first_delivery_branch_run",
+      "run_id": 41182154003,
+      "job_id": 124481588400,
+      "conclusion": "failure",
+      "detail": "Bilibili frontend returned HTTP 412. Pinned previously verified public CIDs removed the frontend dependency; same anonymous playback API and exact content hashes then succeeded on the next run. No sign-in, proxy or paywall bypass."
     }
   ],
-  "delivery_branch": "ep008-r2-delivery"
+  "delivery_branch": "ep008-r2-delivery",
+  "hosted": {
+    "run_id": 41182337161,
+    "job_id": 124482117117,
+    "production_commit": "c62103f3851ea249f3dbfe5097e73833510428f2",
+    "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41182337161",
+    "conclusion": "success",
+    "tests": "43 passed",
+    "game_cases": 11,
+    "video_audio_clock_correction": 1.1530441703143652,
+    "duration": 141.1,
+    "shots_rendered": 48,
+    "full_decode": "pipeline passed",
+    "final_shot_body_checks": "48 pipeline checks passed",
+    "decoded_audio_clock": "pipeline checked within 0.1 seconds of the timeline",
+    "artifact_id": 13035647561,
+    "artifact_bytes": 13055609,
+    "artifact_sha256": "9296cd8e226eca3814bd87136358074acc5ab2bfa4a2f95a40ce4409e478ff9c",
+    "artifact_digest_check": "GitHub API metadata equals actual upload log digest; not independently recomputed from downloaded ZIP bytes.",
+    "artifact_download": "Succeeded through GitHub connector into a reusable ZIP file reference.",
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41182337161/artifacts/13035647561",
+    "expires_at": "2026-11-14T07:59:22Z",
+    "archive_layout": "episodes/ep008-r2-roughcut/ contains roughcut.mp4, cover.png, bilibili.md and reports.",
+    "independent_local_unpack_decode": "Unavailable: execution environment was lost. Local earlier complete render was decoded and visually sampled; hosted ZIP has not been unpacked again locally."
+  }
 }
