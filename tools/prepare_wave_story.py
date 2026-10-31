@@ -23,7 +23,7 @@ def main():
         if p.exists() and sha(p)==ref['sha256']:continue
         p.parent.mkdir(parents=True,exist_ok=True)
         if ref.get('bvid'):
-            collected=collect(ref['bvid'],'build/research/ep008-r2/anime')
+            collected=collect(ref['bvid'],'build/research/ep008-r2/anime',cid=ref.get('cid'),metadata=ref)
             src=Path('build/research/ep008-r2/anime')/(ref['bvid']+'.mp4')
             if src!=p:shutil.copyfile(src,p)
         elif ref.get('url'):
