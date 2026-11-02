@@ -1,0 +1,103 @@
+{
+  "episode": "ep008-v7-counterplay",
+  "production_commit": "54862f4101ed2940adb2dfa8a7bcb4b2454a0ead",
+  "run_id": 41491752392,
+  "job_id": 125436284670,
+  "artifact_id": 13163594844,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41491752392/artifacts/13163594844",
+  "artifact_bytes": 27534088,
+  "artifact_zip_sha256": "e35600733be76881306c33e9b83b3380ddccc68005c32f2cab189a26bea4209f",
+  "expires_utc": "2026-11-16T17:34:51Z",
+  "manifest_files_verified": 197,
+  "movies": [
+    {
+      "file": "final.mp4",
+      "seconds": 115.4,
+      "sha256": "d0609c7b72995cc362e95ee92889e96b4378d4e04955021c82b4f3848dbba6d4",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 1844907,
+        "peak": 0.8409423828125,
+        "rms": 0.10320376104117217,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "opening-review.mp4",
+      "seconds": 6.3,
+      "sha256": "84248ffad7a7f5adbd3b053d2f797facbd061553a569448a6ef68458608a8430",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 101035,
+        "peak": 0.84014892578125,
+        "rms": 0.1148652297695069,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    }
+  ],
+  "all_59_exported_shots_verified": true,
+  "seven_chapters": true,
+  "opening_sync": {
+    "measured_final_audio_lag_ms": 0.0,
+    "threshold_ms": 50,
+    "method": "Final AAC waveform cross-correlation against pre-mux opening master, 3000Hz sample grid",
+    "boss_and_worker_envelopes": "Each mouth reads its own actual voice/SFX energy at the same30fps clock; no fixed-frequency mouth loop",
+    "subtitle_and_voice_start": {
+      "OPEN-ADULT": 0.25,
+      "1-01-0": 3.38
+    },
+    "perceptual_lip_sync": "pending phone review"
+  },
+  "counterplay_causal_order_verified": true,
+  "removed_dance_voice_and_subtitle": true,
+  "new_voice_performances_hash_verified": true,
+  "jojo_prefix_preserves_K04B_main_performance": true,
+  "source_music_beds": [
+    {
+      "id": "dio",
+      "file": "build/research/ep008-v7/BV114411r7Cr.mp4",
+      "source_in": 37.7,
+      "source_seconds": 5.0,
+      "start": 83.40000000000002,
+      "end": 89.02000000000002,
+      "gain": 0.32,
+      "truth": "Original scene music/effects mix, not claimed as isolated licensed BGM",
+      "tempo_ratio": 0.8896797153024903,
+      "actual_decoded_seconds": 5.609666666666667,
+      "extracted_sha256": "d02d50850fb9186d7e8ff90c86f973c4e0b1f04837b59e03dfe147fd02850c3c"
+    },
+    {
+      "id": "ultra",
+      "file": "build/research/ep008-r2/anime/BV1cZ4y1n7X2.mp4",
+      "source_in": 65.0,
+      "start": 89.70000000000002,
+      "end": 92.77000000000002,
+      "gain": 0.28,
+      "truth": "Original corresponding Ultraman scene audio with music and effects; not Tiga-labelled or isolated BGM",
+      "tempo_ratio": 1.0,
+      "actual_decoded_seconds": 3.07,
+      "extracted_sha256": "77e131f9a2e9dd4ae89d1e27ceb467a0b3d6802850bc542d255a565ea5c522d7"
+    }
+  ],
+  "music_beds_and_pose_film_decoded": true,
+  "victory_pose_seconds": 2.1,
+  "victory_uses_editorial_freeze_not_fake_motion": true,
+  "ending_url": "https://b23.tv/yCut8r4",
+  "posting_link_verified": true,
+  "link_landing_http_status": 412,
+  "toy_loading_verified": false,
+  "source_archive_matches_code": true,
+  "real_21_round_game_trace_revalidated": true,
+  "previous_v6_media_preserved": {
+    "final.mp4": true,
+    "opening-review.mp4": true
+  },
+  "local_tests": "65 passed",
+  "cloud_tests": "64 passed; 1 optional browser test skipped",
+  "no_bilibili_or_toy_submission": true,
+  "human_acting_humor_music_review": "pending user"
+}
