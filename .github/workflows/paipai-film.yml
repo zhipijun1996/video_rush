@@ -1,0 +1,84 @@
+name: 拍拍波全片分镜v1重剪
+run-name: 拍拍波 ep008-r3 完整主片与短片尾版
+on:
+  workflow_dispatch:
+  push:
+    branches: [ep008-r3-cut]
+    paths:
+      - episodes/ep008-r3-film.json
+      - .github/workflows/paipai-film.yml
+permissions:
+  contents: read
+jobs:
+  film:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install media tools and test the production code
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk
+          python -m pip install -e '.[test,browser]' numpy==2.3.5
+          pytest -q
+      - name: Fetch exact public references and the pinned game version
+        run: python -m tools.prepare_wave_story --spec episodes/ep008-r3-film.json --source build/sources/wave-game --project build/recordings/wave-film-c6f1326c824a
+      - name: Install original game's browser recorder
+        working-directory: build/recordings/wave-film-c6f1326c824a
+        run: |
+          npx playwright install --with-deps chromium ffmpeg
+          node --input-type=module -e 'import {chromium} from "@playwright/test"; import fs from "node:fs"; fs.appendFileSync(process.env.GITHUB_ENV,"VR_CHROMIUM_PATH="+chromium.executablePath()+"\n")'
+      - name: Record one continuous legal battle and actual mobile taps
+        run: python -m tools.capture_wave_film
+      - name: Render complete story and validate delivered movies
+        run: python -m tools.make_paipai_film
+      - name: Include the editable production scripts
+        if: success()
+        run: |
+          mkdir -p build/episodes/ep008-r3/editable/tools build/episodes/ep008-r3/editable/video_rush
+          cp tools/make_paipai_film.py tools/capture_wave_film.py build/episodes/ep008-r3/editable/tools/
+          cp video_rush/paipai_film_art.py build/episodes/ep008-r3/editable/video_rush/
+          cp episodes/ep008-r3-film.json build/episodes/ep008-r3/editable/
+          git archive --format=zip HEAD --output=build/episodes/ep008-r3/editable/video-rush-source.zip
+      - name: Keep films, cover, posting copy and review evidence
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-ep008-r3-full-film
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-r3/final.mp4
+            build/episodes/ep008-r3/short-tail.mp4
+            build/episodes/ep008-r3/cover.png
+            build/episodes/ep008-r3/*.md
+            build/episodes/ep008-r3/*.json
+            build/episodes/ep008-r3/*.csv
+            build/episodes/ep008-r3/*.srt
+            build/episodes/ep008-r3/*.ass
+            build/episodes/ep008-r3/editable/
+            build/episodes/ep008-r3/logs/
+            build/episodes/ep008-r3/recording-evidence/
+            build/episodes/ep008-r3/narration/*.json
+            build/film-capture/ep008-r3/*log
+            build/film-capture/ep008-r3/*json
+      - name: Phone download link
+        if: success()
+        env:
+          FILM_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('## 按用户完整 v1 分镜重剪，待手机审核\n\n[下载主片、短片尾版、封面、投稿资料和可编辑分镜]('+os.environ['FILM_URL']+')\n\n真实21轮连续对局和手机触屏录制；未投稿B站/Toy。动漫短引用授权及观感审核仍待确认。\n')
+          PY

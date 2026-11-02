@@ -14,10 +14,11 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source',type=Path,default=Path('build/source'))
     parser.add_argument('--project',type=Path,default=Path('build/story-runtime'))
+    parser.add_argument('--spec',type=Path,default=Path('episodes/ep008-r2-story.json'))
     args=parser.parse_args()
     if not args.project.resolve().is_relative_to(ROOT/'build'):
         raise ValueError('Runtime must stay in disposable build/')
-    spec=read('episodes/ep008-r2-story.json')
+    spec=read(args.spec)
     for ref in spec['references'].values():
         p=Path(ref['file'])
         if p.exists() and sha(p)==ref['sha256']:continue

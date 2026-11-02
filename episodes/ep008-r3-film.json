@@ -1,0 +1,598 @@
+{
+  "episode": "ep008-r3",
+  "title": "小时候口胡的招式，被我做成了游戏 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+  "source_commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+  "brief": "episodes/briefs/ep008-r3-user-storyboard-v1.md",
+  "brief_sha256": "085002b9cbf3918e226500b640ca141cbaebdeca676aa365ab478eaafb6ab8d5",
+  "references": {
+    "sore": {
+      "file": "build/research/ep008-r2/anime/BV1n34y1K7RH.mp4",
+      "page": "https://www.bilibili.com/video/BV1n34y1K7RH/",
+      "bvid": "BV1n34y1K7RH",
+      "sha256": "1eab221440b90ad4508ad0324e9aa9b28a8773d5cca8ccedb435139e530d6924",
+      "cid": 1261962282,
+      "title": "没想到说这句话最帅是他！？盘点游戏王里面的“それはどうかな”",
+      "uploader": "卡通_世界"
+    },
+    "cylinder": {
+      "file": "build/research/ep008-r2/magic-cylinder-source.mp4",
+      "page": "https://www.bilibili.com/video/BV1oN411d77p/",
+      "bvid": "BV1oN411d77p",
+      "sha256": "703cb97ba7db2a0c50fc48ab96bd13e8a8b9251b37617789a6b206055ea3a80c",
+      "cid": 287147168,
+      "title": "游戏王魔法筒合集",
+      "uploader": "郭三宝Official"
+    },
+    "street": {
+      "file": "build/research/ep008-r2/anime/BV1oevCewERg.mp4",
+      "page": "https://www.bilibili.com/video/BV1oevCewERg/",
+      "bvid": "BV1oevCewERg",
+      "sha256": "e0f933e9a685a4b731354b9ebd73b22a8f9e166b77b39eec13de4e0a50aa7b99",
+      "cid": 500001632576134,
+      "title": "听着感觉自己也会波动拳了",
+      "uploader": "小b站78"
+    },
+    "eva": {
+      "file": "build/research/ep008-r2/anime/BV1Pi4y137T4.mp4",
+      "page": "https://www.bilibili.com/video/BV1Pi4y137T4/",
+      "bvid": "BV1Pi4y137T4",
+      "sha256": "bbbe4202eef0442be7d880995d527114cfec255d84e40ff10154b364da5de7a3",
+      "cid": 216568258,
+      "title": "at力场展开.wb",
+      "uploader": "Ikeda_LuXun"
+    },
+    "naruto": {
+      "file": "build/research/ep008-r2/anime/naruto-preview.mp4",
+      "page": "https://editpacks.org/i/1540",
+      "url": "https://editpacks.org/media/upload-60a185f2af5a-preview.mp4",
+      "sha256": "c44bf5207a6d19cd5450858e8479a54dd7c8e8af0e6dc4bd07dd5f3dd476ce68"
+    },
+    "ultra": {
+      "file": "build/research/ep008-r2/anime/BV1cZ4y1n7X2.mp4",
+      "page": "https://www.bilibili.com/video/BV1cZ4y1n7X2/",
+      "bvid": "BV1cZ4y1n7X2",
+      "sha256": "49d9bf266031aa13e5196dade92e6a3c243e973e0476ffb0880f73345fd51f0f",
+      "cid": 1417048607,
+      "title": "“初代这些场面真的百看不厌！”",
+      "uploader": "特摄AGUL"
+    },
+    "jotaro": {
+      "file": "build/research/ep008-r2/anime/jotaro-anime.mp4",
+      "page": "https://tenor.com/view/jotaro-jojo-anime-yare-yare-daze-good-grief-gif-9810668",
+      "sha256": "539f7820607dc2f8f07d3036b179e400aef31d3cf3709fdb6e961f28bba2beff",
+      "url": "https://media.tenor.com/biZhA8JxTKgAAAPo/jotaro-jojo.mp4",
+      "depiction": "Actual 2D Jotaro hat gesture quotation; original victory-scene identity unverified, game victory itself is genuine."
+    },
+    "light": {
+      "page": "https://tenor.com/view/death-note-light-evil-laugh-anime-gif-5329203",
+      "url": "https://media.tenor.com/DXK2isfY2ocAAAPo/death-note-light.mp4",
+      "sha256": "e3ad8d590c4d66394184528054fb1612b920d5dc4d585a962def5f1cae44fc66",
+      "file": "build/research/ep008-r3/anime/light-clean.mp4",
+      "rights": "Copyrighted anime excerpt, no original audio in this GIF; permission unconfirmed."
+    },
+    "dio": {
+      "page": "https://tenor.com/view/jojo-bizarre-adventure-dio-reject-gif-13274940",
+      "url": "https://media.tenor.com/r1WUspee5s4AAAPo/jojo-bizarre.mp4",
+      "sha256": "ab3cd3fbad8965d45b95ff4858e64236e8de05078e18a4b78423b90da007a25c",
+      "file": "build/research/ep008-r3/anime/dio-clean.mp4",
+      "rights": "Copyrighted anime excerpt, no original audio in this GIF; permission unconfirmed."
+    },
+    "evil_laugh": {
+      "page": "https://www.myinstants.com/en/instant/light-yagamis-laugh-7090/",
+      "url": "https://www.myinstants.com/media/sounds/psycho_Bj24m2M.mp3",
+      "sha256": "47117972a1de5d59bb7a5e133b7dc9c22a2949994320f03fb7521f0345341f8a",
+      "rights": "Anime laugh recording repost; redistribution permission unconfirmed; not original Video Rush SFX.",
+      "file": "build/research/ep008-r3/anime/light-laugh.mp3"
+    }
+  },
+  "voices": {
+    "adultA": [
+      "zh-CN-YunxiNeural",
+      "+18%"
+    ],
+    "adultB": [
+      "zh-CN-YunjianNeural",
+      "+25%"
+    ],
+    "kidA": [
+      "zh-CN-YunxiaNeural",
+      "+28%"
+    ],
+    "kidB": [
+      "zh-CN-YunxiNeural",
+      "+30%"
+    ],
+    "evilA": [
+      "zh-CN-YunjianNeural",
+      "+25%"
+    ],
+    "evilB": [
+      "zh-CN-YunyangNeural",
+      "+28%"
+    ]
+  },
+  "shots": [
+    {
+      "id": "1-01",
+      "scene": "boss",
+      "seconds": 1.8,
+      "lines": [
+        {
+          "speaker": "adultA",
+          "text": "好的好的……"
+        }
+      ],
+      "sfx": "gibberish"
+    },
+    {
+      "id": "1-02",
+      "scene": "baby",
+      "seconds": 1.7,
+      "lines": [
+        {
+          "speaker": "adultA",
+          "text": "乖乖，乖乖……"
+        }
+      ],
+      "sfx": "baby"
+    },
+    {
+      "id": "1-03",
+      "scene": "collapse",
+      "seconds": 2.5,
+      "lines": [
+        {
+          "speaker": "adultA",
+          "text": "小时候盼着长大……草率了。"
+        }
+      ],
+      "sfx": "poweroff"
+    },
+    {
+      "id": "1-04",
+      "scene": "message",
+      "seconds": 2,
+      "lines": [],
+      "sfx": "ding"
+    },
+    {
+      "id": "2-01",
+      "scene": "bar",
+      "seconds": 0.8,
+      "lines": [],
+      "sfx": "ding"
+    },
+    {
+      "id": "2-02",
+      "scene": "bar",
+      "seconds": 3.0,
+      "lines": [
+        {
+          "speaker": "adultB",
+          "text": "哟，拍拍波大王。"
+        },
+        {
+          "speaker": "adultA",
+          "text": "滚，都多少年前了。"
+        }
+      ]
+    },
+    {
+      "id": "2-03",
+      "scene": "body-memory",
+      "seconds": 1.8,
+      "lines": [],
+      "sfx": "clap2"
+    },
+    {
+      "id": "2-04",
+      "scene": "flashback",
+      "seconds": 2.9,
+      "lines": [
+        {
+          "speaker": "adultB",
+          "text": "来啊。"
+        },
+        {
+          "speaker": "kidB",
+          "text": "来啊！！"
+        }
+      ],
+      "sfx": "bell",
+      "handoff": true
+    },
+    {
+      "id": "3-01",
+      "scene": "corridor",
+      "seconds": 4,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "你就只会防啊？"
+        },
+        {
+          "speaker": "kidB",
+          "text": "行，这次不防！"
+        }
+      ],
+      "game": "basic",
+      "game_first": 1.5
+    },
+    {
+      "id": "3-02",
+      "scene": "evil-A",
+      "seconds": 2.5,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "桀桀桀……这次看你怎么挡！"
+        }
+      ],
+      "game": "charge-short",
+      "game_first": 0.45
+    },
+    {
+      "id": "3-03",
+      "scene": "spell-B",
+      "seconds": 5.3,
+      "lines": [],
+      "game": "cylinder",
+      "anime": "cylinder",
+      "anime_face": "sore",
+      "game_first": 3.2
+    },
+    {
+      "id": "3-04A",
+      "scene": "argument",
+      "seconds": 4,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "等会儿！以前根本没反弹！你这不是耍赖吗？！"
+        },
+        {
+          "speaker": "evilB",
+          "text": "哼……规则，就是用来打破的！"
+        }
+      ]
+    },
+    {
+      "id": "3-04B",
+      "scene": "evil-B",
+      "seconds": 3.2,
+      "lines": [
+        {
+          "speaker": "evilB",
+          "text": "有趣——即是正义！哈哈哈哈！"
+        }
+      ],
+      "music": "villain"
+    },
+    {
+      "id": "3-04C",
+      "scene": "turn-evil",
+      "seconds": 7,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "你动漫看傻了吧？"
+        },
+        {
+          "speaker": "evilA",
+          "text": "呵……呵呵呵……哈哈哈哈！事情……开始变得有趣了！！"
+        }
+      ],
+      "anime": "light",
+      "pause_after_first": 0.28
+    },
+    {
+      "id": "3-04D",
+      "scene": "agree",
+      "seconds": 4,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "你刚才不还骂我耍赖吗？"
+        },
+        {
+          "speaker": "kidA",
+          "text": "少废话！反弹以后也算！"
+        },
+        {
+          "speaker": "kidB",
+          "text": "来！"
+        }
+      ]
+    },
+    {
+      "id": "4-01",
+      "scene": "three",
+      "seconds": 3.4,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "一格能放波——那三格呢？"
+        },
+        {
+          "speaker": "kidB",
+          "text": "哈？！"
+        }
+      ],
+      "game": "charge-three",
+      "game_first": 0.6
+    },
+    {
+      "id": "4-02",
+      "scene": "hadoken-A",
+      "seconds": 1.0,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "波——动——拳！！！"
+        }
+      ],
+      "anime": "street",
+      "overlap_next": true
+    },
+    {
+      "id": "4-03",
+      "scene": "game",
+      "seconds": 3.4,
+      "lines": [],
+      "game": "medium",
+      "anime": "street-blue",
+      "uninterrupted": true
+    },
+    {
+      "id": "4-04",
+      "scene": "three-taunt",
+      "seconds": 3,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "喂！我的反弹呢？！"
+        },
+        {
+          "speaker": "kidA",
+          "text": "三格气！你那一格的反弹接得住吗？！"
+        }
+      ]
+    },
+    {
+      "id": "4-05",
+      "scene": "stiff-A",
+      "seconds": 4.1,
+      "lines": [],
+      "game": "at",
+      "anime": "eva",
+      "game_first": 1.75,
+      "sfx": "impact"
+    },
+    {
+      "id": "4-06",
+      "scene": "hadoken-B",
+      "seconds": 3,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "你以为……只有你会？"
+        },
+        {
+          "speaker": "kidA",
+          "text": "呵……你也想起舞吗？"
+        }
+      ]
+    },
+    {
+      "id": "4-07",
+      "scene": "return-A",
+      "seconds": 6,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "波——动——拳！"
+        },
+        {
+          "speaker": "kidA",
+          "text": "宇智波——反弹！"
+        },
+        {
+          "speaker": "kidB",
+          "text": "你把我的反弹也升级了？！"
+        },
+        {
+          "speaker": "kidA",
+          "text": "规则，就是用来打破的！"
+        },
+        {
+          "speaker": "kidB",
+          "text": "这话也是我说的！！！"
+        }
+      ],
+      "game": "return",
+      "anime": "naruto",
+      "game_first": 2.9,
+      "first_two_on_game": true
+    },
+    {
+      "id": "5-01",
+      "scene": "five",
+      "seconds": 2.5,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "行行行，下一招绝对不抄你的。"
+        },
+        {
+          "speaker": "kidB",
+          "text": "又来？！"
+        }
+      ]
+    },
+    {
+      "id": "5-02",
+      "scene": "game",
+      "seconds": 2.2,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "五格？！"
+        }
+      ],
+      "game": "charge-five"
+    },
+    {
+      "id": "5-03",
+      "scene": "dio",
+      "seconds": 2.5,
+      "lines": [
+        {
+          "speaker": "kidB",
+          "text": "宇智波反弹！"
+        },
+        {
+          "speaker": "kidA",
+          "text": "我不做人了！！！"
+        }
+      ],
+      "anime": "dio"
+    },
+    {
+      "id": "5-04",
+      "scene": "ultra-A",
+      "seconds": 2,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "斯派修姆——光线！！！"
+        }
+      ],
+      "anime": "ultra",
+      "overlap_next": true
+    },
+    {
+      "id": "5-05",
+      "scene": "game",
+      "seconds": 4.1,
+      "lines": [],
+      "game": "beam",
+      "uninterrupted": true
+    },
+    {
+      "id": "5-06",
+      "scene": "king",
+      "seconds": 3,
+      "lines": [
+        {
+          "speaker": "kidA",
+          "text": "叫！大！王！"
+        },
+        {
+          "speaker": "kidB",
+          "text": "你就赢这一把！！"
+        }
+      ],
+      "game": "victory",
+      "anime": "jotaro",
+      "game_first": 0.75
+    },
+    {
+      "id": "6-01",
+      "scene": "back-now",
+      "seconds": 1.2,
+      "lines": [],
+      "sfx": "ding",
+      "handoff": true
+    },
+    {
+      "id": "6-02",
+      "scene": "bar",
+      "seconds": 3,
+      "lines": [
+        {
+          "speaker": "adultA",
+          "text": "一把怎么了？一把也是大王！"
+        },
+        {
+          "speaker": "adultB",
+          "text": "你都吹二十年了！"
+        }
+      ]
+    },
+    {
+      "id": "6-03",
+      "scene": "slide-phone",
+      "seconds": 2,
+      "lines": [
+        {
+          "speaker": "adultB",
+          "text": "有本事再来啊！"
+        },
+        {
+          "speaker": "adultA",
+          "text": "行啊。"
+        }
+      ]
+    },
+    {
+      "id": "6-04",
+      "scene": "home-phone",
+      "seconds": 4,
+      "lines": [
+        {
+          "speaker": "adultB",
+          "text": "卧槽？不是！你真给做出来啦？！"
+        },
+        {
+          "speaker": "adultA",
+          "text": "来，试试。"
+        }
+      ],
+      "game": "home"
+    },
+    {
+      "id": "7-01",
+      "scene": "old-clap",
+      "seconds": 1.25,
+      "lines": [],
+      "game": "phone",
+      "game_first": 0.6,
+      "sfx": "clap2"
+    },
+    {
+      "id": "7-02",
+      "scene": "phone-banter",
+      "seconds": 3.5,
+      "lines": [
+        {
+          "speaker": "adultB",
+          "text": "防！"
+        },
+        {
+          "speaker": "adultA",
+          "text": "你就只会防啊？！"
+        },
+        {
+          "speaker": "adultB",
+          "text": "你管我！"
+        }
+      ]
+    },
+    {
+      "id": "7-03",
+      "scene": "double-age",
+      "seconds": 1.55,
+      "lines": [],
+      "sfx": "laughter",
+      "music": "warm"
+    },
+    {
+      "id": "7-04",
+      "scene": "title",
+      "seconds": 1.65,
+      "lines": [],
+      "sfx": "clap-end",
+      "music": "warm"
+    }
+  ]
+}
