@@ -68,6 +68,7 @@ jobs:
             build/episodes/ep008-v2-review/*.json
             build/episodes/ep008-v2-review/*.csv
             build/episodes/ep008-v2-review/*.ass
+            build/episodes/ep008-v2-review/*.log
             build/episodes/ep008-v2-review/index.html
             build/episodes/ep008-v2-review/comparison/
             build/episodes/ep008-v2-review/evidence/
