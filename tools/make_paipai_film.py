@@ -133,6 +133,7 @@ def soundtrack(project,spec,voices,out):
             if l['layer']!='G':continue
             path=CAPTURE/('continuous.mp4' if l['source']=='game' else 'mobile.mp4');a=pcm(path,l['in'],l['out']-l['in'])
             gain=1.05
+            if id=='3-03':gain*=.20  # one foreground trap-card quote; native sample would duplicate it
             if id in ('4-03','4-07','5-05') and l['source']=='game':
                 # Keep the actual launch/impact sound, suppress only the duplicate
                 # Japanese voice during the game's separate pre-launch cut-in.

@@ -7,6 +7,10 @@ on:
     paths:
       - episodes/ep008-r3-film.json
       - .github/workflows/paipai-film.yml
+      - tools/make_paipai_film.py
+      - tools/capture_wave_film.py
+      - video_rush/paipai_film_art.py
+      - video_rush/drivers/wave_*capture.mjs
 permissions:
   contents: read
 jobs:
