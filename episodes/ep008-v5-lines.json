@@ -1,0 +1,86 @@
+{
+  "episode": "ep008-v5-lines",
+  "scope": "Two dialogue and acting replacements only; preserve accepted Hadouken sequence",
+  "inherits": "episodes/ep008-v2-av-review.json",
+  "previous_review_artifact": 13144007126,
+  "previous_review_zip_sha256": "715d54e281eb25167738e0de1a114f91078e866a5aa24526c08b942f6ea0dd37",
+  "approved_changes": [
+    "After 事情开始变得有趣了, remove the exchange about accepting reflection; move directly into inventing the three-energy attack",
+    "Compress 一格能放波——那三格呢 to 那……三格气呢？ for a visual thought-to-fingers bridge",
+    "Use the existing authentic Japanese Hadouken recording, once across all alternating shots",
+    "Make R/AN alternate as matched phases of one action, not complete performances repeated separately",
+    "Accelerate each R/AN cut pair: 12,9,6,4,3 frames per shot, then merge original drawings with anime",
+    "Stop rock after hit, leave first reaction dry; resolve with a short same-theme guitar tag after last spoken word",
+    "Replace tentative 那……三格气呢？ with an explicit first-person declaration about inventing a three-energy special attack",
+    "Replace B 我的反弹呢 with 还能这样？！ and dynamic shocked close-up"
+  ],
+  "voice_backend": {
+    "name": "Qwen3-TTS VoiceDesign 1.7B",
+    "host": "https://qwen-qwen3-tts.hf.space",
+    "model_license": "Apache-2.0",
+    "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+  },
+  "auditions": [
+    {
+      "id": "CREATE-A",
+      "role": "A",
+      "key": "创造三格气的大招",
+      "text": "直到我创造了，三格气的大招！",
+      "direction": "十岁中国小学生男孩A，刚刚把坏笑变成得意，兴奋地向伙伴宣告自己想出了新招。用自然的少年本音说直到我创造了，停半拍，三格气的大招！前半句像回忆转折，后半句得意、抬高一点，有点小学生炫耀但不要声嘶力竭。三格气三个字必须清楚，格读ge二声，气读qi四声，不要吞字。不是播音员，不要音乐，不要加任何台词。"
+    },
+    {
+      "id": "SURPRISE-B",
+      "role": "B",
+      "key": "中招后颜艺惊讶",
+      "text": "还能这样？！",
+      "direction": "十岁中国小学生男孩B，刚被伙伴新招打中了，嘴张大、瞳孔缩小，眼镜都快吓掉。瞬间懵了，脱口而出还能这样？！前面的还字短促吸气，能字上扬，这样两个字抬高声音，有一点少年的破音，惊讶不服但很好笑。口语化，一秒多说完，和刚才的装酷反派声线拉开反差，不要念成旁白。只说这四个字，不要另加语气词，不要音乐。"
+    }
+  ],
+  "japanese_hadouken": {
+    "repository": "zhipijun1996/wave-game",
+    "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+    "path": "source-assets/audio/01-hadouken-classic.wav",
+    "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/source-assets/audio/01-hadouken-classic.wav",
+    "sha256": "40c309803b54439bb5bd96e11c4fd7d5678c07b965de26eecedbbd191ac01fbc",
+    "source_page": "https://soundfxcenter.com/download-sound/street-fighter-hadouken-sound-effect/",
+    "language": "Japanese; 波動拳 / Hadouken",
+    "rights": "Franchise recording; redistribution permission unconfirmed; actor and precise game edition unverified; not original project audio"
+  },
+  "bridge_voice": {
+    "sha256": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "parent_master_sha256": "c5b7aeafda29d0421e33d8b2eec3d39bc49d1c4647ff9f7f64365493afc67e10",
+    "raw_wave_sha256": "84791957720852367d032939bd79944e0f7f8cec2a96bd2e5a80cceffe525ca8",
+    "backend": {
+      "name": "Qwen3-TTS VoiceDesign 1.7B, local CPU bfloat16",
+      "host": null,
+      "model_license": "Apache-2.0",
+      "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "runtime": "torch 2.8.0+cpu; qwen-tts 0.1.1",
+      "endpoint": null
+    },
+    "text": "那……三格气呢？",
+    "truth": "Actual new local instruction-driven performance; mono AAC64kbps transport derivative"
+  },
+  "revision_of": "ep008-v4-accel",
+  "voice_bundle_sha256": "2052b7700e9c3290b9140ada51c4cb46c7b71d888387e3119aa38ab5681b76e2",
+  "new_voice_assets": {
+    "extra/idea-bridge.m4a": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "extra/CREATE-A.m4a": "76b6c3243f1f54dec4e31cf9377769be97dfa2355dac7d202753ab88df001844",
+    "extra/SURPRISE-B.m4a": "53360940b4ed4649574410ab58e0c8a268f171910ef4c0c11f27f4d12a89b0a9",
+    "new-voice-receipts.json": "5f8b796f41f9f47c1bf17718201bcc62f66da780aafbca11991dd99787930a69"
+  },
+  "dialogue_changes": [
+    {
+      "replace": "IDEA-A",
+      "id": "CREATE-A",
+      "mode": "create",
+      "text": "直到我创造了，三格气的大招！"
+    },
+    {
+      "replace": "old-4-04-0",
+      "id": "SURPRISE-B",
+      "mode": "surprise",
+      "text": "还能这样？！"
+    }
+  ]
+}
