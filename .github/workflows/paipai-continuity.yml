@@ -6,6 +6,10 @@ on:
       continuity_artifacts:
         description: Ordered JSON array of verified new acted voice chunk IDs
         required: true
+      reuse_validated_render:
+        description: Repackage the hash-pinned completed V8 film without rerendering
+        type: boolean
+        default: false
 permissions:
   contents: read
   actions: read
@@ -31,7 +35,7 @@ jobs:
           python -m pip install -e '.[test]' numpy==2.3.5
           pytest -q
       - name: Restore preserved performances and render the complete film
-        run: python -m tools.make_paipai_continuity
+        run: python -m tools.make_paipai_continuity ${{ inputs.reuse_validated_render && '--reuse-validated-render' || '' }}
       - name: Package comparison poses, source receipts and editable project
         run: python -m tools.paipai_continuity_delivery
       - name: Downloadable review and failure evidence
@@ -51,9 +55,7 @@ jobs:
             build/episodes/ep008-v8-continuity/*.ass
             build/episodes/ep008-v8-continuity/*.png
             build/episodes/ep008-v8-continuity/continuity-review.mp4
-            build/episodes/ep008-v8-continuity/extra/*.json
-            build/episodes/ep008-v8-continuity/extra/*.m4a
-            build/episodes/ep008-v8-continuity/extra/*.mp4
+            build/episodes/ep008-v8-continuity/extra/
             build/episodes/ep008-v8-continuity/portable/
             build/episodes/ep008-v8-continuity/full-inputs/
             build/episodes/ep008-v8-continuity/extra/clap*.wav

@@ -167,5 +167,11 @@
     "extra/beam-complete.mp4": "d227fc6773a9e81ef66b03738394c2e868b96b0472e874ec87804338d7eb0cef",
     "extra/new-game-receipt.json": "9b363acc14244e3105557499d6af9a904242c84e694ae0bd5dcca8940bddaae3"
   },
-  "continuity_bundle_sha256": "2a3fb3804baab90c45868005196410bb1f4fb73f2d704f0129d9360ce08d7a03"
+  "continuity_bundle_sha256": "2a3fb3804baab90c45868005196410bb1f4fb73f2d704f0129d9360ce08d7a03",
+  "validated_render": {
+    "artifact_id": 13169636918,
+    "zip_sha256": "8e4ee24190772d47ffc38696e80124b3a533c1ae2814198dc8b12bb936610815",
+    "film_sha256": "2561355ea91a387a2691eaae0156d695a60f8736a0f8580ec1e5810a0829ff62",
+    "render_commit": "b375149ee312f8407e1062620ab6fa0c392ec495"
+  }
 }

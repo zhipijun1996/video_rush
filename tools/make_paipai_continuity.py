@@ -20,6 +20,24 @@ SPEC='episodes/ep008-v8-continuity.json'
 OUTPUT='build/episodes/ep008-v8-continuity'
 
 
+def restore_validated_render(spec,out):
+    """Repackage exact rendered bytes; a missing ancillary WAV is restored by SHA."""
+    ref=spec['validated_render'];session=requests.Session()
+    session.headers['Authorization']='Bearer '+os.environ['GH_TOKEN']
+    r=session.get('https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/artifacts/'+str(ref['artifact_id'])+'/zip',timeout=120);r.raise_for_status()
+    if hashlib.sha256(r.content).hexdigest()!=ref['zip_sha256']:raise ValueError('Validated render archive differs')
+    out.mkdir(parents=True,exist_ok=True);unpack(r.content,out)
+    manifest=read(out/'delivery-manifest.json')
+    for name,h in manifest.items():
+        path=out/name
+        if name=='extra/hadouken-original.wav' and not path.exists():
+            a=requests.get(spec['japanese_hadouken']['url'],timeout=45);a.raise_for_status();path.write_bytes(a.content)
+        if not path.exists() or sha(path)!=h:raise ValueError('Restored render member differs: '+name)
+    if sha(out/'final.mp4')!=ref['film_sha256']:raise ValueError('Rendered film differs')
+    for name in ['final.mp4','continuity-review.mp4','opening-review.mp4']:run(['ffmpeg','-v','error','-i',out/name,'-f','null','-'])
+    write(out/'render-reuse.json',{'artifact':ref,'all_original_manifest_members_verified':len(manifest),'film_bytes_unchanged':True,'restored_missing_ancillary':'extra/hadouken-original.wav; source URL and SHA from episode spec; full film was not rerendered'})
+
+
 def unpack(raw,out,allowed=None):
     z=zipfile.ZipFile(io.BytesIO(raw))
     if sum(i.file_size for i in z.infolist())>60_000_000:raise ValueError('Unexpected archive expansion')
@@ -130,5 +148,7 @@ def mix(p,spec,out):return full.mix(p,spec,out,score_fn=score)
 
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default=OUTPUT);a=parser.parse_args();out=Path(a.output).resolve();spec=read(SPEC);prepare(spec,out);full.render(spec,out,plan_fn=plan,segments_fn=render_segments,mix_fn=mix)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default=OUTPUT);parser.add_argument('--reuse-validated-render',action='store_true');a=parser.parse_args();out=Path(a.output).resolve();spec=read(SPEC)
+    if a.reuse_validated_render:restore_validated_render(spec,out)
+    else:prepare(spec,out);full.render(spec,out,plan_fn=plan,segments_fn=render_segments,mix_fn=mix)
     report=read(out/'report.json');report.update(continuity='Single new generated villain performance across actor/anime cut; clean real beam; full native victory; side apparition; memory dissolve; complete first mobile defence',new_game={**spec['new_game'],'receipt':'extra/new-game-receipt.json','receipt_sha256':sha(out/'extra/new-game-receipt.json')},end_url=spec['end_url']);write(out/'report.json',report)

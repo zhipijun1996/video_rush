@@ -7,6 +7,7 @@ from tools.make_paipai_continuity import OUTPUT,SPEC
 def deliver():
     out=ROOT/OUTPUT;spec=read(SPEC);p=read(out/'storyboard.json');package(out,spec_path=SPEC)
     sources=read(out/'sources.json');sources.update(continuity_voice_receipts=read(out/'extra/continuity-voice-receipts.json'),new_real_game=read(out/'extra/new-game-receipt.json'),source_audio_beds=read(out/'music/design.json')['source_audio_beds'],end_url=spec['end_url'])
+    sources['packaging_commit']=sources['production_commit'];sources['production_commit']=read(out/'report.json')['git_head']
     sources['references']['jotaro']={**spec['counter_references']['jotaro_pose'],'derived_sha256':sha(out/'extra/jotaro-pose.mp4'),'appearance':'Only beside the child as feathered40% opacity apparition; first0.35s normal action then editorial pose freeze, no full-screen anime victory cut'}
     sources['voice_selection']={'villain':'DIO-CONT-A; one generated performance spanning stick/anime cut; DIO-CONT-B alternate audition included','king':'KING-FAST,0.88sec, not accelerated old audio','hero':'K05-A retained; overlapping native shout ducked at start; win declaration uncut native game sound'}
     sources['music']='Original same-motif score and short documented DIO/Ultraman source-scene mixes, third-party permissions unconfirmed; quieter during complete native victory declaration.'
