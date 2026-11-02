@@ -1,0 +1,90 @@
+name: 拍拍波V2视听三段验收
+run-name: 拍拍波V2 · 仅三段试剪与配音A/B
+on:
+  workflow_dispatch:
+    inputs:
+      review_artifacts:
+        description: Ordered JSON array of bounded voice/real-footage input chunk Artifact IDs
+        required: true
+      review_sha256:
+        description: SHA256 of the complete review input ZIP
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      VR_REVIEW_ARTIFACTS: ${{ inputs.review_artifacts }}
+      VR_REVIEW_SHA256: ${{ inputs.review_sha256 }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media tools and verify code
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk libfluidsynth3
+          python -m pip install -e '.[test]' numpy==2.3.5
+          pytest -q
+      - name: Restore the exact acted voices and existing real recording derivatives
+        run: python -m tools.paipai_v2_assets restore
+      - name: Fetch the exact prior delivered baseline for old/new comparison
+        run: |
+          python - <<'PY'
+          import os,hashlib,zipfile,io,requests
+          from pathlib import Path
+          s=requests.Session();s.headers['Authorization']='Bearer '+os.environ['GH_TOKEN']
+          r=s.get('https://api.github.com/repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/artifacts/13133284335/zip',timeout=90);r.raise_for_status()
+          assert hashlib.sha256(r.content).hexdigest()=='c2c8603295771a997a98fb60a539b3b502acd61d2a2108113c4eddc24575f916'
+          z=zipfile.ZipFile(io.BytesIO(r.content));root=Path('build/deliveries/ep008-r3-remote')
+          for name in ['final.mp4','storyboard.json','report.json','sources.json','voices.json','audio-sources.json']:
+            member='episodes/ep008-r3/'+name;target=root/member;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(z.read(member))
+          PY
+      - name: Prepare pinned anime excerpts and the MIT sample bank
+        run: python -m tools.paipai_v2_assets prepare
+      - name: Render ONLY the three trials and validate audio/video
+        run: python -m tools.make_paipai_v2_review
+      - name: Prepare auditions, music design, old clips and editable project
+        run: python -m tools.paipai_v2_delivery
+      - name: Save review package and failure evidence
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paipai-v2-three-trials-and-voice-auditions
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-v2-review/*_NEW.mp4
+            build/episodes/ep008-v2-review/*.md
+            build/episodes/ep008-v2-review/*.json
+            build/episodes/ep008-v2-review/*.csv
+            build/episodes/ep008-v2-review/*.ass
+            build/episodes/ep008-v2-review/index.html
+            build/episodes/ep008-v2-review/comparison/
+            build/episodes/ep008-v2-review/evidence/
+            build/episodes/ep008-v2-review/portable/
+            build/episodes/ep008-v2-review/licenses/
+            build/episodes/ep008-v2-review/editable/
+            build/episodes/ep008-v2-review/music/*.m4a
+            build/episodes/ep008-v2-review/music/*.mid
+            build/episodes/ep008-v2-review/music/*.json
+            build/episodes/ep008-v2-review/logs/
+      - name: Phone review link — full film remains pending
+        if: success()
+        env:
+          REVIEW_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('## 只审三段，不是新全片\n\n[手机下载三段试剪、五组配音A/B和配乐方案]('+os.environ['REVIEW_URL']+')\n\n先看三个*_NEW.mp4。解压后也可打开index.html，独立试听portable/voices/。收到用户审核后才推广至全片。旧版未覆盖，未投稿B站/Toy。\n')
+          PY

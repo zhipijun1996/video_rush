@@ -1,0 +1,145 @@
+{
+  "episode": "ep008-v2-av-review",
+  "scope": "Three audiovisual trials and voice auditions only. No full-film render or publication before user review.",
+  "baseline": "build/deliveries/ep008-r3-remote/episodes/ep008-r3/final.mp4",
+  "baseline_sha256": "9b1024935205d87118735391cf29e6dd8c018ee6d86c2541782c2064eb3be3a4",
+  "requested_filename": "1000061319.mp4",
+  "requested_file_status": "Not attached or found at task start; identity with prior delivery awaiting user clarification",
+  "approved_storyboard": "episodes/briefs/ep008-r3-user-storyboard-v1.md",
+  "voice_backend": {
+    "name": "Qwen3-TTS VoiceDesign 1.7B, public official demo",
+    "host": "https://qwen-qwen3-tts.hf.space",
+    "endpoint": "/generate_voice_design",
+    "model_license": "Apache-2.0",
+    "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "space_source_revision": "6ae5dfa536c7109b33606b2332b8f0545d45f228",
+    "identity": "Invented child characters; no real actor or user's voice is cloned"
+  },
+  "music": {
+    "title": "课间仍未结束",
+    "motif_midi": [
+      76,
+      79,
+      81,
+      83,
+      88
+    ],
+    "motif_notes": "E G A B E; ending changes G to G-sharp",
+    "sampler": "libfluidsynth.so.3 offline rendering",
+    "soundfont_path": "build/tools/fluid-r3/usr/share/sounds/sf2/FluidR3_GM.sf2",
+    "soundfont_url": "https://deb.debian.org/debian/pool/main/f/fluid-soundfont/fluid-soundfont-gm_3.1-6_all.deb",
+    "soundfont_archive_sha256": "9965fbcc6acee17d6f72b685d28c7f968ec64eba14645445b476d5c6cc2eee4c",
+    "license_url": "https://sources.debian.org/data/main/f/fluid-soundfont/3.1-6/debian/copyright",
+    "license": "FluidR3 sample bank MIT, Frank Wen and Toby Smithe; new composition authored for Video Rush. Include bank notice. libfluidsynth LGPL is a separate software license."
+  },
+  "auditions": [
+    {
+      "id": "K01-A",
+      "role": "B",
+      "key": "规则与正义",
+      "text": "哼……规则，就是用来打破的！有趣——即是正义！哈哈哈哈！",
+      "direction": "一个十岁中国小男孩，故意学动漫反派的装腔版本。先压低嗓子、憋着笑说哼；规则两个字慢一点，用来打破的突然挑衅喊出来。有趣即是正义越说越得意，最后是真的乐得笑出声。普通话，嘴皮灵活，孩子气仍能听出，不是播音和朗诵，不要配乐。"
+    },
+    {
+      "id": "K01-B",
+      "role": "B",
+      "key": "规则与正义",
+      "text": "哼……规则，就是用来打破的！有趣——即是正义！哈哈哈哈！",
+      "direction": "一个十二岁男孩在课间中二表演，声线略沙哑，故意把声音压成反派低音。前半句用气声冷笑，句中停顿，打破的和正义突然破音爆发，然后忍不住大笑。嚣张、又认真得滑稽，强烈的忽轻忽重。不要庄严的成年人播报，不要音乐。"
+    },
+    {
+      "id": "K02-A",
+      "role": "A",
+      "key": "夜神月黑化",
+      "text": "呵……呵呵呵……哈哈哈哈！事情……开始变得有趣了！！",
+      "direction": "十岁中国男孩，红头带的小学生。开头极低、憋不住的嘿嘿笑，渐渐失控，胸腔和喉咙真的发出连续狂笑，笑到后仰。说事情时重新压低，开始变得有趣了越来越大声，最后一个了嚣张爆喊。先阴险再狂喜，是想到新玩法兴奋得疯了，不是叙述哈哈二字，不读说明，不要背景音乐。"
+    },
+    {
+      "id": "K02-B",
+      "role": "A",
+      "key": "夜神月黑化",
+      "text": "呵……呵呵呵……哈哈哈哈！事情……开始变得有趣了！！",
+      "direction": "十一岁中国小男孩故意模仿动画大反派。开头吸一口气，极轻的阴笑，接着爆发出高而尖、完全控制不住的笑，笑得换气。事情先像秘密一样说，开始变得有趣了带着疯狂和急切冲出来。情绪一层层升级，有孩子的破音，不要用大叔旁白腔，不要配乐。"
+    },
+    {
+      "id": "K03-A",
+      "role": "A",
+      "key": "首次波动拳",
+      "text": "波——动——拳！！！",
+      "direction": "十岁小男孩认真模仿街机格斗高手。像双手聚气一样，波字低沉拉长半秒，动字蓄紧，拳字把气息向前推出去，一声有胸腔力量的爆喝。中二但不是成年解说，不要逐字念破折号，不要音乐。"
+    },
+    {
+      "id": "K03-B",
+      "role": "A",
+      "key": "首次波动拳",
+      "text": "波——动——拳！！！",
+      "direction": "十一岁男孩在课间全力喊自己刚发明的必杀技。先猛吸气，压低收住嗓子，波动两个字从小到大一口气冲出去，拳字高音炸开、带兴奋的破音，像真的使出全身力气。勇敢、夸张、童真的英雄感，不是逐字朗读，不要背景声。"
+    },
+    {
+      "id": "K04-A",
+      "role": "A",
+      "key": "我不做人了",
+      "text": "我不做人了！！！",
+      "direction": "十岁中国男孩装成疯狂的大反派。先压低声音，认真得可怕地说我；不做人三个字陡然放大，最后了字爆炸般高声喊出、带一点失控的笑。压低与爆发形成强烈反差，有孩子装狠的感觉，绝不平铺直叙，不要音乐。"
+    },
+    {
+      "id": "K04-B",
+      "role": "A",
+      "key": "我不做人了",
+      "text": "我不做人了！！！",
+      "direction": "一个十一岁、戏非常多的小男孩。像当着对手宣布惊天秘密一样，前两字是阴森气声，突然歇斯底里地大喊不做人了，尖嗓带破音，兴奋得几乎笑场。夸张、有意外性，中二到自己都信了，不是成熟播音腔，不要配乐。"
+    },
+    {
+      "id": "K05-A",
+      "role": "A",
+      "key": "斯派修姆光线",
+      "text": "斯派修姆——光线！！！",
+      "direction": "十岁男孩突然从装反派切换为无比认真的小英雄。斯派修姆用充满决心的低声拉开，短吸一口气后光线二字明亮、雄壮地长吼出去，几乎破音但发音清楚。像双手摆十字释放能量，英雄式爆发，不要平读，不要音乐。"
+    },
+    {
+      "id": "K05-B",
+      "role": "A",
+      "key": "斯派修姆光线",
+      "text": "斯派修姆——光线！！！",
+      "direction": "十一岁中国小男孩，深信自己就是拯救世界的英雄。斯派修姆几个字快速、紧绷地低喝，光线一口气高声爆发并拖长尾音，带少年的明亮和一点声嘶力竭，跟刚才阴森的反派声线形成极大反差，不要解说，不要音乐。"
+    },
+    {
+      "id": "N01-A",
+      "role": "A",
+      "key": "普通小学生嫌弃",
+      "text": "你动漫看傻了吧？",
+      "direction": "一个十岁普通中国男孩跟同桌说话，语气很嫌弃又有点想笑，声音年轻、轻巧，顺嘴吐槽你动漫看傻了吧。短、自然、松弛，不要广播腔，不要夸张怒吼，不要音乐。"
+    },
+    {
+      "id": "N02-B",
+      "role": "B",
+      "key": "小学生一句吐槽破功",
+      "text": "你刚才不还骂我耍赖吗？",
+      "direction": "十岁戴眼镜的小男孩，看朋友突然比自己更中二，忍着笑非常自然地吐槽。句子像课间随口说的话，年轻清亮，尾音有点问号和无语，不是播音，不要反派压嗓，不要音乐。"
+    },
+    {
+      "id": "N03-A",
+      "role": "A",
+      "key": "瞬间切回小屁孩",
+      "text": "少废话！反弹以后也算！",
+      "direction": "十岁红头带男孩被朋友拆穿之后，立刻恢复小孩本音，急急忙忙、理直气壮地说少废话反弹以后也算。声音嫩、语速快、还憋着笑，跟刚才故作低沉的反派腔明显不同，不要播音，不要音乐。"
+    }
+  ],
+  "new_references": {
+    "light_full_laugh": {
+      "file": "build/research/ep008-v2/anime/light-laugh-maniac.mp4",
+      "page": "https://tenor.com/view/death-note-light-yagami-light-yagami-laugh-maniac-maniacal-laugh-gif-24380804",
+      "url": "https://media.tenor.com/RqKEPJqkI0wAAAPo/death-note-light-yagami.mp4",
+      "sha256": "9c64500d0dc28b42b131481d85390571f35a1525607985d3a08fa0537ea68d40",
+      "rights": "Copyrighted Death Note excerpt reposted as silent GIF; original master and redistribution permission unconfirmed. Added laugh audio is a separate repost, not authenticated synchronized original audio."
+    }
+  },
+  "selected_voices": {
+    "B_rules": "K01-B",
+    "A_light": "K02-B",
+    "A_hadouken": "K03-B",
+    "A_DIO": "K04-B",
+    "A_Ultra": "K05-A"
+  },
+  "voice_model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3"
+}
