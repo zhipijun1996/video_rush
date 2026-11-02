@@ -1,0 +1,81 @@
+{
+  "episode": "ep008-v4-accel",
+  "production_commit": "b978aac50d8c3136746891a4e2bf210c8736d624",
+  "run_id": 41469458369,
+  "job_id": 125358935692,
+  "artifact_id": 13153837962,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41469458369/artifacts/13153837962",
+  "artifact_bytes": 9418450,
+  "artifact_zip_sha256": "5e71d71443ddda8670190f28c55cf088fa7ff0d07d09acbbcd47e07a875f7c4a",
+  "expires_utc": "2026-11-16T15:15:13Z",
+  "manifest_files_verified": 85,
+  "movies": [
+    {
+      "file": "light_to_hadouken_MATCHCUT.mp4",
+      "seconds": 21.633333,
+      "sha256": "d324d92b680b58cf9be8a610ceb715b52bad79662f2680511c7cbbfba5c70812",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 345088,
+        "peak": 0.762664794921875,
+        "rms": 0.10372619176969927,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "hadouken_MATCH_ONLY.mp4",
+      "seconds": 4.033333,
+      "sha256": "b0eefc4c3880a2e09260a257f634fb401ea2cf46df87674df297a6728293209d",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 64853,
+        "peak": 0.4688720703125,
+        "rms": 0.0600622143372641,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    }
+  ],
+  "all_exported_shots_verified": true,
+  "overlay_frame_is_from_export": true,
+  "acceleration_frames": [
+    12,
+    9,
+    6,
+    4,
+    3
+  ],
+  "music_cues": {
+    "rock_start": 8.566666666666666,
+    "rock_stop": 16.033333333333328,
+    "reaction_dry": true,
+    "cadence_start": 20.810333333333325,
+    "cadence_end": 21.450333333333326,
+    "cadence_notes": [
+      76,
+      71,
+      69,
+      67,
+      64
+    ],
+    "source": "Original E G A B E theme; FluidR3 GM MIT instruments",
+    "speech_end": 20.790333333333326,
+    "seconds": 21.633333333333326,
+    "human_musical_review": "pending"
+  },
+  "isolated_score_decoded": true,
+  "bridge_same_performance": true,
+  "source_archive_matches_code": true,
+  "previous_v3_unchanged": {
+    "light_to_hadouken_MATCHCUT.mp4": true,
+    "hadouken_MATCH_ONLY.mp4": true
+  },
+  "no_new_full_film": true,
+  "bilibili_or_toy_submission": false,
+  "local_tests": "57 passed; latest overlay art change also passed 7 relevant checks",
+  "cloud_tests": "56 passed; 1 optional browser test skipped",
+  "human_timing_overlay_and_music_review": "pending"
+}
