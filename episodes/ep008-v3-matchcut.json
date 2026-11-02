@@ -1,0 +1,53 @@
+{
+  "episode": "ep008-v3-matchcut",
+  "scope": "One continuous Light-to-Hadouken review clip only; no full-film promotion",
+  "inherits": "episodes/ep008-v2-av-review.json",
+  "previous_review_artifact": 13144007126,
+  "previous_review_zip_sha256": "715d54e281eb25167738e0de1a114f91078e866a5aa24526c08b942f6ea0dd37",
+  "approved_changes": [
+    "After 事情开始变得有趣了, remove the exchange about accepting reflection; move directly into inventing the three-energy attack",
+    "Compress 一格能放波——那三格呢 to 那……三格气呢？ for a visual thought-to-fingers bridge",
+    "Use the existing authentic Japanese Hadouken recording, once across all alternating shots",
+    "Make R/AN alternate as matched phases of one action, not complete performances repeated separately"
+  ],
+  "voice_backend": {
+    "name": "Qwen3-TTS VoiceDesign 1.7B",
+    "host": "https://qwen-qwen3-tts.hf.space",
+    "model_license": "Apache-2.0",
+    "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+  },
+  "auditions": [
+    {
+      "id": "IDEA-A",
+      "role": "A",
+      "key": "狂喜之后想到三格气",
+      "text": "那……三格气呢？",
+      "direction": "十岁红头带中国男孩，刚刚笑着想到了新招式。恢复年轻男孩本音，用带着坏笑、压低而轻快的声音自言自语：那，三格气呢？那字是想到主意的短停顿，三格气三个字得意但清晰，尾音很有把握。像课间朋友面前的小聪明，不要播音，不要严肃解说，不要夸张大喊，不要音乐。"
+    }
+  ],
+  "japanese_hadouken": {
+    "repository": "zhipijun1996/wave-game",
+    "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+    "path": "source-assets/audio/01-hadouken-classic.wav",
+    "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/source-assets/audio/01-hadouken-classic.wav",
+    "sha256": "40c309803b54439bb5bd96e11c4fd7d5678c07b965de26eecedbbd191ac01fbc",
+    "source_page": "https://soundfxcenter.com/download-sound/street-fighter-hadouken-sound-effect/",
+    "language": "Japanese; 波動拳 / Hadouken",
+    "rights": "Franchise recording; redistribution permission unconfirmed; actor and precise game edition unverified; not original project audio"
+  },
+  "bridge_voice": {
+    "sha256": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "parent_master_sha256": "c5b7aeafda29d0421e33d8b2eec3d39bc49d1c4647ff9f7f64365493afc67e10",
+    "raw_wave_sha256": "84791957720852367d032939bd79944e0f7f8cec2a96bd2e5a80cceffe525ca8",
+    "backend": {
+      "name": "Qwen3-TTS VoiceDesign 1.7B, local CPU bfloat16",
+      "host": null,
+      "model_license": "Apache-2.0",
+      "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "runtime": "torch 2.8.0+cpu; qwen-tts 0.1.1",
+      "endpoint": null
+    },
+    "text": "那……三格气呢？",
+    "truth": "Actual new local instruction-driven performance; mono AAC64kbps transport derivative"
+  }
+}
