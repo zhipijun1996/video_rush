@@ -1,0 +1,90 @@
+{
+  "archive": "build/deliveries/paipai-v8-final.zip",
+  "extracted": "build/deliveries/paipai-v8-final-remote",
+  "run_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41504011882",
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41504011882/artifacts/13168978809",
+  "artifact_id": 13168978809,
+  "zip_sha256": "98380f921baba5041a35d345fae35f5cf84bde763f2b22d0d5a2e72382474562",
+  "zip_bytes": 28294256,
+  "expires_at": "2026-11-16T18:49:21Z",
+  "packaging_commit": "dd040daab6082c8084cb13a0dbdea8acde036cf1",
+  "status": "remote delivery downloaded and verified; creative review pending user",
+  "manifest_files_verified": 206,
+  "movies": [
+    {
+      "name": "final.mp4",
+      "duration": 112.866,
+      "sha256": "2561355ea91a387a2691eaae0156d695a60f8736a0f8580ec1e5810a0829ff62",
+      "audio": {
+        "decoded_samples": 1805653,
+        "peak": 0.8409423828125,
+        "rms": 0.1022875894500048,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      },
+      "full_decode": true
+    },
+    {
+      "name": "continuity-review.mp4",
+      "duration": 16.8,
+      "sha256": "20969e57d8bb5256d0c0f22f8524d637c24a8edd01f5fef8792e032a7170b01a",
+      "audio": {
+        "decoded_samples": 268629,
+        "peak": 0.813201904296875,
+        "rms": 0.08718170715051357,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      },
+      "full_decode": true
+    },
+    {
+      "name": "opening-review.mp4",
+      "duration": 6.3,
+      "sha256": "84248ffad7a7f5adbd3b053d2f797facbd061553a569448a6ef68458608a8430",
+      "audio": {
+        "decoded_samples": 101035,
+        "peak": 0.84014892578125,
+        "rms": 0.1148652297695069,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      },
+      "full_decode": true
+    }
+  ],
+  "opening_sync_ms": 0.0,
+  "all59_shots_present": true,
+  "new_capture_legal21_rounds": true,
+  "new_game": {
+    "source_in": 72.3723999999985,
+    "source_out": 76.72172335600908,
+    "source_sha256": "33b8a6dd5835e652d7af26cbd53a26e7728377a2a13dce9cbba7430842c54920",
+    "sha256": "d227fc6773a9e81ef66b03738394c2e868b96b0472e874ec87804338d7eb0cef",
+    "seconds": 4.366341,
+    "victory_offset": 1.4293233560105705,
+    "victory_sample_seconds": 2.8,
+    "truth": "New real browser run, unchanged pinned runtime, 21 legal rounds; post-victory hold extended3500ms. Normal speed; native preliminary hero cut-in omitted, launch through complete victory retained."
+  },
+  "native_victory_seconds": 2.8,
+  "native_victory_audio_correlation": 0.9791862728235747,
+  "native_victory_audio_lag_ms": 0.5000000000000004,
+  "king_follows_complete_victory": true,
+  "continuous_villain_performance": true,
+  "discarded_splice_absent": true,
+  "end_url": "https://b23.tv/yCut8r4",
+  "local_tests_passed": 67,
+  "cloud_tests_passed": 66,
+  "cloud_optional_browser_skipped": 1,
+  "content_review": "pending user; no aesthetic approval inferred",
+  "bilibili_or_toy_submission": false,
+  "first_download_check": {
+    "artifact_id": 13169636918,
+    "status": "one missing ancillary WAV caught and fixed by hash-pinned repackaging",
+    "missing": [
+      "extra/hadouken-original.wav"
+    ],
+    "other204_manifest_hashes_match": true
+  }
+}
