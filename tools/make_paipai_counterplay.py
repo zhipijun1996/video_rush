@@ -133,7 +133,7 @@ def score(p,spec,out,voices):
         bed['actual_decoded_seconds']=len(raw)/sr;raw*=.70/max(.001,float(np.max(np.abs(raw))));count=len(raw);gain=np.full(count,bed['gain'],np.float32)
         for start,end in voices:
             a=max(0,round((start-bed['start']-.03)*sr));b=min(count,round((end-bed['start']+.08)*sr))
-            if b>a:gain[a:b]*=.38
+            if b>a:gain[a:b]*=bed.get('dialogue_duck',.38)
         fade=min(round(.08*sr),count);gain[:fade]*=np.linspace(0,1,fade);gain[-fade:]*=np.linspace(1,0,fade)
         x=round(bed['start']*sr);available=min(count,round(n*sr),len(result)-x);result[x:x+available]*=.35;result[x:x+available]+=raw[:available]*gain[:available,None]
         subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar','24000','-ac','2','-i','-','-c:a','aac','-b:a','96k',str(out/'extra'/('bgm-'+bed['id']+'.m4a'))],input=raw.astype('<f4').tobytes(),check=True)

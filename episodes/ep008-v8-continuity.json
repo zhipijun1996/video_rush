@@ -1,0 +1,171 @@
+{
+  "episode": "ep008-v8-continuity",
+  "scope": "Continuous villain performance; clean game beam and complete victory; side apparition; motivated adult match dissolve; complete mobile defence",
+  "inherits": "episodes/ep008-v2-av-review.json",
+  "previous_review_artifact": 13144007126,
+  "previous_review_zip_sha256": "715d54e281eb25167738e0de1a114f91078e866a5aa24526c08b942f6ea0dd37",
+  "approved_changes": [
+    "After 事情开始变得有趣了, remove the exchange about accepting reflection; move directly into inventing the three-energy attack",
+    "Compress 一格能放波——那三格呢 to 那……三格气呢？ for a visual thought-to-fingers bridge",
+    "Use the existing authentic Japanese Hadouken recording, once across all alternating shots",
+    "Make R/AN alternate as matched phases of one action, not complete performances repeated separately",
+    "Accelerate each R/AN cut pair: 12,9,6,4,3 frames per shot, then merge original drawings with anime",
+    "Stop rock after hit, leave first reaction dry; resolve with a short same-theme guitar tag after last spoken word",
+    "Replace tentative 那……三格气呢？ with an explicit first-person declaration about inventing a three-energy special attack",
+    "Replace B 我的反弹呢 with 还能这样？！ and dynamic shocked close-up"
+  ],
+  "voice_backend": {
+    "name": "Qwen3-TTS VoiceDesign 1.7B",
+    "host": "https://qwen-qwen3-tts.hf.space",
+    "model_license": "Apache-2.0",
+    "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+  },
+  "auditions": [
+    {
+      "id": "DIO-CONT-A",
+      "role": "A",
+      "text": "JOJO！我不做人了！",
+      "direction": "一个中国小学生男孩故意模仿动漫恶人，带稚嫩的疯狂。整句一口气说完：JOJO！我不做人了！JOJO用jo jo读音，前半压低嗓子带得意，紧接我不做人，最后了字突然向上爆发，越说越疯，憋着笑的嘶喊。JOJO和我不做人声音是同一人、速度一致，两句间只停十分之一秒，整体约三秒，不要长笑，不要额外文字，不要背景音乐。"
+    },
+    {
+      "id": "DIO-CONT-B",
+      "role": "A",
+      "text": "JOJO！我不做人了！",
+      "direction": "少年男孩A自信又有点破音地大喊：JOJO！我不做人了！同一个男孩连续说完。JOJO读作jo jo。起头低沉故作成熟，后三个字做人了彻底疯起来爆发嘶喊，两个短句紧接，像小学生突然演起反派，不要朗诵不要拖慢，整体三秒左右，不要加笑声或者配乐。"
+    },
+    {
+      "id": "KING-FAST",
+      "role": "A",
+      "text": "叫大王！",
+      "direction": "得意嚣张的小学生男孩A刚赢了小学课间对战，立刻指着伙伴喊：叫大王！三个字快而清晰，一口气喊出来，不要每个字停顿，约零点七秒到一秒，明亮高兴的孩子声线，不要播音、别加字别加笑声别加音乐。"
+    }
+  ],
+  "japanese_hadouken": {
+    "repository": "zhipijun1996/wave-game",
+    "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+    "path": "source-assets/audio/01-hadouken-classic.wav",
+    "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/source-assets/audio/01-hadouken-classic.wav",
+    "sha256": "40c309803b54439bb5bd96e11c4fd7d5678c07b965de26eecedbbd191ac01fbc",
+    "source_page": "https://soundfxcenter.com/download-sound/street-fighter-hadouken-sound-effect/",
+    "language": "Japanese; 波動拳 / Hadouken",
+    "rights": "Franchise recording; redistribution permission unconfirmed; actor and precise game edition unverified; not original project audio"
+  },
+  "bridge_voice": {
+    "sha256": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "parent_master_sha256": "c5b7aeafda29d0421e33d8b2eec3d39bc49d1c4647ff9f7f64365493afc67e10",
+    "raw_wave_sha256": "84791957720852367d032939bd79944e0f7f8cec2a96bd2e5a80cceffe525ca8",
+    "backend": {
+      "name": "Qwen3-TTS VoiceDesign 1.7B, local CPU bfloat16",
+      "host": null,
+      "model_license": "Apache-2.0",
+      "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "runtime": "torch 2.8.0+cpu; qwen-tts 0.1.1",
+      "endpoint": null
+    },
+    "text": "那……三格气呢？",
+    "truth": "Actual new local instruction-driven performance; mono AAC64kbps transport derivative"
+  },
+  "revision_of": "ep008-v7-counterplay",
+  "dialogue_changes": [
+    {
+      "replace": "IDEA-A",
+      "id": "CREATE-A",
+      "mode": "create",
+      "text": "到我创造了，三格气的大招！"
+    },
+    {
+      "replace": "old-4-04-0",
+      "id": "SURPRISE-B",
+      "mode": "surprise",
+      "text": "还能这样？！"
+    }
+  ],
+  "full_bank_sha256": "60a08707007769bc67167b0f96fb87010f44f3f3e45f1db2664a556b7e2b93d8",
+  "full_bank_bytes": 1546586,
+  "full_bank_groups": [
+    "85e53e8c94f7ab66bb0711bf8be3a1358375f9908c6585411613177affeb3bfe",
+    "72ef290f6a273dd9e3eb312e398fb39b45390e81c87736596d5a322d8f6eb6ab",
+    "cb6da4138cf57cfd3b3386d092c3a7c5eb26b0621d75c22a2f18ca39ad653a4c"
+  ],
+  "new_voice_assets": {
+    "extra/idea-bridge.m4a": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "extra/OPEN-ADULT.m4a": "8ed6126ba62cbc3197d42dcbf74d8c54c2ca3f8acdc6e19a27b4cc8ab9fa9098",
+    "extra/CREATE-A.m4a": "40f92d42b2ff3443e5f998d1dd5d5a40b24bb52aa18ecf6579c719e796ea96c4",
+    "extra/SURPRISE-B.m4a": "53360940b4ed4649574410ab58e0c8a268f171910ef4c0c11f27f4d12a89b0a9",
+    "new-voice-receipts.json": "4c88b0e7b9b74bdc24edc809141133070cbeecf30faeee21d8310882d7c287aa"
+  },
+  "native_claps": {
+    "clap1.wav": {
+      "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/public/assets/audio/clap1.wav",
+      "sha256": "dbb74472a6960c0246aa537008e86626bbf79e8fe08280e812a63cb7802b7289",
+      "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+      "path": "public/assets/audio/clap1.wav"
+    },
+    "clap2.wav": {
+      "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/public/assets/audio/clap2.wav",
+      "sha256": "42cad108951c7a95c0a1ebd876c9af975fd5f4a8faac7780db25d3b3d68b1927",
+      "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+      "path": "public/assets/audio/clap2.wav"
+    }
+  },
+  "villain_source_window": {
+    "id": "K01-B",
+    "in": 1.0,
+    "seconds": 5.7,
+    "alignment_basis": "Local faster-whisper base word times: 规则1.32; 有趣3.86; 正义6.50; remaining audition laughter omitted"
+  },
+  "counter_bundle_sha256": "785bfb235c97746f76e984a1373334dfa75c963a84c9dca45025326d4c69ba03",
+  "counter_assets": {
+    "extra/RETRY-A.m4a": "aedd75d34914689a18a3f3fb2e03d812859c4b8a24ecf70524435fffe7ef8d23",
+    "extra/AT-B.m4a": "5aeda30ffee8baa0ed25d5b166b6d7166c8f25bf64652c0cfdc889d2445c7ac5",
+    "extra/TURN-B.m4a": "d5e4a38134f250c0e0760d7ab39b1b1c1c6529a5981ab561b15c79409d908d74",
+    "extra/ANGER-B.m4a": "86ecb3a5a488cbdee1183a29dddc43215edea78b8cd9328dbe07c3410c2198b6",
+    "extra/JOJO-A.m4a": "d265df6b799621b5582cb89c5195f9230867ddda0ae7ebcc73b7275f7bc80303",
+    "counter-voice-receipts.json": "3ab56372921cc0b5d71a42adebec96ca373fed1b18dc69684fee23de691e4a14"
+  },
+  "end_url": "https://b23.tv/yCut8r4",
+  "counter_references": {
+    "dio_audio": {
+      "bvid": "BV114411r7Cr",
+      "page": "https://www.bilibili.com/video/BV114411r7Cr/",
+      "title": "「JOJO」DIO：我不做人了，jojo！  原版视频",
+      "uploader": "NGGGN1",
+      "uploader_description": "来自拉拉动漫\n我真是high到不行了σ一一 (*°▽°)",
+      "cid": 113094631,
+      "bytes": 3448394,
+      "duration_reported": 72,
+      "sha256": "6b731a050fadad43269c758a8a6a18e950913be20034661cea57dd4eed299cb6",
+      "rights_status": "Copyrighted reference, permission not established; public availability is not a license.",
+      "download_failures": [],
+      "file": "build/research/ep008-v7/BV114411r7Cr.mp4",
+      "rights": "Third-party original-scene repost; source music/effects not isolated, permission unconfirmed"
+    },
+    "jotaro_pose": {
+      "file": "build/research/ep008-v7/jotaro-2.mp4",
+      "url": "https://media.tenor.com/zUUVsDxE9k4AAAPo/jotaro-kujo-jotaro.mp4",
+      "page": "https://tenor.com/view/jotaro-kujo-jotaro-star-platinum-the-world-za-warudo-gif-26520174",
+      "sha256": "edb258c4327c87b2a9d62152c89af94b867d8545e4aff2e022e463cedf0f49bc",
+      "rights": "Copyrighted anime excerpt/GIF; permission unconfirmed",
+      "depiction": "Jotaro in purple/white coat pointing forward; first0.35s then editorial freeze, not a victory-scene authenticity claim"
+    }
+  },
+  "new_game": {
+    "source_in": 72.3723999999985,
+    "source_out": 76.72172335600908,
+    "source_sha256": "33b8a6dd5835e652d7af26cbd53a26e7728377a2a13dce9cbba7430842c54920",
+    "sha256": "d227fc6773a9e81ef66b03738394c2e868b96b0472e874ec87804338d7eb0cef",
+    "seconds": 4.366341,
+    "victory_offset": 1.4293233560105705,
+    "victory_sample_seconds": 2.8,
+    "truth": "New real browser run, unchanged pinned runtime, 21 legal rounds; post-victory hold extended3500ms. Normal speed; native preliminary hero cut-in omitted, launch through complete victory retained."
+  },
+  "continuity_assets": {
+    "extra/DIO-CONT-A.m4a": "c3ce0d932b5d0c433a6627ed5abeee2d7c06119026bd232c478b4727ecf1a4b8",
+    "extra/DIO-CONT-B.m4a": "9a54a9a23fef3d5e90b586b43652452a432652cae08434ce7c3bbb3de9ff25f1",
+    "extra/KING-FAST.m4a": "862185f5ccc9df996f3d51aa514cc116551ad6f7b2901c72e3eb5fec9cafef85",
+    "extra/continuity-voice-receipts.json": "5c05c29717fc5e4276f013530696f2614dff1a386662cd814c8dff1cb0db14b8",
+    "extra/beam-complete.mp4": "d227fc6773a9e81ef66b03738394c2e868b96b0472e874ec87804338d7eb0cef",
+    "extra/new-game-receipt.json": "9b363acc14244e3105557499d6af9a904242c84e694ae0bd5dcca8940bddaae3"
+  },
+  "continuity_bundle_sha256": "2a3fb3804baab90c45868005196410bb1f4fb73f2d704f0129d9360ce08d7a03"
+}

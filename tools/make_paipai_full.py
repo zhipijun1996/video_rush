@@ -207,7 +207,13 @@ def mix(p,spec,out,*,score_fn=score):
     clap1=pcm(out/'extra/clap1.wav');clap2=pcm(out/'extra/clap2.wav')
     for s in p['segments']:
         if s['kind']=='OPEN':add(opening_audio(s,out),s['start']);continue
-        if s['kind']=='G':add(pcm(s['source'],s['in'],s['seconds']),s['start'],.62);continue
+        if s['kind']=='G':
+            native=pcm(s['source'],s['in'],s['seconds'])
+            if s.get('native_foreground_duck'):
+                # Keep the game hit/win sound; suppress only the overlapping
+                # beginning under the single selected hero shout.
+                count=min(len(native),round(s['native_foreground_duck']*sr));native[:count]*=.07
+            add(native,s['start'],s.get('native_gain',.62));continue
         if s['kind']!='FILM':continue
         shot=s['shot'];start=s['start']-s['trim'];id=shot['id']
         for i,l in enumerate(shot['layers']):

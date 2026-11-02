@@ -17,14 +17,14 @@ from tools.capture_wave_story import verify_runtime, game_audio_metrics
 COMMIT='c6f1326c824a4b5c8489b0918285d9063f9d1db6'
 
 
-def capture(source,output):
+def capture(source,output,*,victory_hold_ms=1650):
     source=Path(source).resolve();output=Path(output).resolve();output.mkdir(parents=True,exist_ok=True)
     project=ROOT/'build/recordings'/('wave-film-'+COMMIT[:12]);driver=ROOT/'video_rush/drivers/wave_film_capture.mjs'
     if not (project/'dist/index.html').exists():
         snap=snapshot(source,COMMIT,PATHS,project);write(project/'snapshot.json',snap)
         run(['npm','ci','--no-audit','--no-fund'],cwd=project,log=output/'npm.log',timeout=180)
         run(['npm','run','build'],cwd=project,log=output/'build.log',timeout=180)
-    snap=verify_runtime(source,project,COMMIT);recipe={'commit':COMMIT,'driver':sha(driver),'runtime':snap['snapshot_hash']}
+    snap=verify_runtime(source,project,COMMIT);recipe={'commit':COMMIT,'driver':sha(driver),'runtime':snap['snapshot_hash'],'victory_hold_ms':victory_hold_ms}
     receipt=output/'receipt.json';movie=output/'continuous.mp4'
     if movie.exists() and receipt.exists() and read(receipt).get('recipe')==recipe and read(receipt).get('sha256')==sha(movie):return read(receipt)
     shutil.copyfile(driver,project/'video-rush-film.mjs')
@@ -35,7 +35,7 @@ def capture(source,output):
     try:
         browser=os.getenv('VR_CHROMIUM_PATH') or shutil.which('chromium')
         if not browser:raise RuntimeError('Chromium required')
-        run(['npx','tsx',project/'video-rush-film.mjs',server.server_port,output,browser],cwd=project,log=output/'capture.log',timeout=240)
+        run(['npx','tsx',project/'video-rush-film.mjs',server.server_port,output,browser,victory_hold_ms],cwd=project,log=output/'capture.log',timeout=240)
     finally:server.shutdown();server.server_close();worker.join(timeout=2)
     trace=read(output/'trace.json');raw=subprocess.check_output(['ffmpeg','-v','error','-i',str(output/'raw.webm'),'-vf','crop=16:16:0:0,scale=1:1','-f','rawvideo','-pix_fmt','rgb24','-'])
     starts=[i for i in range(len(raw)//3) if raw[i*3]>180 and raw[i*3+1]<90 and raw[i*3+2]>180]

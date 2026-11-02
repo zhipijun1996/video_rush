@@ -379,7 +379,10 @@ def visual_shot(s,spec,out,structure=False,layer_inputs=None):
         v+=f',scale={w}:{h}:force_original_aspect_ratio=decrease,pad={w}:{h}:(ow-iw)/2:(oh-ih)/2:color=0xfaf5e8,setsar=1'
         if l.get('alpha') is not None:
             # A feathered apparition instead of a rectangular pasted screenshot.
-            v+=f",format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*{l['alpha']}*clip(4*(1-pow((X-W/2)/(W/2),2)-pow((Y-H/2)/(H/2),2)),0,1)'"
+            mask="clip(4*(1-pow((X-W/2)/(W/2),2)-pow((Y-H/2)/(H/2),2)),0,1)"
+            if l.get('soft_apparition'):
+                mask="pow(clip(1-pow((X-W/2)/(W/2),4)-pow((Y-H/2)/(H/2),4),0,1),0.8)"
+            v+=f",format=rgba,geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*{l['alpha']}*{mask}'"
         v+=f'[l{i}]';filters.append(v)
         nxt=f'v{i}';filters.append(f'[{current}][l{i}]overlay=x={x}:y={y}:eof_action=pass:enable=\'between(t,{l["at"]},{l["at"]+l["seconds"]-0.001})\'[{nxt}]');current=nxt
     if not structure and s['id'] in ('4-03','5-05'):

@@ -4,7 +4,8 @@ import {chromium} from '@playwright/test';
 import {initial,ALL,resolve} from './src/rules.ts';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const [port,output,binary]=process.argv.slice(2);
+const [port,output,binary,victoryHold='1650']=process.argv.slice(2);
+assert(Number(victoryHold)>=1650 && Number(victoryHold)<=6000);
 const moves=[['charge','charge'],['wave1','guard1'],['charge','charge'],['wave1','reflect1'],
  ['charge','charge'],['charge','charge'],['charge','charge'],['wave2','reflect1'],
  ['charge','charge'],['charge','charge'],['charge','charge'],['wave2','guard2'],
@@ -42,7 +43,7 @@ try{
  }
  assert.equal(rounds[14].result.actions[0],'reflect2');assert.equal(rounds[14].result.events.find(e=>e.type==='reflect').side,0);
  const last=rounds.at(-1);assert(last.initial.players[0].energy>=5);assert(last.initial.players[1].energy>=2);assert(last.initial.players[1].hp<=3);assert.equal(last.result.winner,0);
- await p.waitForFunction(()=>window.__PAIPAI_TEST__.clock.phase==='victory');await p.waitForTimeout(1650);const battleEnd=await perf();
+ await p.waitForFunction(()=>window.__PAIPAI_TEST__.clock.phase==='victory');await p.waitForTimeout(Number(victoryHold));const battleEnd=await perf();
  await api('t.home()');const homeStart=await perf();await p.waitForTimeout(2600);await p.screenshot({path:output+'/home.png'});
  await p.click('[data-action="basic"]');await p.waitForTimeout(400);await p.click('[data-action="start-basic"]');const phoneStart=await perf();
  await p.waitForFunction(()=>window.__PAIPAI_TEST__.clock.inputOpen);await p.click('[data-skill="guard1"]');await p.waitForFunction(()=>window.__PAIPAI_TEST__.clock.committed);await p.waitForTimeout(100);const phoneEnd=await perf();

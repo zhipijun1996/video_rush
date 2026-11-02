@@ -147,6 +147,10 @@ def image(shot,t,seconds):
   else:
    d.rounded_rectangle((780,100,1190,295),24,fill='white',outline=INK,width=4);text(d,(985,150),'老朋友',30,BLUE,'mm');text(d,(985,225),'出来喝两杯？',48,INK,'mm')
   return im
+ if scene=='back-now' and shot.get('memory_dissolve'):
+  child=image({'id':'memory-child','scene':'king','victory_pose':'jojo_point','scheduled_lines':[{'speaker':'kidB','start':0,'end':seconds}]},t,seconds)
+  adult=image({'id':'6-memory','scene':'bar','scheduled_lines':[{'speaker':'adultB','start':0,'end':.4}]},t,seconds)
+  return Image.blend(child,adult,smooth((t-.10)/.85))
  if scene in ('bar','body-memory','slide-phone','home-phone','old-clap','phone-banter','double-age','back-now'):
   if scene=='home-phone':
    person(d,390,720,t,'B',True,'phone','shock' if t<seconds-.6 else 'laugh',talkB,1.9)
@@ -172,6 +176,8 @@ def image(shot,t,seconds):
    alpha=.40*math.sin(math.pi*smooth(t/max(.1,seconds)))
    layer.putalpha(layer.getchannel('A').point(lambda v:round(v*alpha)));im=Image.alpha_composite(im.convert('RGBA'),layer).convert('RGB')
   if scene=='back-now' and t<.30:return im.crop((620,300,1020,525)).resize((W,H))
+  if shot.get('arena_top'):
+   lower=Image.new('RGB',(W,H),PAPER);lower.paste(im.resize((768,432)),(256,288));return lower
   return im
  if scene=='flashback':
   adult=t<.7
