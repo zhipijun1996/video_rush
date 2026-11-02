@@ -127,7 +127,10 @@ def render_segments(p,out):
 def score(p,spec,out,voices):
     result=full.score(p,spec,out,voices);sr=24000;t=np.arange(len(result))/sr
     for bed in p['source_beds']:
-        n=bed['end']-bed['start'];source_seconds=bed.get('source_seconds',n);rate=source_seconds/n;bed['tempo_ratio']=rate;raw=full.oldfilm.pcm(ROOT/bed['file'],bed['source_in'],source_seconds,rate=rate);raw*=.70/max(.001,float(np.max(np.abs(raw))));count=len(raw);gain=np.full(count,bed['gain'],np.float32)
+        n=bed['end']-bed['start'];source_seconds=bed.get('source_seconds',n);rate=source_seconds/n;bed['tempo_ratio']=rate
+        raw=np.frombuffer(subprocess.check_output(['ffmpeg','-v','error','-ss',str(bed['source_in']),'-i',str(ROOT/bed['file']),'-af',f'atrim=duration={source_seconds},asetpts=PTS-STARTPTS,atempo={rate}','-ar','24000','-ac','2','-f','f32le','-']),dtype='<f4').reshape(-1,2).copy()
+        if abs(len(raw)/sr-n)>.04:raise ValueError('Source music retiming truncated the intended bed')
+        bed['actual_decoded_seconds']=len(raw)/sr;raw*=.70/max(.001,float(np.max(np.abs(raw))));count=len(raw);gain=np.full(count,bed['gain'],np.float32)
         for start,end in voices:
             a=max(0,round((start-bed['start']-.03)*sr));b=min(count,round((end-bed['start']+.08)*sr))
             if b>a:gain[a:b]*=.38
