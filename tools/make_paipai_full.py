@@ -140,8 +140,8 @@ def signal_envelope(a,seconds):
     return [float(np.sqrt(np.mean(a[round(n*24000/30):max(round((n+1)*24000/30),round(n*24000/30)+1)]**2))) for n in range(round(seconds*30))]
 
 
-def render_segments(p,out):
-    oldspec=read('episodes/ep008-r3-film.json');bank=p['bank']
+def render_segments(p,out,*,reference_overrides=None):
+    oldspec=read('episodes/ep008-r3-film.json');oldspec['references'].update(reference_overrides or {});bank=p['bank']
     for s in p['segments']:
         if s['kind']=='OPEN':
             fx=opening_audio(s,out);worker=np.zeros_like(fx)
@@ -192,7 +192,7 @@ def score(p,spec,out,voice_ranges):
     return result
 
 
-def mix(p,spec,out):
+def mix(p,spec,out,*,score_fn=score):
     sr=24000;n=math.ceil(p['seconds']*sr);master=np.zeros((n,2),np.float32);ranges=[]
     def add(a,start,gain=1):
         x=round(start*sr);count=min(len(a),n-x)
@@ -229,14 +229,14 @@ def mix(p,spec,out):
     refs=read('episodes/ep008-r3-film.json')['references'];laugh=ROOT/refs['evil_laugh']['file'];add(pcm(laugh,0,3.8),p['light_at']+2.2,.6);ranges.append((p['light_at']+2.2,p['light_at']+6))
     ghost=next(s['start'] for s in p['segments'] if s.get('shot',{}).get('id')=='7-03')-.18
     for name,offset,gain in [('adult',0,.35),('child',.35,.20)]:add(pcm(out/'full-inputs'/p['bank']['voices']['ending-laugh-'+name]['file']),ghost+offset,gain)
-    master+=score(p,spec,out,ranges);path=out/'mix.wav';subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar','24000','-ac','2','-i','-','-c:a','pcm_f32le',str(path)],input=master.astype('<f4').tobytes(),check=True);return path
+    master+=score_fn(p,spec,out,ranges);path=out/'mix.wav';subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar','24000','-ac','2','-i','-','-c:a','pcm_f32le',str(path)],input=master.astype('<f4').tobytes(),check=True);return path
 
 
-def render(spec,out):
+def render(spec,out,*,plan_fn=plan,segments_fn=render_segments,mix_fn=mix):
     for name in ['segments','logs']:(out/name).mkdir(exist_ok=True)
-    p=plan(spec,out);render_segments(p,out);write(out/'storyboard.json',p)
+    p=plan_fn(spec,out);segments_fn(p,out);write(out/'storyboard.json',p)
     rows=[{'start':v['start'],'end':v['start']+v['seconds'],'cues':[{'start':v['start'],'end':v['start']+v['seconds'],'text':v['text']}],'emphasis':'','provenance_label':''} for v in p['voices']];ass_file(out/'subtitles.ass',{'display_chapters':False,'shots':rows})
-    audio=mix(p,spec,out);f=out/'concat.txt';f.write_text(''.join(f"file '{out/'segments'/(s['id']+'.mp4')}'\n" for s in p['segments']));run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',f,'-c','copy',out/'joined.mp4'])
+    audio=mix_fn(p,spec,out);f=out/'concat.txt';f.write_text(''.join(f"file '{out/'segments'/(s['id']+'.mp4')}'\n" for s in p['segments']));run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',f,'-c','copy',out/'joined.mp4'])
     movie=out/'final.mp4';run(['ffmpeg','-v','error','-y','-reinit_filter','0','-i',out/'joined.mp4','-i',audio,'-filter_complex',f'[0:v]setpts=PTS-STARTPTS,ass={out/"subtitles.ass"},fps=30,format=yuv420p[v];[1:a]loudnorm=I=-16:TP=-1.5:LRA=12,aresample=48000[a]','-map','[v]','-map','[a]','-t',p['seconds'],'-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-color_range','tv','-c:a','aac','-ar','48000','-b:a','160k','-movflags','+faststart',movie],log=out/'logs/final.log',timeout=900)
     run(['ffmpeg','-v','error','-i',movie,'-f','null','-'],log=out/'logs/decode.log');checks=verify_final_shots(movie,p['segments'],out/'segments');write(out/'frame-checks.json',checks)
     if not all(c['passed'] for c in checks):raise ValueError('A full-film shot disappeared')

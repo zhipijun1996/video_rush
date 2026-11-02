@@ -1,0 +1,73 @@
+name: 拍拍波反转台词与原片配乐修订
+run-name: 拍拍波 · AT力场与怒问 · JOJO原片音乐 · 新片尾链接
+on:
+  workflow_dispatch:
+    inputs:
+      counter_artifacts:
+        description: Ordered JSON array of verified new acted voice chunk IDs
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  matchcut:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VR_COUNTER_ARTIFACTS: ${{ inputs.counter_artifacts }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media tools and verify code
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk libfluidsynth3
+          python -m pip install -e '.[test]' numpy==2.3.5
+          pytest -q
+      - name: Restore preserved performances and render the complete film
+        run: python -m tools.make_paipai_counterplay
+      - name: Package comparison poses, source receipts and editable project
+        run: python -m tools.paipai_counterplay_delivery
+      - name: Downloadable review and failure evidence
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paipai-counterplay-source-music-and-victory
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-v7-counterplay/final.mp4
+            build/episodes/ep008-v7-counterplay/opening-review.mp4
+            build/episodes/ep008-v7-counterplay/*.md
+            build/episodes/ep008-v7-counterplay/*.json
+            build/episodes/ep008-v7-counterplay/*.csv
+            build/episodes/ep008-v7-counterplay/*.ass
+            build/episodes/ep008-v7-counterplay/*.png
+            build/episodes/ep008-v7-counterplay/extra/*.m4a
+            build/episodes/ep008-v7-counterplay/extra/jotaro-pose.mp4
+            build/episodes/ep008-v7-counterplay/portable/
+            build/episodes/ep008-v7-counterplay/full-inputs/
+            build/episodes/ep008-v7-counterplay/extra/clap*.wav
+            build/episodes/ep008-v7-counterplay/licenses/
+            build/episodes/ep008-v7-counterplay/editable/
+            build/episodes/ep008-v7-counterplay/logs/
+            build/episodes/ep008-v7-counterplay/music/*.m4a
+            build/episodes/ep008-v7-counterplay/music/*.mid
+            build/episodes/ep008-v7-counterplay/music/*.json
+      - name: Phone review link
+        if: success()
+        env:
+          REVIEW_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载完整主片、封面和投稿资料]('+os.environ['REVIEW_URL']+')\n\n先看 final.mp4；opening-review.mp4 可单独核对开头同步。保留旧版，未投稿B站/Toy。\n')
+          PY

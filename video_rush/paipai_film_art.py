@@ -25,7 +25,7 @@ def person(d,x,y,t,who='A',adult=False,pose='idle',mood='normal',talk=False,scal
  if pose=='nod':hc=(0,-225+math.sin(t*22)*8);neck=(0,-176)
  if pose=='sag':
   q=smooth(t/.3);neck=(18*q,-176+48*q);hc=(43*q,-225+48*q);hip=(0,-80+25*q)
- if pose=='jojo':neck=(-20,-160);hip=(20,-75);hc=(-30,-210)
+ if pose in ('jojo','jojo_point'):neck=(-20,-160);hip=(20,-75);hc=(-30,-210)
  if pose=='lean':neck=(25,-176);hc=(35,-224)
  L([hip,neck],w=7)
  if pose in ('seated','phone','clap-seat'):
@@ -47,6 +47,10 @@ def person(d,x,y,t,who='A',adult=False,pose='idle',mood='normal',talk=False,scal
  elif pose=='open':
   amp=5*math.sin(t*8);L([neck,(-70,-160),(-135,-210+amp)]);L([neck,(70,-160),(135,-210-amp)])
  elif pose=='jojo':L([neck,(-72,-221),(-55,-280)]);L([neck,(70,-137),(28,-102)])
+ elif pose=='jojo_point':
+  L([neck,(-72,-167),(-115,-200)],w=8);L([neck,(70,-137),(28,-102)])
+  px,py=P(-115,-200);rr=15*scale;d.ellipse((px-rr,py-rr,px+rr,py+rr),fill=PAPER,outline=INK,width=4)
+  stroke(d,[(px-rr/2,py-rr/2),(px-26*scale,py-42*scale)],INK,max(4,round(6*scale)))
  elif pose=='baby':L([neck,(-65,-127),(20,-120)]);L([neck,(67,-128),(20,-116)])
  elif pose=='phone':
   L([neck,(-42,-130),(12,-140)]);L([neck,(55,-126),(25,-140)])
@@ -64,7 +68,7 @@ def person(d,x,y,t,who='A',adult=False,pose='idle',mood='normal',talk=False,scal
   for xx in (-18,-10,2,11):stroke(d,[(hx+xx*scale,hy+25*scale),(hx+(xx+3)*scale,hy+30*scale)],'#6c6c67',2)
   for xx in (-6,3,10):stroke(d,[(hx+xx*scale,hy-r),(hx+(xx-7)*scale,hy-r-13*scale)],INK,2)
  if who=='A':stroke(d,[(hx-r,hy-18*scale),(hx+r,hy-18*scale),(hx+r+35*scale,hy+math.sin(t*10)*8*scale)],RED,max(3,round(7*scale)))
- if mood in ('evil','laugh','yell','smug'):
+ if mood in ('evil','laugh','yell','smug','angry'):
   d.polygon([(hx-r+5,hy-r*.55),(hx+r-5,hy-r*.55),(hx+r-3,hy+2),(hx-r+3,hy+2)],fill='#bdbbb2')
  eye_y=hy-3*scale
  for i,dx in enumerate((-17,17)):
@@ -73,7 +77,7 @@ def person(d,x,y,t,who='A',adult=False,pose='idle',mood='normal',talk=False,scal
    d.ellipse((ex-13*scale,eye_y-17*scale,ex+13*scale,eye_y+16*scale),fill='white',outline=INK,width=3);d.ellipse((ex-2*scale,eye_y-2*scale,ex+2*scale,eye_y+2*scale),fill=INK)
   elif mood=='tired':
    stroke(d,[(ex-11*scale,eye_y-1),(ex+10*scale,eye_y+1)],INK,4);d.arc((ex-12*scale,eye_y-2,ex+12*scale,eye_y+18*scale),0,180,fill='#9a9c94',width=3)
-  elif mood in ('evil','laugh','yell','smug'):
+  elif mood in ('evil','laugh','yell','smug','angry'):
    direction=1 if i==0 else -1;stroke(d,[(ex-12*scale,eye_y-7*scale*direction),(ex+11*scale,eye_y+7*scale*direction)],INK,max(3,round(4*scale)))
    d.ellipse((ex-3*scale,eye_y+2*scale,ex+3*scale,eye_y+8*scale),fill=RED if mood=='evil' else INK)
   else:
@@ -85,7 +89,7 @@ def person(d,x,y,t,who='A',adult=False,pose='idle',mood='normal',talk=False,scal
   stroke(d,[(hx-3*scale,hy-3*scale),(hx+3*scale,hy-3*scale)],BLUE,3)
   if glasses_flash:
    for dx in (-18,18):d.ellipse((hx+(dx-12)*scale,hy-18*scale,hx+(dx+12)*scale,hy+12*scale),fill='white')
- if mood in ('evil','laugh','yell'):
+ if mood in ('evil','laugh','yell','angry'):
   stretch=(20+14*abs(math.sin(t*13)) if talk else 13)*scale
   box=(hx-25*scale,hy+13*scale,hx+27*scale,hy+13*scale+stretch)
   d.ellipse(box,fill=INK);d.rectangle((hx-19*scale,hy+14*scale,hx+21*scale,hy+19*scale),fill='white')
@@ -180,7 +184,7 @@ def image(shot,t,seconds):
   return im
  if scene=='title':
   text(d,(640,220),'拍拍波',128,INK,'mm');text(d,(640,358),'小时候没打完的，现在接着打。',48,RED,'mm')
-  text(d,(640,485),'zhipijun1996.github.io/wave-game',38,BLUE,'mm');return im
+  text(d,(640,485),shot.get('end_url','zhipijun1996.github.io/wave-game'),38,BLUE,'mm');return im
  corridor(d)
  if scene in ('evil-A','turn-evil'):a_mood='evil';pa='open' if scene=='turn-evil' else 'idle'
  if scene=='evil-B':b_mood='laugh';pb='open';flash=t<.25
@@ -195,10 +199,12 @@ def image(shot,t,seconds):
  if scene=='hadoken-A':pa='hadoken';a_mood='yell'
  if scene=='hadoken-B':pb='hadoken';b_mood='smug';a_mood='evil' if talkA else 'shock'
  if scene=='stiff-A':a_mood='stiff';b_mood='smug';flash=t<.25
- if scene=='return-A':pa='fan';a_mood='evil';b_mood='shock'
+ if scene=='return-A':
+  pa='fan';a_mood='evil';b_mood='shock'
+  if shot.get('angry_counter') and active.get('speaker','').endswith('B') and t>=3.20:b_mood='angry';pb='point'
  if scene=='dio':a_mood='yell';pb='fan';b_mood='smug';pa='open'
  if scene=='ultra-A':pa='beam';a_mood='yell'
- if scene=='king':pa='jojo';a_mood='yell';pb='point';b_mood='stiff'
+ if scene=='king':pa=shot.get('victory_pose','jojo');a_mood='yell';pb='point';b_mood='stiff'
  dramatic=scene=='evil-B' or evil_phase
  if dramatic:
   im=Image.new('RGB',(W,H),'#251b2c' if scene=='evil-B' else '#343726');d=ImageDraw.Draw(im)

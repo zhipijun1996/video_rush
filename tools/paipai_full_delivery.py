@@ -5,8 +5,8 @@ from video_rush.common import ROOT,read,write,sha,run,font
 from video_rush.paipai_film_art import image as original_frame
 
 
-def package(out):
-    spec=read('episodes/ep008-v6-full.json');p=read(out/'storyboard.json');head=run(['git','rev-parse','HEAD']).strip();title=read('episodes/ep008-r3-film.json')['title']
+def package(out,*,spec_path='episodes/ep008-v6-full.json'):
+    spec=read(spec_path);p=read(out/'storyboard.json');head=run(['git','rev-parse','HEAD']).strip();title=read('episodes/ep008-r3-film.json')['title']
     cover=Image.new('RGB',(1920,1080),'#faf5e8');d=ImageDraw.Draw(cover);king=next(s['shot'] for s in p['segments'] if s.get('shot',{}).get('id')=='5-06');cover.paste(original_frame(king,1.45,king['seconds']).resize((1200,675)),(700,390))
     for xy,text,size,color in [((90,120),'小时候的口胡',120,'#282529'),((90,290),'被我做成游戏了',120,'#d35c48'),((95,475),'拍拍波大王 · 申请出战',54,'#282529')]:d.text(xy,text,font=ImageFont.truetype(font(True),size),fill=color)
     cover.save(out/'cover.png')
@@ -20,7 +20,7 @@ def package(out):
 小学课间口胡出来的波动拳、魔法筒、宇智波反弹……现在被我做成了小游戏。
 这次用火柴人小剧场和真实游戏录屏，重打一场小时候的课间决战。
 
-试玩：https://zhipijun1996.github.io/wave-game/
+试玩：{spec.get('end_url','https://zhipijun1996.github.io/wave-game/')}
 源码：https://github.com/zhipijun1996/wave-game
 
 角色为AI配音，成年人和童年故事为剧情演绎；实机为单机AI对战。
@@ -63,7 +63,7 @@ def package(out):
 自动技术检查不代表表演、幽默和审美通过。原片及部分游戏原声转载许可未确认，当前为审片交付，没有自动公开投稿。
 ''')
     references=read('episodes/ep008-r3-film.json')['references']
-    write(out/'sources.json',{'production_commit':head,'spec_sha256':sha(ROOT/'episodes/ep008-v6-full.json'),'original_approved_storyboard':'episodes/briefs/ep008-r3-user-storyboard-v1.md','game_commit':spec['japanese_hadouken']['commit'],'original_capture_receipts':{n:read(out/'full-inputs'/n) for n in ['receipt.json','mobile-receipt.json']},'native_window_derivatives':p['bank']['game'],'original_voice_derivatives':p['bank']['voices'],'original_voice_receipts':'full-inputs/original-voice-receipts.json','new_voice_receipts':read(out/'new-voice-receipts.json'),'preserved_V2_input_manifest':read(out/'portable/manifest.json'),'references':references,'japanese_shout':spec['japanese_hadouken'],'native_claps':spec['native_claps'],'music':'Original five-note theme with MIT FluidR3 GM; licenses/ and music/design.json','animation':'Original procedural stick drawing; anime double exposure is editorial animation, not game footage','font':'Noto Sans CJK, SIL OFL 1.1','rights_status':'Anime references and some native franchise recordings unconfirmed; no claim of commercial permission','publication':'Full private review delivered only; no Bilibili/Toy submission'})
+    write(out/'sources.json',{'production_commit':head,'spec_sha256':sha(ROOT/spec_path),'original_approved_storyboard':'episodes/briefs/ep008-r3-user-storyboard-v1.md','game_commit':spec['japanese_hadouken']['commit'],'original_capture_receipts':{n:read(out/'full-inputs'/n) for n in ['receipt.json','mobile-receipt.json']},'native_window_derivatives':p['bank']['game'],'original_voice_derivatives':p['bank']['voices'],'original_voice_receipts':'full-inputs/original-voice-receipts.json','new_voice_receipts':read(out/'new-voice-receipts.json'),'preserved_V2_input_manifest':read(out/'portable/manifest.json'),'references':references,'japanese_shout':spec['japanese_hadouken'],'native_claps':spec['native_claps'],'music':'Original five-note theme with MIT FluidR3 GM; licenses/ and music/design.json','animation':'Original procedural stick drawing; anime double exposure is editorial animation, not game footage','font':'Noto Sans CJK, SIL OFL 1.1','rights_status':'Anime references and some native franchise recordings unconfirmed; no claim of commercial permission','publication':'Full private review delivered only; no Bilibili/Toy submission'})
     run(['ffmpeg','-v','error','-y','-i',out/'final.mp4','-t',p['boss_start']+3.7,'-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-c:a','aac','-b:a','128k','-movflags','+faststart',out/'opening-review.mp4'])
     for name,at in [('opening.png',.9),('boss-sync.png',p['boss_start']+.53),('wave.png',p['wave_peak']-.4),('hero.png',p['hero_peak'])]:run(['ffmpeg','-v','error','-y','-ss',at,'-i',out/'final.mp4','-frames:v','1',out/name])
     edit=out/'editable';edit.mkdir(exist_ok=True);run(['git','archive','--format=zip','--output',edit/'video-rush-project.zip','HEAD'])

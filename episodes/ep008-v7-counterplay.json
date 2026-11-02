@@ -1,0 +1,164 @@
+{
+  "episode": "ep008-v7-counterplay",
+  "scope": "Full-film counterplay dialogue, angry reaction, source BGM and matched JOJO victory pose",
+  "inherits": "episodes/ep008-v2-av-review.json",
+  "previous_review_artifact": 13144007126,
+  "previous_review_zip_sha256": "715d54e281eb25167738e0de1a114f91078e866a5aa24526c08b942f6ea0dd37",
+  "approved_changes": [
+    "After 事情开始变得有趣了, remove the exchange about accepting reflection; move directly into inventing the three-energy attack",
+    "Compress 一格能放波——那三格呢 to 那……三格气呢？ for a visual thought-to-fingers bridge",
+    "Use the existing authentic Japanese Hadouken recording, once across all alternating shots",
+    "Make R/AN alternate as matched phases of one action, not complete performances repeated separately",
+    "Accelerate each R/AN cut pair: 12,9,6,4,3 frames per shot, then merge original drawings with anime",
+    "Stop rock after hit, leave first reaction dry; resolve with a short same-theme guitar tag after last spoken word",
+    "Replace tentative 那……三格气呢？ with an explicit first-person declaration about inventing a three-energy special attack",
+    "Replace B 我的反弹呢 with 还能这样？！ and dynamic shocked close-up"
+  ],
+  "voice_backend": {
+    "name": "Qwen3-TTS VoiceDesign 1.7B",
+    "host": "https://qwen-qwen3-tts.hf.space",
+    "model_license": "Apache-2.0",
+    "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign"
+  },
+  "auditions": [
+    {
+      "id": "RETRY-A",
+      "role": "A",
+      "text": "再来！",
+      "direction": "中国小男孩，清晰、自然、有点不服输地喊：再来！再字发zai四声，来字发lai二声。两个字有力且字音完整，约一秒。不加台词或音乐。"
+    },
+    {
+      "id": "AT-B",
+      "role": "B",
+      "text": "AT立场！防住！",
+      "direction": "十岁中国小学生男孩B，故意学动漫角色，抬起手自信地喊招。AT用英文字母A、T的读音，立场两个字清楚。AT立场！短停一下，防住！后半稍咬牙，跟挡住对手攻击的动作一致，约一秒半到两秒，少年声线，不要像机械播音，不加音乐或其他字。"
+    },
+    {
+      "id": "TURN-B",
+      "role": "B",
+      "text": "到我了！",
+      "direction": "中国小男孩B，自信地说：到我了！清晰念出到、我、了三个字，到dao四声，我wo三声，了le轻声。自然口语，略挑衅，三个字一个都不少，约一秒，不加其他内容或音乐。"
+    },
+    {
+      "id": "ANGER-B",
+      "role": "B",
+      "text": "你把我的反弹升级了？！",
+      "direction": "十岁中国男孩B，发现自己的反弹被对手偷学还升级了，气得眉头皱起来，向对方指出去，带委屈和生气，不是单纯惊讶。气呼呼地质问你把我的反弹升级了？！你把我的几个字较快，反弹和升级两处重一点，最后略破音。年轻小学生本音，约一秒半到两秒，不要播音或旁白，不要额外语气词或音乐。"
+    },
+    {
+      "id": "JOJO-A",
+      "role": "A",
+      "text": "JOJO！",
+      "direction": "年轻中国男孩故意学动漫反派压低嗓子，清楚而用力地呼叫名字JOJO！用英语或日语名字jo jo的读音，两次jo音清晰，带中二得意与一点疯劲，短促直接，不笑，不加我不做人了或其他任何句子，不拖尾，不加音乐。"
+    }
+  ],
+  "japanese_hadouken": {
+    "repository": "zhipijun1996/wave-game",
+    "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+    "path": "source-assets/audio/01-hadouken-classic.wav",
+    "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/source-assets/audio/01-hadouken-classic.wav",
+    "sha256": "40c309803b54439bb5bd96e11c4fd7d5678c07b965de26eecedbbd191ac01fbc",
+    "source_page": "https://soundfxcenter.com/download-sound/street-fighter-hadouken-sound-effect/",
+    "language": "Japanese; 波動拳 / Hadouken",
+    "rights": "Franchise recording; redistribution permission unconfirmed; actor and precise game edition unverified; not original project audio"
+  },
+  "bridge_voice": {
+    "sha256": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "parent_master_sha256": "c5b7aeafda29d0421e33d8b2eec3d39bc49d1c4647ff9f7f64365493afc67e10",
+    "raw_wave_sha256": "84791957720852367d032939bd79944e0f7f8cec2a96bd2e5a80cceffe525ca8",
+    "backend": {
+      "name": "Qwen3-TTS VoiceDesign 1.7B, local CPU bfloat16",
+      "host": null,
+      "model_license": "Apache-2.0",
+      "model_page": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "runtime": "torch 2.8.0+cpu; qwen-tts 0.1.1",
+      "endpoint": null
+    },
+    "text": "那……三格气呢？",
+    "truth": "Actual new local instruction-driven performance; mono AAC64kbps transport derivative"
+  },
+  "revision_of": "ep008-v6-full",
+  "dialogue_changes": [
+    {
+      "replace": "IDEA-A",
+      "id": "CREATE-A",
+      "mode": "create",
+      "text": "到我创造了，三格气的大招！"
+    },
+    {
+      "replace": "old-4-04-0",
+      "id": "SURPRISE-B",
+      "mode": "surprise",
+      "text": "还能这样？！"
+    }
+  ],
+  "full_bank_sha256": "60a08707007769bc67167b0f96fb87010f44f3f3e45f1db2664a556b7e2b93d8",
+  "full_bank_bytes": 1546586,
+  "full_bank_groups": [
+    "85e53e8c94f7ab66bb0711bf8be3a1358375f9908c6585411613177affeb3bfe",
+    "72ef290f6a273dd9e3eb312e398fb39b45390e81c87736596d5a322d8f6eb6ab",
+    "cb6da4138cf57cfd3b3386d092c3a7c5eb26b0621d75c22a2f18ca39ad653a4c"
+  ],
+  "new_voice_assets": {
+    "extra/idea-bridge.m4a": "010fe01a1101c3dfaf29ab367f5b56de016296ffa76a0e4fbe40010791234ac9",
+    "extra/OPEN-ADULT.m4a": "8ed6126ba62cbc3197d42dcbf74d8c54c2ca3f8acdc6e19a27b4cc8ab9fa9098",
+    "extra/CREATE-A.m4a": "40f92d42b2ff3443e5f998d1dd5d5a40b24bb52aa18ecf6579c719e796ea96c4",
+    "extra/SURPRISE-B.m4a": "53360940b4ed4649574410ab58e0c8a268f171910ef4c0c11f27f4d12a89b0a9",
+    "new-voice-receipts.json": "4c88b0e7b9b74bdc24edc809141133070cbeecf30faeee21d8310882d7c287aa"
+  },
+  "native_claps": {
+    "clap1.wav": {
+      "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/public/assets/audio/clap1.wav",
+      "sha256": "dbb74472a6960c0246aa537008e86626bbf79e8fe08280e812a63cb7802b7289",
+      "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+      "path": "public/assets/audio/clap1.wav"
+    },
+    "clap2.wav": {
+      "url": "https://raw.githubusercontent.com/zhipijun1996/wave-game/c6f1326c824a4b5c8489b0918285d9063f9d1db6/public/assets/audio/clap2.wav",
+      "sha256": "42cad108951c7a95c0a1ebd876c9af975fd5f4a8faac7780db25d3b3d68b1927",
+      "commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+      "path": "public/assets/audio/clap2.wav"
+    }
+  },
+  "villain_source_window": {
+    "id": "K01-B",
+    "in": 1.0,
+    "seconds": 5.7,
+    "alignment_basis": "Local faster-whisper base word times: 规则1.32; 有趣3.86; 正义6.50; remaining audition laughter omitted"
+  },
+  "counter_bundle_sha256": "785bfb235c97746f76e984a1373334dfa75c963a84c9dca45025326d4c69ba03",
+  "counter_assets": {
+    "extra/RETRY-A.m4a": "aedd75d34914689a18a3f3fb2e03d812859c4b8a24ecf70524435fffe7ef8d23",
+    "extra/AT-B.m4a": "5aeda30ffee8baa0ed25d5b166b6d7166c8f25bf64652c0cfdc889d2445c7ac5",
+    "extra/TURN-B.m4a": "d5e4a38134f250c0e0760d7ab39b1b1c1c6529a5981ab561b15c79409d908d74",
+    "extra/ANGER-B.m4a": "86ecb3a5a488cbdee1183a29dddc43215edea78b8cd9328dbe07c3410c2198b6",
+    "extra/JOJO-A.m4a": "d265df6b799621b5582cb89c5195f9230867ddda0ae7ebcc73b7275f7bc80303",
+    "counter-voice-receipts.json": "3ab56372921cc0b5d71a42adebec96ca373fed1b18dc69684fee23de691e4a14"
+  },
+  "end_url": "https://b23.tv/yCut8r4",
+  "counter_references": {
+    "dio_audio": {
+      "bvid": "BV114411r7Cr",
+      "page": "https://www.bilibili.com/video/BV114411r7Cr/",
+      "title": "「JOJO」DIO：我不做人了，jojo！  原版视频",
+      "uploader": "NGGGN1",
+      "uploader_description": "来自拉拉动漫\n我真是high到不行了σ一一 (*°▽°)",
+      "cid": 113094631,
+      "bytes": 3448394,
+      "duration_reported": 72,
+      "sha256": "6b731a050fadad43269c758a8a6a18e950913be20034661cea57dd4eed299cb6",
+      "rights_status": "Copyrighted reference, permission not established; public availability is not a license.",
+      "download_failures": [],
+      "file": "build/research/ep008-v7/BV114411r7Cr.mp4",
+      "rights": "Third-party original-scene repost; source music/effects not isolated, permission unconfirmed"
+    },
+    "jotaro_pose": {
+      "file": "build/research/ep008-v7/jotaro-2.mp4",
+      "url": "https://media.tenor.com/zUUVsDxE9k4AAAPo/jotaro-kujo-jotaro.mp4",
+      "page": "https://tenor.com/view/jotaro-kujo-jotaro-star-platinum-the-world-za-warudo-gif-26520174",
+      "sha256": "edb258c4327c87b2a9d62152c89af94b867d8545e4aff2e022e463cedf0f49bc",
+      "rights": "Copyrighted anime excerpt/GIF; permission unconfirmed",
+      "depiction": "Jotaro in purple/white coat pointing forward; first0.35s then editorial freeze, not a victory-scene authenticity claim"
+    }
+  }
+}
