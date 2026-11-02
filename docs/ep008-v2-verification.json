@@ -1,0 +1,86 @@
+{
+  "files": 139,
+  "manifest_hashes_verified": 117,
+  "movies": [
+    {
+      "file": "01_light_NEW.mp4",
+      "duration": 13.2,
+      "sha256": "a1fa20ece642befb40de091589b844b21ef15b43ea3572051ed45c0d5b1ce348",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 211285,
+        "peak": 0.761322021484375,
+        "rms": 0.10791941726175026,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "02_hadouken_NEW.mp4",
+      "duration": 12.7,
+      "sha256": "a91929aff255577d1c194c7be11022d686bfce763c9758e4314840672817c701",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 203435,
+        "peak": 0.71282958984375,
+        "rms": 0.09814181428849633,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "03_dio_ultra_NEW.mp4",
+      "duration": 9.7,
+      "sha256": "d2abbafcd46be8fc6ea10a6cf175ad89be05f873303c6de1d4b4c68e3431ff1f",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 155307,
+        "peak": 0.827667236328125,
+        "rms": 0.09712436230947638,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    }
+  ],
+  "real_generated_auditions": 13,
+  "five_AB_groups": true,
+  "same_performances_as_local": true,
+  "source_archive_matches_recipe": true,
+  "baseline_preserved": true,
+  "no_full_film": true,
+  "no_automatic_publication": true,
+  "human_direction_approval": "pending",
+  "production_commit": "d1ca2fd62c98abe773c8f4d352dcc52df3257cb2",
+  "episode": "ep008-v2-av-review",
+  "run_id": 41449236666,
+  "job_id": 125290033497,
+  "artifact_id": 13144007126,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41449236666/artifacts/13144007126",
+  "artifact_bytes": 16497744,
+  "artifact_zip_sha256": "715d54e281eb25167738e0de1a114f91078e866a5aa24526c08b942f6ea0dd37",
+  "expires_utc": "2026-11-16T13:02:40Z",
+  "local_tests": "50 passed",
+  "cloud_tests": "49 passed,1 optional browser test skipped; workflow has no Playwright install because it reuses recorded footage",
+  "baseline_file_status": "1000061319.mp4 not attached/found; exact prior delivered112.5s source used and disclosed",
+  "baseline_sha256": "9b1024935205d87118735391cf29e6dd8c018ee6d86c2541782c2064eb3be3a4",
+  "iteration_evidence": [
+    {
+      "run_id": 41448150591,
+      "status": "cancelled",
+      "reason": "Protect shouted final syllables with short SFX duck/release before final delivery"
+    },
+    {
+      "run_id": 41448502810,
+      "status": "media render successful, first ZIP inventory incomplete",
+      "missing": [
+        "audit-loudness.log"
+      ],
+      "resolution": "Final workflow includes root audit log;117 declared output hashes all verified"
+    }
+  ],
+  "backend_evidence": "Official public Qwen demo first succeeded then returned event:error/null twice; actual13 performances generated locally on CPU, not a fallback silence track",
+  "music_license": "Original arrangement with MIT FluidR3 GM sample bank; notice included. Does not clear anime/native franchise recording permissions."
+}
