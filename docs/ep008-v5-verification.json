@@ -1,0 +1,154 @@
+{
+  "episode": "ep008-v5-lines",
+  "production_commit": "3103f777dd0463963e35c8505a01bb5449a811a3",
+  "run_id": 41473948330,
+  "job_id": 125374481679,
+  "artifact_id": 13155464534,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41473948330/artifacts/13155464534",
+  "artifact_bytes": 9134162,
+  "artifact_zip_sha256": "7756035845d6f6bbf5e419bc63c63674d5f5c5e2f4cc235317147234ce764507",
+  "expires_utc": "2026-11-16T15:42:27Z",
+  "manifest_files_verified": 86,
+  "movies": [
+    {
+      "file": "light_to_hadouken_MATCHCUT.mp4",
+      "seconds": 23.466667,
+      "sha256": "d13d8d7bfc0c3200d93366c8076ad5a861cfd001e59a0815448c0ef4b745798b",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 375125,
+        "peak": 0.740936279296875,
+        "rms": 0.10311822282747057,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "hadouken_MATCH_ONLY.mp4",
+      "seconds": 4.033333,
+      "sha256": "abbbd3cf15527a38defb5f618c88b97e45c90829645f64fd81fdd210e25006c9",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 64853,
+        "peak": 0.4649658203125,
+        "rms": 0.05778156421403521,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    }
+  ],
+  "all_exported_shots_verified": true,
+  "dialogue_changes": [
+    {
+      "replace": "IDEA-A",
+      "id": "CREATE-A",
+      "mode": "create",
+      "text": "直到我创造了，三格气的大招！"
+    },
+    {
+      "replace": "old-4-04-0",
+      "id": "SURPRISE-B",
+      "mode": "surprise",
+      "text": "还能这样？！"
+    }
+  ],
+  "same_real_new_voice_performances_as_local": true,
+  "source_archive_matches_code": true,
+  "previous_v4_unchanged": {
+    "light_to_hadouken_MATCHCUT.mp4": true,
+    "hadouken_MATCH_ONLY.mp4": true
+  },
+  "local_attack_encoded_segments_vs_v4": [
+    {
+      "id": "ac-10",
+      "kind": "MATCH",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-11",
+      "kind": "AN",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-12",
+      "kind": "MATCH",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-13",
+      "kind": "AN",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-14",
+      "kind": "MATCH",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-15",
+      "kind": "AN",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-16",
+      "kind": "MATCH",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-17",
+      "kind": "AN",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-18",
+      "kind": "MATCH",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-19",
+      "kind": "AN",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-20",
+      "kind": "BLEND",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-21",
+      "kind": "BLEND",
+      "same_mp4_sha256": true
+    },
+    {
+      "id": "ac-22",
+      "kind": "G",
+      "same_mp4_sha256": true
+    }
+  ],
+  "automatic_speech_check": {
+    "automatic_only": true,
+    "results": {
+      "CREATE-A": [
+        {
+          "start": 0.0,
+          "end": 3.72,
+          "text": "直到我创造了三格器的大招"
+        }
+      ],
+      "SURPRISE-B": [
+        {
+          "start": 0.0,
+          "end": 1.2,
+          "text": "还能这样"
+        }
+      ]
+    }
+  },
+  "no_new_full_film": true,
+  "bilibili_or_toy_submission": false,
+  "local_tests": "59 passed",
+  "cloud_tests": "58 passed; 1 optional browser test skipped",
+  "human_dialogue_and_acting_review": "pending; word-prefix assumption explicitly stated, not treated as user approval"
+}

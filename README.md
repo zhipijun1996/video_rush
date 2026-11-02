@@ -4,6 +4,8 @@
 
 ## 当前下载方式（用户最新指示）
 
+**拍拍波最新台词修订 · 创造三格气大招／还能这样？！**：[手机下载新版连续试剪](https://github.com/zhipijun1996/video_rush/actions/runs/41473948330/artifacts/13155464534)，约9.1MB，保留至2026-11-16。先看 `light_to_hadouken_MATCHCUT.mp4`（23.47秒）：A改成“直到我创造了，三格气的大招！”，B被打中后改为颜艺惊讶“还能这样？！”；两句都实际重新配音并重排字幕、镜头。保留已认可的波动拳日语喊招、加速互切与叠画，包内另有4秒动作版、新配音单独试听、颜艺截图和工程。本地逐项确认动作与实机13段编码文件和V4哈希相同。[修订说明](docs/ep008-v5-lines.md) · [实际下载验证](docs/ep008-v5-verification.json)。
+
 **拍拍波最新试剪 · 加速互切→双重曝光，重做BGM末尾**：[手机下载新版试剪包](https://github.com/zhipijun1996/video_rush/actions/runs/41469458369/artifacts/13153837962)，约9.4MB，保留至2026-11-16。先看 `light_to_hadouken_MATCHCUT.mp4`（21.63秒）：对应镜头从12帧逐组缩到3帧，最后火柴人与原片叠在一起接实机；命中后音乐退出，互怼留白，末句结束后用同主题短音型收束。含动作短版、实际叠画截图、纯BGM试听与MIDI、字幕、来源和可编辑工程。仅短试剪，旧版与全片保留。[剪辑与配乐说明](docs/ep008-v4-accel.md) · [实际下载验证](docs/ep008-v4-verification.json)。
 
 **拍拍波最新衔接试剪 · 夜神月接日语波动拳**：[手机下载连续版与动作互切短版](https://github.com/zhipijun1996/video_rush/actions/runs/41462249957/artifacts/13148973511)，约8.3MB，保留至2026-11-16。先看 `light_to_hadouken_MATCHCUT.mp4`（21.03秒）：删去狂笑后的反弹规则确认，新录“三格气”的念头；一句日语喊招连续跨越五组火柴人／原片同动作镜头，再进入真实中波命中。`hadouken_MATCH_ONLY.mp4` 可单独审核动作段。含配对姿势图、分镜CSV、字幕、来源与工程。仅试剪，旧版未覆盖，全片等待审核。[剪辑说明与复现](docs/ep008-v3-matchcut.md) · [下载后实际验证](docs/ep008-v3-verification.json)。
