@@ -1,6 +1,6 @@
 # 拍拍波：用户完整分镜 v1 重剪
 
-新主片与 ep008-r2 分开保存。唯一剧情依据为 [用户分镜原文](../episodes/briefs/ep008-r3-user-storyboard-v1.md)，SHA256 `085002b9cbf3918e226500b640ca141cbaebdeca676aa365ab478eaafb6ab8d5`。36个父镜头、47句中文对白，实际时间线111.6秒；日语短引用、片尾笑声另列音轨。
+新主片与 ep008-r2 分开保存。唯一剧情依据为 [用户分镜原文](../episodes/briefs/ep008-r3-user-storyboard-v1.md)，SHA256 `085002b9cbf3918e226500b640ca141cbaebdeca676aa365ab478eaafb6ab8d5`。36个父镜头、47句中文对白，实际时间线112.5秒；日语短引用、片尾笑声另列音轨。
 
 ```sh
 python -m tools.prepare_wave_story --spec episodes/ep008-r3-film.json --source build/sources/wave-game --project build/recordings/wave-film-c6f1326c824a

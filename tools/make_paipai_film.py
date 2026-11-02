@@ -62,7 +62,7 @@ def plan(spec,voices):
         id=s['id'];n=s['seconds']
         if id=='3-01':game(s,1,'charge',0);game(s,2,'launch',.29)
         if id=='3-02':game(s,3,'charge',0)
-        if id=='3-03':game(s,4,'whole',3.45)
+        if id=='3-03':game(s,4,'whole',4.60)
         if id=='4-01':
             for i,r in enumerate([5,6,7]):game(s,r,'charge',i*.2,seconds=.2)
         if id=='4-03':game(s,8,'whole',0)
@@ -81,7 +81,7 @@ def plan(spec,voices):
         if id=='7-02':
             a=mobile['battle']+.62;s['layers'].append({'layer':'G','source':'mobile','in':a,'out':a+min(n,3.4),'at':0,'seconds':min(n,3.4),'rect':[1401,627,54,116],'kind':'handset'})
         def an(ref,source_in,seconds,at,**extra):s['layers'].append({'layer':'AN','source':ref,'in':source_in,'out':source_in+seconds,'at':at,'seconds':seconds,**extra})
-        if id=='3-03':an('sore',155.4,.55,.35);an('cylinder',39.0,.55,2.25)
+        if id=='3-03':an('sore',155.4,.55,1.00);an('cylinder',39.0,.55,4.00)
         if id=='3-04C':an('light',1.0,.45,s['scheduled_lines'][1]['start']+.35,alpha=.72,rect=[320,235,470,420],crop=[.4,0,.3,.65])
         if id=='4-02':
             an('street',191.6,.30,.25,alpha=.55,rect=[260,340,720,500]);an('street',193.95,.48,.72)
@@ -159,7 +159,7 @@ def soundtrack(project,spec,voices,out):
             first=project['capture']['rounds'][0];at=start if id!='3-04D' else s['end']-.70
             add(pcm(CAPTURE/'continuous.mp4',first['start'],1.12),at,.65)
         if id=='3-03':
-            for ref,a,b,at in [('sore',155.20,156.95,.10),('cylinder',37.95,40.75,1.90)]:
+            for ref,a,b,at in [('sore',154.50,157.30,.10),('cylinder',37.95,40.75,2.95)]:
                 add(pcm(ROOT/spec['references'][ref]['file'],a,b-a),start+at,.70);sources.append({'id':id,'source':ref,'in':a,'out':b,'at':start+at,'layer':'AN audio'})
         if id=='3-04B' and 'evil_laugh' in spec['references']:
             add(pcm(ROOT/spec['references']['evil_laugh']['file'],0,.7),s['end']-.7,.42)
@@ -206,7 +206,7 @@ def captions(project,voices,out):
             c,method=narration_cues(l['text'],bounds,s['start']+l['start'],v['duration'],1)
             cues+=c;rows+=c
         if s['id']=='3-03':
-            c=[{'start':s['start']+.1,'end':s['start']+1.85,'text':'那可不一定。'},{'start':s['start']+1.90,'end':s['start']+4.70,'text':'陷阱发动——魔法筒！'}];cues+=c;rows+=c
+            c=[{'start':s['start']+.1,'end':s['start']+2.90,'text':'那可不一定。'},{'start':s['start']+2.95,'end':s['start']+5.75,'text':'陷阱发动——魔法筒！'}];cues+=c;rows+=c
         ass.append({'start':s['start'],'end':s['end'],'cues':cues,'provenance_label':'','emphasis':''})
     ass_file(out/'subtitles.ass',{'display_chapters':False,'shots':ass})
     def stamp(t):

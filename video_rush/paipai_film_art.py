@@ -187,7 +187,7 @@ def image(shot,t,seconds):
  if scene=='turn-evil' and not evil_phase:a_mood='stiff';pa='idle'
  if scene=='shock-A':a_mood='shock';b_mood='smug';flash=t<.2
  if scene=='spell-B':
-  a_mood='shock' if t>.3 else 'smug';b_mood='evil';pb='point' if t<.35 else 'idle';flash=t<.3
+  a_mood='shock' if t>5.69 else 'smug';b_mood='evil';pb='point';flash=t<.3;talkB=.1<t<5.75
  if scene=='argument':pa='point' if talkA else 'idle';b_mood='evil' if talkB else 'smug';flash=talkB and t%1<.2
  if scene=='agree':a_mood='smug';b_mood='stiff';pa='point'
  if scene in ('three','three-taunt'):fa=3;a_mood='smug';b_mood='shock' if scene=='three-taunt' else 'normal'
@@ -213,7 +213,7 @@ def image(shot,t,seconds):
  if scene in ('evil-B','evil-A','shock-A'):
   box=(480,100,1280,550) if scene=='evil-B' else (0,130,800,580)
   im=im.crop(box).resize((W,H))
- if scene=='spell-B':im=im.crop((480,100,1280,550) if t<.35 else (0,130,800,580)).resize((W,H))
+ if scene=='spell-B':im=im.crop((480,100,1280,550) if t<5.69 else (0,130,800,580)).resize((W,H))
  if scene in ('three','three-taunt','five'):im=im.crop((0,120,850,598)).resize((W,H))
  if evil_phase:
   q=smooth((t-active.get('start',t))/.45);left=round(0+30*q);width=round(1280-500*q)
