@@ -167,7 +167,14 @@ def mix_trial(p,spec,out):
     for v in p['voices']:
         add(pcm(v['path'],v['source_in'],v['seconds']),v['start']);voice_ranges.append((v['start'],v['start']+v['seconds']))
     for s in p['segments']:
-        if s['kind']=='G':add(pcm(s['source'],s['in'],s['seconds']),s['start'],.75)
+        if s['kind']=='G':
+            fx=pcm(s['source'],s['in'],s['seconds']);gain=np.full(len(fx),.75,dtype=np.float32)
+            for start,end in voice_ranges:
+                a=max(0,round((start-s['start'])*sr));b=min(len(gain),round((end-s['start'])*sr))
+                if b>a:
+                    gain[a:b]=np.minimum(gain[a:b],.36)
+                    release=min(len(gain),b+round(.12*sr));gain[b:release]=np.minimum(gain[b:release],np.linspace(.36,.75,release-b))
+            add(fx*gain[:,None],s['start'])
     # Only original game's recording/samples supply action SFX.
     project=ROOT/'build/recordings/wave-film-c6f1326c824a'
     charge=out/'portable/game/charge.m4a' if (out/'portable/game/charge.m4a').exists() else project/'assets/audio/charge.wav'
