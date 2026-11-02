@@ -1,0 +1,70 @@
+name: 拍拍波加速互切与叠画试剪
+run-name: 拍拍波 · 加速互切与叠画 · 重做配乐收尾
+on:
+  workflow_dispatch:
+    inputs:
+      bridge_artifacts:
+        description: Ordered JSON array of the verified new bridge voice chunk IDs
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  matchcut:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VR_BRIDGE_ARTIFACTS: ${{ inputs.bridge_artifacts }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media tools and verify code
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk libfluidsynth3
+          python -m pip install -e '.[test]' numpy==2.3.5
+          pytest -q
+      - name: Restore preserved performances and render only the continuous trial
+        run: python -m tools.make_paipai_accel
+      - name: Package comparison poses, source receipts and editable project
+        run: python -m tools.paipai_accel_delivery
+      - name: Downloadable review and failure evidence
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paipai-accelerating-double-exposure-review
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-v4-accel/light_to_hadouken_MATCHCUT.mp4
+            build/episodes/ep008-v4-accel/hadouken_MATCH_ONLY.mp4
+            build/episodes/ep008-v4-accel/*.md
+            build/episodes/ep008-v4-accel/*.json
+            build/episodes/ep008-v4-accel/*.csv
+            build/episodes/ep008-v4-accel/*.ass
+            build/episodes/ep008-v4-accel/*.png
+            build/episodes/ep008-v4-accel/extra/*.m4a
+            build/episodes/ep008-v4-accel/portable/
+            build/episodes/ep008-v4-accel/licenses/
+            build/episodes/ep008-v4-accel/editable/
+            build/episodes/ep008-v4-accel/logs/
+            build/episodes/ep008-v4-accel/music/*.m4a
+            build/episodes/ep008-v4-accel/music/*.mid
+            build/episodes/ep008-v4-accel/music/*.json
+      - name: Phone review link
+        if: success()
+        env:
+          REVIEW_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载连续试剪与动作互切短版]('+os.environ['REVIEW_URL']+')\n\n先看 light_to_hadouken_MATCHCUT.mp4。保留旧版，等待审核后再推广全片。\n')
+          PY

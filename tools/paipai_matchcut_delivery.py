@@ -7,8 +7,8 @@ from PIL import Image, ImageDraw
 from video_rush.common import ROOT, read, write, sha, run
 
 
-def package(out):
-    spec=read('episodes/ep008-v3-matchcut.json');p=read(out/'timeline.json')
+def package(out,*,spec_path='episodes/ep008-v3-matchcut.json',notes=None,extra_sources=None):
+    spec=read(spec_path);p=read(out/'timeline.json')
     (out/'修改说明.md').write_text('''# 夜神月 → 日语波动拳：连续试剪
 
 先看 light_to_hadouken_MATCHCUT.mp4（完整衔接），再看 hadouken_MATCH_ONLY.mp4（只看动作互切）。
@@ -23,6 +23,7 @@ def package(out):
 
 手机审核：笑完之后想到三格气是否顺畅？日语喊招是否更带感？火柴人与原片是否像同一动作？切换是否过密？技术通过不代表观感通过。
 ''')
+    if notes is not None:(out/'修改说明.md').write_text(notes)
     pairs=[p['segments'][i:i+2] for i,s in enumerate(p['segments']) if s.get('match_phase') and s['kind']=='MATCH']
     canvas=Image.new('RGB',(960,len(pairs)*295),'#ddd');draw=ImageDraw.Draw(canvas)
     for row,pair in enumerate(pairs):
@@ -34,10 +35,10 @@ def package(out):
         writer=csv.writer(f);writer.writerow(['id','start','duration','performer','phase','source_in','source'])
         for s in p['segments']:writer.writerow([s['id'],s['start'],s['seconds'],s['kind'],s.get('match_phase',s.get('mode',s.get('phase',''))),s.get('in',''),s.get('source','original stick animation')])
     head=run(['git','rev-parse','HEAD']).strip()
-    write(out/'sources.json',{'git_head':head,'spec_sha256':sha(ROOT/'episodes/ep008-v3-matchcut.json'),'previous_artifact':spec['previous_review_artifact'],'previous_zip_sha256':spec['previous_review_zip_sha256'],'japanese_shout':spec['japanese_hadouken'],'new_bridge_voice':spec['bridge_voice'],'preserved_inputs':read(out/'portable/manifest.json'),'real_game_derivatives':read(out/'portable/game-bank.json'),'anime_and_soundfont_licenses':'licenses/; unchanged pinned V2 sources','rights_review':'third-party anime/shout not cleared; private review, no public submission','full_film_promoted':False})
+    write(out/'sources.json',{'git_head':head,'spec_sha256':sha(ROOT/spec_path),'previous_artifact':spec['previous_review_artifact'],'previous_zip_sha256':spec['previous_review_zip_sha256'],'japanese_shout':spec['japanese_hadouken'],'new_bridge_voice':spec['bridge_voice'],'preserved_inputs':read(out/'portable/manifest.json'),'real_game_derivatives':read(out/'portable/game-bank.json'),'anime_and_soundfont_licenses':'licenses/; unchanged pinned V2 sources','rights_review':'third-party anime/shout not cleared; private review, no public submission','full_film_promoted':False,'revision_details':extra_sources or {}})
     editable=out/'editable';editable.mkdir(exist_ok=True)
     run(['git','archive','--format=zip','--output',editable/'video-rush-project.zip','HEAD'])
-    files=[*out.glob('*.md'),*out.glob('*.json'),*out.glob('*.csv'),*out.glob('*.ass'),*out.glob('*.png'),out/'light_to_hadouken_MATCHCUT.mp4',out/'hadouken_MATCH_ONLY.mp4',out/'extra/idea-bridge.m4a',out/'extra/hadouken-jp.m4a',*out.joinpath('portable').rglob('*'),*out.joinpath('licenses').rglob('*'),*editable.rglob('*'),*out.joinpath('logs').rglob('*')]
+    files=[*out.glob('*.md'),*out.glob('*.json'),*out.glob('*.csv'),*out.glob('*.ass'),*out.glob('*.png'),out/'light_to_hadouken_MATCHCUT.mp4',out/'hadouken_MATCH_ONLY.mp4',out/'extra/idea-bridge.m4a',out/'extra/hadouken-jp.m4a',*out.joinpath('portable').rglob('*'),*out.joinpath('licenses').rglob('*'),*editable.rglob('*'),*out.joinpath('logs').rglob('*'),*out.joinpath('music').glob('*.m4a'),*out.joinpath('music').glob('*.mid'),*out.joinpath('music').glob('*.json')]
     write(out/'delivery-manifest.json',{str(f.relative_to(out)):sha(f) for f in sorted(set(files)) if f.is_file() and f.name!='delivery-manifest.json'})
 
 

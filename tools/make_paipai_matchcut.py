@@ -116,7 +116,7 @@ def validate(p):
         if m['performer']=='AN':
             if m['source_in']<last:raise ValueError('Anime motion restarted')
             last=m['source_in']+m['seconds']
-    if not all(any(m['performer']=='MATCH' and m['phase']==phase for m in p['matches']) for phase in ['hands','torso','mouth','face','palm']):raise ValueError('Missing real matched R acting phase')
+    if not all(any(m['performer']=='MATCH' and m['phase']==phase for m in p['matches']) for phase in p.get('required_match_phases',['hands','torso','mouth','face','palm'])):raise ValueError('Missing real matched R acting phase')
 
 
 def mix(p,spec,out):
@@ -144,16 +144,16 @@ def mix(p,spec,out):
     path=out/'mix.wav';subprocess.run(['ffmpeg','-v','error','-y','-f','f32le','-ar','24000','-ac','2','-i','-','-c:a','pcm_f32le',str(path)],input=mix.astype('<f4').tobytes(),check=True);return path
 
 
-def render(spec,out):
-    p=plan(spec,out);write(out/'timeline.json',p);(out/'segments').mkdir(exist_ok=True);(out/'logs').mkdir(exist_ok=True)
+def render(spec,out,*,plan_fn=plan,segment_fn=segment,mix_fn=mix):
+    p=plan_fn(spec,out);write(out/'timeline.json',p);(out/'segments').mkdir(exist_ok=True);(out/'logs').mkdir(exist_ok=True)
     for s in p['segments']:
         if s['kind']=='MATCH':
             target=out/'segments'/(s['id']+'.mp4');receipt=target.with_suffix('.json');key=digest({'s':s,'art':sha(ROOT/'video_rush/paipai_match_art.py')})
             if not target.exists() or not receipt.exists() or read(receipt).get('key')!=key or read(receipt).get('sha256')!=sha(target):
                 draw_match(target,s['phase'],s['seconds'],action_at=s.get('action_at',0),envelope=s.get('envelope'),previous=s.get('previous'));write(receipt,{'key':key,'sha256':sha(target)})
-        else:segment(out,s)
+        else:segment_fn(out,s)
     f=out/'concat.txt';f.write_text(''.join(f"file '{out/'segments'/(s['id']+'.mp4')}'\n" for s in p['segments']));joined=out/'joined.mp4';run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',f,'-c','copy',joined])
-    captions=[{'start':v['start'],'end':v['start']+v['seconds'],'cues':[{'start':v['start'],'end':v['start']+v['seconds'],'text':v['text']}],'provenance_label':'','emphasis':''} for v in p['voices']];ass_file(out/'subtitles.ass',{'display_chapters':False,'shots':captions});audio=mix(p,spec,out);movie=out/'light_to_hadouken_MATCHCUT.mp4'
+    captions=[{'start':v['start'],'end':v['start']+v['seconds'],'cues':[{'start':v['start'],'end':v['start']+v['seconds'],'text':v['text']}],'provenance_label':'','emphasis':''} for v in p['voices']];ass_file(out/'subtitles.ass',{'display_chapters':False,'shots':captions});audio=mix_fn(p,spec,out);movie=out/'light_to_hadouken_MATCHCUT.mp4'
     run(['ffmpeg','-v','error','-y','-reinit_filter','0','-i',joined,'-i',audio,'-filter_complex',f'[0:v]setpts=PTS-STARTPTS,ass={out/"subtitles.ass"},fps=30,format=yuv420p[v];[1:a]loudnorm=I=-16:TP=-1.5:LRA=14,aresample=48000[a]','-map','[v]','-map','[a]','-t',p['seconds'],'-c:v','libx264','-preset','veryfast','-crf','20','-threads','2','-c:a','aac','-b:a','160k','-movflags','+faststart',movie],log=out/'logs/render.log',timeout=300)
     run(['ffmpeg','-v','error','-i',movie,'-f','null','-'],log=out/'logs/decode.log');checks=verify_final_shots(movie,p['segments'],out/'segments');write(out/'frame-checks.json',checks)
     if not all(c['passed'] for c in checks):raise ValueError('Missing shot in final match cut')
