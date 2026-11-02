@@ -352,11 +352,12 @@ def deliver(spec,project,voices,cues,final,out):
     print('DELIVERED',final,report['duration'],flush=True)
 
 
-def visual_shot(s,spec,out,structure=False):
+def visual_shot(s,spec,out,structure=False,layer_inputs=None):
     folder=out/'segments';folder.mkdir(exist_ok=True);base=out/'r-animation'/(s['id']+'.mp4');target=folder/(s['id']+('.structure' if structure else '')+'.mp4')
     layers=[l for l in s['layers'] if not structure or l['layer']=='G']
-    input_hashes={l['source']:sha(CAPTURE/('continuous.mp4' if l['source']=='game' else 'mobile.mp4')) if l['layer']=='G' else spec['references'][l['source']]['sha256'] for l in layers}
-    key=digest({'shot':s,'layers':layers,'inputs':input_hashes,'art':sha(ROOT/'video_rush/paipai_film_art.py'),'renderer_version':1});receipt=target.with_suffix('.json')
+    layer_inputs=layer_inputs or {}
+    input_hashes={str(i):sha(layer_inputs[i]['path']) if i in layer_inputs else sha(CAPTURE/('continuous.mp4' if l['source']=='game' else 'mobile.mp4')) if l['layer']=='G' else spec['references'][l['source']]['sha256'] for i,l in enumerate(layers)}
+    key=digest({'shot':s,'layers':layers,'inputs':input_hashes,'resolved_layers':{str(i):{k:str(v) if isinstance(v,Path) else v for k,v in r.items()} for i,r in layer_inputs.items()},'art':sha(ROOT/'video_rush/paipai_film_art.py'),'renderer_version':1});receipt=target.with_suffix('.json')
     if target.exists() and receipt.exists() and read(receipt).get('key')==key and read(receipt).get('sha256')==sha(target):return target
     art_key=digest({'shot':s,'art':sha(ROOT/'video_rush/paipai_film_art.py')});art_receipt=base.with_suffix('.json')
     if not base.exists() or not art_receipt.exists() or read(art_receipt).get('key')!=art_key:
@@ -364,10 +365,12 @@ def visual_shot(s,spec,out,structure=False):
     args=['ffmpeg','-v','error','-y','-i',base];filters=['[0:v]setpts=PTS-STARTPTS,setsar=1[v0]'];current='v0'
     for i,l in enumerate(layers,1):
         path=CAPTURE/('continuous.mp4' if l['source']=='game' else 'mobile.mp4') if l['layer']=='G' else ROOT/spec['references'][l['source']]['file']
-        if l['in']<0 or l['out']>duration(path)+.05:raise ValueError('Layer outside recorded source '+str(l))
-        args+=['-ss',str(l['in']),'-t',str(l['seconds']),'-i',str(path)]
+        resolved=layer_inputs.get(i-1,{})
+        path=Path(resolved.get('path',path));source_in=resolved.get('in',l['in'])
+        if source_in<0 or source_in+l['seconds']>duration(path)+.05:raise ValueError('Layer outside recorded source '+str(l))
+        args+=['-ss',str(source_in),'-t',str(l['seconds']),'-i',str(path)]
         v=f'[{i}:v]setpts=PTS-STARTPTS+{l["at"]}/TB'
-        if l['source']=='game':v+=',crop=1116:628:402:70'
+        if l['source']=='game' and not resolved.get('cropped'):v+=',crop=1116:628:402:70'
         if l.get('crop'):
             x,y,w,h=l['crop'];v+=f',crop=iw*{w}:ih*{h}:iw*{x}:ih*{y}'
         if l.get('flip'):v+=',hflip'

@@ -1,0 +1,72 @@
+name: 拍拍波七章完整视听修订版
+run-name: 拍拍波 · 完整七章 · 日常开场与音画同步
+on:
+  workflow_dispatch:
+    inputs:
+      bank_groups:
+        description: Ordered JSON array of the nested JSON arrays of bounded full-bank input Artifact IDs
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  matchcut:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VR_FULL_BANK_GROUPS: ${{ inputs.bank_groups }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media tools and verify code
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk libfluidsynth3
+          python -m pip install -e '.[test]' numpy==2.3.5
+          pytest -q
+      - name: Restore preserved performances and render the complete film
+        run: python -m tools.make_paipai_full
+      - name: Package comparison poses, source receipts and editable project
+        run: python -m tools.paipai_full_delivery
+      - name: Downloadable review and failure evidence
+        id: delivery
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paipai-complete-seven-chapter-av-revision
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep008-v6-full/final.mp4
+            build/episodes/ep008-v6-full/opening-review.mp4
+            build/episodes/ep008-v6-full/*.md
+            build/episodes/ep008-v6-full/*.json
+            build/episodes/ep008-v6-full/*.csv
+            build/episodes/ep008-v6-full/*.ass
+            build/episodes/ep008-v6-full/*.png
+            build/episodes/ep008-v6-full/extra/*.m4a
+            build/episodes/ep008-v6-full/portable/
+            build/episodes/ep008-v6-full/full-inputs/
+            build/episodes/ep008-v6-full/extra/clap*.wav
+            build/episodes/ep008-v6-full/licenses/
+            build/episodes/ep008-v6-full/editable/
+            build/episodes/ep008-v6-full/logs/
+            build/episodes/ep008-v6-full/music/*.m4a
+            build/episodes/ep008-v6-full/music/*.mid
+            build/episodes/ep008-v6-full/music/*.json
+      - name: Phone review link
+        if: success()
+        env:
+          REVIEW_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载完整主片、封面和投稿资料]('+os.environ['REVIEW_URL']+')\n\n先看 final.mp4；opening-review.mp4 可单独核对开头同步。保留旧版，未投稿B站/Toy。\n')
+          PY
