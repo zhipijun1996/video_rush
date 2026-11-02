@@ -4,6 +4,8 @@
 
 ## 当前下载方式（用户最新指示）
 
+**拍拍波最新衔接试剪 · 夜神月接日语波动拳**：[手机下载连续版与动作互切短版](https://github.com/zhipijun1996/video_rush/actions/runs/41462249957/artifacts/13148973511)，约8.3MB，保留至2026-11-16。先看 `light_to_hadouken_MATCHCUT.mp4`（21.03秒）：删去狂笑后的反弹规则确认，新录“三格气”的念头；一句日语喊招连续跨越五组火柴人／原片同动作镜头，再进入真实中波命中。`hadouken_MATCH_ONLY.mp4` 可单独审核动作段。含配对姿势图、分镜CSV、字幕、来源与工程。仅试剪，旧版未覆盖，全片等待审核。[剪辑说明与复现](docs/ep008-v3-matchcut.md) · [下载后实际验证](docs/ep008-v3-verification.json)。
+
 **拍拍波V2 · 先审三段视听方案**：[手机下载试剪与配音A/B包](https://github.com/zhipijun1996/video_rush/actions/runs/41449236666/artifacts/13144007126)，约16.5MB，保留至2026-11-16。解压先看根目录的 `01_light_NEW.mp4`（13.2秒）、`02_hadouken_NEW.mp4`（12.7秒）、`03_dio_ultra_NEW.mp4`（9.7秒）。含五组重点配音各A/B两版、三条普通童声、全片BGM设计表、七种同主题配器试听与MIDI、旧版对照、原生中波证据和单独游戏端建议。
 
 已实际下载验证139个归档文件、117项清单哈希、三段完整解码、13条试听及原表演字节一致性。本地50项通过；云端49项通过/1项可选浏览器测试跳过。**没有重导新全片，等用户审核三段后才推广；旧版与工程保留。** [导演方案与复现](docs/ep008-v2-av-review.md) · [实际验证](docs/ep008-v2-verification.json)。

@@ -1,0 +1,67 @@
+{
+  "episode": "ep008-v3-matchcut",
+  "production_commit": "77e35b0fa71c8cb9cc9f8c03a5d605886d87096a",
+  "run_id": 41462249957,
+  "job_id": 125333996058,
+  "artifact_id": 13148973511,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41462249957/artifacts/13148973511",
+  "artifact_bytes": 8308649,
+  "artifact_zip_sha256": "5c874716206480ae7ebe7c7edeb8627d3e440e7764653428c263a5b01b483ec9",
+  "expires_utc": "2026-11-16T14:31:48Z",
+  "manifest_files_verified": 81,
+  "movies": [
+    {
+      "file": "light_to_hadouken_MATCHCUT.mp4",
+      "seconds": 21.033333,
+      "sha256": "064899c46dd4ca3ea5be262ab426c919bb262ffeeeab2fcb0c9e2a105534fa66",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 335531,
+        "peak": 0.756622314453125,
+        "rms": 0.10599222215744576,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    },
+    {
+      "file": "hadouken_MATCH_ONLY.mp4",
+      "seconds": 4.166667,
+      "sha256": "c86f01cde7338271ba9a81698bd9899e60d9bbd287007a5e010c5d85bf4f6653",
+      "full_decode": true,
+      "audio": {
+        "decoded_samples": 66901,
+        "peak": 0.48980712890625,
+        "rms": 0.06348489775388243,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+      }
+    }
+  ],
+  "preserved_v2": {
+    "01_light_NEW.mp4": true,
+    "02_hadouken_NEW.mp4": true,
+    "03_dio_ultra_NEW.mp4": true
+  },
+  "exact_bridge_performance": true,
+  "source_archive_matches_code": true,
+  "all_exported_shots_verified": true,
+  "japanese_shouts": 1,
+  "no_new_full_film": true,
+  "bilibili_or_toy_submission": false,
+  "local_tests": "55 passed",
+  "cloud_tests": "54 passed; 1 optional browser test skipped",
+  "automatic_bridge_transcript": {
+    "automatic_only": true,
+    "transcript": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "text": "那...三口吃呢"
+      }
+    ],
+    "decoder": "ffmpeg PCM; PyAV metadata_errors incompatibility avoided"
+  },
+  "human_fluency_and_match_quality": "pending; short Chinese terminology was ambiguous to base ASR; not used to claim speech accuracy"
+}
