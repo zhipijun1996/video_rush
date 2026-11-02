@@ -1,0 +1,135 @@
+{
+  "episode": "ep008-r3",
+  "brief_sha256": "085002b9cbf3918e226500b640ca141cbaebdeca676aa365ab478eaafb6ab8d5",
+  "source_commit": "c6f1326c824a4b5c8489b0918285d9063f9d1db6",
+  "production_commit": "dfc7cc06679a505a77dedc6aa8de848fc3fb47fe",
+  "local": {
+    "duration": 112.5,
+    "main_sha256": "a258d4ff3ac8418d695140227f94699fa1f52f65b5973a54c37cb9909339499a",
+    "short_tail_sha256": "7b1c4ef27bd174008f74ee150c97d60e8baddbd7b3c7b7d6dfb957f33e6b401b",
+    "checks": {
+      "decode": true,
+      "dimensions": true,
+      "fps": true,
+      "codecs": true,
+      "duration_in_requested_range": true,
+      "real_voice_receipts": true,
+      "subtitle_bounds": true,
+      "no_obvious_clipping": true,
+      "all_parent_shots_survive": true,
+      "all_short_anime_layers_survive": true,
+      "no_detected_long_black_or_freeze": true,
+      "continuous_21_rounds": true,
+      "A_returns_B_medium": true,
+      "legal_final_beam": true,
+      "single_comeback_line": true
+    },
+    "parent_frame_samples": 36,
+    "short_anime_samples": 11,
+    "code_hashes_match": true,
+    "tests": 46,
+    "quote_spot_check": {
+      "model": "faster-whisper base int8 local CPU",
+      "final_sha256": "a258d4ff3ac8418d695140227f94699fa1f52f65b5973a54c37cb9909339499a",
+      "shot": "3-03",
+      "automatic_transcript": "さあ、それはどうかな?トラスト発動!マジックシリンダ!",
+      "review_status": "Automated semantic spot-check, not a human listening pass"
+    }
+  },
+  "cloud": {
+    "run_id": 41431047445,
+    "job_id": 125229409900,
+    "status": "success",
+    "commit": "dfc7cc06679a505a77dedc6aa8de848fc3fb47fe",
+    "tests": 46,
+    "artifact_id": 13133284335,
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41431047445/artifacts/13133284335",
+    "artifact_bytes": 25101843,
+    "artifact_zip_sha256": "c2c8603295771a997a98fb60a539b3b502acd61d2a2108113c4eddc24575f916",
+    "expires_utc": "2026-11-16T10:50:11Z",
+    "download_verification": {
+      "archive_files": 176,
+      "declared_hashes_checked": 19,
+      "required_files": [
+        "final.mp4",
+        "short-tail.mp4",
+        "cover.png",
+        "script.md",
+        "storyboard.json",
+        "edit-project.json",
+        "shot-list.csv",
+        "subtitles.srt",
+        "bilibili.md",
+        "sources.json",
+        "report.json",
+        "phone-review.md",
+        "approved-storyboard.md",
+        "editable/video-rush-source.zip"
+      ],
+      "producer_commit": "dfc7cc06679a505a77dedc6aa8de848fc3fb47fe",
+      "movies": {
+        "final.mp4": {
+          "duration": 112.5,
+          "sha256": "9b1024935205d87118735391cf29e6dd8c018ee6d86c2541782c2064eb3be3a4",
+          "full_decode": true,
+          "audio": {
+            "decoded_samples": 1798485,
+            "peak": 0.850830078125,
+            "rms": 0.10244751666845478,
+            "clipped_fraction": 0.0,
+            "audible_signal": true,
+            "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+          },
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "fps": "30/1",
+          "audio_video_difference": 0.0
+        },
+        "short-tail.mp4": {
+          "duration": 110.938,
+          "sha256": "e809be0be2393e81c17534f21ae3ae22ceb7a66a6efed90bae89b7eb9f3861ff",
+          "full_decode": true,
+          "audio": {
+            "decoded_samples": 1775275,
+            "peak": 0.856475830078125,
+            "rms": 0.1027916783516121,
+            "clipped_fraction": 0.0,
+            "audible_signal": true,
+            "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+          },
+          "dimensions": [
+            1920,
+            1080
+          ],
+          "fps": "30/1",
+          "audio_video_difference": 0.004666999999997756
+        }
+      },
+      "legal_battle_and_source_snapshot": true,
+      "editable_archive_matches_recipe": true,
+      "brief_matches_user_original": true,
+      "status": "downloaded, unpacked, hashes checked and both movies fully decoded; human review pending"
+    }
+  },
+  "iterations": [
+    {
+      "run_id": 41429727695,
+      "status": "cancelled by producer",
+      "reason": "Duplicate native trap-card voice masked foreground original quote"
+    },
+    {
+      "run_id": 41430479880,
+      "status": "cancelled by producer",
+      "reason": "Preserve entire sore-wa-dou-kana phrase; previous 1.75s window truncated it"
+    }
+  ],
+  "pending": [
+    "Human pacing, humor and acting review",
+    "Third-party anime and native-recording permissions",
+    "Bilibili contest eligibility"
+  ],
+  "publication": "No Bilibili/Toy submission performed",
+  "content_review": "Source/order/legality and technical checks performed; actual extracted frames visually inspected. No human humor/acting/pacing approval fabricated."
+}
