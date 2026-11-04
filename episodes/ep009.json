@@ -789,12 +789,13 @@
       "scope": "Test fixture only; not production gameplay defect"
     },
     {
-      "id": 41659241932,
+      "id": "ci-failure-api",
       "kind": "actual_github_run_metadata",
       "conclusion": "failure",
       "head_sha": "0167ef34990e9c19a9ad57898f1e07f479ab2a5d",
       "html_url": "https://github.com/zhipijun1996/gunman-rush/actions/runs/41659241932",
-      "run_attempt": 1
+      "run_attempt": 1,
+      "run_id": 41659241932
     },
     {
       "id": "pr125",

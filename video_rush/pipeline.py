@@ -11,7 +11,7 @@ from .common import ROOT, read, write, sha, digest, run, duration
 from .footage import collect
 from .narration import narrate
 from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans, concatenate_cuts
-from .quality import validate
+from .quality import validate,validate_evidence_registry
 from .publish import posting_copy
 from .subtitles import narration_cues
 
@@ -92,6 +92,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
     def research():
         scope=ROOT/'build/research/scope.json'
         snapshot=spec.get('research_scope') or (read(scope) if scope.exists() else {'status':'using_frozen_authored_sources','repository':spec['repository'],'coverage':'episode assets and authored claims only; run research for a new complete scan'})
+        snapshot=dict(snapshot)
         snapshot['episode_evidence']=spec.get('evidence',[])
         write(output/'research.json',snapshot);return [output/'research.json']
     stages('Research',{'asset_spec':a_spec,'story_ids':spec['story_ids'],'evidence':spec.get('evidence',[]),'scope':spec.get('research_scope')},research)
@@ -105,6 +106,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         write(output/'script.json',spec);return [output/'script.md',output/'script.json']
     stages('Script',spec,script)
     def planning():
+        validate_evidence_registry(spec)
         for s in spec['shots']:
             if not s.get('narration') or not s.get('assets') or not (s.get('prs') or s.get('evidence')):
                 raise ValueError('Every shot needs narration, media and PR/document/user evidence')
@@ -200,7 +202,8 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
     stages('Rendering',{'timeline':sha(output/'storyboard.json'),'media':sha(output/'media/manifest.json'),'ass':sha(output/'subtitles.ass'),'renderer':sha(ROOT/'video_rush/render.py'),'animation':animation_code,'composition_code':sha(Path(__file__)),'music':sha(music) if music else None,'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':3,'cover_design':spec.get('cover'),'cover_sources':[assets[x]['sha256'] for x in spec['cover_assets']]},rendering)
     def validation():
         report=validate(output,spec,timeline,sources)
-        if not report['technical']['passed']:raise RuntimeError('Technical quality failed; inspect report.json and logs')
+        if not report['technical']['passed'] or not report['content']['structural_pass']:
+            raise RuntimeError('Technical/content structure quality failed; inspect report.json and logs')
         return [output/'report.json',output/'phone-review.md',*sorted((output/'animation-evidence').glob('*'))]
     stages('Quality Validation',{'final':sha(output/'final.mp4'),'sources':sha(output/'sources.json'),'validator':sha(ROOT/'video_rush/quality.py'),'animation':animation_code},validation)
     def delivery():

@@ -26,6 +26,14 @@ on:
       images_sha256:
         description: SHA256 of optional user-image ZIP
         required: false
+      reuse_artifact:
+        description: Optional prior artifact ID for evidence-only metadata repair; audiovisual changes are refused
+        default: ''
+        required: false
+      reuse_sha256:
+        description: Exact prior ZIP SHA256 for evidence-only repair
+        default: ''
+        required: false
 permissions:
   contents: read
   actions: write
@@ -44,6 +52,8 @@ jobs:
       VR_IMAGES_ARTIFACTS: ${{ inputs.images_artifacts }}
       VR_IMAGES_SHA256: ${{ inputs.images_sha256 }}
       GH_TOKEN: ${{ github.token }}
+      VR_REUSE_ARTIFACT: ${{ inputs.reuse_artifact }}
+      VR_REUSE_SHA256: ${{ inputs.reuse_sha256 }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -89,11 +99,17 @@ jobs:
       - name: Install pinned recording engine when needed
         run: python tools/setup_recording.py
       - name: Restore requested soundtrack
+        if: inputs.reuse_artifact == ''
         run: python tools/restore_actions_music.py
       - name: Restore exact requested concept images
         run: python tools/restore_actions_images.py
       - name: Produce and validate
-        run: python -m video_rush produce --source build/source --spec build/actions-episode.json --topic "$VR_TOPIC" --output "build/episodes/$VR_EPISODE" --local-only
+        run: |
+          if [ -n "$VR_REUSE_ARTIFACT" ]; then
+            python -m tools.repair_episode_metadata
+          else
+            python -m video_rush produce --source build/source --spec build/actions-episode.json --topic "$VR_TOPIC" --output "build/episodes/$VR_EPISODE" --local-only
+          fi
       - name: Keep movie and review evidence (also on failure)
         id: episode
         if: always()
@@ -114,6 +130,7 @@ jobs:
             build/episodes/${{ inputs.episode }}/source-evidence/
             build/episodes/${{ inputs.episode }}/browser-evidence/
             build/episodes/${{ inputs.episode }}/animation-evidence/
+            build/episodes/${{ inputs.episode }}/original-producer/
             build/episodes/${{ inputs.episode }}/narration/*.json
             build/episodes/${{ inputs.episode }}/narration/*.jsonl
 

@@ -7,10 +7,24 @@ from .narration import audio_metrics
 from .render import montage_spans
 
 
+def validate_evidence_registry(spec):
+    ids=[e.get('id') for e in spec.get('evidence',[])]
+    if any(not isinstance(x,str) or not x.strip() for x in ids):
+        raise ValueError('Evidence IDs must be non-empty strings; store numeric run IDs separately')
+    if len(ids)!=len(set(ids)):raise ValueError('Duplicate evidence IDs')
+    known=set(ids)
+    for shot in spec.get('shots',[]):
+        missing=set(shot.get('evidence',[]))-known
+        if missing:raise ValueError('Unresolved evidence in '+shot['id']+': '+str(sorted(missing)))
+
+
 def content_check(spec, timeline, sources):
     ids={a['id'] for a in sources['assets']}
     evidence_ids={e['id'] for e in spec.get('evidence',[])}
+    try:validate_evidence_registry(spec);registry_valid=True
+    except ValueError:registry_valid=False
     structural = {
+        'evidence_registry_valid':registry_valid,
         'explicit_topic': bool(spec['title']),
         'first_15_seconds_hook_authored': any(s['start']<15 and (s.get('emphasis') or s.get('punchline')) for s in timeline['shots']),
         'every_shot_references_media': all(s.get('assets') and set(s['assets']) <= ids for s in timeline['shots']),
