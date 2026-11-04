@@ -109,6 +109,7 @@ def validate(output, spec, timeline, sources):
       'decoded_audio_duration_matches_timeline':abs(metrics['decoded_samples']/16000-timeline['duration'])<.08,
       'requested_music_source_valid':not music or (bgm['metrics']['audible_signal'] and (not spec.get('music_asset') or bgm['sha256']==spec['music_asset']['sha256'])),
       'sources_present_and_hash_match':all(Path(s['local_path']).exists() and sha(s['local_path'])==s['sha256'] for s in sources['assets']),
+      'document_sources_present_and_hash_match':all(Path(d['local_path']).exists() and sha(d['local_path'])==d['sha256'] for d in sources.get('document_sources',[])),
       'no_long_black':not black,'no_unexpected_long_freeze':not unexpected,
       'animated_diagrams_show_actual_motion':all(x['actual_motion_detected'] for x in animations)}
     report={'status':'technical_pass_human_review_pending' if all(checks.values()) else 'technical_fail',

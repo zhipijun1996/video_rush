@@ -285,6 +285,9 @@ def concatenate_cuts(paths, shots, output, logs):
 
 
 def cover(path, left, right, design=None):
+    if design and design.get('layout')=='diagram':
+        from .graphics import diagram
+        diagram(path,design);return
     if design and design.get('layout')=='manga':
         # Both inputs are actual game frames. Preserve the entire two-person
         # cut-in instead of center-cropping each wide frame into a narrow panel.

@@ -1,0 +1,1175 @@
+{
+  "schema_version": 2,
+  "episode": "ep009",
+  "title": "AI把代码仓越写越乱，我只能停工重构 | 【失序之钟】独游折腾记 ep08【B站AI创造公开赛】",
+  "title_candidates": [
+    "游戏还没做完，我先开始给AI的代码考古了 | 【失序之钟】独游折腾记 ep08【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep009-assets.json",
+  "story_ids": [
+    "S_REPO_CHAOS_01"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.1,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "r02",
+    "r15"
+  ],
+  "cover": {
+    "layout": "diagram",
+    "background": "#101925",
+    "elements": [
+      {
+        "type": "text",
+        "x": 100,
+        "y": 80,
+        "text": "失序之钟 · 独游折腾记 ep08",
+        "size": 43,
+        "color": "#83e3c6",
+        "width": 1700,
+        "bold": false
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 200,
+        "text": "游戏还没做完",
+        "size": 123,
+        "color": "#f0f4fb",
+        "width": 1720,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 365,
+        "text": "先停工重构了",
+        "size": 123,
+        "color": "#ffd77d",
+        "width": 1720,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 555,
+        "text": "AI写得快，历史包袱也攒得快。",
+        "size": 48,
+        "color": "#a3b3c7",
+        "width": 1500,
+        "bold": true
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          105,
+          730,
+          520,
+          130
+        ],
+        "radius": 18,
+        "fill": "#1c2b3e",
+        "color": "#ff818b",
+        "stroke_width": 4
+      },
+      {
+        "type": "text",
+        "x": 142,
+        "y": 762,
+        "text": "旧规则回流",
+        "size": 60,
+        "color": "#ff818b",
+        "width": 450,
+        "bold": true
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          700,
+          730,
+          520,
+          130
+        ],
+        "radius": 18,
+        "fill": "#1c2b3e",
+        "color": "#ffd77d",
+        "stroke_width": 4
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 762,
+        "text": "上下文爆仓",
+        "size": 60,
+        "color": "#ffd77d",
+        "width": 450,
+        "bold": true
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          1295,
+          730,
+          520,
+          130
+        ],
+        "radius": 18,
+        "fill": "#1c2b3e",
+        "color": "#91bfff",
+        "stroke_width": 4
+      },
+      {
+        "type": "text",
+        "x": 1330,
+        "y": 762,
+        "text": "CI反复修",
+        "size": 60,
+        "color": "#91bfff",
+        "width": 450,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 945,
+        "text": "一次AI独游开发的项目管理踩坑 · 原创图示封面",
+        "size": 31,
+        "color": "#a3b3c7",
+        "width": 1700,
+        "bold": false
+      }
+    ]
+  },
+  "shots": [
+    {
+      "id": "r01",
+      "chapter": "01",
+      "title": "本来想做游戏",
+      "narration": "我本来想让AI帮我做个游戏。结果，游戏还没做完，我先开始考古了。",
+      "assets": [
+        "history-game"
+      ],
+      "offsets": [
+        3
+      ],
+      "presentation": "single",
+      "shot_type": "historical_gameplay_context",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "写新功能？先考古。",
+      "prs": [
+        110
+      ],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "Historical footage only frames the game project; no claim it depicts the newest main or any specific new bug.",
+      "claim_type": "developer_testimony_with_historical_recording",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r02",
+      "chapter": "01",
+      "title": "功能＋1，历史包袱也＋1",
+      "narration": "《失序之钟》的功能一直在加，仓库也被我和AI一起，整得乌烟瘴气。以前是缺什么补什么，后来是出了问题，再叠一套。",
+      "assets": [
+        "r02"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r03",
+      "chapter": "01",
+      "title": "新版写了，入口接的是哪版？",
+      "narration": "旧方案、旧设计、旧实现，都还在。看文件，每份都像能用；接新功能时，有时却又走回了旧规则。",
+      "assets": [
+        "r03"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r04",
+      "chapter": "01",
+      "title": "历史保留，现行规则失焦",
+      "narration": "保留历史本身没错，Git本来就干这个。问题是，现行规则、历史记录和试验方案，全挤在当前开发入口里。",
+      "assets": [
+        "r04"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r05",
+      "chapter": "01",
+      "title": "我以为，补文档能解决",
+      "narration": "然后我开始补文档。我以为写详细点，AI就能少走弯路。后来文档越来越厚，新会话进来，先得分清哪份还算数。",
+      "assets": [
+        "r05"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r06",
+      "chapter": "01",
+      "title": "代码还没读，先读一大摞",
+      "narration": "我查了一下，一份当前状态说明，已经十二万多字节。十九份Skills，加起来约二十五万字节。代码还没读，历史先读一大摞。",
+      "assets": [
+        "r06"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        134
+      ],
+      "evidence": [
+        "context-measured",
+        "pr134"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_measured_document_bytes",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r07",
+      "chapter": "01",
+      "title": "上下文有限，重点却不突出",
+      "narration": "这时候，上下文不足就不只是多塞几份文件能解决的。真正该用的规则被淹没，过期信息还在争位置。",
+      "assets": [
+        "r07"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r08",
+      "chapter": "01",
+      "title": "锅不能全甩给模型",
+      "narration": "具体一次错误，还得具体查，不能都甩给模型。但版本边界连我自己都要翻半天，指望AI每次自动判断对，确实是我想简单了。",
+      "assets": [
+        "r08"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r09",
+      "chapter": "01",
+      "title": "想清理，也不能一键全删",
+      "narration": "更麻烦的是，有些旧文件还真删不得。旧测试、历史回放，甚至正式资源，还在引用它们。看见legacy就全删，下一轮可能直接炸。",
+      "assets": [
+        "r09"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        126
+      ],
+      "evidence": [
+        "pr126",
+        "pr126-SUMMARY"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_supported_retirement_boundary",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r10",
+      "chapter": "01",
+      "title": "开发游戏，顺便维护CI",
+      "narration": "CI也是同款剧情。本来是帮我兜底，后来变成日常开发的主要项目。跑红了，修；修完，再跑。",
+      "assets": [
+        "r10"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r11",
+      "chapter": "01",
+      "title": "真实案例：考卷没跟上",
+      "narration": "有一次，当前场景已经有Boss字段，旧测试替身却没有。画面检查直接脚本报错，最后只是给测试补了个可空字段。",
+      "assets": [
+        "r11"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        125
+      ],
+      "evidence": [
+        "pr125",
+        "pr125-patch"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_verified_test_contract_mismatch",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r12",
+      "chapter": "01",
+      "title": "今日进度：能继续检查了",
+      "narration": "我想检查游戏有没有坏，结果先得修检查游戏的工具。修完一圈，进度是：终于能继续检查了。",
+      "assets": [
+        "r12"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [
+        125
+      ],
+      "evidence": [
+        "user-20261104",
+        "pr125"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r13",
+      "chapter": "01",
+      "title": "真实案例：单项过，合流没过",
+      "narration": "还有一次，两路检查合计一百七十八项，都过了，汇总还是失败。两台Runner用的Python小版本不一致。这回修的是验证链自己。",
+      "assets": [
+        "r13"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        130
+      ],
+      "evidence": [
+        "pr130",
+        "pr130-toolchain-mismatch-receipt",
+        "ci-failure-api"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_verified_ci_orchestration_failure",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r14",
+      "chapter": "01",
+      "title": "保险越叠越多，维护也越叠越多",
+      "narration": "这些检查不是都没用。问题是历史兼容、复杂专项和日常门禁，全挤在一条流程里。每加一层保险，就多一层要解释、要维护。",
+      "assets": [
+        "r14"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        133
+      ],
+      "evidence": [
+        "user-20261104",
+        "pr133"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r15",
+      "chapter": "01",
+      "title": "暂停新功能，先把仓库收拾了",
+      "narration": "到这一步，我只能先停下新功能，做一次大规模重构。再不收拾，我自己都快接不动了。",
+      "assets": [
+        "r15"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        126
+      ],
+      "evidence": [
+        "user-20261104",
+        "pr126"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r16",
+      "chapter": "01",
+      "title": "先收口职责，再迁真正的调用者",
+      "narration": "先把一件事到底归谁管说清楚。移动、伤害、钱包、奖励，各有自己的正式入口。旧调用一起迁，别在旁边再生一个新版。",
+      "assets": [
+        "r16"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [
+        126
+      ],
+      "evidence": [
+        "pr126",
+        "pr126-target_architecture"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_supported_refactor_scope",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r17",
+      "chapter": "01",
+      "title": "让新会话先找到“现在”",
+      "narration": "文档也分清当前、历史和实验。新会话按任务读需要的；旧证据留着查，但别默认让它把整个项目史背一遍。",
+      "assets": [
+        "r17"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        134
+      ],
+      "evidence": [
+        "context-measured",
+        "pr134",
+        "pr134-results"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_verified_draft_cleanup_not_merged",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r18",
+      "chapter": "01",
+      "title": "日常CI：179项全量 → 4项基础",
+      "narration": "日常CI已经从原来的全量一百七十九项，收成四项基础检查。复杂专项仍然保留，按修改内容跑，日常先守住最基本的功能。",
+      "assets": [
+        "r18"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        133
+      ],
+      "evidence": [
+        "pr133",
+        "pr133-ci-test-inventory"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_verified_ci_change",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r19",
+      "chapter": "01",
+      "title": "已做的，和还没做完的",
+      "narration": "架构重构和CI精简已经合入主线，文档清理还在待审。现在只能说开始还债，不能宣布从此再也不会乱。",
+      "assets": [
+        "r19"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [
+        126,
+        133,
+        134
+      ],
+      "evidence": [
+        "pr126",
+        "pr133",
+        "pr134"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "source_verified_separate_merge_states",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r20",
+      "chapter": "01",
+      "title": "我自己也有份",
+      "narration": "这次最扎心的，是我自己也有份。最开始只顾着让AI快点加功能，没把有效版本、退出规则、文档和验证边界管好。",
+      "assets": [
+        "r20"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r21",
+      "chapter": "01",
+      "title": "这个坑，我先踩了",
+      "narration": "现在是真后悔，早期没把这些最基本的项目管理做好。AI写得快，历史包袱也攒得快。当时省下来的整理，后面真的得还。",
+      "assets": [
+        "r21"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "r22",
+      "chapter": "01",
+      "title": "新功能先等等，我在收拾仓库",
+      "narration": "项目还在继续，最近先别催新功能了。我在给自己刚写出来的祖传代码收拾屋子。你们用AI做大项目，也碰到过这种情况吗？",
+      "assets": [
+        "r22"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-20261104"
+      ],
+      "fact_check": "User-described experience is personal testimony. Concrete examples tied to exact PR/doc blobs. Diagrams show relationships, not invented executions. Technical checks do not certify enjoyment or model comprehension.",
+      "claim_type": "developer_testimony_and_editorial_explanation",
+      "same_seed_comparison": false
+    }
+  ],
+  "research_scope": {
+    "repository": "zhipijun1996/gunman-rush",
+    "main_at_scan": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+    "branch_heads_scanned": 174,
+    "branches_metadata": "174 remote branch names and SHAs captured via paginated API; main and PR125/126/130/133/134 examined in depth",
+    "main_commits_since_20261024": 379,
+    "recent_PR_titles_and_bodies": 29,
+    "selected_PRs": [
+      125,
+      126,
+      130,
+      133,
+      134
+    ],
+    "PR126_file_patch_limit": {
+      "api_paths_received": 3000,
+      "github_changed_files": 4438,
+      "api_capped": true,
+      "mitigation": "Exact base/head Git trees fetched into separate RAM-backed bare repo; local git diff --no-renames --name-status covers5391 changed path entries including both sides of moves. No claim4438 full patches read."
+    },
+    "current_docs_candidate": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+    "doc_candidate_merged": false,
+    "game_repo_worktree": "Never changed; research via API, pinned raw source and separate metadata-only bare snapshot",
+    "tool_failures": [
+      "GitHub fetch_pr126 transport closed; recovered through paginated REST metadata/files plus exact local tree diff"
+    ],
+    "model_claim_limit": "Context saturation/obsolete-rule selection is developer testimony and explanation, not instrumented model-internals proof. No exact total iteration/retry counts invented."
+  },
+  "evidence": [
+    {
+      "id": "user-20261104",
+      "kind": "user_testimony",
+      "date": "2026-11-04",
+      "text": "User reports retained old designs/rules, insufficient task context, redundant docs/CI, new/old versions coexisting, paused feature work for major refactor and regret at weak early project management. First-person script is an editorial reconstruction, not verbatim audio."
+    },
+    {
+      "id": "context-measured",
+      "kind": "independent_tree_byte_measurement",
+      "before_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "after_commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "base": {
+        "skill_files": 19,
+        "skill_bytes": 250103
+      },
+      "head": {
+        "skill_files": 19,
+        "skill_bytes": 24852
+      },
+      "source": "19 primary SKILL.md blobs at PR134 base/head; does not include extra Skill reference files"
+    },
+    {
+      "id": "pr125-patch",
+      "kind": "inspected_real_patch",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/125/files",
+      "path": "tests/plains_refresh_art_runner.gd",
+      "head": "9e2c0d8208116788f85d9d0997e1b7aff8e7af63",
+      "added_line": "var boss: Node2D",
+      "scope": "Test fixture only; not production gameplay defect"
+    },
+    {
+      "id": 41659241932,
+      "kind": "actual_github_run_metadata",
+      "conclusion": "failure",
+      "head_sha": "0167ef34990e9c19a9ad57898f1e07f479ab2a5d",
+      "html_url": "https://github.com/zhipijun1996/gunman-rush/actions/runs/41659241932",
+      "run_attempt": 1
+    },
+    {
+      "id": "pr125",
+      "kind": "actual_pr_metadata_and_inspected_source",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/125",
+      "head_commit": "9e2c0d8208116788f85d9d0997e1b7aff8e7af63",
+      "base_commit": "bd86237456c7ce12a352b040857b208bdede7f66",
+      "merged": true,
+      "merge_commit": "b8ada996b77bdfc6bdf36a9961b9d460ab1f0323",
+      "title": "修复当前平原视觉测试契约，记录 CI 历史与重复执行边界"
+    },
+    {
+      "id": "pr126",
+      "kind": "actual_pr_metadata_and_inspected_source",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/126",
+      "head_commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "base_commit": "2ce4ffa64ef65dd5fba892776eea019c9e2841d4",
+      "merged": true,
+      "merge_commit": "30e36c9abe223f26e666ceaf796e3fe9cb58e10f",
+      "title": "refactor: unify game architecture and optimize combat presentation"
+    },
+    {
+      "id": "pr130",
+      "kind": "actual_pr_metadata_and_inspected_source",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/130",
+      "head_commit": "9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8",
+      "base_commit": "46eb3960a592374b5fb99d7df588962a3680f86b",
+      "merged": false,
+      "merge_commit": "254bbfc0afcf54928cd1bfb7cb9bf2b3a8bd653d",
+      "title": "mapgen: 收口0.4宿主缓存、耗时归因与Web阶段A"
+    },
+    {
+      "id": "pr133",
+      "kind": "actual_pr_metadata_and_inspected_source",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/133",
+      "head_commit": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "base_commit": "f11c750eaad20fe7ae757479f30ed3c560778b24",
+      "merged": true,
+      "merge_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "title": "ci: 用四项日常检查替换完整 Harness 自动验证"
+    },
+    {
+      "id": "pr134",
+      "kind": "actual_pr_metadata_and_inspected_source",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/134",
+      "head_commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "base_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "merged": false,
+      "merge_commit": "c81a6eee53e47a6f29e0c1dc833edc58e839ba30",
+      "title": "docs: 精简 Codex 上下文、统一当前文档与任务交接"
+    },
+    {
+      "id": "pr126-architecture_closeout",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/architecture_closeout.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/architecture_closeout.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/architecture_closeout.md",
+      "sha256": "6a917a0bf120487575a824b7a3d14e67411b936ecbd5c0c5763c63bf2fcfcc8b",
+      "blob_sha": "b91cea2c08bcc34be91b8c0308e783d21f7be907",
+      "bytes": 9483,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr126-r3_current_content_contract_01",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/r3_current_content_contract_01.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/r3_current_content_contract_01.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/r3_current_content_contract_01.md",
+      "sha256": "ed181f103925c59ed427f1c4bfea8fdb5cdefdabca04872299634482c025193a",
+      "blob_sha": "2159aca28d306f36535f969abbd9ae24a8146614",
+      "bytes": 4600,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr126-SUMMARY",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/asset_version_retirement/SUMMARY.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/asset_version_retirement/SUMMARY.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/asset_version_retirement/SUMMARY.md",
+      "sha256": "553cff895155e600c9fb13d2ed38b024eee835c92951ffa138d00b7a21a89155",
+      "blob_sha": "df58f99fac09e2a684065aa8a4b0999548db230e",
+      "bytes": 3748,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": [
+        "有消费者的旧文件直接删除会破坏功能。"
+      ]
+    },
+    {
+      "id": "pr126-migration_report",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/migration_report.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/migration_report.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/migration_report.md",
+      "sha256": "f2ae23daaac8a09394ed7a29442275af2daae7cb5bbe95a74a7c9cf2c48bdf19",
+      "blob_sha": "0ae7d9cea92f0a3ac17f1d49339a966891ccfe81",
+      "bytes": 30367,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr126-current_authority_ci",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/current_authority_ci.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/current_authority_ci.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/current_authority_ci.md",
+      "sha256": "e9fbe9c1b60ba9a43f6da6ba36acf265ba133febab434da93c694b1147de4685",
+      "blob_sha": "1ffdd4eb59c1531509347465206f2a393e2d0f22",
+      "bytes": 2993,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr126-target_architecture",
+      "kind": "pinned_repository_document",
+      "pr": 126,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "path": "docs/worklines/game_architecture_01/target_architecture.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/target_architecture.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/target_architecture.md",
+      "sha256": "c6097f42fb5125a040c142bd752be3e846028ca012d9aee893924228461c5e24",
+      "blob_sha": "049ec57eddd3c41425c920b5390ebea7e9233052",
+      "bytes": 40520,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": [
+        "适配层只转发到唯一实现，不复制算法或定义。"
+      ]
+    },
+    {
+      "id": "pr125-README",
+      "kind": "pinned_repository_document",
+      "pr": 125,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9e2c0d8208116788f85d9d0997e1b7aff8e7af63",
+      "path": "docs/evidence/ci_current_01/README.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9e2c0d8208116788f85d9d0997e1b7aff8e7af63/docs/evidence/ci_current_01/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/9e2c0d8208116788f85d9d0997e1b7aff8e7af63/docs/evidence/ci_current_01/README.md",
+      "sha256": "36604938b010c08d5ba1764c549c95302551f477e5e81b6ad857975a0b8a265b",
+      "blob_sha": "bc6fb83f51cc1b9ebf2a83ff4b81bdaca77f90f8",
+      "bytes": 2007,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr133-ci-test-inventory",
+      "kind": "pinned_repository_document",
+      "pr": 133,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "path": "docs/ci-test-inventory.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/ci-test-inventory.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/ci-test-inventory.md",
+      "sha256": "e5cafcdf194e82d8d1fb1c195e6b0655c61beb9b004a63260c3aa7b4f5ecdd98",
+      "blob_sha": "f3f2168d1b8390ab6066dd6129e62b150e44d0ae",
+      "bytes": 4061,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr133-harness",
+      "kind": "pinned_repository_document",
+      "pr": 133,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "path": "docs/harness.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/harness.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/harness.md",
+      "sha256": "ef0607e64712340ef66f676fc32a167e0fa4cefe063faf7188f5dd8de19e7a07",
+      "blob_sha": "8ccfdaebb68266d8fb822849074daee35b9191bb",
+      "bytes": 3765,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr133-results",
+      "kind": "pinned_repository_document",
+      "pr": 133,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "path": "docs/worklines/ci_slimdown_01/results.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/worklines/ci_slimdown_01/results.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/worklines/ci_slimdown_01/results.md",
+      "sha256": "6f1b6e2efcf4af08cfccd3271913b5230fbbfd895fe5386a41aea5c56653d2bc",
+      "blob_sha": "3e4b506fcadbeaa92759b8643ca847a71d2a9f41",
+      "bytes": 3802,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr133-production",
+      "kind": "pinned_repository_document",
+      "pr": 133,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "path": ".github/workflows/production.yml",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/.github/workflows/production.yml",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/0d4cf3aa623931c7093fb0ebeca274d98c099f33/.github/workflows/production.yml",
+      "sha256": "ccafcf06cfa792af8a756c39b6673fdd9bc6b1cd8eda162196df8dba67412aaa",
+      "blob_sha": "5918382aaf16ca736a073ec2389f05e6333e410c",
+      "bytes": 1217,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr134-AGENTS",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/AGENTS.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/AGENTS.md",
+      "sha256": "a943dba06ee17c2277f1b253a4489a4bd1da91ecba1f45c6186428058e989f54",
+      "blob_sha": "6e9ffba8d10e4d0e219695d73f7532fc0e0a7d22",
+      "bytes": 2560,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr134-current_state",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "path": "docs/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/current_state.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/current_state.md",
+      "sha256": "1afdb65ccd420ff16018f5153da1f5cc4af9724e2fb219b6be876729a932c161",
+      "blob_sha": "58fa0d906a1b4baec70699e29301700befda3165",
+      "bytes": 2421,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr134-results",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "path": "docs/worklines/codex_context_01/results.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/results.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/results.md",
+      "sha256": "1351650adf431b4167731c4969429b6102bbe284d35eb3f7860c8b3adb5a6d01",
+      "blob_sha": "fa2f7f11eb72987e6e3d604022e3bc056251f743",
+      "bytes": 1758,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": [
+        "合并与发布尚未执行。"
+      ]
+    },
+    {
+      "id": "pr134-scope",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "path": "docs/worklines/codex_context_01/scope.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/scope.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/scope.md",
+      "sha256": "9df8a7b506e299bcc492d4c85452b80a823dee31a81f2e2337c10148fbe0c3c4",
+      "blob_sha": "e11ea2f0093630d49ff7a607ade9355c5b4bccef",
+      "bytes": 1076,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr134-AGENTS-before",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/68a87f38a753442bbdacaa81317dd4aaa05eba3b/AGENTS.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/68a87f38a753442bbdacaa81317dd4aaa05eba3b/AGENTS.md",
+      "sha256": "943a0fadedb841da2d6c5344cc772be85a9a197f3ed5ff91dc76a9d877216477",
+      "blob_sha": "4ef4ec30c08ce27949b13184810860d544a32857",
+      "bytes": 45176,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr134-current_state-before",
+      "kind": "pinned_repository_document",
+      "pr": 134,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "path": "docs/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/68a87f38a753442bbdacaa81317dd4aaa05eba3b/docs/current_state.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/68a87f38a753442bbdacaa81317dd4aaa05eba3b/docs/current_state.md",
+      "sha256": "e1c41610e03b36937619ef6ea2f57b64d1a9cb38ef4cea083cb19076af58cdb4",
+      "blob_sha": "fbbaffe669e0afe93d6b0bbaaaaa62657da276c0",
+      "bytes": 123372,
+      "truth": "Exact pinned repository file; byte/blob checked; displayed quotations are editorial typesetting, not a browser screenshot",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr130-README",
+      "kind": "pinned_repository_document",
+      "pr": 130,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8",
+      "path": "docs/evidence/mapgen_host_04_acceptance/ci-python-pin/README.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/README.md",
+      "sha256": "9831029fd92553ce5d272f2179c39d7c7f1f9fdaddb7b91f6410a53aa69b64f5",
+      "blob_sha": "be95a58ebe6017f7bfebb9c3823724b2268e2d1d",
+      "bytes": 2770,
+      "truth": "Exact archived original CI evidence; inspected source, not rerun by Video Rush",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr130-toolchain-mismatch-receipt",
+      "kind": "pinned_repository_document",
+      "pr": 130,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8",
+      "path": "docs/evidence/mapgen_host_04_acceptance/ci-python-pin/toolchain-mismatch-receipt.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/toolchain-mismatch-receipt.json",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/toolchain-mismatch-receipt.json",
+      "sha256": "aef91f4033d2172e48236a1d23a70d4032479e125ecbd0ead76cf5747eccded5",
+      "blob_sha": "61610963ea883521e81cdc6ced187317fee8dbec",
+      "bytes": 4032,
+      "truth": "Exact archived original CI evidence; inspected source, not rerun by Video Rush",
+      "verified_quotes": []
+    },
+    {
+      "id": "pr130-old-run-final-receipt",
+      "kind": "pinned_repository_document",
+      "pr": 130,
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8",
+      "path": "docs/evidence/mapgen_host_04_acceptance/ci-python-pin/old-run-final-receipt.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/old-run-final-receipt.json",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/old-run-final-receipt.json",
+      "sha256": "01f4678e3f897bb665edfff36511d007e89e185170d4e939f4027c1d6645a94f",
+      "blob_sha": "bb584f28c0f64ab171eb4a980b353ad9eb5e7279",
+      "bytes": 8296,
+      "truth": "Exact archived original CI evidence; inspected source, not rerun by Video Rush",
+      "verified_quotes": []
+    }
+  ],
+  "rights": {
+    "original_diagrams": "Original Video Rush vector graphics, MIT; no third-party memes or anime used",
+    "repository_documents": "User-authorized game repository, exact immutable documents retained; quotations editorial typesetting",
+    "historical_gameplay": "User-owned original project recording PR110; pinned source; old stage explicitly labelled; original soundtrack muted",
+    "music": {
+      "path": "build/music/the_kindred_hearth-actions.ogg",
+      "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+      "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+      "original_filename": "the_kindred_hearth.mp3",
+      "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+      "usage": "User requested light BGM and provided this track",
+      "license_status": "user supplied and requested use; original creator/license not independently specified"
+    },
+    "font": "Noto Sans CJK, SIL OFL",
+    "tts": "Actual Microsoft Edge neural synthesis, not a clone of the creator"
+  },
+  "bilibili_body": "我本来想让AI帮我做游戏，后来先开始给代码仓考古。\n旧方案、旧规则、冗余文档和CI返工越积越多，最后只能暂停新功能，做大规模重构。\n这期主要吐槽自己踩的坑，也反思早期项目管理没做好。\n视频中的案例分别对应PR125、126、130、133、134；架构与CI已合入，文档清理仍是待审候选。\n示意动画为编辑表达，实机为历史开发录屏；AI配音。\n源码：https://github.com/zhipijun1996/gunman-rush\n#B站AI创造公开赛#\n欢迎分享你们用AI管理大项目的经验。",
+  "comparison": "No same-seed or gameplay-quality comparison; historical recording is context only; before/after document bytes pinned to exact PR134 base/head.",
+  "comparison_review": "开发者感受、原始失败事实与当前合入状态是否分清；不把所有问题归因于模型。"
+}

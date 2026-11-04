@@ -1,0 +1,77 @@
+{
+  "research_scope": {
+    "repository": "zhipijun1996/gunman-rush",
+    "main_at_scan": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+    "branch_heads_scanned": 174,
+    "branches_metadata": "174 remote branch names and SHAs captured via paginated API; main and PR125/126/130/133/134 examined in depth",
+    "main_commits_since_20261024": 379,
+    "recent_PR_titles_and_bodies": 29,
+    "selected_PRs": [
+      125,
+      126,
+      130,
+      133,
+      134
+    ],
+    "PR126_file_patch_limit": {
+      "api_paths_received": 3000,
+      "github_changed_files": 4438,
+      "api_capped": true,
+      "mitigation": "Exact base/head Git trees fetched into separate RAM-backed bare repo; local git diff --no-renames --name-status covers5391 changed path entries including both sides of moves. No claim4438 full patches read."
+    },
+    "current_docs_candidate": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+    "doc_candidate_merged": false,
+    "game_repo_worktree": "Never changed; research via API, pinned raw source and separate metadata-only bare snapshot",
+    "tool_failures": [
+      "GitHub fetch_pr126 transport closed; recovered through paginated REST metadata/files plus exact local tree diff"
+    ],
+    "model_claim_limit": "Context saturation/obsolete-rule selection is developer testimony and explanation, not instrumented model-internals proof. No exact total iteration/retry counts invented."
+  },
+  "primary_evidence": [
+    {
+      "pr": "pr125",
+      "head": "9e2c0d8208116788f85d9d0997e1b7aff8e7af63",
+      "merged": true,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/125"
+    },
+    {
+      "pr": "pr126",
+      "head": "d7f46d5e2e8f607937fa33ea967e53702425368e",
+      "merged": true,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/126"
+    },
+    {
+      "pr": "pr130",
+      "head": "9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8",
+      "merged": false,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/130"
+    },
+    {
+      "pr": "pr133",
+      "head": "0d4cf3aa623931c7093fb0ebeca274d98c099f33",
+      "merged": true,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/133"
+    },
+    {
+      "pr": "pr134",
+      "head": "8cc22681d347a22918b10ba79a8ec5f46b02fc6e",
+      "merged": false,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/134"
+    }
+  ],
+  "measured_documents": {
+    "base": {
+      "skill_files": 19,
+      "skill_bytes": 250103
+    },
+    "head": {
+      "skill_files": 19,
+      "skill_bytes": 24852
+    },
+    "source": "19 primary SKILL.md blobs at PR134 base/head; does not include extra Skill reference files"
+  },
+  "read_only_game_worktree": true,
+  "source_document_count": 20,
+  "fresh_game_or_game_CI_execution_by_video_rush": false,
+  "truth_states": "Merged architecture/CI, draft document cleanup, user-reported motivation and error experience; kept separate"
+}

@@ -114,9 +114,9 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
     stages('Shot Planning',spec['shots'],planning)
     def footage():
         media=collect(repo,a_spec,output/'media')
-        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*sorted((output/'source-evidence').glob('*')),*sorted((output/'browser-evidence').glob('*'))]
+        return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*[p for p in sorted((output/'source-evidence').rglob('*')) if p.is_file()],*sorted((output/'browser-evidence').glob('*'))]
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None},footage)
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
@@ -152,7 +152,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
             x['cues']=cues;shots.append(x);t+=d
         timeline={'fps':30,'width':1920,'height':1080,'duration':round(t,6),'shots':shots,'music':music,'music_license':music_license,'display_chapters':spec.get('display_chapters',True)}
         write(output/'storyboard.json',timeline);ass_file(output/'subtitles.ass',timeline)
-        sources={'repository':spec['repository'],'assets':media,'story_ids':spec['story_ids'],'claims':[{k:s[k] for k in ['id','narration','prs','fact_check','claim_type']} | {'evidence':s.get('evidence',[])} for s in spec['shots']],
+        sources={'repository':spec['repository'],'assets':media,'document_sources':read(output/'source-evidence/documents/document-manifest.json') if a_spec.get('documents') else [],'story_ids':spec['story_ids'],'claims':[{k:s[k] for k in ['id','narration','prs','fact_check','claim_type']} | {'evidence':s.get('evidence',[])} for s in spec['shots']],
                  'evidence':spec.get('evidence',[]),
                  'rights':spec.get('rights',read(ROOT/'research/rights.json')),'audio':{'backend':backend,'voice':spec['voice'],'synthesized':True,'playback_speed':speed,'music':music,'music_license':music_license,'music_sha256':sha(music) if music else None,'music_provenance':spec.get('music_asset'),'game_audio_gain':spec.get('game_audio_gain',0),'game_audio_policy':'Original matching clip window; comparison uses selected side only; narration foreground'},
                  'comparison':spec.get('comparison','Different stages, not a controlled same-seed before/after benchmark')}
@@ -213,7 +213,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         (output/'bilibili.md').write_text(posting_copy(spec,description))
         files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
         files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
-        files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').glob('*')) if p.is_file()]
+        files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').rglob('*')) if p.is_file()]
         files += [str(p.relative_to(output)) for p in sorted((output/'browser-evidence').glob('*')) if p.is_file()]
         files += [str(p.relative_to(output)) for p in sorted((output/'animation-evidence').glob('*')) if p.is_file()]
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})

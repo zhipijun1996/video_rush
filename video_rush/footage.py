@@ -13,6 +13,9 @@ def collect(repo, spec, output):
     repo, output = Path(repo), Path(output)
     output.mkdir(parents=True, exist_ok=True)
     collected = []
+    if spec.get('documents'):
+        from .document_evidence import collect_documents
+        collect_documents(spec['documents'],output.parent/'source-evidence'/'documents')
     for asset in spec['assets']:
         origin=asset.get('origin','git')
         if origin=='browser_movie':

@@ -1731,5 +1731,59 @@
       "priority": "selected_ep008",
       "reason": "童年、动漫梗、真实反弹失败与快充断电可构成可见反转"
     }
+  },
+  {
+    "id": "S_REPO_CHAOS_01",
+    "event": "旧规范、上下文冗余与CI返工推动暂停新功能重构",
+    "date": "2026-11-04",
+    "background": "Solo AI-assisted Godot development of Disordered Clock",
+    "conflict": "Retained versions and ambiguous current authority make task loading and verification increasingly expensive",
+    "attempts": [
+      "Ad hoc docs/tests/compatibility layers",
+      "Architecture refactor PR126",
+      "Daily CI simplification PR133",
+      "Context/document cleanup draft PR134"
+    ],
+    "result": "PR126/133 merged; PR134 draft. No universal fix or subjective quality acceptance claimed",
+    "truth_status": "mixed_implemented_and_draft_with_user_testimony",
+    "evidence_status": "Exact source docs/patches and merge/run API inspected; no game or CI rerun by Video Rush",
+    "commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+    "PR": [
+      125,
+      126,
+      130,
+      133,
+      134
+    ],
+    "linked_sources": [
+      "https://github.com/zhipijun1996/gunman-rush/pull/125/files",
+      "https://github.com/zhipijun1996/gunman-rush/pull/125",
+      "https://github.com/zhipijun1996/gunman-rush/pull/126",
+      "https://github.com/zhipijun1996/gunman-rush/pull/130",
+      "https://github.com/zhipijun1996/gunman-rush/pull/133",
+      "https://github.com/zhipijun1996/gunman-rush/pull/134",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/architecture_closeout.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/r3_current_content_contract_01.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/asset_version_retirement/SUMMARY.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/migration_report.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/current_authority_ci.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/d7f46d5e2e8f607937fa33ea967e53702425368e/docs/worklines/game_architecture_01/target_architecture.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9e2c0d8208116788f85d9d0997e1b7aff8e7af63/docs/evidence/ci_current_01/README.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/ci-test-inventory.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/harness.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/docs/worklines/ci_slimdown_01/results.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/0d4cf3aa623931c7093fb0ebeca274d98c099f33/.github/workflows/production.yml",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/AGENTS.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/current_state.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/results.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8cc22681d347a22918b10ba79a8ec5f46b02fc6e/docs/worklines/codex_context_01/scope.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/68a87f38a753442bbdacaa81317dd4aaa05eba3b/AGENTS.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/68a87f38a753442bbdacaa81317dd4aaa05eba3b/docs/current_state.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/README.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/toolchain-mismatch-receipt.json",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9ba7d4b64b939f80168a3d7d1ef08fd32a5b6be8/docs/evidence/mapgen_host_04_acceptance/ci-python-pin/old-run-final-receipt.json"
+    ],
+    "recordability": "Original explanatory animation plus retained historical project recording",
+    "video_potential": "Specific failures and self-reflection rather than PR counts"
   }
 ]
