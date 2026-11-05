@@ -1,0 +1,18 @@
+{
+  "id": "ep011-r2",
+  "public_episode": "ep10",
+  "title": "平原、森林、装备，这阶段的成果先留个档 | 【失序之钟】独游折腾记 ep10【B站AI创造公开赛】",
+  "base_sha256": "57abdab166c8bfac7b91145e5c93ed712f6e33f0f742023b6235dd9175104783",
+  "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+  "base_artifact": "https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13438887421",
+  "narration": false,
+  "cards": {
+    "intro": ["失序之钟", "阶段性成果记录 · EP10"],
+    "plains": ["风铃平原", "两张地图，把路线接到 Boss 面前"],
+    "forest": ["荆棘森林", "钩索与高低差，换一种走法"],
+    "equipment": ["装备与构筑", "捡到，只是第一步"],
+    "random": ["随机平原", "开发版本，先如实留个档"],
+    "outro": ["先把这一阶段存个档", "还在打磨，欢迎各位提建议"]
+  },
+  "authorization": "User explicitly requested equipment demonstration, captions, text transitions and direct Bilibili ep10 submission. No extra review round requested."
+}

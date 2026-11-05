@@ -1,0 +1,81 @@
+{
+  "episode": "ep011-r2",
+  "public_episode": "ep10",
+  "user_authorization": "Add equipment demonstration, captions and text transitions, then upload to Bilibili as ep10.",
+  "base_movie_sha256": "57abdab166c8bfac7b91145e5c93ed712f6e33f0f742023b6235dd9175104783",
+  "final_movie_sha256": "ba00fb2d7849fa64a2578c0d2cc4ff52dfd3fbfa89891ef14f41fd7d14aee26c",
+  "duration": 411.2,
+  "technical": {
+    "full_decode": true,
+    "mp4": true,
+    "dimensions": true,
+    "fps": true,
+    "video_codec": true,
+    "pixel_format": true,
+    "limited_range": true,
+    "audio_codec": true,
+    "sample_rate": true,
+    "duration": true,
+    "original_game_audio_audible": true,
+    "clipping": true,
+    "subtitle_bounds": true,
+    "source_hashes": true,
+    "no_long_black": true,
+    "no_unexplained_freeze": true
+  },
+  "av_start_times_zero": true,
+  "narration": false,
+  "tests_passed": 80,
+  "tests_log_sha256": "3dfc5d8e6953d17b64ef3c36ec8379f97438057202aeea4b3bf300977f4b7da7",
+  "base_coverage": "All374.9 seconds preserved, original four Boss fights intact; added36.3 seconds for equipment and chapter cards.",
+  "equipment": [
+    {
+      "stage": "equipment-ui",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "driver": "tools/video_rush_equipment_aeb1faf29040.gd",
+      "driver_sha256": "aeb1faf2904043f2c8795618d58a944b05a45ac1ccdcb0596057d19d2f57db9f",
+      "movie_sha256": "e1beb2fba47fed75473501edcd46cf3de1a519ff1578ff294843158913a2248f",
+      "status": "captured",
+      "original_game_audio": {
+        "decoded_samples": 514731,
+        "peak": 0.194061279296875,
+        "rms": 0.012851217846956487,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      }
+    },
+    {
+      "stage": "equipment-action",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "driver": "tests/item_art_real_world_movie.gd",
+      "driver_sha256": "8fc0d4a8322e03d2b209bee0b1c575feb3bb7b03a757e86b4a9fe991dcfba4a2",
+      "movie_sha256": "d536971f06c9c45374df1ebef8991fd19708974821ef5c6ec6124043ea68b1e6",
+      "status": "captured",
+      "original_game_audio": {
+        "decoded_samples": 212309,
+        "peak": 0.251220703125,
+        "rms": 0.013212186365187973,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      }
+    }
+  ],
+  "preserved_failures": [
+    {
+      "path": "/dev/shm/ep011-r2/captures/equipment",
+      "cause": "Source old check measured only HP/damage/jumps; N01 alters production focus resolver instead."
+    },
+    {
+      "path": "/dev/shm/ep011-r2/failures/first-render-duration-parser.log",
+      "cause": "FFmpeg duration parser requires leading zero on fade duration."
+    },
+    {
+      "path": "/dev/shm/ep011-r2/failures/fps-normalization",
+      "cause": "Concat AAC priming shifted initial video PTS; corrected actual PTS for video/audio and enforced CFR, without dropping base gameplay."
+    }
+  ],
+  "human_aesthetic_review": "Not independently performed; user explicitly authorized modification and direct publication.",
+  "publication": "pending"
+}
