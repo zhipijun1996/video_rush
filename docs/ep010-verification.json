@@ -1,0 +1,122 @@
+{
+  "episode": "ep010",
+  "public_episode": "失序之钟ep09",
+  "render_commit": "aeebfeb0ba07a8d19c884d788990892850e6a79c",
+  "source_main": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+  "local": {
+    "status": "technical_pass_human_review_pending",
+    "duration": 298.6,
+    "final": {
+      "path": "/dev/shm/video-rush-ep010/final.mp4",
+      "sha256": "e89a1f84281c5e854a45c607be432ec1be7a0a3fee05c6e5777d9e586752c6e5",
+      "bytes": 13928264
+    },
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "content_structural_pass": true,
+    "source_documents": 14,
+    "animations": 25,
+    "delivery_manifest_verified_files": 99,
+    "stage_states": {
+      "Research": "complete",
+      "Story": "complete",
+      "Script": "complete",
+      "Shot Planning": "complete",
+      "Footage Collection": "complete",
+      "Narration": "complete",
+      "Timeline Composition": "complete",
+      "Rendering": "complete",
+      "Quality Validation": "complete",
+      "Delivery": "complete"
+    }
+  },
+  "tests": {
+    "local_passed": 70,
+    "warnings": 5,
+    "log": "/dev/shm/ep010-tests.log"
+  },
+  "human_review": "pending; sampled final frames inspected, no full listening or independent aesthetic review claimed",
+  "game_repo": "read only; no game runtime tests performed",
+  "duration_preflight": "First audio-only draft planned311.266667s. Compressed wording; first composed plan300.066667s was paused before validation and final narration shortened. Final298.6s, unchanged180–300 quality gate. Completed unaffected cuts and valid narration were cached; original pre-shortening log retained.",
+  "remote": {
+    "zip_bytes": 14926331,
+    "zip_sha256": "5d623774de870e7e224188e84a1b5d493927a677bc166e0496c1321927624669",
+    "manifest_files_verified": 99,
+    "exact_documents": 14,
+    "report": "technical_pass_human_review_pending",
+    "duration": 298.6,
+    "final": {
+      "path": "/home/runner/work/video_rush/video_rush/build/episodes/ep010/final.mp4",
+      "sha256": "61ac620b08791cc3179418531ace259b6e839a6e3d1627b8c24c70fb0ed6af62",
+      "bytes": 13931819
+    },
+    "animations": 25,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "run_id": 41952847047,
+    "url": "https://github.com/zhipijun1996/video_rush/actions/runs/41952847047",
+    "conclusion": "success",
+    "artifact_id": 13382382399,
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/41952847047/artifacts/13382382399",
+    "expires_at": "2026-11-19T02:15:44Z",
+    "download_method": "GitHub connector downloaded actual workflow ZIP; reusable file URL fetched locally. Native gh redirected download returned403; no redirect host or signed credentials logged in this curated receipt.",
+    "zip_digest_matches_workflow_upload_log": true,
+    "downloaded_entire_mp4_decoded": true,
+    "downloaded_script_voice_scope_match_committed_spec": true,
+    "source_document_sha256_and_git_blob_checked": 14,
+    "temporary_music_chunks_deleted": 8,
+    "remote_tests": {
+      "passed": 69,
+      "skipped": 1,
+      "warnings": 5,
+      "optional_browser_test_skipped": true
+    },
+    "local_download_path": "build/deliveries/video-rush-ep010-final-remote/",
+    "local_zip_path": "build/deliveries/video-rush-ep010-final.zip"
+  },
+  "bilibili": {
+    "published": false,
+    "reason": "This new episode is delivered for user review; no approval to publish this revision yet.",
+    "proposed_public_episode": "ep09",
+    "topic_to_associate_after_approval": 1340873,
+    "collection_after_approval": 9498995
+  }
+}
