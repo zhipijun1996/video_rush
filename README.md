@@ -4,7 +4,9 @@
 
 ## 当前下载方式（用户最新指示）
 
-**最新制作：失序之钟 ep10 · 现阶段实机记录**：[手机观看包（约268MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13438887421) · [含五份完整录像的交付包（约593MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13440065504)。6分14.9秒，游戏原声、无配音；平原与森林各两图分关录制，四场Boss战保留完整原速，跑图节选。最新随机平原来自PR136，提供标明非游玩的镜头巡览与尚未跑通的正常输入尝试。含封面、标题简介、字幕、来源和报告；保留至2026-11-19。已实际下载核对手机包52份文件、五份原片和完整清单54项内容，整片解码通过；76项测试通过。尚未投稿本期。[制作说明](docs/ep011.md) · [真实验收与失败记录](docs/ep011-verification.json)。
+**失序之钟 ep10 装备／字幕／章节转场版已公开**：[B站观看《平原、森林、装备，这阶段的成果先留个档》](https://www.bilibili.com/video/BV1Ue4Y6GEVS/)。6分51.2秒，保留四场完整Boss战，新增真实装备领取、装卸、飞轮与三巡钟实战，以及简短说明字幕和文字转场。游戏原声、无额外配音。已回读活动话题1340873、标签、封面字节及失序之钟合集9498995；原9期保留。[制作说明](docs/ep011-r2.md) · [技术与失败证据](docs/ep011-r2-verification.json) · [投稿回执](docs/bilibili-ep011-r2-upload.json)。
+
+**前版 ep10 · 现阶段实机记录（未含本次装备补录）**：[手机观看包（约268MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13438887421) · [含五份完整录像的交付包（约593MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13440065504)。6分14.9秒，游戏原声、无配音；平原与森林各两图分关录制，四场Boss战保留完整原速，跑图节选。最新随机平原来自PR136，提供标明非游玩的镜头巡览与尚未跑通的正常输入尝试。含封面、标题简介、字幕、来源和报告；保留至2026-11-19。已实际下载核对手机包52份文件、五份原片和完整清单54项内容，整片解码通过；76项测试通过。尚未投稿本期。[制作说明](docs/ep011.md) · [真实验收与失败记录](docs/ep011-verification.json)。
 
 原声实机记录模式：`python -m video_rush gameplay --spec episodes/ep011-gameplay.json --captures build/captures --output build/episodes/ep011`。先用精确快照和匹配的补丁版引擎录制，各关完整原片独立保留；此模式不调用 TTS。手动云端入口为 `.github/workflows/current-gameplay.yml`，实际成片与下载验证见后续交付回执，未完成的运行不能算成功。
 

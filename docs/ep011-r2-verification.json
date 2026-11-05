@@ -77,5 +77,21 @@
     }
   ],
   "human_aesthetic_review": "Not independently performed; user explicitly authorized modification and direct publication.",
-  "publication": "pending"
+  "publication": {
+    "status": "published_open",
+    "bvid": "BV1Ue4Y6GEVS",
+    "aid": 117565267385205,
+    "cid": 43362420935,
+    "url": "https://www.bilibili.com/video/BV1Ue4Y6GEVS/",
+    "uploaded_video_sha256": "ba00fb2d7849fa64a2578c0d2cc4ff52dfd3fbfa89891ef14f41fd7d14aee26c",
+    "source_video_seconds": 411.2,
+    "platform_duration_seconds": 412,
+    "activity_topic_id": 1340873,
+    "season_id": 9498995,
+    "section_id": 10641231,
+    "prior_collection_members_preserved": true,
+    "cover_matches_authorized_revision": true,
+    "receipt": "docs/bilibili-ep011-r2-upload.json"
+  },
+  "visual_review": "Nine native/edit segments sampled, including chapter cards and each equipment UI state; not independent human aesthetic approval."
 }
