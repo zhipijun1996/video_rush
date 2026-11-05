@@ -31,7 +31,7 @@ jobs:
           path: build/delivery
           run-id: ${{ inputs.source_run }}
           github-token: ${{ github.token }}
-      - name: Verify every delivered source and keep the movie unchanged
+      - name: Verify sources, range metadata and decoded movie content
         run: |
           python - <<'PY'
           import json
@@ -77,5 +77,5 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import os
-          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载成片、封面、投稿资料与全部原片]('+os.environ['DOWNLOAD']+')\n\n成片与原片未修改，交付清单逐文件验证，字幕和整片解码再次核对。保留14天。')
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载成片、封面、投稿资料与全部原片]('+os.environ['DOWNLOAD']+')\n\n画面和声音内容保持不变，范围标记明确；交付清单逐文件验证，字幕和整片解码再次核对。保留14天。')
           PY

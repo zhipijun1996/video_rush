@@ -4,11 +4,13 @@
 
 ## 当前下载方式（用户最新指示）
 
+**最新制作：失序之钟 ep10 · 现阶段实机记录**：[手机观看包（约268MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13438887421) · [含五份完整录像的交付包（约593MB）](https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13440065504)。6分14.9秒，游戏原声、无配音；平原与森林各两图分关录制，四场Boss战保留完整原速，跑图节选。最新随机平原来自PR136，提供标明非游玩的镜头巡览与尚未跑通的正常输入尝试。含封面、标题简介、字幕、来源和报告；保留至2026-11-19。已实际下载核对手机包52份文件、五份原片和完整清单54项内容，整片解码通过；76项测试通过。尚未投稿本期。[制作说明](docs/ep011.md) · [真实验收与失败记录](docs/ep011-verification.json)。
+
 原声实机记录模式：`python -m video_rush gameplay --spec episodes/ep011-gameplay.json --captures build/captures --output build/episodes/ep011`。先用精确快照和匹配的补丁版引擎录制，各关完整原片独立保留；此模式不调用 TTS。手动云端入口为 `.github/workflows/current-gameplay.yml`，实际成片与下载验证见后续交付回执，未完成的运行不能算成功。
 
 **《失序之钟》ep09思维导图复盘版已公开B站**：[观看《AI把代码仓写乱之后，我补上的项目管理经验》](https://www.bilibili.com/video/BV1Pf486bEFX/)。已核对开放浏览、B站AI创造公开赛真实话题/标签/标题后缀、批准封面及失序之钟合集归属；原8条合集视频保留。[投稿回执](docs/bilibili-ep010-r2-upload.json)。
 
-**最新《失序之钟》ep09 · 经验复盘／层次化思维导图版**：[手机下载新版成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41957163165/artifacts/13384520065)，约15.1MB，保留至2026-11-19。成片4分51.8秒，把口播改为停工整理后的个人总结；一张稳定导图贯穿“主题→四条主线→做法→游戏例子”，逐层展开、分支细读、回到全图。含独立完整SVG、轻BGM；实际核对91份清单、14份原文和整片解码。旧版保留；用户随后批准本版投稿，B站链接见上。[完整层级](docs/ep010-r2-mindmap.md) · [新口播](docs/ep010-r2-script.md) · [修订与实际交付](docs/ep010-r2.md) · [验收回执](docs/ep010-r2-verification.json)。
+**上一期《失序之钟》ep09 · 经验复盘／层次化思维导图版**：[手机下载新版成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41957163165/artifacts/13384520065)，约15.1MB，保留至2026-11-19。成片4分51.8秒，把口播改为停工整理后的个人总结；一张稳定导图贯穿“主题→四条主线→做法→游戏例子”，逐层展开、分支细读、回到全图。含独立完整SVG、轻BGM；实际核对91份清单、14份原文和整片解码。旧版保留；用户随后批准本版投稿，B站链接见上。[完整层级](docs/ep010-r2-mindmap.md) · [新口播](docs/ep010-r2-script.md) · [修订与实际交付](docs/ep010-r2.md) · [验收回执](docs/ep010-r2-verification.json)。
 
 **前版《失序之钟》ep09 · AI项目管理方法**：[手机下载成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41952847047/artifacts/13382382399)，约14.9MB，保留至2026-11-19。成片4分58.6秒，25段原创动态图示，轻BGM；以最新主线为例，完整讲需求、架构、模块设计、AGENTS入口、Skills、小步实现与验证交接，重点解释“文档按最终交付件维护”。保留项目和方法仍在打磨的边界，未上传B站。实际下载核对99项文件、14份原文Git blob/SHA256和整片解码。[口播](docs/ep010-script.md) · [方法与来源](docs/ep010.md) · [实际验收](docs/ep010-verification.json)。
 

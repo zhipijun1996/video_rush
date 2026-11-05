@@ -1,0 +1,351 @@
+{
+  "episode": "ep011",
+  "public_episode": "ep10",
+  "mode": "zero narration / native game sound and music",
+  "main_source": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+  "random_source": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+  "random_pr": 136,
+  "original_game_worktree_head_unchanged": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "local_recordings": [
+    {
+      "stage": "plains1",
+      "seed": "level-design-v2-baseline",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "status": "captured",
+      "duration": 163.083333,
+      "sha256": "d7f6d16f2e2b1076d9586f587570d133ac1f155bff9b90cfc8a1815dacce1c2e",
+      "original_game_audio": {
+        "decoded_samples": 2609493,
+        "peak": 0.46087646484375,
+        "rms": 0.037078621386204554,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      },
+      "receipt_sha256": "9c3461d976b7b2e69883cfebc8b23765aed6e3ee7f9e2823df289da5bbec6f7c",
+      "boss_start": 73.1,
+      "boss_defeat": 159.0,
+      "route_outcome": "route_target_reached",
+      "failures": []
+    },
+    {
+      "stage": "plains2",
+      "seed": "windkeeper-pressure-01",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "status": "captured",
+      "duration": 114.533333,
+      "sha256": "b072e75d132a60096254cdd49b6f09cc5e8bde016fc4fbd930db57f57784e272",
+      "original_game_audio": {
+        "decoded_samples": 1832619,
+        "peak": 0.508819580078125,
+        "rms": 0.045512444083362,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      },
+      "receipt_sha256": "bdd92a6a7197b1841fe73f949f99d4d7296db4eb1c28c64737ec13d3ed63271b",
+      "boss_start": 55.25,
+      "boss_defeat": 110.45,
+      "route_outcome": "route_target_reached",
+      "failures": []
+    },
+    {
+      "stage": "forest1",
+      "seed": "forest-depth-hollow-00",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "status": "captured",
+      "duration": 52.316667,
+      "sha256": "b819375e710e98dd9491ba4ee8c27395186eb73567ac160c804930ce195359a4",
+      "original_game_audio": {
+        "decoded_samples": 837291,
+        "peak": 0.52899169921875,
+        "rms": 0.049716719700011854,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio, not narration"
+      },
+      "receipt_sha256": "5ea500932eedd678c7401339709a0a30685953f258ef84cb15dea65c11fbecf8",
+      "defeats": 1,
+      "boss_final_hp": 0.0,
+      "failures": [],
+      "route_steps": 28,
+      "initial_debug_entry": true,
+      "reloaded": false
+    },
+    {
+      "stage": "forest2",
+      "seed": "forest-depth-hollow-00",
+      "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "status": "captured",
+      "duration": 57.55,
+      "sha256": "905d5aed163a10bbd3d490c37c70a9d1eb4a997b3a81c417432a9e5527e68a78",
+      "original_game_audio": {
+        "decoded_samples": 920917,
+        "peak": 0.53466796875,
+        "rms": 0.04356304180623732,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      },
+      "receipt_sha256": "319eb6fcb75f0b7182495635652cbb821036e6a303458874cc3f0a39e01c1ddc",
+      "defeats": 1,
+      "boss_final_hp": 0.0,
+      "failures": [],
+      "route_steps": 30,
+      "initial_debug_entry": null,
+      "reloaded": true
+    },
+    {
+      "stage": "random",
+      "seed": "formal-integration-1",
+      "source_commit": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+      "status": "captured_incomplete_or_failed_driver",
+      "duration": 57.266667,
+      "sha256": "a4631c51c64bcfee28bb2aa24931b41bc73f8482d3a23416e2c4cdee94beca19",
+      "original_game_audio": {
+        "decoded_samples": 916480,
+        "peak": 0.265045166015625,
+        "rms": 0.018179508302773595,
+        "clipped_fraction": 0.0,
+        "audible_signal": true,
+        "source_type": "Original Godot MovieMaker engine audio; no TTS or substitute soundtrack"
+      },
+      "receipt_sha256": "6ad8f3ccc90974859665aca59ba92602680278be4446c4d9a6d9f365cdc57f97",
+      "route_complete": false,
+      "boss_defeated": false,
+      "overview": [
+        1014,
+        2214
+      ],
+      "failures": 1
+    }
+  ],
+  "preserved_failed_attempts": [
+    {
+      "path": "/dev/shm/ep011/probes/random-ci-smoke",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": true,
+      "log_sha256": "2ec9ad56295decbfbc89ff4f1cb55a79633ef18fab18439db0210a3165c4aa04",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/probes/random-formal1",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": true,
+      "log_sha256": "6ed4a6705c93eb954c5dae07dc6b9b77a30d8680124f0130e642cb7764d383af",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/probes/random-weighted",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": true,
+      "log_sha256": "080c1fc70e67b5d5985b0aa6b07dfa2983a16115f99b828620c8d24e4c8bfd75",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/probes/random-baseline",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": true,
+      "log_sha256": "07032cacdbd231536d0da797cc307722fefcf499940f2eff7691e7a94aa9b481",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/captures/plains2-original-failed",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": false,
+      "log_sha256": "4bda0278663512bef19dcee44e641d80d2bab643d62c4da719a58a92bcedc272",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/captures/plains2-greed",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": false,
+      "log_sha256": "34b76858daf52878f20ed2f0f83d4c37f47015db6c358276046fb29f05ebde02",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    },
+    {
+      "path": "/dev/shm/ep011/probes/plains2-pressure",
+      "status": "captured_incomplete_or_failed_driver",
+      "headless": true,
+      "log_sha256": "0af3769306629c90cfab5591e564d067a459e403eabf6c8e00f3ad70cba33928",
+      "limitation": "Failed automated-player attempt; not a proof of impossible game layout"
+    }
+  ],
+  "tests": {
+    "passed": 76,
+    "warnings": 5,
+    "log_sha256": "aec8b4c94f34af2abcd4a953283d05193b45c3ebd3a2ddc2c31a4da335d43d65",
+    "actual_end_to_end": "Local five captures and full film; hosted five captures, full edit, strict failed gate preserved, VUI-only correction, pixel/PCM equality, actual downloaded final full decode"
+  },
+  "hosted": {
+    "native_and_edit_run": 42071442886,
+    "native_stages": [
+      {
+        "stage": "plains1",
+        "sha256": "276019fd8ff7686bc62a40c3621270caf19655cf02d2dd12244640c6cd20b2cd",
+        "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+        "driver_verified": true,
+        "status": "captured",
+        "duration": 158.716667,
+        "actual_clear": true
+      },
+      {
+        "stage": "plains2",
+        "sha256": "5884249845e9af0dd2099e8592d0e4cce9011f4294a6591822fba887e1bc9721",
+        "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+        "driver_verified": true,
+        "status": "captured",
+        "duration": 114.533333,
+        "actual_clear": true
+      },
+      {
+        "stage": "forest1",
+        "sha256": "3d1cc8cf64becad52fe412e225414459099e55a02336cdc985138c31eff7e68c",
+        "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+        "driver_verified": true,
+        "status": "captured",
+        "duration": 52.316667,
+        "actual_clear": true
+      },
+      {
+        "stage": "forest2",
+        "sha256": "2a4c138c1109431b3b79c488bd04050be29f8ce43fdb27e856bcce1946c60194",
+        "source_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+        "driver_verified": true,
+        "status": "captured",
+        "duration": 57.55,
+        "actual_clear": true
+      },
+      {
+        "stage": "random",
+        "sha256": "fbe39fb11f4a516b5066df70a4e4b6a3c09e6b7869888620ce2f1da9623c878a",
+        "source_commit": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+        "driver_verified": true,
+        "status": "captured_incomplete_or_failed_driver",
+        "duration": 61.033333,
+        "actual_clear": false
+      }
+    ],
+    "initial_edit_status": "failed strict limited_range check; other15 passed",
+    "initial_failed_checks": [
+      "limited_range"
+    ],
+    "initial_movie_sha256": "dbc9182d055619a895eb5d7dc3c0b69c1665d13ff21af8ca9b47c2f14fc91921",
+    "initial_duration": 374.9,
+    "artifact_over_tool_limit": {
+      "id": 13439165341,
+      "bytes": 593121979,
+      "tool_max_bytes": 536870912
+    },
+    "small_diagnostics_artifact": 13438276782,
+    "package_fix_run": 42076921660,
+    "status": "delivered_technical_pass_human_review_pending",
+    "final_delivery": {
+      "run_id": 42076921660,
+      "run_conclusion": "success",
+      "render_code_commit": "821bb4db136e9274f10fff33b9d669fdf53d7cba",
+      "repair_and_watch_code_commit": "df2f5bc07260c42d3b822a42bb9b9e5a43910b2f",
+      "watch_artifact": {
+        "id": 13438887421,
+        "url": "https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13438887421",
+        "bytes": 267955387,
+        "independently_downloaded_zip_sha256": "34501993384ba6c355f83aedf3efd8ad6388fd4dc6200da70acb0bc1280be5d2"
+      },
+      "full_artifact": {
+        "id": 13440065504,
+        "url": "https://github.com/zhipijun1996/video_rush/actions/runs/42076921660/artifacts/13440065504",
+        "bytes": 593128081,
+        "github_reported_zip_digest": "sha256:fa0ee2d5713fc6fd05c7cd7ecbebf9348dd85757dad354055485d51ae0d570eb",
+        "verification": "Contents verified componentwise: phone ZIP + all five independently downloaded native recording ZIPs; whole archive exceeds tool512MiB limit"
+      },
+      "expires_at": "2026-11-19T17:45:46Z",
+      "actual_download_verification": {
+        "watch_zip_sha256": "34501993384ba6c355f83aedf3efd8ad6388fd4dc6200da70acb0bc1280be5d2",
+        "watch_bytes": 267955387,
+        "watch_files_verified": 52,
+        "full_manifest_components_verified": 54,
+        "external_original_videos_verified": 5,
+        "final_sha256": "57abdab166c8bfac7b91145e5c93ed712f6e33f0f742023b6235dd9175104783",
+        "duration": 374.9,
+        "technical": {
+          "full_decode": true,
+          "mp4": true,
+          "dimensions": true,
+          "fps": true,
+          "video_codec": true,
+          "pixel_format": true,
+          "limited_range": true,
+          "audio_codec": true,
+          "sample_rate": true,
+          "duration": true,
+          "original_game_audio_audible": true,
+          "clipping": true,
+          "subtitle_bounds": true,
+          "source_hashes": true,
+          "no_long_black": true,
+          "no_unexplained_freeze": true
+        },
+        "all_technical_passed": true,
+        "full_downloaded_movie_decode": true,
+        "range_repair": {
+          "status": "verified_metadata_only_range_repair",
+          "original_movie_sha256": "dbc9182d055619a895eb5d7dc3c0b69c1665d13ff21af8ca9b47c2f14fc91921",
+          "final_movie_sha256": "57abdab166c8bfac7b91145e5c93ed712f6e33f0f742023b6235dd9175104783",
+          "decoded_before": {
+            "video_frames": 11247,
+            "ordered_decoded_yuv_sha256": "3d3ee4c93033d71dbf8aad8244df63256d6659f6887ec22cbb74014af1c0d6ea",
+            "decoded_pcm": "SHA256=30945a478d1f35a7e2134f92eaeb80cf260389df88e9a3b2d21066352a3a6c97"
+          },
+          "decoded_after": {
+            "video_frames": 11247,
+            "ordered_decoded_yuv_sha256": "3d3ee4c93033d71dbf8aad8244df63256d6659f6887ec22cbb74014af1c0d6ea",
+            "decoded_pcm": "SHA256=30945a478d1f35a7e2134f92eaeb80cf260389df88e9a3b2d21066352a3a6c97"
+          },
+          "decoded_content_unchanged": true,
+          "omitted_render_caches": [
+            "cover-forest1.png",
+            "cover-plains1.png"
+          ],
+          "original_host_failed_checks": [
+            "limited_range"
+          ]
+        },
+        "local_watch_directory": "/dev/shm/ep011-host-watch"
+      },
+      "bilibili_submission": "not requested for this episode; not performed"
+    }
+  },
+  "human_review": "pending",
+  "local_edit": {
+    "directory": "/dev/shm/video-rush-ep011",
+    "duration": 379.3,
+    "final_sha256": "cc5b1efac3b1a3dc9602f4cb2f8124040aa90d90ccfa1735abbdd107aa9648bb",
+    "bytes": 267704643,
+    "technical": {
+      "full_decode": true,
+      "mp4": true,
+      "dimensions": true,
+      "fps": true,
+      "video_codec": true,
+      "pixel_format": true,
+      "limited_range": true,
+      "audio_codec": true,
+      "sample_rate": true,
+      "duration": true,
+      "original_game_audio_audible": true,
+      "clipping": true,
+      "subtitle_bounds": true,
+      "source_hashes": true,
+      "no_long_black": true,
+      "no_unexplained_freeze": true
+    },
+    "all_technical_passed": true,
+    "delivery_manifest_files": 69,
+    "delivery_manifest_sha256": "3ab0f4782b46bb31c49256e635b1e05c592756da8cfe93a50f11ad949b625a5d",
+    "visual_review": "All 14 cut interiors sampled in final MP4; cover inspected; no human approval inferred",
+    "actual_ass_bounds_and_no_overlap": true,
+    "actual_captured_driver_hashes": 5
+  },
+  "source_refs_rechecked_unchanged": true,
+  "range_repair_smoke": "Real 2s game AV: 60 ordered decoded video frames and PCM SHA unchanged by VUI-only remux"
+}
