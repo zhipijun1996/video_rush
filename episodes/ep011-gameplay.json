@@ -1,0 +1,70 @@
+{
+  "id": "ep011",
+  "public_episode": "ep10",
+  "title": "平原、森林和随机地图，现在做到哪了",
+  "repository": "zhipijun1996/gunman-rush",
+  "main_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+  "random_commit": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+  "random_pr": 136,
+  "narration": false,
+  "audio": "Original Godot MovieMaker game music and sound effects; no TTS",
+  "stages": {
+    "plains1": {
+      "version": "main",
+      "driver": "video_rush/drivers/current_plains_session.gd",
+      "seed": "level-design-v2-baseline",
+      "args": [
+        "--map=1",
+        "--charge-jump=on_roll"
+      ],
+      "label": "风铃平原 · 第一图",
+      "boss": "鸣铃巡游机"
+    },
+    "plains2": {
+      "version": "main",
+      "driver": "video_rush/drivers/current_plains_session.gd",
+      "seed": "windkeeper-pressure-01",
+      "args": [
+        "--map=2",
+        "--pilot=active_assault",
+        "--attack-pressure"
+      ],
+      "label": "风铃平原 · 第二图",
+      "boss": "守风者"
+    },
+    "forest1": {
+      "version": "main",
+      "driver": "tests/forest_depth_campaign_boss_runner.gd",
+      "seed": "forest-depth-hollow-00",
+      "args": [
+        "--boss=guardian"
+      ],
+      "label": "荆棘森林 · 第一图",
+      "boss": "根钟守卫"
+    },
+    "forest2": {
+      "version": "main",
+      "driver": "tests/forest_depth_campaign_boss_runner.gd",
+      "seed": "forest-depth-hollow-00",
+      "args": [
+        "--boss=canopy"
+      ],
+      "label": "荆棘森林 · 第二图",
+      "boss": "荆冠女王"
+    },
+    "random": {
+      "version": "random",
+      "driver": "video_rush/drivers/current_mapgen_session.gd",
+      "seed": "formal-integration-1",
+      "args": [],
+      "label": "最新随机平原 · 开发分支",
+      "boss": "鸣铃巡游机"
+    }
+  },
+  "claims": [
+    "主线平原和森林为 main 的独立关卡录像，自动输入；不是一次不间断人工通关。",
+    "森林使用 forest-bible-world-v15 布局；v2 是生成器协议版本。",
+    "随机平原来自尚未合入的 PR136，使用 106 模块源池；实际通关状态由录制 trace 判断。",
+    "录制为软件渲染的离线 MovieMaker 60fps，不是目标设备性能测试。"
+  ]
+}

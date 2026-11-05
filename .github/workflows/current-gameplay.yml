@@ -1,0 +1,101 @@
+name: Record current game levels and deliver progress film
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        stage: [plains1, plains2, forest1, forest2, random]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install native recording dependencies
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
+          python -m pip install -e '.[test]'
+      - name: Record exact source with its pinned patched engine
+        run: python -m tools.current_gameplay_job --stage '${{ matrix.stage }}' --base 'build/native-${{ matrix.stage }}' --output 'build/captures/${{ matrix.stage }}'
+      - name: Keep actual recording and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ep011-native-${{ matrix.stage }}
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/captures/${{ matrix.stage }}/gameplay.mp4
+            build/captures/${{ matrix.stage }}/receipt.json
+            build/captures/${{ matrix.stage }}/trace.json
+            build/captures/${{ matrix.stage }}/recording_driver.gd
+            build/captures/${{ matrix.stage }}/*.log
+            build/native-${{ matrix.stage }}/preparation.json
+            build/native-${{ matrix.stage }}/import.log
+  compose:
+    needs: capture
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-noto-cjk
+          python -m pip install -e '.[test]'
+          pytest -q
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ep011-native-*
+          path: build/downloaded
+      - name: Collect independently verified native sources
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, shutil
+          spec=json.load(open('episodes/ep011-gameplay.json'))
+          for name in spec['stages']:
+              roots=list(Path('build/downloaded/ep011-native-'+name).rglob('receipt.json'))
+              if len(roots)!=1:raise ValueError('Missing/ambiguous native recording '+name)
+              shutil.copytree(roots[0].parent,Path('build/captures')/name)
+          PY
+      - name: Edit original-audio film and run actual quality checks
+        run: python -m video_rush gameplay --spec episodes/ep011-gameplay.json --captures build/captures --output build/episodes/ep011
+      - name: Download complete movie, cover, submission text and full recordings
+        id: movie
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-ep011
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep011/final.mp4
+            build/episodes/ep011/cover.png
+            build/episodes/ep011/*.json
+            build/episodes/ep011/*.md
+            build/episodes/ep011/*.ass
+            build/episodes/ep011/logs/
+            build/episodes/ep011/recordings/
+      - name: Phone download link
+        if: success()
+        env:
+          MOVIE_URL: ${{ steps.movie.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载成片、封面、投稿资料与各关完整录像]('+os.environ['MOVIE_URL']+')\n\n保留14天。无配音，原生游戏音效与音乐。人工手机观看待审核；随机地图状态见片内标注与报告。')
+          PY

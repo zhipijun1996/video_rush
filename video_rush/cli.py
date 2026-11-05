@@ -49,6 +49,8 @@ def main(argv=None):
     pr.add_argument('--local-only',action='store_true',help='只生成本地文件；默认完成后直接交付GitHub预发布')
     val=sub.add_parser('validate',help='重新验证成片与来源；不代签人类审美')
     val.add_argument('output')
+    gameplay=sub.add_parser('gameplay',help='从完整实机录像剪阶段记录，使用游戏原声，不生成配音')
+    gameplay.add_argument('--spec',required=True);gameplay.add_argument('--captures',required=True);gameplay.add_argument('--output',required=True)
     args=p.parse_args(argv)
     try:
         if args.command=='doctor':
@@ -63,9 +65,16 @@ def main(argv=None):
             from .publish import publish
             print(publish(args.output,args.repository,args.tag)['url']);return 0
         if args.command=='validate':
+            out=Path(args.output)
+            if (out/'script.json').exists() and read(out/'script.json').get('on_screen_only'):
+                from .gameplay import validate_gameplay
+                r=validate_gameplay(out);print(r['technical']['passed']);return 0 if r['technical']['passed'] else 1
             from .quality import validate
             out=Path(args.output);r=validate(out,read(out/'script.json'),read(out/'storyboard.json'),read(out/'sources.json'))
             print(r['status']);return 0 if r['technical']['passed'] else 1
+        if args.command=='gameplay':
+            from .gameplay import produce_gameplay
+            print(produce_gameplay(args.spec,args.captures,args.output));return 0
         if args.music and not args.music_license:raise ValueError('--music requires explicit --music-license')
         repo=source_path(args.source)
         spec=args.spec
