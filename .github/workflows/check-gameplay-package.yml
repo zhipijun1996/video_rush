@@ -32,7 +32,25 @@ jobs:
           run-id: ${{ inputs.source_run }}
           github-token: ${{ github.token }}
       - name: Verify every delivered source and keep the movie unchanged
-        run: python -m tools.check_gameplay_package build/delivery
+        run: |
+          python - <<'PY'
+          import json
+          print(json.dumps(json.load(open('build/delivery/report.json'))['technical'],ensure_ascii=False,indent=2))
+          PY
+          python -m tools.check_gameplay_package build/delivery
+      - name: Keep small diagnostic report even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ep011-package-diagnostics
+          retention-days: 14
+          if-no-files-found: warn
+          path: |
+            build/delivery/report.json
+            build/delivery/sources.json
+            build/delivery/storyboard.json
+            build/delivery/subtitles.ass
+            build/delivery/logs/
       - uses: actions/upload-artifact@v4
         id: delivery
         with:
