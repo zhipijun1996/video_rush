@@ -1,0 +1,2202 @@
+{
+  "schema_version": 2,
+  "episode": "ep010-r2",
+  "title": "AI把代码仓写乱之后，我补上的项目管理经验 | 【失序之钟】独游折腾记 ep09【B站AI创造公开赛】",
+  "title_candidates": [
+    "停工重构之后，我整理了这张AI项目管理图 | 【失序之钟】独游折腾记 ep09【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep010-r2-assets.json",
+  "story_ids": [
+    "S_AI_PROJECT_METHOD_01"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+8%",
+  "playback_speed": 1.02,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.085,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "t01",
+    "mindmap"
+  ],
+  "cover": {
+    "layout": "diagram",
+    "background": "#f3f0e7",
+    "elements": [
+      {
+        "type": "text",
+        "x": 100,
+        "y": 100,
+        "text": "失序之钟 · 独游折腾记 ep09",
+        "size": 42,
+        "color": "#197d78",
+        "width": 1700,
+        "bold": false
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 204,
+        "text": "踩坑之后",
+        "size": 117,
+        "color": "#293440",
+        "width": 1700,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 365,
+        "text": "我怎么管AI项目",
+        "size": 112,
+        "color": "#197d78",
+        "width": 1700,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 104,
+        "y": 532,
+        "text": "把自己的管理经验，整理成一张图",
+        "size": 44,
+        "color": "#707b83",
+        "width": 1700,
+        "bold": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          100,
+          704,
+          310,
+          117
+        ],
+        "fill": "#293440",
+        "color": "#293440",
+        "stroke_width": 2,
+        "radius": 18
+      },
+      {
+        "type": "text",
+        "x": 121,
+        "y": 742,
+        "text": "我的管理复盘",
+        "size": 40,
+        "color": "#fffaf0",
+        "width": 270,
+        "bold": true
+      },
+      {
+        "type": "line",
+        "points": [
+          [
+            410,
+            762
+          ],
+          [
+            522,
+            762
+          ],
+          [
+            522,
+            716
+          ],
+          [
+            607,
+            716
+          ]
+        ],
+        "color": "#197d78",
+        "width": 4,
+        "arrow": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          607,
+          668,
+          532,
+          98
+        ],
+        "fill": "#f3f0e7",
+        "color": "#197d78",
+        "stroke_width": 2,
+        "radius": 18
+      },
+      {
+        "type": "text",
+        "x": 633,
+        "y": 697,
+        "text": "目标与设计",
+        "size": 43,
+        "color": "#197d78",
+        "width": 480,
+        "bold": true
+      },
+      {
+        "type": "line",
+        "points": [
+          [
+            410,
+            762
+          ],
+          [
+            522,
+            762
+          ],
+          [
+            522,
+            716
+          ],
+          [
+            1257,
+            716
+          ]
+        ],
+        "color": "#526caa",
+        "width": 4,
+        "arrow": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          1257,
+          668,
+          532,
+          98
+        ],
+        "fill": "#f3f0e7",
+        "color": "#526caa",
+        "stroke_width": 2,
+        "radius": 18
+      },
+      {
+        "type": "text",
+        "x": 1283,
+        "y": 697,
+        "text": "让AI接手",
+        "size": 43,
+        "color": "#526caa",
+        "width": 480,
+        "bold": true
+      },
+      {
+        "type": "line",
+        "points": [
+          [
+            410,
+            762
+          ],
+          [
+            522,
+            762
+          ],
+          [
+            522,
+            855
+          ],
+          [
+            607,
+            855
+          ]
+        ],
+        "color": "#a56a26",
+        "width": 4,
+        "arrow": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          607,
+          807,
+          532,
+          98
+        ],
+        "fill": "#f3f0e7",
+        "color": "#a56a26",
+        "stroke_width": 2,
+        "radius": 18
+      },
+      {
+        "type": "text",
+        "x": 633,
+        "y": 836,
+        "text": "每次迭代",
+        "size": 43,
+        "color": "#a56a26",
+        "width": 480,
+        "bold": true
+      },
+      {
+        "type": "line",
+        "points": [
+          [
+            410,
+            762
+          ],
+          [
+            522,
+            762
+          ],
+          [
+            522,
+            855
+          ],
+          [
+            1257,
+            855
+          ]
+        ],
+        "color": "#a05269",
+        "width": 4,
+        "arrow": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          1257,
+          807,
+          532,
+          98
+        ],
+        "fill": "#f3f0e7",
+        "color": "#a05269",
+        "stroke_width": 2,
+        "radius": 18
+      },
+      {
+        "type": "text",
+        "x": 1283,
+        "y": 836,
+        "text": "持续维护",
+        "size": 43,
+        "color": "#a05269",
+        "width": 480,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 104,
+        "y": 976,
+        "text": "项目和这套方法都还在打磨 · 原创思维导图",
+        "size": 29,
+        "color": "#707b83",
+        "width": 1700,
+        "bold": false
+      }
+    ],
+    "motion_groups": []
+  },
+  "research_scope": {
+    "repository": "zhipijun1996/gunman-rush",
+    "main_at_scan": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+    "scan_date": "2026-11-05",
+    "scope": "Targeted update to ep009 complete accessible-history research; current main root/project/bible/skill navigation and14 pinned files personally read, PR134/135 current metadata and PR136 unmerged draft inspected. Not a fresh full-history scan.",
+    "selected_PRs": [
+      134,
+      135,
+      136
+    ],
+    "source_document_count": 14,
+    "prior_scope": "research/ep009-evidence.json; prior video froze68a87f. This episode rereads latest48cddb and does not reuse previous draft134 status.",
+    "current_state_internal_baseline": "current_state.md itself labels earlier5ce7db; preserved verbatim, not silently updated to scan SHA.",
+    "game_repo_worktree": "Read-only; no game checkout, fetch, edit, engine or test execution.",
+    "external_references": [
+      "github/spec-kit",
+      "agentsmd/agents.md",
+      "google/eng-practices"
+    ],
+    "limits": "Merged documentation/workflow claims checked against exact source. No fresh game runtime, empirical productivity study or long-term method validation. codex getting-started source was a redirect and excluded from substantive references.",
+    "revision": "ep010-r2: same main rechecked unchanged48cddb on2026-11-05. User requests editorial/visual revision; no new runtime tests or full-history research claimed."
+  },
+  "evidence": [
+    {
+      "id": "user-method",
+      "kind": "user_testimony_and_editorial_advice",
+      "date": "2026-11-05",
+      "text": "User requested requirements → architecture including directories/framework → iterative module design; AGENTS入口; Skills流程; final-deliverable document maintenance and optional separate concise revision record. First-person practical recommendations, not claims of invention or proven longitudinal success."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "10fc98a3aed5343fab02dc0198ad7bbd615aa5057bdf07d8d537ac6e6d571027",
+      "blob_sha": "b1053843436bc8874ace46198ad9c324e388d918",
+      "bytes": 3071,
+      "id": "doc-agents",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "verified_quotes": [
+        "每条规则只定义一次，其余引用。",
+        "长期规范按最终交付件维护"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "fdc04ba95303376b63513948a05ad46c70c2b3737475b1573e782f32339907c7",
+      "blob_sha": "6c5a37944e0acfb09b61584a7a77f035e57c31f1",
+      "bytes": 3617,
+      "id": "doc-doc-index",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/project-integration/SKILL.md",
+      "sha256": "8c686f40e4407516d70a94cee71789f63358bec8efdf016ec862078a7d148076",
+      "blob_sha": "94ecd592d4c913e57a9121ba4d2e42c46c8718b6",
+      "bytes": 1345,
+      "id": "doc-integration-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/design-grill/SKILL.md",
+      "sha256": "3ce641188e7dad56c994ee7a6283f4b7d8549fa31a6cd65f36a3c93bea460288",
+      "blob_sha": "68b7e60f4cda88758df7beffd65f2aad279c01a5",
+      "bytes": 1597,
+      "id": "doc-grill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/player-creator/SKILL.md",
+      "sha256": "0a08067a68b05f226fd631ee5facddfdc66b6ad4f5b96f327addd0f714fb2618",
+      "blob_sha": "cef7156f1f76ebdd7109712a3577c853b834a2aa",
+      "bytes": 1160,
+      "id": "doc-player-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "verified_quotes": [
+        "先在正式控制器和真实镜头完成一段连续动作"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/module_map.md",
+      "sha256": "f00fdd82e43a1bb12b453c81f6d53a790fbabced1126e8a517f10209cfde7372",
+      "blob_sha": "7f68b04ed52ca7c82401f5c826fc0a22b1ad645a",
+      "bytes": 11238,
+      "id": "doc-module-map",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/project_management.md",
+      "sha256": "9d99203515c3fbe026068c5c5e09841fbdeffac19169b334f1812910fae9f4d6",
+      "blob_sha": "6d2f52a520f72768a99893a0f2a8874c2dea4197",
+      "bytes": 1894,
+      "id": "doc-management",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "verified_quotes": [
+        "任务表一行与工作线一份当前交接"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/development.md",
+      "sha256": "3d63db3cff891dbaeab2fb03785e4eab1b36e21b609c4eaac15003f4b61cec49",
+      "blob_sha": "f2a5a96de9af43efd5c7739b1fa2819959e24bb4",
+      "bytes": 3576,
+      "id": "doc-development",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/current_state.md",
+      "sha256": "dd47c598b8e77ef2e5da0d9ba9b40a3bc65986338c9c4409b2f51f3b9ecf7ccd",
+      "blob_sha": "d9d6bae4b424b669b7bc9468a4bf7a40c4e29b48",
+      "bytes": 2396,
+      "id": "doc-current",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/architecture.md",
+      "sha256": "cead5f4671e7e69194efe2315c195d4f0add16ffdabc01453809164f0f1c9c86",
+      "blob_sha": "bc98cdcdc83ac69b3d17001b02c6fcba9851d9e4",
+      "bytes": 5955,
+      "id": "doc-architecture",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "verified_quotes": [
+        "Motor 唯一执行运动与碰撞",
+        "不要只新增一个无人调用的 helper。"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/tasks.md",
+      "sha256": "6d79d319d970ca1a69ba0503c24b17eb8e9134983997fc547287f3908fe80269",
+      "blob_sha": "7bad68c84347fcbfe72146e8663ab2fef059dc2a",
+      "bytes": 4694,
+      "id": "doc-tasks",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/data/README.md",
+      "sha256": "7120fe7ee2e806cc5d4e7621a4fee42c8250bbff6172e0b3c25d7fc4d888bfde",
+      "blob_sha": "967aae56446160363ceeb98b5531cecfc269b7af",
+      "bytes": 3671,
+      "id": "doc-data",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/bible/game_design.md",
+      "sha256": "310c190c71c4161b40f42f0b07700988846d0756d16e24d759a05558e465c398",
+      "blob_sha": "15a98cb0bfce6b5207c78ddec3fdb13f16b13da6",
+      "bytes": 2968,
+      "id": "doc-game-design",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/bible/player_mechanics.md",
+      "sha256": "c25af7d43ac92bf073cbcfa2d84f1b19041d39443825813966362eca5a53543c",
+      "blob_sha": "9e5c03098b4feb7aff8ab2d74dea8c41ab67f1b5",
+      "bytes": 2363,
+      "id": "doc-player",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "id": "pr134",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/134",
+      "title": "docs: 重整 Codex 文档目录、活跃交接并加入 design-grill",
+      "head_commit": "87658b7fbcd58c2df568a7a84afac91cd0805f30",
+      "base_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "merge_commit": "5ce7db6b2af2e66efe9782ab581f026296aa593a",
+      "merged_at": "2026-11-04T04:03:41Z",
+      "draft": false,
+      "state": "closed",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "pr135",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/135",
+      "title": "简化项目管理，整理设计权威与对象规范",
+      "head_commit": "cb3d6b6f81984484ed01c62d92e6a72098fccf63",
+      "base_commit": "5ce7db6b2af2e66efe9782ab581f026296aa593a",
+      "merge_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "merged_at": "2026-11-04T06:51:15Z",
+      "draft": false,
+      "state": "closed",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "pr136",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/136",
+      "title": "正式平原：106模块、家园线程生成与运行态优化",
+      "head_commit": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+      "base_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "merge_commit": "7da3584c44112884cda7a434a1c9ddb02377a2d0",
+      "merged_at": null,
+      "draft": true,
+      "state": "open",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "external-spec-kit",
+      "repository": "github/spec-kit",
+      "commit": "ec9a6f3b94c0aa856f77e550785a1ddde1993de1",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/github/spec-kit/ec9a6f3b94c0aa856f77e550785a1ddde1993de1/README.md",
+      "sha256": "076c7ae6d7f58798a0c063ad398356bf64f1ce1002202b5f215a83d893c6fa29",
+      "blob_sha": "a4ea4f520add603de250c59f96037f0eb7be46e5",
+      "bytes": 14337,
+      "kind": "external_method_reference",
+      "usage": "Clarify what/why before plan/tasks/code; feature-by-feature iteration, do not force full SDD on bug fixes.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    },
+    {
+      "id": "external-small-cls",
+      "repository": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "path": "review/developer/small-cls.md",
+      "url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/developer/small-cls.md",
+      "sha256": "6bc55ce9a752bbb26df430a55cd12014beee684ed04e94841989ac86558817c9",
+      "blob_sha": "0501c55016c0ef06308d0147700a895be28e5c45",
+      "bytes": 12289,
+      "kind": "external_method_reference",
+      "usage": "Self-contained small changes, include real consumer, easier review and rollback.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    },
+    {
+      "id": "external-agents-standard",
+      "repository": "agentsmd/agents.md",
+      "commit": "d001185d792eb6402a58e4cbef1c228b309ec25d",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/agentsmd/agents.md/d001185d792eb6402a58e4cbef1c228b309ec25d/README.md",
+      "sha256": "60ec51c226560aaf2c49a0b8a2452c8cf24459c37a816764979dc917076c7afb",
+      "blob_sha": "8ce701e74909d5f08e2810380e0ff15f547aa0c8",
+      "bytes": 2015,
+      "kind": "external_method_reference",
+      "usage": "Predictable dedicated agent context/instructions entry.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    },
+    {
+      "id": "user-summary-r2",
+      "kind": "user_direction",
+      "date": "2026-11-05",
+      "text": "User wants a reflective experience-sharing tone and a hierarchical mindmap; retain the complete personal framework and unfinished status, revise the full film rather than only adding a final static diagram."
+    }
+  ],
+  "shots": [
+    {
+      "id": "t01",
+      "chapter": "01",
+      "title": "停工整理之后，我把经验归成一张图",
+      "narration": "上一期我吐槽，AI把代码仓写得越来越乱。停工整理之后，这次想分享一下，我现在怎么理解项目管理。我把这些想法整理成了一张图。",
+      "assets": [
+        "t01"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "停工整理后，我补上的管理经验",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "user-summary-r2"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "overview",
+        "root": "root",
+        "active_branch": null,
+        "node_ids": [
+          "root",
+          "b0",
+          "b1",
+          "b2",
+          "b3"
+        ]
+      }
+    },
+    {
+      "id": "t02",
+      "chapter": "02",
+      "title": "我现在主要在管这四件事",
+      "narration": "代码能跑起来，还不够。目标、规则和进度散在各处，换个会话就得重新解释。所以我现在主要管四件事：目标设计，任务接手，持续迭代，还有规则维护。",
+      "assets": [
+        "t02"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "user-summary-r2"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "overview",
+        "root": "root",
+        "active_branch": null,
+        "node_ids": [
+          "root",
+          "b0",
+          "b1",
+          "b2",
+          "b3",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2"
+        ]
+      }
+    },
+    {
+      "id": "t03",
+      "chapter": "03",
+      "title": "需求里，我最想讲清的是“为什么做”",
+      "narration": "第一层，是先把想做的东西说清楚。拿反冲跳跃来说，我想要的是用射击改变位移，产生新的路线选择。需求文档里，我会先讲这种体验，再讲这次的范围和完成依据。",
+      "assets": [
+        "t03"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-game-design"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 0,
+        "active_topic": 0,
+        "node_ids": [
+          "root",
+          "b0",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b0-t0-e0",
+          "b0-t0-e1",
+          "b0-t0-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b0"
+          ],
+          [
+            "b0",
+            "b0-t0"
+          ],
+          [
+            "b0",
+            "b0-t1"
+          ],
+          [
+            "b0",
+            "b0-t2"
+          ],
+          [
+            "b0-t0",
+            "b0-t0-e0"
+          ],
+          [
+            "b0-t0",
+            "b0-t0-e1"
+          ],
+          [
+            "b0-t0",
+            "b0-t0-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t04",
+      "chapter": "04",
+      "title": "架构让我知道，一件事到底归谁管",
+      "narration": "然后是架构文档。我觉得光有目录还不够，软件框架、模块边界和状态归属也得讲清楚。失序之钟继续用Godot，人物、战斗和应用各有职责。",
+      "assets": [
+        "t04"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-module-map",
+        "user-method"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 0,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b0",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b0-t1-e0",
+          "b0-t1-e1",
+          "b0-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b0"
+          ],
+          [
+            "b0",
+            "b0-t0"
+          ],
+          [
+            "b0",
+            "b0-t1"
+          ],
+          [
+            "b0",
+            "b0-t2"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e0"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e1"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t05",
+      "chapter": "05",
+      "title": "比如反冲，运动规则只该有一个入口",
+      "narration": "比如输入提交意图，人物运动组件执行移动，动画音效跟着事件走。这个边界写清楚，才方便发现：新代码写了，正式入口却还在用旧逻辑。",
+      "assets": [
+        "t05"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-player"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 0,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b0",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b0-t1-e0",
+          "b0-t1-e1",
+          "b0-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b0"
+          ],
+          [
+            "b0",
+            "b0-t0"
+          ],
+          [
+            "b0",
+            "b0-t1"
+          ],
+          [
+            "b0",
+            "b0-t2"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e0"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e1"
+          ],
+          [
+            "b0-t1",
+            "b0-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t06",
+      "chapter": "06",
+      "title": "设计文档，是把体验落到具体行为",
+      "narration": "模块设计再往下一层：什么条件触发，过程怎么衔接，落地、受伤和暂停时怎么退出。这样，一句“把手感做好”，才变成能讨论、能检查的事情。",
+      "assets": [
+        "t06"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-player",
+        "doc-agents"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 0,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b0",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b0-t2-e0",
+          "b0-t2-e1",
+          "b0-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b0"
+          ],
+          [
+            "b0",
+            "b0-t0"
+          ],
+          [
+            "b0",
+            "b0-t1"
+          ],
+          [
+            "b0",
+            "b0-t2"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e0"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e1"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t07",
+      "chapter": "07",
+      "title": "这三层，我会跟着功能一起补",
+      "narration": "这三份文档，也不用一次写完所有未来细节。我现在更认同，先把当前要做的说清楚，再跟着功能迭代。否则设计写得很完整，真实入口依然可能没接上。",
+      "assets": [
+        "t07"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-development",
+        "external-spec-kit"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 0,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b0",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b0-t2-e0",
+          "b0-t2-e1",
+          "b0-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b0"
+          ],
+          [
+            "b0",
+            "b0-t0"
+          ],
+          [
+            "b0",
+            "b0-t1"
+          ],
+          [
+            "b0",
+            "b0-t2"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e0"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e1"
+          ],
+          [
+            "b0-t2",
+            "b0-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t08",
+      "chapter": "08",
+      "title": "第二层，是让下一个AI会话接得上",
+      "narration": "第二层，是让AI知道从哪儿接手。我的做法是把AGENTS当短入口：先看基线和当前状态，再找任务、交接，以及相关设计和代码。细节留在它们各自的位置。",
+      "assets": [
+        "t08"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "external-agents-standard"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 1,
+        "active_topic": 0,
+        "node_ids": [
+          "root",
+          "b1",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b1-t0-e0",
+          "b1-t0-e1",
+          "b1-t0-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b1"
+          ],
+          [
+            "b1",
+            "b1-t0"
+          ],
+          [
+            "b1",
+            "b1-t1"
+          ],
+          [
+            "b1",
+            "b1-t2"
+          ],
+          [
+            "b1-t0",
+            "b1-t0-e0"
+          ],
+          [
+            "b1-t0",
+            "b1-t0-e1"
+          ],
+          [
+            "b1-t0",
+            "b1-t0-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t09",
+      "chapter": "09",
+      "title": "我更在意这次读什么，而不是全读完",
+      "narration": "改人物动作，就先读人物物理、输入约束和相关实现。其他资料，沿直接依赖继续找。我想留下的是这次真正有用的上下文，不是把全部历史再讲一遍。",
+      "assets": [
+        "t09"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-doc-index",
+        "doc-player-skill"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 1,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b1",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b1-t2-e0",
+          "b1-t2-e1",
+          "b1-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b1"
+          ],
+          [
+            "b1",
+            "b1-t0"
+          ],
+          [
+            "b1",
+            "b1-t1"
+          ],
+          [
+            "b1",
+            "b1-t2"
+          ],
+          [
+            "b1-t2",
+            "b1-t2-e0"
+          ],
+          [
+            "b1-t2",
+            "b1-t2-e1"
+          ],
+          [
+            "b1-t2",
+            "b1-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t10",
+      "chapter": "10",
+      "title": "Skills，是把反复提醒的事固定下来",
+      "narration": "那些反复要提醒的步骤，我会放进Skills。什么情况用，先看什么，怎么做，最后拿什么结果交付。对我来说，它是在把工作经验变成可复用的流程。",
+      "assets": [
+        "t10"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-player-skill",
+        "doc-integration-skill"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 1,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b1",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b1-t1-e0",
+          "b1-t1-e1",
+          "b1-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b1"
+          ],
+          [
+            "b1",
+            "b1-t0"
+          ],
+          [
+            "b1",
+            "b1-t1"
+          ],
+          [
+            "b1",
+            "b1-t2"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e0"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e1"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t11",
+      "chapter": "11",
+      "title": "流程最后，我还是得看实际结果",
+      "narration": "比如人物优化，先统一脚底、枪口和身体关系，再看连续动作、左右朝向和中断恢复。当然，写进Skill不等于AI就做对了，最后还得回到实际结果。",
+      "assets": [
+        "t11"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-player-skill"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 1,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b1",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b1-t1-e0",
+          "b1-t1-e1",
+          "b1-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b1"
+          ],
+          [
+            "b1",
+            "b1-t0"
+          ],
+          [
+            "b1",
+            "b1-t1"
+          ],
+          [
+            "b1",
+            "b1-t2"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e0"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e1"
+          ],
+          [
+            "b1-t1",
+            "b1-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t12",
+      "chapter": "12",
+      "title": "第三层，我更愿意一轮只打通一件事",
+      "narration": "第三层，是每次迭代怎么收住。现在我会把任务切小，比如这一轮只调整反冲衔接，把设计、实现和真实消费者一起打通，再扩下一件事。",
+      "assets": [
+        "t12"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-development",
+        "external-small-cls"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 2,
+        "active_topic": 0,
+        "node_ids": [
+          "root",
+          "b2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b2-t0-e0",
+          "b2-t0-e1",
+          "b2-t0-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b2"
+          ],
+          [
+            "b2",
+            "b2-t0"
+          ],
+          [
+            "b2",
+            "b2-t1"
+          ],
+          [
+            "b2",
+            "b2-t2"
+          ],
+          [
+            "b2-t0",
+            "b2-t0-e0"
+          ],
+          [
+            "b2-t0",
+            "b2-t0-e1"
+          ],
+          [
+            "b2-t0",
+            "b2-t0-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t13",
+      "chapter": "13",
+      "title": "“通过了”，我会多看一句通过了什么",
+      "narration": "验证这块，我觉得最容易混淆的是“通过了什么”。当前日常CI只有四项基础检查，功能改动再选专项。代码通过、操作手感和手机表现，是不同的结论。",
+      "assets": [
+        "t13"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-current",
+        "doc-development"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 2,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b2-t1-e0",
+          "b2-t1-e1",
+          "b2-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b2"
+          ],
+          [
+            "b2",
+            "b2-t0"
+          ],
+          [
+            "b2",
+            "b2-t1"
+          ],
+          [
+            "b2",
+            "b2-t2"
+          ],
+          [
+            "b2-t1",
+            "b2-t1-e0"
+          ],
+          [
+            "b2-t1",
+            "b2-t1-e1"
+          ],
+          [
+            "b2-t1",
+            "b2-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t14",
+      "chapter": "14",
+      "title": "交接里，我最需要的是下一步能继续",
+      "narration": "项目管理上，任务表维护进度，交接记录基线、改动、检查、阻塞和下一步。换个会话后，我最需要的是知道怎么接着干，而不是看一句“已完成”。",
+      "assets": [
+        "t14"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-management",
+        "doc-agents"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 2,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b2-t2-e0",
+          "b2-t2-e1",
+          "b2-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b2"
+          ],
+          [
+            "b2",
+            "b2-t0"
+          ],
+          [
+            "b2",
+            "b2-t1"
+          ],
+          [
+            "b2",
+            "b2-t2"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e0"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e1"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t15",
+      "chapter": "15",
+      "title": "管理材料，也要能帮我少做点重复工作",
+      "narration": "这次整理里，我也在给管理做减法。普通修复，一行任务和一份交接就够；新地区、新怪物，再按需要看美术和玩法。我不想最后又变成填表比赛。",
+      "assets": [
+        "t15"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "pr135",
+        "doc-management",
+        "doc-development",
+        "user-method"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 2,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b2-t2-e0",
+          "b2-t2-e1",
+          "b2-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b2"
+          ],
+          [
+            "b2",
+            "b2-t0"
+          ],
+          [
+            "b2",
+            "b2-t1"
+          ],
+          [
+            "b2",
+            "b2-t2"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e0"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e1"
+          ],
+          [
+            "b2-t2",
+            "b2-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t16",
+      "chapter": "16",
+      "title": "第四层，是持续维护唯一的现行规则",
+      "narration": "最后一层，是文档怎么持续维护。我现在很看重一条：同一件事只在一个地方定义。设计管行为，配置管数值，其他文档引用它，尽量减少多个答案。",
+      "assets": [
+        "t16"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-doc-index",
+        "doc-management"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 3,
+        "active_topic": 0,
+        "node_ids": [
+          "root",
+          "b3",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2",
+          "b3-t0-e0",
+          "b3-t0-e1",
+          "b3-t0-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b3"
+          ],
+          [
+            "b3",
+            "b3-t0"
+          ],
+          [
+            "b3",
+            "b3-t1"
+          ],
+          [
+            "b3",
+            "b3-t2"
+          ],
+          [
+            "b3-t0",
+            "b3-t0-e0"
+          ],
+          [
+            "b3-t0",
+            "b3-t0-e1"
+          ],
+          [
+            "b3-t0",
+            "b3-t0-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t17",
+      "chapter": "17",
+      "title": "这句话，我真希望最开始就写进去",
+      "narration": "还有这句，我真希望最开始就写进去：所有文档修改，按照最终交付件的形式更改，不进行补丁式修改和强调。",
+      "assets": [
+        "t17"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 3,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b3",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2",
+          "b3-t1-e0",
+          "b3-t1-e1",
+          "b3-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b3"
+          ],
+          [
+            "b3",
+            "b3-t0"
+          ],
+          [
+            "b3",
+            "b3-t1"
+          ],
+          [
+            "b3",
+            "b3-t2"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e0"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e1"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t18",
+      "chapter": "18",
+      "title": "正文讲现在，修订记录讲为什么变了",
+      "narration": "我的理解是，规则变了，就把正文整理成当前完整版本。历史交给Git和PR；有必要的话，额外维护简要修订记录。读规范时，就不用自己猜到底哪句话还有效。",
+      "assets": [
+        "t18"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "doc-management"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 3,
+        "active_topic": 1,
+        "node_ids": [
+          "root",
+          "b3",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2",
+          "b3-t1-e0",
+          "b3-t1-e1",
+          "b3-t1-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b3"
+          ],
+          [
+            "b3",
+            "b3-t0"
+          ],
+          [
+            "b3",
+            "b3-t1"
+          ],
+          [
+            "b3",
+            "b3-t2"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e0"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e1"
+          ],
+          [
+            "b3-t1",
+            "b3-t1-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t19",
+      "chapter": "19",
+      "title": "旧方案退出，也要照顾还在用它的地方",
+      "narration": "旧方案也不能直接一删了之。先查还有谁在用，接通新实现，验证后再清理重复。要让旧规则退出当前入口，同时留得下追溯和恢复的依据。",
+      "assets": [
+        "t19"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-integration-skill",
+        "doc-doc-index"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "detail",
+        "root": "root",
+        "active_branch": 3,
+        "active_topic": 2,
+        "node_ids": [
+          "root",
+          "b3",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2",
+          "b3-t2-e0",
+          "b3-t2-e1",
+          "b3-t2-e2"
+        ],
+        "parent_edges": [
+          [
+            "root",
+            "b3"
+          ],
+          [
+            "b3",
+            "b3-t0"
+          ],
+          [
+            "b3",
+            "b3-t1"
+          ],
+          [
+            "b3",
+            "b3-t2"
+          ],
+          [
+            "b3-t2",
+            "b3-t2-e0"
+          ],
+          [
+            "b3-t2",
+            "b3-t2-e1"
+          ],
+          [
+            "b3-t2",
+            "b3-t2-e2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "t20",
+      "chapter": "20",
+      "title": "串起来看，就是我现在这张管理图",
+      "narration": "串起来看，需求决定目标，架构明确边界，设计落实行为；入口和Skills帮AI接手，每轮靠实现、验证和交接往前走。发现变化，再回到对应的正文。",
+      "assets": [
+        "t20"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "doc-management"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "overview",
+        "root": "root",
+        "active_branch": null,
+        "node_ids": [
+          "root",
+          "b0",
+          "b1",
+          "b2",
+          "b3",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2"
+        ]
+      }
+    },
+    {
+      "id": "t21",
+      "chapter": "21",
+      "title": "规范已经整理，项目还有很多没做完",
+      "narration": "失序之钟的这轮文档和流程整理已经合入，但地图整合、对象设计和体验还没做完。这张图也是我目前的总结，能不能长期减少返工，还得继续用。",
+      "assets": [
+        "t21"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "pr134",
+        "pr135",
+        "doc-current",
+        "doc-data"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "overview",
+        "root": "root",
+        "active_branch": null,
+        "node_ids": [
+          "root",
+          "b0",
+          "b1",
+          "b2",
+          "b3",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2"
+        ]
+      }
+    },
+    {
+      "id": "t22",
+      "chapter": "22",
+      "title": "这次补课，我先总结到这里",
+      "narration": "游戏还没做完，我先补了一门项目管理。希望这些踩坑后的想法能有点参考价值。你们在AI大项目里，哪些管理办法真的有用？也欢迎给我支招。",
+      "assets": [
+        "t22"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "hierarchical_mindmap_retrospective",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "user-summary-r2",
+        "doc-current"
+      ],
+      "fact_check": "Same personally inspected frozen repository documents as ep010. First-person interpretation reflects user framework and current recommendations. No fabricated past incidents or measured long-term success.",
+      "claim_type": "personal_retrospective_with_pinned_repository_example",
+      "same_seed_comparison": false,
+      "mindmap_view": {
+        "mode": "overview",
+        "root": "root",
+        "active_branch": null,
+        "node_ids": [
+          "root",
+          "b0",
+          "b1",
+          "b2",
+          "b3",
+          "b0-t0",
+          "b0-t1",
+          "b0-t2",
+          "b1-t0",
+          "b1-t1",
+          "b1-t2",
+          "b2-t0",
+          "b2-t1",
+          "b2-t2",
+          "b3-t0",
+          "b3-t1",
+          "b3-t2"
+        ]
+      }
+    }
+  ],
+  "bilibili_body": "上一期停工整理代码仓之后，这次想分享一点我对AI项目管理的理解。我把踩坑后的想法归成一张分层思维导图：\n\n1. 目标与设计：需求、架构、模块设计。\n2. 让AI接手：AGENTS入口、Skills流程、按任务读取上下文。\n3. 每次迭代：小步闭环、实际验证、任务与交接。\n4. 持续维护：一处定义规则、按最终交付件重整正文、保留历史并迁出旧入口。\n\n讲到哪里就展开对应分支，最后回看完整层次。结合《失序之钟》当前规范和反冲动作举例，是个人复盘与建议，项目还没做好，方法也还在边用边改。\n\n最想早点写进去的一句：所有文档修改，按照最终交付件的形式更改，不进行补丁式修改和强调。需要时可以另外维护简要修订记录。\n\nAI配音、原创动态思维导图和轻BGM；未使用合成实机、虚构AI对话或假用户反馈。规范冻结在main48cddb6a，PR134/135已合入；长期管理效果和游戏体验仍未完成验证。完整思维导图SVG附在下载包source-evidence/mindmap.svg。\n\n口播、层级结构与来源：\nhttps://github.com/zhipijun1996/video_rush/blob/main/docs/ep010-r2.md\n游戏：https://github.com/zhipijun1996/gunman-rush\n补充阅读：https://github.com/github/spec-kit\nhttps://github.com/agentsmd/agents.md\nhttps://google.github.io/eng-practices/review/developer/small-cls.html\n\n#B站AI创造公开赛# #独立游戏# #AI# #项目管理# #Codex#\n\n分区建议：游戏 / 单机游戏。用户审片通过后再上传，投稿时需关联官方活动话题。",
+  "comparison": "Explanatory examples and current documentation, no simulated execution or before/after benchmark.",
+  "comparison_review": "是否像开发者分享自己的复盘；思维导图的父子层次、当前焦点和例子是否一眼能对应；未声称方法已成熟或项目完成。",
+  "rights": [
+    {
+      "kind": "original_explanatory_diagrams",
+      "status": "original_project_work_MIT",
+      "third_party_images": false
+    },
+    {
+      "kind": "user_authorized_repository",
+      "status": "quoted_facts_from_owned_project_not_blanket_public_license"
+    },
+    {
+      "kind": "external_method_research",
+      "status": "attributed_links_hashes_original_paraphrase_only_no_original_prose_redistributed"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified",
+      "source": "user supplied the_kindred_hearth; same hash-pinned derivative as earlier authorized films"
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK SIL OFL1.1"
+    },
+    {
+      "kind": "voice",
+      "status": "Edge neural synthetic voice, no cloned real-person identity"
+    }
+  ],
+  "mindmap": {
+    "root": "AI项目管理：我的踩坑总结",
+    "branches": [
+      {
+        "id": "b0",
+        "title": "目标与设计",
+        "topics": [
+          {
+            "id": "b0-t0",
+            "title": "需求文档"
+          },
+          {
+            "id": "b0-t1",
+            "title": "架构文档"
+          },
+          {
+            "id": "b0-t2",
+            "title": "模块设计"
+          }
+        ]
+      },
+      {
+        "id": "b1",
+        "title": "让AI接手",
+        "topics": [
+          {
+            "id": "b1-t0",
+            "title": "AGENTS入口"
+          },
+          {
+            "id": "b1-t1",
+            "title": "Skills流程"
+          },
+          {
+            "id": "b1-t2",
+            "title": "按需上下文"
+          }
+        ]
+      },
+      {
+        "id": "b2",
+        "title": "每次迭代",
+        "topics": [
+          {
+            "id": "b2-t0",
+            "title": "小步闭环"
+          },
+          {
+            "id": "b2-t1",
+            "title": "实际验证"
+          },
+          {
+            "id": "b2-t2",
+            "title": "任务与交接"
+          }
+        ]
+      },
+      {
+        "id": "b3",
+        "title": "持续维护",
+        "topics": [
+          {
+            "id": "b3-t0",
+            "title": "规则归属"
+          },
+          {
+            "id": "b3-t1",
+            "title": "最终稿维护"
+          },
+          {
+            "id": "b3-t2",
+            "title": "历史与迁移"
+          }
+        ]
+      }
+    ],
+    "levels": [
+      "个人复盘主题",
+      "四条管理主线",
+      "具体方法",
+      "游戏例子与检查依据"
+    ],
+    "overview_asset": "mindmap",
+    "editable_delivery": "source-evidence/mindmap.svg",
+    "animation": "Same node IDs/parentage/colors. Overview → one branch and topic with three subordinate leaves → recap. No camera zoom or real runtime execution claimed."
+  }
+}
