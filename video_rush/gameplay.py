@@ -164,6 +164,8 @@ def produce_gameplay(spec_path,captures_root,output):
     im=Image.new('RGB',(1920,1080));im.paste(stills[0].resize((1920,1080)).crop((0,0,960,1080)),(0,0));im.paste(stills[1].resize((1920,1080)).crop((480,0,1440,1080)),(960,0))
     layer=Image.new('RGBA',im.size);d=ImageDraw.Draw(layer);d.rectangle((0,0,1920,200),fill=(12,20,25,220));d.rectangle((0,840,1920,1080),fill=(12,20,25,225));d.text((90,46),'失序之钟 · 现阶段实机',font=ImageFont.truetype(font(True),88),fill='#f8e4ab');d.text((90,870),'平原 × 森林 × 随机地图',font=ImageFont.truetype(font(True),82),fill='white');d.text((95,986),'关卡与 BOSS 记录 / 游戏原声 / 开发中',font=ImageFont.truetype(font(),40),fill='#d4dfd8');im=Image.alpha_composite(im.convert('RGBA'),layer);im.convert('RGB').save(out/'cover.png')
     report=validate_gameplay(out)
+    # Cover extraction frames are a render cache, not delivery requirements.
+    for name in ['plains1','forest1']:(out/f'cover-{name}.png').unlink(missing_ok=True)
     write(out/'delivery-manifest.json',{'files':{str(p.relative_to(out)):sha(p) for p in out.rglob('*') if p.is_file() and ('cuts' not in p.relative_to(out).parts) and p.name!='delivery-manifest.json'}})
     if not report['technical']['passed']:raise RuntimeError('Gameplay film technical checks failed; see report.json')
     return out

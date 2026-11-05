@@ -1,0 +1,51 @@
+name: Verify and deliver existing gameplay package
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Completed current-gameplay run ID (no game rerecording)
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install verifier
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          python -m pip install -e .
+      - uses: actions/download-artifact@v4
+        with:
+          name: video-rush-ep011
+          path: build/delivery
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - name: Verify every delivered source and keep the movie unchanged
+        run: python -m tools.check_gameplay_package build/delivery
+      - uses: actions/upload-artifact@v4
+        id: delivery
+        with:
+          name: video-rush-ep011-verified
+          retention-days: 14
+          if-no-files-found: error
+          path: build/delivery/
+      - name: Phone download
+        env:
+          DOWNLOAD: ${{ steps.delivery.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载成片、封面、投稿资料与全部原片]('+os.environ['DOWNLOAD']+')\n\n成片与原片未修改，交付清单逐文件验证，字幕和整片解码再次核对。保留14天。')
+          PY
