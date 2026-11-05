@@ -37,6 +37,7 @@ jobs:
           import json
           print(json.dumps(json.load(open('build/delivery/report.json'))['technical'],ensure_ascii=False,indent=2))
           PY
+          python -m tools.fix_gameplay_range build/delivery
           python -m tools.check_gameplay_package build/delivery
       - name: Keep small diagnostic report even on failure
         if: always()
@@ -58,9 +59,20 @@ jobs:
           retention-days: 14
           if-no-files-found: error
           path: build/delivery/
+      - name: Create phone package with identical movie and external raw recordings
+        env:
+          FULL_URL: ${{ steps.delivery.outputs.artifact-url }}
+        run: python -m tools.make_gameplay_watch build/delivery build/watch --full-url "$FULL_URL"
+      - uses: actions/upload-artifact@v4
+        id: watch
+        with:
+          name: video-rush-ep011-watch
+          retention-days: 14
+          if-no-files-found: error
+          path: build/watch/
       - name: Phone download
         env:
-          DOWNLOAD: ${{ steps.delivery.outputs.artifact-url }}
+          DOWNLOAD: ${{ steps.watch.outputs.artifact-url }}
         run: |
           python - <<'PY'
           from pathlib import Path

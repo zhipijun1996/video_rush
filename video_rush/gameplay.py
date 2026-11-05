@@ -136,7 +136,7 @@ def produce_gameplay(spec_path,captures_root,output):
     listing=out/'cuts/concat.txt';listing.write_text(''.join("file '"+p.as_posix().replace("'","'\\''")+"'\n" for p in paths))
     run(['ffmpeg','-nostdin','-y','-v','error','-f','concat','-safe','0','-i',listing,'-t',clips[-1]['timeline_end'],
          '-vf','fps=30,format=yuv420p','-c:v','libx264','-preset','veryfast','-crf','18','-threads','4','-color_range','tv',
-         '-af','aresample=async=1:first_pts=0','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart',out/'final.mp4'],log=out/'logs/compose.log',timeout=600)
+         '-af','aresample=async=1:first_pts=0','-c:a','aac','-b:a','192k','-ar','48000','-bsf:v','h264_metadata=video_format=5:video_full_range_flag=0','-movflags','+faststart',out/'final.mp4'],log=out/'logs/compose.log',timeout=600)
     source_rows=[]
     for name,c in captures.items():
         target=out/'recordings'/name;target.mkdir(parents=True,exist_ok=True)
