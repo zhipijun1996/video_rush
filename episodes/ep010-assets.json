@@ -1,0 +1,6897 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "10fc98a3aed5343fab02dc0198ad7bbd615aa5057bdf07d8d537ac6e6d571027",
+      "blob_sha": "b1053843436bc8874ace46198ad9c324e388d918",
+      "bytes": 3071,
+      "id": "doc-agents",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "verified_quotes": [
+        "每条规则只定义一次，其余引用。",
+        "长期规范按最终交付件维护"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "fdc04ba95303376b63513948a05ad46c70c2b3737475b1573e782f32339907c7",
+      "blob_sha": "6c5a37944e0acfb09b61584a7a77f035e57c31f1",
+      "bytes": 3617,
+      "id": "doc-doc-index",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": ".agents/skills/project-integration/SKILL.md",
+      "sha256": "8c686f40e4407516d70a94cee71789f63358bec8efdf016ec862078a7d148076",
+      "blob_sha": "94ecd592d4c913e57a9121ba4d2e42c46c8718b6",
+      "bytes": 1345,
+      "id": "doc-integration-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": ".agents/skills/design-grill/SKILL.md",
+      "sha256": "3ce641188e7dad56c994ee7a6283f4b7d8549fa31a6cd65f36a3c93bea460288",
+      "blob_sha": "68b7e60f4cda88758df7beffd65f2aad279c01a5",
+      "bytes": 1597,
+      "id": "doc-grill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": ".agents/skills/player-creator/SKILL.md",
+      "sha256": "0a08067a68b05f226fd631ee5facddfdc66b6ad4f5b96f327addd0f714fb2618",
+      "blob_sha": "cef7156f1f76ebdd7109712a3577c853b834a2aa",
+      "bytes": 1160,
+      "id": "doc-player-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "verified_quotes": [
+        "先在正式控制器和真实镜头完成一段连续动作"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/module_map.md",
+      "sha256": "f00fdd82e43a1bb12b453c81f6d53a790fbabced1126e8a517f10209cfde7372",
+      "blob_sha": "7f68b04ed52ca7c82401f5c826fc0a22b1ad645a",
+      "bytes": 11238,
+      "id": "doc-module-map",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/project_management.md",
+      "sha256": "9d99203515c3fbe026068c5c5e09841fbdeffac19169b334f1812910fae9f4d6",
+      "blob_sha": "6d2f52a520f72768a99893a0f2a8874c2dea4197",
+      "bytes": 1894,
+      "id": "doc-management",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "verified_quotes": [
+        "任务表一行与工作线一份当前交接"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/development.md",
+      "sha256": "3d63db3cff891dbaeab2fb03785e4eab1b36e21b609c4eaac15003f4b61cec49",
+      "blob_sha": "f2a5a96de9af43efd5c7739b1fa2819959e24bb4",
+      "bytes": 3576,
+      "id": "doc-development",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/current_state.md",
+      "sha256": "dd47c598b8e77ef2e5da0d9ba9b40a3bc65986338c9c4409b2f51f3b9ecf7ccd",
+      "blob_sha": "d9d6bae4b424b669b7bc9468a4bf7a40c4e29b48",
+      "bytes": 2396,
+      "id": "doc-current",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/architecture.md",
+      "sha256": "cead5f4671e7e69194efe2315c195d4f0add16ffdabc01453809164f0f1c9c86",
+      "blob_sha": "bc98cdcdc83ac69b3d17001b02c6fcba9851d9e4",
+      "bytes": 5955,
+      "id": "doc-architecture",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "verified_quotes": [
+        "Motor 唯一执行运动与碰撞",
+        "不要只新增一个无人调用的 helper。"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/project/tasks.md",
+      "sha256": "6d79d319d970ca1a69ba0503c24b17eb8e9134983997fc547287f3908fe80269",
+      "blob_sha": "7bad68c84347fcbfe72146e8663ab2fef059dc2a",
+      "bytes": 4694,
+      "id": "doc-tasks",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/data/README.md",
+      "sha256": "7120fe7ee2e806cc5d4e7621a4fee42c8250bbff6172e0b3c25d7fc4d888bfde",
+      "blob_sha": "967aae56446160363ceeb98b5531cecfc269b7af",
+      "bytes": 3671,
+      "id": "doc-data",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/bible/game_design.md",
+      "sha256": "310c190c71c4161b40f42f0b07700988846d0756d16e24d759a05558e465c398",
+      "blob_sha": "15a98cb0bfce6b5207c78ddec3fdb13f16b13da6",
+      "bytes": 2968,
+      "id": "doc-game-design",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    },
+    {
+      "path": "docs/bible/player_mechanics.md",
+      "sha256": "c25af7d43ac92bf073cbcfa2d84f1b19041d39443825813966362eca5a53543c",
+      "blob_sha": "9e5c03098b4feb7aff8ab2d74dea8c41ab67f1b5",
+      "bytes": 2363,
+      "id": "doc-player",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result"
+    }
+  ],
+  "assets": [
+    {
+      "id": "m01",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "先把项目管起来",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "AI写得越快，项目越难接手？",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "上一期停工重构之后，我开始补开发规矩",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "继续加功能",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "旧规则、新规则都在",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "改完这边，又碰坏那边",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "先明确当前规则",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "做什么、归谁管、怎么验",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "每次任务都能接得上",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "这期讲我的做法，还在调整，尚未验证成熟。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m02",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "为什么需要这套机制",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "先回答三个问题",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "让新会话找到当前规则，而不是重读全部历史",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "目标",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "这次到底要解决什么？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "边界",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "哪些地方能改、谁负责？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "证据",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "什么结果才算做完？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "我的目标：减少猜测、重复规则和无边界改动。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m03",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "01 · 需求先行",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "先写玩家要得到什么",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "示例：反冲跳跃 · 根据现有设计整理",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "目标体验",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "射击辅助位移",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "让平台路线多一种解法",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "明确边界",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "本次只调整反冲衔接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "不顺手重做整个成长系统",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "观察结果",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "射击后能接回移动",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "落地与受伤状态正确",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "需求先说体验和验收，再讨论用哪些类。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m04",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "01 · 需求先行",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "“更爽一点”，不够指导开发",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "检查正常操作与中断；手感仍需要实际体验",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "模糊要求",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "把跳跃手感优化一下",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "做完告诉我就行",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "可检查的要求",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "能否衔接？中断后是否恢复？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "录一段连续操作，再判断体验",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "先把“做完”讲清楚，减少最后才发现理解不同。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m05",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "02 · 架构",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "目录结构只是第一层",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前仓库：Godot Node / Scene / Resource，按功能组织",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "框架与入口",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "Godot",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "game/application/",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "模块目录",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "game/player/",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "game/combat/",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "接口与职责",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "谁发请求，谁修改状态",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "谁只负责表现",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "架构写边界、依赖和调用，文件夹用来落实它。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m06",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "02 · 架构落到真实例子",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "反冲动作，谁说了算？",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "据当前架构及人物物理规范简化 · 不是引擎执行录像",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              385,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "node0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 410,
+            "text": "输入 / Router",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "node0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 476,
+            "text": "提交操作意图",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "node0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              385,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "node1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 410,
+            "text": "能力 / PlayerMotor",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "node1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 476,
+            "text": "执行运动与碰撞",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "node1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              385,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "node2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 410,
+            "text": "动画 / 音效",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "node2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 476,
+            "text": "响应已接受的事件",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "node2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                390,
+                653
+              ],
+              [
+                925,
+                653
+              ]
+            ],
+            "color": "#85dfc2",
+            "width": 6,
+            "arrow": true,
+            "group": "event0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                974,
+                653
+              ],
+              [
+                1509,
+                653
+              ]
+            ],
+            "color": "#85dfc2",
+            "width": 6,
+            "arrow": true,
+            "group": "event1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "表现不能另算一套移动、伤害或资源规则。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              682,
+              635,
+              210,
+              45
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "accepted"
+          },
+          {
+            "type": "text",
+            "x": 698,
+            "y": 641,
+            "text": "接受事件",
+            "size": 28,
+            "color": "#85dfc2",
+            "width": 180,
+            "bold": false,
+            "group": "accepted"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "node0",
+            "start": 0.02,
+            "end": 1,
+            "from": [
+              0,
+              65
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "node1",
+            "start": 0.19,
+            "end": 1,
+            "from": [
+              0,
+              65
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "node2",
+            "start": 0.36000000000000004,
+            "end": 1,
+            "from": [
+              0,
+              65
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "event0",
+            "start": 0.39,
+            "end": 1,
+            "from": [
+              -200,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.22,
+            "fade": 0.025
+          },
+          {
+            "id": "event1",
+            "start": 0.55,
+            "end": 1,
+            "from": [
+              -200,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.22,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.76,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          },
+          {
+            "id": "accepted",
+            "start": 0.5,
+            "end": 0.96,
+            "from": [
+              -360,
+              0
+            ],
+            "to": [
+              230,
+              0
+            ],
+            "travel": 0.36,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "当前仓库规范摘意 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m07",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "02 · 架构约束",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "先找已有入口，再加新代码",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前架构明确要求：不要新增无人调用的helper",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "容易出现的偏差",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "新建一个“统一管理器”",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "原入口继续运行旧逻辑",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "我的约束",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "定位实际消费者",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "迁到同一实现，再清重复",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "“新文件写好了”不等于“正式入口用上了”。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m08",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "03 · 模块设计",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "把体验拆成能开发的行为",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "需求讲为什么；架构讲归谁；设计讲具体怎么发生",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "进入",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "什么输入触发",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "需要哪些资源与前提",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "过程",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "方向如何改变",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "和移动、射击怎样衔接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "退出",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "落地、受伤、死亡",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "暂停之后如何恢复",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "参数引用真实配置，不在每份文档再抄一份。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m09",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "03 · 迭代方式",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "先跑一个完整的小闭环",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "一次打通一个可观察结果，再逐步扩展",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "明确一项改动",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "反冲后的动作衔接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "接入真实入口",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "控制器 + 镜头 + 表现",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "检查再扩展",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "正常方向与中断恢复",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "先把相关层打通，避免所有模块各自“完成”。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m10",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "04 · 给AI一个短入口",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "AGENTS.md：新会话从这里开始",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "项目入口负责导航和基本约束，细节按任务读取",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              365,
+              480,
+              235
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "entry"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 390,
+            "text": "AGENTS.md",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 430,
+            "bold": true,
+            "group": "entry"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 456,
+            "text": "基线 / 读取顺序",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 430,
+            "bold": false,
+            "group": "entry"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 500,
+            "text": "代码边界 / 检查入口",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 430,
+            "bold": false,
+            "group": "entry"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              930,
+              340,
+              880,
+              115
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "route0"
+          },
+          {
+            "type": "text",
+            "x": 955,
+            "y": 365,
+            "text": "当前状态",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 830,
+            "bold": true,
+            "group": "route0"
+          },
+          {
+            "type": "text",
+            "x": 1320,
+            "y": 374,
+            "text": "产品现在实际能做什么",
+            "size": 30,
+            "color": "#f1f5fb",
+            "width": 460,
+            "bold": false,
+            "group": "route0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              930,
+              468,
+              880,
+              115
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "route1"
+          },
+          {
+            "type": "text",
+            "x": 955,
+            "y": 493,
+            "text": "任务 + 交接",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 830,
+            "bold": true,
+            "group": "route1"
+          },
+          {
+            "type": "text",
+            "x": 1320,
+            "y": 502,
+            "text": "本次目标、阻塞、下一步",
+            "size": 30,
+            "color": "#f1f5fb",
+            "width": 460,
+            "bold": false,
+            "group": "route1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              930,
+              596,
+              880,
+              115
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "route2"
+          },
+          {
+            "type": "text",
+            "x": 955,
+            "y": 621,
+            "text": "模块 + 相关规范",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 830,
+            "bold": true,
+            "group": "route2"
+          },
+          {
+            "type": "text",
+            "x": 1320,
+            "y": 630,
+            "text": "定位代码、设计与验证",
+            "size": 30,
+            "color": "#f1f5fb",
+            "width": 460,
+            "bold": false,
+            "group": "route2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "先读当前任务及直接依赖，不把全仓历史塞进开场。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "entry",
+            "start": 0.02,
+            "end": 1,
+            "from": [
+              0,
+              65
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "route0",
+            "start": 0.16,
+            "end": 1,
+            "from": [
+              70,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "route1",
+            "start": 0.32,
+            "end": 1,
+            "from": [
+              70,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "route2",
+            "start": 0.48,
+            "end": 1,
+            "from": [
+              70,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.73,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m11",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "04 · 控制上下文",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "改人物，就别先读完整世界观",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "以当前player-creator为例 · 按影响范围继续读直接依赖",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "本次必要上下文",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "人物物理与操作规范",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "真实组件、镜头和相关检查",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#a8bacd",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "暂时不需要",
+            "size": 43,
+            "color": "#a8bacd",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "所有地区剧情、旧方案",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "与本次无关的完整审计",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "短入口负责找到资料，不负责背下全部资料。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m12",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "05 · 固定可复用流程",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "Skills：把经验变成操作步骤",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "适用条件 → 所需材料 → 执行 → 验证与交付",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "开始前",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "读相关规则与真实代码",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "明确本次范围",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "执行时",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "先更新受影响的规范",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "再改实现，接入真实场景",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "完成后",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "运行相关检查",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "给出证据和未验范围",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "Skill写得再漂亮，也要靠实际执行确认结果。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m13",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "05 · 固定可复用流程",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "人物Skill，不只写“动作自然”",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前player-creator正文摘意 · 不是本轮新增成果",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "制作要求",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "先统一脚底、枪口和附件",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "再做完整连续动作",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "验证要求",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "左右朝向、瞄准、反冲衔接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "暂停、死亡和实际镜头",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "好处：换一次会话，也有明确的工作顺序。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "当前仓库规范摘意 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m14",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "06 · 维护文档",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "最想早点加上的一句话",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "用户提出的维护原则 · 当前仓库已采用最终交付件式正文",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "补丁式追加",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "原来A → 后来改B",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "特别强调：现在又改C",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "直接整理最终稿",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "正文只保留当前有效规则",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "被替代内容从正文移除",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "所有文档修改按最终交付件更改，不做补丁式追加。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m15",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "06 · 维护文档",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "读到最后一句，才知道哪句算数？",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "用规则替换演示维护方式；文字为示意，不是历史引文",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              365,
+              810,
+              240
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "old"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 390,
+            "text": "旧正文",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 760,
+            "bold": true,
+            "group": "old"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 456,
+            "text": "规则A / 补充B / 再强调C",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "old"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 500,
+            "text": "读者还得自己解冲突",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "old"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              365,
+              810,
+              240
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "final"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 390,
+            "text": "现行正文",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "final"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 456,
+            "text": "统一写清当前规则C",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "final"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 500,
+            "text": "关联引用一起核对",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "final"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              365,
+              810,
+              240
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "history"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 390,
+            "text": "历史与决策",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 760,
+            "bold": true,
+            "group": "history"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 456,
+            "text": "Git / PR / 必要原件",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "history"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 500,
+            "text": "可另存简要修订记录",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "history"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "规范解释现在怎么做；修订记录解释为什么变了。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "old",
+            "start": 0.02,
+            "end": 0.46,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              -100,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "final",
+            "start": 0.47,
+            "end": 1,
+            "from": [
+              80,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "history",
+            "start": 0.28,
+            "end": 1,
+            "from": [
+              0,
+              65
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.74,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m16",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "06 · 每条规则有归属",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "别让同一个数值住在三个地方",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前仓库：设计、配置、任务状态分别维护",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "设计正文",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "行为与约束",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "其他文档链接它",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "运行配置",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "具体数值",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "不再手抄参数表",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "任务表",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "当前进度",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "交接不复制一份状态",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "文档一致性靠减少重复定义，不靠到处“再次强调”。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m17",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "07 · 每次任务怎么跑",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "把任务缩到能看懂、能撤回",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "这是建议的任务示例，非真实PR或AI聊天截图",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "这次做",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "反冲动作衔接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "相关规范、实现和验证",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#a8bacd",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "这次不扩",
+            "size": 43,
+            "color": "#a8bacd",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "地图生成、美术重制",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "和整套成长系统",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "写清改动范围、完成标准与恢复动作。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m18",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "07 · 每次任务怎么跑",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "先核对理解，再动手",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "小任务也要对齐目标，但不要求每一步都拉人审批",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "读",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "基线 + 当前任务",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "规范 + 真实消费者",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "说清",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "改哪儿、验什么",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "哪里仍然没决定",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "做",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "设计有变化先改正文",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "实现与配置同任务交付",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "小范围、完整结果、可审阅差异，方便检查和回退。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m19",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "07 · 验证与交付",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "CI变短，不等于从此少验",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前日常CI：project / import / smoke / contracts",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "日常基础检查",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "快速发现基础错误",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "不代表完整功能和体验",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "按影响选专项",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "改移动，检查移动及边界",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "改存档，检查恢复与兼容",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "代码通过、操作体验、手机表现，各自给出依据。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "当前仓库规范摘意 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m20",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "07 · 交接",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "“已完成”后面，要能接着干",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前项目管理规范：一行任务 + 一份当前交接",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "任务表维护进度",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "目标 / 依赖 / 状态",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "链接自己的工作线",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "交接保留事实",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "基线与写集、检查和阻塞",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "下一条能继续执行的动作",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "失败就记失败；缺设备就记未验，不把空白填成通过。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m21",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "08 · 旧方案怎么退出",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "归档，不是看到legacy就全删",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "当前架构仍保留明确的旧Provider与正式消费者",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "迁移前",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "查谁还在引用",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "核动态加载、导出和版本",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "迁移后",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "新消费者接通并验证",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "再清重复实现与旧入口",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "历史能追溯，当前入口只指向明确采用的规则。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m22",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "08 · 管理也需要做减法",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "别把开发变成填表比赛",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "PR135已合入：普通任务不强制完整质量卡",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "普通修复",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "一行任务 + 当前交接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "相关检查即可",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "新地区 / 新怪物",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "按需检查美术与玩法",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "只填写适用项",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "管理材料要帮人继续工作，多一张表也要有用途。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "当前仓库规范摘意 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m23",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "09 · 当前真实进展",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "规矩写下了，项目还没毕业",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "截至本期冻结main · PR134 / PR135已合入",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "已整理",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "文档职责、短入口",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 527,
+            "text": "轻量任务与相关Skills",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "仍在做",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "地图与正式消费者整合",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 527,
+            "text": "对象、剧情及地区缺口",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ff8d99",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "仍需验证",
+            "size": 43,
+            "color": "#ff8d99",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "长期迭代是否更稳定",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 527,
+            "text": "真实手感、设备与趣味",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "管理改动合入，不等于整套游戏和方法论都验收了。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "当前仓库规范摘意 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m24",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "把整套方法串起来",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "下一次，让AI从明确任务开始",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "先有最小清晰规则；再用迭代持续维护",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              392,
+              552,
+              190
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 417,
+            "text": "建项目",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 502,
+            "bold": true,
+            "group": "c0"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 483,
+            "text": "需求 → 架构 → 模块设计",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              680,
+              392,
+              552,
+              190
+            ],
+            "color": "#8ebcff",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 417,
+            "text": "接任务",
+            "size": 43,
+            "color": "#8ebcff",
+            "width": 502,
+            "bold": true,
+            "group": "c1"
+          },
+          {
+            "type": "text",
+            "x": 705,
+            "y": 483,
+            "text": "AGENTS导航 → 相关Skills",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                653,
+                482
+              ],
+              [
+                675,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1264,
+              392,
+              552,
+              190
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 417,
+            "text": "完成一次迭代",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 502,
+            "bold": true,
+            "group": "c2"
+          },
+          {
+            "type": "text",
+            "x": 1289,
+            "y": 483,
+            "text": "实现 → 检查 → 同步交接",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 502,
+            "bold": false,
+            "group": "c2"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1237,
+                482
+              ],
+              [
+                1259,
+                482
+              ]
+            ],
+            "color": "#a8bacd",
+            "width": 6,
+            "arrow": true,
+            "group": "link2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "我想减少的，是每次开工都重新猜一遍。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "c0",
+            "start": 0.025,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c1",
+            "start": 0.195,
+            "end": 1,
+            "from": [
+              60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link1",
+            "start": 0.27,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "c2",
+            "start": 0.36500000000000005,
+            "end": 1,
+            "from": [
+              -60,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "link2",
+            "start": 0.44000000000000006,
+            "end": 1,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    },
+    {
+      "id": "m25",
+      "origin": "editorial",
+      "kind": "animated_explanatory_diagram",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2a",
+        "elements": [
+          {
+            "type": "text",
+            "x": 92,
+            "y": 121,
+            "text": "失序之钟 · 独游折腾记 ep09",
+            "size": 30,
+            "color": "#85dfc2",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 92,
+            "y": 177,
+            "text": "现在补管理，总比继续失控好",
+            "size": 67,
+            "color": "#ffd17b",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 96,
+            "y": 275,
+            "text": "一套仍在实践中的AI项目管理方法",
+            "size": 33,
+            "color": "#a8bacd",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              370,
+              810,
+              265
+            ],
+            "color": "#85dfc2",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 395,
+            "text": "我这次的建议",
+            "size": 43,
+            "color": "#85dfc2",
+            "width": 760,
+            "bold": true,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 461,
+            "text": "先把规则和边界说清楚",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "text",
+            "x": 121,
+            "y": 505,
+            "text": "再让AI持续往前写",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "left"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1011,
+              370,
+              810,
+              265
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 395,
+            "text": "也欢迎你来支招",
+            "size": 43,
+            "color": "#ffd17b",
+            "width": 760,
+            "bold": true,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 461,
+            "text": "怎样保持规范不过时？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "text",
+            "x": 1036,
+            "y": 505,
+            "text": "哪里还能更简单、更有效？",
+            "size": 33,
+            "color": "#f1f5fb",
+            "width": 760,
+            "bold": false,
+            "group": "right"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              96,
+              748,
+              1725,
+              110
+            ],
+            "color": "#ffd17b",
+            "fill": "#1d3044",
+            "radius": 20,
+            "stroke_width": 3,
+            "group": "take"
+          },
+          {
+            "type": "text",
+            "x": 125,
+            "y": 775,
+            "text": "项目还没做好，先把这次补课过程分享出来。",
+            "size": 41,
+            "color": "#ffd17b",
+            "width": 1660,
+            "bold": true,
+            "group": "take"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "left",
+            "start": 0.03,
+            "end": 1,
+            "from": [
+              -65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "right",
+            "start": 0.31,
+            "end": 1,
+            "from": [
+              65,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.15,
+            "fade": 0.025
+          },
+          {
+            "id": "take",
+            "start": 0.68,
+            "end": 1,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "travel": 0.12,
+            "fade": 0.025
+          }
+        ]
+      },
+      "display_label": "方法演示 · 原创动态图示",
+      "license": "Original Video Rush vector diagram and wording; MIT. User-authorized game document facts. No third-party illustration, gameplay or voice likeness.",
+      "truth": "Authored explanatory animation. Not captured game, GitHub UI, terminal execution, real PR, or real AI chat. Suggestions and current source facts labeled separately."
+    }
+  ]
+}

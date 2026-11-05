@@ -1,0 +1,1152 @@
+{
+  "schema_version": 2,
+  "episode": "ep010",
+  "title": "AI项目越写越乱？我给开发立了几条规矩 | 【失序之钟】独游折腾记 ep09【B站AI创造公开赛】",
+  "title_candidates": [
+    "让AI持续开发一个大项目，我现在会先做这些 | 【失序之钟】独游折腾记 ep09【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep010-assets.json",
+  "story_ids": [
+    "S_AI_PROJECT_METHOD_01"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+10%",
+  "playback_speed": 1.04,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.085,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "m01",
+    "m24"
+  ],
+  "cover": {
+    "layout": "diagram",
+    "background": "#101b2a",
+    "elements": [
+      {
+        "type": "text",
+        "x": 100,
+        "y": 105,
+        "text": "失序之钟 · 独游折腾记 ep09",
+        "size": 42,
+        "color": "#85dfc2",
+        "width": 1700,
+        "bold": false
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 230,
+        "text": "AI项目越写越乱？",
+        "size": 116,
+        "color": "#f1f5fb",
+        "width": 1700,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 100,
+        "y": 395,
+        "text": "先把开发规矩立起来",
+        "size": 105,
+        "color": "#ffd17b",
+        "width": 1700,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 570,
+        "text": "文档先行 · 短入口 · 小步迭代",
+        "size": 52,
+        "color": "#a8bacd",
+        "width": 1700,
+        "bold": false
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          100,
+          730,
+          550,
+          128
+        ],
+        "color": "#85dfc2",
+        "fill": "#1d3044",
+        "radius": 20,
+        "stroke_width": 3
+      },
+      {
+        "type": "text",
+        "x": 125,
+        "y": 765,
+        "text": "需求与架构",
+        "size": 48,
+        "color": "#85dfc2",
+        "width": 500,
+        "bold": true
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          690,
+          730,
+          550,
+          128
+        ],
+        "color": "#8ebcff",
+        "fill": "#1d3044",
+        "radius": 20,
+        "stroke_width": 3
+      },
+      {
+        "type": "text",
+        "x": 715,
+        "y": 765,
+        "text": "AGENTS + Skills",
+        "size": 48,
+        "color": "#8ebcff",
+        "width": 500,
+        "bold": true
+      },
+      {
+        "type": "rect",
+        "bounds": [
+          1280,
+          730,
+          550,
+          128
+        ],
+        "color": "#ffd17b",
+        "fill": "#1d3044",
+        "radius": 20,
+        "stroke_width": 3
+      },
+      {
+        "type": "text",
+        "x": 1305,
+        "y": 765,
+        "text": "当前规则唯一",
+        "size": 48,
+        "color": "#ffd17b",
+        "width": 500,
+        "bold": true
+      },
+      {
+        "type": "text",
+        "x": 105,
+        "y": 955,
+        "text": "仍在打磨中的个人方法 · 原创示意封面",
+        "size": 30,
+        "color": "#a8bacd",
+        "width": 1700,
+        "bold": false
+      }
+    ],
+    "motion_groups": []
+  },
+  "research_scope": {
+    "repository": "zhipijun1996/gunman-rush",
+    "main_at_scan": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+    "scan_date": "2026-11-05",
+    "scope": "Targeted update to ep009 complete accessible-history research; current main root/project/bible/skill navigation and14 pinned files personally read, PR134/135 current metadata and PR136 unmerged draft inspected. Not a fresh full-history scan.",
+    "selected_PRs": [
+      134,
+      135,
+      136
+    ],
+    "source_document_count": 14,
+    "prior_scope": "research/ep009-evidence.json; prior video froze68a87f. This episode rereads latest48cddb and does not reuse previous draft134 status.",
+    "current_state_internal_baseline": "current_state.md itself labels earlier5ce7db; preserved verbatim, not silently updated to scan SHA.",
+    "game_repo_worktree": "Read-only; no game checkout, fetch, edit, engine or test execution.",
+    "external_references": [
+      "github/spec-kit",
+      "agentsmd/agents.md",
+      "google/eng-practices"
+    ],
+    "limits": "Merged documentation/workflow claims checked against exact source. No fresh game runtime, empirical productivity study or long-term method validation. codex getting-started source was a redirect and excluded from substantive references."
+  },
+  "evidence": [
+    {
+      "id": "user-method",
+      "kind": "user_testimony_and_editorial_advice",
+      "date": "2026-11-05",
+      "text": "User requested requirements → architecture including directories/framework → iterative module design; AGENTS入口; Skills流程; final-deliverable document maintenance and optional separate concise revision record. First-person practical recommendations, not claims of invention or proven longitudinal success."
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "10fc98a3aed5343fab02dc0198ad7bbd615aa5057bdf07d8d537ac6e6d571027",
+      "blob_sha": "b1053843436bc8874ace46198ad9c324e388d918",
+      "bytes": 3071,
+      "id": "doc-agents",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "verified_quotes": [
+        "每条规则只定义一次，其余引用。",
+        "长期规范按最终交付件维护"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "fdc04ba95303376b63513948a05ad46c70c2b3737475b1573e782f32339907c7",
+      "blob_sha": "6c5a37944e0acfb09b61584a7a77f035e57c31f1",
+      "bytes": 3617,
+      "id": "doc-doc-index",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/project-integration/SKILL.md",
+      "sha256": "8c686f40e4407516d70a94cee71789f63358bec8efdf016ec862078a7d148076",
+      "blob_sha": "94ecd592d4c913e57a9121ba4d2e42c46c8718b6",
+      "bytes": 1345,
+      "id": "doc-integration-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/design-grill/SKILL.md",
+      "sha256": "3ce641188e7dad56c994ee7a6283f4b7d8549fa31a6cd65f36a3c93bea460288",
+      "blob_sha": "68b7e60f4cda88758df7beffd65f2aad279c01a5",
+      "bytes": 1597,
+      "id": "doc-grill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": ".agents/skills/player-creator/SKILL.md",
+      "sha256": "0a08067a68b05f226fd631ee5facddfdc66b6ad4f5b96f327addd0f714fb2618",
+      "blob_sha": "cef7156f1f76ebdd7109712a3577c853b834a2aa",
+      "bytes": 1160,
+      "id": "doc-player-skill",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "verified_quotes": [
+        "先在正式控制器和真实镜头完成一段连续动作"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/module_map.md",
+      "sha256": "f00fdd82e43a1bb12b453c81f6d53a790fbabced1126e8a517f10209cfde7372",
+      "blob_sha": "7f68b04ed52ca7c82401f5c826fc0a22b1ad645a",
+      "bytes": 11238,
+      "id": "doc-module-map",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/project_management.md",
+      "sha256": "9d99203515c3fbe026068c5c5e09841fbdeffac19169b334f1812910fae9f4d6",
+      "blob_sha": "6d2f52a520f72768a99893a0f2a8874c2dea4197",
+      "bytes": 1894,
+      "id": "doc-management",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "verified_quotes": [
+        "任务表一行与工作线一份当前交接"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/development.md",
+      "sha256": "3d63db3cff891dbaeab2fb03785e4eab1b36e21b609c4eaac15003f4b61cec49",
+      "blob_sha": "f2a5a96de9af43efd5c7739b1fa2819959e24bb4",
+      "bytes": 3576,
+      "id": "doc-development",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/current_state.md",
+      "sha256": "dd47c598b8e77ef2e5da0d9ba9b40a3bc65986338c9c4409b2f51f3b9ecf7ccd",
+      "blob_sha": "d9d6bae4b424b669b7bc9468a4bf7a40c4e29b48",
+      "bytes": 2396,
+      "id": "doc-current",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/architecture.md",
+      "sha256": "cead5f4671e7e69194efe2315c195d4f0add16ffdabc01453809164f0f1c9c86",
+      "blob_sha": "bc98cdcdc83ac69b3d17001b02c6fcba9851d9e4",
+      "bytes": 5955,
+      "id": "doc-architecture",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "verified_quotes": [
+        "Motor 唯一执行运动与碰撞",
+        "不要只新增一个无人调用的 helper。"
+      ],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/project/tasks.md",
+      "sha256": "6d79d319d970ca1a69ba0503c24b17eb8e9134983997fc547287f3908fe80269",
+      "blob_sha": "7bad68c84347fcbfe72146e8663ab2fef059dc2a",
+      "bytes": 4694,
+      "id": "doc-tasks",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/data/README.md",
+      "sha256": "7120fe7ee2e806cc5d4e7621a4fee42c8250bbff6172e0b3c25d7fc4d888bfde",
+      "blob_sha": "967aae56446160363ceeb98b5531cecfc269b7af",
+      "bytes": 3671,
+      "id": "doc-data",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/bible/game_design.md",
+      "sha256": "310c190c71c4161b40f42f0b07700988846d0756d16e24d759a05558e465c398",
+      "blob_sha": "15a98cb0bfce6b5207c78ddec3fdb13f16b13da6",
+      "bytes": 2968,
+      "id": "doc-game-design",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "path": "docs/bible/player_mechanics.md",
+      "sha256": "c25af7d43ac92bf073cbcfa2d84f1b19041d39443825813966362eca5a53543c",
+      "blob_sha": "9e5c03098b4feb7aff8ab2d74dea8c41ab67f1b5",
+      "bytes": 2363,
+      "id": "doc-player",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/blob/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "verified_quotes": [],
+      "truth": "Exact frozen source; document says what is specified, not a new runtime or human acceptance result",
+      "kind": "pinned_repository_document"
+    },
+    {
+      "id": "pr134",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/134",
+      "title": "docs: 重整 Codex 文档目录、活跃交接并加入 design-grill",
+      "head_commit": "87658b7fbcd58c2df568a7a84afac91cd0805f30",
+      "base_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+      "merge_commit": "5ce7db6b2af2e66efe9782ab581f026296aa593a",
+      "merged_at": "2026-11-04T04:03:41Z",
+      "draft": false,
+      "state": "closed",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "pr135",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/135",
+      "title": "简化项目管理，整理设计权威与对象规范",
+      "head_commit": "cb3d6b6f81984484ed01c62d92e6a72098fccf63",
+      "base_commit": "5ce7db6b2af2e66efe9782ab581f026296aa593a",
+      "merge_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "merged_at": "2026-11-04T06:51:15Z",
+      "draft": false,
+      "state": "closed",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "pr136",
+      "kind": "actual_pr_metadata",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/136",
+      "title": "正式平原：106模块、家园线程生成与运行态优化",
+      "head_commit": "e3b726632f6dc9c576f30bb4ad79525dc58550e7",
+      "base_commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+      "merge_commit": "7da3584c44112884cda7a434a1c9ddb02377a2d0",
+      "merged_at": null,
+      "draft": true,
+      "state": "open",
+      "interpretation": "Merged documentation/workflow change is not proof of final game quality; PR136 remains an unmerged draft at scan."
+    },
+    {
+      "id": "external-spec-kit",
+      "repository": "github/spec-kit",
+      "commit": "ec9a6f3b94c0aa856f77e550785a1ddde1993de1",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/github/spec-kit/ec9a6f3b94c0aa856f77e550785a1ddde1993de1/README.md",
+      "sha256": "076c7ae6d7f58798a0c063ad398356bf64f1ce1002202b5f215a83d893c6fa29",
+      "blob_sha": "a4ea4f520add603de250c59f96037f0eb7be46e5",
+      "bytes": 14337,
+      "kind": "external_method_reference",
+      "usage": "Clarify what/why before plan/tasks/code; feature-by-feature iteration, do not force full SDD on bug fixes.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    },
+    {
+      "id": "external-small-cls",
+      "repository": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "path": "review/developer/small-cls.md",
+      "url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/developer/small-cls.md",
+      "sha256": "6bc55ce9a752bbb26df430a55cd12014beee684ed04e94841989ac86558817c9",
+      "blob_sha": "0501c55016c0ef06308d0147700a895be28e5c45",
+      "bytes": 12289,
+      "kind": "external_method_reference",
+      "usage": "Self-contained small changes, include real consumer, easier review and rollback.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    },
+    {
+      "id": "external-agents-standard",
+      "repository": "agentsmd/agents.md",
+      "commit": "d001185d792eb6402a58e4cbef1c228b309ec25d",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/agentsmd/agents.md/d001185d792eb6402a58e4cbef1c228b309ec25d/README.md",
+      "sha256": "60ec51c226560aaf2c49a0b8a2452c8cf24459c37a816764979dc917076c7afb",
+      "blob_sha": "8ce701e74909d5f08e2810380e0ff15f547aa0c8",
+      "bytes": 2015,
+      "kind": "external_method_reference",
+      "usage": "Predictable dedicated agent context/instructions entry.",
+      "attribution": "Reference retained in sources and posting materials; voice is original personal synthesis. No copied prose, sole-inventor or already-validated experience claim.",
+      "redistribution": "Only URL/hash and our summary delivered; third-party original prose/art not used in visuals or redistributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "m01",
+      "chapter": "01",
+      "title": "先管项目，再加功能",
+      "narration": "上一期，我停下新功能，先收拾AI越写越乱的代码仓。这期聊聊怎么管项目。失序之钟还没做好，这套方法也在边用边改。",
+      "assets": [
+        "m01"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "先把项目管起来",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m02",
+      "chapter": "02",
+      "title": "三个问题",
+      "narration": "我的要求其实就三个：这次做什么，哪些地方归谁管，怎么知道做完了。项目变大后，这些信息得让下一个会话也找得到。",
+      "assets": [
+        "m02"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-management"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m03",
+      "chapter": "03",
+      "title": "需求先行",
+      "narration": "新建项目，我会先写需求文档。比如反冲跳跃，玩家想获得什么体验，这次改到哪里，怎样算完成。别一上来就让AI建一堆类。",
+      "assets": [
+        "m03"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-game-design",
+        "external-spec-kit"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m04",
+      "chapter": "04",
+      "title": "把完成说清楚",
+      "narration": "“跳得更爽”太笼统。至少要明确，射击后怎么衔接移动，落地和受伤之后状态对不对，再录连续操作看感觉。检查通过和手感满意，得分开。",
+      "assets": [
+        "m04"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-player",
+        "doc-development"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m05",
+      "chapter": "05",
+      "title": "架构不只是文件夹",
+      "narration": "接着写架构文档：用什么框架，目录怎么组织，模块怎样通信，状态由谁维护。我的游戏用Godot，按功能分模块，应用层把它们接起来。",
+      "assets": [
+        "m05"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-module-map",
+        "user-method"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m06",
+      "chapter": "06",
+      "title": "谁负责执行运动",
+      "narration": "拿反冲来说，输入负责表达意图，人物运动组件负责真正移动，动画和音效跟着已经接受的事件走。别让表现系统又算出另一套移动规则。",
+      "assets": [
+        "m06"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-player"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m07",
+      "chapter": "07",
+      "title": "接上真实消费者",
+      "narration": "新功能也要先找到真实调用入口。否则AI可能写出一个新的统一管理器，旧入口却照跑不误。新旧两套，喜提双倍维护。",
+      "assets": [
+        "m07"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "user-method"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m08",
+      "chapter": "08",
+      "title": "模块设计",
+      "narration": "然后写模块设计文档。触发条件、过程衔接，落地、受伤、暂停时怎么退出。数值引用实际配置，别在几份文档里各抄一遍。",
+      "assets": [
+        "m08"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-player",
+        "doc-agents"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m09",
+      "chapter": "09",
+      "title": "小闭环迭代",
+      "narration": "不用一次想完所有细节。选一个小功能，把规则、实现和真实场景打通，检查后再扩展。避免每个模块都说完成，接起来却用不了。",
+      "assets": [
+        "m09"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-development",
+        "external-small-cls",
+        "external-spec-kit"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m10",
+      "chapter": "10",
+      "title": "AI的项目入口",
+      "narration": "之后，把入口写进AGENTS文件。新会话先核对基线，看当前状态，找到任务和交接，再按模块导航读取设计与代码。入口要短，细节用链接。",
+      "assets": [
+        "m10"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "external-agents-standard"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m11",
+      "chapter": "11",
+      "title": "按任务加载",
+      "narration": "改人物动作，就先读人物物理、操作约束和相关代码，没必要先读完所有地区的世界观。上下文有限，得优先留给当前任务和直接依赖。",
+      "assets": [
+        "m11"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-player-skill",
+        "doc-doc-index"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m12",
+      "chapter": "12",
+      "title": "Skills固定流程",
+      "narration": "把重复流程凝结成Skills：什么情况用，先读什么，按什么顺序做，交什么证据。让经验能复用。",
+      "assets": [
+        "m12"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-player-skill",
+        "doc-integration-skill"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m13",
+      "chapter": "13",
+      "title": "用人物Skill举例",
+      "narration": "比如人物优化，先统一身体、脚底和枪口关系，再做连续动作，核对朝向、瞄准和中断恢复。当然，写在Skill里不等于AI已经做到了，还得检查结果。",
+      "assets": [
+        "m13"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-player-skill"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m14",
+      "chapter": "14",
+      "title": "文档当最终稿维护",
+      "narration": "还有一句，我真希望最开始就加上：所有文档修改，按照最终交付件的形式更改，不进行补丁式修改和强调。改完通读全文，别只在末尾追加一句最新要求。",
+      "assets": [
+        "m14"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "doc-doc-index"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m15",
+      "chapter": "15",
+      "title": "现行规则与历史分开",
+      "narration": "旧规则被替代，就把正文整理成当前最终稿，相关引用也一起改。历史交给Git和PR；需要的话，另外维护简要修订记录，说明改了什么、为什么改。",
+      "assets": [
+        "m15"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "doc-management"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m16",
+      "chapter": "16",
+      "title": "每条规则只定义一次",
+      "narration": "同一条规则只在一个地方定义。设计文档讲行为，运行配置管数值，任务表管进度，其他地方引用。到处复制、再强调，只会慢慢长出多个答案。",
+      "assets": [
+        "m16"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-doc-index",
+        "doc-management"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m17",
+      "chapter": "17",
+      "title": "把范围圈出来",
+      "narration": "每次开发，我会把任务切小：这次只改反冲衔接，写清影响范围和完成标准。不要顺手把地图、背包和成长一起重做。改动得小到能看懂，也方便撤回。",
+      "assets": [
+        "m17"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "external-small-cls"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m18",
+      "chapter": "18",
+      "title": "先对齐再动手",
+      "narration": "让AI先说明准备改哪儿、怎么验证。有设计取舍就先讨论；设计变了先更新对应正文，再同步实现和配置。原规范已经正确的修复，也不用硬改文档凑流程。",
+      "assets": [
+        "m18"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-management",
+        "doc-grill"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m19",
+      "chapter": "19",
+      "title": "验证按影响选择",
+      "narration": "验证也按影响来。现在仓库日常CI保留四项基础检查，功能改动再选相关专项。基础检查全绿，不代表移动、存档、手机表现和手感都验过。",
+      "assets": [
+        "m19"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-agents",
+        "doc-current",
+        "doc-development"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m20",
+      "chapter": "20",
+      "title": "可继续的交接",
+      "narration": "最后，任务表更新进度，当前交接写清基线、改了什么、实际检查、阻塞和下一步。没验就写没验。换个会话，至少能知道从哪儿继续。",
+      "assets": [
+        "m20"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-management",
+        "doc-agents"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m21",
+      "chapter": "21",
+      "title": "旧方案退出",
+      "narration": "旧方案退出，也不能看见legacy就全删。先查还有谁在用，接通新的消费者，验证后再清重复实现。归档可以查历史，不能继续冒充当前开发规则。",
+      "assets": [
+        "m21"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "doc-architecture",
+        "doc-integration-skill",
+        "doc-doc-index"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m22",
+      "chapter": "22",
+      "title": "别越管越重",
+      "narration": "管理本身也要做减法。最新整理，普通修复只要一行任务和一份交接；新地区、新怪物，按需要检查美术和玩法。别又变成填表比赛。",
+      "assets": [
+        "m22"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "pr135",
+        "doc-management",
+        "doc-development"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m23",
+      "chapter": "23",
+      "title": "仍然没做完",
+      "narration": "这些管理整理已经合入主线，但地图整合、对象设计和体验还有缺口。我现在能说的是，规则和入口更明确了；能不能长期减少返工，还得继续用。",
+      "assets": [
+        "m23"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "pr134",
+        "pr135",
+        "doc-current",
+        "doc-data"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m24",
+      "chapter": "24",
+      "title": "串起整套方法",
+      "narration": "所以我的顺序是：需求讲目标，架构划边界，设计定行为；入口负责导航，Skills固定流程，再靠小步实现、实际检查和持续更新，把它们连起来。",
+      "assets": [
+        "m24"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": null,
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-agents",
+        "doc-architecture",
+        "doc-management"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    },
+    {
+      "id": "m25",
+      "chapter": "25",
+      "title": "边做边改",
+      "narration": "游戏还没做完，我先补项目管理。你们怎么管理AI大项目？欢迎给我支招。",
+      "assets": [
+        "m25"
+      ],
+      "offsets": [
+        0
+      ],
+      "presentation": "animated_diagram",
+      "shot_type": "animated_editorial_explanation",
+      "transition": "cut",
+      "sfx": "pop",
+      "emphasis": "",
+      "prs": [],
+      "evidence": [
+        "user-method",
+        "doc-current"
+      ],
+      "fact_check": "Primary source read at frozen SHA. First-person advice is an editorial rendering of the user framework; external enrichment is cited in source/description. No invented empirical benefit, chronology, runtime pass or user acceptance.",
+      "claim_type": "source_grounded_personal_method_and_recommendation_not_proven_success",
+      "same_seed_comparison": false
+    }
+  ],
+  "bilibili_body": "上一期停工重构之后，这期聊聊我准备怎样管理越做越大的AI项目。以《失序之钟》最新主线为例：需求先讲目标与验收；架构划分目录、框架、模块职责与接口；设计落到可观察行为；AGENTS负责短入口，Skills固定可复用流程；每次小范围实现、检查和更新交接。\n\n最想早点加的一条：文档按最终交付件维护，直接整理当前有效正文，不在末尾不断追加补丁和“再次强调”。历史和简要修订记录另外追溯。\n\n游戏和这套方法都还没做完，没有证明能彻底消除返工。画面全部为原创动态解释图，仓库规范与个人建议分开标注；不是游戏录屏或AI真实聊天截图。AI配音，来源冻结于main 48cddb6a；PR134/135已合入，其他待办仍按实际状态判断。\n\n补充阅读与制作资料：\nhttps://github.com/zhipijun1996/video_rush/blob/main/docs/ep010.md\nhttps://github.com/zhipijun1996/gunman-rush\nhttps://github.com/github/spec-kit\nhttps://github.com/agentsmd/agents.md\nhttps://google.github.io/eng-practices/review/developer/small-cls.html\n\n#B站AI创造公开赛# #独立游戏# #AI# #项目管理# #Codex#\n\n分区建议：游戏 / 单机游戏。活动投稿时需关联真实官方话题，标题后缀和文字标签不代替话题选择；用户审片通过前不自动投稿。",
+  "comparison": "Explanatory examples and current documentation, no simulated execution or before/after benchmark.",
+  "comparison_review": "图示中现行规范、个人建议和简化示例是否清楚；未声称管理体系已长期验证或游戏已完成。",
+  "rights": [
+    {
+      "kind": "original_explanatory_diagrams",
+      "status": "original_project_work_MIT",
+      "third_party_images": false
+    },
+    {
+      "kind": "user_authorized_repository",
+      "status": "quoted_facts_from_owned_project_not_blanket_public_license"
+    },
+    {
+      "kind": "external_method_research",
+      "status": "attributed_links_hashes_original_paraphrase_only_no_original_prose_redistributed"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified",
+      "source": "user supplied the_kindred_hearth; same hash-pinned derivative as earlier authorized films"
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK SIL OFL1.1"
+    },
+    {
+      "kind": "voice",
+      "status": "Edge neural synthetic voice, no cloned real-person identity"
+    }
+  ]
+}

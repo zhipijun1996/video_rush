@@ -1785,5 +1785,51 @@
     ],
     "recordability": "Original explanatory animation plus retained historical project recording",
     "video_potential": "Specific failures and self-reflection rather than PR counts"
+  },
+  {
+    "id": "S_AI_PROJECT_METHOD_01",
+    "event": "停工重构后，建立文档分工与轻量AI任务闭环",
+    "date": "2026-11-04",
+    "background": "AI项目历史规则、文档与流程冗余，用户开始补项目管理。",
+    "conflict": "如何让规则清楚且可接续，同时避免为管理增加重复表格与全量上下文。",
+    "attempts": [
+      "PR134短入口及文档重整",
+      "PR135普通任务轻量化、设计与对象规则归属",
+      "用户提出需求架构设计与Skills框架"
+    ],
+    "result": "文档/流程已合入；游戏内容缺口、长期迭代效果和体验未完成或未验证。",
+    "truth_status": "scoped_workflow_merged_longitudinal_benefit_unverified",
+    "evidence_status": "exact_current_sources_read",
+    "commit": "48cddb6a70983b0a0206304d18c98d274a9a7549",
+    "base_commit": "68a87f38a753442bbdacaa81317dd4aaa05eba3b",
+    "pr": 135,
+    "branch": "main",
+    "linked_sources": [
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/AGENTS.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/README.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/project-integration/SKILL.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/design-grill/SKILL.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/.agents/skills/player-creator/SKILL.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/module_map.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/project_management.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/development.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/current_state.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/architecture.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/project/tasks.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/data/README.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/game_design.md",
+      "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/48cddb6a70983b0a0206304d18c98d274a9a7549/docs/bible/player_mechanics.md",
+      "https://github.com/zhipijun1996/gunman-rush/pull/134",
+      "https://github.com/zhipijun1996/gunman-rush/pull/135",
+      "https://github.com/zhipijun1996/gunman-rush/pull/136",
+      "https://raw.githubusercontent.com/github/spec-kit/ec9a6f3b94c0aa856f77e550785a1ddde1993de1/README.md",
+      "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/developer/small-cls.md",
+      "https://raw.githubusercontent.com/agentsmd/agents.md/d001185d792eb6402a58e4cbef1c228b309ec25d/README.md"
+    ],
+    "associated_media": [
+      "25 original evidence-linked explanatory animations"
+    ],
+    "recordability": "No game footage needed; original diagram animation of document routing, ownership, replacement and task scope.",
+    "video_potential": "User-selected methodology follow-up; practical chain with recoil-jump example; explicitly unfinished."
   }
 ]
