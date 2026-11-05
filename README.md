@@ -4,7 +4,9 @@
 
 ## 当前下载方式（用户最新指示）
 
-**新一期《失序之钟》ep09 · AI项目管理方法**：[手机下载成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41952847047/artifacts/13382382399)，约14.9MB，保留至2026-11-19。成片4分58.6秒，25段原创动态图示，轻BGM；以最新主线为例，完整讲需求、架构、模块设计、AGENTS入口、Skills、小步实现与验证交接，重点解释“文档按最终交付件维护”。保留项目和方法仍在打磨的边界，未上传B站。实际下载核对99项文件、14份原文Git blob/SHA256和整片解码。[口播](docs/ep010-script.md) · [方法与来源](docs/ep010.md) · [实际验收](docs/ep010-verification.json)。
+**最新《失序之钟》ep09 · 经验复盘／层次化思维导图版**：[手机下载新版成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41957163165/artifacts/13384520065)，约15.1MB，保留至2026-11-19。成片4分51.8秒，把口播改为停工整理后的个人总结；一张稳定导图贯穿“主题→四条主线→做法→游戏例子”，逐层展开、分支细读、回到全图。含独立完整SVG、轻BGM；实际核对91份清单、14份原文和整片解码。旧版保留，用户观感待审，未上传B站。[完整层级](docs/ep010-r2-mindmap.md) · [新口播](docs/ep010-r2-script.md) · [修订与实际交付](docs/ep010-r2.md) · [验收回执](docs/ep010-r2-verification.json)。
+
+**前版《失序之钟》ep09 · AI项目管理方法**：[手机下载成片、封面和投稿资料](https://github.com/zhipijun1996/video_rush/actions/runs/41952847047/artifacts/13382382399)，约14.9MB，保留至2026-11-19。成片4分58.6秒，25段原创动态图示，轻BGM；以最新主线为例，完整讲需求、架构、模块设计、AGENTS入口、Skills、小步实现与验证交接，重点解释“文档按最终交付件维护”。保留项目和方法仍在打磨的边界，未上传B站。实际下载核对99项文件、14份原文Git blob/SHA256和整片解码。[口播](docs/ep010-script.md) · [方法与来源](docs/ep010.md) · [实际验收](docs/ep010-verification.json)。
 
 **《失序之钟》ep08已按用户批准发布B站**：[观看《AI把代码仓越写越乱，我只能停工重构》](https://www.bilibili.com/video/BV1ubxf6UESB/)。已回读确认开放浏览、活动话题1340873/标签/标题后缀，并加入《失序之钟｜AI独游开发记录》合集9498995；平台封面哈希匹配批准文件。[投稿回执](docs/bilibili-ep009-upload.json)。
 
