@@ -165,8 +165,8 @@ def main():
     shot('先做一块，看看能不能更好玩','把跳跃的难度、探索路线和回环安排得更具体。学到一个新能力以后，回来发现原来过不去的地方，现在能走了。先看这一小块，能不能比随机拼出来的更有意思。','experiment',presentation='animated_diagram',emphasis='先验证小区域，不承诺整图重做成功')
     shot('还在试，先把方向想明白','模块和审核工具，也许还能继续用。但这次我想先把方向想明白。做了这么久，还是希望最后交出来的，是一个值得玩的游戏。你们觉得，反冲跳跳乐配肉鸽，最缺的会是什么？','plan',['user','plan'],emphasis='还没成功，正在换一种办法试',safe_frame=True)
     spec=copy.deepcopy(json.loads((ROOT/'episodes/ep010-r2.json').read_text()))
-    spec.update(episode='ep012',title='做了一百多个模块，我却想放弃随机地图了 | 【失序之钟】独游折腾记 ep11【B站AI创造公开赛】',
-        title_candidates=['随机地图没省下工作，我可能得换条路了 | 【失序之钟】独游折腾记 ep11【B站AI创造公开赛】'],
+    spec.update(episode='ep012',title='做了115个模块，我却想把肉鸽砍了！ | 【失序之钟】独游折腾记 ep11【B站AI创造公开赛】',
+        title_candidates=['115个模块白做了？我开始怀疑随机地图这条路 | 【失序之钟】独游折腾记 ep11【B站AI创造公开赛】'],
         repository='zhipijun1996/map-edit',asset_spec='episodes/ep012-assets.json',story_ids=['S_RANDOM_MAP_PIVOT'],
         shots=shots,rate='+8%',playback_speed=1.08,target_duration=[180,300],cover_assets=['catalog','plan'],
         music_gain=.075,game_audio_gain=0,
@@ -187,7 +187,7 @@ def main():
             dict(kind='editorial_diagrams',status='Original project-authored explanatory graphics, MIT'),
             dict(kind='music',status=spec['music_asset']['license_status']),
             dict(kind='font',status='Noto CJK SIL OFL1.1'),dict(kind='voice',status='Edge synthetic Mandarin; no voice cloning')],
-        bilibili_body='做了一百多个模块，还做了网页审核工具，随机地图也跑了很多轮实验。结构确实有进步，但从自己的体验看，离“好玩”还是有距离。\n\n这次聊聊我为什么开始怀疑肉鸽随机是否适合反冲平台跳跃，以及最近在考虑的类银河恶魔城小区域实验。区域图是规划草案，目前还没实现。地图实验图展示静态结构，不冒称整图物理与玩家体验验收通过。\n\n地图生成器：https://zhipijun1996.github.io/map-gen/ （制作时首页404，片中采用固定源码的真实实验存档）\n模块库：https://zhipijun1996.github.io/map-edit/\n\n#B站AI创造公开赛#\n分区建议：单机游戏。标签：独立游戏、游戏开发、Godot、AI开发、肉鸽、关卡设计、失序之钟、B站AI创造公开赛。')
+        bilibili_body='本来想靠随机地图省点关卡设计，结果做了115个模块、网页审核工具，还折腾了好多轮生成策略和地图封边。结构确实在变好，玩起来却还是不满意。\n\n地图换了，熟悉的模块还在；死亡以后重来，长期升级的积累感又不够。为了新鲜感，反而得设计更多模块。\n\n也许肉鸽随机，暂时不适合我这套反冲跳跃。最近在考虑类银河恶魔城，先做一个小区域试试。还没成功，区域图也只是规划草案。舍不得之前的投入，但更希望最后能做出一个好玩的游戏。\n\nAI辅助开发与制作，中文AI配音；画面包含本人项目的模块网页、真实生成实验存档和解释动画，实验图不代表实机体验已经过关。\n\n你们觉得，反冲跳跳乐配肉鸽，最缺的会是什么？\n\n#B站AI创造公开赛# #独立游戏# #Godot# #游戏开发#')
     spec['cover_assets']=['catalog','map-a']
     spec['cover']=dict(series='失序之钟 · 独游折腾记 ep11',left_label='真实模块库',right_label='生成实验存档',
         line1='115 个模块以后',line2='我想放弃随机地图了')

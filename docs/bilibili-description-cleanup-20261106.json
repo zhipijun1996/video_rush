@@ -1,0 +1,137 @@
+{
+  "checked_at": "2026-11-06T05:17:06.655333+00:00",
+  "account_uid": 12437477,
+  "scanned_published_videos": 11,
+  "descriptions_updated": 4,
+  "already_clean": 7,
+  "scope": "Descriptions only; all titles/media/activity/topic/collection preserved",
+  "videos": [
+    {
+      "bvid": "BV1Ue4Y6GEVS",
+      "aid": 117565267385205,
+      "title": "平原、森林、装备，这阶段的成果先留个档 | 【失序之钟】独游折腾记 ep10【B站AI创造公开赛】",
+      "description_changed": true,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "025e4942d85a26ee8930105709f28eecbf1c97ac7c6994af2d408af5c8876e7d",
+      "description_after_sha256": "917717773d7f3f8f6f6747dfcb65177c467cb7ddcfa5724835986f356513ef3d",
+      "public_collection_id_preserved": true
+    },
+    {
+      "bvid": "BV1Pf486bEFX",
+      "aid": 117564545963528,
+      "title": "AI把代码仓写乱之后，我补上的项目管理经验 | 【失序之钟】独游折腾记 ep09【B站AI创造公开赛】",
+      "description_changed": true,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "3b423bac78b96c9966a850f2918a7621593fc205deead83173cf2995e6cec045",
+      "description_after_sha256": "b6cfa327443882033cf37c0a60800c9f7154764bc68eaa25b8dcdc1a9da91af4",
+      "public_collection_id_preserved": true
+    },
+    {
+      "bvid": "BV1ubxf6UESB",
+      "aid": 117561274472474,
+      "title": "AI把代码仓越写越乱，我只能停工重构 | 【失序之钟】独游折腾记 ep08【B站AI创造公开赛】",
+      "description_changed": true,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "6d788d5ae34aec341d4b7150c07e6db78a65a316e1884afb4efef841b71e7f26",
+      "description_after_sha256": "c1a5f89e71f9c2aa9ce05234c09f0d43a463608cf893c9f7a2729fe77f7f5b60",
+      "public_collection_id_preserved": true
+    },
+    {
+      "bvid": "BV1nr4K6XE7U",
+      "aid": 117549765236682,
+      "title": "小时候口胡的招式，被我做成了游戏 | 【拍拍波】独游折腾记 ep01【B站AI创造公开赛】",
+      "description_changed": true,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "f91837c6ec0cb4b3f88e1477e4e0dda40e230cebd504a616525a2578d11b34c6",
+      "description_after_sha256": "de6b769e4adac924938c147b0e3a5bbf9ce325086b750fc9186d1ef4f17e247f",
+      "public_collection_id_preserved": true
+    },
+    {
+      "bvid": "BV1t6x76FETV",
+      "aid": 117518358353380,
+      "title": "我想让随机生成的地图，真的值得探索 | 【失序之钟】独游折腾记 ep07【B站AI创造公开赛】",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "9e475383c5d033baa721ba7aaebbca6a3c51579daa7f6f3c33e285238337b45c",
+      "description_after_sha256": "9e475383c5d033baa721ba7aaebbca6a3c51579daa7f6f3c33e285238337b45c"
+    },
+    {
+      "bvid": "BV1vuxu6EEnc",
+      "aid": 117513476183754,
+      "title": "肉鸽随机地图血泪史1 | 【失序之钟】独游折腾记 ep06【B站AI创造公开赛】",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "de2d126467f2df4a69a6afab3f331546eefc839254aee4950bd505997c4e90b3",
+      "description_after_sha256": "de2d126467f2df4a69a6afab3f331546eefc839254aee4950bd505997c4e90b3"
+    },
+    {
+      "bvid": "BV1r9HP6MEX3",
+      "aid": 117494601751074,
+      "title": "这次来个UI小小的优化 | 【失序之钟】独游折腾记 ep05 【B站AI创造公开赛】",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "a89140a8b678dc53b61d6175332b090b713d238e12d89b63c94c6355c3b0d3fa",
+      "description_after_sha256": "a89140a8b678dc53b61d6175332b090b713d238e12d89b63c94c6355c3b0d3fa"
+    },
+    {
+      "bvid": "BV1Sant62Eep",
+      "aid": 117489686024307,
+      "title": "打中了，却像没打中？补点打击感才行 | 【失序之钟】独游折腾记 ep04",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "e9a329b0528673f1089f37cb0c6248c98034c08c6675e30a4b8f0dfb51889676",
+      "description_after_sha256": "e9a329b0528673f1089f37cb0c6248c98034c08c6675e30a4b8f0dfb51889676"
+    },
+    {
+      "bvid": "BV1nnnp6SEgT",
+      "aid": 117484770301632,
+      "title": "概念图这么美，但怎么做都像4399？ | 【失序之钟】独游折腾记 ep03",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "8882361f8af3d5b05995e74f6484145d2be26aa33406ac90bf9622b222e0c397",
+      "description_after_sha256": "8882361f8af3d5b05995e74f6484145d2be26aa33406ac90bf9622b222e0c397"
+    },
+    {
+      "bvid": "BV1urnC6oEY2",
+      "aid": 117481884751698,
+      "title": "反冲跳跃怎么玩？3种武器与升级分支 | 【失序之钟】独游折腾记 ep02",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "6b637e62ae8a0ccd05d2c2a9e27cc83492dc1ad53d4e28f5df7aafd2daebe253",
+      "description_after_sha256": "6b637e62ae8a0ccd05d2c2a9e27cc83492dc1ad53d4e28f5df7aafd2daebe253"
+    },
+    {
+      "bvid": "BV1dWnr68EkK",
+      "aid": 117479300995003,
+      "title": "圆梦小时候，我开始做独立游戏了！｜ 【失序之钟】独游折腾记 EP01",
+      "description_changed": false,
+      "creator_and_public_have_no_git_sites": true,
+      "other_metadata_and_media_preserved": true,
+      "state": 0,
+      "description_before_sha256": "a0fe32a29d5a2cc312a956b7a1d9c99491b8f7db651b2484f93a2d283b953466",
+      "description_after_sha256": "a0fe32a29d5a2cc312a956b7a1d9c99491b8f7db651b2484f93a2d283b953466"
+    }
+  ],
+  "private_backup": "ignored build/publishing/cleanup-git-20261106",
+  "first_edit_parameter_error": "API21001 on unnormalized read-only fields; no change applied, corrected native Studio payload after unchanged readback; bounded retry succeeded"
+}

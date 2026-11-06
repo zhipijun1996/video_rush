@@ -12,10 +12,13 @@ REQUIRED_FILES = {'final.mp4', 'cover.png', 'bilibili.md', 'script.md',
 
 def posting_copy(spec, description):
     """Phone-copyable submission materials, also shown in the release body."""
+    from .posting_policy import public_description, require_public_copy
+    description=public_description(description)
     title=spec['title'].strip()
     if not title or not description.strip():
         raise ValueError('Submission materials require a title and description')
     alternatives=[t for t in spec.get('title_candidates',[]) if t!=title]
+    require_public_copy(title,*alternatives,description)
     return ('# B站投稿资料\n\n## 推荐标题\n\n'+title+
             '\n\n## 备选标题\n\n'+(''.join('- '+t+'\n' for t in alternatives) or '无\n')+
             '\n## 简介（可复制）\n\n'+description.strip()+

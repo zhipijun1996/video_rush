@@ -90,5 +90,14 @@
     "id": 42160793093,
     "conclusion": "cancelled",
     "reason": "Replaced after actual frame review revealed heading/emphasis overlap and unhelpful PR placeholder labels; no old preview delivered"
+  },
+  "bilibili_submission": {
+    "status": "scheduled_review_passed_waiting_for_publication",
+    "bvid": "BV1zZ4v6eEMY",
+    "url": "https://www.bilibili.com/video/BV1zZ4v6eEMY/",
+    "scheduled_at": "2026-11-06T19:00:00+08:00",
+    "dtime": 1793962800,
+    "state": -40,
+    "state_desc": "通过审核，等待发布"
   }
 }

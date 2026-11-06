@@ -1,5 +1,7 @@
 # Video Rush
 
+Latest user posting preference (2026-11-06): no Git hosting/Pages websites in audience-facing Bilibili descriptions, dynamics or titles. Keep exact provenance in internal source manifests. Use `video_rush.posting_policy` for public copy. More attention-grabbing, factual titles are requested. User explicitly authorizes cleaning Git website references from all already-published descriptions and submitting the approved ep012 movie as public ep11, now **scheduled for 2026-11-06 19:00 Asia/Shanghai**, not immediate publication. Preserve existing posts' titles, media, topics and collections; do not reupload them.
+
 Video Rush owns production code, stories, skills and edit rules. `gunman-rush` is an external **read-only** source. Never edit, import inside, checkout, reset, commit or push that source repo. Run old game versions only in `build/recordings/` archives. User instructions override these local defaults.
 
 For natural language video requests, invoke the four local skills in sequence. The Codex host does research/creative direction; the Python CLI performs deterministic synthesis/rendering. An unknown topic producing a director brief is not a finished video. Continue authoring its JSON specs yourself, then run produce; do not ask the phone-only user to edit JSON.
