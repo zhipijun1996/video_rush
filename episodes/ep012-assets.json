@@ -43,7 +43,8 @@
       "kind": "web_editor_evidence",
       "caption": "模块库网页 · 固定源码重现",
       "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
-      "rights": "User-owned project; requested quotation of project interface"
+      "rights": "User-owned project; requested quotation of project interface",
+      "display_label": "模块库网页 · 固定版本演示"
     },
     {
       "id": "catalog-forest",
@@ -91,7 +92,8 @@
       "kind": "web_editor_evidence",
       "caption": "模块库网页 · 固定源码重现",
       "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
-      "rights": "User-owned project; requested quotation of project interface"
+      "rights": "User-owned project; requested quotation of project interface",
+      "display_label": "模块库网页 · 固定版本演示"
     },
     {
       "id": "module0",
@@ -143,7 +145,8 @@
       "kind": "web_editor_evidence",
       "caption": "模块库网页 · 固定源码重现",
       "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
-      "rights": "User-owned project; requested quotation of project interface"
+      "rights": "User-owned project; requested quotation of project interface",
+      "display_label": "模块库网页 · 固定版本演示"
     },
     {
       "id": "module1",
@@ -195,7 +198,8 @@
       "kind": "web_editor_evidence",
       "caption": "模块库网页 · 固定源码重现",
       "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
-      "rights": "User-owned project; requested quotation of project interface"
+      "rights": "User-owned project; requested quotation of project interface",
+      "display_label": "模块库网页 · 固定版本演示"
     },
     {
       "id": "module2",
@@ -247,7 +251,8 @@
       "kind": "web_editor_evidence",
       "caption": "模块库网页 · 固定源码重现",
       "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
-      "rights": "User-owned project; requested quotation of project interface"
+      "rights": "User-owned project; requested quotation of project interface",
+      "display_label": "模块库网页 · 固定版本演示"
     },
     {
       "id": "map-a",
@@ -261,7 +266,8 @@
       "kind": "archived_algorithm_comparison",
       "caption": "真实实验存档 · 静态路线，非实机验收",
       "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
-      "rights": "User-owned project; requested experimental evidence"
+      "rights": "User-owned project; requested experimental evidence",
+      "display_label": "生成实验存档 · 非实机画面"
     },
     {
       "id": "map-b",
@@ -275,7 +281,8 @@
       "kind": "archived_algorithm_comparison",
       "caption": "真实实验存档 · 静态路线，非实机验收",
       "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
-      "rights": "User-owned project; requested experimental evidence"
+      "rights": "User-owned project; requested experimental evidence",
+      "display_label": "生成实验存档 · 非实机画面"
     },
     {
       "id": "map-c",
@@ -289,7 +296,8 @@
       "kind": "archived_algorithm_comparison",
       "caption": "真实实验存档 · 静态路线，非实机验收",
       "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
-      "rights": "User-owned project; requested experimental evidence"
+      "rights": "User-owned project; requested experimental evidence",
+      "display_label": "生成实验存档 · 非实机画面"
     },
     {
       "id": "seal",
@@ -303,7 +311,8 @@
       "kind": "archived_algorithm_comparison",
       "caption": "真实实验存档 · 静态路线，非实机验收",
       "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
-      "rights": "User-owned project; requested experimental evidence"
+      "rights": "User-owned project; requested experimental evidence",
+      "display_label": "生成实验存档 · 非实机画面"
     },
     {
       "id": "early",
@@ -317,7 +326,8 @@
       "kind": "archived_algorithm_comparison",
       "caption": "真实实验存档 · 静态路线，非实机验收",
       "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
-      "rights": "User-owned project; requested experimental evidence"
+      "rights": "User-owned project; requested experimental evidence",
+      "display_label": "生成实验存档 · 非实机画面"
     },
     {
       "id": "plan",
@@ -329,7 +339,8 @@
       "user_attachment": true,
       "caption": "区域规划草案 · 尚未实现",
       "truth": "Planning image, not runtime or a committed implementation decision",
-      "rights": "User supplied for this episode"
+      "rights": "User supplied for this episode",
+      "display_label": "区域规划草案 · 尚未实现"
     },
     {
       "id": "hook",
@@ -344,9 +355,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "做了一百多个模块以后……",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -511,7 +522,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "questions",
@@ -526,9 +538,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "换成玩家，我会在意什么？",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -693,7 +705,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "core",
@@ -708,9 +721,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "我的核心，是反冲平台跳跃",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -875,7 +888,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "repeat",
@@ -890,9 +904,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "地图换了，熟悉的感觉还在",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -1057,7 +1071,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "death",
@@ -1072,9 +1087,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "失败之后，我想留下什么？",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -1239,7 +1254,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "cost",
@@ -1254,9 +1270,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "本来以为，随机能省点工作",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -1421,7 +1437,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     },
     {
       "id": "experiment",
@@ -1436,9 +1453,9 @@
           {
             "type": "text",
             "x": 110,
-            "y": 150,
+            "y": 210,
             "text": "下一步：先做一个小区域试试",
-            "size": 70,
+            "size": 60,
             "color": "#eef3fa",
             "width": 1590,
             "bold": true
@@ -1603,7 +1620,8 @@
             ]
           }
         ]
-      }
+      },
+      "display_label": "个人复盘 · 思路示意"
     }
   ],
   "documents": [

@@ -70,7 +70,8 @@ def main():
         if group:e['group']=group
         return e
     def diagram(id,title,rows,footer='个人复盘 · 思路示意'):
-        elements=[text(110,150,title,70),text(110,835,footer,28,'#a9b8c7')]
+        # Keep diagram headings below the separate ASS emphasis line at y120.
+        elements=[text(110,210,title,60),text(110,835,footer,28,'#a9b8c7')]
         groups=[]
         for i,(label,detail,color) in enumerate(rows):
             name='g'+str(i);y=295+i*155
@@ -108,6 +109,13 @@ def main():
         ('精心安排','让反冲跳跃有更明确的节奏','#89e6cc'),
         ('探索与回环','发现新路，带着新能力回来','#ffd98c'),
         ('先验证','有没有更好玩，再决定扩大','#a5bbff')],footer='正在考虑的类银河恶魔城方向 · 小范围实验目标')
+    for asset in assets:
+        asset['display_label']={
+            'web_editor_evidence':'模块库网页 · 固定版本演示',
+            'archived_algorithm_comparison':'生成实验存档 · 非实机画面',
+            'planned_world_map':'区域规划草案 · 尚未实现',
+            'explanatory_diagram':'个人复盘 · 思路示意',
+        }[asset['kind']]
     assetspec=dict(schema_version=2,repository='zhipijun1996/map-edit',assets=assets,documents=[])
     # Preserve exact source passages beside the media, separately from subjective narration.
     for repo,commit,root,paths_ in [
