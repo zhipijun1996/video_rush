@@ -1,0 +1,1676 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/map-edit",
+  "assets": [
+    {
+      "id": "catalog",
+      "origin": "browser_capture",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "snapshot_paths": [
+        "README.md",
+        "app.js",
+        "capabilities.js",
+        "corner-batch-review.js",
+        "corner-port-view.js",
+        "current-module-library-client.js",
+        "difficulty.js",
+        "index.html",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "module-foundation.js",
+        "module-mirror-review.js",
+        "module-review-overlay.js",
+        "package.json",
+        "style.css",
+        "modules",
+        "generation/module-workshop"
+      ],
+      "entry": "index.html",
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "wait",
+          "selector": ".module-card",
+          "first": true
+        }
+      ],
+      "kind": "web_editor_evidence",
+      "caption": "模块库网页 · 固定源码重现",
+      "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
+      "rights": "User-owned project; requested quotation of project interface"
+    },
+    {
+      "id": "catalog-forest",
+      "origin": "browser_capture",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "snapshot_paths": [
+        "README.md",
+        "app.js",
+        "capabilities.js",
+        "corner-batch-review.js",
+        "corner-port-view.js",
+        "current-module-library-client.js",
+        "difficulty.js",
+        "index.html",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "module-foundation.js",
+        "module-mirror-review.js",
+        "module-review-overlay.js",
+        "package.json",
+        "style.css",
+        "modules",
+        "generation/module-workshop"
+      ],
+      "entry": "index.html",
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "wait",
+          "selector": ".module-card",
+          "first": true
+        },
+        {
+          "operation": "select",
+          "selector": "#library-category",
+          "value": "森林"
+        }
+      ],
+      "kind": "web_editor_evidence",
+      "caption": "模块库网页 · 固定源码重现",
+      "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
+      "rights": "User-owned project; requested quotation of project interface"
+    },
+    {
+      "id": "module0",
+      "origin": "browser_capture",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "snapshot_paths": [
+        "README.md",
+        "app.js",
+        "capabilities.js",
+        "corner-batch-review.js",
+        "corner-port-view.js",
+        "current-module-library-client.js",
+        "difficulty.js",
+        "index.html",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "module-foundation.js",
+        "module-mirror-review.js",
+        "module-review-overlay.js",
+        "package.json",
+        "style.css",
+        "modules",
+        "generation/module-workshop"
+      ],
+      "entry": "index.html",
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "wait",
+          "selector": ".module-card",
+          "first": true
+        },
+        {
+          "operation": "click",
+          "selector": "[data-copy-module=\"b31-n06-fourport-two-low-ingress\"]"
+        },
+        {
+          "operation": "wait",
+          "selector": "#dialog",
+          "state": "hidden"
+        }
+      ],
+      "kind": "web_editor_evidence",
+      "caption": "模块库网页 · 固定源码重现",
+      "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
+      "rights": "User-owned project; requested quotation of project interface"
+    },
+    {
+      "id": "module1",
+      "origin": "browser_capture",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "snapshot_paths": [
+        "README.md",
+        "app.js",
+        "capabilities.js",
+        "corner-batch-review.js",
+        "corner-port-view.js",
+        "current-module-library-client.js",
+        "difficulty.js",
+        "index.html",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "module-foundation.js",
+        "module-mirror-review.js",
+        "module-review-overlay.js",
+        "package.json",
+        "style.css",
+        "modules",
+        "generation/module-workshop"
+      ],
+      "entry": "index.html",
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "wait",
+          "selector": ".module-card",
+          "first": true
+        },
+        {
+          "operation": "click",
+          "selector": "[data-copy-module=\"b31-n08-reward-return-interface0\"]"
+        },
+        {
+          "operation": "wait",
+          "selector": "#dialog",
+          "state": "hidden"
+        }
+      ],
+      "kind": "web_editor_evidence",
+      "caption": "模块库网页 · 固定源码重现",
+      "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
+      "rights": "User-owned project; requested quotation of project interface"
+    },
+    {
+      "id": "module2",
+      "origin": "browser_capture",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "snapshot_paths": [
+        "README.md",
+        "app.js",
+        "capabilities.js",
+        "corner-batch-review.js",
+        "corner-port-view.js",
+        "current-module-library-client.js",
+        "difficulty.js",
+        "index.html",
+        "library-client.js",
+        "model.js",
+        "module-block-grid.js",
+        "module-contract-render.js",
+        "module-contract.js",
+        "module-foundation.js",
+        "module-mirror-review.js",
+        "module-review-overlay.js",
+        "package.json",
+        "style.css",
+        "modules",
+        "generation/module-workshop"
+      ],
+      "entry": "index.html",
+      "steps": [
+        {
+          "operation": "click",
+          "selector": "#library"
+        },
+        {
+          "operation": "wait",
+          "selector": ".module-card",
+          "first": true
+        },
+        {
+          "operation": "click",
+          "selector": "[data-copy-module=\"b31-n12-three-side-port-interface0\"]"
+        },
+        {
+          "operation": "wait",
+          "selector": "#dialog",
+          "state": "hidden"
+        }
+      ],
+      "kind": "web_editor_evidence",
+      "caption": "模块库网页 · 固定源码重现",
+      "truth": "New capture of exact committed web tool; no server writes; route drawings are design annotations, not physics or fun acceptance",
+      "rights": "User-owned project; requested quotation of project interface"
+    },
+    {
+      "id": "map-a",
+      "origin": "external",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/validation-930001.png",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/validation-930001.png",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v2/output/figures/validation-930001.png",
+      "sha256": "15d2e1f556d4574adbc5439ca1fddc1b3e6c0a322b0ce77eadfa11ceb32b45ca",
+      "kind": "archived_algorithm_comparison",
+      "caption": "真实实验存档 · 静态路线，非实机验收",
+      "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
+      "rights": "User-owned project; requested experimental evidence"
+    },
+    {
+      "id": "map-b",
+      "origin": "external",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/calibration-271028.png",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/calibration-271028.png",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v2/output/figures/calibration-271028.png",
+      "sha256": "e400b994b14d40b290128eb1810869b232c947fc97102c62c5e53e2887d27f3c",
+      "kind": "archived_algorithm_comparison",
+      "caption": "真实实验存档 · 静态路线，非实机验收",
+      "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
+      "rights": "User-owned project; requested experimental evidence"
+    },
+    {
+      "id": "map-c",
+      "origin": "external",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/validation-930012.png",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/figures/validation-930012.png",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v2/output/figures/validation-930012.png",
+      "sha256": "b8f34409ada21dfee16c046d4f226e183bdab43445671647c8155da6efeab002",
+      "kind": "archived_algorithm_comparison",
+      "caption": "真实实验存档 · 静态路线，非实机验收",
+      "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
+      "rights": "User-owned project; requested experimental evidence"
+    },
+    {
+      "id": "seal",
+      "origin": "external",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/legacy-real-v2/output/gear-seal-detail.png",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/legacy-real-v2/output/gear-seal-detail.png",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/legacy-real-v2/output/gear-seal-detail.png",
+      "sha256": "e1947d93a285d133616ed3239dc2d0a28715769cfaeb0c19b4961ff09efb9345",
+      "kind": "archived_algorithm_comparison",
+      "caption": "真实实验存档 · 静态路线，非实机验收",
+      "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
+      "rights": "User-owned project; requested experimental evidence"
+    },
+    {
+      "id": "early",
+      "origin": "external",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v1/output/comparison-browser.png",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v1/output/comparison-browser.png",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v1/output/comparison-browser.png",
+      "sha256": "d5c27914442c78901206325fe5a7d5643097da767bcb779c01b9f30dbd4bc175",
+      "kind": "archived_algorithm_comparison",
+      "caption": "真实实验存档 · 静态路线，非实机验收",
+      "truth": "Unmodified archived output. Four panels share seed, module package and drawing scale; geometry targets do not establish whole-map physics or player fun.",
+      "rights": "User-owned project; requested experimental evidence"
+    },
+    {
+      "id": "plan",
+      "origin": "user_upload",
+      "path": "build/inputs/ep012-region-plan.jpg",
+      "sha256": "73b67085dea51d9c049a96f7dd6f781101c904a8ae7da4fa4f830d8f044f9c8e",
+      "kind": "planned_world_map",
+      "original_filename": "1000062461.jpg",
+      "user_attachment": true,
+      "caption": "区域规划草案 · 尚未实现",
+      "truth": "Planning image, not runtime or a committed implementation decision",
+      "rights": "User supplied for this episode"
+    },
+    {
+      "id": "hook",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "个人复盘 · 思路示意",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "做了一百多个模块以后……",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "个人复盘 · 思路示意",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "原计划：随机生成",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "省一点关卡设计",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "现在：模块还得继续做",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "新鲜感，没那么容易",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ff9d9a",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "我开始怀疑这条路",
+            "size": 44,
+            "color": "#ff9d9a",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "是不是该换个方向？",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "questions",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "从操作、选择和探索的感受出发",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "换成玩家，我会在意什么？",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "从操作、选择和探索的感受出发",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "选择",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "绕过去，能发现什么？",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "节奏",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "哪里紧张，哪里能喘口气？",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#a5bbff",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "新鲜感",
+            "size": 44,
+            "color": "#a5bbff",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "这一跳，和刚才有什么区别？",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "core",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "个人复盘 · 思路示意",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "我的核心，是反冲平台跳跃",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "个人复盘 · 思路示意",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "一开始",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "起跳 → 对准 → 反冲 → 落地",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "练熟以后",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "路线判断更快，连续操作更稳",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#a5bbff",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "我想要的成长",
+            "size": 44,
+            "color": "#a5bbff",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "玩家自己，真的变强了",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "repeat",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "个人复盘 · 思路示意",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "地图换了，熟悉的感觉还在",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "个人复盘 · 思路示意",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "换位置",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "模块排列可以改变",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "没换的部分",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "熟悉的机关、跳法和组合",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ff9d9a",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "我的感受",
+            "size": 44,
+            "color": "#ff9d9a",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "换个顺序，又做了一遍",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "death",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "个人复盘 · 思路示意",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "失败之后，我想留下什么？",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "个人复盘 · 思路示意",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ff9d9a",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "一次死亡",
+            "size": 44,
+            "color": "#ff9d9a",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "这一局的地图和推进重来",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "技术积累",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "学会的操作，当然还在",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "长期升级",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "目前给我的积累感还不够",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "cost",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "个人复盘 · 思路示意",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "本来以为，随机能省点工作",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "个人复盘 · 思路示意",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "生成器",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "解决怎么拼、怎么选",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "玩法模块",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "每一段，仍然需要设计",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ff9d9a",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "持续新鲜",
+            "size": 44,
+            "color": "#ff9d9a",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "可能还要做得更多",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "experiment",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "caption": "正在考虑的类银河恶魔城方向 · 小范围实验目标",
+      "truth": "Original animated explanation of user testimony, not a measured player study",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 110,
+            "y": 150,
+            "text": "下一步：先做一个小区域试试",
+            "size": 70,
+            "color": "#eef3fa",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 110,
+            "y": 835,
+            "text": "正在考虑的类银河恶魔城方向 · 小范围实验目标",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1590,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              295,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#89e6cc",
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 317,
+            "text": "精心安排",
+            "size": 44,
+            "color": "#89e6cc",
+            "width": 1550,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 326,
+            "text": "让反冲跳跃有更明确的节奏",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              450,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#ffd98c",
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 472,
+            "text": "探索与回环",
+            "size": 44,
+            "color": "#ffd98c",
+            "width": 1550,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 481,
+            "text": "发现新路，带着新能力回来",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              605,
+              1700,
+              125
+            ],
+            "fill": "#192e43",
+            "color": "#a5bbff",
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 150,
+            "y": 627,
+            "text": "先验证",
+            "size": 44,
+            "color": "#a5bbff",
+            "width": 1550,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 730,
+            "y": 636,
+            "text": "有没有更好玩，再决定扩大",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 970,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.05,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              90,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "documents": [
+    {
+      "id": "map-edit-0",
+      "repository": "zhipijun1996/map-edit",
+      "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+      "path": "README.md",
+      "sha256": "768146ef771d062f782cba9e717839e1b73ec9c145e2957403cacaab16ca7779",
+      "bytes": 2637,
+      "blob_sha": "40a916633dec08f3a9d7d78dd04cdd48949aa0f7",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-edit/06bae30acb9709a24559c8ada532618be8500cac/README.md",
+      "page_url": "https://github.com/zhipijun1996/map-edit/blob/06bae30acb9709a24559c8ada532618be8500cac/README.md",
+      "verified_quotes": [],
+      "truth": "Exact archived source; scope is document/static experiment, not user experience acceptance"
+    },
+    {
+      "id": "map-gen-0",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "README.md",
+      "sha256": "24da33dd2e120e0dd196997daf7b6da8f13fba4c014cce0e32325a1d55a0c149",
+      "bytes": 9986,
+      "blob_sha": "638f9d662cb3eea5ab7ee16b553260a03adf8d0d",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/README.md",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/README.md",
+      "verified_quotes": [],
+      "truth": "Exact archived source; scope is document/static experiment, not user experience acceptance"
+    },
+    {
+      "id": "map-gen-1",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v1/README.md",
+      "sha256": "57600ac2b11e52ae868ef63b3d10a8ef709a6afea2a03442aff8e9c55301af39",
+      "bytes": 7724,
+      "blob_sha": "2468e77902db807aee06a244454eb0e54b2347da",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v1/README.md",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v1/README.md",
+      "verified_quotes": [],
+      "truth": "Exact archived source; scope is document/static experiment, not user experience acceptance"
+    },
+    {
+      "id": "map-gen-2",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v2/README.md",
+      "sha256": "5d01e2ac9b3b29d0fd378e2f4dbb3ea8a78d006026d7da2d677814cf0102f027",
+      "bytes": 8205,
+      "blob_sha": "b16dab6afaba6da912bb799f546d224447f6e7fd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/README.md",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/README.md",
+      "verified_quotes": [],
+      "truth": "Exact archived source; scope is document/static experiment, not user experience acceptance"
+    },
+    {
+      "id": "map-gen-3",
+      "repository": "zhipijun1996/map-gen",
+      "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+      "path": "experiments/optimization-v2/output/summary.json",
+      "sha256": "2ca78443fe8372308d7490a1347e575b32f1672e9c26cbce636daadeff137aa4",
+      "bytes": 16398,
+      "blob_sha": "432eb0920e6142ebf33fd57e68e75d41b52d62ab",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/map-gen/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/summary.json",
+      "page_url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/summary.json",
+      "verified_quotes": [],
+      "truth": "Exact archived source; scope is document/static experiment, not user experience acceptance"
+    }
+  ]
+}

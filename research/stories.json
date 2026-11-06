@@ -1831,5 +1831,81 @@
     ],
     "recordability": "No game footage needed; original diagram animation of document routing, ownership, replacement and task scope.",
     "video_potential": "User-selected methodology follow-up; practical chain with recoil-jump example; explicitly unfinished."
+  },
+  {
+    "id": "S_RANDOM_MAP_PIVOT",
+    "event": "115个模块与多轮生成之后，开始怀疑肉鸽方向",
+    "date": "2026-11-06",
+    "background": "反冲平台跳跃，最初希望模块化随机生成减少关卡设计负担",
+    "conflict": "静态实验逐渐进步，作者仍感觉重复、新鲜感弱、长期积累不足，设计工作未减少",
+    "attempts": [
+      "115份模块与真实网页审核",
+      "真实库接入、搜索与回退",
+      "外形、垂直空间与奖励空间优化",
+      "未使用接口封边"
+    ],
+    "result": "Tentative small Metroidvania experiment, not an implemented successful pivot",
+    "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+    "base_commit": null,
+    "pr": null,
+    "branch": "map-gen/main",
+    "sources": [
+      {
+        "id": "catalog",
+        "kind": "pinned_source",
+        "repository": "zhipijun1996/map-edit",
+        "commit": "06bae30acb9709a24559c8ada532618be8500cac",
+        "path": "modules/catalog.json",
+        "observed_module_count": 115,
+        "url": "https://github.com/zhipijun1996/map-edit/blob/06bae30acb9709a24559c8ada532618be8500cac/modules/catalog.json",
+        "scope": "115 catalog entries, not 115 enjoyable/fully physics-certified modules; current UI snapshot differs from archived 1.1.0 package experiments"
+      },
+      {
+        "id": "v1",
+        "kind": "archived_static_experiments",
+        "repository": "zhipijun1996/map-gen",
+        "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+        "path": "experiments/optimization-v1/README.md",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v1/README.md",
+        "scope": "Real package1.1.0; legacy20 candidates rejected. Expansion/backtracking improve scoped static results, still elongated. Not human fun evaluation."
+      },
+      {
+        "id": "v2",
+        "kind": "archived_same_seed_comparison",
+        "repository": "zhipijun1996/map-gen",
+        "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+        "path": "experiments/optimization-v2/output/summary.json",
+        "url": "https://github.com/zhipijun1996/map-gen/blob/b15c32e045347e0fcf282d541ea3eaa4661f0835/experiments/optimization-v2/output/summary.json",
+        "scope": "baseline/shape/spatial/stable, same115-module package1.1.0; four variants x40 seeds. Stable20/20 calibration and20/20 validation meet scoped targets. whole-map physics NOT_RUN. Do not infer fun or all-seed reliability."
+      },
+      {
+        "id": "seal",
+        "kind": "archived_geometry_detail",
+        "repository": "zhipijun1996/map-gen",
+        "commit": "b15c32e045347e0fcf282d541ea3eaa4661f0835",
+        "path": "experiments/legacy-real-v2/output/gear-seal-detail.png",
+        "scope": "Red unused-Port seals; seed271028/M02MX. Physics NOT_RUN. Editor Block/occupied outline is not a collision wall."
+      }
+    ],
+    "media": [
+      "catalog",
+      "module0",
+      "map-a",
+      "map-b",
+      "map-c",
+      "seal",
+      "plan"
+    ],
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "Exact module-editor snapshot captured; original algorithm map images available; whole-map physics not run for this episode"
+    },
+    "evidence_status": "Pinned catalog count, archived experimental outputs and actual web capture; subjective dissatisfaction and tentative pivot from user testimony",
+    "truth_status": "source-backed effort + user subjective retrospective + future plan",
+    "video_potential": {
+      "reason": "clear sunk-effort conflict; honest unresolved tradeoff",
+      "priority": "high"
+    }
   }
 ]
