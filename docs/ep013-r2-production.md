@@ -23,3 +23,13 @@ python -m video_rush produce --source /path/to/read-only/gunman-rush \
 ```
 
 远端沿用用户明确选择的 Actions 下载路线。先完成独立新版，再交付包含成片、封面、标题简介、字幕与来源的 Artifact，不覆盖旧版。
+
+## 实际交付核验
+
+本地及远端均完成 224.2 秒新版；1920×1080、30fps、H.264/AAC，真实中文 TTS 与用户配乐。37 个附件图片窗口、18 种图片视图及一段回访思路动画。两端 19 项技术检查通过，审美和完整手机试听仍待用户审核。
+
+实际成功运行：https://github.com/zhipijun1996/video_rush/actions/runs/42407375926 。生产提交 `dff5f1443c8c8bc233fcc3116a55d57ae63c1270`。Runner 测试 93 通过、1 跳过、5 警告；跳过的是可选浏览器捕获测试，本片不使用浏览器捕获。
+
+已回下载 ZIP，校验其 SHA256 `7501d01d365931ddb799692d508c5ac4b82e3287eb8071d896e1efe41e355a79` 与 Artifact 元数据一致，核验交付清单全部 34 个文件，独立完整解码下载到的 MP4，并查看其开头、片尾及封面。审核主版本是远端成片，SHA256 `3c5402ce971457764f2c69af8859d91f89838d237a756f507ef9778b2e6252ea`；封面 SHA256 `0cf3dc06b841a969486215f32eca12058380b4e2dba58182f8992b9d42140370`。本地预览不作为后续投稿的默认文件。
+
+手机交付包：https://github.com/zhipijun1996/video_rush/actions/runs/42407375926/artifacts/13588880094 ，21,835,988 字节，保留至 2026-11-21T19:50:49Z。含 `final.mp4`、`cover.png`、`bilibili.md`、脚本、字幕、来源、报告及选中附件原件。公开简介无 Git 网站；确切结尾句已核对。完整记录见 `docs/ep013-r2-check.json`。未上传 B 站。

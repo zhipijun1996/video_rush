@@ -1,0 +1,102 @@
+{
+  "episode": "ep013-r2",
+  "public_episode": "ep12",
+  "production_commit": "dff5f1443c8c8bc233fcc3116a55d57ae63c1270",
+  "local": {
+    "status": "technical_pass_human_review_pending",
+    "duration": 224.2,
+    "final_sha256": "9627338efe074119b041a32f1f160c3404df0fd7833d8e371fd8fedf06abc29e",
+    "bytes": 13641296,
+    "cover_sha256": "0cf3dc06b841a969486215f32eca12058380b4e2dba58182f8992b9d42140370",
+    "checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "delivery_files_verified": 34,
+    "human_review": "pending"
+  },
+  "editorial": {
+    "shots": 18,
+    "duration": 224.2,
+    "distinct_assets": 9,
+    "distinct_views": 18,
+    "image_windows": 37,
+    "animated_diagrams": 1
+  },
+  "hosted": {
+    "run_id": 42407375926,
+    "status": "completed",
+    "conclusion": "success",
+    "artifact_id": 13588880094,
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42407375926/artifacts/13588880094",
+    "zip_sha256": "7501d01d365931ddb799692d508c5ac4b82e3287eb8071d896e1efe41e355a79",
+    "zip_bytes": 21835988,
+    "expires_at": "2026-11-21T19:50:49Z",
+    "delivery_files_verified": 34,
+    "independent_full_mp4_decode_after_download": true,
+    "final_sha256": "3c5402ce971457764f2c69af8859d91f89838d237a756f507ef9778b2e6252ea",
+    "cover_sha256": "0cf3dc06b841a969486215f32eca12058380b4e2dba58182f8992b9d42140370",
+    "final_bytes": 13659692,
+    "duration_seconds": 224.2,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "public_copy_no_git_sites_verified": true,
+    "ending_phrase_verified": true,
+    "human_review": "pending"
+  },
+  "tests_on_hosted_runner": {
+    "passed": 93,
+    "skipped": 1,
+    "warnings": 5,
+    "command": "pytest -q",
+    "skip_scope": "Optional browser capture smoke test; this film uses archive images and an editorial diagram, not browser capture."
+  },
+  "delivered_for_review": {
+    "master": "hosted Artifact, not local preview",
+    "video_sha256": "3c5402ce971457764f2c69af8859d91f89838d237a756f507ef9778b2e6252ea",
+    "cover_sha256": "0cf3dc06b841a969486215f32eca12058380b4e2dba58182f8992b9d42140370",
+    "human_approval": "pending",
+    "bilibili_uploaded": false
+  },
+  "limitations": [
+    "Design intent and original source assembly previews; not completed game regions",
+    "Automatic technical checks do not prove voice performance, viewing appeal or game quality",
+    "Original ep013 preserved"
+  ]
+}
