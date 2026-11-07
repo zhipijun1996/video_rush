@@ -1,0 +1,109 @@
+{
+  "episode": "ep013",
+  "public_episode": "ep12",
+  "production_commit": "67caf2a6cf02eed7ce26cab39b3f11f2f3be840f",
+  "local": {
+    "status": "technical_pass_human_review_pending",
+    "duration": 298.033333,
+    "final_sha256": "5aba1686d579a9787249ddd9d62dd1be49b519a39d53731750484532f1326715",
+    "bytes": 21517739,
+    "checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "delivery_files_verified": 39,
+    "distinct_attachment_image_viewports": 24,
+    "image_cut_windows": 42,
+    "editorial_animated_explanations": 2
+  },
+  "attachment_integrity": {
+    "art": {
+      "listed_files": 603,
+      "all_listed_sha256_match": true,
+      "failures": [],
+      "source_manifest": "bundle-manifest.json"
+    },
+    "world": {
+      "listed_files": 111,
+      "all_listed_sha256_match": true,
+      "failures": [],
+      "source_manifest": "MANIFEST_LIGHT.json"
+    }
+  },
+  "tests": {
+    "passed": 94,
+    "warnings": 5,
+    "command": "pytest -q"
+  },
+  "hosted": {
+    "run_id": 42403869042,
+    "status": "completed",
+    "url": "https://github.com/zhipijun1996/video_rush/actions/runs/42403869042",
+    "conclusion": "success",
+    "artifact_id": 13587291154,
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42403869042/artifacts/13587291154",
+    "zip_sha256": "4bc2452123819077a0093b682c724be153bc10b7db6a4d1cb3d1a00b05b4037a",
+    "zip_bytes": 30733204,
+    "expires_at": "2026-11-21T19:11:53Z",
+    "all_39_delivery_files_hash_verified": true,
+    "independent_full_mp4_decode_after_download": true,
+    "final_sha256": "ab0ce6f540ca28a344a0afa383cff63c9a45caa1344b2d1857cd2b229a2ca885",
+    "final_bytes": 21522254,
+    "duration_seconds": 298.033333,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "mines_image_corrected_and_actual_frame_inspected": true
+  },
+  "human_review": "pending",
+  "bilibili_uploaded": false,
+  "game_runtime_capture": "Not claimed; this is a diagram/assembly-preview design film.",
+  "limitations": [
+    "309 planned rooms not implemented game",
+    "Independent art assembly not formal world gameplay",
+    "No new player playtest or full-game physics run",
+    "Light ZIP lacks full atlas PDF; actual provided PNGs used instead"
+  ],
+  "delivered_for_review": {
+    "master": "hosted Artifact, not the local initial preview",
+    "video_sha256": "ab0ce6f540ca28a344a0afa383cff63c9a45caa1344b2d1857cd2b229a2ca885",
+    "cover_sha256": "dd6025a8ab4082eee5c1ee0b45469ac5a25cfdb3fa3860ea287803cd44c9005c",
+    "human_approval": "pending",
+    "no_git_sites_in_bilibili_copy_verified": true
+  }
+}
