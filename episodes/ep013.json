@@ -1,0 +1,1030 @@
+{
+  "schema_version": 2,
+  "episode": "ep013",
+  "title": "刚想砍掉肉鸽，我又画了309间房 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】",
+  "title_candidates": [
+    "肉鸽先放一边，我想做一个值得回头的世界 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep013-assets.json",
+  "story_ids": [
+    "S_FIXED_WORLD_DESIGN"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+8%",
+  "playback_speed": 1.08,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.075,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "plains",
+    "world"
+  ],
+  "cover": {
+    "series": "失序之钟 · 独游折腾记 ep12",
+    "left_label": "美术拼装预览",
+    "right_label": "世界设计图",
+    "line1": "刚想砍掉肉鸽",
+    "line2": "又画了309间房"
+  },
+  "research_scope": {
+    "status": "targeted_PR_and_comment_attachment_research",
+    "pr": 141,
+    "repository": "zhipijun1996/gunman-rush",
+    "head_sha": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+    "merged": false,
+    "coverage": "PR metadata/body, all3 conversation comments, no inline comments,20 changed-file names; both linked ZIPs inventoried and selected current design/source records read. Not a new full-history census.",
+    "archives": {
+      "art": {
+        "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+        "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      },
+      "world": {
+        "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+        "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      }
+    },
+    "scope_limits": [
+      "PR body mentions20-room workline; attached v07 plan contains35 plains/309 world rooms. The newer attachment is the subject, not proof of integration.",
+      "ZIP internal dates differ by timezone/date; no invented chronology.",
+      "No code/import from attachment executed; main game remains untouched."
+    ]
+  },
+  "evidence": [
+    {
+      "id": "pr141",
+      "kind": "unmerged_pull_request",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+      "pr": 141,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141",
+      "scope": "Documentation and skills, not full-world runtime delivery"
+    },
+    {
+      "id": "world",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "309 planned rooms,16 regions,411 connections; illustration coordinates are not physics"
+    },
+    {
+      "id": "opening",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/OPENING_PACING-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Five tutorial rooms before station; timing budgets are targets, not playtest measurements"
+    },
+    {
+      "id": "station",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/STATION_NETWORK_STORY-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Station west/north/east, visible grapple bridge, optional conversation, same-state returns"
+    },
+    {
+      "id": "abilities",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "H grapple first; W and D alternative orders; all obtain routes are proposals"
+    },
+    {
+      "id": "city",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "36-room city, same landmark with different approaches; phase is not visit-count lock"
+    },
+    {
+      "id": "sky",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "10 main/4 optional extreme; either wing order; extreme not true-ending requirement"
+    },
+    {
+      "id": "rules",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/world-graybox-bible-v04.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Permanent unique gains and shortcuts; nearby nonfatal terrain recovery vs actual death"
+    },
+    {
+      "id": "collection",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/COLLECTION_LEVEL_DESIGN-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Authored clue/approach/challenge/acquisition/return; not actual player discovery tests"
+    },
+    {
+      "id": "limits",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/handoff-status.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Structure graybox ready; no309-room Godot runtime, physics, combat balance or player-memory proof"
+    },
+    {
+      "id": "art",
+      "kind": "independent_canvas_assembly_and_assets",
+      "archive_id": "art",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "member": "godot-room-art-cloud/art/world-art-v2/README.md",
+      "scope": "16 region material examples share study layout; not16 designed playable regions. v2 candidates vs five-region approved direction distinguished. Underworld/Asouris retained."
+    },
+    {
+      "id": "user-preference",
+      "kind": "user_testimony",
+      "scope": "User previously described liking Hollow Knight Path of Pain and consecutive precise platforming; this is not newly invented personal history."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "chapter": "1",
+      "title": "工作量好像更大了",
+      "narration": "上一期我说，肉鸽随机可能得停一停。这次，我把世界规划到了三百零九个房间。工作量好像更大了。但我想先想清楚：玩家为什么往前走，又为什么愿意回来？",
+      "assets": [
+        "world"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        323,
+        430,
+        4414,
+        2867
+      ],
+      "emphasis": "刚想砍肉鸽，又画了309间房"
+    },
+    {
+      "id": "s02",
+      "chapter": "1",
+      "title": "先看一眼新的方向",
+      "narration": "先放几张图。这些是现有素材拼出来的美术预览，地图则是新的世界设计。它们还没有变成一整款能玩的游戏，这次先聊我打算怎么做。",
+      "assets": [
+        "five",
+        "five",
+        "art-board"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "art",
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          34,
+          640,
+          360
+        ],
+        [
+          0,
+          440,
+          640,
+          360
+        ],
+        [
+          0,
+          0,
+          1280,
+          870
+        ]
+      ],
+      "emphasis": "设计与素材预览，先看方向"
+    },
+    {
+      "id": "s03",
+      "chapter": "1",
+      "title": "围绕一个能记住的世界",
+      "narration": "这次想试试类银河恶魔城：一个固定、互相连通的世界。平原、森林、地穴，再到工城和天门，各有自己的位置与节奏。走过的地方，应该能慢慢变成玩家记得住的地方。",
+      "assets": [
+        "world",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          323,
+          430,
+          4414,
+          2867
+        ],
+        [
+          1549,
+          1688,
+          1875,
+          623
+        ]
+      ],
+      "emphasis": "类银河恶魔城 · 16个区域的相互联系"
+    },
+    {
+      "id": "s04",
+      "chapter": "1",
+      "title": "世界钟心是远方目标",
+      "narration": "整个旅程围绕失准的世界钟心展开。先修各地的钟，寻找三枚核心，最后尝试重启钟心。这个目标，我希望玩家开局就能看见一个轮廓，旅途中再一点点理解。",
+      "assets": [
+        "art-board",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "world",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          960,
+          690,
+          320,
+          180
+        ],
+        [
+          2278,
+          404,
+          463,
+          1506
+        ]
+      ],
+      "emphasis": "看得见远方，也知道为何出发"
+    },
+    {
+      "id": "s05",
+      "chapter": "2",
+      "title": "开局先让人学会动作",
+      "narration": "开局先走过草坡、旧车厢、引渠和候车棚。走、跳、开枪，再练一次短反冲。失败以后，附近要有能重新站起来的地方。我不想刚进游戏，就让人补高难作业。",
+      "assets": [
+        "plains",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "opening"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        [
+          1801,
+          1968,
+          468,
+          351
+        ]
+      ],
+      "emphasis": "先学会，再逐渐组合"
+    },
+    {
+      "id": "s06",
+      "chapter": "2",
+      "title": "小站外就能选路",
+      "narration": "到了钟外小站，可以休息、看看服务，也可以直接出门。西边有果园和首个Boss，北边能去塔脚看旧遗迹，东边还有田路和风车。我想让人很快就有两个以上想去的地方。",
+      "assets": [
+        "branch-diagram"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "opening",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "animated_diagram",
+      "emphasis": "先知道目标，然后自己选路"
+    },
+    {
+      "id": "s07",
+      "chapter": "2",
+      "title": "让路网落到具体地方",
+      "narration": "图上这片，就是小站外的中央路网。下层有普通田路，上面留着暂时过不去的悬铃桥。小站旁边就有选择，回来的时候，也能认出熟悉的方向。",
+      "assets": [
+        "world"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        1945,
+        1842,
+        786,
+        332
+      ],
+      "emphasis": "钟外小站 → 站外分岔 → 塔脚／田路"
+    },
+    {
+      "id": "s08",
+      "chapter": "2",
+      "title": "能力要带来重新发现",
+      "narration": "反冲仍然是动作基础。拿到钩索、墙面移动、二段跳以后，我希望变化能落在具体空间里：以前够不到的高处，突然有了走法。不是只在菜单里多一行说明。",
+      "assets": [
+        "five",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "world",
+        "abilities"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          440,
+          640,
+          360
+        ],
+        [
+          0,
+          846,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "新能力，带来新走法"
+    },
+    {
+      "id": "s09",
+      "chapter": "3",
+      "title": "新能力先解决眼前问题",
+      "narration": "比如拿到钩索之后，先用它完成一段眼前的路线，再从修钟后的回程，回到之前看见的悬铃桥。桥那头接着新方向，附近也有值得回来拿的东西。",
+      "assets": [
+        "return-diagram"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "station",
+        "opening"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "animated_diagram",
+      "emphasis": "先看见 → 学会钩索 → 自己回来"
+    },
+    {
+      "id": "s10",
+      "chapter": "3",
+      "title": "能力顺序保留选择",
+      "narration": "拿到钩索之后，还想保留两条能力路线：可以先往森林，找墙面能力；也可以去地穴这边，学二段跳。两种顺序都要能继续推进，后面也各有能回访的地方。",
+      "assets": [
+        "five",
+        "five",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "abilities",
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          440,
+          640,
+          360
+        ],
+        [
+          0,
+          846,
+          640,
+          360
+        ],
+        [
+          618,
+          1618,
+          1090,
+          1202
+        ]
+      ],
+      "emphasis": "先森林，还是先地穴？"
+    },
+    {
+      "id": "s11",
+      "chapter": "3",
+      "title": "高处的门不是一张清单",
+      "narration": "能力阻隔也尽量放在房间内部。你能走进来，看见高台、墙面或另一头的落点，再判断现在能不能过去。以后带着新动作回来，最好还能想起自己第一次站在哪里。",
+      "assets": [
+        "world"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "world",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        1555,
+        1680,
+        941,
+        502
+      ],
+      "emphasis": "看到障碍，留下回来的念头"
+    },
+    {
+      "id": "s12",
+      "chapter": "3",
+      "title": "一座城，要值得反复认识",
+      "narration": "工城这块，我想花更多心思。它被分成西街、广场、东城、动力沟、上层和授时院。第一次看到的窗、桥和高门，后面要真的能从另一面走到。",
+      "assets": [
+        "five",
+        "city"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          1252,
+          640,
+          360
+        ],
+        [
+          1052,
+          521,
+          2496,
+          2028
+        ]
+      ],
+      "emphasis": "同一座工城，从不同方向认识"
+    },
+    {
+      "id": "s13",
+      "chapter": "4",
+      "title": "第一次先认识生活街区",
+      "narration": "第一次从西街进城，先认识工房和武器匠。在广场看见对岸的住宅，也记住悬钟上方那扇暂时到不了的门。先让这座城，有一点生活的感觉。",
+      "assets": [
+        "city"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        1093,
+        1104,
+        1724,
+        854
+      ],
+      "emphasis": "西街：先看见对岸与高门"
+    },
+    {
+      "id": "s14",
+      "chapter": "4",
+      "title": "后来站到窗的另一面",
+      "narration": "后来从古堡或矿井绕进东城。先走一段没见过的街巷，再打开回西街的近路。这个时候回头看，我希望玩家能反应过来：原来对面那扇窗，是我之前看到的地方。",
+      "assets": [
+        "city"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        1983,
+        1090,
+        1465,
+        959
+      ],
+      "emphasis": "东城：从窗的另一面回望"
+    },
+    {
+      "id": "s15",
+      "chapter": "4",
+      "title": "再从高处认出旧街道",
+      "narration": "等熔火这边修复，再从维护通道进入钟体内部，走到上层，俯看原来经过的街道。条件够了可以接着探索，不会数着你来过几次，才肯开门。",
+      "assets": [
+        "city",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1550,
+          521,
+          1856,
+          1835
+        ],
+        [
+          0,
+          1252,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "上层：把记得的地方连起来"
+    },
+    {
+      "id": "s16",
+      "chapter": "4",
+      "title": "收集物也要有获取过程",
+      "narration": "支路里也不能只摆个奖励，就算有探索了。先给一点线索，再让人观察、接近，完成一小段动作或遭遇。拿到东西之后，还要想好怎么回来，或者接到下一条路。",
+      "assets": [
+        "world",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "collection"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1945,
+          1842,
+          786,
+          332
+        ],
+        [
+          0,
+          846,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "线索 → 挑战 → 奖励 → 回程"
+    },
+    {
+      "id": "s17",
+      "chapter": "5",
+      "title": "死亡以后保留走过的成果",
+      "narration": "和上一期纠结的地方对应，这版规则会保留已拿到的能力、唯一成长和开通的捷径。地形失误，尽量在当前挑战附近重试；真正死亡才回休息点。这些还需要实机验证。",
+      "assets": [
+        "city",
+        "plains"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "rules"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1093,
+          1104,
+          1724,
+          854
+        ],
+        null
+      ],
+      "emphasis": "规划：成长与捷径永久保留"
+    },
+    {
+      "id": "s18",
+      "chapter": "5",
+      "title": "时间失序也影响区域气质",
+      "narration": "美术这边，已经有十六区的素材拼装候选。平原的天光，森林的纵深，矿井和熔火的压迫感，会服务不同的路线和节奏。图好看只是开始，放进真实房间还得继续调。",
+      "assets": [
+        "plains",
+        "forest",
+        "mines-bg",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "art"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        null,
+        null,
+        [
+          0,
+          1658,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "美术候选 · 还要服从真实房间"
+    },
+    {
+      "id": "s19",
+      "chapter": "5",
+      "title": "别把整个世界做成高难走廊",
+      "narration": "我也不想把整个世界都做成连续跳跃考场。探索、普通遭遇、辨路和安静的小站，需要交替出现。钟修好了，灯光、声音和人物的近况，也能让回来这件事多一点意义。",
+      "assets": [
+        "five",
+        "forest",
+        "plains"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "station",
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          1252,
+          640,
+          360
+        ],
+        null,
+        null
+      ],
+      "emphasis": "紧张与放松，都要有位置"
+    },
+    {
+      "id": "s20",
+      "chapter": "5",
+      "title": "给喜欢跳跳乐的人留一块地方",
+      "narration": "不过，我自己就喜欢连续精准操作的快感。所以天门还是想留一块后期平台挑战。左右两翼可以自己选顺序，学过的动作在这里重新组合，回程也要清楚。",
+      "assets": [
+        "sky",
+        "art-board"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "sky",
+        "user-preference"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          311,
+          564,
+          3612,
+          1354
+        ],
+        [
+          640,
+          690,
+          320,
+          180
+        ]
+      ],
+      "emphasis": "天门：左右翼任选先后"
+    },
+    {
+      "id": "s21",
+      "chapter": "6",
+      "title": "极限挑战不绑住所有人",
+      "narration": "更难的四间房，会放在独立极限支路。想挑战的人可以继续，主要成长和真结局不靠完成它来卡人。我想保留自己喜欢的难度，也给不同玩家留出选择。",
+      "assets": [
+        "sky"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "sky"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "crop_rect": [
+        2761,
+        583,
+        1528,
+        1094
+      ],
+      "emphasis": "高难可选，奖励不绑架主线"
+    },
+    {
+      "id": "s22",
+      "chapter": "6",
+      "title": "图纸还要变成真正能玩的房间",
+      "narration": "现在完成的是世界关系、房间职责和一部分美术准备。图里的路线能解释通，不代表真实跳距、怪物配置、镜头和节奏就已经好玩。三百零九个房间，后面还得一间间做。",
+      "assets": [
+        "world",
+        "art-board"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "limits",
+        "world",
+        "art"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          323,
+          430,
+          4414,
+          2867
+        ],
+        [
+          0,
+          0,
+          1280,
+          870
+        ]
+      ],
+      "emphasis": "309间房是设计规模，还不是完成量"
+    },
+    {
+      "id": "s23",
+      "chapter": "6",
+      "title": "下一步先把一小段做出来",
+      "narration": "下一步，先把开局、小站周围的回环，再加工城和天门的代表段，做成能操作的灰盒。看看那些想让人记住、想让人回来的地方，真正玩起来能不能成立。你们更想先看哪一块？",
+      "assets": [
+        "plains",
+        "forest",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "limits",
+        "city",
+        "sky"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_design_explanation",
+      "fact_check": "Exact attached v07/v2 source, scoped as design or independent Canvas assembly. No claim of completed309-room runtime, actual player tests or timings.",
+      "claim_type": "documented_design_intent_with_editorial_first_person_narration",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        null,
+        [
+          0,
+          1252,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "先把一段做成好玩的，再继续铺开"
+    }
+  ],
+  "bilibili_body": "上一期还在纠结肉鸽随机，这次想试试类银河恶魔城的新方向，把固定世界设计摊开看看：16个区域、309个规划房间。\n\n从平原开局和钟外小站出发，讲讲能力回访、能自己选的路线、工城的不同入口，以及独立的天门高难支路。多放地图与现有美术拼装图，看看这个世界想让人记住什么。\n\n这是设计阶段记录。309间房不是已做完的实机关卡，美术图为独立素材拼装与候选表现，真实跳距、战斗、镜头和节奏还要一段段验证。\n\n中文AI配音；项目使用AI辅助开发与制作。地形基础素材：Underworld Tileset / Asouris；其余来源与派生记录保留。\n\n你们更想先看森林探索，还是天门跳跳乐？\n\n#B站AI创造公开赛# #独立游戏# #Godot# #失序之钟# #游戏开发#",
+  "comparison": "Map and art preview show different kinds of design evidence, not before/after gameplay or equal-physics comparison.",
+  "comparison_review": "美术图是否确实看得清；路线局部是否与解说一致；309房设计和正式实机有无混淆；新能力回访是否讲具体；美术示例不冒充城市地标已完成。",
+  "rights": [
+    {
+      "kind": "design_bundle",
+      "status": "User requested own project attachments; exact bytes retained"
+    },
+    {
+      "kind": "art",
+      "status": "Project-derived/generated art with Underworld Tileset / Asouris original material; no blanket CC0 claim; bundle provenance retained"
+    },
+    {
+      "kind": "voice",
+      "status": "Edge synthetic Mandarin, no voice cloning"
+    },
+    {
+      "kind": "font",
+      "status": "New editorial text uses Noto CJK SIL OFL; original map raster font license retained from archive"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified"
+    }
+  ]
+}

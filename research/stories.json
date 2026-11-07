@@ -1907,5 +1907,61 @@
       "reason": "clear sunk-effort conflict; honest unresolved tradeoff",
       "priority": "high"
     }
+  },
+  {
+    "id": "S_FIXED_WORLD_DESIGN",
+    "event": "从随机拼装转向固定世界：309房的能力回访与城市空间发现",
+    "date": "2026-11-07",
+    "background": "Previous episode questioned random roguelike fit; user asks to explain new Metroidvania design from PR141 ZIPs.",
+    "conflict": "Map size and coherent specification still do not prove fun; spatial memory and meaningful return must survive real level construction.",
+    "attempts": [
+      "16-region/309-room plan",
+      "Station branching and grapple revisit",
+      "Same city landmark revealed from several approaches",
+      "Optional extreme platforming distinct from main progression",
+      "Layered region art study"
+    ],
+    "result": "Design and source-material delivery; not full-game implementation",
+    "commit": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+    "base_commit": "d04912228d6f53f61bd6dde84b22876a5d444487",
+    "pr": 141,
+    "branch": "feat/plains-design-skill",
+    "sources": [
+      {
+        "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+        "archives": {
+          "art": {
+            "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+            "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+            "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+          },
+          "world": {
+            "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+            "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+            "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+          }
+        }
+      }
+    ],
+    "media": [
+      "world",
+      "city",
+      "sky",
+      "plains",
+      "forest",
+      "five",
+      "art-board"
+    ],
+    "truth_status": "planned_and_independent_assembly_preview",
+    "evidence_status": "Exact attachment SHA/member hashes and actual diagrams inspected; unmerged PR boundary retained.",
+    "recordability": {
+      "source_available": true,
+      "saved_media_available": true,
+      "historical_rebuild": "Not needed; video uses design drawings and actual saved Canvas previews, not game footage."
+    },
+    "video_potential": {
+      "priority": "high",
+      "reason": "Direct continuation with concrete branching, revisits and memorable city; visually rich source bundles."
+    }
   }
 ]

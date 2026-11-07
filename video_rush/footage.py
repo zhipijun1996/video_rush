@@ -18,6 +18,10 @@ def collect(repo, spec, output):
         collect_documents(spec['documents'],output.parent/'source-evidence'/'documents')
     for asset in spec['assets']:
         origin=asset.get('origin','git')
+        if origin=='archive':
+            from .archive_media import collect as collect_archive
+            collected.append(collect_archive(asset,spec['archives'][asset['archive_id']],output))
+            continue
         if origin=='browser_movie':
             from .browser_movie import capture
             source,receipt=capture(repo,asset)
