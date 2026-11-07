@@ -1,0 +1,522 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "archives": {
+    "art": {
+      "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+      "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+    },
+    "world": {
+      "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+      "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+    }
+  },
+  "assets": [
+    {
+      "id": "world",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-map-numbered-v07.png",
+      "sha256": "183e49e8a131c59eea1988dac827995fc2b6ba2602033468fbe6ce97c6b2cde6",
+      "preserve_evidence": true,
+      "kind": "world_design_map",
+      "display_label": "世界结构规划 · 尚未完成实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "city",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/city-districts-v07.png",
+      "sha256": "4923c68c176825c0083500bbf78a57c7e1893c8f5c58fb3acd2f0929dbb5b2e1",
+      "preserve_evidence": true,
+      "kind": "world_design_map",
+      "display_label": "工城空间规划 · 非实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "sky",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/sky-trial-v07.png",
+      "sha256": "423e158755cee599d68e9596cc1df91fb2e356ce26ee4e8e32e41fe0d78f2248",
+      "preserve_evidence": true,
+      "kind": "world_design_map",
+      "display_label": "天门路线规划 · 非实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "art-board",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/previews/regions-overview.png",
+      "sha256": "b3540a13d819477884111bdf9be6f8dab0c142e010458ae5f14b8d3913ed3424",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "16区素材拼装预览 · 非正式关卡",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "plains",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/previews/windchime_plains-lit.png",
+      "sha256": "38f04121fec5bc3421cb8fc11377bc4509207d805ff82056ea8aee952f7af221",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "平原美术候选 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "forest",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/previews/thorn_forest-lit.png",
+      "sha256": "26971b55a1460fe5155f269ff8c89116e131d2b20a861099159062c1825599e1",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "森林美术候选 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "mines-bg",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/assets/pixel/echo_mines-background.png",
+      "sha256": "d35566ecf282eddf847185300b1afd4e88c9afa426db4e2158df0853ce65c2f8",
+      "preserve_evidence": true,
+      "kind": "background_asset",
+      "display_label": "矿井远景素材 · 非实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "five",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/.agents/skills/godot-room-art/assets/approved-five-regions.png",
+      "sha256": "747fc0949b89b7c303b931f44b1c0cba08dcc3ace1f52608369802488bb2ba62",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "已有美术方向 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-start",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/START_HERE.txt",
+      "sha256": "88a495b399231f1831f52d24e34ac25748f0113cff0a0ead7e503fbd303ee739",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-status",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/handoff-status.json",
+      "sha256": "19a52b16f2e5e12e89cea00736d2fc423e6efca25ab3ae7a9b6c1f89657a7058",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-world",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "sha256": "b29dff3bdd2de5fce432dc2922334f31e7de3d40e36803410f9bed5b08303c17",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-opening",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/OPENING_PACING-v07.txt",
+      "sha256": "eb368f07f853e1a9e6c0906c79729b15510cc0273c7cf61d9b217c3f262b21e7",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-station",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/STATION_NETWORK_STORY-v07.txt",
+      "sha256": "e4ec0f06bafeb68153c83ddfd5dc81b8cd8915084461041dbe19beabeab96774",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-city",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "sha256": "bcaf2c4cb38bbff246e69cb5cf26da9f876b9a8edc2fcc047378b0320408a2f0",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-contract",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/ROOM_CONSTRUCTION_README.txt",
+      "sha256": "99d61ca1051f5c59df2a5ec621c4cdae76bad84205cbd0370683f745a4a7fa7d",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-rules",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/world-graybox-bible-v04.txt",
+      "sha256": "0048964f9ffffd5ce136f7455bf8e14ffa25d1f6a682eeb5a345ca4a024d77b3",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-collection",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/COLLECTION_LEVEL_DESIGN-v07.txt",
+      "sha256": "92d4efda71547a19a6b8486d852b639ea9503c5c405a2d4829f71a8f2743f5e9",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-font",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/assets/font-LICENSE.txt",
+      "sha256": "892af6dc6e3f03b2133f8165280c14b69d21aacca7b61804c92447530d0f52fe",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-start",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/ROOM-ART-START.md",
+      "sha256": "ddab6c4c386c76b388ba8c2d86150adf6673e3301f4dda3ef9c35c84392af88a",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-readme",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/README.md",
+      "sha256": "973ce387bd2fe050139a9207794624389edd18407eaaa861bab73e3a8544a08b",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-provenance",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/asset-provenance.json",
+      "sha256": "3d097d34c9b01b838e1320027a998447d3e1439cd418cc5e06eae598dbad6c0f",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-checks",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/verification/summary.json",
+      "sha256": "bcc830fbac550ff84913273c7df9ee5c72e23e972276274cd82fddcbcfbd3a5d",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "idea-loop",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "成长与回访 · 设计思路示意",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "成长，也是在重新认识世界",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "设计思路示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "看见障碍",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "记住一个暂时去不了的地方",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "学到新动作",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "多了一种解决问题的方法",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "回来发现新路",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "旧地方，也有了新的意义",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

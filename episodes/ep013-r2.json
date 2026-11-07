@@ -1,0 +1,893 @@
+{
+  "schema_version": 2,
+  "episode": "ep013-r2",
+  "title": "类银河恶魔城，启动！我想做个值得回头的世界 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】",
+  "title_candidates": [
+    "类银计划，启动！这次想把探索做得更有意思 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep013-r2-assets.json",
+  "story_ids": [
+    "S_FIXED_WORLD_DESIGN"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+5%",
+  "playback_speed": 1.02,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.075,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "forest",
+    "world"
+  ],
+  "cover": {
+    "series": "失序之钟 · 独游折腾记 ep12",
+    "left_label": "美术方向预览",
+    "right_label": "探索世界规划",
+    "line1": "类银河恶魔城",
+    "line2": "启动！"
+  },
+  "research_scope": {
+    "status": "targeted_PR_and_comment_attachment_research",
+    "pr": 141,
+    "repository": "zhipijun1996/gunman-rush",
+    "head_sha": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+    "merged": false,
+    "coverage": "PR metadata/body, all3 conversation comments, no inline comments,20 changed-file names; both linked ZIPs inventoried and selected current design/source records read. Not a new full-history census.",
+    "archives": {
+      "art": {
+        "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+        "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      },
+      "world": {
+        "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+        "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      }
+    },
+    "scope_limits": [
+      "PR body mentions20-room workline; attached v07 plan contains35 plains/309 world rooms. The newer attachment is the subject, not proof of integration.",
+      "ZIP internal dates differ by timezone/date; no invented chronology.",
+      "No code/import from attachment executed; main game remains untouched."
+    ],
+    "editorial_revision": "Same frozen PR141 archives; ideas and intended player experience instead of counts/room walkthrough. No new game implementation claim."
+  },
+  "evidence": [
+    {
+      "id": "pr141",
+      "kind": "unmerged_pull_request",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+      "pr": 141,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141",
+      "scope": "Documentation and skills, not full-world runtime delivery"
+    },
+    {
+      "id": "world",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "309 planned rooms,16 regions,411 connections; illustration coordinates are not physics"
+    },
+    {
+      "id": "opening",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/OPENING_PACING-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Five tutorial rooms before station; timing budgets are targets, not playtest measurements"
+    },
+    {
+      "id": "station",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/STATION_NETWORK_STORY-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Station west/north/east, visible grapple bridge, optional conversation, same-state returns"
+    },
+    {
+      "id": "abilities",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "H grapple first; W and D alternative orders; all obtain routes are proposals"
+    },
+    {
+      "id": "city",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "36-room city, same landmark with different approaches; phase is not visit-count lock"
+    },
+    {
+      "id": "sky",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "10 main/4 optional extreme; either wing order; extreme not true-ending requirement"
+    },
+    {
+      "id": "rules",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/world-graybox-bible-v04.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Permanent unique gains and shortcuts; nearby nonfatal terrain recovery vs actual death"
+    },
+    {
+      "id": "collection",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/COLLECTION_LEVEL_DESIGN-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Authored clue/approach/challenge/acquisition/return; not actual player discovery tests"
+    },
+    {
+      "id": "limits",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/handoff-status.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Structure graybox ready; no309-room Godot runtime, physics, combat balance or player-memory proof"
+    },
+    {
+      "id": "art",
+      "kind": "independent_canvas_assembly_and_assets",
+      "archive_id": "art",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "member": "godot-room-art-cloud/art/world-art-v2/README.md",
+      "scope": "16 region material examples share study layout; not16 designed playable regions. v2 candidates vs five-region approved direction distinguished. Underworld/Asouris retained."
+    },
+    {
+      "id": "user-preference",
+      "kind": "user_testimony",
+      "scope": "User previously described liking Hollow Knight Path of Pain and consecutive precise platforming; this is not newly invented personal history."
+    },
+    {
+      "id": "user-r2",
+      "kind": "user_editorial_steering",
+      "text": "Reduce specific detail and focus on design thinking. Title should evoke Metroidvania and use 启动. Explicit uncertainty and willingness to keep trying; not a request to upload."
+    }
+  ],
+  "shots": [
+    {
+      "id": "r2s01",
+      "chapter": "1",
+      "title": "类银河恶魔城，启动",
+      "narration": "肉鸽随机先放一边。这次，我想把失序之钟往类银河恶魔城的方向试一试。类银河恶魔城，启动！",
+      "assets": [
+        "forest",
+        "five",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "art"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "类银河恶魔城，启动！",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        [
+          0,
+          1252,
+          640,
+          360
+        ],
+        [
+          323,
+          430,
+          4414,
+          2867
+        ]
+      ]
+    },
+    {
+      "id": "r2s02",
+      "chapter": "1",
+      "title": "为什么想换一个方向",
+      "narration": "之前一直在想，地图每局都换，会不会更耐玩。但我最在意的，其实是学会一个动作，再用它跨过之前过不去的地方。现在想先围着这个乐趣来设计世界。",
+      "assets": [
+        "world"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "user-preference"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "safe_frame": true,
+      "emphasis": "围着反冲跳跃的乐趣，重新想地图",
+      "crop_rect": [
+        323,
+        430,
+        4414,
+        2867
+      ]
+    },
+    {
+      "id": "r2s03",
+      "chapter": "1",
+      "title": "想要一个能熟悉的世界",
+      "narration": "这回我想要的，是一个能逐渐熟悉的世界。第一次经过只是看看风景，后来学会新能力，再回来发现：原来这里还有一条路。",
+      "assets": [
+        "plains",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "走过的地方，慢慢变得熟悉",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        [
+          1945,
+          1842,
+          786,
+          332
+        ]
+      ]
+    },
+    {
+      "id": "r2s04",
+      "chapter": "1",
+      "title": "成长要能被感到",
+      "narration": "先看见一个去不了的地方。学会新能力。再自己回来，找到新的路。我想让成长体现在操作和发现里，真的感觉自己比第一次更自由。",
+      "assets": [
+        "idea-loop"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "abilities",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "新能力，改变你看地图的方式",
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r2s05",
+      "chapter": "2",
+      "title": "留下一点想回来的念头",
+      "narration": "障碍也想让玩家看得明白。能看见远处的平台，试过一两次，大概知道自己还缺什么。以后回来，那种这次我能过去了的感觉，才有分量。",
+      "assets": [
+        "five",
+        "forest"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "abilities",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "这次过不去，也记住了这个地方",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          34,
+          640,
+          360
+        ],
+        null
+      ]
+    },
+    {
+      "id": "r2s06",
+      "chapter": "2",
+      "title": "给自己选路的理由",
+      "narration": "路线也希望留点选择。看到一个分岔，能因为地形、远景或者一点线索，自己决定往哪走。我不想让探索最后变成对着任务列表打勾。",
+      "assets": [
+        "world",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "选路，要有自己的理由",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1549,
+          1688,
+          1875,
+          623
+        ],
+        [
+          1945,
+          1842,
+          786,
+          332
+        ]
+      ]
+    },
+    {
+      "id": "r2s07",
+      "chapter": "2",
+      "title": "绕过去的过程也要有意思",
+      "narration": "当然，岔路多不一定就好玩。支路得有能记住的发现，绕过去的过程也得有意思。奖励只是其中一部分，我还想把看见、想去、试一试、再回来的过程连起来。",
+      "assets": [
+        "five",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "collection",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "发现的乐趣，也在到达的过程里",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          846,
+          640,
+          360
+        ],
+        [
+          1945,
+          1842,
+          786,
+          332
+        ]
+      ]
+    },
+    {
+      "id": "r2s08",
+      "chapter": "2",
+      "title": "用一座城市举个例子",
+      "narration": "工城我就想试试这样的做法。第一次在广场上，看见对岸的窗和高处的桥。先不用把它们全走到，只要留下一个印象。",
+      "assets": [
+        "five",
+        "city"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "先看见一个想去的地方",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          1252,
+          640,
+          360
+        ],
+        [
+          1093,
+          1104,
+          1724,
+          854
+        ]
+      ]
+    },
+    {
+      "id": "r2s09",
+      "chapter": "3",
+      "title": "回头也能是新的探索",
+      "narration": "以后从别的方向绕回来，站到那扇窗后面，再从高处认出自己来时的街道。我想要这种原来都连在一起的发现感，让返回旧地方也像一次探索。",
+      "assets": [
+        "city",
+        "city",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "原来，它们都连在一起",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1983,
+          1090,
+          1465,
+          959
+        ],
+        [
+          1550,
+          521,
+          1856,
+          1835
+        ],
+        [
+          0,
+          1252,
+          640,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "r2s10",
+      "chapter": "3",
+      "title": "熟悉的路也可以变轻松",
+      "narration": "捷径也是同一个思路。第一次有一点绕，有一点紧张；等路打开，再经过就轻松一些。地图逐渐熟悉，玩家也能感觉到，自己确实改变了这个地方。",
+      "assets": [
+        "city",
+        "plains"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "city",
+        "rules"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "打开一条路，也留下了一点改变",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1052,
+          521,
+          2496,
+          2028
+        ],
+        null
+      ]
+    },
+    {
+      "id": "r2s11",
+      "chapter": "3",
+      "title": "让探索有一点积累",
+      "narration": "和之前纠结的肉鸽相比，这次更想让探索有积累。学到的能力、拿到的成长、开过的路，都留下来。失败当然还是会有代价，但不想让重新出发只剩重复。",
+      "assets": [
+        "world",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "rules"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "失败之后，也留下走过的成果",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          1945,
+          1842,
+          786,
+          332
+        ],
+        [
+          0,
+          34,
+          640,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "r2s12",
+      "chapter": "3",
+      "title": "节奏需要有松有紧",
+      "narration": "反冲跳跃还是游戏的核心。不过，整张地图都做成高难跳跃，我自己想想也累。战斗、探索、观察和安静的小站，需要有松有紧地穿插。",
+      "assets": [
+        "plains",
+        "forest",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "station"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "紧张之后，也能喘口气",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        null,
+        [
+          0,
+          34,
+          640,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "r2s13",
+      "chapter": "4",
+      "title": "把难度也变成一种选择",
+      "narration": "我喜欢连续精准操作的快感，这部分会留给愿意挑战的人。难一点的路线可以很爽，但我不想把每个玩家都堵在那里。想多探索和想挑战极限，尽量都能有选择。",
+      "assets": [
+        "sky",
+        "art-board"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "sky",
+        "user-preference"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "探索和高难挑战，都想保留",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          311,
+          564,
+          3612,
+          1354
+        ],
+        [
+          640,
+          690,
+          320,
+          180
+        ]
+      ]
+    },
+    {
+      "id": "r2s14",
+      "chapter": "4",
+      "title": "区域要能被记住",
+      "narration": "区域也要能被记住。平原的开阔、森林的遮挡、工城的生活痕迹，不能只停在一张漂亮的背景上。画面、路线和经过这里的感觉，最好能一起形成印象。",
+      "assets": [
+        "plains",
+        "forest",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "art",
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "画面、路线和感受，形成同一个印象",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        null,
+        [
+          0,
+          1252,
+          640,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "r2s15",
+      "chapter": "4",
+      "title": "故事放在旅途里",
+      "narration": "失序之钟这个名字，也想在旅途中慢慢讲出来。看见失准的钟，经过还在生活的小站，再看着一些地方重新有了回应。故事尽量长在环境里，别一直拦着玩家听我讲。",
+      "assets": [
+        "art-board",
+        "plains",
+        "mines-bg"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "world",
+        "station",
+        "art"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "在环境里，慢慢认识这个世界",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          960,
+          690,
+          320,
+          180
+        ],
+        null,
+        null
+      ]
+    },
+    {
+      "id": "r2s16",
+      "chapter": "4",
+      "title": "现在还只是想做的方向",
+      "narration": "现在这些图，是我想做的方向，不是游戏已经变成这样了。规划能讲通，离真正玩起来有意思，还差着房间、动作、怪物、镜头这些实际工作。",
+      "assets": [
+        "art-board",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "limits",
+        "art"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "这些图是方向，游戏还得继续做",
+      "presentation": "montage",
+      "crop_rects": [
+        [
+          0,
+          0,
+          1280,
+          870
+        ],
+        [
+          323,
+          430,
+          4414,
+          2867
+        ]
+      ]
+    },
+    {
+      "id": "r2s17",
+      "chapter": "5",
+      "title": "先用一小段来检验",
+      "narration": "接下来先做一小段，看看新能力和旧路线能不能真的产生联系，关卡玩起来有没有节奏。好用的再往下做，别急着因为地图画得大，就觉得方向已经选对了。",
+      "assets": [
+        "forest",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "limits"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "emphasis": "先做一段，检验想法",
+      "presentation": "montage",
+      "crop_rects": [
+        null,
+        [
+          0,
+          34,
+          640,
+          360
+        ]
+      ]
+    },
+    {
+      "id": "r2s18",
+      "chapter": "5",
+      "title": "先往下试试",
+      "narration": "想法先放在这里。大家有喜欢的类银设计，也欢迎给我点建议。接下来该改就改，不知道能不能做好，先往下试试。",
+      "assets": [
+        "plains"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        141
+      ],
+      "evidence": [
+        "user-r2",
+        "limits"
+      ],
+      "transition": "cut",
+      "shot_type": "illustrated_personal_design_thinking",
+      "claim_type": "personal_design_intent_with_pinned_attachment_examples",
+      "fact_check": "First-person aims are an editorial synthesis of user steering and PR141 design documents. No new runtime, player feedback, completed world or guaranteed success is claimed.",
+      "safe_frame": true,
+      "emphasis": "不知道能不能做好，先往下试试"
+    }
+  ],
+  "bilibili_body": "肉鸽随机先放一边，这次想往类银河恶魔城的方向试一试。\n\n想做一个能逐渐熟悉，又能随着新能力发现新路线的世界。聊聊为什么想换方向，怎样让探索和成长留下积累，以及怎样让回到旧地方也有新的意思。反冲跳跃仍然是核心，探索、战斗、放松和高难挑战之间，也想找到合适的节奏。\n\n图里的世界目前是设计与美术方向，不是正式游戏已经变成这样了。接下来先做一小段能玩的关卡，看看想法能不能成立。不知道能不能做好，先往下试试。\n\n中文AI配音；地图为规划图，美术为独立素材拼装预览。项目使用AI辅助开发与制作。地形基础素材：Underworld Tileset / Asouris。\n\n#B站AI创造公开赛# #独立游戏# #类银河恶魔城# #Godot# #失序之钟#",
+  "comparison": "Map and art preview show different kinds of design evidence, not before/after gameplay or equal-physics comparison.",
+  "comparison_review": "是否以动机、取舍和玩家感受为主；工城只作一个简短例子；没有逐项介绍房号、入口条件、数量或能力顺序；最后明确仍不确定能否做好。",
+  "rights": [
+    {
+      "kind": "design_bundle",
+      "status": "User requested own project attachments; exact bytes retained"
+    },
+    {
+      "kind": "art",
+      "status": "Project-derived/generated art with Underworld Tileset / Asouris original material; no blanket CC0 claim; bundle provenance retained"
+    },
+    {
+      "kind": "voice",
+      "status": "Edge synthetic Mandarin, no voice cloning"
+    },
+    {
+      "kind": "font",
+      "status": "New editorial text uses Noto CJK SIL OFL; original map raster font license retained from archive"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified"
+    }
+  ]
+}
