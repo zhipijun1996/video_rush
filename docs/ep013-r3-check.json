@@ -1,0 +1,270 @@
+{
+  "episode": "ep013-r3",
+  "public_episode": "ep12",
+  "production_commit": "dd249563d689d71963b23329df832fa431f661b7",
+  "local": {
+    "status": "technical_pass_human_review_pending",
+    "duration": 238.066667,
+    "final_sha256": "06d568a335302df07b789954d21950f9fb3c6272d4c8bb2cb1ca63e2ca38d5a8",
+    "bytes": 29017718,
+    "cover_sha256": "937eada6117d4e1f6c0c9518eccdf19d13ce303562b8bb3709633e90b45fe142",
+    "checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "delivery_files_verified": 45,
+    "human_review": "pending"
+  },
+  "cut_audit": {
+    "duration": 238.066667,
+    "real_recording_seconds": 48.8,
+    "movie_windows": [
+      {
+        "shot": "r3s01",
+        "asset": "new-intro",
+        "offset": 0,
+        "seconds": 8.833333333333334
+      },
+      {
+        "shot": "r3s07",
+        "asset": "carriage",
+        "offset": 0,
+        "seconds": 4.533333333333333
+      },
+      {
+        "shot": "r3s07",
+        "asset": "recovery",
+        "offset": 0,
+        "seconds": 4.1
+      },
+      {
+        "shot": "r3s08",
+        "asset": "new-intro",
+        "offset": 7.2,
+        "seconds": 1.6666666666666667
+      },
+      {
+        "shot": "r3s09",
+        "asset": "shelter",
+        "offset": 0,
+        "seconds": 5.2
+      },
+      {
+        "shot": "r3s10",
+        "asset": "new-intro",
+        "offset": 9.1,
+        "seconds": 3.2
+      },
+      {
+        "shot": "r3s12",
+        "asset": "new-intro",
+        "offset": 13.1,
+        "seconds": 7.466666666666667
+      },
+      {
+        "shot": "r3s12",
+        "asset": "station",
+        "offset": 0,
+        "seconds": 5.0
+      },
+      {
+        "shot": "r3s13",
+        "asset": "new-intro",
+        "offset": 25.7,
+        "seconds": 8.8
+      }
+    ]
+  },
+  "capture_attempts": [
+    {
+      "directory": "capture-4057d8ed226f",
+      "status": "captured_incomplete_or_failed_driver",
+      "driver_completed_successfully": false,
+      "movie_sha256": "11b9508fb87d53bfff992c6a6af7684c12ad96c53698096a56b98577be0d3c81",
+      "engine_error_lines": [
+        "ERROR: Parse JSON failed. Error at line 0: Unknown error getting token",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room_id' on a base object of type 'Nil'."
+      ],
+      "trace_failures": 7,
+      "native_log_sha256": "7fca3bff5906dd45deb846c0e40b1f31ac424ada0ebe98f9b534f46b03797a59"
+    },
+    {
+      "directory": "capture-77a37167a59e",
+      "status": "captured_incomplete_or_failed_driver",
+      "driver_completed_successfully": false,
+      "movie_sha256": "7a5f3b935bdcdb20c03a37245a7c314e2e860d6073e388c1652af9ea30148208",
+      "engine_error_lines": [
+        "ERROR: Parse JSON failed. Error at line 0: Unknown error getting token",
+        "SCRIPT ERROR: Trying to assign value of type 'Nil' to a variable of type 'Dictionary'.",
+        "ERROR: Node not found: \"RegionalArt\" (relative to \"/root/FixedWorld/P-R03\").",
+        "SCRIPT ERROR: Invalid assignment of property or key 'player' with value of type 'CharacterBody2D (PlayerMotor)' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'pickup_requested' on a base object of type 'Nil'.",
+        "SCRIPT ERROR: Invalid access to property or key 'busy' on a base object of type 'previously freed'.",
+        "SCRIPT ERROR: Invalid access to property or key 'busy' on a base object of type 'previously freed'.",
+        "SCRIPT ERROR: Invalid access to property or key 'room' on a base object of type 'previously freed'."
+      ],
+      "trace_failures": 7,
+      "native_log_sha256": "d93ef8bd799713e5a09e5b72002f28a08b9c13809100bada5c1a0daa346e801f"
+    },
+    {
+      "directory": "capture-a36448a6de40",
+      "status": "captured",
+      "driver_completed_successfully": true,
+      "movie_sha256": "e045fc988b5b906e0f9fc8df893c45222d2f8b9155170f13e16fe6f145218cae",
+      "engine_error_lines": [],
+      "trace_failures": 0,
+      "native_log_sha256": "e3fff16355c5c4f564c73d597115206c5483937f258aa86d67ba49905793cc36"
+    },
+    {
+      "directory": "capture-ef8791e6d89b",
+      "status": "captured",
+      "driver_completed_successfully": true,
+      "movie_sha256": "9ec76942f27a7be6df4cb615b75571bb63263d9f2c953a0f072cb6fccb0fa27b",
+      "engine_error_lines": [],
+      "trace_failures": 0,
+      "native_log_sha256": "52df4e7ed3f0904dd1bcb185b4159cc34057f9c1d43f7dccbd1c5c9dee4fbd3f"
+    }
+  ],
+  "hosted": {
+    "run_id": 42556287089,
+    "status": "completed",
+    "conclusion": "success",
+    "artifact_id": 13648072200,
+    "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42556287089/artifacts/13648072200",
+    "zip_sha256": "3e2b972d46022a3fd21eb214a3e44f0cf1d696c5f0b3ba7b2ee8001a135a276b",
+    "zip_bytes": 64353178,
+    "expires_at": "2026-11-23T03:37:53Z",
+    "delivery_files_verified": 45,
+    "all_resolved_source_assets_bytes_verified": 36,
+    "all_extra_document_sources_verified": 10,
+    "independent_full_mp4_decode_after_download": true,
+    "final_sha256": "edafb4725f1b1c0d910e604342235b7d8d9c9df45cca4041820c78f7f0ae24a7",
+    "cover_sha256": "937eada6117d4e1f6c0c9518eccdf19d13ce303562b8bb3709633e90b45fe142",
+    "final_bytes": 29042862,
+    "duration_seconds": 238.066667,
+    "technical_checks": {
+      "exists_and_decodes": true,
+      "1920x1080": true,
+      "30fps": true,
+      "h264_yuv420p": true,
+      "aac_48k": true,
+      "duration_matches_brief": true,
+      "subtitles_in_bounds": true,
+      "subtitle_cues_do_not_overlap": true,
+      "action_labels_in_bounds": true,
+      "source_labels_in_bounds": true,
+      "audible_tts_signal": true,
+      "no_obvious_clipping": true,
+      "decoded_audio_duration_matches_timeline": true,
+      "requested_music_source_valid": true,
+      "sources_present_and_hash_match": true,
+      "document_sources_present_and_hash_match": true,
+      "no_long_black": true,
+      "no_unexpected_long_freeze": true,
+      "animated_diagrams_show_actual_motion": true
+    },
+    "public_copy_no_git_sites_verified": true,
+    "ending_phrase_verified": true,
+    "human_review": "pending",
+    "native_recording": {
+      "movie_sha256": "53a5fc330caca7b8675d07e9a7c7d4f72ce2a2c58fdb2937cb5a4dcaa603a1b8",
+      "trace_sha256": "dcb2a161037cfa43a95efbf7e5f05c66fcb84ea2635136bd471bda193846a8bf",
+      "runtime_unchanged": true,
+      "original_audio_audible": true,
+      "markers": [
+        {
+          "event": "room_enter",
+          "frame": 3,
+          "room": "P-R03"
+        },
+        {
+          "event": "route_start",
+          "frame": 9
+        },
+        {
+          "event": "room_enter",
+          "frame": 507,
+          "room": "P-R21"
+        },
+        {
+          "event": "map_open",
+          "frame": 537
+        },
+        {
+          "event": "map_close",
+          "frame": 777
+        },
+        {
+          "event": "room_enter",
+          "frame": 1521,
+          "room": "P-R22"
+        },
+        {
+          "event": "recoil_start",
+          "frame": 1953
+        },
+        {
+          "event": "recoil_end",
+          "frame": 2017
+        }
+      ],
+      "frames": 2077,
+      "source": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "engine_sha256": "eeaec2b65dc3234168be1e1cbcc89731514bbb78dfb2c1b502920c50830a0638",
+      "driver_sha256": "dc507ec1cfefbe34f05d2f7bca5adeca34f98ad789ec3fb6e822c11f54c7d643",
+      "raw_original_in_download_package": true
+    }
+  },
+  "tests_local": {
+    "passed": 97,
+    "warnings": 5
+  },
+  "tests_on_hosted_runner": {
+    "passed": 96,
+    "skipped": 1,
+    "warnings": 5,
+    "skip_scope": "Optional browser capture smoke test. This episode uses native Godot MovieMaker, not browser capture."
+  },
+  "delivered_for_review": {
+    "master": "hosted Artifact",
+    "video_sha256": "edafb4725f1b1c0d910e604342235b7d8d9c9df45cca4041820c78f7f0ae24a7",
+    "cover_sha256": "937eada6117d4e1f6c0c9518eccdf19d13ce303562b8bb3709633e90b45fe142",
+    "human_approval": "pending",
+    "bilibili_uploaded": false
+  },
+  "game_source_worktree": {
+    "path": "/workspace/gunman-rush",
+    "head_before_and_after": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+    "status_before_and_after": "clean",
+    "mutated": false
+  },
+  "limitations": [
+    "Draft PR142, not merged main. Only first six interiors loaded; full world remains a plan.",
+    "New recording is a normal-new-game excerpt through three rooms, not a full clear or human blind playtest.",
+    "Four saved source clips have declared local starting fixtures.",
+    "Human listening, aesthetics and complete gameplay quality remain unverified.",
+    "Initial native preparation failures were production setup errors; failed movies are not used as game evidence."
+  ]
+}
