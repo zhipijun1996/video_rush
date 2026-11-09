@@ -1,0 +1,190 @@
+{
+  "episode": "ep014",
+  "public_episode": "ep13",
+  "main_commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+  "baseline_commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+  "comparison": {
+    "player_tuning_unchanged": true,
+    "player_tuning_sha256": "65abb4abffd122f79bc4718a94e6db1bbe19a8e2c5dcdac314aa10cd9698114c",
+    "platform_and_hazard_fields_unchanged": [
+      "P-R22",
+      "P-R23",
+      "P-R24"
+    ],
+    "per_case": {
+      "turn": {
+        "observed_frames": 241,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 217.48447468998143,
+        "zoom_equal": true
+      },
+      "jump": {
+        "observed_frames": 284,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 104.6504586425137,
+        "zoom_equal": true
+      },
+      "recoil": {
+        "observed_frames": 315,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 137.636860394291,
+        "zoom_equal": true
+      },
+      "fall": {
+        "observed_frames": 348,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 183.55688826854768,
+        "zoom_equal": true
+      },
+      "look": {
+        "observed_frames": 400,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 169.9241933902344,
+        "zoom_equal": true
+      },
+      "corner": {
+        "observed_frames": 233,
+        "max_actor_position_difference_wu": 0.0,
+        "max_camera_center_difference_wu": 680.7121271139512,
+        "zoom_equal": true
+      }
+    }
+  },
+  "captures": {
+    "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8": {
+      "recipe": {
+        "source_commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+        "driver_sha256": "5a61c961de45fc7ba07744ff0529f9d31e835178ce3f0d17fb701e16fae785f8",
+        "module_sha256": "931ea3b3641db8b18d79ca0a2ec3db5e97f4376e8b0df5e3f27e103c0ec6051d",
+        "runner_sha256": "fbbf4712eb98e2c510a3a72cce1069f263a459ab25448130a5d711e60fe2b8a7",
+        "prepare_sha256": "1459591f8628f77ac8f32ed4ec7c41e4ece4e6eea7f05237ca1050f5c770e6c4"
+      },
+      "movie_sha256": "431a46712963f641699fa624615eb02c64ebe5ffed055113d0c9c38be79b2ada",
+      "trace_sha256": "10d9110378bbb3d7392cc5f2d5f118d3eec33e5db4ec22c31e0b24b39b557b30",
+      "camera_sha256": "b9f32efa2ea9ca9b6bb4d234fc4fdde65fcc195986a94300d883e48f00e001d0",
+      "driver_completed_successfully": true,
+      "clips": {
+        "turn": "d205060beb8a906a940a480e804f8518978a4d664eec79618d13b5e6821c01f3",
+        "jump": "3d49b2469d34b65092e4731221ff3a3ba1e8c133fe2d5dc0048e3f90f43c85b2",
+        "recoil": "ce5ef1fab85ca21e5829b13d86f9390d1206080c2a05beca327fdc503289cbe5",
+        "fall": "c80b9b8f66b48f1f875a9d864da2377eac5f85292d3db2e8aa22015352386e3b",
+        "look": "9ed3d42547c05390c9a7fd2f649722a59766eeecafe5b92ea5137fe040a68403",
+        "corner": "8ffc7701316f435349c08c4f99236a555cf05b0883edbdec7c3d039cbdf19435"
+      }
+    },
+    "7a2f022b5df6e4fe1a63b4705587badc5a24160b": {
+      "recipe": {
+        "source_commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+        "driver_sha256": "5a61c961de45fc7ba07744ff0529f9d31e835178ce3f0d17fb701e16fae785f8",
+        "module_sha256": "931ea3b3641db8b18d79ca0a2ec3db5e97f4376e8b0df5e3f27e103c0ec6051d",
+        "runner_sha256": "fbbf4712eb98e2c510a3a72cce1069f263a459ab25448130a5d711e60fe2b8a7",
+        "prepare_sha256": "1459591f8628f77ac8f32ed4ec7c41e4ece4e6eea7f05237ca1050f5c770e6c4"
+      },
+      "movie_sha256": "0317812d8b675bb6a19a024a740daff813c5f28d8f2dd2665a905b89ffaee9d4",
+      "trace_sha256": "2eef7fe2bcba23aaf3ec510443fd61875a0b19257f565bd0c59e963f92f3a039",
+      "camera_sha256": "4309434c5debef88c36a0b1897a571825f3ba42d9a4e8a01cac1b9933306ed30",
+      "driver_completed_successfully": true,
+      "clips": {
+        "turn": "116c852837a3bb8f1967bdf03a942c153b5cafaf53698cfae1b8744aadb89e8a",
+        "jump": "570c30037681e31b7ffc8e97cbf01f6d2fef4c11f4f48e0ab6054ec6011205a3",
+        "recoil": "f5467d1519550b0797de67e203ff948836905b46cb29ee749bdd457f4947390f",
+        "fall": "8450bcc3f6ee6d11d3353549fbd0494c87ecb8a3944cfcbbf9ee8182861f961b",
+        "look": "ae6fd92fa69aab04811cfe4bf71b91a76c3d627ebfc0778b41f92d69d15dde36",
+        "corner": "423a6c03ed841e0ba2728dd84bbdd150519798cccaa3b0f950ec4b8462ea4159"
+      }
+    }
+  },
+  "saved_boss_clips": {
+    "fps": 60,
+    "playback": "normal speed",
+    "capture": "Native Godot matched input; per-clip baseline explicit. Current after clips all re-recorded. Not device performance.",
+    "camera_sha256": "4309434c5debef88c36a0b1897a571825f3ba42d9a4e8a01cac1b9933306ed30",
+    "input_profile_sha256": "2e84e1f7e54338d25eea07bb86d94cbbe00bfa7b22160570f93f3764ac56b5f5",
+    "clips": [
+      {
+        "id": "arena-entry",
+        "title": "Boss入场：保持缩放，向战场边界平移",
+        "scope": "P14既有场地沿正式应用隔离装载；实际激活与入场。",
+        "files": {
+          "before": {
+            "file": "arena-entry-before.mp4",
+            "bytes": 1320892,
+            "sha256": "f71695df738b6c73675669cacb2cf44b0f907720648f37d95a97230d6d6ea73d",
+            "seconds": 4.58
+          },
+          "after": {
+            "file": "arena-entry-after.mp4",
+            "bytes": 1391137,
+            "sha256": "d8d08b9929a1c91afe61ce4da9f2a6322d4448f65d940dc458991aa22fbd7e96",
+            "seconds": 4.58
+          },
+          "compare": {
+            "file": "arena-entry-compare.mp4",
+            "bytes": 1576398,
+            "sha256": "442ac0f5e9e5ea7c1f1eaa2c35f7ecb68e4063bc812f24284ec1b6bc4d0bdae1"
+          }
+        },
+        "baseline_commit": "f773c45d"
+      },
+      {
+        "id": "left-wall",
+        "title": "左墙贴屏幕边缘与震动",
+        "scope": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。",
+        "files": {
+          "before": {
+            "file": "left-wall-before.mp4",
+            "bytes": 274891,
+            "sha256": "07e6d30bdaf26f82809d5f229eec34b3e3a14fc0c3c5db3c8fb69e89cbb11819",
+            "seconds": 3.83
+          },
+          "after": {
+            "file": "left-wall-after.mp4",
+            "bytes": 203661,
+            "sha256": "5751b980ffc5c23c25d191dd06b3bdf78ba04df17e88335152ef30305c401a9d",
+            "seconds": 3.83
+          },
+          "compare": {
+            "file": "left-wall-compare.mp4",
+            "bytes": 272964,
+            "sha256": "6bc2b8824d2b6ed01852742caf9ecc5970f0aaf8c932bd50df88fccb699b836d"
+          }
+        },
+        "baseline_commit": "f773c45d"
+      },
+      {
+        "id": "right-wall",
+        "title": "右墙贴屏幕边缘与震动",
+        "scope": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。",
+        "files": {
+          "before": {
+            "file": "right-wall-before.mp4",
+            "bytes": 229933,
+            "sha256": "52c9329b43f3cbfe81a38393ab7dc52a69b54f14fdf6137c8017e8fed82f9c66",
+            "seconds": 3.83
+          },
+          "after": {
+            "file": "right-wall-after.mp4",
+            "bytes": 192817,
+            "sha256": "4b4d7ba3dc2c1b1fdc9daa93a75e4aaa8a88ec5cc1d52acdb9935905fa261ceb",
+            "seconds": 3.83
+          },
+          "compare": {
+            "file": "right-wall-compare.mp4",
+            "bytes": 247186,
+            "sha256": "8397cd091c29a27f24acb06c6f0ce17aecdd424edbccd186b6be4be57045e1f1"
+          }
+        },
+        "baseline_commit": "f773c45d"
+      }
+    ],
+    "web_build": "c9a4725df221",
+    "source_commit": "db4635dfb5af9f40d9c722f6cffc89739ee28555"
+  },
+  "human_acceptance": "pending",
+  "original_game_worktree": "Read-only; separate disposable projects used for source imports, world builds and recordings.",
+  "saved_camera_files_match_main": {
+    "game/presentation/ui/world/world_camera.gd": "255ad26cb8e5b6758af5dda3f1ae98f3e0b78ca5",
+    "game/presentation/ui/world/world_camera_zones.gd": "ee51b0bb84d2b88281aa76dd100b86aa870926ae",
+    "config/world/player.json": "a628ee6338ea02d007c8c9fa43ee10e61b0f88c6"
+  }
+}

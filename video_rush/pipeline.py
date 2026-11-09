@@ -9,7 +9,7 @@ from contextlib import contextmanager
 from pathlib import Path
 from .common import ROOT, read, write, sha, digest, run, duration
 from .footage import collect
-from .narration import narrate
+from .narration import narrate,speech_options
 from .render import subtitle_cues, ass_file, encode_shot, cover, montage_spans, concatenate_cuts
 from .quality import validate,validate_evidence_registry
 from .publish import posting_copy
@@ -110,7 +110,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         for s in spec['shots']:
             if not s.get('narration') or not s.get('assets') or not (s.get('prs') or s.get('evidence')):
                 raise ValueError('Every shot needs narration, media and PR/document/user evidence')
-            if s.get('presentation') == 'montage' and spec.get('game_audio_gain', 0) > 0:
+            if s.get('presentation') == 'montage' and s.get('game_audio_gain', spec.get('game_audio_gain', 0)) > 0:
                 raise ValueError('Montage currently supports narration/BGM only; set game_audio_gain=0 to avoid mismatched source audio')
         write(output/'shot-plan.json',spec['shots']);return [output/'shot-plan.json']
     stages('Shot Planning',spec['shots'],planning)
@@ -119,21 +119,28 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*[p for p in sorted((output/'source-evidence').rglob('*')) if p.is_file()],*sorted((output/'browser-evidence').glob('*'))]
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
     world_code=[sha(ROOT/'video_rush/world_recording.py'),sha(ROOT/'video_rush/drivers/fixed_world_intro.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='world_recording' for a in a_spec['assets']) else None
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'world_recording_code':world_code,'archive_code':sha(ROOT/'video_rush/archive_media.py') if any(a.get('origin')=='archive' for a in a_spec['assets']) else None,'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
+    camera_code=[sha(ROOT/'video_rush/camera_recording.py'),sha(ROOT/'video_rush/drivers/camera_progress.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='camera_recording' for a in a_spec['assets']) else None
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'world_recording_code':world_code,'camera_recording_code':camera_code,'archive_code':sha(ROOT/'video_rush/archive_media.py') if any(a.get('origin')=='archive' for a in a_spec['assets']) else None,'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
         for s in spec['shots']:
             p=output/'narration'/(s['id']+'.wav')
-            narrate(s['narration'],p,backend=backend,voice=spec['voice'],rate=spec['rate'],model=piper_model)
+            narrate(s['narration'],p,backend=backend,model=piper_model,**speech_options(spec,s))
             paths.extend([p,p.with_suffix('.json')])
         return paths
-    stages('Narration',{'texts':[s['narration'] for s in spec['shots']],'backend':backend,'voice':spec['voice'],'rate':spec['rate'],'model':sha(piper_model) if piper_model else None,'code':sha(ROOT/'video_rush/narration.py')},narration)
+    stages('Narration',{'texts':[s['narration'] for s in spec['shots']],'speech_profiles':[speech_options(spec,s) for s in spec['shots']],'backend':backend,'voice':spec['voice'],'rate':spec['rate'],'model':sha(piper_model) if piper_model else None,'code':sha(ROOT/'video_rush/narration.py')},narration)
     def compose():
         speed=spec.get('playback_speed',1.0);t=0;shots=[]
         for s in spec['shots']:
             audio=output/'narration'/(s['id']+'.wav');raw_d=duration(audio);spoken=raw_d/speed
-            d=math.ceil((spoken+.3)*30)/30
+            hold=s.get('hold_seconds',0)
+            if type(hold) not in (int,float) or not math.isfinite(hold) or not 0<=hold<=10:
+                raise ValueError('Gameplay listening hold must be finite and within 0–10 seconds')
+            minimum=s.get('min_duration',0)
+            if type(minimum) not in (int,float) or not math.isfinite(minimum) or not 0<=minimum<=60:
+                raise ValueError('Minimum screen time must be finite and within 0–60 seconds')
+            d=math.ceil(max(spoken+.3+hold,minimum)*30)/30
             x=dict(s,start=round(t,6),end=round(t+d,6),audio=str(audio),spoken_duration=spoken,playback_speed=speed)
             labels=[]
             for asset_id in s['assets']:
@@ -157,7 +164,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         write(output/'storyboard.json',timeline);ass_file(output/'subtitles.ass',timeline)
         sources={'repository':spec['repository'],'assets':media,'document_sources':read(output/'source-evidence/documents/document-manifest.json') if a_spec.get('documents') else [],'story_ids':spec['story_ids'],'claims':[{k:s[k] for k in ['id','narration','prs','fact_check','claim_type']} | {'evidence':s.get('evidence',[])} for s in spec['shots']],
                  'evidence':spec.get('evidence',[]),
-                 'rights':spec.get('rights',read(ROOT/'research/rights.json')),'audio':{'backend':backend,'voice':spec['voice'],'synthesized':True,'playback_speed':speed,'music':music,'music_license':music_license,'music_sha256':sha(music) if music else None,'music_provenance':spec.get('music_asset'),'game_audio_gain':spec.get('game_audio_gain',0),'game_audio_policy':'Original matching clip window; comparison uses selected side only; narration foreground'},
+                 'rights':spec.get('rights',read(ROOT/'research/rights.json')),'audio':{'backend':backend,'voice':spec['voice'],'speech_profiles':[{**speech_options(spec,s),'shot':s['id']} for s in spec['shots']],'synthesized':True,'playback_speed':speed,'music':music,'music_license':music_license,'music_sha256':sha(music) if music else None,'music_provenance':spec.get('music_asset'),'game_audio_gain':spec.get('game_audio_gain',0),'game_audio_policy':'Original matching clip window; comparison uses selected side only; narration foreground'},
                  'comparison':spec.get('comparison','Different stages, not a controlled same-seed before/after benchmark')}
         write(output/'sources.json',sources)
         return [output/'storyboard.json',output/'subtitles.ass',output/'sources.json']
@@ -168,15 +175,16 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         cuts=output/'cuts';cuts.mkdir(exist_ok=True)
         muxed=[]
         for s in timeline['shots']:
-            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':cut_source_fingerprints(s,assets),'game_audio_gain':spec.get('game_audio_gain',0),'audio_schema':2,'animation':animation_code,'render':digest({'encode_shot':inspect.getsource(encode_shot),'module':sha(ROOT/'video_rush/render.py'),'resolution':[1920,1080,30]})})
+            game_gain=s.get('game_audio_gain',spec.get('game_audio_gain',0))
+            p=cuts/(s['id']+'.mp4');k=digest({'shot':s,'sources':cut_source_fingerprints(s,assets),'game_audio_gain':game_gain,'audio_schema':2,'animation':animation_code,'render':digest({'encode_shot':inspect.getsource(encode_shot),'module':sha(ROOT/'video_rush/render.py'),'resolution':[1920,1080,30]})})
             cache=p.with_suffix('.json')
             if not (p.exists() and cache.exists() and read(cache).get('key')==k and read(cache).get('sha256')==sha(p)):
                 raw=cuts/(s['id']+'.silent.mp4');encode_shot(s,assets,raw,logs/(s['id']+'-visual.log'))
                 mux=['ffmpeg','-y','-v','warning','-i',raw,'-i',s['audio']]
                 audio_index=s.get('game_audio_index',0);game=assets[s['assets'][audio_index]]
-                if spec.get('game_audio_gain',0)>0 and Path(game['local_path']).suffix in ('.mp4','.webm','.avi'):
+                if game_gain>0 and Path(game['local_path']).suffix in ('.mp4','.webm','.avi'):
                     mux+=['-ss',str(s.get('offsets',[0]*len(s['assets']))[audio_index]),'-i',game['local_path'],
-                          '-filter_complex',f'[1:a]atempo={s["playback_speed"]},apad[voice];[2:a]volume={spec["game_audio_gain"]},apad[game];[voice][game]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[audio]',
+                          '-filter_complex',f'[1:a]atempo={s["playback_speed"]},apad[voice];[2:a]volume={game_gain},apad[game];[voice][game]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[audio]',
                           '-map','0:v','-map','[audio]']
                 else:
                     mux+=['-map','0:v','-map','1:a','-af',f'atempo={s["playback_speed"]},apad']

@@ -83,6 +83,9 @@ def narration_receipts_valid(output,spec):
         if not audio.exists() or not receipt.exists():return False
         r=read(receipt)
         if r.get('backend') not in {'edge','piper'} or r.get('text')!=shot['narration'] or r.get('sha256')!=sha(audio) or not r.get('metrics',{}).get('audible_signal'):return False
+        if any(k in shot for k in ('voice','rate','pitch')):
+            from .narration import speech_options
+            if any(r.get(k)!=v for k,v in speech_options(spec,shot).items()):return False
     return True
 
 

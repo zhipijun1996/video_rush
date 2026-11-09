@@ -206,8 +206,12 @@ def encode_montage(shot, assets, out, log, *, threads=4):
         crops=shot.get('crop_rects',[None]*len(spans))
         if len(crops)!=len(spans):
             raise ValueError('Montage crop rectangles must match the cuts')
-        filters.append(f'[{i}:v]{crop_filter(crops[i],path)}scale=1920:1080:force_original_aspect_ratio=decrease,'
-                       f'pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724,setsar=1,'
+        framing=('scale=1840:780:force_original_aspect_ratio=decrease,'
+                 'pad=1920:1080:(ow-iw)/2:110+(780-ih)/2:color=0x0d1724'
+                 if shot.get('safe_frame') else
+                 'scale=1920:1080:force_original_aspect_ratio=decrease,'
+                 'pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=0x0d1724')
+        filters.append(f'[{i}:v]{crop_filter(crops[i],path)}{framing},setsar=1,'
                        f'fps=30,trim=end_frame={span["frames"]},setpts=PTS-STARTPTS[seg{i}]')
     joined = ''.join(f'[seg{i}]' for i in range(len(spans)))
     final = (joined + f'concat=n={len(spans)}:v=1:a=0,'

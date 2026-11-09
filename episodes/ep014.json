@@ -1,0 +1,860 @@
+{
+  "schema_version": 2,
+  "episode": "ep014",
+  "title": "同一个跳跃，换个镜头差这么多？ | 【失序之钟】独游折腾记 ep13【B站AI创造公开赛】",
+  "title_candidates": [
+    "没改跳跃，我把镜头重做了 | 【失序之钟】独游折腾记 ep13【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep014-assets.json",
+  "story_ids": [
+    "S_CAMERA_REBUILD"
+  ],
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+8%",
+  "playback_speed": 1.0,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.09,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "old-cover",
+    "new-cover"
+  ],
+  "cover": {
+    "series": "失序之钟 · 独游折腾记 ep13",
+    "left_label": "旧镜头 · 真实录屏",
+    "right_label": "新镜头 · 相同操作",
+    "line1": "跳跃没改",
+    "line2": "镜头一换，差这么多？"
+  },
+  "research_scope": {
+    "status": "pinned_camera_workline_research_and_actual_pair_capture",
+    "repository": "zhipijun1996/gunman-rush",
+    "main_sha": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+    "comparison_baseline": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+    "pr142_merged": true,
+    "pr142_final_head": "f3cccd2eac2cf842a27c390a4ca7919db05053f3",
+    "commits_read": 90,
+    "coverage": "PR142 commit metadata and targeted camera source/config/authoring/current-state/scope; PR144/145 integration context. Six fresh matched local-start camera input probes on old and current immutable revisions. Saved Boss boundary clips separately scoped. Not a new full-history census.",
+    "boss_saved_clip_producer": "db4635dfb5af9f40d9c722f6cffc89739ee28555",
+    "boss_boundary_baseline": "f773c45de3e676b1781b27feeec2ee9a70163a0e",
+    "scope_limits": [
+      "Six current formal rooms, not complete 35-room region or309-room world.",
+      "Boss clips use isolated P14 arena and capture-revision art; wall probes pause Boss AI after activation, not a boss clear.",
+      "All game capture is native deterministic MovieMaker, not live performance benchmark.",
+      "No independent human voice/aesthetic/physical-phone acceptance."
+    ]
+  },
+  "evidence": [
+    {
+      "id": "current",
+      "kind": "pinned_repository_evidence",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "pr": 142,
+      "url": "https://github.com/zhipijun1996/gunman-rush/tree/7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "scope": "Current merged main; WorldCamera, camera zones, player input config, authoring and current scope read; source documents retained."
+    },
+    {
+      "id": "old",
+      "kind": "pinned_historical_runtime",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "scope": "Approved prior episode runtime rebuilt now, not original historical video."
+    },
+    {
+      "id": "paired",
+      "kind": "actual_native_matched_input_capture",
+      "scope": "Actual6 cases: actor traces equal, unchanged player tuning and platform/hazard fields; before/after camera composition differs. Receipts and frame traces retained."
+    },
+    {
+      "id": "boss",
+      "kind": "original_saved_camera_recordings",
+      "commit": "db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "baseline_commit": "f773c45de3e676b1781b27feeec2ee9a70163a0e",
+      "scope": "Public native clips bytes and SHA verified. Current main camera/zone/input files exact matching Git blobs; old actor art, isolated arena, paused AI for wall probes. Baseline already has fixed zoom."
+    },
+    {
+      "id": "voice-request",
+      "kind": "user_editorial_request",
+      "text": "More human-feeling expressive tone; previous narration too steady and sleepy. New Edge Yunjian voice with authored per-shot rate/pitch and action holds; naturalness pending user hearing."
+    },
+    {
+      "id": "reflection",
+      "kind": "editorial_first_person_interpretation",
+      "text": "Development reflection drafted from verified current camera goals and user request; not fabricated playtest feedback or claim of quality acceptance."
+    }
+  ],
+  "shots": [
+    {
+      "id": "c01",
+      "chapter": "1",
+      "title": "先看旧版",
+      "narration": "同一个跳跃。先看旧版。",
+      "assets": [
+        "old-jump"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+0%",
+      "pitch": "-2Hz",
+      "min_duration": 4.7,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "同一个跳跃，镜头差在哪？"
+    },
+    {
+      "id": "c02",
+      "chapter": "1",
+      "title": "再看现在",
+      "narration": "再看现在。跳跃参数，没动。",
+      "assets": [
+        "new-jump"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+12%",
+      "pitch": "+3Hz",
+      "min_duration": 4.7,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "跳跃没改，换了镜头"
+    },
+    {
+      "id": "c03",
+      "chapter": "1",
+      "title": "这次先照顾眼睛",
+      "narration": "上期开始做类银河恶魔城。这次我又盯上了镜头：起跳之前能不能看见落点？飞起来别丢人，落地以后也别晃个没完。",
+      "assets": [
+        "camera-goal"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+7%",
+      "pitch": "-1Hz",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "c04",
+      "chapter": "1",
+      "title": "同操作看转向",
+      "narration": "往右走，停下，反着开枪，再掉头。旧版和新版，跑的是同一组操作。",
+      "assets": [
+        "old-turn",
+        "new-turn"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "+1Hz",
+      "min_duration": 8.0,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "emphasis": "同起点 · 同输入 · 正常速度",
+      "safe_frame": true
+    },
+    {
+      "id": "c05",
+      "chapter": "1",
+      "title": "枪路分家",
+      "narration": "枪往后打，路还在前面。",
+      "assets": [
+        "new-turn"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "+2Hz",
+      "min_duration": 4.0,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "c06",
+      "chapter": "1",
+      "title": "镜头认谁",
+      "narration": "现在镜头主要认移动方向。停下，视线先留住；反着瞄准、短暂反冲，都别急着把画面拽回去。否则我还没掉头，眼睛先跑了。",
+      "assets": [
+        "camera-intent"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+9%",
+      "pitch": "-2Hz",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "c07",
+      "chapter": "1",
+      "title": "反冲路段",
+      "narration": "反冲跳跃尤其麻烦。角色一会儿往这儿冲，一会儿往那儿弹。镜头得跟得上，但又不能每开一枪，就跟着猛扯一下。",
+      "assets": [
+        "old-recoil",
+        "new-recoil"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "min_duration": 10.4,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c08",
+      "chapter": "1",
+      "title": "留出下一跳",
+      "narration": "我更想先看清，下一跳落哪儿。",
+      "assets": [
+        "new-recoil"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+4%",
+      "pitch": "-2Hz",
+      "min_duration": 5.2,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "看的是下一步"
+    },
+    {
+      "id": "c09",
+      "chapter": "2",
+      "title": "小跳别演过头",
+      "narration": "小跳也一样。只是跳个台阶，镜头没必要陪着蹦迪。现在只做一点抬落，别让背景比我还忙。",
+      "assets": [
+        "old-jump",
+        "new-jump"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+11%",
+      "pitch": "+2Hz",
+      "min_duration": 9.4,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c10",
+      "chapter": "2",
+      "title": "真爬升就跟上",
+      "narration": "但真往高处走，镜头也得跟上。稳，不等于把画面锁死。",
+      "assets": [
+        "old-corner",
+        "new-corner"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+7%",
+      "pitch": "-1Hz",
+      "min_duration": 7.7,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c11",
+      "chapter": "2",
+      "title": "下落要看得见",
+      "narration": "下落更要命。人已经掉下去了，镜头还赖在上面，那我只能靠信仰落地。现在让它及时追下来，把下面的路交代清楚。",
+      "assets": [
+        "old-fall",
+        "new-fall"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "+1Hz",
+      "min_duration": 11.5,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c12",
+      "chapter": "2",
+      "title": "把落地过程放完",
+      "narration": "这次看完整个下落。落点，要提前看见。",
+      "assets": [
+        "new-fall"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+8%",
+      "pitch": "-1Hz",
+      "min_duration": 5.7,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "别等人落地，镜头才到"
+    },
+    {
+      "id": "c13",
+      "chapter": "2",
+      "title": "自己多看一眼",
+      "narration": "想先探探路？现在站稳以后，按住上或下，稍等一下，就能多看一眼。摇杆也一样，不另加按钮。",
+      "assets": [
+        "old-look",
+        "new-look"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears. Old stationary baseline excerpt4.3s; new6.6s action. Full native originals retained, no synthetic motion on old baseline.",
+      "rate": "+8%",
+      "pitch": "+0Hz",
+      "min_duration": 10.9,
+      "presentation": "montage",
+      "montage_weights": [
+        4.3,
+        6.6
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c14",
+      "chapter": "2",
+      "title": "动作先走",
+      "narration": "想跳就跳。查看，先给动作让路。",
+      "assets": [
+        "new-look"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+8%",
+      "pitch": "+2Hz",
+      "min_duration": 6.6,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "c15",
+      "chapter": "2",
+      "title": "别抢操作",
+      "narration": "查看不能变成操作负担。走路、跳跃、开枪，都得先响应。松开以后，镜头回到现在该有的构图，别突然把人怼回正中间。",
+      "assets": [
+        "camera-priority"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+7%",
+      "pitch": "-2Hz",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "c16",
+      "chapter": "3",
+      "title": "Boss入场",
+      "narration": "打大怪时，先别突然拉远。",
+      "assets": [
+        "boss-arena-entry-after"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "boss"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "+1Hz",
+      "min_duration": 4.53,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "c17",
+      "chapter": "3",
+      "title": "保住尺度",
+      "narration": "我想保住角色和招式的大小。场地宽，就缓缓平移，需要时再有限跟随。别为了把整个场地塞进来，让角色突然变成小米粒。",
+      "assets": [
+        "boss-arena-entry-after",
+        "boss-left-wall-after",
+        "boss-right-wall-after"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "boss",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+9%",
+      "pitch": "+1Hz",
+      "min_duration": 11.9,
+      "presentation": "montage",
+      "montage_weights": [
+        4.48,
+        3.73,
+        3.73
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c18",
+      "chapter": "3",
+      "title": "左边真墙",
+      "narration": "贴墙也补了一轮。以前边界多留了一截，墙到了，镜头还想往外看。",
+      "assets": [
+        "boss-left-wall-before",
+        "boss-left-wall-after"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "boss"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "-1Hz",
+      "min_duration": 7.46,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "emphasis": "贴墙修正前 → 贴墙修正后",
+      "safe_frame": true
+    },
+    {
+      "id": "c19",
+      "chapter": "3",
+      "title": "右边也要查",
+      "narration": "右边也得查。震动可以有，墙外的空白就别跟着一起出场了。",
+      "assets": [
+        "boss-right-wall-before",
+        "boss-right-wall-after"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "boss"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+9%",
+      "pitch": "+0Hz",
+      "min_duration": 7.46,
+      "presentation": "montage",
+      "montage_weights": [
+        1,
+        1
+      ],
+      "emphasis": "这里是边界测试，不是完整Boss战",
+      "safe_frame": true
+    },
+    {
+      "id": "c20",
+      "chapter": "3",
+      "title": "测试不等于舒服",
+      "narration": "所以这轮不光调参数，还得对着真正的封墙看画面。边界没越出去，只说明规则过了；看着舒不舒服，还是另一回事。",
+      "assets": [
+        "camera-boundary"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "boss",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+6%",
+      "pitch": "-3Hz",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "c21",
+      "chapter": "3",
+      "title": "连起来再看",
+      "narration": "转角、爬升、换房，连着看。一个动作顺，不代表整段顺。镜头太抢戏，就得再想想。",
+      "assets": [
+        "new-corner",
+        "new-fall"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+10%",
+      "pitch": "-1Hz",
+      "min_duration": 9.5,
+      "presentation": "montage",
+      "montage_weights": [
+        0.4,
+        0.6
+      ],
+      "safe_frame": true
+    },
+    {
+      "id": "c22",
+      "chapter": "3",
+      "title": "这不是关卡毕业",
+      "narration": "不过，镜头也不能替我把关卡做好。目前先磨这六个房间，整区还在继续做。房间节奏、路线设计，还有手机上玩起来怎么样，都得接着验。",
+      "assets": [
+        "camera-limit"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+7%",
+      "pitch": "-3Hz",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "c23",
+      "chapter": "3",
+      "title": "继续调",
+      "narration": "这轮先记到这儿。旧版新版，你觉得哪段更舒服？尤其是跳跃和下落，哪里别扭也帮我挑一挑。我继续改。",
+      "assets": [
+        "new-look",
+        "new-jump"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "current",
+        "paired",
+        "reflection"
+      ],
+      "transition": "cut",
+      "shot_type": "real_camera_recording_with_scoped_developer_commentary",
+      "claim_type": "verified_runtime_behavior_and_labeled_developer_reflection",
+      "fact_check": "Frozen source and native footage checked. No gameplay synthesis; no human playtest acceptance. Local-start camera probes, not full level clears.",
+      "rate": "+6%",
+      "pitch": "-1Hz",
+      "min_duration": 11.3,
+      "presentation": "montage",
+      "montage_weights": [
+        0.585,
+        0.415
+      ],
+      "emphasis": "还在打磨，欢迎挑毛病",
+      "safe_frame": true
+    }
+  ],
+  "bilibili_body": "独自用AI做《失序之钟》，继续尝试类银河恶魔城。这次重做了镜头：转向预看、反冲跟随、跳跃和下落、主动查看，以及Boss场地贴墙边界。\n\n旧版和当前版使用相同起点与操作录制，角色轨迹逐帧核对一致。镜头测试不等于关卡完成；Boss片段是隔离场地与边界测试，不是完整通关，角色美术属于录制版本。当前先打磨六个房间，整区和实际手机体验仍在验。\n\n解说换了音色和节奏，欢迎告诉我哪里看着或听着还别扭。\n\n#B站AI创造公开赛\n标签：B站AI创造公开赛、独立游戏、游戏开发、Godot、AI、失序之钟、类银河恶魔城\n分区：游戏 → 单机游戏\nAI辅助开发与AI配音；真实录屏与解释示意分别标注。",
+  "comparison": "Six matched local-start native probes: same authored input recipe and geometry/player tuning; actual actor traces checked equal. Current runtime is frozen main. Boss saved clips use a different, explicitly named boundary-fix baseline (already fixed zoom); never a physics or device-performance comparison.",
+  "comparison_review": "核对同操作逐帧轨迹与镜头构图；Boss旧新只比较贴墙，不能当作改缩放前后；新镜头是否更舒服须实际观看。",
+  "rights": [
+    {
+      "kind": "gameplay",
+      "status": "Own project real native recordings; project-generated art and original project licenses, Underworld Tileset / Asouris retained. No blanket CC0."
+    },
+    {
+      "kind": "voice",
+      "status": "Edge Yunjian synthetic Mandarin, no cloning; actual voiced samples and per-shot backend receipts. Human naturalness unverified."
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK SIL OFL"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified"
+    }
+  ],
+  "pitch": "+0Hz"
+}

@@ -1,15 +1,16 @@
 from __future__ import annotations
 import asyncio
 import os
+import re
 from pathlib import Path
 import subprocess
 from .common import duration, run, write, digest, sha
 
 
-async def _edge(text, path, voice, rate):
+async def _edge(text, path, voice, rate, pitch='+0Hz'):
     import edge_tts
     # aiohttp does not automatically inherit HTTPS_PROXY for WebSockets.
-    tts = edge_tts.Communicate(text, voice, rate=rate, proxy=os.getenv('HTTPS_PROXY') or os.getenv('https_proxy'),
+    tts = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, proxy=os.getenv('HTTPS_PROXY') or os.getenv('https_proxy'),
                                connect_timeout=20, receive_timeout=45)
     await asyncio.wait_for(tts.save(str(path), str(path.with_suffix(".boundaries.jsonl"))), timeout=90)
 
@@ -29,21 +30,38 @@ def audio_metrics(path):
             'speech_identity': 'TTS backend receipt; not independently verified by ASR/human'}
 
 
-def narrate(text, out, backend='edge', voice='zh-CN-XiaoxiaoNeural', rate='-5%', model=None):
+def speech_options(spec, shot):
+    options={k:shot.get(k,spec.get(k,default)) for k,default in
+             [('voice','zh-CN-XiaoxiaoNeural'),('rate','-5%'),('pitch','+0Hz')]}
+    if not isinstance(options['voice'],str) or not options['voice']:
+        raise ValueError('A real TTS voice is required')
+    for key,pattern in [('rate',r'[+-]\d{1,3}%'),('pitch',r'[+-]\d{1,3}Hz')]:
+        if not isinstance(options[key],str) or not re.fullmatch(pattern,options[key]):
+            raise ValueError('Invalid speech '+key)
+    return options
+
+
+def narrate(text, out, backend='edge', voice='zh-CN-XiaoxiaoNeural', rate='-5%', model=None, pitch='+0Hz'):
     out = Path(out)
-    key = digest({'text': text, 'backend': backend, 'voice': voice, 'rate': rate, 'model': model})
+    inputs={'text': text, 'backend': backend, 'voice': voice, 'rate': rate, 'model': model}
+    if pitch!='+0Hz':inputs['pitch']=pitch
+    key = digest(inputs)
     receipt = out.with_suffix('.json')
     if out.exists() and receipt.exists():
         import json
         old = json.loads(receipt.read_text())
         if old.get('input_hash') == key and old.get('sha256') == sha(out):
+            if old.get('rate')!=rate or old.get('pitch')!=pitch:
+                old.update(rate=rate,pitch=pitch);write(receipt,old)
             return old
     tmp = out.with_suffix('.raw.mp3' if backend == 'edge' else '.raw.wav')
     attempts = []
     try:
         if backend == 'edge':
-            asyncio.run(_edge(text, tmp, voice, rate))
+            if pitch=='+0Hz':asyncio.run(_edge(text, tmp, voice, rate))
+            else:asyncio.run(_edge(text, tmp, voice, rate,pitch=pitch))
         elif backend == 'piper':
+            if pitch!='+0Hz':raise ValueError('This Piper backend does not implement pitch control')
             if not model or not Path(model).exists():
                 raise ValueError('Piper requires --piper-model with licensed ONNX + .json; see README')
             p = subprocess.run(['piper', '--model', model, '--output_file', str(tmp)], input=text,
@@ -57,7 +75,7 @@ def narrate(text, out, backend='edge', voice='zh-CN-XiaoxiaoNeural', rate='-5%',
             raise ValueError('TTS produced silence; refusing delivery')
         run(['ffmpeg', '-y', '-v', 'error', '-i', tmp, '-af', 'loudnorm=I=-16:TP=-1.5:LRA=9',
              '-ar', '48000', '-ac', '2', '-c:a', 'pcm_s16le', out])
-        data = {'input_hash': key, 'sha256': sha(out), 'backend': backend, 'voice': voice,
+        data = {'input_hash': key, 'sha256': sha(out), 'backend': backend, 'voice': voice,'rate':rate,'pitch':pitch,
                 'text': text, 'duration': duration(out), 'metrics': audio_metrics(out)}
         write(receipt, data)
         return data

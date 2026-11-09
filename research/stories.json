@@ -1963,5 +1963,47 @@
       "priority": "high",
       "reason": "Direct continuation with concrete branching, revisits and memorable city; visually rich source bundles."
     }
+  },
+  {
+    "id": "S_CAMERA_REBUILD",
+    "event": "跳跃没改，重做看路的镜头",
+    "date": "2026-11-09",
+    "background": "固定世界初版六房间进入实际打磨，镜头决定起跳前能否看路。",
+    "conflict": "快速反冲、短跳、长下落、停步瞄准与Boss边界对视野提出不同要求。",
+    "attempts": [
+      "移动意图与瞄准解耦",
+      "小跳弱跟随、下落追赶、主动查看让位动作",
+      "Boss固定缩放、真实封墙边界",
+      "相同输入新旧重建，逐帧检查角色轨迹"
+    ],
+    "result": "当前镜头接入main，六组真实对比录制完成。舒适度及整区玩法尚未人类验收。",
+    "truth_status": "implemented_technical_only",
+    "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+    "base_commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+    "pr": 142,
+    "sources": [
+      {
+        "kind": "commit",
+        "url": "https://github.com/zhipijun1996/gunman-rush/commit/7a2f022b5df6e4fe1a63b4705587badc5a24160b"
+      },
+      {
+        "kind": "document",
+        "path": "docs/bible/room_authoring.md",
+        "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b"
+      }
+    ],
+    "media": [
+      "old/new turn,jump,recoil,fall,look,corner",
+      "saved Boss wall comparison"
+    ],
+    "recordability": {
+      "source_available": true,
+      "historical_rebuild": "actually_recorded_both_versions_native_same_recipe",
+      "saved_media_available": true
+    },
+    "video_potential": {
+      "priority": "high",
+      "reason": "同操作同轨迹下，镜头差别可见；从玩家看路需求讲取舍，不冒称品质毕业。"
+    }
   }
 ]

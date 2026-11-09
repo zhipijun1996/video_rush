@@ -1,0 +1,1415 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "documents": [
+    {
+      "id": "camera-source-0",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "docs/project/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/docs/project/current_state.md",
+      "sha256": "6f3b5b4bd80a4eb7daf8940d519af85f29b6ee9bd9738811db3547f5a1b2c73f",
+      "blob_sha": "a862c4a4aaee67d224ac3d2ee878d07338b34539"
+    },
+    {
+      "id": "camera-source-1",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "docs/project/worklines/plains_bible_v2_01/scope.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/docs/project/worklines/plains_bible_v2_01/scope.md",
+      "sha256": "e275147dd673b1f7e24a91a90d97e3cec553174329c1de533dd22c4e1e022d8b",
+      "blob_sha": "314fb2c40d3de428e124649da0911432849c203c"
+    },
+    {
+      "id": "camera-source-2",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "docs/bible/room_authoring.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/docs/bible/room_authoring.md",
+      "sha256": "4828933ca0bfd7cfc9960022acfbafc57eadfbd9812e81c4513a3b17e1f27fe7",
+      "blob_sha": "399cdbba2a8172fa87b9b2194f018927d67682ad"
+    },
+    {
+      "id": "camera-source-3",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "game/presentation/ui/world/world_camera.gd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/game/presentation/ui/world/world_camera.gd",
+      "sha256": "4309434c5debef88c36a0b1897a571825f3ba42d9a4e8a01cac1b9933306ed30",
+      "blob_sha": "255ad26cb8e5b6758af5dda3f1ae98f3e0b78ca5"
+    },
+    {
+      "id": "camera-source-4",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "game/presentation/ui/world/world_camera_zones.gd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/game/presentation/ui/world/world_camera_zones.gd",
+      "sha256": "4bc705a27ca2fff03e2a9403209b2817e366ec9a40302403bc1a8ba48b65e245",
+      "blob_sha": "ee51b0bb84d2b88281aa76dd100b86aa870926ae"
+    },
+    {
+      "id": "camera-source-5",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "config/world/player.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/config/world/player.json",
+      "sha256": "84138dcad6395019cfd781a69fe35981889d42d9a720e51b6ef8918962abd231",
+      "blob_sha": "a628ee6338ea02d007c8c9fa43ee10e61b0f88c6"
+    },
+    {
+      "id": "camera-source-6",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "path": "config/player_tuning.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/7a2f022b5df6e4fe1a63b4705587badc5a24160b/config/player_tuning.json",
+      "sha256": "65abb4abffd122f79bc4718a94e6db1bbe19a8e2c5dcdac314aa10cd9698114c",
+      "blob_sha": "a14ad962ce814b7b4824abc4498fc68bad9dbfcf"
+    }
+  ],
+  "assets": [
+    {
+      "id": "old-turn",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "turn",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 转向",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-jump",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "jump",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 跳跃",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-recoil",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "recoil",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 反冲",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-fall",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "fall",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 下落",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-look",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "look",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 主动查看",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-corner",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "corner",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 爬升与转房",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "old-cover",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "fall",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "旧版重建 · 同起点同输入 · 下落",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim",
+      "frame_seconds": 3.0
+    },
+    {
+      "id": "new-turn",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "turn",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 转向",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-jump",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "jump",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 跳跃",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-recoil",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "recoil",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 反冲",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-fall",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "fall",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 下落",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-look",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "look",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 主动查看",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-corner",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "corner",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 爬升与转房",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim"
+    },
+    {
+      "id": "new-cover",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+      "case": "fall",
+      "kind": "original_game_recording",
+      "pr": 142,
+      "display_label": "当前主仓库 · 同起点同输入 · 下落",
+      "truth": "Fresh native runtime recording at pinned commit. Local-start review fixtures, normal speed, actual input; no position/health/progress writes inside clips. Not full clear or device performance.",
+      "rights": "Project assets under retained source licenses; original recording; no blanket CC0 claim",
+      "frame_seconds": 3.0
+    },
+    {
+      "id": "boss-arena-entry-before",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "f773c45de3e676b1781b27feeec2ee9a70163a0e",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/arena-entry-before.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "f71695df738b6c73675669cacb2cf44b0f907720648f37d95a97230d6d6ea73d",
+      "display_label": "Boss镜头 · 贴墙修正前 · 隔离测试",
+      "truth": "P14既有场地沿正式应用隔离装载；实际激活与入场。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "boss-arena-entry-after",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/arena-entry-after.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "d8d08b9929a1c91afe61ce4da9f2a6322d4448f65d940dc458991aa22fbd7e96",
+      "display_label": "Boss镜头 · 贴墙修正后 · 隔离测试",
+      "truth": "P14既有场地沿正式应用隔离装载；实际激活与入场。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "boss-left-wall-before",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "f773c45de3e676b1781b27feeec2ee9a70163a0e",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/left-wall-before.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "07e6d30bdaf26f82809d5f229eec34b3e3a14fc0c3c5db3c8fb69e89cbb11819",
+      "display_label": "Boss镜头 · 贴墙修正前 · 隔离测试",
+      "truth": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "boss-left-wall-after",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/left-wall-after.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "5751b980ffc5c23c25d191dd06b3bdf78ba04df17e88335152ef30305c401a9d",
+      "display_label": "Boss镜头 · 贴墙修正后 · 隔离测试",
+      "truth": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "boss-right-wall-before",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "f773c45de3e676b1781b27feeec2ee9a70163a0e",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/right-wall-before.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "52c9329b43f3cbfe81a38393ab7dc52a69b54f14fdf6137c8017e8fed82f9c66",
+      "display_label": "Boss镜头 · 贴墙修正前 · 隔离测试",
+      "truth": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "boss-right-wall-after",
+      "origin": "external",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "pr": 142,
+      "kind": "original_game_recording",
+      "url": "https://zhipijun1996.github.io/gunman-rush/camera-review/right-wall-after.mp4?v=c9a4725df221",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/commit/db4635dfb5af9f40d9c722f6cffc89739ee28555",
+      "sha256": "4b4d7ba3dc2c1b1fdc9daa93a75e4aaa8a88ec5cc1d52acdb9935905fa261ceb",
+      "display_label": "Boss镜头 · 贴墙修正后 · 隔离测试",
+      "truth": "独立边界夹具：进入战斗后暂停Boss AI；实际封墙碰撞和角色行走输入不变。 Original saved native recording; current camera implementation matches main byte-for-byte; actor art belongs to capture revision, not latest boss art. Baseline already fixed zoom; no zoom-out-before claim.",
+      "rights": "Own project recording; original source licenses retained"
+    },
+    {
+      "id": "camera-goal",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "跳跃没改，先把眼睛照顾好",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "起跳前",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "下一步往哪儿落？",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "腾空时",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "人和目标都别丢",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "落地后",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "画面别继续晃",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera-intent",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "枪往后打，路还在前面",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "看移动意图",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "稳定走向才换构图",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "停下不折返",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "保留前方的观察空间",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "短反冲不抢戏",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "瞄准与看路分开",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera-priority",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "想多看一眼，也得随时能动",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "站稳后查看",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "按住上／下，稍等片刻",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "动作优先",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "移动、跳跃、攻击先走",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "平滑回归",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "回到此刻该有的构图",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera-boundary",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "镜头的边界，得按真墙算",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "真封墙",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "场地到哪，镜头到哪",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "震动有界",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "别把墙外空白晃出来",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "还得看画面",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "测试通过 ≠ 看着舒服",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera-limit",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "镜头不能替我把关卡做好",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "当前六个房间",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "先把一小段磨顺",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "整区还在做",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "房间节奏继续返工",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "手机体验",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "还要完整实机验收",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

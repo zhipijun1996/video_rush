@@ -22,6 +22,25 @@ def collect(repo, spec, output):
             from .archive_media import collect as collect_archive
             collected.append(collect_archive(asset,spec['archives'][asset['archive_id']],output))
             continue
+        if origin=='camera_recording':
+            from .camera_recording import capture
+            import shutil
+            source,receipt=capture(repo,asset)
+            evidence=output.parent/'recording-evidence';evidence.mkdir(exist_ok=True)
+            prefix='camera-'+asset['commit'][:12]
+            for name in ['trace.json','master-receipt.json','native.log','recording_driver.gd','preparation.json','world-build.log']:
+                shutil.copyfile(source.parent/name,evidence/(prefix+'-'+name))
+            shutil.copyfile(source.with_name(asset['case']+'-receipt.json'),evidence/(prefix+'-'+asset['case']+'-receipt.json'))
+            dest=output/(asset['id']+('.png' if 'frame_seconds' in asset else '.mp4'))
+            if 'frame_seconds' in asset:
+                if not 0<=asset['frame_seconds']<receipt['seconds']:raise ValueError('Frame outside camera recording')
+                run(['ffmpeg','-v','error','-y','-ss',str(asset['frame_seconds']),'-i',source,'-frames:v','1',dest],timeout=60)
+            else:shutil.copyfile(source,dest)
+            obj=dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),recording_receipt=receipt,
+                     source_url=f'https://github.com/{asset["repository"]}/tree/{asset["commit"]}')
+            if 'frame_seconds' not in asset:obj['ffprobe']=probe(dest)
+            collected.append(obj)
+            continue
         if origin=='world_recording':
             from .world_recording import capture
             import shutil
