@@ -186,5 +186,34 @@
     "game/presentation/ui/world/world_camera.gd": "255ad26cb8e5b6758af5dda3f1ae98f3e0b78ca5",
     "game/presentation/ui/world/world_camera_zones.gd": "ee51b0bb84d2b88281aa76dd100b86aa870926ae",
     "config/world/player.json": "a628ee6338ea02d007c8c9fa43ee10e61b0f88c6"
-  }
+  },
+  "local_checks": {
+    "pytest": "101 passed, 5 pre-existing Pillow deprecation warnings",
+    "tests_log_sha256": "e00e09db67eab5da8842376c2aa331707f17909ec2175d344cbc4e64fddc8bc2",
+    "preserved_failed_attempts": [
+      {
+        "stage": "driver_parse_preflight",
+        "cause": "Mixed indentation in first adapter; no failed frames used"
+      },
+      {
+        "stage": "shot_windows",
+        "cause": "Narration longer than actual footage; rewritten and re-synthesized, no gameplay speed-up or loop"
+      },
+      {
+        "stage": "quality",
+        "cause": "Old manual-look baseline actually remains stationary; first full render detected5.27s. Shortened old comparison viewing window and preserved original6.67s source. Freeze detector remains enabled."
+      }
+    ],
+    "local_media_root": "/dev/shm/ep014/episode",
+    "native_capture_root": "/dev/shm/ep014/native",
+    "pending": "Only human phone/aesthetic/voice comfort acceptance; hosted artifact independently verified in ep014-check.json",
+    "technical_pass": true,
+    "content_structure_pass": true,
+    "duration": "201.266667",
+    "movie_sha256": "7f9b91a2802e2104d78f382dcfc99a030c43f9b87a2dd9c0f80f07d62143c0b3",
+    "cover_sha256": "d188ccfcae799593c5d8db79c24f9e5a4cf8339ec7a1d689b301868daae0c2ef",
+    "delivery_manifest_sha256": "5ddcff1d3d4d4a49415deabb25a31ab69f0c029ff1a3f5c1d8e8c8149d26dfb4",
+    "verified_delivery_files": 32
+  },
+  "hosted_verification": "docs/ep014-check.json"
 }

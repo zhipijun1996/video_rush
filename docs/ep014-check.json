@@ -1,0 +1,123 @@
+{
+  "archive_sha256": "6870b2ef794138348d9ec31057d921c331131d97eb324cb7afb51731e1e88ef3",
+  "final_sha256": "f1c3d5be3fdf43541ccaa7d44ef46c176a61cebb96a6260d142e882d7a0b18a6",
+  "cover_sha256": "d188ccfcae799593c5d8db79c24f9e5a4cf8339ec7a1d689b301868daae0c2ef",
+  "delivery_files": 32,
+  "source_assets": 25,
+  "document_sources": 7,
+  "independent_full_decode": true,
+  "paired_actor_trace": {
+    "turn": {
+      "frames": 241,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 217.48447468998143
+    },
+    "jump": {
+      "frames": 284,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 104.6504586425137
+    },
+    "recoil": {
+      "frames": 315,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 137.636860394291
+    },
+    "fall": {
+      "frames": 348,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 183.55688826854768
+    },
+    "look": {
+      "frames": 400,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 169.9241933902344
+    },
+    "corner": {
+      "frames": 233,
+      "max_position_difference_wu": 0.0,
+      "max_camera_difference_wu": 680.7121271139512
+    }
+  },
+  "actual_narration_receipts": 23,
+  "voice": "zh-CN-YunjianNeural",
+  "speech_rates": [
+    "+0%",
+    "+10%",
+    "+11%",
+    "+12%",
+    "+4%",
+    "+6%",
+    "+7%",
+    "+8%",
+    "+9%"
+  ],
+  "speech_pitches": [
+    "+0Hz",
+    "+1Hz",
+    "+2Hz",
+    "+3Hz",
+    "-1Hz",
+    "-2Hz",
+    "-3Hz"
+  ],
+  "no_public_git_websites": true,
+  "final_audio": {
+    "decoded_samples": 3220480,
+    "peak": 0.703643798828125,
+    "rms": 0.10049439016853776,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "black_intervals": [],
+  "unexpected_freezes": [],
+  "human_review": "pending",
+  "checked_at": "2026-11-09T18:48:17.303690+00:00",
+  "episode": "ep014",
+  "public_episode": "ep13",
+  "status": "hosted_delivery_downloaded_and_independently_verified",
+  "production_code_commit": "ef8369f1bc35605d940858e408f3d9f84c81f3ad",
+  "main_source": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+  "baseline_source": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+  "workflow_run": 42675004922,
+  "workflow_conclusion": "success",
+  "artifact_id": 13701510198,
+  "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42675004922/artifacts/13701510198",
+  "artifact_bytes": 71214293,
+  "expires_at": "2026-11-23T18:44:40Z",
+  "movie_bytes": 38034871,
+  "duration": 201.266667,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "codec": "h264",
+    "pix_fmt": "yuv420p"
+  },
+  "audio": {
+    "codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2
+  },
+  "tests": "101 passed; 5 pre-existing Pillow warnings",
+  "original_game_worktree_unchanged": true,
+  "visual_spot_checks": [
+    "Opening old/new jump",
+    "Animated goal chart",
+    "Fall",
+    "Manual look",
+    "Boss wall baseline label and unobscured full-frame placement",
+    "Cover title and source labels"
+  ],
+  "aesthetic_acceptance": "Pending user full phone viewing and listening; no independent aesthetic PASS",
+  "bilibili_uploaded": false,
+  "voice_naturalness": "New real Yunjian backend voice with per-shot rate/pitch, exact receipt match; subjective human-likeness pending",
+  "music_transfer": {
+    "chunks": 8,
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "initial_failed_chunks": 6,
+    "retry_outcome": "all succeeded; one required third attempt; initial failures had no started job/log, no invented cause",
+    "hosted_restore_and_cleanup": "success"
+  },
+  "delivery_authority": "Use hosted final_sha256 for future approval/upload; local render differs in binary encoding, not substituted for hosted review master."
+}
