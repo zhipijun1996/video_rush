@@ -1,0 +1,384 @@
+{
+  "repository": "zhipijun1996/gunman-rush",
+  "pr": 142,
+  "url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+  "head": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+  "base": "d04912228d6f53f61bd6dde84b22876a5d444487",
+  "draft": true,
+  "merged": false,
+  "comments_read": 0,
+  "changed_files": 1068,
+  "commits": [
+    {
+      "sha": "cf06044dfebe15a6416ac1dd070d4d9009d4f87b",
+      "subject": "建立反冲主导的整区关卡设计 Skill 与风铃平原规范"
+    },
+    {
+      "sha": "a5de2fea8a3d0edd4d6140de404cbfc17f1a2a10",
+      "subject": "将共用关卡方法扩展为按区域组合已授予能力"
+    },
+    {
+      "sha": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+      "subject": "Add room-art skill and safe asset import path to PR141"
+    },
+    {
+      "sha": "c5ab077efbb197772cdebc0c8c6e412cae04328b",
+      "subject": "feat: build the v07 plains region from PR141 source packs"
+    },
+    {
+      "sha": "28ce0ae0edf6c35460a6bce7085152dc9fff6c18",
+      "subject": "fix: keep rapid arena recoil inside the visible camera frame"
+    },
+    {
+      "sha": "a5c4818c6f0e2fc7c8b8f55a32567c0cf350dd1b",
+      "subject": "fix: keep floating world controls from obscuring the player"
+    },
+    {
+      "sha": "7de995adc943a360ecd225ac4cde9a8e79a31aed",
+      "subject": "docs: record the completed plains review and runtime evidence"
+    },
+    {
+      "sha": "f0b581ed6ff7822b22bc57a48a959b02cb257488",
+      "subject": "docs: record plains playtest deployment and small replay delivery"
+    },
+    {
+      "sha": "8e88b93e8f4c0db6c023084abc6710e5ef766ab1",
+      "subject": "Withdraw plains quality acceptance and record rework causes"
+    },
+    {
+      "sha": "52d008b7b3a116a732de6eccec336144181780f8",
+      "subject": "Retire stale plains evidence and rebuild mill recoil route"
+    },
+    {
+      "sha": "d27a32711a53b13bb1499822004ea3095130d8d5",
+      "subject": "Bind current plains rework checks to runtime commit"
+    },
+    {
+      "sha": "bd3cb3767023d979a889be543cc01f0433b2a305",
+      "subject": "Codify collection routes, spatial ecology and design conflict handling"
+    },
+    {
+      "sha": "e91f05451c866d239aa2f5286d8ec92b9b171455",
+      "subject": "Build orchard route choices and a one-way gear return through the west circuit"
+    },
+    {
+      "sha": "5ab833a149150d0aec99981e7504bbbc07a0eb25",
+      "subject": "Refresh validated Foundry data for shared room rendering changes"
+    },
+    {
+      "sha": "4242b23b5a5bca00a17ce3c306262c5473f3242f",
+      "subject": "Record current west-circuit validation and published playtest"
+    },
+    {
+      "sha": "5c1ae8358cc34d9306804a5e22fbf6126746962f",
+      "subject": "Make plains recoil routes necessary and expand obstacle encounters and interiors"
+    },
+    {
+      "sha": "857bd8c92c355cf31154849b27728ca8e2e7c564",
+      "subject": "Ground shoulder rewards and junction galleries in supported bridge masonry"
+    },
+    {
+      "sha": "0783b7bef50a2ff891aee2baead9d745b6a6a789",
+      "subject": "Fit shoulder pier to both bank heights using a uniform native bake"
+    },
+    {
+      "sha": "c7c89bac7c4384b70c5df553173e6e89b1ee2eda",
+      "subject": "Seat the shoulder arch on its shelf and join the low ceiling to it"
+    },
+    {
+      "sha": "d6f3e7092b5ab22ff3967cbfbc58011eff6cc4e2",
+      "subject": "Bind expanded plains playtest and retain jump bypass regressions"
+    },
+    {
+      "sha": "29e16211a9a91f984160a20ab5c3b447a84dbfa6",
+      "subject": "Build coupled plains mechanisms, deliberate spike lanes and architectural entrances"
+    },
+    {
+      "sha": "1437be701ccc2d960605ab0e4f47a308b9a4c8ee",
+      "subject": "Verify both directions of the orchard to mill entrance"
+    },
+    {
+      "sha": "cc62d369d3cec2597db483f1137ff976e25863cf",
+      "subject": "Bind plains playtest handoff to verified mechanisms and entrance build"
+    },
+    {
+      "sha": "b963c79c2de3ebb0637273d0876e8f37b066e8e0",
+      "subject": "Expand plains room routes, freight mechanisms and eastbound well entry"
+    },
+    {
+      "sha": "7cd351b00aa87feed7654dfdcecae2b3e8aca451",
+      "subject": "Anchor outdoor freight bells to their landing platforms"
+    },
+    {
+      "sha": "f0a3a18dee25cb81a31ea31562b0047bc7ee5448",
+      "subject": "Support freight bell mounts at lower and side landings"
+    },
+    {
+      "sha": "3c73ac88fac3582e42067d0dd49ab7c0e7d0c167",
+      "subject": "Document verified 35-room expansion and pending map geometry decision"
+    },
+    {
+      "sha": "719cab85f74361e7511c7a17fc33e69d74727500",
+      "subject": "Reject plains content review and require region geometry before room expansion"
+    },
+    {
+      "sha": "e7515afcf919610b853fe67311a3b5f1bb23e6cc",
+      "subject": "fix(plains): align vertical entries, stabilize player lighting and add isolated room review"
+    },
+    {
+      "sha": "e797e7e2b9aef97faa900057a05227ff83d265f9",
+      "subject": "fix(ui): reuse popup touch handling in room review selectors"
+    },
+    {
+      "sha": "78feba68dc47ddf724f0409a46379cf39c584c41",
+      "subject": "docs(plains): record repair release and retain unresolved region quality gates"
+    },
+    {
+      "sha": "cf68e1ec2a976f2625d05f4fe4d02e3175eaf643",
+      "subject": "docs(plains): confirm public room review input and save isolation"
+    },
+    {
+      "sha": "0ff7cde1aecb93e27605decbc252edb19121bdfe",
+      "subject": "Build physically connected plains region and validate multi-room routes"
+    },
+    {
+      "sha": "1acefe0315ab51d1f280e2c5a3e56b5c2a65fb55",
+      "subject": "Refresh validated development fixtures for the connected world export"
+    },
+    {
+      "sha": "7c74483fa32dae2eeffc2b46d327ebd95c37215d",
+      "subject": "Document verified connected plains and published review build"
+    },
+    {
+      "sha": "a6e24ea529eb7e649319681b8f578ad46008799a",
+      "subject": "Prepare annotated plains spatial review and connection proposals"
+    },
+    {
+      "sha": "00f2a3c09e5fb352e6c450de7f1aaeaa30afc6b3",
+      "subject": "Record published plains review evidence and unchanged game build"
+    },
+    {
+      "sha": "b027dcf16913b0ff5e33bf45568918f44f585b66",
+      "subject": "Refine plains spatial hierarchy, onboarding and ability-route guidance"
+    },
+    {
+      "sha": "00a8beb75fffe6aa140f433739380da2cca8021d",
+      "subject": "Redraw plains as connected landforms outside the old room envelopes"
+    },
+    {
+      "sha": "66400937dcdce553b51f492adda47c3e32941aeb",
+      "subject": "Simplify plains room outlines around regular functional volumes"
+    },
+    {
+      "sha": "ac4ff02cab069bf862ef78cfba92919ef897cd72",
+      "subject": "Build approved plains region geometry and connected tutorial rooms"
+    },
+    {
+      "sha": "25937aa1a96e6c4a1b111df57cd20bf01af63deb",
+      "subject": "Record scoped construction checks and retire stale map review state"
+    },
+    {
+      "sha": "a2f54ca385ead425796c4c4aa11d40aecc80c179",
+      "subject": "Record verified public construction preview and remaining room scope"
+    },
+    {
+      "sha": "1b768a34ef99afdb474ba9427791a7671c4601e7",
+      "subject": "fix(plains): align entrances and make first-route landings and recovery readable"
+    },
+    {
+      "sha": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "subject": "build: refresh validated development batches for the repaired runtime"
+    },
+    {
+      "sha": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "subject": "docs(plains): record scoped experience checks and published repair"
+    }
+  ],
+  "documents": [
+    {
+      "id": "pr142-doc-0",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/current_state.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/current_state.md",
+      "sha256": "e63fcb89e2f9aa92d8243265a5fd65f481af2b3c9944d2ee28ce269bfef32fd9",
+      "blob_sha": "13a2a41c407bb91b7f541258f46ff0c49be30f9a"
+    },
+    {
+      "id": "pr142-doc-1",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/scope.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/scope.md",
+      "sha256": "7dbf3a592df152da2ab01c4234df8f6d35d6fa0de81dfcc2d70f8bf30dbe3333",
+      "blob_sha": "59bfc693dc9ee38ec6bcc33b97af7524926facad"
+    },
+    {
+      "id": "pr142-doc-2",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/quality/evidence/current-checks.json",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/quality/evidence/current-checks.json",
+      "sha256": "c3e044fb86c791ef54527f47d663358caa1b825074bf43bb82bab5fa2d8a5e4c",
+      "blob_sha": "ecbce4e2decbc67d9cdbe3d107d35cbe53360a47"
+    },
+    {
+      "id": "pr142-doc-3",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/quality/record.json",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/quality/record.json",
+      "sha256": "39af4c758e6beabef0085f994e18a800ea04acf63c9952ff9bac8e36fb7e2ef0",
+      "blob_sha": "bd230f3263a9045b26f1183832faaaa79b269bff"
+    },
+    {
+      "id": "pr142-doc-4",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/bible/room_authoring.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/bible/room_authoring.md",
+      "sha256": "d75b5f523c8cd558b30aee24e3f585342a87f221eeb40607b3f3466ca78e98aa",
+      "blob_sha": "0156bcfb6c20ce6639f99786c4b0f68c77547e2d"
+    },
+    {
+      "id": "pr142-doc-5",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/bible/world_structure.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/bible/world_structure.md",
+      "sha256": "b57131034ac811e4095c4cba4e3cdcb976a9a860e893ae27a0c2ea6511ff993e",
+      "blob_sha": "e5f0b9095f2716bc316ef9f20a7f300306fa9990"
+    },
+    {
+      "id": "pr142-doc-6",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/world/levels/providers/fixed_world_provider.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/world/levels/providers/fixed_world_provider.gd",
+      "sha256": "734adf1df3440ae6a1ef72b3ff25e8f7a46d30d21456f097d0113b9fa3ff3c3b",
+      "blob_sha": "7ee04d488a459bf59123b4eb05cb92c687fb711e"
+    },
+    {
+      "id": "pr142-doc-7",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/world/levels/fixed_world_room.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/world/levels/fixed_world_room.gd",
+      "sha256": "52c47b82c700d3aa5e852395468b3c669b39b42b3be8bc74c8e4d1b338ce9a97",
+      "blob_sha": "a0f094c9380d35535ab6d90bb227cf2d8931f683"
+    },
+    {
+      "id": "pr142-doc-8",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/presentation/ui/world/world_map.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/presentation/ui/world/world_map.gd",
+      "sha256": "a06eeec54fd3cdaff8012c226ed8de113996d1f4806e302f515a64fc15b7a08f",
+      "blob_sha": "cba1bbfae89cfdd078c927b48d6c215cd1943827"
+    },
+    {
+      "id": "withdrawn-quality",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8e88b93e8f4c0db6c023084abc6710e5ef766ab1",
+      "path": "docs/project/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8e88b93e8f4c0db6c023084abc6710e5ef766ab1/docs/project/current_state.md",
+      "sha256": "545f26313efe3f769466bae2cb367f0a3a88ffd0909ea89194d2a935566473d3",
+      "blob_sha": "dd6aa6d476368a09d7837ecb3e76d9c4e02373e7",
+      "verified_quotes": [
+        "整体质量结论为返工",
+        "运行接入不等于内容完成"
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "id": "carriage",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/carriage.mp4",
+      "bytes": 1096457,
+      "sha256": "6c12bacf508538529011b406fc7d8082666c326740503b65f7319334a5900ea2",
+      "duration": 5.23,
+      "scope": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "build_id": "e0da5f93cf15"
+    },
+    {
+      "id": "recovery",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/recovery.mp4",
+      "bytes": 644210,
+      "sha256": "8573a205facd565056870234865b59250830a0eda13ef1cb9043cf554ea1753d",
+      "duration": 4.63,
+      "scope": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "build_id": "e0da5f93cf15"
+    },
+    {
+      "id": "shelter",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/shelter.mp4",
+      "bytes": 879277,
+      "sha256": "d4acfbca7b65f136092feebe0350ff5e901bfc45927e6708dce2c7202c75ed38",
+      "duration": 5.53,
+      "scope": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "build_id": "e0da5f93cf15"
+    },
+    {
+      "id": "station",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/station.mp4",
+      "bytes": 1128872,
+      "sha256": "61f5aa47f12f5686501f60f73fac6a6a8301ae60bd42e196ee0c03c0cb7d9998",
+      "duration": 5.7,
+      "scope": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "build_id": "e0da5f93cf15"
+    }
+  ],
+  "room_screenshots": [
+    {
+      "id": "P-R03",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R03.png",
+      "sha256": "f2e35edc91e1962bfe81e020e9c051365cf45c45cec80e2c3d57398a5a812b41",
+      "bytes": 266077
+    },
+    {
+      "id": "P-R21",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R21.png",
+      "sha256": "ba653358b3e87961c2b0fde5a1c392c15357cf4e611477a489cb1a8678786ddf",
+      "bytes": 332451
+    },
+    {
+      "id": "P-R22",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R22.png",
+      "sha256": "fbe16114a125afed8a5cfbf62be97059aea9e8f5debce78b0704e1eb63aa23d8",
+      "bytes": 289527
+    },
+    {
+      "id": "P-R23",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R23.png",
+      "sha256": "79bbecc60388c4c631986e54f9c50ba7f115a266294c860e5d64c2dab2f7afd5",
+      "bytes": 363834
+    },
+    {
+      "id": "P-R24",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R24.png",
+      "sha256": "110ebcd5b00d6fbcf3f0b2889c4212f405f5e0ecd159c2836bd9290beb8a9602",
+      "bytes": 242586
+    },
+    {
+      "id": "P-R01",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R01.png",
+      "sha256": "8371194a73b0b8938db12496feb9ecd15a526d461a68ca4c31a04f71f5314924",
+      "bytes": 347592
+    }
+  ],
+  "map": {
+    "url": "https://zhipijun1996.github.io/gunman-rush/map-review/map.png?v=plains-map-review-04",
+    "sha256": "89616f89392ad467ad20c39fdf2d09d8d6dda6278a2824d01d4d8821cf302402",
+    "width": 4500,
+    "height": 2500
+  },
+  "outline": {
+    "url": "https://zhipijun1996.github.io/gunman-rush/map-review/outline.png?v=plains-map-review-04",
+    "sha256": "91bc3e1659c04129cc37f309d0b3587f2fd8d3cd0c86902323ccc589bc9da0e3"
+  },
+  "boundary": "six currently loaded rooms; remaining 29 plains interiors under migration; world 309 is a plan, not a playable world. Saved replays are declared local-start original native recordings, not a new human blind playtest."
+}

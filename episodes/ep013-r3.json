@@ -1,0 +1,879 @@
+{
+  "schema_version": 2,
+  "episode": "ep013-r3",
+  "title": "类银河恶魔城，启动！开始做了，也开始踩坑了 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】",
+  "title_candidates": [
+    "类银计划，启动！AI做的第一版关卡，我完全不满意 | 【失序之钟】独游折腾记 ep12【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep013-r3-assets.json",
+  "story_ids": [
+    "S_FIXED_WORLD_DESIGN"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+5%",
+  "playback_speed": 1.02,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.075,
+  "game_audio_gain": 0,
+  "target_duration": [
+    180,
+    300
+  ],
+  "cover_assets": [
+    "P-R03",
+    "world"
+  ],
+  "cover": {
+    "series": "失序之钟 · 独游折腾记 ep12",
+    "left_label": "当前开发实机",
+    "right_label": "大世界规划",
+    "line1": "类银河恶魔城",
+    "line2": "启动！先试试"
+  },
+  "research_scope": {
+    "status": "targeted_PR_and_comment_attachment_research",
+    "pr": 141,
+    "repository": "zhipijun1996/gunman-rush",
+    "head_sha": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+    "merged": false,
+    "coverage": "PR metadata/body, all3 conversation comments, no inline comments,20 changed-file names; both linked ZIPs inventoried and selected current design/source records read. Not a new full-history census.",
+    "archives": {
+      "art": {
+        "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+        "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      },
+      "world": {
+        "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+        "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+        "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+      }
+    },
+    "scope_limits": [
+      "PR body mentions20-room workline; attached v07 plan contains35 plains/309 world rooms. The newer attachment is the subject, not proof of integration.",
+      "ZIP internal dates differ by timezone/date; no invented chronology.",
+      "No code/import from attachment executed; main game remains untouched."
+    ],
+    "editorial_revision": "Design intent plus actual first implementation attempts. Draft PR142, quality unaccepted, source runtime untouched.",
+    "pr142_head": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+    "pr142_base": "d04912228d6f53f61bd6dde84b22876a5d444487",
+    "pr142_commits_read": 46,
+    "pr142_changed_paths": 1068,
+    "pr142_comments": 0
+  },
+  "evidence": [
+    {
+      "id": "pr141",
+      "kind": "unmerged_pull_request",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "0e742706c59e3409b23c4536ba74f89af6a2146b",
+      "pr": 141,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141",
+      "scope": "Documentation and skills, not full-world runtime delivery"
+    },
+    {
+      "id": "world",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "309 planned rooms,16 regions,411 connections; illustration coordinates are not physics"
+    },
+    {
+      "id": "opening",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/OPENING_PACING-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Five tutorial rooms before station; timing budgets are targets, not playtest measurements"
+    },
+    {
+      "id": "station",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/STATION_NETWORK_STORY-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Station west/north/east, visible grapple bridge, optional conversation, same-state returns"
+    },
+    {
+      "id": "abilities",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "H grapple first; W and D alternative orders; all obtain routes are proposals"
+    },
+    {
+      "id": "city",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "36-room city, same landmark with different approaches; phase is not visit-count lock"
+    },
+    {
+      "id": "sky",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "10 main/4 optional extreme; either wing order; extreme not true-ending requirement"
+    },
+    {
+      "id": "rules",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/world-graybox-bible-v04.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Permanent unique gains and shortcuts; nearby nonfatal terrain recovery vs actual death"
+    },
+    {
+      "id": "collection",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/COLLECTION_LEVEL_DESIGN-v07.txt",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Authored clue/approach/challenge/acquisition/return; not actual player discovery tests"
+    },
+    {
+      "id": "limits",
+      "kind": "exact_attachment_document",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/handoff-status.json",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "scope": "Structure graybox ready; no309-room Godot runtime, physics, combat balance or player-memory proof"
+    },
+    {
+      "id": "art",
+      "kind": "independent_canvas_assembly_and_assets",
+      "archive_id": "art",
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818",
+      "member": "godot-room-art-cloud/art/world-art-v2/README.md",
+      "scope": "16 region material examples share study layout; not16 designed playable regions. v2 candidates vs five-region approved direction distinguished. Underworld/Asouris retained."
+    },
+    {
+      "id": "user-preference",
+      "kind": "user_testimony",
+      "scope": "User previously described liking Hollow Knight Path of Pain and consecutive precise platforming; this is not newly invented personal history."
+    },
+    {
+      "id": "user-r2",
+      "kind": "user_editorial_steering",
+      "text": "Reduce specific detail and focus on design thinking. Title should evoke Metroidvania and use 启动. Explicit uncertainty and willingness to keep trying; not a request to upload."
+    },
+    {
+      "id": "user-pr142",
+      "kind": "user_testimony_and_editorial_request",
+      "text": "AI first room interiors completely unsatisfactory; continue manual design, 300+ rooms slowly. Began trying Metroidvania; still poor, many pitfalls and a long road. Add actual recording; not an upload request."
+    },
+    {
+      "id": "pr142-state",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "Current state: fixed-world basics, permanent growth, rest and separate draft scope."
+    },
+    {
+      "id": "pr142-scope",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "First six current interiors, 29 remain; prior quality acceptance withdrawn; pre-action visibility/recovery and full quality remain distinct."
+    },
+    {
+      "id": "pr142-doors",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "Actual boundary apertures and directional crossings; shared player, per-room camera, not an entirely loaded seamless world."
+    },
+    {
+      "id": "pr142-map",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "WorldMap uses actual footprint union/shared doorway data, normal map shows explored rooms."
+    },
+    {
+      "id": "saved-clips",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "Four original native local-start recordings match all byte lengths and SHA256 in current-checks.json."
+    },
+    {
+      "id": "new-native",
+      "kind": "pinned_repository_evidence",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "pr": 142,
+      "text": "Fresh frozen-PR142 native recording: source route helpers/controller, new-game crossing and explored map, no direct player/progress writes."
+    },
+    {
+      "id": "withdrawal",
+      "kind": "historical_quality_rejection",
+      "commit": "8e88b93e8f4c0db6c023084abc6710e5ef766ab1",
+      "pr": 142,
+      "text": "Actual current_state.md states 整体质量结论为返工 and 运行接入不等于内容完成. Card is editorial typesetting."
+    }
+  ],
+  "shots": [
+    {
+      "id": "r3s01",
+      "chapter": "1",
+      "title": "开始做，也开始踩坑",
+      "narration": "类银河恶魔城，启动！这次不光画地图，开始往游戏里做了。然后我发现，图上想得挺好，真跑起来，坑还不少。",
+      "assets": [
+        "new-intro",
+        "world"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.8,
+        0.2
+      ],
+      "crop_rects": [
+        null,
+        [
+          323,
+          430,
+          4414,
+          2867
+        ]
+      ],
+      "emphasis": "类银河恶魔城，启动！",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s02",
+      "chapter": "1",
+      "title": "为什么换方向",
+      "narration": "之前折腾随机地图，是想让每一局都有点新鲜感。但我的核心是反冲跳跃，我更想做的，其实是学会一个动作，再跨过原来过不去的地方。",
+      "assets": [
+        "world",
+        "plains"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "user-preference",
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "crop_rects": [
+        [
+          323,
+          430,
+          4414,
+          2867
+        ],
+        null
+      ],
+      "emphasis": "围着反冲跳跃，重新想地图",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s03",
+      "chapter": "1",
+      "title": "想要怎样的探索",
+      "narration": "所以这次试试固定世界。先看到一个去不了的地方，记在心里。后来有了新能力，自己回来找到新路。成长能留下来，旧地方也能有新的意思。",
+      "assets": [
+        "idea-loop"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "world",
+        "abilities"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "presentation": "animated_diagram",
+      "emphasis": "新能力，改变你看地图的方式"
+    },
+    {
+      "id": "r3s04",
+      "chapter": "1",
+      "title": "回头也有发现",
+      "narration": "比如工城，我希望先看见远处的窗和高处的桥。以后绕回来，认出自己来时的街道，发现原来都连着。想做的是这种探索感。",
+      "assets": [
+        "five",
+        "city"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "city"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "crop_rects": [
+        [
+          0,
+          1252,
+          640,
+          360
+        ],
+        [
+          1983,
+          1090,
+          1465,
+          959
+        ]
+      ],
+      "emphasis": "回到旧地方，也像一次新探索",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s05",
+      "chapter": "2",
+      "title": "先搭起基础",
+      "narration": "想法有了，就先把底子搭起来。房间和能力怎么连，成长怎么保留，休息和失败后从哪里重新出发。先让这些规则在游戏里有个着落，再慢慢往里填内容。",
+      "assets": [
+        "world",
+        "P-R01"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-state"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "crop_rects": [
+        [
+          323,
+          430,
+          4414,
+          2867
+        ],
+        null
+      ],
+      "emphasis": "先让世界有个能运行的底子",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s06",
+      "chapter": "2",
+      "title": "AI第一版，我不满意",
+      "narration": "最先撞墙的就是房内关卡。AI做出来的第一版，我完全不满意。图里写了这间房要练什么，不代表摆出来的台子，就真的能让玩家玩到那个东西。",
+      "assets": [
+        "first-rejected",
+        "plains-map"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "withdrawal",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.45,
+        0.55
+      ],
+      "emphasis": "写清了职责，还不等于做好了关卡",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s07",
+      "chapter": "2",
+      "title": "要看实际怎么玩",
+      "narration": "不光是能不能跳过去。起跳前看不看得见落点？走错了能不能回来？一段操作之后，有没有继续往前走的欲望？这些得进游戏里，一段段看。",
+      "assets": [
+        "carriage",
+        "recovery",
+        "P-R22"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "saved-clips",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.34,
+        0.31,
+        0.35
+      ],
+      "emphasis": "能通关，只是开始",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s08",
+      "chapter": "2",
+      "title": "先把房间口接起来",
+      "narration": "房间口也踩了坑。现在尝试在真实墙面上留缺口，侧面走过去，上下靠跳跃或者下落接起来。不能只在地图上画条线，实地却看不懂往哪走。",
+      "assets": [
+        "new-intro",
+        "door-frame",
+        "plains-outline"
+      ],
+      "offsets": [
+        7.2,
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-doors",
+        "new-native"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.13,
+        0.37,
+        0.5
+      ],
+      "emphasis": "地图上的连接，要落到真正的出口",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s09",
+      "chapter": "3",
+      "title": "镜头也是关卡的一部分",
+      "narration": "镜头也得一起考虑。出口在哪、下一步往哪落，要在操作前让人看见。最近还在改这些最基础的东西。以前觉得只是接个房间，现在发现真没那么简单。",
+      "assets": [
+        "shelter",
+        "P-R24"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "saved-clips",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.36,
+        0.64
+      ],
+      "emphasis": "先看得懂，才能放心操作",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s10",
+      "chapter": "3",
+      "title": "地图和实际空间对上",
+      "narration": "大地图这边，尝试让房形、房间口和地图用同一套空间数据。走过的地方再显示出来。至少希望玩家看着地图，能跟自己刚刚走过的路对上。",
+      "assets": [
+        "new-intro",
+        "plains-map"
+      ],
+      "offsets": [
+        9.1,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-map",
+        "new-native"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.25,
+        0.75
+      ],
+      "emphasis": "地图，要对应脚下真正走过的路",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s11",
+      "chapter": "3",
+      "title": "先做一小段",
+      "narration": "这张是目前平原的施工总图。但有整区图，不等于整区能玩。现在先盯开头这一小段，其余房间继续改，先别急着给自己发完工证。",
+      "assets": [
+        "plains-map",
+        "P-R03"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "emphasis": "整区图，不是整区完工",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s12",
+      "chapter": "3",
+      "title": "当前的局部尝试",
+      "narration": "从草坡出发，过车厢、引渠，再走到小站。这里先把走跳、射击、反冲和歇脚的地方接起来。眼前这些，都还是返工中的片段。",
+      "assets": [
+        "new-intro",
+        "station"
+      ],
+      "offsets": [
+        13.1,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "saved-clips",
+        "new-native",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.6,
+        0.4
+      ],
+      "emphasis": "当前实机 · 仍在返工",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s13",
+      "chapter": "4",
+      "title": "几段修复，不等于好玩了",
+      "narration": "修掉几个盲跳、补上失误后的回路，当然要做。但这不等于关卡就好玩了。房间之间怎么铺垫、怎么变化、回来的时候还有没有意思，都还得继续试。",
+      "assets": [
+        "new-intro",
+        "P-R23"
+      ],
+      "offsets": [
+        25.7,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-scope",
+        "new-native"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "montage_weights": [
+        0.68,
+        0.32
+      ],
+      "emphasis": "修掉问题，还要继续找乐趣",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s14",
+      "chapter": "4",
+      "title": "后面得我自己设计",
+      "narration": "所以后面不能指望AI把房间批量铺完就行。每间房想让人看见什么、尝试什么、怎么失败再回来，我得自己先设计、先判断，再让AI帮忙落地。",
+      "assets": [
+        "room-loop"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "user-pr142",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "presentation": "animated_diagram",
+      "emphasis": "房内玩法，需要继续人工设计"
+    },
+    {
+      "id": "r3s15",
+      "chapter": "4",
+      "title": "把节奏也做出来",
+      "narration": "反冲跳跃还是核心，但也不能整张地图都绷着。战斗、观察、探索和休息，得有松有紧。难一点的路线可以留着，也想给玩家一点自己选择的空间。",
+      "assets": [
+        "plains",
+        "forest",
+        "five"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "user-preference",
+        "world"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "crop_rects": [
+        null,
+        null,
+        [
+          0,
+          34,
+          640,
+          360
+        ]
+      ],
+      "emphasis": "跳得爽，也得有探索和喘息",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s16",
+      "chapter": "4",
+      "title": "三百多个，慢慢来",
+      "narration": "一想到整张世界图，工作量确实有点顶。也就三百多个房间，慢慢来。先把眼前这几间做明白，比一口气铺满更重要。",
+      "assets": [
+        "world"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "world",
+        "user-pr142"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "crop_rect": [
+        323,
+        430,
+        4414,
+        2867
+      ],
+      "safe_frame": true,
+      "emphasis": "也就三百多个房间，慢慢来"
+    },
+    {
+      "id": "r3s17",
+      "chapter": "5",
+      "title": "画面也还要磨",
+      "narration": "画面也一样。漂亮的素材和方向图，放进真正的房间，不会自动变成舒服的游戏画面。地形、视野、角色和环境层次，还得放在一起反复磨。",
+      "assets": [
+        "forest",
+        "P-R03",
+        "P-R01"
+      ],
+      "offsets": [
+        0,
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "art",
+        "pr142-scope"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "emphasis": "方向图到实际游戏，还有很长一段路",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s18",
+      "chapter": "5",
+      "title": "先用一段能玩的来检验",
+      "narration": "接下来就先做一小段，看看动作和路线能不能真的连出乐趣。不好玩的地方，该推翻还得推翻。我开始尝试做类银了，但路还很远，坑也不少。",
+      "assets": [
+        "P-R21",
+        "plains-map"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "pr142-scope",
+        "user-pr142"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "emphasis": "先做一段，再判断方向",
+      "presentation": "montage"
+    },
+    {
+      "id": "r3s19",
+      "chapter": "5",
+      "title": "先往下试试",
+      "narration": "现在的效果还没到自己满意的程度。大家有什么关卡设计的建议，也欢迎告诉我。不知道能不能做好，先往下试试。",
+      "assets": [
+        "P-R03",
+        "plains"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        142
+      ],
+      "evidence": [
+        "user-pr142",
+        "user-pr142",
+        "limits"
+      ],
+      "transition": "cut",
+      "shot_type": "design_thinking_and_actual_first_attempts",
+      "claim_type": "first_person_reflection_and_scoped_draft_implementation",
+      "fact_check": "Intent/dissatisfaction from user testimony; implementation bounded to pinned PR142. Current repair footage is not labelled the rejected first version. Planned world/art not represented as completed gameplay.",
+      "emphasis": "不知道能不能做好，先往下试试",
+      "presentation": "montage"
+    }
+  ],
+  "bilibili_body": "类银河恶魔城，启动！这次开始把想法往游戏里做，也开始踩新的坑。\n\n先聊聊为什么转向固定世界，想怎样用新能力、回访和路线选择做探索；再看看开头关卡、房间口和大地图的实际尝试。AI做的第一版房内关卡，我完全不满意。后面需要自己继续设计和判断，再让AI帮忙落地。也就三百多个房间，慢慢来。\n\n目前只在做开头的一小段，施工图不代表整区已能玩，当前录屏也不是质量验收通过。房内玩法、回访、镜头和画面还在打磨。路还很远，现在效果也不好，不知道能不能做好，先往下试试。\n\n中文AI配音，含真实游戏录屏、定位截图、规划图及明确标注的示意图。部分原始录屏从指定局部起点自动操作；新录片段使用正常新档和原控制器。AI辅助开发与制作。地形基础素材：Underworld Tileset / Asouris。\n\n#B站AI创造公开赛# #独立游戏# #类银河恶魔城# #Godot# #失序之钟#",
+  "comparison": "Early rejection is a sourced editorial card. Current repair footage is labelled separately; art references and planned maps are not matched gameplay comparisons.",
+  "comparison_review": "是否看懂转向思路、第一版体验不满意和后续人工设计；当前修复片段是否被误读为旧版或整区完成；原生跨房与地图是否清楚；三百多房只作工作量自嘲；末尾仍保留不确定。",
+  "rights": [
+    {
+      "kind": "design_bundle",
+      "status": "User requested own project attachments; exact bytes retained"
+    },
+    {
+      "kind": "art",
+      "status": "Project-derived/generated art with Underworld Tileset / Asouris original material; no blanket CC0 claim; bundle provenance retained"
+    },
+    {
+      "kind": "voice",
+      "status": "Edge synthetic Mandarin, no voice cloning"
+    },
+    {
+      "kind": "font",
+      "status": "New editorial text uses Noto CJK SIL OFL; original map raster font license retained from archive"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified"
+    }
+  ]
+}

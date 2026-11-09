@@ -1,0 +1,999 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "archives": {
+    "art": {
+      "url": "https://github.com/user-attachments/files/34526011/godot-room-art-cloud.zip",
+      "sha256": "3d9d8a591a5a5672dbf81fd8feb487eed919d3897ee9ab02fa1c9559ebabc048",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+    },
+    "world": {
+      "url": "https://github.com/user-attachments/files/34526022/world-graybox-kit-v07-light-1.zip",
+      "sha256": "c4e6f7692bd3341aadf972f8c766a533fe39cea925c50694ad76ccfa32fdc395",
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/141#issuecomment-6711181818"
+    }
+  },
+  "assets": [
+    {
+      "id": "world",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-map-numbered-v07.png",
+      "sha256": "183e49e8a131c59eea1988dac827995fc2b6ba2602033468fbe6ce97c6b2cde6",
+      "preserve_evidence": true,
+      "kind": "world_design_map",
+      "display_label": "世界结构规划 · 尚未完成实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "city",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/city-districts-v07.png",
+      "sha256": "4923c68c176825c0083500bbf78a57c7e1893c8f5c58fb3acd2f0929dbb5b2e1",
+      "preserve_evidence": true,
+      "kind": "world_design_map",
+      "display_label": "工城空间规划 · 非实机",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "plains",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/previews/windchime_plains-lit.png",
+      "sha256": "38f04121fec5bc3421cb8fc11377bc4509207d805ff82056ea8aee952f7af221",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "平原美术候选 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "forest",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/previews/thorn_forest-lit.png",
+      "sha256": "26971b55a1460fe5155f269ff8c89116e131d2b20a861099159062c1825599e1",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "森林美术候选 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "five",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/.agents/skills/godot-room-art/assets/approved-five-regions.png",
+      "sha256": "747fc0949b89b7c303b931f44b1c0cba08dcc3ace1f52608369802488bb2ba62",
+      "preserve_evidence": true,
+      "kind": "art_assembly_preview",
+      "display_label": "已有美术方向 · 素材拼装预览",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-start",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/START_HERE.txt",
+      "sha256": "88a495b399231f1831f52d24e34ac25748f0113cff0a0ead7e503fbd303ee739",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-status",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/handoff-status.json",
+      "sha256": "19a52b16f2e5e12e89cea00736d2fc423e6efca25ab3ae7a9b6c1f89657a7058",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-world",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/world-room-layout-v07.json",
+      "sha256": "b29dff3bdd2de5fce432dc2922334f31e7de3d40e36803410f9bed5b08303c17",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-opening",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/OPENING_PACING-v07.txt",
+      "sha256": "eb368f07f853e1a9e6c0906c79729b15510cc0273c7cf61d9b217c3f262b21e7",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-station",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/STATION_NETWORK_STORY-v07.txt",
+      "sha256": "e4ec0f06bafeb68153c83ddfd5dc81b8cd8915084461041dbe19beabeab96774",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-city",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/CITY_SKY_WORLD-v07.txt",
+      "sha256": "bcaf2c4cb38bbff246e69cb5cf26da9f876b9a8edc2fcc047378b0320408a2f0",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-contract",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/ROOM_CONSTRUCTION_README.txt",
+      "sha256": "99d61ca1051f5c59df2a5ec621c4cdae76bad84205cbd0370683f745a4a7fa7d",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-rules",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/world-graybox-bible-v04.txt",
+      "sha256": "0048964f9ffffd5ce136f7455bf8e14ffa25d1f6a682eeb5a345ca4a024d77b3",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-collection",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/design/COLLECTION_LEVEL_DESIGN-v07.txt",
+      "sha256": "92d4efda71547a19a6b8486d852b639ea9503c5c405a2d4829f71a8f2743f5e9",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-font",
+      "origin": "archive",
+      "archive_id": "world",
+      "member": "world-graybox-kit-v07/assets/font-LICENSE.txt",
+      "sha256": "892af6dc6e3f03b2133f8165280c14b69d21aacca7b61804c92447530d0f52fe",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件设计原文",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-start",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/ROOM-ART-START.md",
+      "sha256": "ddab6c4c386c76b388ba8c2d86150adf6673e3301f4dda3ef9c35c84392af88a",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-readme",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/README.md",
+      "sha256": "973ce387bd2fe050139a9207794624389edd18407eaaa861bab73e3a8544a08b",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-provenance",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/art/world-art-v2/asset-provenance.json",
+      "sha256": "3d097d34c9b01b838e1320027a998447d3e1439cd418cc5e06eae598dbad6c0f",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "doc-art-checks",
+      "origin": "archive",
+      "archive_id": "art",
+      "member": "godot-room-art-cloud/verification/summary.json",
+      "sha256": "bcc830fbac550ff84913273c7df9ee5c72e23e972276274cd82fddcbcfbd3a5d",
+      "preserve_evidence": true,
+      "kind": "source_document",
+      "display_label": "附件素材来源与范围",
+      "pr": 141,
+      "truth": "Exact attachment member; design/assembly status retained. No import into main game and no claim of gameplay/physics validation.",
+      "rights": "User requested use of owned project attachment. Art derivatives retain Asouris Underworld attribution; no CC0 claim."
+    },
+    {
+      "id": "idea-loop",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "成长与回访 · 设计思路示意",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "成长，也是在重新认识世界",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "设计思路示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "看见障碍",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "记住一个暂时去不了的地方",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "学到新动作",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "多了一种解决问题的方法",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "回来发现新路",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "旧地方，也有了新的意义",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "carriage",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/carriage.mp4",
+      "sha256": "6c12bacf508538529011b406fc7d8082666c326740503b65f7319334a5900ea2",
+      "kind": "original_game_recording",
+      "display_label": "当前返工版 · 原始录屏／局部起点",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_build": "e0da5f93cf15"
+    },
+    {
+      "id": "recovery",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/recovery.mp4",
+      "sha256": "8573a205facd565056870234865b59250830a0eda13ef1cb9043cf554ea1753d",
+      "kind": "original_game_recording",
+      "display_label": "当前返工版 · 原始录屏／局部起点",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_build": "e0da5f93cf15"
+    },
+    {
+      "id": "shelter",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/shelter.mp4",
+      "sha256": "d4acfbca7b65f136092feebe0350ff5e901bfc45927e6708dce2c7202c75ed38",
+      "kind": "original_game_recording",
+      "display_label": "当前返工版 · 原始录屏／局部起点",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_build": "e0da5f93cf15"
+    },
+    {
+      "id": "station",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/station.mp4",
+      "sha256": "61f5aa47f12f5686501f60f73fac6a6a8301ae60bd42e196ee0c03c0cb7d9998",
+      "kind": "original_game_recording",
+      "display_label": "当前返工版 · 原始录屏／局部起点",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Declared local room-review approach; actual controller input and normal camera, native Godot.",
+      "source_build": "e0da5f93cf15"
+    },
+    {
+      "id": "P-R03",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R03.png",
+      "sha256": "f2e35edc91e1962bfe81e020e9c051365cf45c45cec80e2c3d57398a5a812b41",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "P-R21",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R21.png",
+      "sha256": "ba653358b3e87961c2b0fde5a1c392c15357cf4e611477a489cb1a8678786ddf",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "P-R22",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R22.png",
+      "sha256": "fbe16114a125afed8a5cfbf62be97059aea9e8f5debce78b0704e1eb63aa23d8",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "P-R23",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R23.png",
+      "sha256": "79bbecc60388c4c631986e54f9c50ba7f115a266294c860e5d64c2dab2f7afd5",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "P-R24",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R24.png",
+      "sha256": "110ebcd5b00d6fbcf3f0b2889c4212f405f5e0ecd159c2836bd9290beb8a9602",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "P-R01",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/replays/P-R01.png",
+      "sha256": "8371194a73b0b8938db12496feb9ecd15a526d461a68ca4c31a04f71f5314924",
+      "kind": "positioned_game_screenshot",
+      "display_label": "当前返工版 · 实机定位图",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "runtime_commit": "ae5c1cca26192788733bb733f5ba19e0ad48c5fb",
+      "truth": "Original source-provided positioned screenshot. Not proof of traversal or completed region."
+    },
+    {
+      "id": "plains-map",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/map-review/map.png?v=plains-map-review-04",
+      "sha256": "89616f89392ad467ad20c39fdf2d09d8d6dda6278a2824d01d4d8821cf302402",
+      "kind": "world_design_map",
+      "display_label": "平原施工总图 · 含未完成房间",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "truth": "04 room footprints; only the initial six interiors currently loaded."
+    },
+    {
+      "id": "plains-outline",
+      "origin": "external",
+      "url": "https://zhipijun1996.github.io/gunman-rush/map-review/outline.png?v=plains-map-review-04",
+      "sha256": "91bc3e1659c04129cc37f309d0b3587f2fd8d3cd0c86902323ccc589bc9da0e3",
+      "kind": "world_design_map",
+      "display_label": "平原施工总图 · 含未完成房间",
+      "pr": 142,
+      "page_url": "https://github.com/zhipijun1996/gunman-rush/pull/142",
+      "rights": "User-owned project recording/design; original third-party art attribution retained.",
+      "truth": "04 room footprints; only the initial six interiors currently loaded."
+    },
+    {
+      "id": "new-intro",
+      "origin": "world_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "pr142-intro-map",
+      "kind": "historical_reconstruction",
+      "pr": 142,
+      "display_label": "当前开发版 · 新录屏／自动输入",
+      "truth": "New native recording of frozen draft PR142, using original route helpers/controller and an isolated save. No position/health/progress writes; not a full playthrough or human playtest.",
+      "rights": "User-owned game; original project and Underworld / Asouris asset notices retained."
+    },
+    {
+      "id": "door-frame",
+      "origin": "world_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "case": "pr142-intro-map",
+      "kind": "original_game_screenshot",
+      "pr": 142,
+      "display_label": "当前开发版 · 新录屏抽帧",
+      "truth": "New native recording of frozen draft PR142, using original route helpers/controller and an isolated save. No position/health/progress writes; not a full playthrough or human playtest.",
+      "rights": "User-owned game; original project and Underworld / Asouris asset notices retained.",
+      "frame_seconds": 8.2
+    },
+    {
+      "id": "room-loop",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "逐房设计 · 下一步思路示意",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "一间房，要把什么体验做好？",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "设计思路示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "看懂下一步",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "先看清落点、出口和线索",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "操作与选择",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "反冲、战斗、探索要有意义",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "失败也回得来",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "能重试，也能留下新的发现",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-rejected",
+      "origin": "editorial",
+      "kind": "editorial_quote",
+      "pr": 142,
+      "display_label": "早期版本结论 · 开发记录摘述",
+      "truth": "Editorial typesetting of a verified historical document, not a screenshot or footage of the first version.",
+      "graphic": {
+        "kicker": "第一版房内关卡 · 体验返工",
+        "face": "thinking",
+        "lines": [
+          "运行接入 ≠ 内容完成",
+          "整体质量结论：返工"
+        ],
+        "font_size": 66,
+        "footer": "开发记录摘述 · 当前实机另行标注"
+      },
+      "rights": "Original editorial layout; wording verified in pinned withdrawal document."
+    }
+  ],
+  "documents": [
+    {
+      "id": "pr142-doc-0",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/current_state.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/current_state.md",
+      "sha256": "e63fcb89e2f9aa92d8243265a5fd65f481af2b3c9944d2ee28ce269bfef32fd9",
+      "blob_sha": "13a2a41c407bb91b7f541258f46ff0c49be30f9a"
+    },
+    {
+      "id": "pr142-doc-1",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/scope.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/scope.md",
+      "sha256": "7dbf3a592df152da2ab01c4234df8f6d35d6fa0de81dfcc2d70f8bf30dbe3333",
+      "blob_sha": "59bfc693dc9ee38ec6bcc33b97af7524926facad"
+    },
+    {
+      "id": "pr142-doc-2",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/quality/evidence/current-checks.json",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/quality/evidence/current-checks.json",
+      "sha256": "c3e044fb86c791ef54527f47d663358caa1b825074bf43bb82bab5fa2d8a5e4c",
+      "blob_sha": "ecbce4e2decbc67d9cdbe3d107d35cbe53360a47"
+    },
+    {
+      "id": "pr142-doc-3",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/project/worklines/plains_bible_v2_01/quality/record.json",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/project/worklines/plains_bible_v2_01/quality/record.json",
+      "sha256": "39af4c758e6beabef0085f994e18a800ea04acf63c9952ff9bac8e36fb7e2ef0",
+      "blob_sha": "bd230f3263a9045b26f1183832faaaa79b269bff"
+    },
+    {
+      "id": "pr142-doc-4",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/bible/room_authoring.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/bible/room_authoring.md",
+      "sha256": "d75b5f523c8cd558b30aee24e3f585342a87f221eeb40607b3f3466ca78e98aa",
+      "blob_sha": "0156bcfb6c20ce6639f99786c4b0f68c77547e2d"
+    },
+    {
+      "id": "pr142-doc-5",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "docs/bible/world_structure.md",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/docs/bible/world_structure.md",
+      "sha256": "b57131034ac811e4095c4cba4e3cdcb976a9a860e893ae27a0c2ea6511ff993e",
+      "blob_sha": "e5f0b9095f2716bc316ef9f20a7f300306fa9990"
+    },
+    {
+      "id": "pr142-doc-6",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/world/levels/providers/fixed_world_provider.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/world/levels/providers/fixed_world_provider.gd",
+      "sha256": "734adf1df3440ae6a1ef72b3ff25e8f7a46d30d21456f097d0113b9fa3ff3c3b",
+      "blob_sha": "7ee04d488a459bf59123b4eb05cb92c687fb711e"
+    },
+    {
+      "id": "pr142-doc-7",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/world/levels/fixed_world_room.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/world/levels/fixed_world_room.gd",
+      "sha256": "52c47b82c700d3aa5e852395468b3c669b39b42b3be8bc74c8e4d1b338ce9a97",
+      "blob_sha": "a0f094c9380d35535ab6d90bb227cf2d8931f683"
+    },
+    {
+      "id": "pr142-doc-8",
+      "repository": "zhipijun1996/gunman-rush",
+      "path": "game/presentation/ui/world/world_map.gd",
+      "commit": "29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/29bd6b58cfe80d38f6ef5a8d3b843b59115f8af8/game/presentation/ui/world/world_map.gd",
+      "sha256": "a06eeec54fd3cdaff8012c226ed8de113996d1f4806e302f515a64fc15b7a08f",
+      "blob_sha": "cba1bbfae89cfdd078c927b48d6c215cd1943827"
+    },
+    {
+      "id": "withdrawn-quality",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "8e88b93e8f4c0db6c023084abc6710e5ef766ab1",
+      "path": "docs/project/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/8e88b93e8f4c0db6c023084abc6710e5ef766ab1/docs/project/current_state.md",
+      "sha256": "545f26313efe3f769466bae2cb367f0a3a88ffd0909ea89194d2a935566473d3",
+      "blob_sha": "dd6aa6d476368a09d7837ecb3e76d9c4e02373e7",
+      "verified_quotes": [
+        "整体质量结论为返工",
+        "运行接入不等于内容完成"
+      ]
+    }
+  ]
+}

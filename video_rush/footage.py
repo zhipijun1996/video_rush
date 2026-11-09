@@ -22,6 +22,25 @@ def collect(repo, spec, output):
             from .archive_media import collect as collect_archive
             collected.append(collect_archive(asset,spec['archives'][asset['archive_id']],output))
             continue
+        if origin=='world_recording':
+            from .world_recording import capture
+            import shutil
+            source,receipt=capture(repo,asset)
+            evidence=output.parent/'recording-evidence';evidence.mkdir(exist_ok=True)
+            for name in ['trace.json','receipt.json','native.log','recording_driver.gd','preparation.json','import.log','world-build.log']:
+                shutil.copyfile(source.parent/name,evidence/(asset['case']+'-'+name))
+            dest=output/(asset['id']+('.png' if 'frame_seconds' in asset else '.mp4'))
+            if 'frame_seconds' in asset:
+                seconds=asset['frame_seconds']
+                if not isinstance(seconds,(int,float)) or not 0<=seconds<float(receipt['media']['format']['duration']):
+                    raise ValueError('Frame outside fixed-world recording')
+                run(['ffmpeg','-v','error','-y','-ss',str(seconds),'-i',source,'-frames:v','1',dest],timeout=60)
+            else:shutil.copyfile(source,dest)
+            obj=dict(asset,local_path=str(dest.resolve()),sha256=sha(dest),recording_receipt=receipt,
+                     source_url=f'https://github.com/{asset["repository"]}/tree/{asset["commit"]}')
+            if 'frame_seconds' not in asset:obj['ffprobe']=probe(dest)
+            collected.append(obj)
+            continue
         if origin=='browser_movie':
             from .browser_movie import capture
             source,receipt=capture(repo,asset)

@@ -15,6 +15,7 @@ from tools.record_current_gameplay import capture
 ROOTS = ['project.godot', 'export_presets.cfg', 'game', 'assets', 'scripts',
          'scenes', 'resources', 'config', 'shaders', 'tools', 'tests', 'addons',
          'experiments', 'docs/data', 'docs/bible', 'docs/project', 'AGENTS.md']
+ROOTS += ['art/world-art-v2/assets/pixel']
 
 
 def prepare(spec, stage_id, base):

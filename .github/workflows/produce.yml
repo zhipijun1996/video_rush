@@ -72,7 +72,7 @@ jobs:
             printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
           fi
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update -qq
-          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
           python -m pip install -e '.[test]'
           if python -c 'import json,os,sys; s=json.load(open(os.environ["VR_SPEC"])); a=json.load(open(s["asset_spec"])); sys.exit(not any(x.get("origin") in ("browser_capture","browser_movie") for x in a["assets"]))'; then
             python -m pip install -e '.[browser]'
@@ -126,6 +126,8 @@ jobs:
             build/episodes/${{ inputs.episode }}/*.ass
             build/episodes/${{ inputs.episode }}/logs/
             build/episodes/${{ inputs.episode }}/recording-evidence/
+            build/episodes/${{ inputs.episode }}/media/*.mp4
+            build/episodes/${{ inputs.episode }}/media/*.png
             build/episodes/${{ inputs.episode }}/original_uploads/
             build/episodes/${{ inputs.episode }}/source-evidence/
             build/episodes/${{ inputs.episode }}/browser-evidence/
