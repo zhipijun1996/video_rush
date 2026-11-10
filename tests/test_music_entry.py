@@ -1,5 +1,5 @@
 import subprocess
-import numpy as np
+from array import array
 import pytest
 from video_rush.pipeline import background_music_filter
 
@@ -12,8 +12,8 @@ def test_supplied_bgm_starts_after_original_game_audio_opening():
     raw=subprocess.check_output(['ffmpeg','-v','error','-f','lavfi','-i',
         'sine=frequency=440:duration=1.5:sample_rate=16000','-filter_complex',filt,
         '-map','[bg]','-t','2','-f','f32le','-ac','1','-'])
-    a=np.frombuffer(raw,dtype=np.float32)
-    assert np.max(np.abs(a[:int(.49*16000)]))==0
-    assert np.max(np.abs(a[int(.75*16000):int(.9*16000)]))>.001
+    a=array('f');a.frombytes(raw)
+    assert max(map(abs,a[:int(.49*16000)]))==0
+    assert max(map(abs,a[int(.75*16000):int(.9*16000)]))>.001
     for bad in [-1,2,float('nan'),True]:
         with pytest.raises(ValueError):background_music_filter({'music_start_seconds':bad},2)
