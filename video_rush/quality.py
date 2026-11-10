@@ -106,7 +106,7 @@ def validate(output, spec, timeline, sources):
     bgm=None
     music=sources.get('audio',{}).get('music')
     if music:
-        bgm={'path':music,'sha256':sha(music),'metrics':audio_metrics(music),'mix_evidence':str(logs/'final-render.log'),'gain':spec.get('music_gain',.16),'ducking':'voice-triggered; threshold .025, ratio 8, attack20ms/release250ms','fade_in':1,'fade_out':3,'provenance':spec.get('music_asset'),'listening':'not human-reviewed'}
+        bgm={'path':music,'sha256':sha(music),'metrics':audio_metrics(music),'mix_evidence':str(logs/'final-render.log'),'gain':spec.get('music_gain',.16),'start_seconds':spec.get('music_start_seconds',0),'ducking':'voice-triggered; threshold .025, ratio 8, attack20ms/release250ms','fade_in':1,'fade_out':3,'provenance':spec.get('music_asset'),'listening':'not human-reviewed'}
     minimum,maximum=spec.get('target_duration',[180,300])
     if bgm:
         bgm['metrics'].pop('speech_identity',None)

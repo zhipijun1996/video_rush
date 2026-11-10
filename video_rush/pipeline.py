@@ -26,6 +26,17 @@ def cut_source_fingerprints(shot, assets):
             for x in shot['assets']]
 
 
+def background_music_filter(spec, duration):
+    start=spec.get('music_start_seconds',0)
+    if type(start) not in (int,float) or not math.isfinite(start) or not 0<=start<duration:
+        raise ValueError('Music start must be finite and inside the episode')
+    # Keep source game music alone during a complete opening gameplay take.
+    # Delay the supplied music itself, rather than merely muting its beginning.
+    delay=f'adelay={round(start*1000)}:all=1,' if start else ''
+    return (f'[2:a]{delay}volume={spec.get("music_gain",.16)},afade=t=in:st={start}:d=1,'
+            f'afade=t=out:st={max(start,duration-3)}:d=3[bg]')
+
+
 def delivery_members(output):
     output=Path(output)
     files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
@@ -132,6 +143,8 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         return [output/'media/manifest.json',*[a['local_path'] for a in media],*sorted((output/'recording-evidence').glob('*')),*sorted((output/'original_uploads').glob('*')),*[p for p in sorted((output/'source-evidence').rglob('*')) if p.is_file()],*sorted((output/'browser-evidence').glob('*'))]
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
     world_code=[sha(ROOT/'video_rush/world_recording.py'),sha(ROOT/'video_rush/drivers/fixed_world_intro.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='world_recording' for a in a_spec['assets']) else None
+    if any(a.get('origin')=='trial_recording' for a in a_spec['assets']):
+        world_code=[world_code,sha(ROOT/'video_rush/trial_recording.py'),sha(ROOT/'video_rush/drivers/stargate_trial.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')]
     camera_code=[sha(ROOT/'video_rush/camera_recording.py'),sha(ROOT/'video_rush/drivers/camera_progress.gd'),sha(ROOT/'video_rush/drivers/camera_story.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='camera_recording' for a in a_spec['assets']) else None
     stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'prior_delivery_code':sha(ROOT/'video_rush/episode_media.py') if any(a.get('origin')=='episode_artifact' for a in a_spec['assets']) else None,'world_recording_code':world_code,'camera_recording_code':camera_code,'archive_code':sha(ROOT/'video_rush/archive_media.py') if any(a.get('origin')=='archive' for a in a_spec['assets']) else None,'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
@@ -213,7 +226,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
             from .graphics import effects
             effects(output/'original-effects.wav',timeline)
             cmd+=['-stream_loop','-1','-i',music,'-i',output/'original-effects.wav','-filter_complex',
-                  f'[1:a]asplit=2[voice][side];[2:a]volume={spec.get("music_gain",.16)},afade=t=in:st=0:d=1,afade=t=out:st={max(0,timeline["duration"]-3)}:d=3[bg];[bg][side]sidechaincompress=threshold=0.025:ratio=8:attack=20:release=250[duck];[voice][duck][3:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.9[mix]',
+                  '[1:a]asplit=2[voice][side];'+background_music_filter(spec,timeline['duration'])+';[bg][side]sidechaincompress=threshold=0.025:ratio=8:attack=20:release=250[duck];[voice][duck][3:a]amix=inputs=3:duration=first:normalize=0,alimiter=limit=0.9[mix]',
                   '-map','0:v','-map','[mix]']
         else:
             cmd+=['-map','0:v','-map','1:a']

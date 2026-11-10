@@ -45,8 +45,11 @@ def collect(repo, spec, output):
             if 'frame_seconds' not in asset:obj['ffprobe']=probe(dest)
             collected.append(obj)
             continue
-        if origin=='world_recording':
-            from .world_recording import capture
+        if origin in {'world_recording','trial_recording'}:
+            if origin=='trial_recording':
+                from .trial_recording import capture
+            else:
+                from .world_recording import capture
             import shutil
             source,receipt=capture(repo,asset)
             evidence=output.parent/'recording-evidence';evidence.mkdir(exist_ok=True)

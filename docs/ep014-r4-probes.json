@@ -1,0 +1,121 @@
+{
+  "source_commit": "f1e9e0e8a9e7a156f36b02461c7cb848f1ac2b8d",
+  "source_worktree_head_unchanged": "7be8c340372d1e20db6685cbd6a559191821eb0e",
+  "source_worktree_dirty": false,
+  "attempts": [
+    {
+      "attempt": "p1",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 785,
+      "trace_sha256": "5389d96e6e3eb602eedf577437cf0d59e2d2d9fd85744ac6ff8bcc6ab529f7d9",
+      "log_sha256": "93f12c9d0939e3d565c461c94a08e17ce7bec8b1f743b4f1118e4846023a8176",
+      "failures": 1,
+      "last_phase": "incomplete_relay",
+      "health_values": [
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p2",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 908,
+      "trace_sha256": "a448a313deff545de4963c5ff8896a3e5d0a57621e1c141bb8a31ad3095e4cac",
+      "log_sha256": "50d743e074ba233e23af350d1b9379bb3c4a1b22e11e229908558d1ce9d2455e",
+      "failures": 1,
+      "last_phase": "incomplete_h2",
+      "health_values": [
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p3",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 882,
+      "trace_sha256": "254545c14051037dc177f58415680faf6f5efa3dd4ca997cd6c6481f85ae849c",
+      "log_sha256": "b172701a21f34dba29ae52308fdf93a299f09980c34c40efa853112833c2c241",
+      "failures": 1,
+      "last_phase": "incomplete_h2",
+      "health_values": [
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p4",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 1000,
+      "trace_sha256": "15455df4629cb1bbd4b1c9d683c3ec44a58bdfec30a5a7ed66874f18d2cd0718",
+      "log_sha256": "25d9e740e15fbcb2c785eef1a3f18e06b00775887b3653e7ad7fb10c06db4e33",
+      "failures": 1,
+      "last_phase": "incomplete_w6",
+      "health_values": [
+        4.0,
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p5",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 994,
+      "trace_sha256": "706a9c1308021c4f701c876e226c6e039f03409551a4215c8c5926083629abde",
+      "log_sha256": "b9f6c2f72d79c0e29560e3222fb8a52ac2a8846f72b2d610fcdb64e03efb159f",
+      "failures": 1,
+      "last_phase": "incomplete_w5",
+      "health_values": [
+        4.0,
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p6",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 1073,
+      "trace_sha256": "35f25aaa3f12d249a786f32d91760820fc83f689aa26ff08a92e14af775c5a7b",
+      "log_sha256": "b4ec16bf35d7d6375d6652df6407aa4331c5d74eca5d2ddb10c894be46ba43bf",
+      "failures": 1,
+      "last_phase": "incomplete_latch",
+      "health_values": [
+        5.0
+      ],
+      "finish_latch": false,
+      "returned": false
+    },
+    {
+      "attempt": "p7",
+      "kind": "headless_input_diagnostic_not_video",
+      "frames": 1381,
+      "trace_sha256": "36c5d8770d0d687a249f8d6b8dd81d28c306e087b55bd9a381c0c2314ef25bab",
+      "log_sha256": "0bd659d7c65d99720a1679af90049fa23fd645f026c2b968b2d6ffd667d6a579",
+      "failures": 0,
+      "last_phase": "returned",
+      "health_values": [
+        5.0
+      ],
+      "finish_latch": true,
+      "returned": true
+    }
+  ],
+  "observed_problem_and_resolution": [
+    "p1: changing movement axis before the jump edge detached W3, so the wall kick was lost; hold into the wall until the real jump request is consumed.",
+    "p2/p3: the upper baffle blocked a diagonal shortcut, then the hook was out of range; real wall kick plus horizontal recoil below the baffle, D and H connect legally.",
+    "p4: premature next ascent crossed the phase curtain while Q was cooling, causing a real hazard recovery; this attempt is rejected, not spliced into success.",
+    "p5: D after the upper curtain overshot the inner wall; steer to its safe right side, then attach after descending.",
+    "p6: actual finish platform reached at its edge, outside the lever radius; walk to the real interaction range.",
+    "p7: full input diagnostic reached the finish lever and legally returned to entry. Separate MovieMaker capture required for visual proof."
+  ],
+  "not_claimed": [
+    "Human play",
+    "Normal endgame progression",
+    "Fun/difficulty acceptance",
+    "Source basic test as a full clear (it uses an explicit upper teleport fixture)."
+  ]
+}
