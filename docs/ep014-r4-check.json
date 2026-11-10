@@ -1,0 +1,92 @@
+{
+  "status": "downloaded_and_independently_verified",
+  "final_sha256": "3b1c85bfd68ac100c3017db22be775a57bdad99882793978941ca52c294f9a14",
+  "cover_sha256": "8129999dbbc70684729720ba08b3c1ff4874c0b5c779a8f81e0aebfcff9aaf64",
+  "delivery_files": 54,
+  "media_assets": 22,
+  "pinned_documents": 19,
+  "seconds": 180.9,
+  "video_frames": 5427,
+  "native_movie_sha256": "c5aa99e80b103a1b10f11a3395c00327095766f1a961f06b53553b7e0734f6e9",
+  "native_trace_sha256": "36c5d8770d0d687a249f8d6b8dd81d28c306e087b55bd9a381c0c2314ef25bab",
+  "driver_sha256": "dd1c86e87756fb78f4d3afa1ca9b7e9d539d96b374fc132ada0f5aabad431480",
+  "engine_sha256": "eeaec2b65dc3234168be1e1cbcc89731514bbb78dfb2c1b502920c50830a0638",
+  "runtime_source_fingerprint_unchanged": true,
+  "source_commit": "f1e9e0e8a9e7a156f36b02461c7cb848f1ac2b8d",
+  "trial": {
+    "frames": 1381,
+    "capabilities": {
+      "D": true,
+      "H": true,
+      "Q": true,
+      "W": true
+    },
+    "hp": [
+      5.0
+    ],
+    "sessions": [
+      2
+    ],
+    "finish_latch": true,
+    "returned_to_entry": true,
+    "position_writes_after_entry": false,
+    "first_in_edit": true,
+    "source_offset": 0,
+    "edit_seconds": 23.1,
+    "full_original_gameplay_preserved": true
+  },
+  "prior_camera_assets": 12,
+  "prior_camera_original_sha": "9479fa78c4825552c385078b868031453a3a0ffc",
+  "voice_receipts": 21,
+  "voice": "zh-CN-YunxiNeural",
+  "bgm_entry_seconds": 23.1,
+  "technical": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_matches_brief": true,
+    "subtitles_in_bounds": true,
+    "subtitle_cues_do_not_overlap": true,
+    "action_labels_in_bounds": true,
+    "source_labels_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "decoded_audio_duration_matches_timeline": true,
+    "requested_music_source_valid": true,
+    "sources_present_and_hash_match": true,
+    "document_sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true,
+    "animated_diagrams_show_actual_motion": true
+  },
+  "human_phone_and_fun_acceptance": "pending",
+  "bilibili_published": false,
+  "run_id": 42816904335,
+  "artifact_id": 13765922562,
+  "artifact_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42816904335/artifacts/13765922562",
+  "archive_sha256": "8fea71146ea6fa472e886d0ccc3ea8b83991d2b3d14dbd36b21307ffb9a78d32",
+  "archive_bytes": 64974749,
+  "expires_at": "2026-11-24T12:43:26Z",
+  "actions_code_sha": "f3bff6964a96380e9e7551da425769ba6dd3848d",
+  "tests": {
+    "local": {
+      "passed": 111,
+      "skipped": 0
+    },
+    "actions": {
+      "passed": 110,
+      "skipped": 1,
+      "reason": "Existing optional Playwright/Chromium browser-only check; this episode records native Godot and has no browser footage."
+    }
+  },
+  "local_and_remote_trial_frame_traces_identical": true,
+  "prior_source_media_hashes_equal_original_r3_delivery": true,
+  "notes": [
+    "Native movie bytes differ from local encoding; the remote file is independently verified and is the review master.",
+    "Full original trial at media/stargate-full.mp4; first23.1s of final retains its complete actual play, with only post-teardown tail omitted.",
+    "No human fun/difficulty/voice/phone acceptance inferred from automatic checks."
+  ],
+  "source_worktree_clean": true
+}
