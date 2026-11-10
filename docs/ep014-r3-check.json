@@ -1,0 +1,130 @@
+{
+  "status": "downloaded_and_independently_verified",
+  "archive_sha256": "0474bee8177a51f8a8009cba894e18b2fde1d2e90119f3becf1a8cae24fdf9f8",
+  "final_sha256": "d80b86db511410b9f95f9dbbd3008ae65e2e3e923975e9cc415f208bafc29de6",
+  "cover_sha256": "569ab39508d4098816f442666ab734f5fd2e281adfbd53cafca95ad968478662",
+  "delivery_files": 45,
+  "media_assets": 20,
+  "pinned_documents": 11,
+  "fresh_native_cases": [
+    "arena",
+    "corner",
+    "fall",
+    "jump",
+    "lead",
+    "look",
+    "recoil",
+    "secret_enter",
+    "secret_preview",
+    "secret_return"
+  ],
+  "fresh_source_commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+  "native_trace_sha256": "c286591790d7ea0a2c2c6735d4284144f605c4e66406cd5251e57ed7593731d1",
+  "driver_sha256": "b828c71fa82bb94496537c405d85f99a7b7ade46ae69e50aac6352de4bc1ccf9",
+  "runtime_source_fingerprint_unchanged": true,
+  "actor_sessions_unchanged_in_every_clip": true,
+  "secret_segments_contiguous": true,
+  "hidden_actual_proof": {
+    "secret_preview": {
+      "seconds": 3.3333333333333335,
+      "first_zone": "lower",
+      "last_zone": "lower",
+      "concealed_values": [
+        true
+      ],
+      "last_chest_open": false,
+      "sessions": 1
+    },
+    "secret_enter": {
+      "seconds": 5.416666666666667,
+      "first_zone": "lower",
+      "last_zone": "secret",
+      "concealed_values": [
+        false,
+        true
+      ],
+      "last_chest_open": true,
+      "sessions": 1
+    },
+    "secret_return": {
+      "seconds": 3.9,
+      "first_zone": "secret",
+      "last_zone": "lift",
+      "concealed_values": [
+        false,
+        true
+      ],
+      "last_chest_open": true,
+      "sessions": 1
+    }
+  },
+  "actual_look_ahead": {
+    "min_lead": -95.8938078869259,
+    "max_lead": 95.9998445187079,
+    "actor_screen_fraction_range": [
+      0.388167722942944,
+      0.594711686591978
+    ]
+  },
+  "voice": "zh-CN-YunxiNeural",
+  "actual_voice_receipts": 20,
+  "duration": 157.8,
+  "fps": "30/1",
+  "frames": "4734",
+  "movie_bytes": 23671019,
+  "independent_full_decode": true,
+  "final_audio": {
+    "decoded_samples": 2524843,
+    "peak": 0.7191162109375,
+    "rms": 0.08919298157860447,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "black_intervals": [],
+  "unexpected_freeze_intervals": [],
+  "animated_diagrams": 8,
+  "human_phone_aesthetic_review": "pending",
+  "bilibili_uploaded": false,
+  "no_public_git_websites": true,
+  "checked_at": "2026-11-10T05:24:42.774744+00:00",
+  "episode": "ep014-r3",
+  "public_episode": "ep13",
+  "workflow_run": 42759991533,
+  "workflow_conclusion": "success",
+  "artifact_id": 13737297840,
+  "artifact_bytes": 52643236,
+  "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42759991533/artifacts/13737297840",
+  "expires_at": "2026-11-24T05:16:22Z",
+  "production_code_commit": "5eec9d046b1c32a16fd02c40cf90dbb99ed7872b",
+  "local_test_result": "108 passed; 5 existing Pillow warnings",
+  "test_log_sha256": "b43b77f12a57961a1bc66b57ee157613eb49d24a86c1bb7e8cdf87b9b5d35b16",
+  "local_render": {
+    "final_sha256": "afd38735cfbcaf8d53877cbdc95130868a8d67a858be47ec4a1325de94c62af3",
+    "cover_sha256": "569ab39508d4098816f442666ab734f5fd2e281adfbd53cafca95ad968478662",
+    "duration": 157.8,
+    "delivery_files": 45,
+    "technical_pass": true,
+    "voice": "zh-CN-YunxiNeural",
+    "voice_receipts": 20,
+    "test_result": "108 passed",
+    "source_worktree": "unchanged"
+  },
+  "source_pr147": {
+    "head": "9479fa78c4825552c385078b868031453a3a0ffc",
+    "draft": true,
+    "merged": false
+  },
+  "current_main_checked": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+  "camera_code_equals_checked_main": true,
+  "source_game_original_worktree_unchanged": true,
+  "visual_layout_spot_checks": [
+    "Moving screen window and right/left lead arrows; no duplicate title overlap",
+    "Hidden state diagram shows outside/open eligibility/entry/return in actual speech order",
+    "Actual plant-chamber reveal and real chest interaction",
+    "Actual return restores outside mask/composition",
+    "Cover uses real chamber recording"
+  ],
+  "opening_rule_scope": "Generic mechanism-gated connection diagram; actual P24 plant entry has no independent opening mechanism.",
+  "review_master_policy": "Hosted final_sha256/cover_sha256 below supersede ep014 and ep014-r2 for any later explicit ep13 posting approval. No upload currently authorized/performed."
+}
