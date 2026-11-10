@@ -1,0 +1,158 @@
+{
+  "main": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+  "footage_commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+  "pr147": {
+    "draft": true,
+    "merged": false,
+    "updated_at": "2026-11-10T03:18:29Z"
+  },
+  "pr148_head_checked": "d2a75c6a03572b6cdf0d39033faa75f55e36f275",
+  "camera_same_git_blobs_as_main": {
+    "game/presentation/ui/world/world_camera.gd": "255ad26cb8e5b6758af5dda3f1ae98f3e0b78ca5",
+    "game/presentation/ui/world/world_camera_zones.gd": "ee51b0bb84d2b88281aa76dd100b86aa870926ae"
+  },
+  "native": {
+    "source_commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+    "engine": "4.7.2.stable.custom_build.gunman_sd1.ed1daf0bf",
+    "engine_sha256": "eeaec2b65dc3234168be1e1cbcc89731514bbb78dfb2c1b502920c50830a0638",
+    "driver_sha256": "b828c71fa82bb94496537c405d85f99a7b7ade46ae69e50aac6352de4bc1ccf9",
+    "runtime_fingerprint_before": "ee8ba06c6aa25d58c565172d9ea30bb4f7332ebd9616affbc6d829a40dfd4e6b",
+    "runtime_fingerprint_after": "ee8ba06c6aa25d58c565172d9ea30bb4f7332ebd9616affbc6d829a40dfd4e6b",
+    "driver_completed_successfully": true,
+    "trace_sha256": "c286591790d7ea0a2c2c6735d4284144f605c4e66406cd5251e57ed7593731d1",
+    "movie_sha256": "3e3617a3233caabf6af287cad583afa1bb66ab0b02a695ccd993ea32a4e5c3b0",
+    "camera_sha256": "4309434c5debef88c36a0b1897a571825f3ba42d9a4e8a01cac1b9933306ed30"
+  },
+  "segments": [
+    {
+      "end_frame": 386,
+      "id": "lead",
+      "start_frame": 91
+    },
+    {
+      "end_frame": 761,
+      "id": "jump",
+      "start_frame": 477
+    },
+    {
+      "end_frame": 1167,
+      "id": "recoil",
+      "start_frame": 852
+    },
+    {
+      "end_frame": 1627,
+      "id": "fall",
+      "start_frame": 1258
+    },
+    {
+      "end_frame": 2118,
+      "id": "look",
+      "start_frame": 1718
+    },
+    {
+      "end_frame": 2386,
+      "id": "corner",
+      "start_frame": 2209
+    },
+    {
+      "end_frame": 2677,
+      "id": "secret_preview",
+      "start_frame": 2477
+    },
+    {
+      "end_frame": 3002,
+      "id": "secret_enter",
+      "start_frame": 2677
+    },
+    {
+      "end_frame": 3236,
+      "id": "secret_return",
+      "start_frame": 3002
+    },
+    {
+      "end_frame": 3521,
+      "id": "arena",
+      "start_frame": 3301
+    }
+  ],
+  "facts": {
+    "look_ahead": {
+      "lead_min": -95.8938078869259,
+      "lead_max": 95.9998445187079,
+      "actor_screen_x_fraction_min": 0.388167722942944,
+      "actor_screen_x_fraction_max": 0.594711686591978
+    },
+    "secret_preview": {
+      "first_zone": "lower",
+      "last_zone": "lower",
+      "concealment_states": [
+        true
+      ],
+      "last_chest_open": false,
+      "sessions": 1
+    },
+    "secret_enter": {
+      "first_zone": "lower",
+      "last_zone": "secret",
+      "concealment_states": [
+        false,
+        true
+      ],
+      "last_chest_open": true,
+      "sessions": 1
+    },
+    "secret_return": {
+      "first_zone": "secret",
+      "last_zone": "lift",
+      "concealment_states": [
+        false,
+        true
+      ],
+      "last_chest_open": true,
+      "sessions": 1
+    },
+    "secret_segments_contiguous_without_reset": true,
+    "all_marked_clips_no_respawn": true
+  },
+  "human_review": "pending",
+  "local_tests": "108 passed; 5 existing Pillow warnings",
+  "test_log_sha256": "b43b77f12a57961a1bc66b57ee157613eb49d24a86c1bb7e8cdf87b9b5d35b16",
+  "failures_preserved": [
+    "preflight.log: stale P23 navigation; preview catalog missing, so candidate Boss not loaded",
+    "preflight-r2.log: unsuitable ordinary-jump climb on changed P23",
+    "produce.log: original diagram footer font27 below renderer minimum28"
+  ],
+  "fixes": [
+    "Use a clear original P01 bank for look-ahead/jump/view; use source tutorial jump+recoil input for new P23 climb",
+    "Compile exact source workbench preview catalog before loading original P14 candidate",
+    "Raise diagram footer to28; no freeze/FPS/source checks disabled"
+  ],
+  "source_driver_sha256": "b828c71fa82bb94496537c405d85f99a7b7ade46ae69e50aac6352de4bc1ccf9",
+  "failure_evidence": [
+    {
+      "log": "preflight.log",
+      "sha256": "68885212ca18d1a05a78782c8bcec4a1892a84378d5756b1e446f94a5db33571",
+      "excerpt": [
+        "INTRO false authored climb",
+        "ERROR: Parse JSON failed. Error at line 0: Unknown error getting token",
+        "INTRO false actual Boss entry activated",
+        "INTRO false arena composition active"
+      ]
+    },
+    {
+      "log": "preflight-r2.log",
+      "sha256": "d82ac68765805fff973e48f8bbfedf09ad50b111684a438a1f62498e50e390a2",
+      "excerpt": [
+        "STUCK P-R23 (300.0, 621.9252) -> (1232.0, 238.0) 废弃候车棚",
+        "INTRO false authored climb"
+      ]
+    },
+    {
+      "log": "produce.log",
+      "sha256": "8ef7ca73a3a09c8bae710087bc3698344f1c61c74aa4c7f54de42ca1ac1b6b7a",
+      "excerpt": [
+        "Video Rush failed: Diagram label too long: 连接规则示意 · 非实机；临时镜头不保存。下段实机为无独立开门机关的植物入口。"
+      ]
+    }
+  ]
+}

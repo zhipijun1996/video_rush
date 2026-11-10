@@ -2005,6 +2005,13 @@
       "priority": "high",
       "reason": "用户实看认为新旧差异不直观。改为本作类银镜头取舍：读落点、记空间、回访、按房型构图、移动意图、纵向响应与主动查看；不夸大提升。"
     },
-    "editorial_feedback": "2026-11-10: Yunjian rejected; restore Yunxi. Explain design motivation instead of dramatic difference."
+    "editorial_feedback": "2026-11-10: Yunjian rejected; restore Yunxi. Explain design motivation instead of dramatic difference.",
+    "latest_episode_revision": {
+      "episode": "ep014-r3",
+      "source_commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "pr": 147,
+      "truth_status": "draft_source_fresh_native_camera_recording",
+      "focus": "前瞻的实际构图与动态亮框；隐藏区域的遮挡/资格/交接/返回，实际植物暗室连续进出。"
+    }
   }
 ]

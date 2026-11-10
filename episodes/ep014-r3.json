@@ -1,0 +1,724 @@
+{
+  "schema_version": 2,
+  "episode": "ep014-r3",
+  "title": "类银河恶魔城的镜头，该看清什么、藏住什么？ | 【失序之钟】独游折腾记 ep13【B站AI创造公开赛】",
+  "title_candidates": [
+    "前瞻、暗室与看路：我给类银河恶魔城做镜头 | 【失序之钟】独游折腾记 ep13【B站AI创造公开赛】"
+  ],
+  "repository": "zhipijun1996/gunman-rush",
+  "asset_spec": "episodes/ep014-r3-assets.json",
+  "story_ids": [
+    "S_CAMERA_REBUILD"
+  ],
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+5%",
+  "playback_speed": 1.02,
+  "display_chapters": false,
+  "editorial_status": "source_checked_human_phone_review_pending",
+  "music_asset": {
+    "path": "build/music/the_kindred_hearth-actions.ogg",
+    "sha256": "e7228300dda460323972420b9fb75df72b29409453663fb30021ebe4e9a5fff4",
+    "original_sha256": "530502f6dd825d6fb5168454240d4ac3d68c63b701f6202b169c15c11a073896",
+    "original_filename": "the_kindred_hearth.mp3",
+    "source": "User upload; first145s mono Opus20kbps derivative for Actions transport; may loop as low background",
+    "usage": "User requested light BGM and provided this track",
+    "license_status": "user supplied and requested use; original creator/license not independently specified"
+  },
+  "music_gain": 0.09,
+  "game_audio_gain": 0,
+  "target_duration": [
+    130,
+    195
+  ],
+  "cover_assets": [
+    "cover-secret",
+    "cover-lead"
+  ],
+  "cover": {
+    "layout": "manga",
+    "series": "失序之钟 · 独游折腾记 ep13",
+    "line1": "镜头先看前面",
+    "line2": "暗室别提前剧透"
+  },
+  "research_scope": {
+    "status": "targeted_latest_branch_and_current_main_camera_research",
+    "repository": "zhipijun1996/gunman-rush",
+    "main_sha": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+    "footage_commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+    "pr147": {
+      "draft": true,
+      "merged": false,
+      "head": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "updated_at": "2026-11-10T03:18:29Z"
+    },
+    "other_branch_checked": {
+      "pr": 148,
+      "head": "d2a75c6a03572b6cdf0d39033faa75f55e36f275",
+      "draft": true
+    },
+    "coverage": "Read main/open PR147+148 metadata, pinned latest room/camera/authoring/config/test sources. Camera/zone Git blobs identical to current main; latest PR147 scenes used for fresh original-controller recording. Not a full-history rescan.",
+    "scope_limits": [
+      "PR147 is unmerged; 35 workbench candidates do not mean a completed formal35-room region.",
+      "Declared local starts; P14 via exact source workbench bridge; no main-route/full-clear/device-performance claim.",
+      "Plant entrance has no separate opening mechanism; opening-gated behavior is an explicitly labelled general camera-rule diagram, not fake footage of a locked plant doorway.",
+      "Hidden preview/entry/return are continuous legal-input footage with real chest interaction; headless checks alone were not visual evidence."
+    ]
+  },
+  "evidence": [
+    {
+      "id": "current",
+      "kind": "pinned_latest_development_source",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "pr": 147,
+      "url": "https://github.com/zhipijun1996/gunman-rush/pull/147",
+      "scope": "Unmerged PR147, actual P01/P22/P23/P24/P14 scenes and current camera read. Exact source documents retained."
+    },
+    {
+      "id": "camera-owner",
+      "kind": "pinned_source_implementation",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "scope": "WorldCamera and WorldCameraZones Git blobs exactly match current main; future view depends on movement intent, zones/links, concealment and opening eligibility."
+    },
+    {
+      "id": "fresh-native",
+      "kind": "new_actual_native_recordings",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "scope": "Actual10 bounded native segments; declared local starts, no position/state/progress writes during clips; real hidden entry/chest/return, actual Boss activation. Source fingerprints and motion trace verified."
+    },
+    {
+      "id": "hidden-rules",
+      "kind": "source_rule_and_separate_actual_example",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "scope": "available() gates flags/mechanism state; opening alone does not move view outside portal; concealment follows active/transition zone. P24 plant example has no separate gate; diagram explicitly distinguishes it."
+    },
+    {
+      "id": "user-r3",
+      "kind": "user_editorial_request",
+      "text": "Add hidden-room camera and explicit look-ahead explanation/diagrams; latest footage may be used. Keep restored Yunxi voice."
+    },
+    {
+      "id": "reflection",
+      "kind": "authored_developer_design_reasoning",
+      "scope": "Motivation and tradeoffs, not invented personal chronology, player testing or acceptance."
+    }
+  ],
+  "shots": [
+    {
+      "id": "r2c01",
+      "chapter": "1",
+      "title": "这次讲镜头在帮什么忙",
+      "narration": "我在把反冲跳跃游戏改成类银河恶魔城。镜头这次想先做好一件事：让玩家看懂路。",
+      "assets": [
+        "recoil",
+        "jump"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 9.7,
+      "safe_frame": true,
+      "game_audio_gain": 0,
+      "presentation": "montage",
+      "montage_weights": [
+        5.1,
+        4.6
+      ],
+      "emphasis": "这次聊：镜头为什么这样做"
+    },
+    {
+      "id": "r2c02",
+      "chapter": "1",
+      "title": "为什么类银需要考虑镜头",
+      "narration": "平台跳跃要看清落点，类银还要让人记住空间。我希望玩家看见暂时去不了的高台，记住它，等拿到新能力，再回来找路。",
+      "assets": [
+        "why"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram",
+      "emphasis": "看见，不等于现在就能去"
+    },
+    {
+      "id": "r3lead-diagram",
+      "chapter": "1",
+      "title": "前瞻的屏幕范围示意",
+      "narration": "前瞻，就是给前进方向多留一点视野。往右走，主角稍靠左，前面就能早一点看见。掉头后慢慢换边，停下先保留。",
+      "assets": [
+        "lead-window"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r3lead",
+      "chapter": "1",
+      "title": "前瞻在实机里是什么",
+      "narration": "认的是移动方向，反向开枪也别乱甩。",
+      "assets": [
+        "lead"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 4.86,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "action_labels": [
+        {
+          "start": 0,
+          "end": 1.42,
+          "text": "向右走：视野留在前方 →"
+        },
+        {
+          "start": 1.42,
+          "end": 2.66,
+          "text": "反向开枪：观察方向先保持"
+        },
+        {
+          "start": 2.66,
+          "end": 4.86,
+          "text": "← 确认掉头后，平滑换边"
+        }
+      ]
+    },
+    {
+      "id": "r2c05",
+      "chapter": "1",
+      "title": "短反冲别抢镜头",
+      "narration": "一次反冲，别把画面也猛拽一下。",
+      "assets": [
+        "recoil"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 5.2,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "r2c06",
+      "chapter": "1",
+      "title": "不同房间不同跟法",
+      "narration": "房间也分着处理。横廊主要横着跟，竖井主要上下跟；大房间在边界内跟随，小场地就固定构图。先让每种空间看得明白。",
+      "assets": [
+        "room-types"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r2c07",
+      "chapter": "1",
+      "title": "上下移动怎么兼顾",
+      "narration": "上下移动，我想兼顾稳和看得见。小跳只轻轻抬落，真跨了高度就继续跟，快速下落时再及时追下来。",
+      "assets": [
+        "vertical"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r2c08",
+      "chapter": "1",
+      "title": "小跳别晃背景",
+      "narration": "跳个台阶，背景不用一起蹦。",
+      "assets": [
+        "jump"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 4.7,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "r2c09",
+      "chapter": "1",
+      "title": "长下落要交代路",
+      "narration": "真往下掉，下面的路要及时交代。",
+      "assets": [
+        "fall"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 6.1,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "r2c10",
+      "chapter": "1",
+      "title": "跨层也得接住",
+      "narration": "换高度，也得跟上。",
+      "assets": [
+        "corner"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 2.9,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "r2c11",
+      "chapter": "1",
+      "title": "玩家主动观察",
+      "narration": "想看看上下？站稳后按住方向，稍等，就能多看一眼。",
+      "assets": [
+        "look"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 6.6,
+      "safe_frame": true,
+      "game_audio_gain": 0.14
+    },
+    {
+      "id": "r2c12",
+      "chapter": "1",
+      "title": "观察为什么是低优先级",
+      "narration": "这给探索留个主动观察的机会。但想走、想跳、想开枪，都先响应动作。查看取消，再平滑回到正常构图。",
+      "assets": [
+        "look-rules"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r3secret-preview",
+      "chapter": "1",
+      "title": "暗室不能提前露底",
+      "narration": "暗室，可不能提前露底。",
+      "assets": [
+        "secret_preview"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "hidden-rules",
+        "fresh-native",
+        "user-r3"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_source_hidden_rules_and_labeled_actual_development_example",
+      "fact_check": "Generic opening-gated rules are a diagram; actual continuous P24 plant entry has no separate opening mechanism. No invented gate interaction, no player transform writes or fake treasure.",
+      "shot_type": "hidden_camera_explanation",
+      "min_duration": 3.3,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "在外侧查看，也不露出内部"
+    },
+    {
+      "id": "r3secret-diagram",
+      "chapter": "1",
+      "title": "进入过渡带再交接",
+      "narration": "没走进去以前，前瞻、查看和震动，都不能漏出暗室。有机关的通路，打开机关也不直接拉镜头。走进入口过渡带，再逐步交给里面；退出来，就交还外侧构图。",
+      "assets": [
+        "hidden-window"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "hidden-rules",
+        "fresh-native",
+        "user-r3"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_source_hidden_rules_and_labeled_actual_development_example",
+      "fact_check": "Generic opening-gated rules are a diagram; actual continuous P24 plant entry has no separate opening mechanism. No invented gate interaction, no player transform writes or fake treasure.",
+      "shot_type": "hidden_camera_explanation",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r3secret-enter",
+      "chapter": "1",
+      "title": "试探与进入暗室",
+      "narration": "中途掉头，也能退回。走进去，再交给暗室。",
+      "assets": [
+        "secret_enter"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "hidden-rules",
+        "fresh-native",
+        "user-r3"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_source_hidden_rules_and_labeled_actual_development_example",
+      "fact_check": "Generic opening-gated rules are a diagram; actual continuous P24 plant entry has no separate opening mechanism. No invented gate interaction, no player transform writes or fake treasure.",
+      "shot_type": "hidden_camera_explanation",
+      "min_duration": 5.36,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "连续实机：试探 → 进入 → 宝箱"
+    },
+    {
+      "id": "r3secret-return",
+      "chapter": "1",
+      "title": "恢复外侧的构图",
+      "narration": "退出来，构图还给外侧。",
+      "assets": [
+        "secret_return"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "hidden-rules",
+        "fresh-native",
+        "user-r3"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_source_hidden_rules_and_labeled_actual_development_example",
+      "fact_check": "Generic opening-gated rules are a diagram; actual continuous P24 plant entry has no separate opening mechanism. No invented gate interaction, no player transform writes or fake treasure.",
+      "shot_type": "hidden_camera_explanation",
+      "min_duration": 3.86,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "返回外侧；奖励状态不重置"
+    },
+    {
+      "id": "r2c13",
+      "chapter": "1",
+      "title": "Boss尺度",
+      "narration": "进战场，角色大小先稳住。",
+      "assets": [
+        "arena"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 3.6,
+      "safe_frame": true,
+      "game_audio_gain": 0.14,
+      "emphasis": "候选场景Boss入场 · 非完整Boss战"
+    },
+    {
+      "id": "r2c15",
+      "chapter": "1",
+      "title": "为什么不把整个场地塞进来",
+      "narration": "因为战斗时，我更在意距离好判断，角色和招式别忽大忽小。这是我这套反冲玩法的取舍，不是所有类银都得这样。",
+      "assets": [
+        "boss-rules"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r2c16",
+      "chapter": "1",
+      "title": "没完成的部分",
+      "narration": "说到底，镜头是在帮玩家读空间。看得清、操作稳，还要保留探索的好奇心。现在先磨这一小段，关卡本身也还得继续改。",
+      "assets": [
+        "limits"
+      ],
+      "offsets": [
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 0,
+      "presentation": "animated_diagram"
+    },
+    {
+      "id": "r2c17",
+      "chapter": "1",
+      "title": "继续听建议",
+      "narration": "你们觉得哪里看着别扭，也帮我挑一挑。后面继续打磨。",
+      "assets": [
+        "fall",
+        "jump"
+      ],
+      "offsets": [
+        0,
+        0
+      ],
+      "prs": [
+        147
+      ],
+      "evidence": [
+        "current",
+        "camera-owner",
+        "fresh-native",
+        "reflection"
+      ],
+      "transition": "cut",
+      "claim_type": "verified_current_camera_behavior_and_explicit_design_reasoning",
+      "fact_check": "PR147 unmerged development scenes, fixed full SHA. Fresh actual controller footage, not a complete route or gameplay-quality acceptance. Explanatory diagrams explicitly labelled.",
+      "shot_type": "camera_method_explained_with_actual_current_recording",
+      "min_duration": 10.7,
+      "safe_frame": true,
+      "game_audio_gain": 0,
+      "presentation": "montage",
+      "montage_weights": [
+        6.05,
+        4.65
+      ],
+      "emphasis": "还在尝试，欢迎提建议"
+    }
+  ],
+  "bilibili_body": "用AI做《失序之钟》，继续尝试类银河恶魔城。这版补讲前瞻和隐藏房间镜头：视野为什么往移动方向留空间，反向开枪为什么不抢观察方向；暗室未进入时怎样避免透底，走进入口后怎样交接，返回后怎样恢复外侧构图。\n\n用动态亮框示意屏幕范围，再看最新PR147开发分支的真实录屏：移动、小跳、反冲、下落、主动查看、植物暗室试探/进入/宝箱/返回，以及候选场景Boss入场。镜头代码与当前主分支一致，场景来自尚未合并的开发分支。\n\n有机关的隐藏连接规则用示意解释；本次植物入口没有独立开门机关。暗室进出片段连续、无中途定位重置。其余片段为局部起点测试，Boss部分不是完整通关；35房候选不代表整区已完成。\n\n镜头与关卡都还在打磨，继续听大家建议。云希AI配音；实机与示意分别标注。\n\n#B站AI创造公开赛\n标签：B站AI创造公开赛、独立游戏、游戏开发、Godot、失序之钟、类银河恶魔城\n分区：游戏 → 单机游戏",
+  "comparison": "No old/new improvement claim. Fresh PR147 development footage explains actual current movement look-ahead and hidden composition handoff; generic mechanism-opening behavior is labelled as a diagram, distinct from the ungated plant entrance.",
+  "comparison_review": "前瞻亮框为原理示意，不是旧版对比；机关开启的通用规则不冒充植物入口有门；暗室三段实机连续无定位重置；草稿场景不误认为完整正式35房。",
+  "rights": [
+    {
+      "kind": "gameplay",
+      "status": "Own project real native recordings; project-generated art and original project licenses, Underworld Tileset / Asouris retained. No blanket CC0."
+    },
+    {
+      "kind": "voice",
+      "status": "Edge Yunxi synthetic Mandarin restored at user request; no voice cloning, independent listening pending."
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK SIL OFL"
+    },
+    {
+      "kind": "music",
+      "status": "user supplied and requested use; original creator/license not independently specified"
+    }
+  ],
+  "pitch": "+0Hz",
+  "editorial_revision": "Explicit look-ahead moving-window schematic plus signed-intent actual footage; hidden-room preview/entry/return and generic gated opening behavior clearly distinguished. Fresh source-pinned unmerged PR147 scenes; restored Yunxi retained."
+}

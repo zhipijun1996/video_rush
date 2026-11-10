@@ -20,7 +20,7 @@ def collect_documents(documents,output):
         dest=output/d['id']/path.name
         if not dest.exists() or sha(dest)!=d['sha256']:
             r=requests.get(expected,timeout=45);r.raise_for_status()
-            if len(r.content)>2_000_000:raise ValueError('Source document exceeds2MB')
+            if len(r.content)>8_000_000:raise ValueError('Source document exceeds8MB')
             if hashlib.sha256(r.content).hexdigest()!=d['sha256']:raise ValueError('Source document bytes differ: '+d['id'])
             dest.parent.mkdir(parents=True,exist_ok=True);dest.write_bytes(r.content)
         data=dest.read_bytes();blob=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()

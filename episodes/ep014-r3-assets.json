@@ -1,0 +1,2396 @@
+{
+  "schema_version": 2,
+  "repository": "zhipijun1996/gunman-rush",
+  "documents": [
+    {
+      "id": "latest-camera-0",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "docs/project/current_state.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/docs/project/current_state.md",
+      "sha256": "58d587aa57ccd47dcdc86ab97b93face71159ae2b23561cca056a2e577b66057",
+      "blob_sha": "e7244cbdc86a0135cb47cedf76f028af6027aa8d"
+    },
+    {
+      "id": "latest-camera-1",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "docs/project/worklines/mobile_level_workbench_01/scope.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/docs/project/worklines/mobile_level_workbench_01/scope.md",
+      "sha256": "7ddd489fb1431bce23bb09fcfa30d21a655676dd18bf6256d18a2639488854d1",
+      "blob_sha": "9ddb8958beea357c700d083fd30288e007d4073f"
+    },
+    {
+      "id": "latest-camera-2",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "docs/project/worklines/plains_bible_v2_01/scope.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/docs/project/worklines/plains_bible_v2_01/scope.md",
+      "sha256": "12d0f448327b5cd37f74b9dab14ecf440ab105b3620b8e0421bd0c0508ed54ad",
+      "blob_sha": "7fe7b1d0c0668bca2e16b412ce5241c06fd7f2a8"
+    },
+    {
+      "id": "latest-camera-3",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "docs/bible/room_authoring.md",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/docs/bible/room_authoring.md",
+      "sha256": "6f10673fab7f8f3e68044b3a6b68b0e325a6e0b42cc9c2acafa64ca29eadfff5",
+      "blob_sha": "34b5b197341d0849be2a004578d03940da3e9f8d"
+    },
+    {
+      "id": "latest-camera-4",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "game/presentation/ui/world/world_camera.gd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/game/presentation/ui/world/world_camera.gd",
+      "sha256": "4309434c5debef88c36a0b1897a571825f3ba42d9a4e8a01cac1b9933306ed30",
+      "blob_sha": "255ad26cb8e5b6758af5dda3f1ae98f3e0b78ca5"
+    },
+    {
+      "id": "latest-camera-5",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "game/presentation/ui/world/world_camera_zones.gd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/game/presentation/ui/world/world_camera_zones.gd",
+      "sha256": "4bc705a27ca2fff03e2a9403209b2817e366ec9a40302403bc1a8ba48b65e245",
+      "blob_sha": "ee51b0bb84d2b88281aa76dd100b86aa870926ae"
+    },
+    {
+      "id": "latest-camera-6",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "config/world/player.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/config/world/player.json",
+      "sha256": "84138dcad6395019cfd781a69fe35981889d42d9a720e51b6ef8918962abd231",
+      "blob_sha": "a628ee6338ea02d007c8c9fa43ee10e61b0f88c6"
+    },
+    {
+      "id": "latest-camera-7",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "config/world/construction.json",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/config/world/construction.json",
+      "sha256": "3ec923c99ead19bea860f790634d164ddcce8eb0478b569d7070743d9b595394",
+      "blob_sha": "6bd59b1db199feaf107597d45f9dceed2e638e59"
+    },
+    {
+      "id": "latest-camera-8",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "game/world/regions/P/rooms/P-R24.tscn",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/game/world/regions/P/rooms/P-R24.tscn",
+      "sha256": "2b5ebededc5e2e8e2ffbd0e145fefe6781a4e5602efd16f701b214427f540333",
+      "blob_sha": "6980da6d921d082807c10d9da6ee9271fee325ba"
+    },
+    {
+      "id": "latest-camera-9",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "game/world/regions/P/rooms/P-R01.tscn",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/game/world/regions/P/rooms/P-R01.tscn",
+      "sha256": "8732a924051e6cf65b8361fe99b74b33587dbf51c5d00999cb633b09f47a10f0",
+      "blob_sha": "6a808a8eaf5000a76b8163460b3437d0bac05064"
+    },
+    {
+      "id": "latest-camera-10",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "path": "tests/world/plains_overlook.gd",
+      "url": "https://raw.githubusercontent.com/zhipijun1996/gunman-rush/9479fa78c4825552c385078b868031453a3a0ffc/tests/world/plains_overlook.gd",
+      "sha256": "1b7f480cae14bf8eb1e4e4fc29f44c8b5d6dd8033a204cef6c7946d4a846b4d4",
+      "blob_sha": "f7e501ec44189e933cdab70be89452977ac47da6"
+    }
+  ],
+  "assets": [
+    {
+      "id": "lead",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "lead",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 前瞻／转向 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "jump",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "jump",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 小跳 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "recoil",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "recoil",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 反冲路段 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "fall",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "fall",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 连续下落 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "look",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "look",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 主动查看 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "corner",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "corner",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 反冲爬升 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "secret_preview",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "secret_preview",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 暗室外侧查看 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "secret_enter",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "secret_enter",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 试探／进入暗室 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "secret_return",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "secret_return",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 走出暗室 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "arena",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "arena",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 候选场景Boss入场 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained."
+    },
+    {
+      "id": "cover-secret",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "secret_enter",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 试探／进入暗室 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained.",
+      "frame_seconds": 4.1
+    },
+    {
+      "id": "cover-lead",
+      "origin": "camera_recording",
+      "repository": "zhipijun1996/gunman-rush",
+      "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
+      "profile": "latest_story",
+      "case": "lead",
+      "kind": "original_game_recording",
+      "pr": 147,
+      "display_label": "PR147开发分支 · 前瞻／转向 · 局部起点",
+      "truth": "Fresh normal-speed native recording at frozen unmerged PR147. Original controller/collision and actual nearby interaction. Hidden preview/entry/return are contiguous without resets; P14 via exact source preview bridge, not a main-route or full-clear proof.",
+      "rights": "Own project recording; Underworld/Asouris and original project licenses retained.",
+      "frame_seconds": 1.9
+    },
+    {
+      "id": "why",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "探索与回访设计目标 · 非已完成路线",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "类银不只看下一跳，还要记住空间",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "探索与回访设计目标 · 非已完成路线",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "看见目标",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "高处那条路，现在还去不了",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "记住位置",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "留下可辨认的空间关系",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "有能力再回访",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "让“我记得这里”有意义",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "vertical",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "小动作稳，大幅移动跟得上",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "小跳",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "只给很轻的起落偏移",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "跨高度",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "基础构图负责连续跟随",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "快速下落",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "及时追赶，交代下面的路",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "look-rules",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "多看一眼，不能耽误操作",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "站稳后按住",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "短延迟后查看上下",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "走、跳、攻击",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "动作优先，查看取消",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "松开方向",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "平滑回到当前构图",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "boss-rules",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "本作镜头取舍示意 · 不代表全部类银的统一做法",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "战斗里，距离和尺度要好判断",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "本作镜头取舍示意 · 不代表全部类银的统一做法",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "角色大小稳定",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "入场和战斗保持缩放",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "场地宽",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "平移与有限跟随",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "按真实封墙约束",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "前瞻、震动也不露墙外",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "limits",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "镜头设计示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "background": "#101b2b",
+        "elements": [
+          {
+            "type": "text",
+            "x": 105,
+            "y": 210,
+            "text": "镜头是一部分，关卡还得继续做",
+            "size": 58,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "text",
+            "x": 105,
+            "y": 845,
+            "text": "镜头设计示意 · 非实机",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#efd397",
+            "radius": 16,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 132,
+            "y": 394.5,
+            "text": "当前小段",
+            "size": 42,
+            "color": "#efd397",
+            "width": 470,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "text",
+            "x": 128,
+            "y": 535,
+            "text": "先检验看路与连续动作",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g0"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                620,
+                418
+              ],
+              [
+                690,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#efd397",
+            "width": 6,
+            "group": "g0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              705,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "radius": 16,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 727,
+            "y": 394.5,
+            "text": "探索与操作",
+            "size": 42,
+            "color": "#89dfd1",
+            "width": 470,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "text",
+            "x": 723,
+            "y": 535,
+            "text": "可读性、好奇心一起磨",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1215,
+                418
+              ],
+              [
+                1285,
+                418
+              ]
+            ],
+            "arrow": true,
+            "color": "#89dfd1",
+            "width": 6,
+            "group": "g1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1300,
+              350,
+              510,
+              135
+            ],
+            "fill": "#182c3c",
+            "color": "#aab6ff",
+            "radius": 16,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1322,
+            "y": 394.5,
+            "text": "还未完成",
+            "size": 42,
+            "color": "#aab6ff",
+            "width": 470,
+            "bold": true,
+            "group": "g2"
+          },
+          {
+            "type": "text",
+            "x": 1318,
+            "y": 535,
+            "text": "整区与手机体验继续验",
+            "size": 34,
+            "color": "#eef3fa",
+            "width": 490,
+            "bold": true,
+            "group": "g2"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "g0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g1",
+            "start": 0.24,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "g2",
+            "start": 0.43,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.02,
+            "from": [
+              0,
+              45
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-types",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "四种房间镜头模板 · 原理示意",
+      "graphic": {
+        "layout": "diagram",
+        "elements": [
+          {
+            "type": "text",
+            "x": 100,
+            "y": 150,
+            "text": "按空间选构图，不是一套跟随用到底",
+            "size": 55,
+            "bold": true,
+            "color": "#eef3fa"
+          },
+          {
+            "type": "text",
+            "x": 100,
+            "y": 860,
+            "text": "镜头模板原理示意 · 非实机 · 每房按玩法配置",
+            "size": 28,
+            "color": "#b9c9dc"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              285,
+              820,
+              220
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "group": "room0"
+          },
+          {
+            "type": "text",
+            "x": 138,
+            "y": 323,
+            "text": "横廊：主要横着跟",
+            "size": 43,
+            "width": 760,
+            "bold": true,
+            "color": "#efd397",
+            "group": "room0"
+          },
+          {
+            "type": "text",
+            "x": 138,
+            "y": 404,
+            "text": "镜头上下移动受约束",
+            "size": 35,
+            "width": 760,
+            "color": "#eef3fa",
+            "group": "room0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              980,
+              285,
+              820,
+              220
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "group": "room1"
+          },
+          {
+            "type": "text",
+            "x": 1008,
+            "y": 323,
+            "text": "竖井：主要上下跟",
+            "size": 43,
+            "width": 760,
+            "bold": true,
+            "color": "#efd397",
+            "group": "room1"
+          },
+          {
+            "type": "text",
+            "x": 1008,
+            "y": 404,
+            "text": "镜头左右移动受约束",
+            "size": 35,
+            "width": 760,
+            "color": "#eef3fa",
+            "group": "room1"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              110,
+              550,
+              820,
+              220
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "group": "room2"
+          },
+          {
+            "type": "text",
+            "x": 138,
+            "y": 588,
+            "text": "大房间：双轴范围跟随",
+            "size": 43,
+            "width": 760,
+            "bold": true,
+            "color": "#efd397",
+            "group": "room2"
+          },
+          {
+            "type": "text",
+            "x": 138,
+            "y": 669,
+            "text": "跟着走，但留在展示边界里",
+            "size": 35,
+            "width": 760,
+            "color": "#eef3fa",
+            "group": "room2"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              980,
+              550,
+              820,
+              220
+            ],
+            "fill": "#182c3c",
+            "color": "#89dfd1",
+            "group": "room3"
+          },
+          {
+            "type": "text",
+            "x": 1008,
+            "y": 588,
+            "text": "小场地：固定构图",
+            "size": 43,
+            "width": 760,
+            "bold": true,
+            "color": "#efd397",
+            "group": "room3"
+          },
+          {
+            "type": "text",
+            "x": 1008,
+            "y": 669,
+            "text": "先把这块空间交代清楚",
+            "size": 35,
+            "width": 760,
+            "color": "#eef3fa",
+            "group": "room3"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "room0",
+            "start": 0.02,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.025,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "room1",
+            "start": 0.19999999999999998,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.025,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "room2",
+            "start": 0.38,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.025,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "room3",
+            "start": 0.56,
+            "end": 1,
+            "travel": 0.12,
+            "fade": 0.025,
+            "from": [
+              0,
+              35
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lead-window",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "前瞻原理动态示意 · 非游戏画面",
+      "graphic": {
+        "layout": "diagram",
+        "elements": [
+          {
+            "type": "text",
+            "x": 100,
+            "y": 150,
+            "text": "前瞻：把视野留给前进方向",
+            "size": 56,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              140,
+              325,
+              1640,
+              415
+            ],
+            "fill": "#182c3c",
+            "color": "#426477",
+            "radius": 12
+          },
+          {
+            "type": "text",
+            "x": 175,
+            "y": 350,
+            "text": "整个房间的平面示意",
+            "size": 30,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                160,
+                655
+              ],
+              [
+                1750,
+                655
+              ]
+            ],
+            "color": "#658492",
+            "width": 8,
+            "arrow": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1460,
+              586,
+              230,
+              69
+            ],
+            "fill": "#425d68",
+            "color": "#658492",
+            "radius": 12
+          },
+          {
+            "type": "text",
+            "x": 1450,
+            "y": 534,
+            "text": "前方路况",
+            "size": 32,
+            "color": "#eef3fa",
+            "width": 300,
+            "bold": false
+          },
+          {
+            "type": "circle",
+            "bounds": [
+              874,
+              594,
+              52,
+              52
+            ],
+            "fill": "#efd397",
+            "color": "#efd397"
+          },
+          {
+            "type": "text",
+            "x": 822,
+            "y": 675,
+            "text": "主角",
+            "size": 34,
+            "color": "#efd397",
+            "width": 200,
+            "bold": false
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                600,
+                385
+              ],
+              [
+                1600,
+                385
+              ],
+              [
+                1600,
+                720
+              ],
+              [
+                600,
+                720
+              ],
+              [
+                600,
+                385
+              ]
+            ],
+            "color": "#89dfd1",
+            "width": 8,
+            "arrow": false,
+            "group": "view"
+          },
+          {
+            "type": "text",
+            "x": 625,
+            "y": 410,
+            "text": "屏幕范围",
+            "size": 36,
+            "color": "#89dfd1",
+            "width": 300,
+            "bold": false,
+            "group": "view"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                960,
+                500
+              ],
+              [
+                1550,
+                500
+              ]
+            ],
+            "color": "#efd397",
+            "width": 7,
+            "arrow": true,
+            "group": "ahead"
+          },
+          {
+            "type": "text",
+            "x": 1040,
+            "y": 445,
+            "text": "向前多看一点",
+            "size": 40,
+            "color": "#efd397",
+            "width": 600,
+            "bold": false,
+            "group": "ahead"
+          },
+          {
+            "type": "text",
+            "x": 100,
+            "y": 835,
+            "text": "亮框＝屏幕看见的范围；圆点＝主角。构图原理示意，非旧版对比。",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              180,
+              600,
+              230,
+              55
+            ],
+            "fill": "#425d68",
+            "color": "#658492",
+            "radius": 12
+          },
+          {
+            "type": "text",
+            "x": 180,
+            "y": 544,
+            "text": "左侧路况",
+            "size": 32,
+            "width": 250,
+            "color": "#eef3fa"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                200,
+                385
+              ],
+              [
+                1200,
+                385
+              ],
+              [
+                1200,
+                720
+              ],
+              [
+                200,
+                720
+              ],
+              [
+                200,
+                385
+              ]
+            ],
+            "color": "#89dfd1",
+            "width": 8,
+            "arrow": false,
+            "group": "view-left"
+          },
+          {
+            "type": "text",
+            "x": 225,
+            "y": 410,
+            "text": "屏幕范围",
+            "size": 36,
+            "width": 300,
+            "color": "#89dfd1",
+            "group": "view-left"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                840,
+                500
+              ],
+              [
+                260,
+                500
+              ]
+            ],
+            "color": "#efd397",
+            "width": 7,
+            "arrow": true,
+            "group": "ahead-left"
+          },
+          {
+            "type": "text",
+            "x": 280,
+            "y": 445,
+            "text": "掉头后，左边是新的前方",
+            "size": 36,
+            "width": 650,
+            "color": "#efd397",
+            "group": "ahead-left"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "view",
+            "start": 0.03,
+            "end": 0.678,
+            "travel": 0.52,
+            "fade": 0.012,
+            "from": [
+              -200,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "ahead",
+            "start": 0.54,
+            "end": 0.672,
+            "travel": 0.1,
+            "fade": 0.012,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "view-left",
+            "start": 0.666,
+            "end": 1,
+            "travel": 0.16,
+            "fade": 0.012,
+            "from": [
+              400,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "ahead-left",
+            "start": 0.82,
+            "end": 1,
+            "travel": 0.08,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hidden-window",
+      "origin": "editorial",
+      "kind": "explanatory_diagram",
+      "display_label": "隐藏连接规则动态示意 · 非实机",
+      "graphic": {
+        "layout": "diagram",
+        "elements": [
+          {
+            "type": "text",
+            "x": 100,
+            "y": 145,
+            "text": "隐藏房间：开门不抢镜，走进入口再交接",
+            "size": 52,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": true
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              100,
+              340,
+              820,
+              390
+            ],
+            "fill": "#182c3c",
+            "color": "#426477",
+            "radius": 12
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1120,
+              390,
+              600,
+              340
+            ],
+            "fill": "#182c3c",
+            "color": "#426477",
+            "radius": 12
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              920,
+              520,
+              200,
+              90
+            ],
+            "fill": "#273f4f",
+            "color": "#658492",
+            "radius": 12
+          },
+          {
+            "type": "text",
+            "x": 160,
+            "y": 410,
+            "text": "外侧区域",
+            "size": 44,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 1240,
+            "y": 480,
+            "text": "隐藏区域",
+            "size": 44,
+            "color": "#eef3fa",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "circle",
+            "bounds": [
+              1435,
+              610,
+              42,
+              42
+            ],
+            "fill": "#efd397",
+            "color": "#efd397"
+          },
+          {
+            "type": "text",
+            "x": 1340,
+            "y": 667,
+            "text": "奖励／线索",
+            "size": 32,
+            "color": "#eef3fa",
+            "width": 300,
+            "bold": false
+          },
+          {
+            "type": "text",
+            "x": 100,
+            "y": 835,
+            "text": "连接规则示意 · 非实机；临时镜头不保存。下段实机为无独立开门机关的植物入口。",
+            "size": 28,
+            "color": "#a9b8c7",
+            "width": 1700,
+            "bold": false
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                200,
+                365
+              ],
+              [
+                900,
+                365
+              ],
+              [
+                900,
+                735
+              ],
+              [
+                200,
+                735
+              ],
+              [
+                200,
+                365
+              ]
+            ],
+            "color": "#89dfd1",
+            "width": 8,
+            "arrow": false,
+            "group": "outside"
+          },
+          {
+            "type": "circle",
+            "bounds": [
+              528,
+              630,
+              44,
+              44
+            ],
+            "fill": "#efd397",
+            "color": "#efd397",
+            "group": "outside"
+          },
+          {
+            "type": "text",
+            "x": 115,
+            "y": 245,
+            "text": "① 未进入：遮挡内部，镜头留在外侧",
+            "size": 40,
+            "color": "#efd397",
+            "width": 1700,
+            "bold": false,
+            "group": "phase0"
+          },
+          {
+            "type": "text",
+            "x": 115,
+            "y": 245,
+            "text": "② 有机关的通路：开启只改变通行条件",
+            "size": 40,
+            "color": "#efd397",
+            "width": 1700,
+            "bold": false,
+            "group": "phase1"
+          },
+          {
+            "type": "text",
+            "x": 115,
+            "y": 245,
+            "text": "③ 走入过渡带：视野逐步交给暗室",
+            "size": 40,
+            "color": "#efd397",
+            "width": 1700,
+            "bold": false,
+            "group": "phase2"
+          },
+          {
+            "type": "text",
+            "x": 115,
+            "y": 245,
+            "text": "④ 退回外侧：恢复外侧构图",
+            "size": 40,
+            "color": "#efd397",
+            "width": 1700,
+            "bold": false,
+            "group": "phase3"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1120,
+              390,
+              600,
+              340
+            ],
+            "fill": "#263a43",
+            "color": "#607b82",
+            "radius": 12,
+            "group": "mask0"
+          },
+          {
+            "type": "text",
+            "x": 1210,
+            "y": 515,
+            "text": "内部遮挡",
+            "size": 47,
+            "color": "#b9c9dc",
+            "width": 480,
+            "bold": false,
+            "group": "mask0"
+          },
+          {
+            "type": "rect",
+            "bounds": [
+              1120,
+              390,
+              600,
+              340
+            ],
+            "fill": "#263a43",
+            "color": "#607b82",
+            "radius": 12,
+            "group": "mask1"
+          },
+          {
+            "type": "text",
+            "x": 1210,
+            "y": 515,
+            "text": "内部遮挡",
+            "size": 47,
+            "color": "#b9c9dc",
+            "width": 480,
+            "bold": false,
+            "group": "mask1"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                1020,
+                365
+              ],
+              [
+                1720,
+                365
+              ],
+              [
+                1720,
+                735
+              ],
+              [
+                1020,
+                735
+              ],
+              [
+                1020,
+                365
+              ]
+            ],
+            "color": "#89dfd1",
+            "width": 8,
+            "arrow": false,
+            "group": "enter-view"
+          },
+          {
+            "type": "circle",
+            "bounds": [
+              1408,
+              630,
+              44,
+              44
+            ],
+            "fill": "#efd397",
+            "color": "#efd397",
+            "group": "enter-player"
+          },
+          {
+            "type": "line",
+            "points": [
+              [
+                200,
+                365
+              ],
+              [
+                900,
+                365
+              ],
+              [
+                900,
+                735
+              ],
+              [
+                200,
+                735
+              ],
+              [
+                200,
+                365
+              ]
+            ],
+            "color": "#89dfd1",
+            "width": 8,
+            "arrow": false,
+            "group": "return-view"
+          },
+          {
+            "type": "circle",
+            "bounds": [
+              528,
+              630,
+              44,
+              44
+            ],
+            "fill": "#efd397",
+            "color": "#efd397",
+            "group": "return-player"
+          }
+        ],
+        "motion_groups": [
+          {
+            "id": "outside",
+            "start": 0.02,
+            "end": 0.586,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "mask0",
+            "start": 0.02,
+            "end": 0.592,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "mask1",
+            "start": 0.95,
+            "end": 1,
+            "travel": 0.015,
+            "fade": 0.01,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "phase0",
+            "start": 0.02,
+            "end": 0.329,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "phase1",
+            "start": 0.329,
+            "end": 0.586,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "phase2",
+            "start": 0.586,
+            "end": 0.809,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "phase3",
+            "start": 0.809,
+            "end": 1,
+            "travel": 0.04,
+            "fade": 0.02,
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "enter-view",
+            "start": 0.582,
+            "end": 0.82,
+            "travel": 0.14,
+            "fade": 0.01,
+            "from": [
+              -820,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "enter-player",
+            "start": 0.582,
+            "end": 0.82,
+            "travel": 0.14,
+            "fade": 0.01,
+            "from": [
+              -880,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "return-view",
+            "start": 0.805,
+            "end": 1,
+            "travel": 0.14,
+            "fade": 0.01,
+            "from": [
+              820,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          },
+          {
+            "id": "return-player",
+            "start": 0.805,
+            "end": 1,
+            "travel": 0.14,
+            "fade": 0.01,
+            "from": [
+              880,
+              0
+            ],
+            "to": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
