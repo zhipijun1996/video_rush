@@ -1,0 +1,58 @@
+{
+  "status": "rendered_and_validated_requested_publication_revision",
+  "production_episode": "ep014-r5",
+  "public_episode": "ep13",
+  "final_sha256": "e66919ab6b80b800b37295886528575e3ccd8cada4791963ba858d8aaccae329",
+  "cover_sha256": "8129999dbbc70684729720ba08b3c1ff4874c0b5c779a8f81e0aebfcff9aaf64",
+  "seconds": 180.9,
+  "delivery_files": 54,
+  "media_assets": 22,
+  "source_documents": 19,
+  "narration_receipts": 21,
+  "voice": "zh-CN-YunxiNeural",
+  "requested_edits": [
+    {
+      "shot": "r4trial",
+      "narration": "星桥天门这个高难度房间，是我提前做的一次后期玩法实验。先把钩索、蹬墙、二段跳和反冲保护开齐，让电脑完整跑一遍。我想在继续铺关卡之前，先测试后期的可玩性：这些能力接在一起，到底有没有意思？",
+      "seconds": 23.1,
+      "spoken_seconds": 17.69411764705882,
+      "emphasis": "提前测试：后期的跳跳乐能不能好玩？"
+    },
+    {
+      "shot": "r2c01",
+      "narration": "试玩先看到这儿。跳得过去，还得看得清。接下来聊镜头：反冲这么快，怎么把下一步的路交代清楚？",
+      "seconds": 9.699999999999996,
+      "spoken_seconds": 9.388235294117647,
+      "emphasis": "接下来：镜头怎么帮玩家看清路"
+    }
+  ],
+  "prior_source_artifact_id": 13765922562,
+  "prior_source_archive_sha256": "8fea71146ea6fa472e886d0ccc3ea8b83991d2b3d14dbd36b21307ffb9a78d32",
+  "original_media_assets_reused_unchanged": 14,
+  "complete_trial_unchanged": true,
+  "trial_finish_and_return_verified": true,
+  "body_narration_after_transition_unchanged": true,
+  "technical": {
+    "exists_and_decodes": true,
+    "1920x1080": true,
+    "30fps": true,
+    "h264_yuv420p": true,
+    "aac_48k": true,
+    "duration_matches_brief": true,
+    "subtitles_in_bounds": true,
+    "subtitle_cues_do_not_overlap": true,
+    "action_labels_in_bounds": true,
+    "source_labels_in_bounds": true,
+    "audible_tts_signal": true,
+    "no_obvious_clipping": true,
+    "decoded_audio_duration_matches_timeline": true,
+    "requested_music_source_valid": true,
+    "sources_present_and_hash_match": true,
+    "document_sources_present_and_hash_match": true,
+    "no_long_black": true,
+    "no_unexpected_long_freeze": true,
+    "animated_diagrams_show_actual_motion": true
+  },
+  "human_aesthetic_acceptance": "not inferred; user explicitly authorized these edits and publication",
+  "actions_rerender_for_this_revision": false
+}
