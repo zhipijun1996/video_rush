@@ -1,0 +1,103 @@
+{
+  "status": "downloaded_and_independently_verified",
+  "archive_sha256": "4b927abd4d178a45390fa3aa182adfdeac606756c479230ebe5d8fe0dd6872b8",
+  "final_sha256": "ac72b5663117cb941c91e120ff48a0c7748c3cb6f8b0fc7e86d8e563f4667b53",
+  "cover_sha256": "86579d579babeaa452c43ec8dafc36c30d0c716be7e487243cd2695e0aefb794",
+  "delivery_files": 39,
+  "source_assets": 18,
+  "reused_original_sources": [
+    "turn",
+    "jump",
+    "recoil",
+    "fall",
+    "look",
+    "corner",
+    "boss-arena-entry",
+    "boss-left-wall",
+    "boss-right-wall",
+    "cover-flight",
+    "cover-look"
+  ],
+  "document_sources": 7,
+  "voice": "zh-CN-YunxiNeural",
+  "actual_voice_receipts": 17,
+  "rate": "+5%",
+  "pitch": "+0Hz",
+  "playback_speed": 1.02,
+  "duration": 137.566667,
+  "fps": "30/1",
+  "frames": "4127",
+  "movie_bytes": 20211054,
+  "full_decode": true,
+  "final_audio": {
+    "decoded_samples": 2201259,
+    "peak": 0.7236328125,
+    "rms": 0.0876725120528359,
+    "clipped_fraction": 0.0,
+    "audible_signal": true,
+    "speech_identity": "TTS backend receipt; not independently verified by ASR/human"
+  },
+  "black_intervals": [],
+  "unexpected_freezes": [],
+  "animated_diagrams": 7,
+  "human_phone_review": "pending",
+  "bilibili_uploaded": false,
+  "no_old_new_improvement_claim": true,
+  "no_public_git_sites": true,
+  "original_recording_evidence_verified": [
+    "camera-7a2f022b5df6-",
+    "camera-29bd6b58cfe8-"
+  ],
+  "source_worktree_unchanged": true,
+  "checked_at": "2026-11-10T03:55:10.150504+00:00",
+  "episode": "ep014-r2",
+  "public_episode": "ep13",
+  "production_code_commit": "ddb3b8ea08c37321b81b91ad010fb9b08f7719d8",
+  "main_game_source_commit": "7a2f022b5df6e4fe1a63b4705587badc5a24160b",
+  "workflow_run": 42751637644,
+  "workflow_conclusion": "success",
+  "artifact_id": 13733402601,
+  "artifact_bytes": 46814165,
+  "download_url": "https://github.com/zhipijun1996/video_rush/actions/runs/42751637644/artifacts/13733402601",
+  "expires_at": "2026-11-24T03:51:22Z",
+  "local_pytest": "106 passed; 5 existing Pillow deprecation warnings",
+  "test_log_sha256": "5499d304bf15ccee1c9331e961e0b5f7c3e2eb73e20141032cefa53d80cee70c",
+  "local_render": {
+    "technical_pass": true,
+    "files": 39,
+    "movie_sha256": "760d64619848aefdbf52ac75ff83c00bc04614b45de3565d9d67875e83e2f8ce",
+    "cover_sha256": "86579d579babeaa452c43ec8dafc36c30d0c716be7e487243cd2695e0aefb794",
+    "voice": "zh-CN-YunxiNeural",
+    "narration_receipts": 17,
+    "duration": 137.566667,
+    "tests": "106 passed"
+  },
+  "source_archive": {
+    "artifact_id": 13701510198,
+    "sha256": "6870b2ef794138348d9ec31057d921c331131d97eb324cb7afb51731e1e88ef3",
+    "reuse": "Exact original clips, not earlier edited final; original provenance and recording evidence preserved"
+  },
+  "visual_spot_checks": [
+    "Goal/return diagram",
+    "Four room templates explicitly constrain camera axes",
+    "Vertical motion principles",
+    "Manual look explanation",
+    "Boss distance/scale reasoning",
+    "Closing current-scope statement",
+    "Cover wording removed dramatic-difference claim"
+  ],
+  "review_master": "Use this hosted final_sha256 for any later explicit approval/upload. Supersedes unapproved Yunjian ep014 for ep13; preserve older files.",
+  "aesthetic_acceptance": "pending user phone review; not automatic PASS",
+  "failures_and_fixes": [
+    {
+      "stage": "first_local_quality_check",
+      "observed": "Active-look speech exceeded the real source window by~0.1s; 3 missing frames caused average frame rate below30.",
+      "fix": "Shortened and re-synthesized speech; all source windows now fit; FPS gate retained."
+    },
+    {
+      "stage": "metadata_resume_delivery_manifest",
+      "observed": "Sources metadata updated but identical quality report let old Delivery manifest remain cached.",
+      "fix": "Delivery now fingerprints every input deliverable/evidence file. Regression covers sources-only correction and added source evidence with unchanged report; real resume manifest verified."
+    }
+  ]
+}
