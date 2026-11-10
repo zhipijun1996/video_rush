@@ -63,7 +63,8 @@
       "Technical clear does not certify player difficulty, fun, art or phone/device performance.",
       "Camera body reuses earlier PR147 recordings and their original SHA; it is not falsely labelled fresh main footage.",
       "The source stargate_basic test covers the lower route and a teleported upper fixture; this new continuous recording uses neither that teleport nor its incomplete test as full-clear proof."
-    ]
+    ],
+    "camera_revision_diff": "Compared 9479fa78 to f1e9e0e8: world_camera_zones unchanged; world_camera adds accepted_look_direction and excludes front_door entries from approach/constraints. Earlier raw clips retain their original SHA/date."
   },
   "evidence": [
     {
@@ -78,7 +79,7 @@
       "id": "camera-owner",
       "kind": "pinned_source_implementation",
       "commit": "9479fa78c4825552c385078b868031453a3a0ffc",
-      "scope": "WorldCamera and WorldCameraZones Git blobs exactly match current main; future view depends on movement intent, zones/links, concealment and opening eligibility."
+      "scope": "Original R3 camera implementation at 9479fa78 matched then-main 7a2f022b. Current f1e9e0e8 adds accepted-look presentation exposure and front-door approach exclusions; core look-ahead/hidden-zone method remains, but the source files are not claimed byte-identical to current main."
     },
     {
       "id": "fresh-native",
