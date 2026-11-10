@@ -22,6 +22,10 @@ def collect(repo, spec, output):
             from .archive_media import collect as collect_archive
             collected.append(collect_archive(asset,spec['archives'][asset['archive_id']],output))
             continue
+        if origin=='episode_artifact':
+            from .episode_media import collect as collect_prior
+            collected.append(collect_prior(asset,spec['source_deliveries'][asset['delivery_id']],output))
+            continue
         if origin=='camera_recording':
             from .camera_recording import capture
             import shutil

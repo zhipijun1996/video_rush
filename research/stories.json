@@ -2003,7 +2003,8 @@
     },
     "video_potential": {
       "priority": "high",
-      "reason": "同操作同轨迹下，镜头差别可见；从玩家看路需求讲取舍，不冒称品质毕业。"
-    }
+      "reason": "用户实看认为新旧差异不直观。改为本作类银镜头取舍：读落点、记空间、回访、按房型构图、移动意图、纵向响应与主动查看；不夸大提升。"
+    },
+    "editorial_feedback": "2026-11-10: Yunjian rejected; restore Yunxi. Explain design motivation instead of dramatic difference."
   }
 ]

@@ -26,6 +26,19 @@ def cut_source_fingerprints(shot, assets):
             for x in shot['assets']]
 
 
+def delivery_members(output):
+    output=Path(output)
+    files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
+    for folder in ['original_uploads','source-evidence','browser-evidence','animation-evidence']:
+        files += [str(p.relative_to(output)) for p in sorted((output/folder).rglob('*')) if p.is_file()]
+    return files
+
+
+def delivery_fingerprints(output):
+    # Posting copy is produced by Delivery from its separately hashed spec inputs.
+    return {name:sha(Path(output)/name) for name in delivery_members(output) if name!='bilibili.md'}
+
+
 class Stages:
     def __init__(self, output):
         self.output=Path(output);self.output.mkdir(parents=True,exist_ok=True)
@@ -120,7 +133,7 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
     recording_code=[sha(ROOT/'video_rush/recording.py'),sha(ROOT/'video_rush/git_media.py'),sha(ROOT/'video_rush/snapshot.py'),[sha(ROOT/'video_rush/drivers/weapon_showcase.gd'),sha(ROOT/'video_rush/drivers/special_weapons.gd'),sha(ROOT/'video_rush/drivers/route_weapons.gd')]] if any(a.get('origin')=='recording' for a in a_spec['assets']) else None
     world_code=[sha(ROOT/'video_rush/world_recording.py'),sha(ROOT/'video_rush/drivers/fixed_world_intro.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='world_recording' for a in a_spec['assets']) else None
     camera_code=[sha(ROOT/'video_rush/camera_recording.py'),sha(ROOT/'video_rush/drivers/camera_progress.gd'),sha(ROOT/'tools/current_gameplay_job.py'),sha(ROOT/'tools/record_current_gameplay.py')] if any(a.get('origin')=='camera_recording' for a in a_spec['assets']) else None
-    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'world_recording_code':world_code,'camera_recording_code':camera_code,'archive_code':sha(ROOT/'video_rush/archive_media.py') if any(a.get('origin')=='archive' for a in a_spec['assets']) else None,'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
+    stages('Footage Collection',{'assets':a_spec,'implementation':sha(ROOT/'video_rush/footage.py'),'prior_delivery_code':sha(ROOT/'video_rush/episode_media.py') if any(a.get('origin')=='episode_artifact' for a in a_spec['assets']) else None,'world_recording_code':world_code,'camera_recording_code':camera_code,'archive_code':sha(ROOT/'video_rush/archive_media.py') if any(a.get('origin')=='archive' for a in a_spec['assets']) else None,'recording_code':recording_code,'browser_code':sha(ROOT/'video_rush/browser_capture.py') if any(a.get('origin')=='browser_capture' for a in a_spec['assets']) else None,'browser_movie_code':[sha(ROOT/'video_rush/browser_movie.py'),sha(ROOT/'video_rush/drivers/wave_capture.mjs')] if any(a.get('origin')=='browser_movie' for a in a_spec['assets']) else None,'editorial_generator':sha(ROOT/'video_rush/graphics.py') if any(a.get('origin')=='editorial' for a in a_spec['assets']) else None,'document_code':sha(ROOT/'video_rush/document_evidence.py') if a_spec.get('documents') else None},footage)
     media=read(output/'media/manifest.json');assets={x['id']:x for x in media}
     def narration():
         paths=[];(output/'narration').mkdir(exist_ok=True)
@@ -223,12 +236,8 @@ def _produce(spec_path, repo, *, output=None, backend='edge', piper_model=None, 
         # Use the authored description when present; keep the original source-rich fallback.
         description=spec.get('bilibili_body') or body.split('简介：\n\n',1)[-1]
         (output/'bilibili.md').write_text(posting_copy(spec,description))
-        files=['final.mp4','cover.png','script.md','storyboard.json','subtitles.ass','bilibili.md','sources.json','report.json','phone-review.md']
-        files += [str(p.relative_to(output)) for p in sorted((output/'original_uploads').glob('*')) if p.is_file()]
-        files += [str(p.relative_to(output)) for p in sorted((output/'source-evidence').rglob('*')) if p.is_file()]
-        files += [str(p.relative_to(output)) for p in sorted((output/'browser-evidence').glob('*')) if p.is_file()]
-        files += [str(p.relative_to(output)) for p in sorted((output/'animation-evidence').glob('*')) if p.is_file()]
+        files=delivery_members(output)
         write(output/'delivery.json',{'episode':spec['episode'],'files':{p:sha(output/p) for p in files},'technical_pass':True,'human_review':'pending','bilibili_published':False})
         return [output/'bilibili.md',output/'delivery.json']
-    stages('Delivery',{'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':7,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
+    stages('Delivery',{'payload_files':delivery_fingerprints(output),'report':sha(output/'report.json'),'title':spec['title'],'delivery_schema':7,'bilibili_body':spec.get('bilibili_body'),'titles':spec.get('title_candidates')},delivery)
     return output
