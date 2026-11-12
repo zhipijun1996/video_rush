@@ -1,0 +1,11 @@
+{
+  "run_id": 43184764916,
+  "artifact_id": 13926854298,
+  "zip_sha256": "9f14da37a1afbbe0f212f28a75392f771f9080e889f5e2a344f31dd53ffbb7a7",
+  "movie_sha256": "873a6f817665ee8ee85c4b2940dcd7a854eaba63e95264ba7d05a6bb3ae56ef2",
+  "bytes": 17657055,
+  "duration": "102.080000",
+  "complete_movie_decode": true,
+  "zip_contains_only_one_mp4": true,
+  "url": "https://github.com/zhipijun1996/video_rush/actions/runs/43184764916/artifacts/13926854298"
+}
