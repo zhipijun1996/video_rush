@@ -1,0 +1,45 @@
+name: Small phone movie download
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Verified Windkeeper master run
+        required: true
+        default: '43181841632'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure FFmpeg
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            if [ -f /etc/apt/apt-mirrors.txt ]; then
+              printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+            fi
+            sudo apt-get update -qq
+            sudo apt-get install -y --no-install-recommends ffmpeg
+          fi
+      - uses: actions/download-artifact@v4
+        with:
+          name: video-rush-ep015
+          path: build/source
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - name: Compress the complete verified film
+        run: python tools/phone_preview.py --source build/source/episodes/ep015 --output build/phone/牧风者_手机预览.mp4
+      - uses: actions/upload-artifact@v4
+        id: phone
+        with:
+          name: ep14-phone-movie-only
+          path: build/phone/*.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: Phone link
+        env:
+          PHONE_LINK: ${{ steps.phone.outputs.artifact-url }}
+        run: python -c 'import os;open(os.environ["GITHUB_STEP_SUMMARY"],"w").write("[下载单独成片手机预览版]("+os.environ["PHONE_LINK"]+")\n720p，完整视频，仅降低码率，无配音，原声保留。")'
