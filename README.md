@@ -1,5 +1,7 @@
 # Video Rush
 
+**ep15 · Demo中的Demo（制作中）**：本地已实录并剪出76秒阶段展示：P10基础枪连续登顶、钟心原生剧情、小站、岔路、风车吊台、退潮渠闸及修钟。游戏原声、原速、少量字幕，分房局部起点；技术验收通过，未投稿。手机下载正在准备。[制作与范围](docs/ep016.md) · [本地实际核验](docs/ep016-local-check.json)。
+
 **ep14 R2 · 主动越顶与穿身（最新）**：[手机下载完整成片，约22MB](https://github.com/zhipijun1996/video_rush/actions/runs/43207109371/artifacts/13940307679)，2分05秒，ZIP内仅MP4。更新PR150 `c721b20`，一阶段4次越顶/3次地面穿身，二阶段4次越顶/2次地面穿身，三阶段保留19次走下台阶后的反冲换台。每次空中射击前0.5秒真实慢时，无空中连射，原声/无配音。已实际下载核对母版、手机版、38项交付及18份固定Git资料，整片解码与声音对齐通过；本地115项测试通过。用户审核后已投稿[BV13cWR6eEHL](https://www.bilibili.com/video/BV13cWR6eEHL/)，创作中心复核中，活动话题、封面和合集已核对；[投稿回执](docs/bilibili-ep015-r2-upload.json)。下载保留至2026-11-26。[完整制作包](https://github.com/zhipijun1996/video_rush/actions/runs/43207109371/artifacts/13940092860) · [制作说明](docs/ep015-r2.md) · [下载核验](docs/ep015-r2-check.json)。
 
 **ep14前版（墙角打法，已被R2替代；约18MB）**：[下载完整720p MP4](https://github.com/zhipijun1996/video_rush/actions/runs/43184764916/artifacts/13926854298)。ZIP内只有一条1分42秒的完整视频，保留原声和字幕，不含原始录屏或制作文件。已下载核对摘要、格式与整片解码，保留至2026-11-26。[核验](docs/ep015-phone-check.json)。

@@ -1,0 +1,62 @@
+name: Demo showcase and small phone movie
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  showcase:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install native capture and editing tools
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
+          python -m pip install Pillow requests pytest numpy
+          python -m pip install -e . --no-deps
+          pytest -q
+      - name: Record pinned main through original game controls and audio
+        run: python -m tools.demo_showcase_job
+      - name: Edit selected native takes and validate
+        run: python -m video_rush.demo_showcase --captures build/captures --source-project build/native-demo-showcase/project --output build/episodes/ep016
+      - name: Make complete small phone preview
+        run: python tools/phone_preview.py --source build/episodes/ep016 --output build/phone-ep016/失序之钟_Demo中的Demo_手机预览.mp4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: video-rush-ep016
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep016/
+            build/captures/demo-*/*.json
+            build/captures/demo-*/*.log
+            build/captures/demo-*/recording_driver.gd
+            build/native-demo-showcase/preparation.json
+            build/native-demo-showcase/import.log
+            build/native-demo-showcase/world-build.log
+      - uses: actions/upload-artifact@v4
+        if: success()
+        id: phone
+        with:
+          name: ep15-demo-phone-movie-only
+          path: build/phone-ep016/*.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: Phone delivery
+        if: success()
+        env:
+          FILM_URL: ${{ steps.phone.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载完整手机成片]('+os.environ['FILM_URL']+')\n\nDemo中的Demo。游戏原声、分房选录、无配音；尚未投稿。')
+          PY

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "episode": "ep016",
+  "public_episode": "ep15",
+  "repository": "zhipijun1996/gunman-rush",
+  "main_commit": "dec47408ce8b7c4b98c5e215c8a23db482bc7864",
+  "source_ref": "main; frozen 2026-11-12; PR150/151/152 merged. PR153 remains open and is not presented as main.",
+  "title": "枪不光打怪，还得负责爬楼！ | 【失序之钟】独游折腾记 ep15【B站AI创造公开赛】",
+  "description": "这把枪不光用来打怪，还得负责把自己送上高处。\n\n留一份《失序之钟》现阶段的试玩记录：P10只用基础枪命中补弹、连续反冲登高；从塔前庭实际进门调查世界钟心；小站、风铃岔路、风车吊台、退潮渠闸门，以及风鸣钟修复。原速实机，保留游戏音乐和音效，用少量字幕解释。\n\n这是Demo中的Demo。现在还在搭路、补内容、磨体验，离一个好玩的完整游戏还远，先把能玩的部分拿出来给大家看看。欢迎提建议。\n\n各房独立进入并设置一个局部起点，由程序提交普通操作；P10连续登高，不用钩索或途中补资源，其他片段不是同一次新档连续流程。修钟采用已有H的逐房试玩配置。游戏规则、敌人和物理保留。\n\nAI辅助开发与制作，无配音。画面、音乐与音效来自游戏录制；地形基础素材：Underworld Tileset / Asouris；视频字体：Noto CJK（OFL）。\n\n#B站AI创造公开赛# #独立游戏# #类银河恶魔城# #Godot# #失序之钟#",
+  "narration": false,
+  "style": {
+    "music": "actual original game music and sound effects",
+    "speed": 1,
+    "footer": "do not crop game field",
+    "honest_scope": "Demo中的Demo; selected independent formal rooms"
+  },
+  "stages": {
+    "p10": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=p10"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "clockheart": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=clockheart"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "street": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=street"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "carrier": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=carrier"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "sluice": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=sluice"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "repair": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=repair"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    },
+    "meadow": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=meadow"
+      ],
+      "compile_world": true,
+      "seed_scope": "not a procedural map or same-seed comparison"
+    }
+  },
+  "rights": [
+    {
+      "kind": "game",
+      "status": "User-owned project, captured unmodified from pinned current main after PR150/151/152; source art and third-party license notices retained."
+    },
+    {
+      "kind": "audio",
+      "status": "Actual captured game AV, including user-supplied in-game music. Source BGM provenance and Windkeeper CC0 effects documentation included. Project-specific user authorization only; broader music redistribution rights and authorship are unspecified."
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK, SIL OFL"
+    }
+  ],
+  "source_files": [
+    "docs/project/current_state.md",
+    "docs/project/worklines/plains_bible_v2_01/scope.md",
+    "game/world/regions/P/rooms/P-R10.tscn",
+    "game/world/regions/P/rooms/P-R26.tscn",
+    "game/world/regions/P/rooms/P-R20.tscn",
+    "game/world/regions/P/rooms/P-R06.tscn",
+    "game/world/regions/P/rooms/P-R01.tscn",
+    "game/world/regions/P/rooms/P-R15.tscn",
+    "game/world/regions/P/rooms/P-R33.tscn",
+    "game/world/regions/Z/rooms/Z-R01.tscn",
+    "game/application/world/world_room_review.gd",
+    "game/application/world/world_story_sequence.gd",
+    "tests/world/approved_final_rooms.gd",
+    "tests/world/plains35_west.gd",
+    "tests/world/clockheart_route.gd",
+    "assets/audio/bgm/provenance.json",
+    "assets/style_exploration/underworld/source/licenses/NOTICE.md",
+    "config/toolchain.json"
+  ],
+  "publication": {
+    "bilibili_authorized": false,
+    "delivery": "verified Actions artifacts, including small phone movie"
+  },
+  "on_screen_only": true
+}

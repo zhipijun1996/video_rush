@@ -1,0 +1,145 @@
+{
+  "status": "actual_local_native_capture_and_complete_film_verified",
+  "movie_sha256": "7dffc439860cde748e90d9c2e7d2446c64d679f7fc3ef3d541b1511533b17850",
+  "seconds": 76.1,
+  "manifest_files": 64,
+  "verified_git_documents": 18,
+  "full_decode": true,
+  "technical_checks": {
+    "full_decode": true,
+    "mp4": true,
+    "dimensions": true,
+    "fps": true,
+    "video_codec": true,
+    "pixel_format": true,
+    "limited_range": true,
+    "audio_codec": true,
+    "sample_rate": true,
+    "duration": true,
+    "original_game_audio_audible": true,
+    "clipping": true,
+    "subtitle_bounds": true,
+    "source_hashes": true,
+    "no_long_black": true,
+    "no_unexplained_freeze": true
+  },
+  "native_take_audits": {
+    "p10": {
+      "complete": true,
+      "frames": 843,
+      "initial_pose": [
+        896.0,
+        2030.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R10"
+      ],
+      "session_changes": 0,
+      "native_shots": 10,
+      "actual_hit_refills": 5,
+      "max_shots_single_flight": 4,
+      "summit_y": 141.925262451172,
+      "no_hook_or_double_jump": true
+    },
+    "clockheart": {
+      "complete": true,
+      "frames": 1291,
+      "initial_pose": [
+        1330.0,
+        558.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R33",
+        "Z-R01"
+      ],
+      "session_changes": 1
+    },
+    "street": {
+      "complete": true,
+      "frames": 450,
+      "initial_pose": [
+        900.0,
+        1262.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R01"
+      ],
+      "session_changes": 0
+    },
+    "carrier": {
+      "complete": true,
+      "frames": 669,
+      "initial_pose": [
+        800.0,
+        1390.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "sluice": {
+      "complete": true,
+      "frames": 275,
+      "initial_pose": [
+        2352.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R20"
+      ],
+      "session_changes": 0
+    },
+    "repair": {
+      "complete": true,
+      "frames": 973,
+      "initial_pose": [
+        1800.0,
+        3918.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R15"
+      ],
+      "session_changes": 0
+    },
+    "meadow": {
+      "complete": true,
+      "frames": 273,
+      "initial_pose": [
+        1152.0,
+        1678.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R06"
+      ],
+      "session_changes": 0
+    }
+  },
+  "actual_gameplay_views_inspected": [
+    "p10",
+    "street",
+    "clockheart",
+    "meadow",
+    "carrier",
+    "sluice",
+    "repair"
+  ],
+  "cover_inspected": true,
+  "tests": "122 passed, 1 optional skipped",
+  "human_aesthetic_review": "pending",
+  "bilibili_published": false
+}

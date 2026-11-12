@@ -1,0 +1,36 @@
+{
+  "scanned_at": "2026-11-12T15:11:37.934050+00:00",
+  "repository": "zhipijun1996/gunman-rush",
+  "commit": "dec47408ce8b7c4b98c5e215c8a23db482bc7864",
+  "scope": "Targeted current-main showcase update, not a complete historical census",
+  "main_recent_commits": 8,
+  "pr_metadata": [
+    150,
+    153
+  ],
+  "selected_source_files": [
+    "docs/project/current_state.md",
+    "docs/project/worklines/plains_bible_v2_01/scope.md",
+    "game/world/regions/P/rooms/P-R10.tscn",
+    "game/world/regions/P/rooms/P-R26.tscn",
+    "game/world/regions/P/rooms/P-R20.tscn",
+    "game/world/regions/P/rooms/P-R06.tscn",
+    "game/world/regions/P/rooms/P-R01.tscn",
+    "game/world/regions/P/rooms/P-R15.tscn",
+    "game/world/regions/P/rooms/P-R33.tscn",
+    "game/world/regions/Z/rooms/Z-R01.tscn",
+    "game/application/world/world_room_review.gd",
+    "game/application/world/world_story_sequence.gd",
+    "tests/world/approved_final_rooms.gd",
+    "tests/world/plains35_west.gd",
+    "tests/world/clockheart_route.gd",
+    "assets/audio/bgm/provenance.json",
+    "assets/style_exploration/underworld/source/licenses/NOTICE.md",
+    "config/toolchain.json"
+  ],
+  "working_tree_modified": false,
+  "snapshot_files": 7451,
+  "snapshot_bytes": 872242127,
+  "source_fallbacks": [],
+  "truth": "Native captures require separate runtime/trajectory verification; source state is not aesthetic acceptance"
+}
