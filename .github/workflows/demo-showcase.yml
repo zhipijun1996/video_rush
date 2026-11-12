@@ -46,7 +46,7 @@ jobs:
         if: inputs.source_run != ''
         run: python -m video_rush.demo_showcase --captures build/recovery/episodes/ep016/recordings --capture-prefix '' --source-project build/recovery/episodes/ep016/source-evidence --output build/episodes/ep016
       - name: Make complete small phone preview
-        run: python tools/phone_preview.py --source build/episodes/ep016 --output build/phone-ep016/失序之钟_Demo中的Demo_手机预览.mp4
+        run: python tools/phone_preview.py --source build/episodes/ep016 --copy-audio --output build/phone-ep016/失序之钟_Demo中的Demo_手机预览.mp4
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -69,6 +69,14 @@ jobs:
           path: build/phone-ep016/*.mp4
           retention-days: 14
           compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: ep15-cover-and-posting
+          retention-days: 14
+          path: |
+            build/episodes/ep016/cover.png
+            build/episodes/ep016/bilibili.md
       - name: Phone delivery
         if: success()
         env:
