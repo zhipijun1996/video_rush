@@ -1,0 +1,218 @@
+{
+  "verified_manifest_files": 38,
+  "source_documents_matching_exact_git_blob": 18,
+  "complete_movie_decode": true,
+  "source_commit": "c721b20aa9c34ea30b0498ee786f0a2c52f7d22d",
+  "movie_sha256": "d1bab8d8e48c8793f0d0237222cd3579ceb83e91239d6fd6eee4acc759edf66c",
+  "actual_combat": {
+    "complete": true,
+    "phases": [
+      1,
+      2,
+      3
+    ],
+    "boss_initial_hp": 510.0,
+    "boss_final_hp": 0.0,
+    "player_final_hp": 5.0,
+    "actual_shots": 145,
+    "airborne_shots": 27,
+    "max_air_shots_per_flight": 1,
+    "actual_air_focus_seconds": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "walk_off_recoil_landings": 19,
+    "human_play": false,
+    "experience_quality": "not inferred from successful automatic input"
+  },
+  "actual_interactions": {
+    "phases": {
+      "1": {
+        "overpasses": 4,
+        "underpasses": 3,
+        "player_horizontal_span": 954.773132324214,
+        "boss_horizontal_span": 431.999206542969,
+        "near_wall_fraction": 0.02091152815013405,
+        "longest_near_wall_seconds": 0.2833333333333333
+      },
+      "2": {
+        "overpasses": 4,
+        "underpasses": 2,
+        "player_horizontal_span": 1083.991607666016,
+        "boss_horizontal_span": 417.09460449219,
+        "near_wall_fraction": 0.12575452716297786,
+        "longest_near_wall_seconds": 1.3166666666666667
+      }
+    },
+    "passages": [
+      {
+        "kind": "over",
+        "phase": 1,
+        "start_frame": 267,
+        "end_frame": 365,
+        "cross_frame": 321,
+        "cross_seconds": 5.35
+      },
+      {
+        "kind": "under",
+        "phase": 1,
+        "start_frame": 532,
+        "end_frame": 571,
+        "cross_frame": 552,
+        "cross_seconds": 9.2
+      },
+      {
+        "kind": "over",
+        "phase": 1,
+        "start_frame": 762,
+        "end_frame": 861,
+        "cross_frame": 817,
+        "cross_seconds": 13.616666666666667
+      },
+      {
+        "kind": "over",
+        "phase": 1,
+        "start_frame": 1049,
+        "end_frame": 1148,
+        "cross_frame": 1104,
+        "cross_seconds": 18.4
+      },
+      {
+        "kind": "under",
+        "phase": 1,
+        "start_frame": 1262,
+        "end_frame": 1301,
+        "cross_frame": 1282,
+        "cross_seconds": 21.366666666666667
+      },
+      {
+        "kind": "under",
+        "phase": 1,
+        "start_frame": 1439,
+        "end_frame": 1478,
+        "cross_frame": 1459,
+        "cross_seconds": 24.316666666666666
+      },
+      {
+        "kind": "over",
+        "phase": 1,
+        "start_frame": 1690,
+        "end_frame": 1789,
+        "cross_frame": 1745,
+        "cross_seconds": 29.083333333333332
+      },
+      {
+        "kind": "over",
+        "phase": 2,
+        "start_frame": 1975,
+        "end_frame": 2075,
+        "cross_frame": 2031,
+        "cross_seconds": 33.85
+      },
+      {
+        "kind": "over",
+        "phase": 2,
+        "start_frame": 2282,
+        "end_frame": 2403,
+        "cross_frame": 2354,
+        "cross_seconds": 39.233333333333334
+      },
+      {
+        "kind": "under",
+        "phase": 2,
+        "start_frame": 2584,
+        "end_frame": 2623,
+        "cross_frame": 2604,
+        "cross_seconds": 43.4
+      },
+      {
+        "kind": "over",
+        "phase": 2,
+        "start_frame": 2827,
+        "end_frame": 2925,
+        "cross_frame": 2881,
+        "cross_seconds": 48.016666666666666
+      },
+      {
+        "kind": "under",
+        "phase": 2,
+        "start_frame": 3088,
+        "end_frame": 3127,
+        "cross_frame": 3108,
+        "cross_seconds": 51.8
+      },
+      {
+        "kind": "over",
+        "phase": 2,
+        "start_frame": 3340,
+        "end_frame": 3447,
+        "cross_frame": 3399,
+        "cross_seconds": 56.65
+      }
+    ],
+    "corner_band_width": 110,
+    "measured_behavior": true,
+    "human_enjoyment": "pending phone review; not certified by automatic play"
+  },
+  "original_recording_and_executed_driver_verified": true,
+  "original_audio_alignment": [
+    {
+      "window_start": 10,
+      "seconds": 4,
+      "correlation": 0.9998807348073244,
+      "edited_audio_offset_from_original_seconds": 0.0
+    },
+    {
+      "window_start": 55,
+      "seconds": 4,
+      "correlation": 0.9998577437741702,
+      "edited_audio_offset_from_original_seconds": 0.0
+    },
+    {
+      "window_start": 110,
+      "seconds": 4,
+      "correlation": 0.999935704712383,
+      "edited_audio_offset_from_original_seconds": 0.0
+    }
+  ],
+  "phone_aesthetic_review": "pending",
+  "delivery": {
+    "run_id": 43207109371,
+    "production_commit": "d9ca1761ab2c86c1bc1e448208010f142fbcca93",
+    "full_artifact_id": 13940092860,
+    "full_zip_sha256": "c84512e7e48f5fcd2714eb24d0f50c715439535d88e57a8a6dfbf74079aeab42",
+    "phone_artifact_id": 13940307679,
+    "phone_zip_sha256": "368c379c0d6bd3a69e6930589b345208bd184004b925c920787f986056af4ba9",
+    "phone_movie_sha256": "5cffa99a5149ddcee09a0d235355aa05315c1858d4993d48e7169e1c1b67d30b",
+    "phone_bytes": 22026514,
+    "phone_duration": "125.376000",
+    "phone_full_decode": true,
+    "phone_zip_only_one_mp4": true,
+    "expires_at": "2026-11-26T11:27:57Z"
+  }
+}
