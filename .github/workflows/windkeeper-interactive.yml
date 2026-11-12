@@ -1,0 +1,83 @@
+name: Interactive Windkeeper fight and small phone movie
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Optional prior run with a validated native capture (skip rerecording)
+        required: false
+        type: string
+        default: ''
+permissions:
+  contents: read
+  actions: read
+jobs:
+  film:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install recording and editing tools
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
+          python -m pip install Pillow requests pytest numpy
+          python -m pip install -e . --no-deps
+          pytest -q
+      - name: Record the pinned PR150 with original game AV
+        if: inputs.source_run == ''
+        run: python -m tools.current_gameplay_job --spec episodes/ep015-r2-gameplay.json --stage windkeeper --base build/native-windkeeper-r2 --output build/captures/windkeeper-r2
+      - uses: actions/download-artifact@v4
+        if: inputs.source_run != ''
+        with:
+          name: video-rush-ep015-r2
+          path: build/recovery
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - name: Validate play style and edit the complete battle without narration
+        if: inputs.source_run == ''
+        run: python -m video_rush.boss_film --spec episodes/ep015-r2-gameplay.json --capture build/captures/windkeeper-r2 --output build/episodes/ep015-r2
+      - name: Revalidate and edit the retained original capture
+        if: inputs.source_run != ''
+        run: python -m video_rush.boss_film --spec episodes/ep015-r2-gameplay.json --capture build/recovery/episodes/ep015-r2/recordings/windkeeper --source-evidence build/recovery/episodes/ep015-r2/source-evidence --source-manifest build/recovery/episodes/ep015-r2/sources.json --output build/episodes/ep015-r2
+      - name: Complete small phone preview
+        run: python tools/phone_preview.py --source build/episodes/ep015-r2 --output build/phone-r2/牧风者_主动换边_手机预览.mp4
+      - name: Keep movie and actual capture evidence
+        if: always()
+        id: film
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-ep015-r2
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep015-r2/
+            build/captures/windkeeper-r2/*.json
+            build/captures/windkeeper-r2/*.log
+            build/captures/windkeeper-r2/recording_driver.gd
+            build/native-windkeeper-r2/preparation.json
+            build/native-windkeeper-r2/import.log
+            build/native-windkeeper-r2/world-build.log
+      - uses: actions/upload-artifact@v4
+        if: success()
+        id: phone
+        with:
+          name: ep14-r2-phone-movie-only
+          path: build/phone-r2/*.mp4
+          retention-days: 14
+          compression-level: 0
+      - name: Phone download link
+        if: success()
+        env:
+          FILM_URL: ${{ steps.phone.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载单独成片手机预览版]('+os.environ['FILM_URL']+')\n\n无配音，保留游戏原声和游戏内慢时。程序输入演示，未上传B站。产物保留14天。')
+          PY

@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from .common import read, write, sha, probe, run, font
 from .gameplay import load_capture, validate_gameplay
 from .posting_policy import require_public_copy
+from .boss_interaction import audit_interactions
 
 
 def audit_fight(trace):
@@ -77,8 +78,14 @@ def cue_plan(trace,seconds):
     def add(at,length,text,kind):
         at=max(0,float(at));end=min(seconds,at+length)
         if end>at:cues.append(dict(start=round(at,3),end=min(seconds,round(end,3)),text=text,kind=kind))
-    add(.3,5.5,'牧风者 · 三阶段完整战斗 / 独立 Boss 测试入口','intro')
-    add(6,5,'常规移动为主 · 每次空中开枪前慢时瞄准 0.5 秒','style')
+    if trace.get('interactive_style'):
+        add(.3,3,'牧风者 · 主动换边 / 三阶段完整战斗','intro')
+        for kind,text,length in [('over','地面逼近 → 起跳、慢时 0.5 秒 → 反冲换边',4.2),('under','Boss 腾空 → 迎着跑，从身下穿过去',4.5)]:
+            event=next(e for e in trace['events'] if e['event']=='maneuver_begin' and e['kind']==kind)
+            add(event['movie_frame']/60,length,text,'tactic')
+    else:
+        add(.3,5.5,'牧风者 · 三阶段完整战斗 / 独立 Boss 测试入口','intro')
+        add(6,5,'常规移动为主 · 每次空中开枪前慢时瞄准 0.5 秒','style')
     for phase in [2,3]:
         row=next(e for e in trace['events'] if e['event']=='phase' and e['phase']==phase)
         text='第二阶段：看预警、留空间，再找还手的机会' if phase==2 else '第三阶段：走下台阶躲跳扑，再反冲换台'
@@ -93,7 +100,7 @@ def cue_plan(trace,seconds):
     add(max(0,seconds-1.3),1.3,'仍在打磨，欢迎提建议','ending')
     # Keep one readable explanation at a time. Phase cues have priority over
     # nearby details; no instruction rewrites or manufactured action frames.
-    priority={'phase':0,'intro':1,'victory':0,'ending':1,'focus':2,'walk_off':2,'heal':2,'style':3}
+    priority={'tactic':1,'phase':0,'intro':1,'victory':0,'ending':1,'focus':2,'walk_off':2,'heal':2,'style':3}
     selected=[]
     for c in sorted(cues,key=lambda c:(priority[c['kind']],c['start'])):
         if not any(min(c['end'],x['end'])-max(c['start'],x['start'])>.05 for x in selected):selected.append(c)
@@ -124,9 +131,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def make_cover(movie,begin,out,spec):
     # Stable original ground view keeps the guardian's head and feet visible.
-    run(['ffmpeg','-v','error','-y','-ss',begin+3.1,'-i',movie,'-frames:v','1',out/'cover-source.png'])
+    run(['ffmpeg','-v','error','-y','-ss',begin+spec.get('cover_time',3.1),'-i',movie,'-frames:v','1',out/'cover-source.png'])
     im=Image.open(out/'cover-source.png').convert('RGB').resize((1920,1080),Image.Resampling.LANCZOS)
+    if spec.get('style',{}).get('interactive'):
+        scene=im.resize((1230,692),Image.Resampling.LANCZOS)
+        im=Image.new('RGB',(1920,1080),'#10181c');im.paste(scene,(690,194))
     draw=ImageDraw.Draw(im)
+    if spec.get('style',{}).get('interactive'):
+        draw.text((735,85),'Boss 走来，我飞过去',font=ImageFont.truetype(font(True),54),fill='#f2dfad')
+        draw.text((735,930),'越顶 · 穿身 · 反冲换台',font=ImageFont.truetype(font(True),49),fill='white')
     draw.rectangle((0,0,690,1080),fill='#10181c')
     draw.text((55,65),'失序之钟',font=ImageFont.truetype(font(True),73),fill='#f2dfad')
     draw.text((60,175),'独游折腾记 '+spec['public_episode'],font=ImageFont.truetype(font(True),38),fill='#d8e0df')
@@ -143,6 +156,9 @@ def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manife
     capture_folder=Path(capture_folder).resolve()
     c=load_capture(capture_folder.parent,capture_folder.name,spec['main_commit'])
     audit=audit_fight(c['trace']);trace=c['trace']
+    if spec.get('style',{}).get('interactive'):
+        if not trace.get('interactive_style'):raise ValueError('Interactive film needs an actual interactive recording')
+        audit['early_phase_interaction']=audit_interactions(trace)
     begin=trace['start_movie_frame']/60
     seconds=math.floor(min(trace['rows'][-1]['movie_frame']/60,c['duration']-begin)*30)/30
     cues=cue_plan(trace,seconds);(out/'subtitles.ass').write_text(ass_text(cues,seconds))
@@ -167,7 +183,7 @@ def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manife
                 raise ValueError('Recovered original source document mismatch: '+path)
         dest=out/'source-evidence'/path;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest);raw=p.read_bytes()
         documents.append(dict(path=path,commit=spec['main_commit'],sha256=sha(dest),git_blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest(),delivered_path=str(dest.relative_to(out))))
-    sources=dict(repository=spec['repository'],commit=spec['main_commit'],pr=150,recording_kind='fresh_original_native_recording',human_play=False,narration=False,captures=[dict(stage='windkeeper',source_commit=spec['main_commit'],movie_sha256=sha(c['movie']),delivered_recording='recordings/windkeeper/gameplay.mp4',receipt=c['receipt'])],documents=documents,combat_audit=audit,random_route_complete=None,limitations=['Declared isolated local Boss entry with base profile; not full-game progression or human gameplay.','Original source AI/HP/physics/resources are unchanged; software-rendered capture does not measure phone FPS.','Source aiming/occlusion helpers are reused read-only; floor forecasting is a recording input policy, not the game AI. One declared right-side local placement precedes the recorded live fight.','Successful automatic play does not certify player difficulty, fun, balance or aesthetic approval.'],rights=spec['rights'])
+    sources=dict(repository=spec['repository'],commit=spec['main_commit'],pr=150,recording_kind='fresh_original_native_recording',human_play=False,narration=False,captures=[dict(stage='windkeeper',source_commit=spec['main_commit'],movie_sha256=sha(c['movie']),delivered_recording='recordings/windkeeper/gameplay.mp4',receipt=c['receipt'])],documents=documents,combat_audit=audit,random_route_complete=None,limitations=['Declared isolated local Boss entry with base profile; not full-game progression or human gameplay.','Original source AI/HP/physics/resources are unchanged; software-rendered capture does not measure phone FPS.','Source aiming/occlusion helpers are reused read-only; floor forecasting is a recording input policy, not the game AI. One declared local placement precedes the recorded live fight; the exact scope is retained in the trace.','Successful automatic play does not certify player difficulty, fun, balance or aesthetic approval.'],rights=spec['rights'])
     write(out/'sources.json',sources)
     filt='fps=30,scale=1742:980:flags=lanczos:in_range=auto:out_range=tv,pad=1920:1080:89:0:color=0x10181c,setsar=1,ass='+str(out/'subtitles.ass')+',format=yuv420p'
     run(['ffmpeg','-nostdin','-y','-v','warning','-ss',begin,'-i',c['movie'],'-t',seconds,'-map','0:v:0','-map','0:a:0','-vf',filt,'-c:v','libx264','-preset','veryfast','-crf','20','-threads','4','-color_range','tv','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-movflags','+faststart',out/'final.mp4'],log=out/'logs/render.log',timeout=1500)
@@ -175,7 +191,7 @@ def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manife
     require_public_copy(spec['title'],spec['description'])
     (out/'bilibili.md').write_text('# B站投稿资料\n\n## 标题\n\n'+spec['title']+'\n\n## 简介\n\n'+spec['description']+'\n\n分区：游戏 → 单机游戏\n标签：B站AI创造公开赛、失序之钟、独立游戏、Godot、游戏开发、Boss战\n\n尚未投稿。活动需在获准投稿时核对真实话题关联。\n')
     (out/'script.md').write_text('# 无配音文字提示\n\n'+'\n'.join(f'- {c["start"]:.2f}–{c["end"]:.2f}s：{c["text"]}' for c in cues)+'\n')
-    (out/'phone-review.md').write_text('请完整观看：开战到死亡是否连续；慢时瞄准是否可读；三阶段走下台阶再反冲换台是否清楚；血条/脚下/字幕在手机上是否可读；原声是否舒适。程序输入不是真人操作，技术通过不代表好玩或难度合格。\n')
+    (out/'phone-review.md').write_text('请完整观看：一二阶段是否持续换边互动；越顶与穿身是否清楚；开战到死亡是否连续；慢时瞄准是否可读；三阶段走下台阶再反冲换台是否清楚；血条/脚下/字幕在手机上是否可读；原声是否舒适。程序输入不是真人操作，技术通过不代表好玩或难度合格。\n')
     report=validate_gameplay(out);report['combat_audit']=audit;report['publication']={'bilibili_published':False}
     report['technical']['checks']['explanatory_cue_bounds']=all(0<=c['start']<c['end']<=seconds for c in cues)
     report['technical']['passed']=all(report['technical']['checks'].values());write(out/'report.json',report)
