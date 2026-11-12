@@ -37,3 +37,13 @@ def test_real_position_and_posture_must_support_tactic_labels():
     bad=copy.deepcopy(t);bad['events']=[e for e in bad['events'] if e.get('kind')!='under'];variants.append(bad)
     for bad in variants:
         with pytest.raises(ValueError):audit_interactions(bad)
+
+
+def test_a_few_passages_do_not_excuse_corner_farming_between_them():
+    t=interactive();active=set()
+    begins={e['id']:e['frame'] for e in t['events'] if e['event']=='maneuver_begin'}
+    for e in t['events']:
+        if e['event']=='maneuver_complete':active.update(range(begins[e['id']],e['frame']+1))
+    for row in t['rows']:
+        if row['frame'] not in active:row['player'][0]=1400
+    with pytest.raises(ValueError,match='camps the boundary'):audit_interactions(t)

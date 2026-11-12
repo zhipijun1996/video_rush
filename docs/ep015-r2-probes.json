@@ -1,0 +1,411 @@
+{
+  "scope": "Input diagnostics. Room bounds for diagnostics read from the pinned P-R14 arena; raw trace files remain unchanged. Final native capture emits its actual room bounds.",
+  "attempts": [
+    {
+      "id": "p1",
+      "kind": "headless_input_diagnostic_not_visual_footage",
+      "source_commit": "c721b20aa9c34ea30b0498ee786f0a2c52f7d22d",
+      "original_trace_sha256": "51dd5a268721727eba3e2c13a6cd87e941bf8db27ff6750ee37133f930fa8889",
+      "executed_diagnostic_driver_sha256": "928ac5d5266b1a18b63111c1007181221c5bbdba47dcf6fce8faa15eeff73815",
+      "fight": {
+        "complete": true,
+        "phases": [
+          1,
+          2,
+          3
+        ],
+        "boss_initial_hp": 510.0,
+        "boss_final_hp": 0.0,
+        "player_final_hp": 4.0,
+        "actual_shots": 144,
+        "airborne_shots": 29,
+        "max_air_shots_per_flight": 1,
+        "actual_air_focus_seconds": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "walk_off_recoil_landings": 16,
+        "human_play": false,
+        "experience_quality": "not inferred from successful automatic input"
+      },
+      "interaction": {
+        "phases": {
+          "1": {
+            "overpasses": 3,
+            "underpasses": 2,
+            "player_horizontal_span": 916.1318359375,
+            "boss_horizontal_span": 477.973815917966,
+            "near_wall_fraction": 0.011879804332634521,
+            "longest_near_wall_seconds": 0.06666666666666667
+          },
+          "2": {
+            "overpasses": 10,
+            "underpasses": 3,
+            "player_horizontal_span": 751.0404357910161,
+            "boss_horizontal_span": 590.71887207031,
+            "near_wall_fraction": 0.10542679479932165,
+            "longest_near_wall_seconds": 1.3333333333333333
+          }
+        },
+        "passages": [
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 267,
+            "end_frame": 365,
+            "cross_frame": 321,
+            "cross_seconds": 5.35
+          },
+          {
+            "kind": "under",
+            "phase": 1,
+            "start_frame": 560,
+            "end_frame": 599,
+            "cross_frame": 580,
+            "cross_seconds": 9.666666666666666
+          },
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 820,
+            "end_frame": 918,
+            "cross_frame": 874,
+            "cross_seconds": 14.566666666666666
+          },
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 1107,
+            "end_frame": 1206,
+            "cross_frame": 1162,
+            "cross_seconds": 19.366666666666667
+          },
+          {
+            "kind": "under",
+            "phase": 1,
+            "start_frame": 1344,
+            "end_frame": 1383,
+            "cross_frame": 1364,
+            "cross_seconds": 22.733333333333334
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 1541,
+            "end_frame": 1649,
+            "cross_frame": 1602,
+            "cross_seconds": 26.7
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 1857,
+            "end_frame": 1964,
+            "cross_frame": 1917,
+            "cross_seconds": 31.95
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 2013,
+            "end_frame": 2125,
+            "cross_frame": 2066,
+            "cross_seconds": 34.43333333333333
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 2245,
+            "end_frame": 2337,
+            "cross_frame": 2298,
+            "cross_seconds": 38.3
+          },
+          {
+            "kind": "under",
+            "phase": 2,
+            "start_frame": 2598,
+            "end_frame": 2637,
+            "cross_frame": 2618,
+            "cross_seconds": 43.63333333333333
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 2857,
+            "end_frame": 2956,
+            "cross_frame": 2912,
+            "cross_seconds": 48.53333333333333
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 3030,
+            "end_frame": 3138,
+            "cross_frame": 3094,
+            "cross_seconds": 51.56666666666667
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 3337,
+            "end_frame": 3458,
+            "cross_frame": 3409,
+            "cross_seconds": 56.81666666666667
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 3551,
+            "end_frame": 3664,
+            "cross_frame": 3604,
+            "cross_seconds": 60.06666666666667
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 3783,
+            "end_frame": 3880,
+            "cross_frame": 3837,
+            "cross_seconds": 63.95
+          },
+          {
+            "kind": "under",
+            "phase": 2,
+            "start_frame": 4069,
+            "end_frame": 4108,
+            "cross_frame": 4089,
+            "cross_seconds": 68.15
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 4540,
+            "end_frame": 4639,
+            "cross_frame": 4595,
+            "cross_seconds": 76.58333333333333
+          },
+          {
+            "kind": "under",
+            "phase": 2,
+            "start_frame": 4805,
+            "end_frame": 4844,
+            "cross_frame": 4825,
+            "cross_seconds": 80.41666666666667
+          }
+        ],
+        "corner_band_width": 110,
+        "measured_behavior": true,
+        "human_enjoyment": "pending phone review; not certified by automatic play"
+      }
+    },
+    {
+      "id": "p2",
+      "kind": "headless_input_diagnostic_not_visual_footage",
+      "source_commit": "c721b20aa9c34ea30b0498ee786f0a2c52f7d22d",
+      "original_trace_sha256": "ba8ca2f9960375d450fe2dba8db0d81c7a24b50b458cdad33bef8e9d04ec82b3",
+      "executed_diagnostic_driver_sha256": "163222893c6a5eaf64055479675882c7fa52b0d13fc39e8c7b2b3f56eb81940e",
+      "fight": {
+        "complete": true,
+        "phases": [
+          1,
+          2,
+          3
+        ],
+        "boss_initial_hp": 510.0,
+        "boss_final_hp": 0.0,
+        "player_final_hp": 5.0,
+        "actual_shots": 145,
+        "airborne_shots": 27,
+        "max_air_shots_per_flight": 1,
+        "actual_air_focus_seconds": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "walk_off_recoil_landings": 19,
+        "human_play": false,
+        "experience_quality": "not inferred from successful automatic input"
+      },
+      "interaction": {
+        "phases": {
+          "1": {
+            "overpasses": 4,
+            "underpasses": 3,
+            "player_horizontal_span": 954.773132324214,
+            "boss_horizontal_span": 431.999206542969,
+            "near_wall_fraction": 0.02091152815013405,
+            "longest_near_wall_seconds": 0.2833333333333333
+          },
+          "2": {
+            "overpasses": 4,
+            "underpasses": 2,
+            "player_horizontal_span": 1083.991607666016,
+            "boss_horizontal_span": 417.09460449219,
+            "near_wall_fraction": 0.12575452716297786,
+            "longest_near_wall_seconds": 1.3166666666666667
+          }
+        },
+        "passages": [
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 267,
+            "end_frame": 365,
+            "cross_frame": 321,
+            "cross_seconds": 5.35
+          },
+          {
+            "kind": "under",
+            "phase": 1,
+            "start_frame": 532,
+            "end_frame": 571,
+            "cross_frame": 552,
+            "cross_seconds": 9.2
+          },
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 762,
+            "end_frame": 861,
+            "cross_frame": 817,
+            "cross_seconds": 13.616666666666667
+          },
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 1049,
+            "end_frame": 1148,
+            "cross_frame": 1104,
+            "cross_seconds": 18.4
+          },
+          {
+            "kind": "under",
+            "phase": 1,
+            "start_frame": 1262,
+            "end_frame": 1301,
+            "cross_frame": 1282,
+            "cross_seconds": 21.366666666666667
+          },
+          {
+            "kind": "under",
+            "phase": 1,
+            "start_frame": 1439,
+            "end_frame": 1478,
+            "cross_frame": 1459,
+            "cross_seconds": 24.316666666666666
+          },
+          {
+            "kind": "over",
+            "phase": 1,
+            "start_frame": 1690,
+            "end_frame": 1789,
+            "cross_frame": 1745,
+            "cross_seconds": 29.083333333333332
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 1975,
+            "end_frame": 2075,
+            "cross_frame": 2031,
+            "cross_seconds": 33.85
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 2282,
+            "end_frame": 2403,
+            "cross_frame": 2354,
+            "cross_seconds": 39.233333333333334
+          },
+          {
+            "kind": "under",
+            "phase": 2,
+            "start_frame": 2584,
+            "end_frame": 2623,
+            "cross_frame": 2604,
+            "cross_seconds": 43.4
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 2827,
+            "end_frame": 2925,
+            "cross_frame": 2881,
+            "cross_seconds": 48.016666666666666
+          },
+          {
+            "kind": "under",
+            "phase": 2,
+            "start_frame": 3088,
+            "end_frame": 3127,
+            "cross_frame": 3108,
+            "cross_seconds": 51.8
+          },
+          {
+            "kind": "over",
+            "phase": 2,
+            "start_frame": 3340,
+            "end_frame": 3447,
+            "cross_frame": 3399,
+            "cross_seconds": 56.65
+          }
+        ],
+        "corner_band_width": 110,
+        "measured_behavior": true,
+        "human_enjoyment": "pending phone review; not certified by automatic play"
+      }
+    }
+  ]
+}
