@@ -1,0 +1,54 @@
+name: Record Windkeeper and deliver original-audio film
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  film:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install recording and editing tools
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
+          python -m pip install Pillow requests pytest numpy
+          python -m pip install -e . --no-deps
+          pytest -q
+      - name: Record the pinned PR150 with original game AV
+        run: python -m tools.current_gameplay_job --spec episodes/ep015-gameplay.json --stage windkeeper --base build/native-windkeeper --output build/captures/windkeeper
+      - name: Validate play style and edit the complete battle without narration
+        run: python -m video_rush.boss_film --spec episodes/ep015-gameplay.json --capture build/captures/windkeeper --output build/episodes/ep015
+      - name: Keep movie and actual capture evidence
+        if: always()
+        id: film
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-rush-ep015
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep015/
+            build/captures/windkeeper/*.json
+            build/captures/windkeeper/*.log
+            build/captures/windkeeper/recording_driver.gd
+            build/native-windkeeper/preparation.json
+            build/native-windkeeper/import.log
+            build/native-windkeeper/world-build.log
+      - name: Phone download link
+        if: success()
+        env:
+          FILM_URL: ${{ steps.film.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载成片、封面、投稿资料与完整原始录屏]('+os.environ['FILM_URL']+')\n\n无配音，保留游戏原声和游戏内慢时。程序输入演示，未上传B站。产物保留14天。')
+          PY

@@ -47,6 +47,13 @@ def prepare(spec, stage_id, base):
             with z.open(members[0]) as source,engine.open('wb') as target:shutil.copyfileobj(source,target)
         if sha(engine)!=platform['binary_sha256']:raise ValueError('Pinned engine binary digest mismatch')
         engine.chmod(0o755);archive.unlink()
+    if stage.get('compile_world',False):
+        # Execute the snapshot's own compiler. Only generated build/world is
+        # written; authored game files are never patched for the recording.
+        import sys
+        with (base/'world-build.log').open('wb') as log:
+            subprocess.run([sys.executable,str(work/'tools/world/build.py')],cwd=work,
+                           stdout=log,stderr=subprocess.STDOUT,check=True,timeout=300)
     env=dict(os.environ,LIBGL_ALWAYS_SOFTWARE='1',LP_NUM_THREADS='4',
              XDG_DATA_HOME=str(base/'import-userdata'),XDG_CACHE_HOME=str(base/'import-cache'),XDG_CONFIG_HOME=str(base/'import-config'))
     with (base/'import.log').open('wb') as log:

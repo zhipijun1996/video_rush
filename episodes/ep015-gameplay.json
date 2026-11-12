@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "episode": "ep015",
+  "public_episode": "ep14",
+  "repository": "zhipijun1996/gunman-rush",
+  "main_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+  "pr": 150,
+  "title": "牧风者，开打！三阶段完整战斗 | 【失序之钟】独游折腾记 ep14【B站AI创造公开赛】",
+  "stages": {
+    "windkeeper": {
+      "version": "main",
+      "driver": "video_rush/drivers/windkeeper_player.gd",
+      "seed": 771903,
+      "args": [],
+      "compile_world": true,
+      "seed_scope": "Observed original source selection seed; not a recorder override"
+    }
+  },
+  "style": {
+    "narration": false,
+    "music": "original game music and effects only",
+    "max_air_shots_per_flight": 1,
+    "air_aim_real_seconds": 0.5,
+    "phase3": "walk off original shelf when Boss jumps toward it; one focused recoil onto an adjacent real shelf"
+  },
+  "description": "用当前开发版本，完整打一次牧风者。三阶段从开战到击败，保留游戏原声；不配解说，用少量文字提示打法。\n\n操作由程序输入：以常规移动和单次反冲为主，少用空中连续射击；每次空中开枪前，先使用游戏内的慢时瞄准0.5秒。三阶段遇到Boss跳扑，先走下原台阶，再反冲到另一块台阶。\n\n独立Boss测试入口、基础配置，保留原来的AI、血量和物理。游戏内慢时按原样保留，战斗没有后期加速。仍在开发打磨，自动操作跑通不代表难度、趣味或平衡已经验收，欢迎提建议。\n\nAI辅助开发与制作。本片无配音，实机、音乐和音效来自游戏录制。地形基础素材：Underworld Tileset / Asouris；视频字体：Noto CJK（OFL）。\n\n#B站AI创造公开赛# #独立游戏# #Godot# #失序之钟#",
+  "source_files": [
+    "game/world/regions/P/rooms/P-R14.tscn",
+    "game/world/regions/P/rooms/P-R14-arena.tres",
+    "game/bosses/windkeeper/windkeeper_pressure_encounter.gd",
+    "game/bosses/windkeeper/windkeeper_world_binding.gd",
+    "resources/bosses/windkeeper_storm.tres",
+    "resources/bosses/windkeeper_pressure_health.tres",
+    "game/player/actions/air_focus_ability.gd",
+    "config/player_tuning.json",
+    "config/world/player.json",
+    "tools/windkeeper_pressure_01/legal_input_pilot.gd",
+    "assets/audio/windkeeper_pressure_01/README.md",
+    "assets/audio/windkeeper_pressure_01/CC0-1.0.txt",
+    "game/presentation/audio/game_music.gd",
+    "assets/audio/bgm/provenance.json",
+    "assets/style_exploration/underworld/source/licenses/NOTICE.md",
+    "assets/style_exploration/underworld/source/licenses/publisher_page.txt"
+  ],
+  "rights": [
+    {
+      "kind": "game",
+      "status": "User-owned project, captured unmodified from the pinned PR150 snapshot; project art and third-party source licenses retained, including Underworld Tileset / Asouris."
+    },
+    {
+      "kind": "audio",
+      "status": "Actual captured game AV, including user-supplied in-game music. Source BGM provenance and Windkeeper CC0 effects documentation included. Project-specific user authorization only; broader music redistribution rights and authorship are unspecified."
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK, SIL OFL"
+    }
+  ],
+  "publication": {
+    "bilibili_authorized": false,
+    "delivery": "Actions artifact after actual native capture, edit and independent verification"
+  },
+  "source_ref": "PR150 head (draft, unmerged), frozen 2026-11-12 07:25:21 UTC"
+}
