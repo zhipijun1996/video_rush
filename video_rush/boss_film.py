@@ -122,6 +122,22 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     return header
 
 
+def make_cover(movie,begin,out,spec):
+    # Stable original ground view keeps the guardian's head and feet visible.
+    run(['ffmpeg','-v','error','-y','-ss',begin+10,'-i',movie,'-frames:v','1',out/'cover-source.png'])
+    im=Image.open(out/'cover-source.png').convert('RGB').resize((1920,1080),Image.Resampling.LANCZOS)
+    draw=ImageDraw.Draw(im)
+    draw.rectangle((0,0,690,1080),fill='#10181c')
+    draw.text((55,65),'失序之钟',font=ImageFont.truetype(font(True),73),fill='#f2dfad')
+    draw.text((60,175),'独游折腾记 '+spec['public_episode'],font=ImageFont.truetype(font(True),38),fill='#d8e0df')
+    draw.text((45,315),'牧风者',font=ImageFont.truetype(font(True),157),fill='white')
+    draw.text((45,500),'开打！',font=ImageFont.truetype(font(True),157),fill='white')
+    draw.line((60,770,620,770),fill='#f2dfad',width=3)
+    draw.text((60,825),'三阶段完整战斗',font=ImageFont.truetype(font(True),48),fill='#f2dfad')
+    draw.text((60,920),'游戏原声 · 开发中',font=ImageFont.truetype(font(True),39),fill='#d8e0df')
+    im.save(out/'cover.png')
+
+
 def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manifest=None):
     spec=read(spec_path);out=Path(output).resolve();out.mkdir(parents=True,exist_ok=True);(out/'logs').mkdir(exist_ok=True)
     capture_folder=Path(capture_folder).resolve()
@@ -155,13 +171,7 @@ def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manife
     write(out/'sources.json',sources)
     filt='fps=30,scale=1742:980:flags=lanczos:in_range=auto:out_range=tv,pad=1920:1080:89:0:color=0x10181c,setsar=1,ass='+str(out/'subtitles.ass')+',format=yuv420p'
     run(['ffmpeg','-nostdin','-y','-v','warning','-ss',begin,'-i',c['movie'],'-t',seconds,'-map','0:v:0','-map','0:a:0','-vf',filt,'-c:v','libx264','-preset','veryfast','-crf','20','-threads','4','-color_range','tv','-c:a','aac','-b:a','192k','-ar','48000','-ac','2','-movflags','+faststart',out/'final.mp4'],log=out/'logs/render.log',timeout=1500)
-    cover_at=next((e['movie_frame']/60+begin+.3 for e in trace['events'] if e['event']=='cross_begin'),begin+20)
-    run(['ffmpeg','-v','error','-y','-ss',cover_at,'-i',c['movie'],'-frames:v','1',out/'cover-source.png'])
-    im=Image.open(out/'cover-source.png').convert('RGB').resize((1920,1080),Image.Resampling.LANCZOS);draw=ImageDraw.Draw(im)
-    draw.rectangle((0,0,1920,125),fill='#10181c');draw.rectangle((0,800,1920,1080),fill='#10181c')
-    draw.text((65,24),'失序之钟 · 独游折腾记 '+spec['public_episode'],font=ImageFont.truetype(font(True),57),fill='#f2dfad')
-    draw.text((65,820),'牧风者，开打！',font=ImageFont.truetype(font(True),114),fill='white')
-    draw.text((70,984),'三阶段完整战斗 / 游戏原声 / 开发中',font=ImageFont.truetype(font(True),43),fill='#f2dfad');im.save(out/'cover.png')
+    make_cover(c['movie'],begin,out,spec)
     require_public_copy(spec['title'],spec['description'])
     (out/'bilibili.md').write_text('# B站投稿资料\n\n## 标题\n\n'+spec['title']+'\n\n## 简介\n\n'+spec['description']+'\n\n分区：游戏 → 单机游戏\n标签：B站AI创造公开赛、失序之钟、独立游戏、Godot、游戏开发、Boss战\n\n尚未投稿。活动需在获准投稿时核对真实话题关联。\n')
     (out/'script.md').write_text('# 无配音文字提示\n\n'+'\n'.join(f'- {c["start"]:.2f}–{c["end"]:.2f}s：{c["text"]}' for c in cues)+'\n')
