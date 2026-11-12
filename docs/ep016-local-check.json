@@ -215,5 +215,84 @@
       "passed": true
     }
   ],
-  "audio_concat_fix": "Original audio encoded once through concat filter; 7 comparison windows all match at zero additional offset. Prior AAC concat edition retained and not delivered."
+  "audio_concat_fix": "Original audio encoded once through concat filter; 7 comparison windows all match at zero additional offset. Prior AAC concat edition retained and not delivered.",
+  "phone_preview": {
+    "phone_sha256": "74f9287e8d9f6ac0bac5522a62457cd9b8979db8911115abf6e83c90442e9423",
+    "phone_bytes": 6195184,
+    "complete_phone_decode": true,
+    "phone_audio_alignment": [
+      {
+        "stage": "p10",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 1.0,
+        "correlation": 0.9998243740107295,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "street",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 15.033333333333333,
+        "correlation": 0.9998065059412464,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "clockheart",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 19.033333333333335,
+        "correlation": 0.9998021919267039,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "meadow",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 40.63333333333333,
+        "correlation": 0.999683940851072,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "carrier",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 45.199999999999996,
+        "correlation": 0.9998568005540825,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "sluice",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 56.33333333333332,
+        "correlation": 0.9997743020181149,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "repair",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 60.899999999999984,
+        "correlation": 0.999709924540072,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      }
+    ],
+    "AAC_packet_sha256": "cfe7eb3d9f6cd5eb0951fdd94f8ecdbca515ceb3b0e3ca40f1d57558be0bac59",
+    "audio_bitstream_matches_master": true
+  }
 }

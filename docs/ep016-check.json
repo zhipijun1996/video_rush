@@ -1,0 +1,310 @@
+{
+  "status": "actual_downloaded_media_and_native_inputs_verified",
+  "verified_manifest_files": 64,
+  "source_documents_matching_exact_git_blob": 18,
+  "source_commit": "dec47408ce8b7c4b98c5e215c8a23db482bc7864",
+  "movie_sha256": "885b966bde2547c8dea2d99c25e4fbf414110da2f9c4539deed9a06b43d3a5bd",
+  "seconds": 76.1,
+  "phone_sha256": "f5ca01962c34e3c292fd89567a92327d8e2ac7502fb3b2c45c496d83a60db572",
+  "phone_bytes": 6194048,
+  "complete_movie_decode": true,
+  "complete_phone_decode": true,
+  "native_take_audits": {
+    "p10": {
+      "complete": true,
+      "frames": 843,
+      "initial_pose": [
+        896.0,
+        2030.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R10"
+      ],
+      "session_changes": 0,
+      "native_shots": 10,
+      "actual_hit_refills": 5,
+      "max_shots_single_flight": 4,
+      "summit_y": 141.925262451172,
+      "no_hook_or_double_jump": true
+    },
+    "clockheart": {
+      "complete": true,
+      "frames": 1291,
+      "initial_pose": [
+        1330.0,
+        558.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R33",
+        "Z-R01"
+      ],
+      "session_changes": 1
+    },
+    "street": {
+      "complete": true,
+      "frames": 450,
+      "initial_pose": [
+        900.0,
+        1262.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R01"
+      ],
+      "session_changes": 0
+    },
+    "carrier": {
+      "complete": true,
+      "frames": 667,
+      "initial_pose": [
+        800.0,
+        1390.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "sluice": {
+      "complete": true,
+      "frames": 275,
+      "initial_pose": [
+        2352.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R20"
+      ],
+      "session_changes": 0
+    },
+    "repair": {
+      "complete": true,
+      "frames": 973,
+      "initial_pose": [
+        1800.0,
+        3918.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R15"
+      ],
+      "session_changes": 0
+    },
+    "meadow": {
+      "complete": true,
+      "frames": 273,
+      "initial_pose": [
+        1152.0,
+        1678.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R06"
+      ],
+      "session_changes": 0
+    }
+  },
+  "master_audio_alignment": [
+    {
+      "stage": "p10",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 1.0,
+      "correlation": 0.9998243740107295,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "street",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 15.033333333333333,
+      "correlation": 0.999822266516534,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "clockheart",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 19.033333333333335,
+      "correlation": 0.9997966072871097,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "meadow",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 40.63333333333333,
+      "correlation": 0.999676650116724,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "carrier",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 45.199999999999996,
+      "correlation": 0.9998537659551737,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "sluice",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 56.33333333333332,
+      "correlation": 0.999763071205606,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "repair",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 60.899999999999984,
+      "correlation": 0.9998436028579363,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    }
+  ],
+  "phone_audio_alignment": [
+    {
+      "stage": "p10",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 1.0,
+      "correlation": 0.9998243740107295,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "street",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 15.033333333333333,
+      "correlation": 0.999822266516534,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "clockheart",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 19.033333333333335,
+      "correlation": 0.9997966072871097,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "meadow",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 40.63333333333333,
+      "correlation": 0.999676650116724,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "carrier",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 45.199999999999996,
+      "correlation": 0.9998537659551737,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "sluice",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 56.33333333333332,
+      "correlation": 0.999763071205606,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "repair",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 60.899999999999984,
+      "correlation": 0.9998436028579363,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    }
+  ],
+  "original_driver_and_runtime_verified": true,
+  "phone_AAC_packets_identical_to_master": true,
+  "AAC_packet_sha256": "b17c79aa6264df6b19f3dbb3161d7634568244db5a174626011a44f80faa8c84",
+  "human_aesthetic_review": "pending",
+  "bilibili_published": false,
+  "actual_ass_cues_verified": 7,
+  "actual_ass_timeline_verified": true,
+  "cover_and_posting_small_package_verified": true,
+  "downloaded_phone_frames_inspected": [
+    "P10 four-shot ascent",
+    "clockheart native dialogue"
+  ],
+  "source_capture_run": 43245372340,
+  "production_run": 43247151646,
+  "production_code_commit": "28d4ddeb26b39698aa05c0d329a4c53b1edd22cf",
+  "workflow_status": "success",
+  "archive_digests_verified": true,
+  "artifacts": [
+    {
+      "id": 13959120004,
+      "name": "ep15-demo-phone-movie-only",
+      "size_in_bytes": 6194250,
+      "digest": "sha256:0215865df86410873f6e893b8052a574f401db36c3c03da1d81ee6a817b9e931",
+      "expires_at": "2026-11-26T15:25:14Z"
+    },
+    {
+      "id": 13958935702,
+      "name": "video-rush-ep016",
+      "size_in_bytes": 115759265,
+      "digest": "sha256:e41760b5d2f45f0b4bb0e685d9a7653e7c60442273774f7257b4d3115d1d1eaa",
+      "expires_at": "2026-11-26T15:25:11Z"
+    },
+    {
+      "id": 13957711578,
+      "name": "ep15-cover-and-posting",
+      "size_in_bytes": 405119,
+      "digest": "sha256:0a96959d66e38e36808d38e73f0e86b8a0257304c00031a300a66a4855b3f8a3",
+      "expires_at": "2026-11-26T15:25:16Z"
+    }
+  ],
+  "delivery_links": {
+    "phone": "https://github.com/zhipijun1996/video_rush/actions/runs/43247151646/artifacts/13959120004",
+    "cover_and_posting": "https://github.com/zhipijun1996/video_rush/actions/runs/43247151646/artifacts/13957711578",
+    "complete": "https://github.com/zhipijun1996/video_rush/actions/runs/43247151646/artifacts/13958935702"
+  },
+  "download_method": "CLI artifact redirect retrieval returned Forbidden; the connected GitHub plugin native artifact download supplied platform file references. All three downloaded ZIP digests match GitHub metadata; inherited proxy settings were preserved.",
+  "remote_movie_matches_local_bytes": false,
+  "rights_or_experience_acceptance": "not inferred from technical success"
+}
