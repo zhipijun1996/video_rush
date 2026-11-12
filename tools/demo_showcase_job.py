@@ -5,7 +5,7 @@ import argparse
 
 from tools.current_gameplay_job import prepare
 from tools.record_current_gameplay import capture
-from video_rush.common import read
+from video_rush.common import read, sha
 from video_rush.demo_showcase import audit_take
 from video_rush.gameplay import load_capture
 
@@ -21,12 +21,16 @@ def main():
     root=Path(a.captures).resolve()
     def record(case):
         name='demo-'+case;out=root/name
+        arguments=[*spec['stages'][case]['args'],f'--output={out}/trace.json']
         if out.exists():
             retained=load_capture(root,name,commit)
+            receipt=retained['receipt']
+            if receipt['driver_sha256']!=sha(work/driver) or receipt['arguments']!=arguments:
+                raise ValueError('Retained input recipe changed; use a fresh --captures directory: '+case)
             audit_take(retained['trace'],case)
             print('REUSED verified native take:',case,flush=True)
             return
-        capture(work,engine,driver,[*spec['stages'][case]['args'],f'--output={out}/trace.json'],out,commit,timeout=900)
+        capture(work,engine,driver,arguments,out,commit,timeout=900)
         audit_take(read(out/'trace.json'),case)
     with ThreadPoolExecutor(max_workers=a.workers) as pool:
         list(pool.map(record,spec['stages']))

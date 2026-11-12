@@ -1,9 +1,11 @@
 """Reject partial or reset gameplay even when the driver says complete."""
 from copy import deepcopy
+import shutil
+import subprocess
 
 import pytest
 
-from video_rush.demo_showcase import audit_take
+from video_rush.demo_showcase import audit_take, verify_audio_alignment
 
 
 def p10_trace():
@@ -36,3 +38,16 @@ def test_refuses_false_completion(alter):
     elif alter=='extra_ability':trace['events'][0]['stage']='h'
     elif alter=='invincible':trace['events'][0]['invincible']=True
     with pytest.raises(ValueError):audit_take(trace,'p10')
+
+
+@pytest.mark.skipif(not shutil.which('ffmpeg'),reason='FFmpeg required')
+def test_rejects_accumulated_audio_delay(tmp_path):
+    original=tmp_path/'original.wav';delayed=tmp_path/'delayed.wav'
+    subprocess.run(['ffmpeg','-y','-v','error','-f','lavfi','-i',
+                    'anoisesrc=duration=3:color=pink:seed=41','-ar','48000',str(original)],check=True)
+    subprocess.run(['ffmpeg','-y','-v','error','-i',str(original),
+                    '-af','adelay=80','-t','3',str(delayed)],check=True)
+    clips=[dict(stage='fixture',start=0,timeline_start=0,duration=3)]
+    captures={'fixture':{'movie':original}}
+    assert verify_audio_alignment(original,clips,captures)[0]['passed']
+    assert not verify_audio_alignment(delayed,clips,captures)[0]['passed']

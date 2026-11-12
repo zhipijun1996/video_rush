@@ -4,12 +4,51 @@ import argparse
 import hashlib
 import json
 import shutil
+import array
+import math
+import subprocess
 
 from PIL import Image, ImageDraw, ImageFont
 
 from .common import read, write, sha, run, font
 from .gameplay import load_capture, render_cut, validate_gameplay
 from .posting_policy import require_public_copy
+
+
+def verify_audio_alignment(movie, clips, captures):
+    """Compare each audible cut with its original, allowing 1ms rounding only."""
+    def decode(path, at, length):
+        raw=subprocess.check_output(['ffmpeg','-v','error','-ss',str(at),'-i',str(path),
+                                     '-t',str(length),'-ac','1','-ar','16000','-f','f32le','-'])
+        return array.array('f',raw)
+    results=[]
+    for clip in clips:
+        offset=min(1.0,clip['duration']/4)
+        length=min(1.2,clip['duration']-offset-.1)
+        original=decode(captures[clip['stage']]['movie'],clip['start']+offset,length)
+        final=decode(movie,clip['timeline_start']+offset,length)
+        n=min(len(original),len(final));a=original[:n];b=final[:n]
+        if n<1000:raise ValueError('Missing comparison audio')
+        # AAC quantisation and fractional resampling may differ by one sample;
+        # no multi-frame delay is accepted or silently compensated.
+        mean_a=sum(a)/n;mean_b=sum(b)/n
+        power_a=sum((v-mean_a)**2 for v in a)
+        power_b=sum((v-mean_b)**2 for v in b)
+        denom=math.sqrt(power_a*power_b)
+        if denom<1e-8:raise ValueError('Silent audio alignment window')
+        scores=[]
+        for lag in range(-16,17):
+            left=a[max(0,lag):min(n,n+lag)]
+            right=b[max(0,-lag):min(n,n-lag)]
+            corr=sum((x-mean_a)*(y-mean_b) for x,y in zip(left,right))/denom
+            scores.append((corr,lag))
+        corr,lag=max(scores)
+        results.append(dict(stage=clip['stage'],seconds=length,
+                            source_offset=clip['start']+offset,
+                            timeline_offset=clip['timeline_start']+offset,
+                            correlation=corr,matching_offset_ms=lag/16,
+                            tolerance_ms=1.0,passed=corr>.98))
+    return results
 
 
 def audit_take(trace, case):
@@ -95,23 +134,34 @@ def plan(captures):
     return clips
 
 
-def compose(spec_path, captures_root, output, source_project):
+def compose(spec_path, captures_root, output, source_project, capture_prefix='demo-'):
     spec = read(spec_path)
     out = Path(output).resolve()
     out.mkdir(parents=True, exist_ok=True)
     (out/'logs').mkdir(exist_ok=True)
-    captures = {name: load_capture(captures_root, 'demo-'+name, spec['main_commit'])
+    captures = {name: load_capture(captures_root, capture_prefix+name, spec['main_commit'])
                 for name in spec['stages']}
     audits = {name: audit_take(c['trace'], name) for name,c in captures.items()}
     clips = plan(captures)
     write(out/'storyboard.json', clips)
     paths = [render_cut(c, captures[c['stage']], out) for c in clips]
-    listing = out/'cuts/concat.txt'
-    listing.write_text(''.join("file '"+str(p)+"'\n" for p in paths))
-    run(['ffmpeg','-nostdin','-y','-v','error','-f','concat','-safe','0','-i',listing,
-         '-t',clips[-1]['timeline_end'],'-vf','fps=30,format=yuv420p',
+    # MP4 concat demuxing accumulates AAC priming at every boundary. Build the
+    # video from exact frame counts and encode audio once from the original
+    # captures; never concatenate separately encoded AAC tracks.
+    inputs=[];filters=[];count=len(clips)
+    for path in paths:inputs += ['-i',path]
+    for i,c in enumerate(clips):
+        inputs += ['-ss',c['start'],'-t',c['duration'],'-i',captures[c['stage']]['movie']]
+        frames=round(c['duration']*30)
+        filters.append(f'[{i}:v]trim=end_frame={frames},setpts=N/(30*TB),setsar=1[v{i}]')
+        filters.append(f'[{count+i}:a]atrim=duration={c["duration"]},asetpts=PTS-STARTPTS,aresample=48000,apad=whole_dur={c["duration"]},atrim=duration={c["duration"]},afade=t=in:d=0.025,afade=t=out:st={max(0,c["duration"]-.025)}:d=0.025[a{i}]')
+    filters.append(''.join(f'[v{i}][a{i}]' for i in range(count))+f'concat=n={count}:v=1:a=1[v][a]')
+    run(['ffmpeg','-nostdin','-y','-v','error',*inputs,
+         '-filter_complex_threads','2','-filter_complex',';'.join(filters),
+         '-map','[v]','-map','[a]','-t',clips[-1]['timeline_end'],
+         '-r','30','-fps_mode','cfr',
          '-c:v','libx264','-preset','veryfast','-crf','19','-threads','4',
-         '-color_range','tv','-af','aresample=async=1:first_pts=0',
+         '-color_range','tv',
          '-c:a','aac','-b:a','192k','-ar','48000',
          '-bsf:v','h264_metadata=video_format=5:video_full_range_flag=0',
          '-movflags','+faststart',out/'final.mp4'],log=out/'logs/compose.log',timeout=600)
@@ -172,6 +222,10 @@ def compose(spec_path, captures_root, output, source_project):
     draw.text((705,93),'只用枪，也能登顶',font=ImageFont.truetype(font(True),70),fill='#f2dfad')
     cover.save(out/'cover.png');(out/'cover-source.png').unlink()
     report = validate_gameplay(out)
+    alignment=verify_audio_alignment(out/'final.mp4',clips,captures)
+    report['technical']['audio_alignment']=alignment
+    report['technical']['checks']['original_audio_alignment']=all(r['passed'] for r in alignment)
+    report['technical']['passed']=all(report['technical']['checks'].values())
     report.update(episode=spec['episode'],native_take_audits=audits,
                   publication={'bilibili_published':False},
                   user_request='最新版当前玩法与钟心剧情精彩片段；Demo中的Demo')
@@ -194,7 +248,8 @@ def main():
     p.add_argument('--spec',default='episodes/ep016-showcase.json')
     p.add_argument('--captures',required=True);p.add_argument('--output',required=True)
     p.add_argument('--source-project',required=True)
-    a=p.parse_args();compose(a.spec,a.captures,a.output,a.source_project)
+    p.add_argument('--capture-prefix',default='demo-')
+    a=p.parse_args();compose(a.spec,a.captures,a.output,a.source_project,a.capture_prefix)
 
 
 if __name__=='__main__':main()

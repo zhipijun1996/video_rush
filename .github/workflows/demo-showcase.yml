@@ -1,8 +1,15 @@
 name: Demo showcase and small phone movie
 on:
   workflow_dispatch:
+    inputs:
+      source_run:
+        description: Optional successful prior run; reuse its verified native recordings
+        required: false
+        type: string
+        default: ''
 permissions:
   contents: read
+  actions: read
 jobs:
   showcase:
     runs-on: ubuntu-24.04
@@ -23,9 +30,21 @@ jobs:
           python -m pip install -e . --no-deps
           pytest -q
       - name: Record pinned main through original game controls and audio
+        if: inputs.source_run == ''
         run: python -m tools.demo_showcase_job
+      - uses: actions/download-artifact@v4
+        if: inputs.source_run != ''
+        with:
+          name: video-rush-ep016
+          path: build/recovery
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
       - name: Edit selected native takes and validate
+        if: inputs.source_run == ''
         run: python -m video_rush.demo_showcase --captures build/captures --source-project build/native-demo-showcase/project --output build/episodes/ep016
+      - name: Revalidate retained native takes and compose without AAC offset accumulation
+        if: inputs.source_run != ''
+        run: python -m video_rush.demo_showcase --captures build/recovery/episodes/ep016/recordings --capture-prefix '' --source-project build/recovery/episodes/ep016/source-evidence --output build/episodes/ep016
       - name: Make complete small phone preview
         run: python tools/phone_preview.py --source build/episodes/ep016 --output build/phone-ep016/失序之钟_Demo中的Demo_手机预览.mp4
       - uses: actions/upload-artifact@v4

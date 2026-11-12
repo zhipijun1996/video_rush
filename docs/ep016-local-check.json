@@ -1,6 +1,6 @@
 {
   "status": "actual_local_native_capture_and_complete_film_verified",
-  "movie_sha256": "7dffc439860cde748e90d9c2e7d2446c64d679f7fc3ef3d541b1511533b17850",
+  "movie_sha256": "2d13d8ed0a2a880b01e9f1400cd2393cea0a5cbcab335cc36b0557d605927eee",
   "seconds": 76.1,
   "manifest_files": 64,
   "verified_git_documents": 18,
@@ -21,7 +21,8 @@
     "subtitle_bounds": true,
     "source_hashes": true,
     "no_long_black": true,
-    "no_unexplained_freeze": true
+    "no_unexplained_freeze": true,
+    "original_audio_alignment": true
   },
   "native_take_audits": {
     "p10": {
@@ -139,7 +140,80 @@
     "repair"
   ],
   "cover_inspected": true,
-  "tests": "122 passed, 1 optional skipped",
+  "tests": "123 passed, 1 optional skipped",
   "human_aesthetic_review": "pending",
-  "bilibili_published": false
+  "bilibili_published": false,
+  "original_audio_alignment": [
+    {
+      "stage": "p10",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 1.0,
+      "correlation": 0.9998243740107295,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "street",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 15.033333333333333,
+      "correlation": 0.9998065059412464,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "clockheart",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 19.033333333333335,
+      "correlation": 0.9998021919267039,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "meadow",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 40.63333333333333,
+      "correlation": 0.999683940851072,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "carrier",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 45.199999999999996,
+      "correlation": 0.9998568005540825,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "sluice",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 56.33333333333332,
+      "correlation": 0.9997743020181149,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "repair",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 60.899999999999984,
+      "correlation": 0.999709924540072,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    }
+  ],
+  "audio_concat_fix": "Original audio encoded once through concat filter; 7 comparison windows all match at zero additional offset. Prior AAC concat edition retained and not delivered."
 }
