@@ -1,0 +1,81 @@
+{
+  "verified_manifest_files": 36,
+  "source_documents_matching_exact_git_blob": 16,
+  "complete_movie_decode": true,
+  "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+  "movie_sha256": "24ef07a9c8c0d1c92edc691e884d9d1abd0a485aca2430f437802edeaa2303ad",
+  "actual_combat": {
+    "complete": true,
+    "phases": [
+      1,
+      2,
+      3
+    ],
+    "boss_initial_hp": 510.0,
+    "boss_final_hp": 0.0,
+    "player_final_hp": 5.0,
+    "actual_shots": 136,
+    "airborne_shots": 22,
+    "max_air_shots_per_flight": 1,
+    "actual_air_focus_seconds": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "walk_off_recoil_landings": 21,
+    "human_play": false,
+    "experience_quality": "not inferred from successful automatic input"
+  },
+  "original_recording_and_executed_driver_verified": true,
+  "original_audio_alignment": [
+    {
+      "window_start": 10,
+      "seconds": 4,
+      "correlation": 0.9998516306564654,
+      "edited_audio_offset_from_original_seconds": 0.0
+    },
+    {
+      "window_start": 45,
+      "seconds": 4,
+      "correlation": 0.9999505226312125,
+      "edited_audio_offset_from_original_seconds": 0.0
+    },
+    {
+      "window_start": 90,
+      "seconds": 4,
+      "correlation": 0.9998594003260216,
+      "edited_audio_offset_from_original_seconds": 0.0
+    }
+  ],
+  "phone_aesthetic_review": "pending",
+  "delivery": {
+    "run_id": 43181841632,
+    "artifact_id": 13927230920,
+    "url": "https://github.com/zhipijun1996/video_rush/actions/runs/43181841632/artifacts/13927230920",
+    "zip_bytes": 277788584,
+    "zip_sha256": "49c09a704661ed1f85cf3bd1fc0bdec2f41ca948804fde927c97ce277b79164c",
+    "expires_at": "2026-11-26T08:20:45Z",
+    "production_commit": "51aec3c54e33af8d6b2de6f60c76499987908082",
+    "retained_native_capture_run": 43179502332
+  },
+  "cover_sha256": "5f18c9bc9b07ed097b547258d075fc9823aadca7ca44d2ed63732826ba6e68a9"
+}
