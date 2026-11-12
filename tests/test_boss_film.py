@@ -54,3 +54,8 @@ def test_cues_are_finite_ordered_and_do_not_hide_gameplay_with_overlap():
     text=ass_text(cues,103.5)
     assert '无配音' in text and 'Noto Sans CJK SC' in text
     assert 'Dialogue:' in text
+
+
+def test_cue_rounding_does_not_exceed_a_real_30fps_end():
+    cues=cue_plan(completed(),102.06666666666666)
+    assert all(c['end']<=102.06666666666666 for c in cues)

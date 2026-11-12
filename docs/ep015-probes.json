@@ -1,0 +1,459 @@
+{
+  "scope": "Actual retained local input diagnostics. A successful diagnostic is not visual footage. Frozen source updated during work; old version capture was interrupted and rejected.",
+  "attempts": [
+    {
+      "id": "p1",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "4fbf0cce1567e53d7bf10c13af02a4b10fc2a95a9f9d29c7ecf274558cf88c21",
+      "driver_sha256": null,
+      "outcome": "no completed trace; not certified",
+      "errors": [
+        "SCRIPT ERROR: Parse Error: The function signature doesn't match the parent. Parent signature is \"set_source_axis(StringName, float, bool = <default>) -> void\".",
+        "ERROR: Failed to load script \"res://tools/video_rush_windkeeper.gd\" with error \"Parse error\"."
+      ]
+    },
+    {
+      "id": "p2",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "266cff203468d53d4378d3d2b0eb03658943fd9e31504a7fed928e096cabaebe",
+      "driver_sha256": null,
+      "outcome": "no completed trace; not certified",
+      "errors": [
+        "SCRIPT ERROR: Invalid type in function 'step' in base 'RefCounted (legal_input_pilot.gd)'. The array of argument 4 (Array) does not have the same element type as the expected typed array argument."
+      ]
+    },
+    {
+      "id": "p3",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "8bbde4839ea853bbd419f41463b33df87e1e73b1569bd3498a857d3103bd7da1",
+      "driver_sha256": "f91d8705f42475b724dbaacb49f99a7bef5b42be24b74259d7b747c558a68ef4",
+      "failure": "",
+      "victory_frame": 5366,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 0.0,
+      "last_player_hp": 5.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "2b8eb0fa791f8ebe209e02963d4041af97b488f510bd1a0ae7111e5416d24692"
+    },
+    {
+      "id": "p4",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "6938a1d21ebca14a080c0ef9be0d9f74226de333eb28ba3858b2a24aa048c21a",
+      "driver_sha256": "0a5c32921ab6dfbab476b8ac5e7def5fb1737bc7420f0b89765f510d441751c8",
+      "outcome": "no completed trace; not certified",
+      "errors": []
+    },
+    {
+      "id": "p5",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "21d98f5ae929124858933247f696b49e8c188ee537cf7d9ef91c7bb2a2de27dc",
+      "driver_sha256": "38719b21f82b02e784f3d2ba0737c62ca67d32fb3eccc2c0c1420e7b50f326c8",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 465.0,
+      "last_player_hp": 5.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "d12ff20d420d181e6c66c71dfc7151a266e89d0869e3407f3bf96a1b06bb2373"
+    },
+    {
+      "id": "p6",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "bb89e1ffdfd82e83a18cb874ebf3e4ac08c005aec1803d6ca4ea62fc407c9deb",
+      "driver_sha256": "1afa27b51cbdce67792918f66337c7b70726448b02aa1f08897de26efd5af216",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 480.0,
+      "last_player_hp": 5.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "84f09918a46d54ed7e0342aca12757f5df56f29b2614b6d9fa5af86280c07cad"
+    },
+    {
+      "id": "p7",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "7312957634d88e2c421bd0087cf9f896c0e9e40fbdceb96dd84dfb124ee10877",
+      "driver_sha256": "b19ae8078cd44a8c7c12c90c1cc836ef09b6b1f01bc27f2023b91b663152259b",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 385.0,
+      "last_player_hp": 5.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "3d436563057d14727505239bae4995d4c25e0381410f1688c75c2d6120dc7979"
+    },
+    {
+      "id": "p8",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "2f0f6d82baa577106188192b15bbdcaebf0ae471739bee4c18359a74821897b0",
+      "driver_sha256": "d40ef76a9c3abc57bd37ca46a6e7fb7dc6680aa305180eb02e9c69830b3e3662",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 370.0,
+      "last_player_hp": 5.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "9840988ea6bda647bc51c011d8f7ad66420120a2a34a115778cb661a7392fe99"
+    },
+    {
+      "id": "p9",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "b9336a6668f948acc8880ad45795028d2d9211a30a5d2f69823cde17fd1e811a",
+      "driver_sha256": "f2d32073f9a4a6cac2458c9e8acf929ee8bb3e74599cef94ee1f682b51357838",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 490.0,
+      "last_player_hp": 5.0,
+      "air_shots": 7,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "e29315cc3fcf513241d5bec241284435ffc753f0df89b245b5b2a0e19366f356"
+    },
+    {
+      "id": "p10",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "f5f8cf260f6bb22d85daceec85b3fb48310052e677b1f23a1718d5846234454d",
+      "driver_sha256": "7e985833e27c7018247eb71d646b269f0f8d30c8a436a5ece8a0359d3ef4a4fe",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 165.0,
+      "last_player_hp": 1.0,
+      "air_shots": 2,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "941de8191f4212115c9c555cc245498348d51d7dbfd6dc73e1d6bddc8e714e2d"
+    },
+    {
+      "id": "p11",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "fa26adbeeecde4629e41929fc8d03f200027ed5f53b492aca9cfb198ee4c3f3d",
+      "driver_sha256": "fe761121c1973af6f1655fecdf0c60bb027a62d20856d41c7b984e1884e437b5",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 170.0,
+      "last_player_hp": 5.0,
+      "air_shots": 4,
+      "successful_walk_off_landings": 3,
+      "trace_sha256": "fc36b87831f91ae1b9f7cc264530baa2377afa11fc81ad37126ac4a27803ae7d"
+    },
+    {
+      "id": "p12",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "6a10dfc16b51f40f6284637f77ccd4d92305d67e48420131488f777ecd3f3085",
+      "driver_sha256": "26c08234e08409170b75638868236c9cd6609608ee39d430ac19b2fc693e037b",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 45.0,
+      "last_player_hp": 5.0,
+      "air_shots": 11,
+      "successful_walk_off_landings": 11,
+      "trace_sha256": "94225089436f2183cefde9efa6202500e7d1ad41880832853ffe9ebdb08684a0"
+    },
+    {
+      "id": "p13",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "872a6304b2e2df23c083434f5495f196d6f56fb9ef2c0c246ecc35be590d11d6",
+      "driver_sha256": "c3f616a97596dbcf7f5f9e802e6f2b31d5db4f2dcce4609207dc3a1876082b75",
+      "failure": "player or encounter released",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 45.0,
+      "last_player_hp": 5.0,
+      "air_shots": 11,
+      "successful_walk_off_landings": 11,
+      "trace_sha256": "5e1b898202da77c451312110ea98e73550c53b24826c923072dd4d498adb4253"
+    },
+    {
+      "id": "p14",
+      "source_commit": "e7971cc88222ac1f1c6b60c0a425e0f17cde9ea8",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "3a1790c123b95cbfc211d51f41df3b5c6fc1a5523c9b0cd0d73567d38c14516c",
+      "driver_sha256": "be3ad214ad58fb8dfa3d1c79aec066295f3dd2ba7ffc89b0476939a6ef69490d",
+      "failure": "",
+      "victory_frame": 9713,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 0.0,
+      "last_player_hp": 4.0,
+      "air_shots": 34,
+      "successful_walk_off_landings": 34,
+      "trace_sha256": "793e778ee8d7dc6475f8f88bde4b19396cbad238bd208544a9e1a795655fc307"
+    },
+    {
+      "id": "p15",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "b44e85b590d17ecc5ab7086461993016fc9500cca417126838d24432b5dcb9ae",
+      "driver_sha256": "65b8b631371ad3a7307accc8233d3a46fd956095c54313615ad3b376adfcac46",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2
+      ],
+      "last_boss_hp": 300.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "409213c5705ad8d47dd220560d63e36b2af364d80534a5b6f1103c4a2644318e"
+    },
+    {
+      "id": "p16",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "7601f25817a23f9b0bc74079e1247201e017664e9301ec61f836c89733188cee",
+      "driver_sha256": "0dc773080acac6d7fdc485d08234e8518aa163f1189f437c1ffd7dfc038d398d",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 510.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "c7bb7b9ae1051f78d750adaba8f1612d2ef2521cb11b383bbd9c91b7174dc01b"
+    },
+    {
+      "id": "p17",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "58aa5a570801b939cc8586fa587d868b3e0dcf6654515433d7203766e135b869",
+      "driver_sha256": "c8452d25b83079bf0540dfcdc410ffec0e32ce3582db636f84ce5de16e983862",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 510.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "c7bb7b9ae1051f78d750adaba8f1612d2ef2521cb11b383bbd9c91b7174dc01b"
+    },
+    {
+      "id": "p18",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "18657493156eacdfbb6316dfa44af81cba86f92588cd2c29e43e9e6a3c762fd1",
+      "driver_sha256": "cafa608a49786a90149eba878e05bf7ab56a4292f7cd0961c32c7f82d6295c6e",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 475.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "cc3cb80fc1333e1635074509ef94475eab019d9f04381e3e6fd6729a8785852d"
+    },
+    {
+      "id": "p19",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "91992416bc26ea9bf00eb5d5b423ae3976c76501a342fdca248e502baab6197e",
+      "driver_sha256": "313a7de942f0428012dd73bd295eb3de994a987bc72c654cc5188c2177924f25",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 510.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "88fc13c01d75b2020af58c8b1830692bccf38fa2647908691eecb3716be48904"
+    },
+    {
+      "id": "p20",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "fc4aaaa72ef4aa5da187941feb93d35b6112e32eaca19297ec3307b1a35c54b3",
+      "driver_sha256": "bd16e46d11b4511e554be2b6567c5a1077c66ea5c02bc4513fe723af01549f8d",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 460.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "1638c6a7daab11d2d3aab0c69cd5f79ffbbe274063a0afc93b8c507a3d6eb7cb"
+    },
+    {
+      "id": "p21",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "d4a047628b95d486a6b24c995d43ad79edb2e9afa8460a32bdd5223e70fe134d",
+      "driver_sha256": "72ca20d77d8365607117f9a3ec03a1e21cbd6455b987c7240c060182d6538c6c",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 470.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "8cbac745df5b45678c18229d37c5f42525539c52976d2dc4a2265671e887b5bb"
+    },
+    {
+      "id": "p22",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "c52b6f16afa7e0da5fd69a41413e7bb27ae28e0750ec3b779e76d73e0156b52c",
+      "driver_sha256": "22c0e0b7aa8793e174bca664e70675a8f11c285d2fcd72bcca495ac30e8de68b",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1
+      ],
+      "last_boss_hp": 480.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "46263f67a33c96325f6b68b194104301e2349f4c57d0af61dbb0fc2dd5af2226"
+    },
+    {
+      "id": "p23",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "a8456239bdeebbf00a466b7980a8872f138c6f260e28d001ed1cfbe65dc9102a",
+      "driver_sha256": "c3d323ee8e9e408dd94da0d252cde7cddc0b9030cff39b28b94f6b932b375170",
+      "outcome": "no completed trace; not certified",
+      "errors": [
+        "SCRIPT ERROR: Parse Error: Cannot infer the type of \"safe\" variable because the value doesn't have a set type.",
+        "ERROR: Failed to load script \"res://tools/video_rush_windkeeper.gd\" with error \"Parse error\"."
+      ]
+    },
+    {
+      "id": "p24",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "5e4d47ebe5501a6459cd9c69124f3b53adc1f86e66639fe6e2c6c1d6bdef82da",
+      "driver_sha256": "d25cd7f422d5d8d15108ccea7b2a669b783fc339d45c421cc0fa6e990b3ff89d",
+      "failure": "actual hazard checkpoint return; preserve as failed attempt",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 140.0,
+      "last_player_hp": 3.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "9079cbf5ccb4d251da7a885700e8e96a8cdb3ca9ac8b21cc5a1881c71eafc8b7"
+    },
+    {
+      "id": "p25",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "895a0f942312540c92e87537f9b23311d77ba52bab2e067c8da530488a8528e7",
+      "driver_sha256": "707eb4d1bb8a7bd78101dccbf5e1377ffef3191799e913ed52281ab5986a720e",
+      "failure": "player died, room changed or session restarted",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 100.0,
+      "last_player_hp": 0.0,
+      "air_shots": 0,
+      "successful_walk_off_landings": 0,
+      "trace_sha256": "53f6c53fa37700b18fff48fd8639285f728dac5497673abb488450d5e4bd991a"
+    },
+    {
+      "id": "p26",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "fefcb9612b53a93bde353c599d49b0254daeb471b026070b1dd4979e5f9a0be7",
+      "driver_sha256": "ef6f1a4a8f6a3be70bec664b1eccad8bed2c4bf446d72e0d563b69331f757ada",
+      "failure": "actual hazard checkpoint return; preserve as failed attempt",
+      "victory_frame": -1,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 70.0,
+      "last_player_hp": 2.0,
+      "air_shots": 13,
+      "successful_walk_off_landings": 11,
+      "trace_sha256": "04f6fd2a2bc26b2156174b1c96e9641a80ed79965217e84333bc3ab44a1d4284"
+    },
+    {
+      "id": "p27",
+      "source_commit": "aa0d14d954e8fcc7935b53eb607498f500806d4d",
+      "kind": "headless_input_diagnostic_not_rendered_footage",
+      "log_sha256": "15c4b3a36a92b2a528b2c4a52636cbd7d791e0346fbb5a6fc07238b1ae3d04fe",
+      "driver_sha256": "1675cb8a3907f50169a301fe4f49bfaa99739ca110ed6fcf37a1c9f7ed469109",
+      "failure": "",
+      "victory_frame": 5914,
+      "phases": [
+        1,
+        2,
+        3
+      ],
+      "last_boss_hp": 0.0,
+      "last_player_hp": 5.0,
+      "air_shots": 22,
+      "successful_walk_off_landings": 21,
+      "trace_sha256": "e913b347d6952c4426d5c846b7382fcfcff749cafe4e3e42bf11f984799458fa"
+    }
+  ]
+}

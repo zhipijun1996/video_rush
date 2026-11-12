@@ -1,8 +1,15 @@
 name: Record Windkeeper and deliver original-audio film
 on:
   workflow_dispatch:
+    inputs:
+      source_run:
+        description: Optional prior run with a validated native capture (skip rerecording)
+        required: false
+        type: string
+        default: ''
 permissions:
   contents: read
+  actions: read
 jobs:
   film:
     runs-on: ubuntu-24.04
@@ -23,9 +30,21 @@ jobs:
           python -m pip install -e . --no-deps
           pytest -q
       - name: Record the pinned PR150 with original game AV
+        if: inputs.source_run == ''
         run: python -m tools.current_gameplay_job --spec episodes/ep015-gameplay.json --stage windkeeper --base build/native-windkeeper --output build/captures/windkeeper
+      - uses: actions/download-artifact@v4
+        if: inputs.source_run != ''
+        with:
+          name: video-rush-ep015
+          path: build/recovery
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
       - name: Validate play style and edit the complete battle without narration
+        if: inputs.source_run == ''
         run: python -m video_rush.boss_film --spec episodes/ep015-gameplay.json --capture build/captures/windkeeper --output build/episodes/ep015
+      - name: Revalidate and edit the retained original capture
+        if: inputs.source_run != ''
+        run: python -m video_rush.boss_film --spec episodes/ep015-gameplay.json --capture build/recovery/episodes/ep015/recordings/windkeeper --source-evidence build/recovery/episodes/ep015/source-evidence --source-manifest build/recovery/episodes/ep015/sources.json --output build/episodes/ep015
       - name: Keep movie and actual capture evidence
         if: always()
         id: film

@@ -76,7 +76,7 @@ def cue_plan(trace,seconds):
     cues=[]
     def add(at,length,text,kind):
         at=max(0,float(at));end=min(seconds,at+length)
-        if end>at:cues.append(dict(start=round(at,3),end=round(end,3),text=text,kind=kind))
+        if end>at:cues.append(dict(start=round(at,3),end=min(seconds,round(end,3)),text=text,kind=kind))
     add(.3,5.5,'牧风者 · 三阶段完整战斗 / 独立 Boss 测试入口','intro')
     add(6,5,'常规移动为主 · 每次空中开枪前慢时瞄准 0.5 秒','style')
     for phase in [2,3]:
@@ -122,7 +122,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     return header
 
 
-def compose(spec_path,capture_folder,output):
+def compose(spec_path,capture_folder,output,*,source_evidence=None,source_manifest=None):
     spec=read(spec_path);out=Path(output).resolve();out.mkdir(parents=True,exist_ok=True);(out/'logs').mkdir(exist_ok=True)
     capture_folder=Path(capture_folder).resolve()
     c=load_capture(capture_folder.parent,capture_folder.name,spec['main_commit'])
@@ -135,9 +135,21 @@ def compose(spec_path,capture_folder,output):
     target=out/'recordings/windkeeper';target.mkdir(parents=True,exist_ok=True)
     for name in ['gameplay.mp4','trace.json','receipt.json','recording_driver.gd','native.log','display.log','encode.log','decode.log']:
         if (capture_folder/name).exists():shutil.copyfile(capture_folder/name,target/name)
-    source_project=Path(c['receipt']['source_project']);documents=[]
+    source_project=Path(source_evidence) if source_evidence else Path(c['receipt']['source_project']);documents=[]
+    original_documents={}
+    if source_evidence:
+        if not source_manifest:raise ValueError('Recovery requires the original source manifest')
+        original=read(source_manifest)
+        if original['commit']!=spec['main_commit']:raise ValueError('Recovered source commit mismatch')
+        original_documents={d['path']:d for d in original['documents']}
     for path in spec['source_files']:
-        p=source_project/path;dest=out/'source-evidence'/path;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest);raw=p.read_bytes()
+        p=source_project/path
+        if source_evidence:
+            expected=original_documents.get(path,{})
+            raw=p.read_bytes();blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+            if expected.get('sha256')!=sha(p) or expected.get('git_blob')!=blob or expected.get('commit')!=spec['main_commit']:
+                raise ValueError('Recovered original source document mismatch: '+path)
+        dest=out/'source-evidence'/path;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest);raw=p.read_bytes()
         documents.append(dict(path=path,commit=spec['main_commit'],sha256=sha(dest),git_blob=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest(),delivered_path=str(dest.relative_to(out))))
     sources=dict(repository=spec['repository'],commit=spec['main_commit'],pr=150,recording_kind='fresh_original_native_recording',human_play=False,narration=False,captures=[dict(stage='windkeeper',source_commit=spec['main_commit'],movie_sha256=sha(c['movie']),delivered_recording='recordings/windkeeper/gameplay.mp4',receipt=c['receipt'])],documents=documents,combat_audit=audit,random_route_complete=None,limitations=['Declared isolated local Boss entry with base profile; not full-game progression or human gameplay.','Original source AI/HP/physics/resources are unchanged; software-rendered capture does not measure phone FPS.','Source aiming/occlusion helpers are reused read-only; floor forecasting is a recording input policy, not the game AI. One declared right-side local placement precedes the recorded live fight.','Successful automatic play does not certify player difficulty, fun, balance or aesthetic approval.'],rights=spec['rights'])
     write(out/'sources.json',sources)
@@ -164,7 +176,7 @@ def compose(spec_path,capture_folder,output):
 
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--spec',required=True);parser.add_argument('--capture',required=True);parser.add_argument('--output',required=True);a=parser.parse_args();compose(a.spec,a.capture,a.output)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--spec',required=True);parser.add_argument('--capture',required=True);parser.add_argument('--output',required=True);parser.add_argument('--source-evidence');parser.add_argument('--source-manifest');a=parser.parse_args();compose(a.spec,a.capture,a.output,source_evidence=a.source_evidence,source_manifest=a.source_manifest)
 
 
 if __name__=='__main__':main()
