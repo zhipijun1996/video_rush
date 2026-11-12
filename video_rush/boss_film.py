@@ -124,7 +124,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def make_cover(movie,begin,out,spec):
     # Stable original ground view keeps the guardian's head and feet visible.
-    run(['ffmpeg','-v','error','-y','-ss',begin+4,'-i',movie,'-frames:v','1',out/'cover-source.png'])
+    run(['ffmpeg','-v','error','-y','-ss',begin+3.1,'-i',movie,'-frames:v','1',out/'cover-source.png'])
     im=Image.open(out/'cover-source.png').convert('RGB').resize((1920,1080),Image.Resampling.LANCZOS)
     draw=ImageDraw.Draw(im)
     draw.rectangle((0,0,690,1080),fill='#10181c')
