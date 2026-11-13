@@ -75,6 +75,21 @@ def audit_take(trace, case):
         lines = [e for e in events if e['event']=='dialogue']
         if [e['index'] for e in lines] != [0,1,2]:
             raise ValueError('Clockheart native dialogue missing')
+    if case == 'patrol':
+        modes={r.get('boss_mode') for r in rows}
+        health=[r['boss_hp'] for r in rows if 'boss_hp' in r]
+        shots=[e for e in events if e['event']=='native_shot']
+        if len(rows)<1200 or len(modes)<5 or not health or min(health)>=max(health) or len(shots)<4:
+            raise ValueError('Actual patrol Boss exchange missing')
+        result.update(boss_modes=sorted(modes),boss_initial_hp=health[0],boss_final_hp=health[-1],
+                      actual_shots=len(shots),full_boss_defeat_claim=False)
+    if case == 'hook_route':
+        hangs=[e for e in events if e['event']=='native_hook_hang']
+        if start['stage']!='h' or len(hangs)!=3 or rows[-1]['position'][1]>160:
+            raise ValueError('Actual H revisit chain missing')
+        if any(math.dist(e['anchor'],e['position'])>65 for e in hangs):
+            raise ValueError('Declared hook did not reach its anchor')
+        result.update(actual_native_hook_hangs=3,summit_y=rows[-1]['position'][1])
     if case == 'p10':
         shots = [e for e in events if e['event'] == 'native_shot']
         refills = [e for e in events if e['event'] == 'check'
@@ -100,7 +115,24 @@ def audit_take(trace, case):
     return result
 
 
-def plan(captures):
+def plan(captures, edit=None):
+    if edit:
+        clips=[];at=0
+        for item in edit:
+            case=item['stage'];capture=captures[case];events=capture['trace']['events']
+            def event_time(kind,index=0):
+                matches=[e for e in events if e['event']==kind]
+                return matches[index]['movie_frame']/60
+            start=event_time(item.get('from_event','take_start'),item.get('event_index',0))+item.get('offset',0)
+            end=start+item['duration'] if 'duration' in item else event_time(item.get('to_event','take_end'))+item.get('end_offset',0)
+            start=round(start*30)/30;end=round(end*30)/30
+            if not 0<=start<end<=capture['duration']+.001:raise ValueError('Invalid native window: '+case)
+            clips.append(dict(index=len(clips),stage=case,start=start,end=end,duration=end-start,
+                              timeline_start=at,timeline_end=at+end-start,title=item['title'],
+                              note=item['note'],speed=1,type='fresh_native_gameplay',
+                              scope='independent room; one initial pose, then native inputs'))
+            at=clips[-1]['timeline_end']
+        return clips
     titles = {
         'p10': ('Demo 中的 Demo / P10 · 只用基础枪登高', '命中补弹，再接反冲；不用钩索和二段跳，也能一路上去。'),
         'street': ('先在钟外小站，喘口气', '一路跳跳乐，也需要能停下来看看、逛逛的地方。'),
@@ -141,17 +173,19 @@ def compose(spec_path, captures_root, output, source_project, capture_prefix='de
     (out/'logs').mkdir(exist_ok=True)
     captures = {name: load_capture(captures_root, capture_prefix+name, spec['main_commit'])
                 for name in spec['stages']}
+    if any(c['trace'].get('source_commit')!=spec['main_commit'] for c in captures.values()):
+        raise ValueError('Native trace and capture source commits differ')
     audits = {name: audit_take(c['trace'], name) for name,c in captures.items()}
-    clips = plan(captures)
+    clips = plan(captures,spec.get('edit'))
     write(out/'storyboard.json', clips)
     paths = [render_cut(c, captures[c['stage']], out) for c in clips]
     # MP4 concat demuxing accumulates AAC priming at every boundary. Build the
     # video from exact frame counts and encode audio once from the original
     # captures; never concatenate separately encoded AAC tracks.
     inputs=[];filters=[];count=len(clips)
-    for path in paths:inputs += ['-i',path]
+    for path in paths:inputs += ['-threads','1','-i',path]
     for i,c in enumerate(clips):
-        inputs += ['-ss',c['start'],'-t',c['duration'],'-i',captures[c['stage']]['movie']]
+        inputs += ['-threads','1','-ss',c['start'],'-t',c['duration'],'-i',captures[c['stage']]['movie']]
         frames=round(c['duration']*30)
         filters.append(f'[{i}:v]trim=end_frame={frames},setpts=N/(30*TB),setsar=1[v{i}]')
         filters.append(f'[{count+i}:a]atrim=duration={c["duration"]},asetpts=PTS-STARTPTS,aresample=48000,apad=whole_dur={c["duration"]},atrim=duration={c["duration"]},afade=t=in:d=0.025,afade=t=out:st={max(0,c["duration"]-.025)}:d=0.025[a{i}]')
@@ -188,7 +222,7 @@ def compose(spec_path, captures_root, output, source_project, capture_prefix='de
                               delivered_path=str(dest.relative_to(out))))
     limits = ['分房逐房试玩，每段只有一个声明的初始站位，其后为普通Router输入；不是一命新档连续流程。',
               'P10基础枪连续登顶，不用H/D、途中传送、资源或血量注入。',
-              'P15采用已有H的原生逐房试玩配置，并非本片内自然获得；敌人、机关、剧情和游戏规则保持。',
+              'P15、巡游车与钩索片段的初始H配置随轨迹公开，并非本片内自然获得；敌人、机关、剧情和游戏规则保持。',
               '软件渲染720p60原片，剪辑1080p30；不宣称目标设备性能或完整游戏已验收。',
               '这是Demo中的Demo；自动操作成功不代表手感、美术、平衡或完整探索已经满意。']
     write(out/'sources.json',dict(repository=spec['repository'],commit=spec['main_commit'],
@@ -219,13 +253,17 @@ def compose(spec_path, captures_root, output, source_project, capture_prefix='de
     draw.text((55,565),'Demo',font=ImageFont.truetype(font(True),142),fill='white')
     draw.text((55,860),'先把能玩的拿出来',font=ImageFont.truetype(font(True),43),fill='white')
     draw.text((55,950),'当前实机 / 开发中',font=ImageFont.truetype(font(),38),fill='#d8e0df')
-    draw.text((705,93),'只用枪，也能登顶',font=ImageFont.truetype(font(True),70),fill='#f2dfad')
+    draw.text((705,93),spec.get('cover_caption','只用枪，也能登顶'),font=ImageFont.truetype(font(True),70),fill='#f2dfad')
     cover.save(out/'cover.png');(out/'cover-source.png').unlink()
     report = validate_gameplay(out)
     alignment=verify_audio_alignment(out/'final.mp4',clips,captures)
     report['technical']['audio_alignment']=alignment
     report['technical']['checks']['original_audio_alignment']=all(r['passed'] for r in alignment)
     report['technical']['passed']=all(report['technical']['checks'].values())
+    if spec.get('target_duration'):
+        checks=report['technical']['checks']
+        checks['requested_duration']=abs(clips[-1]['timeline_end']-spec['target_duration'])<=spec.get('duration_tolerance',8)
+        report['technical']['passed']=all(checks.values())
     report.update(episode=spec['episode'],native_take_audits=audits,
                   publication={'bilibili_published':False},
                   user_request='最新版当前玩法与钟心剧情精彩片段；Demo中的Demo')

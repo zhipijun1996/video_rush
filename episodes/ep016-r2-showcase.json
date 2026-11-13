@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "episode": "ep016-r2",
+  "public_episode": "ep15",
+  "repository": "zhipijun1996/gunman-rush",
+  "main_commit": "baaf1dbb1828582a6c6aece891b2595f9089b60c",
+  "source_ref": "main after PR153 merged; frozen 2026-11-13",
+  "title": "枪不光打怪，还得负责爬楼！ | 【失序之钟】独游折腾记 ep15【B站AI创造公开赛】",
+  "description": "《失序之钟》现在能玩些什么？这次多跑几条路，少讲几句剧情。\n\nP10只用基础枪连续登顶；断桥、荆棘窄口和地窖侧闸；井口上行、双吊台和灌溉笼换岸；拿到钩索后的高处回访、植物后的隐藏宝箱；再和巡游车（鸣铃巡游机）过几招。钟心只留关键交代，最后让风鸣钟响起来。\n\n这是Demo中的Demo，还在搭路、补内容、磨体验。先把目前能玩的部分拿出来看看，欢迎提建议。\n\n最新版主线实录、原速、游戏音乐和音效，无配音，少量字幕。各房独立进入、每段设置一个局部起点，此后由程序提交普通操作，不是新档连续通关。P10不用钩索或二段跳；H回访、巡游车和修钟使用已有H的逐房试玩配置。Boss是交战节选，不是完整击败录像；伤害、敌人、机关和物理保持。\n\nAI辅助开发与制作。地形基础素材：Underworld Tileset / Asouris；字体：Noto CJK（OFL）。\n\n#B站AI创造公开赛# #独立游戏# #类银河恶魔城# #Godot# #失序之钟#",
+  "narration": false,
+  "style": {
+    "music": "actual original game music and sound effects",
+    "speed": 1,
+    "footer": "do not crop game field",
+    "honest_scope": "Demo中的Demo; selected independent formal rooms"
+  },
+  "stages": {
+    "p10": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=p10"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "broken_bridge": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=broken_bridge"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "well_route": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=well_route"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "dual_carriers": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=dual_carriers"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "thorn_route": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=thorn_route"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "cellar": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=cellar"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "street": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=street"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "clockheart": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=clockheart"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "patrol": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=patrol"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "sluice": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=sluice"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "repair": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=repair"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "secret_route": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=secret_route"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "hook_route": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=hook_route"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "long_bridge": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=long_bridge"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    },
+    "water_carrier": {
+      "version": "main",
+      "driver": "video_rush/drivers/demo_showcase.gd",
+      "seed": 0,
+      "args": [
+        "--case=water_carrier"
+      ],
+      "compile_world": true,
+      "seed_scope": "fixed authored world; no procedural or same-seed claim"
+    }
+  },
+  "rights": [
+    {
+      "kind": "game",
+      "status": "User-owned project, native capture of pinned main after PR153; original third-party source notices retained."
+    },
+    {
+      "kind": "audio",
+      "status": "Actual captured game AV, including user-supplied in-game music. Source BGM provenance and Windkeeper CC0 effects documentation included. Project-specific user authorization only; broader music redistribution rights and authorship are unspecified."
+    },
+    {
+      "kind": "font",
+      "status": "Noto CJK, SIL OFL"
+    }
+  ],
+  "source_files": [
+    "docs/project/current_state.md",
+    "docs/project/worklines/plains_bible_v2_01/scope.md",
+    "game/world/regions/P/rooms/P-R10.tscn",
+    "game/world/regions/P/rooms/P-R26.tscn",
+    "game/world/regions/P/rooms/P-R20.tscn",
+    "game/world/regions/P/rooms/P-R06.tscn",
+    "game/world/regions/P/rooms/P-R01.tscn",
+    "game/world/regions/P/rooms/P-R15.tscn",
+    "game/world/regions/P/rooms/P-R33.tscn",
+    "game/world/regions/Z/rooms/Z-R01.tscn",
+    "game/application/world/world_room_review.gd",
+    "game/application/world/world_story_sequence.gd",
+    "tests/world/approved_final_rooms.gd",
+    "tests/world/plains35_west.gd",
+    "tests/world/clockheart_route.gd",
+    "assets/audio/bgm/provenance.json",
+    "assets/style_exploration/underworld/source/licenses/NOTICE.md",
+    "config/toolchain.json",
+    "game/world/regions/P/rooms/P-R04.tscn",
+    "game/world/regions/P/rooms/P-R11.tscn",
+    "game/world/regions/P/rooms/P-R12.tscn",
+    "game/world/regions/P/rooms/P-R13.tscn",
+    "game/world/regions/P/rooms/P-R18.tscn",
+    "game/world/regions/P/rooms/P-R32.tscn",
+    "tools/bellstrider_01/legal_input_pilot.gd",
+    "game/bosses/bellstrider/bellstrider_world_binding.gd",
+    "tests/world/approved_hub_actions.gd",
+    "tests/world/approved_exploration_rooms.gd"
+  ],
+  "publication": {
+    "bilibili_authorized": false,
+    "delivery": "verified Actions artifacts, including small phone movie"
+  },
+  "on_screen_only": true,
+  "target_duration": 150,
+  "duration_tolerance": 8,
+  "edit": [
+    {
+      "stage": "p10",
+      "title": "Demo 中的 Demo / P10 · 只用基础枪登高",
+      "note": "命中补弹，再接反冲；不用钩索和二段跳，也能一路上去。"
+    },
+    {
+      "stage": "broken_bridge",
+      "title": "断桥旧路 / 横着赶路，竖着登高",
+      "note": "先跨断口，再接向上的反冲；这段连续跑完。"
+    },
+    {
+      "stage": "well_route",
+      "title": "风铃岔路 / 从井口爬上去，再决定往哪走",
+      "note": "普通跳跃接反冲，继续往高处找路。"
+    },
+    {
+      "stage": "dual_carriers",
+      "title": "旧风车内廊 / 两段吊台，接着换岸",
+      "note": "射铃启动、升到上层，再接斜行吊台；最后反冲登岸。"
+    },
+    {
+      "stage": "water_carrier",
+      "title": "东境旧田 / 从灌溉路，回到上面的田畦",
+      "note": "先上吊笼，回身射铃；升上去，还能接着往高处走。"
+    },
+    {
+      "stage": "thorn_route",
+      "title": "荆棘廊道 / 这次不只比谁跳得高",
+      "note": "上升、下落和横向反冲；最后从窄顶下面穿过去。"
+    },
+    {
+      "stage": "cellar",
+      "title": "错层地窖 / 空中开闸，顺势进门",
+      "note": "起跳射铃，借同一枪的反冲穿过侧闸。"
+    },
+    {
+      "stage": "street",
+      "title": "回小站，喘口气",
+      "note": "战斗和跳跃之间，也留一点逛街、看风景的空间。",
+      "to_event": "native_explored_map"
+    },
+    {
+      "stage": "long_bridge",
+      "title": "悬铃长桥 / 回身射铃，登上检修台",
+      "note": "升上断桥高处，那座停摆的塔就在眼前。"
+    },
+    {
+      "stage": "clockheart",
+      "title": "去钟心看看",
+      "note": "剧情先点到为止：钟心停摆，先把各地的钟修好。",
+      "from_event": "enter_clockheart",
+      "offset": -0.15,
+      "duration": 1.2
+    },
+    {
+      "stage": "clockheart",
+      "title": "钟心停摆 / 先让各地的钟重新鸣响",
+      "note": "这是现阶段的故事目标；后面还有很长的路要做。",
+      "from_event": "dialogue",
+      "event_index": 0,
+      "duration": 4.3
+    },
+    {
+      "stage": "hook_route",
+      "title": "拿到钩索以后 / 旧路还能往上找",
+      "note": "钩环、跳离、再接下一环；这里使用已有 H 的回访配置。"
+    },
+    {
+      "stage": "secret_route",
+      "title": "路边这片植物，后面还有东西",
+      "note": "走进去，才交接隐藏房间的镜头；清掉守卫，再开宝箱。"
+    },
+    {
+      "stage": "sluice",
+      "title": "退潮渠畔 / 开门和赶路，用同一枪",
+      "note": "先下落，回身射铃；开闸的同时，反冲穿过去。"
+    },
+    {
+      "stage": "patrol",
+      "title": "巡游车，来过两招 / 鸣铃巡游机",
+      "note": "看预警、让开攻击路线；等它收招，再瞄准上面的钟。"
+    },
+    {
+      "stage": "repair",
+      "title": "最后，让风鸣钟响起来",
+      "note": "这是 Demo 中的 Demo。还没做完，也还在磨，先往下试试。",
+      "from_event": "native_clock_repair_interaction",
+      "offset": -0.3,
+      "duration": 6
+    }
+  ],
+  "cover_caption": "枪 · 钩索 · 巡游车"
+}

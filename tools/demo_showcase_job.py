@@ -21,7 +21,7 @@ def main():
     root=Path(a.captures).resolve()
     def record(case):
         name='demo-'+case;out=root/name
-        arguments=[*spec['stages'][case]['args'],f'--output={out}/trace.json']
+        arguments=[*spec['stages'][case]['args'],f'--source-commit={commit}',f'--output={out}/trace.json']
         if out.exists():
             retained=load_capture(root,name,commit)
             receipt=retained['receipt']

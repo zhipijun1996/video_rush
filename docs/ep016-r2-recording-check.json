@@ -1,0 +1,246 @@
+{
+  "status": "actual_local_native_recordings_verified",
+  "source_commit": "baaf1dbb1828582a6c6aece891b2595f9089b60c",
+  "native_takes": 15,
+  "headless_not_used_as_footage": true,
+  "tests": "125 passed, 1 optional skipped",
+  "audits": {
+    "p10": {
+      "complete": true,
+      "frames": 843,
+      "initial_pose": [
+        896.0,
+        2030.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R10"
+      ],
+      "session_changes": 0,
+      "native_shots": 10,
+      "actual_hit_refills": 5,
+      "max_shots_single_flight": 4,
+      "summit_y": 141.925262451172,
+      "no_hook_or_double_jump": true
+    },
+    "broken_bridge": {
+      "complete": true,
+      "frames": 754,
+      "initial_pose": [
+        1512.0,
+        910.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R04"
+      ],
+      "session_changes": 0
+    },
+    "well_route": {
+      "complete": true,
+      "frames": 445,
+      "initial_pose": [
+        1216.0,
+        1934.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R06"
+      ],
+      "session_changes": 0
+    },
+    "dual_carriers": {
+      "complete": true,
+      "frames": 1378,
+      "initial_pose": [
+        800.0,
+        1390.0
+      ],
+      "human_play": false,
+      "min_hp": 2.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "thorn_route": {
+      "complete": true,
+      "frames": 701,
+      "initial_pose": [
+        5032.0,
+        2062.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R13"
+      ],
+      "session_changes": 0
+    },
+    "cellar": {
+      "complete": true,
+      "frames": 202,
+      "initial_pose": [
+        928.0,
+        686.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R12"
+      ],
+      "session_changes": 0
+    },
+    "street": {
+      "complete": true,
+      "frames": 450,
+      "initial_pose": [
+        900.0,
+        1262.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R01"
+      ],
+      "session_changes": 0
+    },
+    "clockheart": {
+      "complete": true,
+      "frames": 1291,
+      "initial_pose": [
+        1330.0,
+        558.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R33",
+        "Z-R01"
+      ],
+      "session_changes": 1
+    },
+    "patrol": {
+      "complete": true,
+      "frames": 1486,
+      "initial_pose": [
+        400.0,
+        1134.0
+      ],
+      "human_play": false,
+      "min_hp": 3.0,
+      "actual_rooms": [
+        "P-R11"
+      ],
+      "session_changes": 0,
+      "boss_modes": [
+        "approach",
+        "intro",
+        "lob",
+        "lob_aim",
+        "lob_lock",
+        "neck",
+        "observe",
+        "phase_transition",
+        "ring_warning",
+        "rings",
+        "roll",
+        "roll_warning",
+        "turn"
+      ],
+      "boss_initial_hp": 40.0,
+      "boss_final_hp": 20.0,
+      "actual_shots": 10,
+      "full_boss_defeat_claim": false
+    },
+    "sluice": {
+      "complete": true,
+      "frames": 275,
+      "initial_pose": [
+        2352.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R20"
+      ],
+      "session_changes": 0
+    },
+    "repair": {
+      "complete": true,
+      "frames": 973,
+      "initial_pose": [
+        1800.0,
+        3918.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R15"
+      ],
+      "session_changes": 0
+    },
+    "secret_route": {
+      "complete": true,
+      "frames": 328,
+      "initial_pose": [
+        1800.0,
+        1518.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "hook_route": {
+      "complete": true,
+      "frames": 413,
+      "initial_pose": [
+        1184.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R32"
+      ],
+      "session_changes": 0,
+      "actual_native_hook_hangs": 3,
+      "summit_y": 141.925247192383
+    },
+    "long_bridge": {
+      "complete": true,
+      "frames": 525,
+      "initial_pose": [
+        2096.0,
+        814.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R32"
+      ],
+      "session_changes": 0
+    },
+    "water_carrier": {
+      "complete": true,
+      "frames": 614,
+      "initial_pose": [
+        2080.0,
+        1422.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R18"
+      ],
+      "session_changes": 0
+    }
+  }
+}

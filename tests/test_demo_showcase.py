@@ -5,7 +5,7 @@ import subprocess
 
 import pytest
 
-from video_rush.demo_showcase import audit_take, verify_audio_alignment
+from video_rush.demo_showcase import audit_take, verify_audio_alignment, plan
 
 
 def p10_trace():
@@ -51,3 +51,23 @@ def test_rejects_accumulated_audio_delay(tmp_path):
     captures={'fixture':{'movie':original}}
     assert verify_audio_alignment(original,clips,captures)[0]['passed']
     assert not verify_audio_alignment(delayed,clips,captures)[0]['passed']
+
+
+def test_story_excerpt_keeps_only_selected_native_windows():
+    captures={'clockheart':dict(duration=30,trace=dict(events=[
+        dict(event='take_start',movie_frame=60),
+        dict(event='enter_clockheart',movie_frame=180),
+        dict(event='dialogue',movie_frame=600),
+        dict(event='take_end',movie_frame=1700)]))}
+    edit=[dict(stage='clockheart',from_event='enter_clockheart',duration=1.2,title='door',note=''),
+          dict(stage='clockheart',from_event='dialogue',duration=4.3,title='goal',note='')]
+    clips=plan(captures,edit)
+    assert clips[-1]['timeline_end']==pytest.approx(5.5)
+    assert clips[1]['start']==10
+    assert clips[0]['end']<clips[1]['start']
+
+
+def test_refuses_excerpt_outside_original_capture():
+    captures={'case':dict(duration=3,trace=dict(events=[dict(event='take_start',movie_frame=60)]))}
+    with pytest.raises(ValueError):
+        plan(captures,[dict(stage='case',duration=5,title='x',note='')])

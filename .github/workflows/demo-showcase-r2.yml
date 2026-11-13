@@ -1,0 +1,89 @@
+name: Extended Demo routes and patrol Boss showcase
+on:
+  workflow_dispatch:
+    inputs:
+      source_run:
+        description: Optional successful prior run; reuse its verified native recordings
+        required: false
+        type: string
+        default: ''
+permissions:
+  contents: read
+  actions: read
+jobs:
+  showcase:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install native capture and editing tools
+        run: |
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            printf '%s\n' 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt >/dev/null
+          fi
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 update -qq
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 install -y --no-install-recommends ffmpeg fonts-noto-cjk xvfb libgl1-mesa-dri libx11-6 libxcursor1 libxinerama1 libxrandr2 libxi6 libasound2t64
+          python -m pip install Pillow requests pytest numpy
+          python -m pip install -e . --no-deps
+          pytest -q
+      - name: Record pinned main through original game controls and audio
+        if: inputs.source_run == ''
+        run: python -m tools.demo_showcase_job --spec episodes/ep016-r2-showcase.json --base build/native-demo-showcase-r2 --captures build/captures/demo-r2
+      - uses: actions/download-artifact@v4
+        if: inputs.source_run != ''
+        with:
+          name: video-rush-ep016-r2
+          path: build/recovery
+          run-id: ${{ inputs.source_run }}
+          github-token: ${{ github.token }}
+      - name: Edit selected native takes and validate
+        if: inputs.source_run == ''
+        run: python -m video_rush.demo_showcase --spec episodes/ep016-r2-showcase.json --captures build/captures/demo-r2 --source-project build/native-demo-showcase-r2/project --output build/episodes/ep016-r2
+      - name: Revalidate retained native takes and compose without AAC offset accumulation
+        if: inputs.source_run != ''
+        run: python -m video_rush.demo_showcase --spec episodes/ep016-r2-showcase.json --captures build/recovery/episodes/ep016-r2/recordings --capture-prefix '' --source-project build/recovery/episodes/ep016-r2/source-evidence --output build/episodes/ep016-r2
+      - name: Make complete small phone preview
+        run: python tools/phone_preview.py --source build/episodes/ep016-r2 --copy-audio --output build/phone-ep016-r2/失序之钟_Demo中的Demo_手机预览.mp4
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: video-rush-ep016-r2
+          retention-days: 14
+          if-no-files-found: error
+          path: |
+            build/episodes/ep016-r2/
+            build/captures/demo-r2/demo-*/*.json
+            build/captures/demo-r2/demo-*/*.log
+            build/captures/demo-r2/demo-*/recording_driver.gd
+            build/native-demo-showcase-r2/preparation.json
+            build/native-demo-showcase-r2/import.log
+            build/native-demo-showcase-r2/world-build.log
+      - uses: actions/upload-artifact@v4
+        if: success()
+        id: phone
+        with:
+          name: ep15-r2-phone-movie-only
+          path: build/phone-ep016-r2/*.mp4
+          retention-days: 14
+          compression-level: 0
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: ep15-r2-cover-and-posting
+          retention-days: 14
+          path: |
+            build/episodes/ep016-r2/cover.png
+            build/episodes/ep016-r2/bilibili.md
+      - name: Phone delivery
+        if: success()
+        env:
+          FILM_URL: ${{ steps.phone.outputs.artifact-url }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          Path(os.environ['GITHUB_STEP_SUMMARY']).write_text('[下载完整手机成片]('+os.environ['FILM_URL']+')\n\nDemo中的Demo。游戏原声、分房选录、无配音；尚未投稿。')
+          PY
