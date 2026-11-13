@@ -1,0 +1,616 @@
+{
+  "status": "actual_local_complete_film_verified",
+  "movie_sha256": "93fd4b1e75ef3a7034633811a7c2610e6aeaceb44b55d5f0af58dbf801b6ec9b",
+  "seconds": 148.13333333333335,
+  "native_takes": 15,
+  "edited_clips": 16,
+  "clockheart_seconds": 5.4333333333333345,
+  "repair_seconds": 6.000000000000001,
+  "patrol_seconds": 24.8,
+  "source_commit": "baaf1dbb1828582a6c6aece891b2595f9089b60c",
+  "manifest_files": 114,
+  "technical_checks": {
+    "full_decode": true,
+    "mp4": true,
+    "dimensions": true,
+    "fps": true,
+    "video_codec": true,
+    "pixel_format": true,
+    "limited_range": true,
+    "audio_codec": true,
+    "sample_rate": true,
+    "duration": true,
+    "original_game_audio_audible": true,
+    "clipping": true,
+    "subtitle_bounds": true,
+    "source_hashes": true,
+    "no_long_black": true,
+    "no_unexplained_freeze": true,
+    "original_audio_alignment": true,
+    "requested_duration": true
+  },
+  "audio_alignment": [
+    {
+      "stage": "p10",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 1.0,
+      "correlation": 0.9998243740107295,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "broken_bridge",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 15.033333333333333,
+      "correlation": 0.9999396880637276,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "well_route",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 27.566666666666666,
+      "correlation": 0.9998671069746601,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "dual_carriers",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 34.96666666666666,
+      "correlation": 0.9996371941546196,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "water_carrier",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 58.033333333333324,
+      "correlation": 0.9995272890544598,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "thorn_route",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 68.23333333333333,
+      "correlation": 0.9999514248530736,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "cellar",
+      "seconds": 1.2,
+      "source_offset": 1.9000000000000001,
+      "timeline_offset": 79.73333333333333,
+      "correlation": 0.9998640074960071,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "street",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 83.23333333333335,
+      "correlation": 0.9997971993317053,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "long_bridge",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 87.23333333333335,
+      "correlation": 0.9963481949171195,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "clockheart",
+      "seconds": 0.7750000000000002,
+      "source_offset": 2.958333333333333,
+      "timeline_offset": 95.25833333333335,
+      "correlation": 0.9997896047218696,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "clockheart",
+      "seconds": 1.2,
+      "source_offset": 9.533333333333333,
+      "timeline_offset": 97.13333333333334,
+      "correlation": 0.999963459767448,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "hook_route",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 101.4,
+      "correlation": 0.9995823252509819,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "secret_route",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 108.30000000000001,
+      "correlation": 0.9998912943204816,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "sluice",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 113.76666666666668,
+      "correlation": 0.9998860830301646,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "patrol",
+      "seconds": 1.2,
+      "source_offset": 2.0666666666666664,
+      "timeline_offset": 118.33333333333336,
+      "correlation": 0.9996741432602679,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    },
+    {
+      "stage": "repair",
+      "seconds": 1.2,
+      "source_offset": 3.3,
+      "timeline_offset": 143.13333333333335,
+      "correlation": 0.9999180326564986,
+      "matching_offset_ms": 0.0,
+      "tolerance_ms": 1.0,
+      "passed": true
+    }
+  ],
+  "native_take_audits": {
+    "p10": {
+      "complete": true,
+      "frames": 843,
+      "initial_pose": [
+        896.0,
+        2030.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R10"
+      ],
+      "session_changes": 0,
+      "native_shots": 10,
+      "actual_hit_refills": 5,
+      "max_shots_single_flight": 4,
+      "summit_y": 141.925262451172,
+      "no_hook_or_double_jump": true
+    },
+    "broken_bridge": {
+      "complete": true,
+      "frames": 754,
+      "initial_pose": [
+        1512.0,
+        910.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R04"
+      ],
+      "session_changes": 0
+    },
+    "well_route": {
+      "complete": true,
+      "frames": 445,
+      "initial_pose": [
+        1216.0,
+        1934.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R06"
+      ],
+      "session_changes": 0
+    },
+    "dual_carriers": {
+      "complete": true,
+      "frames": 1378,
+      "initial_pose": [
+        800.0,
+        1390.0
+      ],
+      "human_play": false,
+      "min_hp": 2.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "thorn_route": {
+      "complete": true,
+      "frames": 701,
+      "initial_pose": [
+        5032.0,
+        2062.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R13"
+      ],
+      "session_changes": 0
+    },
+    "cellar": {
+      "complete": true,
+      "frames": 202,
+      "initial_pose": [
+        928.0,
+        686.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R12"
+      ],
+      "session_changes": 0
+    },
+    "street": {
+      "complete": true,
+      "frames": 450,
+      "initial_pose": [
+        900.0,
+        1262.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R01"
+      ],
+      "session_changes": 0
+    },
+    "clockheart": {
+      "complete": true,
+      "frames": 1291,
+      "initial_pose": [
+        1330.0,
+        558.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R33",
+        "Z-R01"
+      ],
+      "session_changes": 1
+    },
+    "patrol": {
+      "complete": true,
+      "frames": 1486,
+      "initial_pose": [
+        400.0,
+        1134.0
+      ],
+      "human_play": false,
+      "min_hp": 3.0,
+      "actual_rooms": [
+        "P-R11"
+      ],
+      "session_changes": 0,
+      "boss_modes": [
+        "approach",
+        "intro",
+        "lob",
+        "lob_aim",
+        "lob_lock",
+        "neck",
+        "observe",
+        "phase_transition",
+        "ring_warning",
+        "rings",
+        "roll",
+        "roll_warning",
+        "turn"
+      ],
+      "boss_initial_hp": 40.0,
+      "boss_final_hp": 20.0,
+      "actual_shots": 10,
+      "full_boss_defeat_claim": false
+    },
+    "sluice": {
+      "complete": true,
+      "frames": 275,
+      "initial_pose": [
+        2352.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R20"
+      ],
+      "session_changes": 0
+    },
+    "repair": {
+      "complete": true,
+      "frames": 973,
+      "initial_pose": [
+        1800.0,
+        3918.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R15"
+      ],
+      "session_changes": 0
+    },
+    "secret_route": {
+      "complete": true,
+      "frames": 328,
+      "initial_pose": [
+        1800.0,
+        1518.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R26"
+      ],
+      "session_changes": 0
+    },
+    "hook_route": {
+      "complete": true,
+      "frames": 413,
+      "initial_pose": [
+        1184.0,
+        942.0
+      ],
+      "human_play": false,
+      "min_hp": 4.0,
+      "actual_rooms": [
+        "P-R32"
+      ],
+      "session_changes": 0,
+      "actual_native_hook_hangs": 3,
+      "summit_y": 141.925247192383
+    },
+    "long_bridge": {
+      "complete": true,
+      "frames": 525,
+      "initial_pose": [
+        2096.0,
+        814.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R32"
+      ],
+      "session_changes": 0
+    },
+    "water_carrier": {
+      "complete": true,
+      "frames": 614,
+      "initial_pose": [
+        2080.0,
+        1422.0
+      ],
+      "human_play": false,
+      "min_hp": 5.0,
+      "actual_rooms": [
+        "P-R18"
+      ],
+      "session_changes": 0
+    }
+  },
+  "tests": "125 passed, 1 optional skipped",
+  "selected_frames_inspected": [
+    "broken_bridge",
+    "water_carrier",
+    "thorn_route",
+    "long_bridge",
+    "clockheart",
+    "hook_route",
+    "secret_route",
+    "patrol"
+  ],
+  "human_aesthetic_review": "pending",
+  "bilibili_published": false,
+  "phone_preview": {
+    "phone_sha256": "f263802e08bba326331dfe88b5381e572e453f4f7708665b32a4f84a03e9b23a",
+    "phone_bytes": 13538839,
+    "complete_phone_decode": true,
+    "phone_audio_alignment": [
+      {
+        "stage": "p10",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 1.0,
+        "correlation": 0.9998243740107295,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "broken_bridge",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 15.033333333333333,
+        "correlation": 0.9999396880637276,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "well_route",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 27.566666666666666,
+        "correlation": 0.9998671069746601,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "dual_carriers",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 34.96666666666666,
+        "correlation": 0.9996371941546196,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "water_carrier",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 58.033333333333324,
+        "correlation": 0.9995272890544598,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "thorn_route",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 68.23333333333333,
+        "correlation": 0.9999514248530736,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "cellar",
+        "seconds": 1.2,
+        "source_offset": 1.9000000000000001,
+        "timeline_offset": 79.73333333333333,
+        "correlation": 0.9998640074960071,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "street",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 83.23333333333335,
+        "correlation": 0.9997971993317053,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "long_bridge",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 87.23333333333335,
+        "correlation": 0.9963481949171195,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "clockheart",
+        "seconds": 0.7750000000000002,
+        "source_offset": 2.958333333333333,
+        "timeline_offset": 95.25833333333335,
+        "correlation": 0.9997896047218696,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "clockheart",
+        "seconds": 1.2,
+        "source_offset": 9.533333333333333,
+        "timeline_offset": 97.13333333333334,
+        "correlation": 0.999963459767448,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "hook_route",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 101.4,
+        "correlation": 0.9995823252509819,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "secret_route",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 108.30000000000001,
+        "correlation": 0.9998912943204816,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "sluice",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 113.76666666666668,
+        "correlation": 0.9998860830301646,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "patrol",
+        "seconds": 1.2,
+        "source_offset": 2.0666666666666664,
+        "timeline_offset": 118.33333333333336,
+        "correlation": 0.9996741432602679,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      },
+      {
+        "stage": "repair",
+        "seconds": 1.2,
+        "source_offset": 3.3,
+        "timeline_offset": 143.13333333333335,
+        "correlation": 0.9999180326564986,
+        "matching_offset_ms": 0.0,
+        "tolerance_ms": 1.0,
+        "passed": true
+      }
+    ],
+    "AAC_packet_sha256": "5426510f43959773d966850b60e1afdd41bfc5b515f5d028a196d5eb31aada47",
+    "phone_AAC_packets_identical_to_master": true
+  },
+  "source_documents_matching_exact_git_blob": 28
+}
